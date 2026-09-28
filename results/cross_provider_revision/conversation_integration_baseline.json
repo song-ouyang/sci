@@ -1,0 +1,18 @@
+{
+  "backup": "/Users/guoba/work/sci-paper-llm-pdm/paper/history/pre_conversation_integration_20260928T040155Z",
+  "protected_sha256": {
+    "results/revision_v3/protocol.json": "2b743ec9d70567aa9e630521503a4d4cb456949b69dc37db0dc3f2a282be0d7c",
+    "results/revision_v3/analysis/scores.json": "10f745d19be562781f40ce5b98c957041109f51a214398ba0b947c3523e342bb",
+    "results/revision_v3/predictions/frozen_manifest.json": "fb5238702c25c8e1a34729433faca575ee5835523f1d20e6d817230009111a54",
+    "results/mechanism_extension/protocol.json": "60ab4d257a3b9ea85df3ac1897927aa3a287f06bbd138c64fed8bcfb824f0f24",
+    "results/mechanism_extension/analysis/scores.json": "1bfafd7c82001a62920d3167a70f53fe111fb4565ecea288d0be7971cf84afec",
+    "results/mechanism_extension/predictions/frozen_manifest.json": "ad6006c18b37c9ae7761fc8e74a319f80932f1c4a04fb9c9ab8c9182c0156b19",
+    "results/domestic_extension_v2/plan.json": "6e01461dfeed48ef3aeeec538662a3c675d5b28070b62ec1c0765f868ad1f813",
+    "results/domestic_extension_v2/frozen_manifest.json": "1e01198839eb630d95752c6ee56f3a0eaeb68cb780bd2396fec0d124e0b67d88",
+    "results/domestic_extension_v2/analysis/scores.json": "426817973531343d8c007f06f86c478ce11c2820214aae19a5b2138abcb1942e",
+    "results/independent_validation/protocol.sha256": "c68e84e49f3dcc79b625b2a8c006e4b377b92a3de0d1b3a4915facebe3cdc435",
+    "results/independent_validation/protocol.json": "4faf7317ad2b92a1599b892f9b68c1eca0427b5a764f8f8b030846efa20bd5c4",
+    "results/independent_validation/analysis/scores.json": "98409ddff332ede3fc923a6fe20d00f5ae82c19a1d84df96a6bf3f2a9677ec41",
+    "results/independent_validation/predictions/frozen_manifest.json": "7f9ca9cecacf838242f9f23af69053659426be88e4c8bd201f7468ff39c58ce6"
+  }
+}

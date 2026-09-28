@@ -1,0 +1,87 @@
+{
+  "protocol": "codex-grouped-revision-v3",
+  "model_requested": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "transport": "codex-cli-chatgpt-auth-https",
+  "cli_version": "codex-cli 0.155.0-alpha.9.2",
+  "runner_sha256": "02231b78a0ebb14066884418feaa8d82f3f6b2e3d8868815a4954e18bb0d7159",
+  "protocol_sha256": "f4fe92b1f056fd7fbcd5d50226f80b2ab7cee0de913a4b69eae5ae52b9d2c7b0",
+  "dataset": "hydraulic",
+  "condition": "clean",
+  "repeat": 3,
+  "input_sha256": "ff07ea4348b40eb3d7de1bc7a0ca0f8a8b4cb24570617ddc973b32965bf564d2",
+  "fingerprint": "8dfe3d6e713f17ed272052d5fe47db81f94046ec4fc9a5b1ea0cb951bd7fa677",
+  "prompt_file": "/Users/guoba/work/sci-paper-llm-pdm/results/hydraulic_validation_v1/inference/prompts/clean_r3.txt",
+  "prompt_txt_sha256": "4b4c9eec1bb1c5fa6790a08216e3264051ff9ede0746e311d15aba744d82b8ae",
+  "base_instructions_sha256": "74cddbc5826ebf5b05cdd9a4382b5c3d0a983d408b3005173c4bc81810591564",
+  "batch": "clean_r3",
+  "n_samples": 18,
+  "started_at": "2026-09-28T05:46:50.062605+00:00",
+  "updated_at": "2026-09-28T06:01:50.111984+00:00",
+  "attempts": [
+    {
+      "attempt": 1,
+      "returncode": -1,
+      "timed_out": true,
+      "elapsed_seconds": 900.016,
+      "events_file": "clean_r3_attempt1_events.jsonl",
+      "response_file": "clean_r3_attempt1_response.txt",
+      "stderr_file": "clean_r3_attempt1_stderr.txt",
+      "usage": null,
+      "errors": [
+        {
+          "type": "error",
+          "message": "Reconnecting... 1/5 (stream disconnected before completion: error sending request for url (https://chatgpt.com/backend-api/codex/responses))"
+        },
+        {
+          "type": "error",
+          "message": "Reconnecting... 2/5 (stream disconnected before completion: error sending request for url (https://chatgpt.com/backend-api/codex/responses))"
+        },
+        {
+          "type": "error",
+          "message": "Reconnecting... 3/5 (stream disconnected before completion: error sending request for url (https://chatgpt.com/backend-api/codex/responses))"
+        },
+        {
+          "type": "error",
+          "message": "Reconnecting... waiting for network (Connection failed: error sending request)"
+        },
+        {
+          "type": "error",
+          "message": "Reconnecting... waiting for network (Connection failed: error sending request)"
+        },
+        {
+          "type": "error",
+          "message": "Reconnecting... waiting for network (Connection failed: error sending request)"
+        },
+        {
+          "type": "error",
+          "message": "Reconnecting... waiting for network (Connection failed: error sending request)"
+        },
+        {
+          "type": "error",
+          "message": "Reconnecting... waiting for network (Connection failed: error sending request)"
+        },
+        {
+          "type": "error",
+          "message": "Reconnecting... waiting for network (Connection failed: error sending request)"
+        },
+        {
+          "type": "error",
+          "message": "Reconnecting... waiting for network (Connection failed: error sending request)"
+        }
+      ],
+      "malformed_event_lines": []
+    }
+  ],
+  "tools_observed": 0,
+  "answer_keys_read": false,
+  "independent_session_per_group": true,
+  "independent_session_per_sample": false,
+  "temperature": null,
+  "temperature_note": "Not exposed/set by Codex CLI",
+  "system_prompt_note": "Codex base instructions retained; user config, project instructions, skills and plugins disabled",
+  "status": "failed",
+  "previous_execution_metadata_file": null,
+  "server_resolved_model": null,
+  "model_identity_note": "Model requested explicitly; server-resolved model identity is not provided by the CLI event stream"
+}

@@ -1,0 +1,6 @@
+contrast,dataset,a,b,repeat,primary,n_expected,unavailable_sessions,reason
+clean_method_comparison,cmapss,gpt-5.5/cmapss_clean_r1,gpt-5.6-sol/cmapss_clean_r1,1,True,60,"[""gpt-5.5/cmapss_clean_r1""]",gpt-5.5/cmapss_clean_r1: Incomplete prediction count
+clean_method_comparison,cmapss,gpt-5.5/cmapss_clean_r1,gpt-6-astra/cmapss_clean_r1,1,True,60,"[""gpt-5.5/cmapss_clean_r1""]",gpt-5.5/cmapss_clean_r1: Incomplete prediction count
+clean_method_comparison,cmapss,gpt-5.5/cmapss_clean_r1,RF/cmapss_clean,1,True,60,"[""gpt-5.5/cmapss_clean_r1""]",gpt-5.5/cmapss_clean_r1: Incomplete prediction count
+clean_method_comparison,cmapss,gpt-5.5/cmapss_clean_r1,SVM/cmapss_clean,1,True,60,"[""gpt-5.5/cmapss_clean_r1""]",gpt-5.5/cmapss_clean_r1: Incomplete prediction count
+clean_method_comparison,cmapss,gpt-5.5/cmapss_clean_r1,Majority/cmapss_clean,1,True,60,"[""gpt-5.5/cmapss_clean_r1""]",gpt-5.5/cmapss_clean_r1: Incomplete prediction count

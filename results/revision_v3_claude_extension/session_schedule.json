@@ -1,0 +1,341 @@
+{
+  "total_sessions": 18,
+  "schedule": [
+    {
+      "session_id": 1,
+      "model_alias": "sonnet",
+      "model_id_requested": "claude-sonnet-4-6",
+      "condition": "cmapss_clean",
+      "repeat": 1,
+      "group_name": "cmapss_clean_r1",
+      "n_samples": 60,
+      "valid_labels": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ],
+      "output_dir": "predictions/claude-sonnet-4-6/cmapss_clean_r1_results.json",
+      "status": "pending"
+    },
+    {
+      "session_id": 2,
+      "model_alias": "sonnet",
+      "model_id_requested": "claude-sonnet-4-6",
+      "condition": "cmapss_clean",
+      "repeat": 2,
+      "group_name": "cmapss_clean_r2",
+      "n_samples": 60,
+      "valid_labels": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ],
+      "output_dir": "predictions/claude-sonnet-4-6/cmapss_clean_r2_results.json",
+      "status": "pending"
+    },
+    {
+      "session_id": 3,
+      "model_alias": "sonnet",
+      "model_id_requested": "claude-sonnet-4-6",
+      "condition": "cmapss_clean",
+      "repeat": 3,
+      "group_name": "cmapss_clean_r3",
+      "n_samples": 60,
+      "valid_labels": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ],
+      "output_dir": "predictions/claude-sonnet-4-6/cmapss_clean_r3_results.json",
+      "status": "pending"
+    },
+    {
+      "session_id": 4,
+      "model_alias": "sonnet",
+      "model_id_requested": "claude-sonnet-4-6",
+      "condition": "tep_clean",
+      "repeat": 1,
+      "group_name": "tep_clean_r1",
+      "n_samples": 70,
+      "valid_labels": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ],
+      "output_dir": "predictions/claude-sonnet-4-6/tep_clean_r1_results.json",
+      "status": "pending"
+    },
+    {
+      "session_id": 5,
+      "model_alias": "sonnet",
+      "model_id_requested": "claude-sonnet-4-6",
+      "condition": "tep_clean",
+      "repeat": 2,
+      "group_name": "tep_clean_r2",
+      "n_samples": 70,
+      "valid_labels": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ],
+      "output_dir": "predictions/claude-sonnet-4-6/tep_clean_r2_results.json",
+      "status": "pending"
+    },
+    {
+      "session_id": 6,
+      "model_alias": "sonnet",
+      "model_id_requested": "claude-sonnet-4-6",
+      "condition": "tep_clean",
+      "repeat": 3,
+      "group_name": "tep_clean_r3",
+      "n_samples": 70,
+      "valid_labels": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ],
+      "output_dir": "predictions/claude-sonnet-4-6/tep_clean_r3_results.json",
+      "status": "pending"
+    },
+    {
+      "session_id": 7,
+      "model_alias": "sonnet",
+      "model_id_requested": "claude-sonnet-4-6",
+      "condition": "tep_misnamed",
+      "repeat": 1,
+      "group_name": "tep_misnamed_r1",
+      "n_samples": 70,
+      "valid_labels": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ],
+      "output_dir": "predictions/claude-sonnet-4-6/tep_misnamed_r1_results.json",
+      "status": "pending"
+    },
+    {
+      "session_id": 8,
+      "model_alias": "sonnet",
+      "model_id_requested": "claude-sonnet-4-6",
+      "condition": "tep_misnamed",
+      "repeat": 2,
+      "group_name": "tep_misnamed_r2",
+      "n_samples": 70,
+      "valid_labels": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ],
+      "output_dir": "predictions/claude-sonnet-4-6/tep_misnamed_r2_results.json",
+      "status": "pending"
+    },
+    {
+      "session_id": 9,
+      "model_alias": "sonnet",
+      "model_id_requested": "claude-sonnet-4-6",
+      "condition": "tep_misnamed",
+      "repeat": 3,
+      "group_name": "tep_misnamed_r3",
+      "n_samples": 70,
+      "valid_labels": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ],
+      "output_dir": "predictions/claude-sonnet-4-6/tep_misnamed_r3_results.json",
+      "status": "pending"
+    },
+    {
+      "session_id": 10,
+      "model_alias": "opus",
+      "model_id_requested": "claude-opus-4-6",
+      "condition": "cmapss_clean",
+      "repeat": 1,
+      "group_name": "cmapss_clean_r1",
+      "n_samples": 60,
+      "valid_labels": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ],
+      "output_dir": "predictions/claude-opus-4-6/cmapss_clean_r1_results.json",
+      "status": "pending"
+    },
+    {
+      "session_id": 11,
+      "model_alias": "opus",
+      "model_id_requested": "claude-opus-4-6",
+      "condition": "cmapss_clean",
+      "repeat": 2,
+      "group_name": "cmapss_clean_r2",
+      "n_samples": 60,
+      "valid_labels": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ],
+      "output_dir": "predictions/claude-opus-4-6/cmapss_clean_r2_results.json",
+      "status": "pending"
+    },
+    {
+      "session_id": 12,
+      "model_alias": "opus",
+      "model_id_requested": "claude-opus-4-6",
+      "condition": "cmapss_clean",
+      "repeat": 3,
+      "group_name": "cmapss_clean_r3",
+      "n_samples": 60,
+      "valid_labels": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ],
+      "output_dir": "predictions/claude-opus-4-6/cmapss_clean_r3_results.json",
+      "status": "pending"
+    },
+    {
+      "session_id": 13,
+      "model_alias": "opus",
+      "model_id_requested": "claude-opus-4-6",
+      "condition": "tep_clean",
+      "repeat": 1,
+      "group_name": "tep_clean_r1",
+      "n_samples": 70,
+      "valid_labels": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ],
+      "output_dir": "predictions/claude-opus-4-6/tep_clean_r1_results.json",
+      "status": "pending"
+    },
+    {
+      "session_id": 14,
+      "model_alias": "opus",
+      "model_id_requested": "claude-opus-4-6",
+      "condition": "tep_clean",
+      "repeat": 2,
+      "group_name": "tep_clean_r2",
+      "n_samples": 70,
+      "valid_labels": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ],
+      "output_dir": "predictions/claude-opus-4-6/tep_clean_r2_results.json",
+      "status": "pending"
+    },
+    {
+      "session_id": 15,
+      "model_alias": "opus",
+      "model_id_requested": "claude-opus-4-6",
+      "condition": "tep_clean",
+      "repeat": 3,
+      "group_name": "tep_clean_r3",
+      "n_samples": 70,
+      "valid_labels": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ],
+      "output_dir": "predictions/claude-opus-4-6/tep_clean_r3_results.json",
+      "status": "pending"
+    },
+    {
+      "session_id": 16,
+      "model_alias": "opus",
+      "model_id_requested": "claude-opus-4-6",
+      "condition": "tep_misnamed",
+      "repeat": 1,
+      "group_name": "tep_misnamed_r1",
+      "n_samples": 70,
+      "valid_labels": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ],
+      "output_dir": "predictions/claude-opus-4-6/tep_misnamed_r1_results.json",
+      "status": "pending"
+    },
+    {
+      "session_id": 17,
+      "model_alias": "opus",
+      "model_id_requested": "claude-opus-4-6",
+      "condition": "tep_misnamed",
+      "repeat": 2,
+      "group_name": "tep_misnamed_r2",
+      "n_samples": 70,
+      "valid_labels": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ],
+      "output_dir": "predictions/claude-opus-4-6/tep_misnamed_r2_results.json",
+      "status": "pending"
+    },
+    {
+      "session_id": 18,
+      "model_alias": "opus",
+      "model_id_requested": "claude-opus-4-6",
+      "condition": "tep_misnamed",
+      "repeat": 3,
+      "group_name": "tep_misnamed_r3",
+      "n_samples": 70,
+      "valid_labels": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ],
+      "output_dir": "predictions/claude-opus-4-6/tep_misnamed_r3_results.json",
+      "status": "pending"
+    }
+  ]
+}

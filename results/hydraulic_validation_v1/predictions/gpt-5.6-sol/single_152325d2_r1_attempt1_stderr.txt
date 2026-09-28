@@ -1,0 +1,5 @@
+2026-09-28T05:29:10.811365Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back
+2026-09-28T05:29:10.814852Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back
+2026-09-28T05:29:10.817671Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back
+2026-09-28T05:29:13.638637Z ERROR codex_models_manager::manager: failed to refresh available models: timeout waiting for child process to exit
+2026-09-28T05:29:31.139930Z  WARN codex_core::shell_snapshot: Failed to delete shell snapshot at AbsolutePathBuf("/Users/guoba/.codex/shell_snapshots/01a0e67d-0f6c-7bd2-9cbf-6e82bb221070.1790573350768528000.sh"): Os { code: 2, kind: NotFound, message: "No such file or directory" }

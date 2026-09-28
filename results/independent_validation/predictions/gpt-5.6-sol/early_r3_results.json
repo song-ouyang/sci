@@ -1,0 +1,282 @@
+[
+  {
+    "id": "d49b20fc",
+    "predicted": "Fault_7"
+  },
+  {
+    "id": "919581fc",
+    "predicted": "Fault_4"
+  },
+  {
+    "id": "5fcd48f8",
+    "predicted": "Fault_7"
+  },
+  {
+    "id": "96695180",
+    "predicted": "Fault_7"
+  },
+  {
+    "id": "f0ce80ef",
+    "predicted": "Fault_6"
+  },
+  {
+    "id": "6bc3694a",
+    "predicted": "Fault_1"
+  },
+  {
+    "id": "709ec86b",
+    "predicted": "Fault_6"
+  },
+  {
+    "id": "aceb255b",
+    "predicted": "Fault_6"
+  },
+  {
+    "id": "12455377",
+    "predicted": "Fault_13"
+  },
+  {
+    "id": "f6544e22",
+    "predicted": "Fault_7"
+  },
+  {
+    "id": "f2040828",
+    "predicted": "Normal"
+  },
+  {
+    "id": "5203f10a",
+    "predicted": "Normal"
+  },
+  {
+    "id": "edd3e35b",
+    "predicted": "Fault_1"
+  },
+  {
+    "id": "c7eac547",
+    "predicted": "Fault_1"
+  },
+  {
+    "id": "3539c3ca",
+    "predicted": "Fault_13"
+  },
+  {
+    "id": "d3347612",
+    "predicted": "Fault_1"
+  },
+  {
+    "id": "9b7baa9f",
+    "predicted": "Fault_2"
+  },
+  {
+    "id": "80ad19a9",
+    "predicted": "Fault_6"
+  },
+  {
+    "id": "b678b427",
+    "predicted": "Normal"
+  },
+  {
+    "id": "4246e049",
+    "predicted": "Fault_1"
+  },
+  {
+    "id": "1de8be4c",
+    "predicted": "Fault_7"
+  },
+  {
+    "id": "8a3f440b",
+    "predicted": "Fault_7"
+  },
+  {
+    "id": "eecfcb7f",
+    "predicted": "Fault_13"
+  },
+  {
+    "id": "0818820d",
+    "predicted": "Fault_1"
+  },
+  {
+    "id": "ce0aef05",
+    "predicted": "Fault_2"
+  },
+  {
+    "id": "148db95e",
+    "predicted": "Normal"
+  },
+  {
+    "id": "1af8102c",
+    "predicted": "Fault_4"
+  },
+  {
+    "id": "88fe416c",
+    "predicted": "Fault_13"
+  },
+  {
+    "id": "59348744",
+    "predicted": "Fault_2"
+  },
+  {
+    "id": "e7a9c25a",
+    "predicted": "Fault_13"
+  },
+  {
+    "id": "770865b0",
+    "predicted": "Fault_4"
+  },
+  {
+    "id": "ec25f411",
+    "predicted": "Normal"
+  },
+  {
+    "id": "ffcd8cb4",
+    "predicted": "Normal"
+  },
+  {
+    "id": "2bcd25cd",
+    "predicted": "Fault_4"
+  },
+  {
+    "id": "2bd61cbf",
+    "predicted": "Fault_4"
+  },
+  {
+    "id": "99077873",
+    "predicted": "Fault_13"
+  },
+  {
+    "id": "ed0240c8",
+    "predicted": "Fault_4"
+  },
+  {
+    "id": "cebccebe",
+    "predicted": "Fault_2"
+  },
+  {
+    "id": "589f9cf2",
+    "predicted": "Fault_6"
+  },
+  {
+    "id": "f568b25f",
+    "predicted": "Fault_4"
+  },
+  {
+    "id": "595b0902",
+    "predicted": "Fault_2"
+  },
+  {
+    "id": "30e244ef",
+    "predicted": "Fault_6"
+  },
+  {
+    "id": "7ac25a30",
+    "predicted": "Fault_4"
+  },
+  {
+    "id": "b89e4e6d",
+    "predicted": "Fault_4"
+  },
+  {
+    "id": "5fc86155",
+    "predicted": "Fault_7"
+  },
+  {
+    "id": "1c3e956b",
+    "predicted": "Fault_1"
+  },
+  {
+    "id": "963dc899",
+    "predicted": "Normal"
+  },
+  {
+    "id": "4ea1d9ed",
+    "predicted": "Fault_6"
+  },
+  {
+    "id": "f15c6e4c",
+    "predicted": "Fault_13"
+  },
+  {
+    "id": "40c7d5b6",
+    "predicted": "Normal"
+  },
+  {
+    "id": "0d56e124",
+    "predicted": "Fault_7"
+  },
+  {
+    "id": "6a727565",
+    "predicted": "Normal"
+  },
+  {
+    "id": "d2f6246e",
+    "predicted": "Fault_6"
+  },
+  {
+    "id": "a5a49802",
+    "predicted": "Normal"
+  },
+  {
+    "id": "304f9a3b",
+    "predicted": "Fault_1"
+  },
+  {
+    "id": "b8e6f1d6",
+    "predicted": "Fault_13"
+  },
+  {
+    "id": "93cee7f8",
+    "predicted": "Fault_1"
+  },
+  {
+    "id": "5fad1033",
+    "predicted": "Fault_7"
+  },
+  {
+    "id": "1b01ce3a",
+    "predicted": "Fault_2"
+  },
+  {
+    "id": "93077856",
+    "predicted": "Fault_7"
+  },
+  {
+    "id": "ae59adcd",
+    "predicted": "Fault_2"
+  },
+  {
+    "id": "468305b4",
+    "predicted": "Fault_2"
+  },
+  {
+    "id": "634bf6c2",
+    "predicted": "Fault_1"
+  },
+  {
+    "id": "aa292994",
+    "predicted": "Fault_2"
+  },
+  {
+    "id": "a55a603c",
+    "predicted": "Fault_13"
+  },
+  {
+    "id": "88159264",
+    "predicted": "Fault_6"
+  },
+  {
+    "id": "f142f84e",
+    "predicted": "Fault_4"
+  },
+  {
+    "id": "d230629c",
+    "predicted": "Fault_13"
+  },
+  {
+    "id": "d94166fa",
+    "predicted": "Fault_2"
+  },
+  {
+    "id": "6c4e5682",
+    "predicted": "Fault_6"
+  }
+]

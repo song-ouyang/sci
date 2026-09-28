@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "verified_archive_files": 2303,
+  "scientific_scores_identical_except_score_timestamps": {
+    "revision_v3": true,
+    "mechanism_extension": true,
+    "domestic_extension_v2": true,
+    "independent_validation": true
+  },
+  "tex_identical": {
+    "main.tex": true,
+    "main_inline.tex": true,
+    "main_compile.tex": true
+  },
+  "network_disabled_for_python_rebuild": true,
+  "tectonic_only_cached": true,
+  "isolated_tests_passed": 118,
+  "pdf_pages_pixel_identical": 29,
+  "overleaf_independently_compiled": true,
+  "local_pdf_sha256": "a1f547c2cdf509ee7e09ced7d620fd992541329388fbf4ae51ed2ddd6c278087",
+  "archive_sha256_at_check": "8885ffad473799e9d25961a6be435e2349e8013303fca183208c00f263da779e",
+  "workspace": "/var/folders/r7/ggshlc557f99yvjh6k6kv23h0000gn/T/sci-conversation-review-pf44gewu",
+  "model_calls": 0,
+  "packaging_note": "After this independent rebuild, final archives are regenerated only to include completed quality/reproduction records. Final archive delta is checked separately; scientific sources and PDF are unchanged."
+}

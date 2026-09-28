@@ -1,0 +1,55 @@
+{
+  "cmapss": {
+    "train_records": 500,
+    "test_records": 60,
+    "feature_count": 60,
+    "train_groups": 100,
+    "test_groups": 60,
+    "train_class_counts": {
+      "Degrading": 131,
+      "Critical": 107,
+      "Healthy": 262
+    },
+    "test_class_counts": {
+      "Critical": 20,
+      "Healthy": 20,
+      "Degrading": 20
+    },
+    "group_disjoint": true,
+    "finite_features": true,
+    "prompt_feature_equality": true,
+    "label_coverage": true,
+    "test_one_record_per_group": true,
+    "all_raw_windows_recomputed_exactly": true
+  },
+  "tep": {
+    "train_records": 2100,
+    "test_records": 70,
+    "feature_count": 52,
+    "train_groups": 100,
+    "test_groups": 70,
+    "train_class_counts": {
+      "Fault_7": 300,
+      "Fault_4": 300,
+      "Normal": 300,
+      "Fault_6": 300,
+      "Fault_13": 300,
+      "Fault_2": 300,
+      "Fault_1": 300
+    },
+    "test_class_counts": {
+      "Fault_4": 10,
+      "Fault_6": 10,
+      "Fault_2": 10,
+      "Fault_13": 10,
+      "Fault_1": 10,
+      "Fault_7": 10,
+      "Normal": 10
+    },
+    "group_disjoint": true,
+    "finite_features": true,
+    "prompt_feature_equality": true,
+    "label_coverage": true,
+    "test_one_record_per_group": true
+  }
+}

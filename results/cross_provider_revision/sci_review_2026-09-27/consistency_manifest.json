@@ -1,0 +1,1263 @@
+{
+  "schema_version": "1.0",
+  "numeric_facts": [
+    {
+      "fact_id": "N001",
+      "concept": "Original valid requests",
+      "section": "Methods",
+      "value": 26,
+      "unit": "requests",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": null,
+      "analysis_set": "original",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    {
+      "fact_id": "N002",
+      "concept": "Original valid requests",
+      "section": "Results",
+      "value": 26,
+      "unit": "requests",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": null,
+      "analysis_set": "original",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    {
+      "fact_id": "N003",
+      "concept": "Follow-up valid requests",
+      "section": "Methods",
+      "value": 84,
+      "unit": "requests",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": null,
+      "analysis_set": "mechanism",
+      "evidence_ids": [
+        "E002"
+      ]
+    },
+    {
+      "fact_id": "N004",
+      "concept": "Follow-up valid requests",
+      "section": "Results",
+      "value": 84,
+      "unit": "requests",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": null,
+      "analysis_set": "mechanism",
+      "evidence_ids": [
+        "E002"
+      ]
+    },
+    {
+      "fact_id": "N005",
+      "concept": "API valid requests",
+      "section": "Methods",
+      "value": 15,
+      "unit": "requests",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": null,
+      "analysis_set": "API v2",
+      "evidence_ids": [
+        "E003"
+      ]
+    },
+    {
+      "fact_id": "N006",
+      "concept": "API valid requests",
+      "section": "Results",
+      "value": 15,
+      "unit": "requests",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": null,
+      "analysis_set": "API v2",
+      "evidence_ids": [
+        "E003"
+      ]
+    },
+    {
+      "fact_id": "N007",
+      "concept": "Total valid requests",
+      "section": "Abstract",
+      "value": 209,
+      "unit": "requests",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": null,
+      "analysis_set": "four controlled stages",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E007"
+      ]
+    },
+    {
+      "fact_id": "N008",
+      "concept": "Total valid requests",
+      "section": "Methods",
+      "value": 209,
+      "unit": "requests",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": null,
+      "analysis_set": "four controlled stages",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E007"
+      ]
+    },
+    {
+      "fact_id": "N009",
+      "concept": "Total scheduled requests",
+      "section": "Abstract",
+      "value": 213,
+      "unit": "requests",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": null,
+      "analysis_set": "four controlled stages",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E007"
+      ]
+    },
+    {
+      "fact_id": "N010",
+      "concept": "Total scheduled requests",
+      "section": "Methods",
+      "value": 213,
+      "unit": "requests",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": null,
+      "analysis_set": "four controlled stages",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E007"
+      ]
+    },
+    {
+      "fact_id": "N011",
+      "concept": "Unique source units",
+      "section": "Abstract",
+      "value": 302,
+      "unit": "engines and runs",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": null,
+      "analysis_set": "four controlled stages",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E007"
+      ]
+    },
+    {
+      "fact_id": "N012",
+      "concept": "Unique source units",
+      "section": "Methods",
+      "value": 302,
+      "unit": "engines and runs",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": null,
+      "analysis_set": "four controlled stages",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E007"
+      ]
+    },
+    {
+      "fact_id": "N013",
+      "concept": "Eligible classifications",
+      "section": "Methods",
+      "value": 10188,
+      "unit": "labels",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": null,
+      "analysis_set": "four controlled stages",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E007"
+      ]
+    },
+    {
+      "fact_id": "N014",
+      "concept": "Eligible classifications",
+      "section": "Results",
+      "value": 10188,
+      "unit": "labels",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": null,
+      "analysis_set": "four controlled stages",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E007"
+      ]
+    },
+    {
+      "fact_id": "N015",
+      "concept": "gpt-5.5 primary mapping loss",
+      "section": "Abstract",
+      "value": 28.57142857142857,
+      "unit": "percentage_points",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": 70,
+      "analysis_set": "original TEP R1",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    {
+      "fact_id": "N016",
+      "concept": "gpt-5.5 primary mapping loss",
+      "section": "Results",
+      "value": 28.57142857142857,
+      "unit": "percentage_points",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": 70,
+      "analysis_set": "original TEP R1",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    {
+      "fact_id": "N017",
+      "concept": "gpt-5.5 primary mapping loss",
+      "section": "Conclusion",
+      "value": 28.57142857142857,
+      "unit": "percentage_points",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": 70,
+      "analysis_set": "original TEP R1",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    {
+      "fact_id": "N018",
+      "concept": "gpt-5.5 primary mapping flips",
+      "section": "Methods",
+      "value": 71.42857142857143,
+      "unit": "percent",
+      "numerator": 50,
+      "denominator": 70,
+      "sample_size": 70,
+      "analysis_set": "original TEP R1",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    {
+      "fact_id": "N019",
+      "concept": "gpt-5.5 primary mapping flips",
+      "section": "Results",
+      "value": 71.42857142857143,
+      "unit": "percent",
+      "numerator": 50,
+      "denominator": 70,
+      "sample_size": 70,
+      "analysis_set": "original TEP R1",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    {
+      "fact_id": "N020",
+      "concept": "gpt-5.6-sol primary mapping loss",
+      "section": "Abstract",
+      "value": 77.14285714285715,
+      "unit": "percentage_points",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": 70,
+      "analysis_set": "original TEP R1",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    {
+      "fact_id": "N021",
+      "concept": "gpt-5.6-sol primary mapping loss",
+      "section": "Results",
+      "value": 77.14285714285715,
+      "unit": "percentage_points",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": 70,
+      "analysis_set": "original TEP R1",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    {
+      "fact_id": "N022",
+      "concept": "gpt-5.6-sol primary mapping loss",
+      "section": "Conclusion",
+      "value": 77.14285714285715,
+      "unit": "percentage_points",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": 70,
+      "analysis_set": "original TEP R1",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    {
+      "fact_id": "N023",
+      "concept": "gpt-5.6-sol primary mapping flips",
+      "section": "Methods",
+      "value": 77.14285714285715,
+      "unit": "percent",
+      "numerator": 54,
+      "denominator": 70,
+      "sample_size": 70,
+      "analysis_set": "original TEP R1",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    {
+      "fact_id": "N024",
+      "concept": "gpt-5.6-sol primary mapping flips",
+      "section": "Results",
+      "value": 77.14285714285715,
+      "unit": "percent",
+      "numerator": 54,
+      "denominator": 70,
+      "sample_size": 70,
+      "analysis_set": "original TEP R1",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    {
+      "fact_id": "N025",
+      "concept": "gpt-6-astra primary mapping loss",
+      "section": "Abstract",
+      "value": 0.0,
+      "unit": "percentage_points",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": 70,
+      "analysis_set": "original TEP R1",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    {
+      "fact_id": "N026",
+      "concept": "gpt-6-astra primary mapping loss",
+      "section": "Results",
+      "value": 0.0,
+      "unit": "percentage_points",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": 70,
+      "analysis_set": "original TEP R1",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    {
+      "fact_id": "N027",
+      "concept": "gpt-6-astra primary mapping loss",
+      "section": "Conclusion",
+      "value": 0.0,
+      "unit": "percentage_points",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": 70,
+      "analysis_set": "original TEP R1",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    {
+      "fact_id": "N028",
+      "concept": "gpt-6-astra primary mapping flips",
+      "section": "Methods",
+      "value": 0.0,
+      "unit": "percent",
+      "numerator": 0,
+      "denominator": 70,
+      "sample_size": 70,
+      "analysis_set": "original TEP R1",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    {
+      "fact_id": "N029",
+      "concept": "gpt-6-astra primary mapping flips",
+      "section": "Results",
+      "value": 0.0,
+      "unit": "percent",
+      "numerator": 0,
+      "denominator": 70,
+      "sample_size": 70,
+      "analysis_set": "original TEP R1",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    {
+      "fact_id": "N030",
+      "concept": "Qwen primary mapping loss",
+      "section": "Abstract",
+      "value": 22.857142857142854,
+      "unit": "percentage_points",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": 70,
+      "analysis_set": "API TEP R1",
+      "evidence_ids": [
+        "E003"
+      ]
+    },
+    {
+      "fact_id": "N031",
+      "concept": "Qwen primary mapping loss",
+      "section": "Results",
+      "value": 22.857142857142854,
+      "unit": "percentage_points",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": 70,
+      "analysis_set": "API TEP R1",
+      "evidence_ids": [
+        "E003"
+      ]
+    },
+    {
+      "fact_id": "N032",
+      "concept": "deepseek-v4-pro corrupted TEP usable_correct",
+      "section": "Results",
+      "value": 11,
+      "unit": "classification slots",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": 70,
+      "analysis_set": "post_hoc_delivery",
+      "evidence_ids": [
+        "E006"
+      ]
+    },
+    {
+      "fact_id": "N033",
+      "concept": "deepseek-v4-pro corrupted TEP valid_slots",
+      "section": "Results",
+      "value": 70,
+      "unit": "classification slots",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": 70,
+      "analysis_set": "post_hoc_delivery",
+      "evidence_ids": [
+        "E006"
+      ]
+    },
+    {
+      "fact_id": "N034",
+      "concept": "deepseek-v4-pro corrupted TEP scheduled_slots",
+      "section": "Results",
+      "value": 210,
+      "unit": "classification slots",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": 70,
+      "analysis_set": "post_hoc_delivery",
+      "evidence_ids": [
+        "E006"
+      ]
+    },
+    {
+      "fact_id": "N035",
+      "concept": "deepseek-v4-pro corrupted TEP conditional_accuracy",
+      "section": "Results",
+      "value": 0.15714285714285714,
+      "unit": "fraction",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": 70,
+      "analysis_set": "post_hoc_delivery",
+      "evidence_ids": [
+        "E006"
+      ]
+    },
+    {
+      "fact_id": "N036",
+      "concept": "deepseek-v4-pro corrupted TEP usable_correct_fraction",
+      "section": "Results",
+      "value": 0.05238095238095238,
+      "unit": "fraction",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": 70,
+      "analysis_set": "post_hoc_delivery",
+      "evidence_ids": [
+        "E006"
+      ]
+    },
+    {
+      "fact_id": "N037",
+      "concept": "qwen3.8-max corrupted TEP usable_correct",
+      "section": "Results",
+      "value": 40,
+      "unit": "classification slots",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": 70,
+      "analysis_set": "post_hoc_delivery",
+      "evidence_ids": [
+        "E006"
+      ]
+    },
+    {
+      "fact_id": "N038",
+      "concept": "qwen3.8-max corrupted TEP valid_slots",
+      "section": "Results",
+      "value": 140,
+      "unit": "classification slots",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": 70,
+      "analysis_set": "post_hoc_delivery",
+      "evidence_ids": [
+        "E006"
+      ]
+    },
+    {
+      "fact_id": "N039",
+      "concept": "qwen3.8-max corrupted TEP scheduled_slots",
+      "section": "Results",
+      "value": 210,
+      "unit": "classification slots",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": 70,
+      "analysis_set": "post_hoc_delivery",
+      "evidence_ids": [
+        "E006"
+      ]
+    },
+    {
+      "fact_id": "N040",
+      "concept": "qwen3.8-max corrupted TEP conditional_accuracy",
+      "section": "Results",
+      "value": 0.2857142857142857,
+      "unit": "fraction",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": 70,
+      "analysis_set": "post_hoc_delivery",
+      "evidence_ids": [
+        "E006"
+      ]
+    },
+    {
+      "fact_id": "N041",
+      "concept": "qwen3.8-max corrupted TEP usable_correct_fraction",
+      "section": "Results",
+      "value": 0.19047619047619047,
+      "unit": "fraction",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": 70,
+      "analysis_set": "post_hoc_delivery",
+      "evidence_ids": [
+        "E006"
+      ]
+    },
+    {
+      "unit": "sources",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": null,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N042",
+      "concept": "New source units",
+      "value": 172,
+      "section": "Methods"
+    },
+    {
+      "unit": "sources",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": null,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N043",
+      "concept": "New source units",
+      "value": 172,
+      "section": "Results"
+    },
+    {
+      "unit": "observations",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": null,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N044",
+      "concept": "New observation records",
+      "value": 242,
+      "section": "Methods"
+    },
+    {
+      "unit": "observations",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": null,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N045",
+      "concept": "New observation records",
+      "value": 242,
+      "section": "Results"
+    },
+    {
+      "unit": "requests",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": null,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N046",
+      "concept": "New scheduled requests",
+      "value": 84,
+      "section": "Methods"
+    },
+    {
+      "unit": "requests",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": null,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N047",
+      "concept": "New scheduled requests",
+      "value": 84,
+      "section": "Results"
+    },
+    {
+      "unit": "requests",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": null,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N048",
+      "concept": "New valid requests",
+      "value": 84,
+      "section": "Methods"
+    },
+    {
+      "unit": "requests",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": null,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N049",
+      "concept": "New valid requests",
+      "value": 84,
+      "section": "Results"
+    },
+    {
+      "unit": "labels",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": null,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N050",
+      "concept": "New valid labels",
+      "value": 4854,
+      "section": "Methods"
+    },
+    {
+      "unit": "labels",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": null,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N051",
+      "concept": "New valid labels",
+      "value": 4854,
+      "section": "Results"
+    },
+    {
+      "unit": "observations",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": null,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N052",
+      "concept": "New focal sample count",
+      "value": 21,
+      "section": "Methods"
+    },
+    {
+      "unit": "observations",
+      "numerator": null,
+      "denominator": null,
+      "sample_size": null,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N053",
+      "concept": "New focal sample count",
+      "value": 21,
+      "section": "Results"
+    },
+    {
+      "unit": "proportion",
+      "numerator": 18,
+      "denominator": 42,
+      "sample_size": 42,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N054",
+      "concept": "gpt-5.6-sol b_back primary accuracy",
+      "value": 0.42857142857142855,
+      "section": "Results"
+    },
+    {
+      "unit": "proportion",
+      "numerator": 44,
+      "denominator": 70,
+      "sample_size": 70,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N055",
+      "concept": "gpt-5.6-sol random_3 primary accuracy",
+      "value": 0.6285714285714286,
+      "section": "Results"
+    },
+    {
+      "unit": "proportion",
+      "numerator": 20,
+      "denominator": 21,
+      "sample_size": 21,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N056",
+      "concept": "gpt-6-astra focal_only primary accuracy",
+      "value": 0.9523809523809523,
+      "section": "Results"
+    },
+    {
+      "unit": "proportion",
+      "numerator": 42,
+      "denominator": 42,
+      "sample_size": 42,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N057",
+      "concept": "gpt-6-astra a_front primary accuracy",
+      "value": 1.0,
+      "section": "Results"
+    },
+    {
+      "unit": "proportion",
+      "numerator": 42,
+      "denominator": 42,
+      "sample_size": 42,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N058",
+      "concept": "gpt-5.6-sol a_back primary accuracy",
+      "value": 1.0,
+      "section": "Results"
+    },
+    {
+      "unit": "proportion",
+      "numerator": 70,
+      "denominator": 70,
+      "sample_size": 70,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N059",
+      "concept": "gpt-6-astra pair_shuffle primary accuracy",
+      "value": 1.0,
+      "section": "Results"
+    },
+    {
+      "unit": "proportion",
+      "numerator": 42,
+      "denominator": 42,
+      "sample_size": 42,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N060",
+      "concept": "gpt-6-astra b_front primary accuracy",
+      "value": 1.0,
+      "section": "Results"
+    },
+    {
+      "unit": "proportion",
+      "numerator": 70,
+      "denominator": 70,
+      "sample_size": 70,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N061",
+      "concept": "gpt-5.6-sol random_1 primary accuracy",
+      "value": 1.0,
+      "section": "Results"
+    },
+    {
+      "unit": "proportion",
+      "numerator": 69,
+      "denominator": 70,
+      "sample_size": 70,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N062",
+      "concept": "gpt-5.6-sol same_unit_swap primary accuracy",
+      "value": 0.9857142857142858,
+      "section": "Results"
+    },
+    {
+      "unit": "proportion",
+      "numerator": 70,
+      "denominator": 70,
+      "sample_size": 70,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N063",
+      "concept": "gpt-6-astra random_2 primary accuracy",
+      "value": 1.0,
+      "section": "Results"
+    },
+    {
+      "unit": "proportion",
+      "numerator": 42,
+      "denominator": 42,
+      "sample_size": 42,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N064",
+      "concept": "gpt-5.6-sol a_front primary accuracy",
+      "value": 1.0,
+      "section": "Results"
+    },
+    {
+      "unit": "proportion",
+      "numerator": 36,
+      "denominator": 60,
+      "sample_size": 60,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N065",
+      "concept": "gpt-5.6-sol fd002 primary accuracy",
+      "value": 0.6,
+      "section": "Results"
+    },
+    {
+      "unit": "proportion",
+      "numerator": 70,
+      "denominator": 70,
+      "sample_size": 70,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N066",
+      "concept": "gpt-6-astra clean primary accuracy",
+      "value": 1.0,
+      "section": "Results"
+    },
+    {
+      "unit": "proportion",
+      "numerator": 23,
+      "denominator": 70,
+      "sample_size": 70,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N067",
+      "concept": "gpt-5.6-sol rotation primary accuracy",
+      "value": 0.32857142857142857,
+      "section": "Results"
+    },
+    {
+      "unit": "proportion",
+      "numerator": 43,
+      "denominator": 60,
+      "sample_size": 60,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N068",
+      "concept": "gpt-6-astra fd002 primary accuracy",
+      "value": 0.7166666666666667,
+      "section": "Results"
+    },
+    {
+      "unit": "proportion",
+      "numerator": 42,
+      "denominator": 42,
+      "sample_size": 42,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N069",
+      "concept": "gpt-5.6-sol b_front primary accuracy",
+      "value": 1.0,
+      "section": "Results"
+    },
+    {
+      "unit": "proportion",
+      "numerator": 21,
+      "denominator": 21,
+      "sample_size": 21,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N070",
+      "concept": "gpt-5.6-sol focal_only primary accuracy",
+      "value": 1.0,
+      "section": "Results"
+    },
+    {
+      "unit": "proportion",
+      "numerator": 62,
+      "denominator": 70,
+      "sample_size": 70,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N071",
+      "concept": "gpt-6-astra early primary accuracy",
+      "value": 0.8857142857142857,
+      "section": "Results"
+    },
+    {
+      "unit": "proportion",
+      "numerator": 70,
+      "denominator": 70,
+      "sample_size": 70,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N072",
+      "concept": "gpt-6-astra random_3 primary accuracy",
+      "value": 1.0,
+      "section": "Results"
+    },
+    {
+      "unit": "proportion",
+      "numerator": 70,
+      "denominator": 70,
+      "sample_size": 70,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N073",
+      "concept": "gpt-6-astra same_unit_swap primary accuracy",
+      "value": 1.0,
+      "section": "Results"
+    },
+    {
+      "unit": "proportion",
+      "numerator": 42,
+      "denominator": 42,
+      "sample_size": 42,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N074",
+      "concept": "gpt-6-astra b_back primary accuracy",
+      "value": 1.0,
+      "section": "Results"
+    },
+    {
+      "unit": "proportion",
+      "numerator": 68,
+      "denominator": 70,
+      "sample_size": 70,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N075",
+      "concept": "gpt-5.6-sol random_2 primary accuracy",
+      "value": 0.9714285714285714,
+      "section": "Results"
+    },
+    {
+      "unit": "proportion",
+      "numerator": 70,
+      "denominator": 70,
+      "sample_size": 70,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N076",
+      "concept": "gpt-6-astra random_1 primary accuracy",
+      "value": 1.0,
+      "section": "Results"
+    },
+    {
+      "unit": "proportion",
+      "numerator": 70,
+      "denominator": 70,
+      "sample_size": 70,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N077",
+      "concept": "gpt-5.6-sol clean primary accuracy",
+      "value": 1.0,
+      "section": "Results"
+    },
+    {
+      "unit": "proportion",
+      "numerator": 41,
+      "denominator": 42,
+      "sample_size": 42,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N078",
+      "concept": "gpt-6-astra a_back primary accuracy",
+      "value": 0.9761904761904762,
+      "section": "Results"
+    },
+    {
+      "unit": "proportion",
+      "numerator": 70,
+      "denominator": 70,
+      "sample_size": 70,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N079",
+      "concept": "gpt-5.6-sol pair_shuffle primary accuracy",
+      "value": 1.0,
+      "section": "Results"
+    },
+    {
+      "unit": "proportion",
+      "numerator": 61,
+      "denominator": 70,
+      "sample_size": 70,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N080",
+      "concept": "gpt-5.6-sol early primary accuracy",
+      "value": 0.8714285714285714,
+      "section": "Results"
+    },
+    {
+      "unit": "proportion",
+      "numerator": 70,
+      "denominator": 70,
+      "sample_size": 70,
+      "analysis_set": "source-disjoint follow-up",
+      "evidence_ids": [
+        "E007"
+      ],
+      "fact_id": "N081",
+      "concept": "gpt-6-astra rotation primary accuracy",
+      "value": 1.0,
+      "section": "Results"
+    }
+  ],
+  "methods": [
+    {
+      "method_id": "M001",
+      "name": "Paired frozen-response descriptive comparison",
+      "analysis_intent": "descriptive",
+      "protocol_status": "amended_before_analysis",
+      "outcome_ids": [
+        "O001"
+      ]
+    },
+    {
+      "method_id": "M002",
+      "name": "Post-result representation and context probe",
+      "analysis_intent": "exploratory",
+      "protocol_status": "post_hoc",
+      "outcome_ids": [
+        "O002"
+      ]
+    },
+    {
+      "method_id": "M003",
+      "name": "Separately frozen cross-provider extension",
+      "analysis_intent": "exploratory",
+      "protocol_status": "post_hoc",
+      "outcome_ids": [
+        "O003"
+      ]
+    },
+    {
+      "method_id": "M004",
+      "name": "Source-disjoint follow-up specified before its own inference",
+      "analysis_intent": "exploratory",
+      "protocol_status": "post_hoc",
+      "outcome_ids": [
+        "O004"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "result_id": "R001",
+      "method_id": "M001",
+      "outcome_id": "O001",
+      "analysis_intent": "descriptive",
+      "sample_size": 130,
+      "evidence_ids": [
+        "E001"
+      ],
+      "reported_sections": [
+        "Methods",
+        "Results",
+        "Discussion"
+      ]
+    },
+    {
+      "result_id": "R002",
+      "method_id": "M002",
+      "outcome_id": "O002",
+      "analysis_intent": "exploratory",
+      "sample_size": 70,
+      "evidence_ids": [
+        "E002"
+      ],
+      "reported_sections": [
+        "Methods",
+        "Results",
+        "Discussion"
+      ]
+    },
+    {
+      "result_id": "R003",
+      "method_id": "M003",
+      "outcome_id": "O003",
+      "analysis_intent": "exploratory",
+      "sample_size": 130,
+      "evidence_ids": [
+        "E003"
+      ],
+      "reported_sections": [
+        "Methods",
+        "Results",
+        "Discussion"
+      ]
+    },
+    {
+      "result_id": "R004",
+      "method_id": "M004",
+      "outcome_id": "O004",
+      "analysis_intent": "exploratory",
+      "sample_size": 172,
+      "evidence_ids": [
+        "E007"
+      ],
+      "reported_sections": [
+        "Methods",
+        "Results",
+        "Discussion"
+      ]
+    }
+  ]
+}

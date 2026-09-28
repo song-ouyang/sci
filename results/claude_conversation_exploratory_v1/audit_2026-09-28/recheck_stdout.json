@@ -1,0 +1,248 @@
+{
+  "complete_arrays": 15,
+  "failed_artifacts": 3,
+  "scored_labels": 990,
+  "prompt_checks": [
+    {
+      "condition": "cmapss_clean",
+      "bytes": 218242,
+      "declared_hash_unspecified_algorithm": "8163840a7ad5a4fc431ce1d95ef761cd",
+      "current_sha256": "1f927abb09bbfe317ffe2f77621b421cf02d1c8bfedf0fab230477a0162c4814",
+      "current_md5": "8163840a7ad5a4fc431ce1d95ef761cd",
+      "declared_matches_sha256": false,
+      "declared_matches_md5": true
+    },
+    {
+      "condition": "tep_clean",
+      "bytes": 223740,
+      "declared_hash_unspecified_algorithm": "194714859be89cf7f86592a295d50e4f",
+      "current_sha256": "3b3bdaf51da410ede9ad453dc63e0bdd634b1612935e6d33c9bcff99500856ad",
+      "current_md5": "194714859be89cf7f86592a295d50e4f",
+      "declared_matches_sha256": false,
+      "declared_matches_md5": true
+    },
+    {
+      "condition": "tep_misnamed",
+      "bytes": 223740,
+      "declared_hash_unspecified_algorithm": "3d0b4d73e84bc53f6d84bcbbee3595dc",
+      "current_sha256": "a0dc583c59100af856f5b5a25d816d634b4dba96a8059a7c6ee3294d9265e19e",
+      "current_md5": "3d0b4d73e84bc53f6d84bcbbee3595dc",
+      "declared_matches_sha256": false,
+      "declared_matches_md5": true
+    }
+  ],
+  "aggregates": [
+    {
+      "model_alias": "sonnet",
+      "condition": "cmapss_clean",
+      "available_repeats": [
+        1,
+        2,
+        3
+      ],
+      "accuracy": {
+        "mean_pct": 63.33333333333333,
+        "sample_sd_pp": 6.666666666666668,
+        "n_available": 3,
+        "n_planned": 3,
+        "repeat_values_pct": [
+          63.33333333333333,
+          56.666666666666664,
+          70.0
+        ]
+      },
+      "macro_f1": {
+        "mean_pct": 63.468914398302644,
+        "sample_sd_pp": 7.105871072223299,
+        "n_available": 3,
+        "n_planned": 3,
+        "repeat_values_pct": [
+          63.371696504688835,
+          56.41215106732348,
+          70.62289562289563
+        ]
+      }
+    },
+    {
+      "model_alias": "sonnet",
+      "condition": "tep_clean",
+      "available_repeats": [
+        2,
+        3
+      ],
+      "accuracy": {
+        "mean_pct": 65.71428571428572,
+        "sample_sd_pp": 6.060915267313263,
+        "n_available": 2,
+        "n_planned": 3,
+        "repeat_values_pct": [
+          70.0,
+          61.42857142857143
+        ]
+      },
+      "macro_f1": {
+        "mean_pct": 62.490728732964754,
+        "sample_sd_pp": 10.619713269379835,
+        "n_available": 2,
+        "n_planned": 3,
+        "repeat_values_pct": [
+          70.0,
+          54.981457465929516
+        ]
+      }
+    },
+    {
+      "model_alias": "sonnet",
+      "condition": "tep_misnamed",
+      "available_repeats": [
+        1,
+        3
+      ],
+      "accuracy": {
+        "mean_pct": 16.428571428571427,
+        "sample_sd_pp": 1.0101525445522108,
+        "n_available": 2,
+        "n_planned": 3,
+        "repeat_values_pct": [
+          17.142857142857142,
+          15.714285714285714
+        ]
+      },
+      "macro_f1": {
+        "mean_pct": 9.85939202690238,
+        "sample_sd_pp": 2.646211151935361,
+        "n_available": 2,
+        "n_planned": 3,
+        "repeat_values_pct": [
+          11.730545876887339,
+          7.988238176917421
+        ]
+      }
+    },
+    {
+      "model_alias": "opus",
+      "condition": "cmapss_clean",
+      "available_repeats": [
+        1,
+        2,
+        3
+      ],
+      "accuracy": {
+        "mean_pct": 64.44444444444444,
+        "sample_sd_pp": 0.962250448649379,
+        "n_available": 3,
+        "n_planned": 3,
+        "repeat_values_pct": [
+          65.0,
+          63.33333333333333,
+          65.0
+        ]
+      },
+      "macro_f1": {
+        "mean_pct": 64.96518775817273,
+        "sample_sd_pp": 1.0318243738232509,
+        "n_available": 3,
+        "n_planned": 3,
+        "repeat_values_pct": [
+          66.03220149848558,
+          63.97258090227961,
+          64.890780873753
+        ]
+      }
+    },
+    {
+      "model_alias": "opus",
+      "condition": "tep_clean",
+      "available_repeats": [
+        1,
+        2,
+        3
+      ],
+      "accuracy": {
+        "mean_pct": 100.0,
+        "sample_sd_pp": 0.0,
+        "n_available": 3,
+        "n_planned": 3,
+        "repeat_values_pct": [
+          100.0,
+          100.0,
+          100.0
+        ]
+      },
+      "macro_f1": {
+        "mean_pct": 100.0,
+        "sample_sd_pp": 0.0,
+        "n_available": 3,
+        "n_planned": 3,
+        "repeat_values_pct": [
+          100.0,
+          100.0,
+          100.0
+        ]
+      }
+    },
+    {
+      "model_alias": "opus",
+      "condition": "tep_misnamed",
+      "available_repeats": [
+        1,
+        2
+      ],
+      "accuracy": {
+        "mean_pct": 100.0,
+        "sample_sd_pp": 0.0,
+        "n_available": 2,
+        "n_planned": 3,
+        "repeat_values_pct": [
+          100.0,
+          100.0
+        ]
+      },
+      "macro_f1": {
+        "mean_pct": 100.0,
+        "sample_sd_pp": 0.0,
+        "n_available": 2,
+        "n_planned": 3,
+        "repeat_values_pct": [
+          100.0,
+          100.0
+        ]
+      }
+    }
+  ],
+  "paired_summaries": {
+    "sonnet": {
+      "paired_repeats": [
+        3
+      ],
+      "clean_accuracy_mean_pct": 61.42857142857143,
+      "misnamed_accuracy_mean_pct": 15.714285714285714,
+      "accuracy_delta_misnamed_minus_clean_pp": -45.714285714285715,
+      "macro_f1_delta_misnamed_minus_clean_pp": -46.993219289012096,
+      "flip_counts": [
+        37
+      ],
+      "paired_cases_each_repeat": [
+        70
+      ]
+    },
+    "opus": {
+      "paired_repeats": [
+        1,
+        2
+      ],
+      "clean_accuracy_mean_pct": 100.0,
+      "misnamed_accuracy_mean_pct": 100.0,
+      "accuracy_delta_misnamed_minus_clean_pp": 0.0,
+      "macro_f1_delta_misnamed_minus_clean_pp": 0.0,
+      "flip_counts": [
+        0,
+        0
+      ],
+      "paired_cases_each_repeat": [
+        70,
+        70
+      ]
+    }
+  }
+}

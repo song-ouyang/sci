@@ -1,0 +1,2 @@
+model,group,dataset,condition,repeat,primary,status,reason,reproduced_validation_error,expected_n,actual_raw_count,session_id
+gpt-5.5,cmapss_clean_r1,cmapss,clean,1,True,invalid_response,Incomplete prediction count,Raw response: incomplete predictions,60,59,01a0de50-356c-7493-8f6d-3a13aa63bf68

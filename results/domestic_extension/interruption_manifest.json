@@ -1,0 +1,150 @@
+{
+  "recorded_at": "2026-09-27T06:46:48.121203+00:00",
+  "status": "stopped_due_to_budget_configuration",
+  "reason": "DeepSeek 16384-token combined budget repeatedly exhausted in reasoning; Qwen max_tokens capped final content only, leaving provider-default thinking budget. Stop spending under the misconfigured plan; preserve all outcomes. No answer keys were read.",
+  "answer_keys_read": false,
+  "outcomes": [
+    {
+      "provider": "deepseek",
+      "group": "tep_misnamed_r3",
+      "status": "invalid_response"
+    },
+    {
+      "provider": "deepseek",
+      "group": "cmapss_clean_r1",
+      "status": "invalid_response"
+    },
+    {
+      "provider": "deepseek",
+      "group": "tep_misnamed_r1",
+      "status": "invalid_response"
+    },
+    {
+      "provider": "deepseek",
+      "group": "cmapss_clean_r2",
+      "status": "invalid_response"
+    },
+    {
+      "provider": "deepseek",
+      "group": "tep_clean_r2",
+      "status": "interrupted_by_operator"
+    },
+    {
+      "provider": "deepseek",
+      "group": "tep_clean_r1",
+      "status": "not_attempted"
+    },
+    {
+      "provider": "deepseek",
+      "group": "cmapss_clean_r3",
+      "status": "not_attempted"
+    },
+    {
+      "provider": "deepseek",
+      "group": "tep_misnamed_r2",
+      "status": "not_attempted"
+    },
+    {
+      "provider": "deepseek",
+      "group": "tep_clean_r3",
+      "status": "not_attempted"
+    },
+    {
+      "provider": "qwen",
+      "group": "cmapss_clean_r1",
+      "status": "interrupted_by_operator"
+    },
+    {
+      "provider": "qwen",
+      "group": "tep_misnamed_r2",
+      "status": "not_attempted"
+    },
+    {
+      "provider": "qwen",
+      "group": "tep_misnamed_r3",
+      "status": "not_attempted"
+    },
+    {
+      "provider": "qwen",
+      "group": "tep_clean_r3",
+      "status": "not_attempted"
+    },
+    {
+      "provider": "qwen",
+      "group": "tep_clean_r2",
+      "status": "not_attempted"
+    },
+    {
+      "provider": "qwen",
+      "group": "cmapss_clean_r2",
+      "status": "not_attempted"
+    },
+    {
+      "provider": "qwen",
+      "group": "tep_misnamed_r1",
+      "status": "not_attempted"
+    },
+    {
+      "provider": "qwen",
+      "group": "tep_clean_r1",
+      "status": "not_attempted"
+    },
+    {
+      "provider": "qwen",
+      "group": "cmapss_clean_r3",
+      "status": "not_attempted"
+    }
+  ],
+  "files": {
+    "batches/cmapss_clean_r1.json": "4758c91d353663732e65664b537dd73513d44b794fd79036f8c2e7974c14e631",
+    "batches/cmapss_clean_r2.json": "4758c91d353663732e65664b537dd73513d44b794fd79036f8c2e7974c14e631",
+    "batches/cmapss_clean_r3.json": "4758c91d353663732e65664b537dd73513d44b794fd79036f8c2e7974c14e631",
+    "batches/tep_clean_r1.json": "fa389000912e4dfda85ef1c0f804394694ca55ddce0567854428abf1db3384d1",
+    "batches/tep_clean_r2.json": "fa389000912e4dfda85ef1c0f804394694ca55ddce0567854428abf1db3384d1",
+    "batches/tep_clean_r3.json": "fa389000912e4dfda85ef1c0f804394694ca55ddce0567854428abf1db3384d1",
+    "batches/tep_misnamed_r1.json": "24805ec6c11dd5e71c8232ae68c6df72081a3e9b4262e4219af6518685d96035",
+    "batches/tep_misnamed_r2.json": "24805ec6c11dd5e71c8232ae68c6df72081a3e9b4262e4219af6518685d96035",
+    "batches/tep_misnamed_r3.json": "24805ec6c11dd5e71c8232ae68c6df72081a3e9b4262e4219af6518685d96035",
+    "plan.json": "d0cea34687e9e94e2be15d5c9e1273038b557384e54f41feb7c329fc1e7bce68",
+    "plan.sha256": "7b9b7f04cd15098b40aacbb904753cca6035e0e3dfb95c28179fd36edb08384e",
+    "qwen_run.log": "7e2e2a484f56c25dba612c3f4a770a3746602f6c4a0ee411e4916bd014c90c5f",
+    "run.log": "3a413cfa1eae167965e6a380e55247cd6c428d9c92021b1b0bae9a0d32560e34",
+    "sessions/deepseek/cmapss_clean_r1/20260927T063536-deepseek-605ddfe99f00/batch.json": "4758c91d353663732e65664b537dd73513d44b794fd79036f8c2e7974c14e631",
+    "sessions/deepseek/cmapss_clean_r1/20260927T063536-deepseek-605ddfe99f00/metadata.json": "3a4e47f2c5b3f22d2535f93531d3017543f43ef9bb688027b55931548300ad0c",
+    "sessions/deepseek/cmapss_clean_r1/20260927T063536-deepseek-605ddfe99f00/request.json": "d972ab352c18e37f31783fd039eff2462c1eb6660703a34569ec5927a5bf6e62",
+    "sessions/deepseek/cmapss_clean_r1/20260927T063536-deepseek-605ddfe99f00/response.sse": "2a451118853d7491e78550f0d4dc34600b178a372ec46ba2634f75610f9c1da1",
+    "sessions/deepseek/cmapss_clean_r1/20260927T063536-deepseek-605ddfe99f00/sha256.json": "cf5b7a658dd665f7c9aa4d4b778fc7cbdbc8463269a73da37775aad389bc13e2",
+    "sessions/deepseek/cmapss_clean_r1/result.json": "4e425b50daa743a44ebabba9726aeaf22a90029171d009b268650a3d0ac626eb",
+    "sessions/deepseek/cmapss_clean_r2/20260927T064126-deepseek-6092b26f7771/batch.json": "4758c91d353663732e65664b537dd73513d44b794fd79036f8c2e7974c14e631",
+    "sessions/deepseek/cmapss_clean_r2/20260927T064126-deepseek-6092b26f7771/metadata.json": "3c004067231c0a6a7a1596a5a810d9f5af7a256be01ba3b55f0c0af5b95e6cb4",
+    "sessions/deepseek/cmapss_clean_r2/20260927T064126-deepseek-6092b26f7771/request.json": "d972ab352c18e37f31783fd039eff2462c1eb6660703a34569ec5927a5bf6e62",
+    "sessions/deepseek/cmapss_clean_r2/20260927T064126-deepseek-6092b26f7771/response.sse": "892364db93ed6b1ae7910bf423ddc4554a34ce41d173839e66d67ded03a3a972",
+    "sessions/deepseek/cmapss_clean_r2/20260927T064126-deepseek-6092b26f7771/sha256.json": "c8347ade0292079144faa9dfa706fdda010cafc84bfcd98cf0a579a6f76ad96d",
+    "sessions/deepseek/cmapss_clean_r2/result.json": "039010d00a00c88a15ff9f46848482ff764f11a5408273d0bc84c897729ea471",
+    "sessions/deepseek/tep_clean_r2/20260927T064408-deepseek-2e0435d8dec8/batch.json": "fa389000912e4dfda85ef1c0f804394694ca55ddce0567854428abf1db3384d1",
+    "sessions/deepseek/tep_clean_r2/20260927T064408-deepseek-2e0435d8dec8/metadata.json": "46a52916aa844620793759464e4882855152aaea7845737eb558d3a382c94acd",
+    "sessions/deepseek/tep_clean_r2/20260927T064408-deepseek-2e0435d8dec8/request.json": "77cd8de36d800e4b8df04ed531ff365a11c7261fdaf9c4a13fab88d2ac91e8fa",
+    "sessions/deepseek/tep_clean_r2/20260927T064408-deepseek-2e0435d8dec8/response.sse": "644173f1ea5a8b1520520337a5be6d64590559cfe0d6ac6da14435560c0dda4b",
+    "sessions/deepseek/tep_clean_r2/20260927T064408-deepseek-2e0435d8dec8/sha256.json": "fbb964b1bc072ae10aa9ab7d348d284f232f3da412b34ffc3d7a60fa3cc2a25e",
+    "sessions/deepseek/tep_misnamed_r1/20260927T063829-deepseek-99603c992e37/batch.json": "24805ec6c11dd5e71c8232ae68c6df72081a3e9b4262e4219af6518685d96035",
+    "sessions/deepseek/tep_misnamed_r1/20260927T063829-deepseek-99603c992e37/metadata.json": "ba1665fb4efb7707ee6cecfa68273cb9f8c834d42938bc86942bdc15ca12b49e",
+    "sessions/deepseek/tep_misnamed_r1/20260927T063829-deepseek-99603c992e37/request.json": "b3a9d56411ef5e395246d3ee57d6bf2929f9fea2242aa5a0be001cd5a5f3c488",
+    "sessions/deepseek/tep_misnamed_r1/20260927T063829-deepseek-99603c992e37/response.sse": "c54564f9b02ad8998f4ddaf8655bca3473b6dad722e5179f51c996af8de4a977",
+    "sessions/deepseek/tep_misnamed_r1/20260927T063829-deepseek-99603c992e37/sha256.json": "5e7986ee3b98bea116f57c3a854cc901bb7906b9a67a5193b76a75f837f2f3dc",
+    "sessions/deepseek/tep_misnamed_r1/result.json": "55c6bf484f7fcf8da7fc1239284bf7c15098b5b0307ca9c6274e7fae476be094",
+    "sessions/deepseek/tep_misnamed_r3/20260927T063222-deepseek-b7b5b8aa140f/batch.json": "24805ec6c11dd5e71c8232ae68c6df72081a3e9b4262e4219af6518685d96035",
+    "sessions/deepseek/tep_misnamed_r3/20260927T063222-deepseek-b7b5b8aa140f/metadata.json": "83c64cfa928bc4666501e73721e75c1ccf4c30b38f009cdf2d4fa285816421a8",
+    "sessions/deepseek/tep_misnamed_r3/20260927T063222-deepseek-b7b5b8aa140f/request.json": "b3a9d56411ef5e395246d3ee57d6bf2929f9fea2242aa5a0be001cd5a5f3c488",
+    "sessions/deepseek/tep_misnamed_r3/20260927T063222-deepseek-b7b5b8aa140f/response.sse": "d951aa18725c52f525a1719899dbb04caaeaed87f14efa19d468cbb89c619c70",
+    "sessions/deepseek/tep_misnamed_r3/20260927T063222-deepseek-b7b5b8aa140f/sha256.json": "969af837f3b9b6781c4bbab666413236df2a5e48eb2f47ef4387526c09c06f75",
+    "sessions/deepseek/tep_misnamed_r3/result.json": "b15ed6bff29f7a1ef8ce1fc5af9196f016690a032b00bcc4be24febdfb7adbe5",
+    "sessions/qwen/cmapss_clean_r1/20260927T063535-qwen-2f08513dcac9/batch.json": "4758c91d353663732e65664b537dd73513d44b794fd79036f8c2e7974c14e631",
+    "sessions/qwen/cmapss_clean_r1/20260927T063535-qwen-2f08513dcac9/metadata.json": "ce8afab85bf9e0f256c9cad997e524defd2dc76ae5f295408432b9f59491565a",
+    "sessions/qwen/cmapss_clean_r1/20260927T063535-qwen-2f08513dcac9/request.json": "3461fac59a9d0e0b0444d28252161967e4e73aaf60e11e422b2cbe51e7f2168c",
+    "sessions/qwen/cmapss_clean_r1/20260927T063535-qwen-2f08513dcac9/response.sse": "d22d2535d8558e5f615217fe60e183f1404e400ca648ed0cbe8bec5096f502f6",
+    "sessions/qwen/cmapss_clean_r1/20260927T063535-qwen-2f08513dcac9/sha256.json": "9e97fd958eed51a7304e6b1761feaf7afd76f4b420754b399e4ecb356f8c0ec3",
+    "source_snapshot/src/experiments/domestic_api.py": "a94483c028ef2aad2b37bf012ba0b5a4f191fb20b954d2097c02bcd0e5b1ffff",
+    "source_snapshot/src/experiments/run_domestic_extension.py": "cd4c49b953e349146fe0d6c62766f7fd83072efa12588e5274d46009e4610aba",
+    "source_snapshot/src/experiments/run_revision_v3.py": "02231b78a0ebb14066884418feaa8d82f3f6b2e3d8868815a4954e18bb0d7159"
+  }
+}

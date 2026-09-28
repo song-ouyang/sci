@@ -1,0 +1,338 @@
+[
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_single_04_r1"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_pair_shuffle_r1"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_rotation_r1"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_single_03_r2"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_anonymous_r3"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_sample_shuffle_r2"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_rotation_r2"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_single_06_r1"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_clean_r3"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_clean_r2"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_single_01_r2"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_single_01_r2"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_single_01_r3"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_anonymous_r3"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_pair_shuffle_r1"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_single_06_r2"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_sample_shuffle_r2"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_rotation_r2"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_rotation_r3"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_random_mapping_r1"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_single_05_r1"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_anonymous_r1"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_pair_shuffle_r3"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_single_05_r2"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_single_04_r3"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_single_05_r1"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_random_mapping_r3"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_anonymous_r2"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_subset_batch_r3"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_single_02_r3"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_subset_batch_r2"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_single_01_r1"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_anonymous_r1"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_pair_shuffle_r3"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_single_02_r2"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_clean_r3"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_single_01_r1"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_single_05_r3"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_single_03_r3"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_random_mapping_r3"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_single_04_r2"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_single_03_r3"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_single_07_r2"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_single_06_r3"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_pair_shuffle_r2"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_single_04_r3"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_single_06_r3"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_single_04_r2"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_sample_shuffle_r3"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_single_07_r1"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_single_03_r1"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_single_02_r1"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_anonymous_r2"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_single_03_r1"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_random_mapping_r1"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_single_04_r1"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_single_06_r2"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_pair_shuffle_r2"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_single_02_r1"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_clean_r1"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_subset_batch_r1"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_single_07_r3"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_single_05_r2"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_rotation_r1"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_single_07_r1"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_subset_batch_r3"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_random_mapping_r2"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_subset_batch_r2"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_single_07_r3"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_sample_shuffle_r3"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_single_02_r3"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_single_02_r2"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_single_06_r1"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_subset_batch_r1"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_clean_r2"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_random_mapping_r2"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_clean_r1"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_single_07_r2"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_sample_shuffle_r1"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_single_01_r3"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_single_05_r3"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_sample_shuffle_r1"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "tep_single_03_r2"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "tep_rotation_r3"
+  }
+]

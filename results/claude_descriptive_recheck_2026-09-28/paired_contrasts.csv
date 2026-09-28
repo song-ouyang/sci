@@ -1,0 +1,10 @@
+model_label_unverified,repeat,paired_n,flips,flip_pct,accuracy_clean_minus_misnamed_pp,macro_f1_clean_minus_misnamed_pp,eligible_for_primary_comparison
+claude-sonnet-4-6,1,70,40,57.14285714285714,12.857142857142861,15.966128258652015,False
+claude-sonnet-4-6,2,70,37,52.85714285714286,47.142857142857146,47.409733124018835,False
+claude-sonnet-4-6,3,70,38,54.285714285714285,40.0,35.396880159688514,False
+claude-opus-5-5,1,70,0,0.0,0.0,0.0,False
+claude-opus-5-5,2,70,0,0.0,0.0,0.0,False
+claude-opus-5-5,3,70,0,0.0,0.0,0.0,False
+claude-fable-5-1,1,70,6,8.571428571428571,8.571428571428575,8.658008658008665,False
+claude-fable-5-1,2,70,3,4.285714285714286,4.285714285714281,4.499981810906184,False
+claude-fable-5-1,3,70,0,0.0,0.0,0.0,False

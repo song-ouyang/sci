@@ -1,0 +1,27 @@
+{
+  "reviewed_at_utc": "2026-09-27T01:07:30.315649+00:00",
+  "pdf_pages": 15,
+  "pdf_sha256": "66847c91b189881bfb4a8bb6497889cbb0e41f2a16af729a2d1bb20286442751",
+  "figures": 5,
+  "tables": 7,
+  "synchronized_tex": true,
+  "both_tectonic_compiles_successful": true,
+  "offline_tectonic_compilation": true,
+  "overfull_underfull_or_undefined_reference_warnings": false,
+  "all_compilation_warnings": false,
+  "unresolved_placeholders_or_replacement_characters": false,
+  "visual_review": "Final 15-page PDF rendered at 100 dpi. Primary reviewer inspected pages 1-8; independent reviewer inspected pages 9-15. All five figures were additionally inspected as standalone renders. No clipping, overlap, unreadable labels, broken tables, or reference overflow observed.",
+  "independent_numerical_review": "Four figure-data CSVs, 107 rows, matched frozen metrics including intervals and N/A. All 32 available metric rows recomputed from sample exports; accuracy and macro F1 match.",
+  "automated_tests_reported_by_test_runner": 40,
+  "failure_handling": "27 terminal outcomes; 26 complete, 1 incomplete batch preserved as N/A; 1 recovered network reconnection retained.",
+  "case_export_counts": {
+    "tep_paired_rows": 630,
+    "clean_method_rows": 1560,
+    "unavailable_clean_rows": 60
+  },
+  "source_scores_unchanged_sha256": "10f745d19be562781f40ce5b98c957041109f51a214398ba0b947c3523e342bb",
+  "new_model_calls": 0,
+  "extracted_archive_reproduction": "Passed: all metric groups match after fresh extraction, scoring, export, figure generation and offline Tectonic compilation. Case CSVs and synchronized manuscript TeX are byte-identical; no raw-data downloads or model calls.",
+  "reproduction_details": "visual_polish_reproduction_check.json",
+  "release_status": "Local review package; public archive, persistent identifier, author details and release licensing remain unset."
+}

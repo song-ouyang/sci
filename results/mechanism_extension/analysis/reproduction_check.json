@@ -1,0 +1,20 @@
+{
+  "checked_at_utc": "2026-09-27T04:30:39.234363+00:00",
+  "tested_archive_sha256": "a6c82fcd5aae4eb77e4e70d8aed643ccc538ce764c1d2acf4d5b1a9e9bc5f888",
+  "offline_rebuild_exit_code": 0,
+  "no_inference_requested": true,
+  "no_dataset_downloads": true,
+  "only_cached_tex_resources": true,
+  "original_metrics_paired_contrasts_repeat_variability_equal": true,
+  "extension_metrics_paired_contrasts_coverage_equal": true,
+  "byte_identical_files": [
+    "paper/main.tex",
+    "paper/main_inline.tex",
+    "results/mechanism_extension/analysis/cases/predictions.csv",
+    "results/mechanism_extension/analysis/cases/paired_transitions.csv",
+    "results/mechanism_extension/analysis/context_figure_data.csv"
+  ],
+  "recompiled_pdf_exists": true,
+  "pdf_binary_identity_required": false,
+  "note": "PDF metadata timestamps can differ. Scientific scores, case CSVs, figure data and synchronized TeX were checked."
+}

@@ -1,0 +1,19 @@
+Classify each industrial sensor observation using only its own sensor values and the task definition. IDs are random bookkeeping identifiers, not diagnostic evidence. Do not infer a class balance or use neighboring observations to choose a label. Return only one JSON array in the exact input order, with one object per observation and exactly the keys id and predicted. Preserve each ID and use an exact case-sensitive label from valid_labels. No explanation or other fields.
+
+{
+  "valid_labels": [
+    "Normal",
+    "Fault_1",
+    "Fault_2",
+    "Fault_4",
+    "Fault_6",
+    "Fault_7",
+    "Fault_13"
+  ],
+  "samples": [
+    {
+      "id": "63de1630",
+      "prompt": "Classify this Tennessee Eastman chemical process snapshot using only the measured and manipulated process variables below. Choose exactly one label: Normal (no fault); Fault_1 (step change in A/C feed ratio, B composition constant, stream 4); Fault_2 (step change in B composition, A/C ratio constant, stream 4); Fault_4 (step change in reactor cooling water inlet temperature); Fault_6 (A feed loss, stream 1); Fault_7 (C header pressure loss, reduced availability in stream 4); Fault_13 (slow drift in reaction kinetics). Each following line names one process variable and its unit.\n\nxmeas_1 A feed, stream 1 (kscmh): 0.2036\nxmeas_2 D feed, stream 2 (kg/hr): 3711.8000\nxmeas_3 E feed, stream 3 (kg/hr): 4652.9000\nxmeas_4 A and C feed, stream 4 (kscmh): 9.6643\nxmeas_5 Recycle flow, stream 8 (kscmh): 27.2110\nxmeas_6 Reactor feed rate, stream 6 (kscmh): 42.4580\nxmeas_7 Reactor pressure (kPa gauge): 2692.3000\nxmeas_8 Reactor level (%): 75.0880\nxmeas_9 Reactor temperature (deg C): 120.4100\nxmeas_10 Purge rate, stream 9 (kscmh): 0.6856\nxmeas_11 Product separator temperature (deg C): 81.4710\nxmeas_12 Product separator level (%): 49.4870\nxmeas_13 Product separator pressure (kPa gauge): 2619.5000\nxmeas_14 Product separator underflow, stream 10 (m3/hr): 24.8070\nxmeas_15 Stripper level (%): 50.8840\nxmeas_16 Stripper pressure (kPa gauge): 3095.6000\nxmeas_17 Stripper underflow, stream 11 (m3/hr): 24.2870\nxmeas_18 Stripper temperature (deg C): 62.1080\nxmeas_19 Stripper steam flow (kg/hr): 105.7700\nxmeas_20 Compressor work (kW): 340.8600\nxmeas_21 Reactor cooling water outlet temperature (deg C): 94.4300\nxmeas_22 Separator cooling water outlet temperature (deg C): 79.0530\nxmeas_23 Component A, stream 6 (mol%): 32.2380\nxmeas_24 Component B, stream 6 (mol%): 8.9210\nxmeas_25 Component C, stream 6 (mol%): 26.8340\nxmeas_26 Component D, stream 6 (mol%): 6.9899\nxmeas_27 Component E, stream 6 (mol%): 18.3100\nxmeas_28 Component F, stream 6 (mol%): 1.0278\nxmeas_29 Component A, stream 9 (mol%): 32.6230\nxmeas_30 Component B, stream 9 (mol%): 13.7160\nxmeas_31 Component C, stream 9 (mol%): 24.7420\nxmeas_32 Component D, stream 9 (mol%): 1.3090\nxmeas_33 Component E, stream 9 (mol%): 18.6220\nxmeas_34 Component F, stream 9 (mol%): 1.3969\nxmeas_35 Component G, stream 9 (mol%): 5.1332\nxmeas_36 Component H, stream 9 (mol%): 2.4900\nxmeas_37 Component D, stream 11 (mol%): 0.0347\nxmeas_38 Component E, stream 11 (mol%): 0.8455\nxmeas_39 Component F, stream 11 (mol%): 0.0725\nxmeas_40 Component G, stream 11 (mol%): 53.3730\nxmeas_41 Component H, stream 11 (mol%): 43.3390\nxmv_1 D feed valve, stream 2 (%): 63.8040\nxmv_2 E feed valve, stream 3 (%): 56.2830\nxmv_3 A feed valve, stream 1 (%): 19.5650\nxmv_4 A and C feed valve, stream 4 (%): 62.7370\nxmv_5 Compressor recycle valve (%): 21.0120\nxmv_6 Purge valve, stream 9 (%): 82.2400\nxmv_7 Separator pot liquid valve, stream 10 (%): 36.5900\nxmv_8 Stripper liquid product valve, stream 11 (%): 48.5800\nxmv_9 Stripper steam valve (%): 19.5430\nxmv_10 Reactor cooling water valve (%): 42.0900\nxmv_11 Condenser cooling water valve (%): 13.6150"
+    }
+  ]
+}

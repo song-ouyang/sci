@@ -1,0 +1,19 @@
+session,model_alias,condition,repeat,status,failure_reason,registry_status,submitted_score_status,expected_n,n_scored,accuracy,macro_f1,eligible_for_controlled_primary
+sonnet/cmapss_clean_r1,sonnet,cmapss_clean,1,array_complete,,running,success,60,60,0.6333333333333333,0.6337169650468883,False
+sonnet/cmapss_clean_r2,sonnet,cmapss_clean,2,array_complete,,running,success,60,60,0.5666666666666667,0.5641215106732348,False
+sonnet/cmapss_clean_r3,sonnet,cmapss_clean,3,array_complete,,running,success,60,60,0.7,0.7062289562289562,False
+sonnet/tep_clean_r1,sonnet,tep_clean,1,failed_invalid_array,Record 16 ID differs from ordered input,running,success,70,0,,,False
+sonnet/tep_clean_r2,sonnet,tep_clean,2,array_complete,,running,success,70,70,0.7,0.7000000000000001,False
+sonnet/tep_clean_r3,sonnet,tep_clean,3,array_complete,,running,success,70,70,0.6142857142857143,0.5498145746592952,False
+sonnet/tep_misnamed_r1,sonnet,tep_misnamed,1,array_complete,,running,success,70,70,0.17142857142857143,0.1173054587688734,False
+sonnet/tep_misnamed_r2,sonnet,tep_misnamed,2,failed_off_task,off_task,running,not_run,70,0,,,False
+sonnet/tep_misnamed_r3,sonnet,tep_misnamed,3,array_complete,,running,success,70,70,0.15714285714285714,0.07988238176917421,False
+opus/cmapss_clean_r1,opus,cmapss_clean,1,array_complete,,running,success,60,60,0.65,0.6603220149848558,False
+opus/cmapss_clean_r2,opus,cmapss_clean,2,array_complete,,running,success,60,60,0.6333333333333333,0.6397258090227961,False
+opus/cmapss_clean_r3,opus,cmapss_clean,3,array_complete,,running,success,60,60,0.65,0.6489078087375301,False
+opus/tep_clean_r1,opus,tep_clean,1,array_complete,,running,success,70,70,1.0,1.0,False
+opus/tep_clean_r2,opus,tep_clean,2,array_complete,,running,success,70,70,1.0,1.0,False
+opus/tep_clean_r3,opus,tep_clean,3,array_complete,,running,success,70,70,1.0,1.0,False
+opus/tep_misnamed_r1,opus,tep_misnamed,1,array_complete,,running,success,70,70,1.0,1.0,False
+opus/tep_misnamed_r2,opus,tep_misnamed,2,array_complete,,running,success,70,70,1.0,1.0,False
+opus/tep_misnamed_r3,opus,tep_misnamed,3,failed_incomplete,69/70 stored records; entire batch N/A,running,not_run,70,0,,,False

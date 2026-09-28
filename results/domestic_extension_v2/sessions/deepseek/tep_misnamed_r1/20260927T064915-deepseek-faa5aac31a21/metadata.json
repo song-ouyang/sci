@@ -1,0 +1,17 @@
+{
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro",
+  "base_url": "https://api.deepseek.com",
+  "key_env": "DEEPSEEK_API_KEY",
+  "key_configured": true,
+  "started_at": "2026-09-27T06:49:15.044374+00:00",
+  "status": "invalid_response",
+  "timeout_seconds": 120,
+  "automatic_retries": 0,
+  "adapter_sha256": "477c2a51bfb447ba73d64ffb916d3e09362287b252c80af137323140a15a3f34",
+  "http_status": 200,
+  "request_id": null,
+  "error": "Incomplete response, truncation, or non-stop finish",
+  "finished_at": "2026-09-27T07:01:54.519790+00:00",
+  "elapsed_seconds": 759.796
+}

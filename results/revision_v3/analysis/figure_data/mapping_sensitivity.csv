@@ -1,0 +1,10 @@
+clean_metric_id,misnamed_metric_id,dataset,model,repeat,primary,n_groups,accuracy_difference_pp,paired_bootstrap95_low_pp,paired_bootstrap95_high_pp,flip_count,flip_rate_percent,flip_wilson95_low_percent,flip_wilson95_high_percent
+gpt-5.5/tep_clean_r1,gpt-5.5/tep_misnamed_r1,tep,gpt-5.5,1,True,70,28.57142857142857,11.428571428571432,45.714285714285715,50,71.42857142857143,59.94980341827974,80.67777962128025
+gpt-5.5/tep_clean_r2,gpt-5.5/tep_misnamed_r2,tep,gpt-5.5,2,False,70,40.0,27.142857142857146,51.42857142857144,31,44.285714285714285,33.24952890930533,55.916448946812004
+gpt-5.5/tep_clean_r3,gpt-5.5/tep_misnamed_r3,tep,gpt-5.5,3,False,70,27.142857142857142,15.714285714285714,38.57142857142858,35,50.0,38.59571764530239,61.404282354697614
+gpt-5.6-sol/tep_clean_r1,gpt-5.6-sol/tep_misnamed_r1,tep,gpt-5.6-sol,1,True,70,77.14285714285715,67.14285714285715,87.14285714285714,54,77.14285714285715,66.04966840601509,85.41193677742756
+gpt-5.6-sol/tep_clean_r2,gpt-5.6-sol/tep_misnamed_r2,tep,gpt-5.6-sol,2,False,70,51.42857142857142,38.57142857142858,64.28571428571428,58,82.85714285714286,72.38335196785457,89.91227535947075
+gpt-5.6-sol/tep_clean_r3,gpt-5.6-sol/tep_misnamed_r3,tep,gpt-5.6-sol,3,False,70,75.71428571428571,65.71428571428571,85.71428571428572,53,75.71428571428571,64.50496077036256,84.24813887710943
+gpt-6-astra/tep_clean_r1,gpt-6-astra/tep_misnamed_r1,tep,gpt-6-astra,1,True,70,0.0,0.0,0.0,0,0.0,0.0,5.202306241026692
+gpt-6-astra/tep_clean_r2,gpt-6-astra/tep_misnamed_r2,tep,gpt-6-astra,2,False,70,0.0,0.0,0.0,0,0.0,0.0,5.202306241026692
+gpt-6-astra/tep_clean_r3,gpt-6-astra/tep_misnamed_r3,tep,gpt-6-astra,3,False,70,0.0,0.0,0.0,0,0.0,0.0,5.202306241026692

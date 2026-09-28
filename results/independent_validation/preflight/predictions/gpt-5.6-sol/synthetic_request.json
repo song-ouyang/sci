@@ -1,0 +1,6 @@
+{
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "developer_instructions": "This is a text-only controlled classification experiment. Use only the supplied prompts and your existing knowledge. Do not use tools, inspect files, browse, delegate, or ask questions. Classify every sample from its own prompt. Do not infer labels from IDs, sample order, other samples, or an assumed class distribution. Return only the requested JSON array.",
+  "user_message": "Return only a JSON array of id and predicted for each sample.\n\n{\"valid_labels\": [\"Low\", \"High\"], \"samples\": [{\"id\": \"a138ca20\", \"prompt\": \"Return Low for the number 1 and High for the number 2. Number: 1\"}, {\"id\": \"bf06e891\", \"prompt\": \"Return Low for the number 1 and High for the number 2. Number: 2\"}]}"
+}

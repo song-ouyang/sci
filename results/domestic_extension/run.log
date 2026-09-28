@@ -1,0 +1,39 @@
+START deepseek tep_misnamed_r3
+deepseek tep_misnamed_r3: invalid_response
+START deepseek cmapss_clean_r1
+deepseek cmapss_clean_r1: invalid_response
+START deepseek tep_misnamed_r1
+deepseek tep_misnamed_r1: invalid_response
+START deepseek cmapss_clean_r2
+deepseek cmapss_clean_r2: invalid_response
+START deepseek tep_clean_r2
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/Users/guoba/work/sci-paper-llm-pdm/src/experiments/run_domestic_extension.py", line 159, in <module>
+    sys.exit(main())
+  File "/Users/guoba/work/sci-paper-llm-pdm/src/experiments/run_domestic_extension.py", line 153, in main
+    return run(args.output, args.provider)
+  File "/Users/guoba/work/sci-paper-llm-pdm/src/experiments/run_domestic_extension.py", line 128, in run
+    run_folder, metadata = api.run_batch(config, batch, folder, True, 16384, 120)
+  File "/Users/guoba/work/sci-paper-llm-pdm/src/experiments/domestic_api.py", line 226, in run_batch
+    for line in response:
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 657, in readline
+    return super().readline(limit)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 649, in peek
+    return self._peek_chunked(n)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 685, in _peek_chunked
+    chunk_left = self._get_chunk_left()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 556, in _get_chunk_left
+    chunk_left = self._read_next_chunk_size()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 516, in _read_next_chunk_size
+    line = self.fp.readline(_MAXLINE + 1)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt

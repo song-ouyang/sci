@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-09-27",
+  "verification": "assistant opened primary sources; human source verification pending",
+  "sources": [
+    {
+      "key": "qaid2024fdllm",
+      "url": "https://arxiv.org/abs/2412.01218",
+      "full_text": "https://arxiv.org/html/2412.01218v1"
+    },
+    {
+      "key": "kiangala2026verification",
+      "url": "https://link.springer.com/article/10.1007/s00170-026-19043-z",
+      "published": "2026-09-17"
+    },
+    {
+      "key": "zheng2024empirical",
+      "doi": "10.1016/j.ress.2024.110382",
+      "access": "full text unavailable in this check; narrowed claims"
+    }
+  ]
+}

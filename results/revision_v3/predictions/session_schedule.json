@@ -1,0 +1,35 @@
+{
+  "gpt-5.5": [
+    "tep_clean_r1",
+    "tep_misnamed_r1",
+    "cmapss_clean_r3",
+    "tep_clean_r3",
+    "tep_misnamed_r3",
+    "tep_clean_r2",
+    "tep_misnamed_r2",
+    "cmapss_clean_r1",
+    "cmapss_clean_r2"
+  ],
+  "gpt-5.6-sol": [
+    "tep_misnamed_r3",
+    "tep_misnamed_r1",
+    "cmapss_clean_r2",
+    "tep_clean_r2",
+    "tep_clean_r3",
+    "cmapss_clean_r1",
+    "cmapss_clean_r3",
+    "tep_misnamed_r2",
+    "tep_clean_r1"
+  ],
+  "gpt-6-astra": [
+    "tep_clean_r1",
+    "cmapss_clean_r3",
+    "tep_misnamed_r2",
+    "tep_misnamed_r1",
+    "cmapss_clean_r2",
+    "cmapss_clean_r1",
+    "tep_clean_r3",
+    "tep_clean_r2",
+    "tep_misnamed_r3"
+  ]
+}

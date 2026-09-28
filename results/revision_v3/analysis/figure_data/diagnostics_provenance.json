@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "experiment_version": "revision-v3",
+  "scores_sha256": "10f745d19be562781f40ce5b98c957041109f51a214398ba0b947c3523e342bb",
+  "datasets_sha256": "0097dbb21981968f9ad5b8c59670a07ce701edfecbe61b5108542f7f0638fd1d",
+  "script": "src/analysis/plot_revision_v3_diagnostics.py",
+  "script_sha256": "dbf43d900cadcbfbc5f482afb80c317fcdbcc0e787708367bef98e4cc5f6a07f",
+  "primary_repeat": 1,
+  "rates_unit": "percent",
+  "differences_unit": "percentage points",
+  "missing_values": "Empty CSV numeric cells and visible N/A; never replaced by zero or later sessions.",
+  "statistics": {
+    "bootstrap": {
+      "replicates": 10000,
+      "seed": 20260926
+    },
+    "alpha": 0.05,
+    "sampling_unit": "device/run group; exactly one test observation per group",
+    "accuracy_interval": "two-sided 95% Wilson score interval, z=1.959963984540054",
+    "macro_f1": "unweighted mean over all fixed valid labels; zero_division=0",
+    "bootstrap_interval": "unstratified paired group percentile interval; numpy linear quantiles",
+    "pairing": "The same group-index draws are reused for all methods, conditions and repeats of a dataset.",
+    "repeat_policy": "Repeat 1 is primary. Repeats 2/3 and min/max report session variation; no pooling as extra samples.",
+    "semantic_failure_policy": "Pre-score failure-reporting amendment: keep every planned terminal outcome; semantic failures have N/A classification metrics and no partial labels are scored. Never substitute a later repeat for primary repeat 1.",
+    "multiple_comparisons": "All prespecified pairs reported without significance selection; intervals are unadjusted descriptive intervals, not familywise tests.",
+    "ci_scope": "Descriptive 95% intervals conditional on the fixed selected devices/runs and observed grouped-session predictions. Resampling devices/runs does not rerun the model or capture dependence induced by a shared batch, model/session variability, selection bias, or benchmark contamination. They are not full independent-experiment intervals.",
+    "study_scope": "Exploratory convenience sample; no confirmatory power calculation or population representativeness claim.",
+    "precision_at_accuracy_half": {
+      "cmapss": {
+        "n": 60,
+        "wilson_half_width": 0.1226497575844423
+      },
+      "tep": {
+        "n": 70,
+        "wilson_half_width": 0.11404282354697612
+      }
+    }
+  },
+  "dependencies": {
+    "numpy": "2.5.3",
+    "matplotlib": "3.11.2"
+  },
+  "artifacts": {
+    "/Users/guoba/work/sci-paper-llm-pdm/results/revision_v3/analysis/figure_data/primary_accuracy.csv": "c1e39c56d025597452e907afc21d69572229ab90508374a609a0684f055f6cce",
+    "/Users/guoba/work/sci-paper-llm-pdm/paper/figures/revision_v3/primary_accuracy.pdf": "809b85d1c9f0ae620785705fbca62b1a8ac74bb5b81c217288683cf8675fb5ed",
+    "/Users/guoba/work/sci-paper-llm-pdm/paper/figures/revision_v3/primary_accuracy.png": "063c2b245f83e4764c8d04435014ba9976258a0bc602bb3f441e66061439109d",
+    "/Users/guoba/work/sci-paper-llm-pdm/results/revision_v3/analysis/figure_data/mapping_sensitivity.csv": "f13f017223c6b504c0bfa6ab4185dc66ab840b7e2145543d6108d07d19d44262",
+    "/Users/guoba/work/sci-paper-llm-pdm/paper/figures/revision_v3/mapping_sensitivity.pdf": "105766b71b27b641cc49e4fb87646d889fb0d237694c75e3f4c4539787add68b",
+    "/Users/guoba/work/sci-paper-llm-pdm/paper/figures/revision_v3/mapping_sensitivity.png": "1beea158bb6767cb61774c1fd48bf98c1d831d15420b72be7d487f7ec8286559",
+    "/Users/guoba/work/sci-paper-llm-pdm/results/revision_v3/analysis/figure_data/class_recall.csv": "3c7189569eca32a5f4dd6c24a4a2dd7f935e66b8add8aff9cffa0f63bde84fa3",
+    "/Users/guoba/work/sci-paper-llm-pdm/paper/figures/revision_v3/class_recall.pdf": "817ea36f86349e761fd7b108a443ec01c35872e3002998b75ba84112f89c8750",
+    "/Users/guoba/work/sci-paper-llm-pdm/paper/figures/revision_v3/class_recall.png": "6b7aa5215be1f87fd65692e5628873c025fd561b5df4351618e050444a166f62"
+  }
+}

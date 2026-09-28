@@ -1,0 +1,31 @@
+{
+  "protocol": "claude-extension-grouped-revision-v3",
+  "model_requested": "claude-fable-5-1",
+  "model_alias": "opus",
+  "transport": "claude-code-agent-tool",
+  "dataset": "cmapss",
+  "condition": "clean",
+  "repeat": 3,
+  "group_name": "cmapss_clean_r3",
+  "n_samples": 60,
+  "started_at": null,
+  "completed_at": "2026-09-27T10:28:13.462356+00:00",
+  "attempt": 1,
+  "status": "complete",
+  "validation_error": null,
+  "response_text_sha256": "404411e525975bb3ce20f8ae45bdf86f9fe3692d6f98835a837863e7a1b47f30",
+  "request_sha256": "768f5b356f24449fded8821035e1beadef8fc5c77010e44802c4c1e02a70b9c0",
+  "answer_keys_read": false,
+  "independent_session_per_group": true,
+  "independent_session_per_sample": false,
+  "metadata_unavailable": [
+    "token_usage",
+    "server_returned_model_id",
+    "stop_finish_reason",
+    "request_session_id",
+    "temperature"
+  ],
+  "metadata_unavailable_reason": "Claude CLI subprocess returns 'OAuth session expired'; Agent tool interface does not expose these fields.",
+  "prediction_sha256": "a62d5686e111775b4c5f841cb247b0b7a83210565ee486f2deacc8a99089c01e",
+  "n_predictions": 60
+}

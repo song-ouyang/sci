@@ -1,0 +1,1578 @@
+{
+  "cmapss": {
+    "RF": [
+      {
+        "id": "aba37dce",
+        "predicted": "Critical"
+      },
+      {
+        "id": "1804099c",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "984e6dea",
+        "predicted": "Critical"
+      },
+      {
+        "id": "de1e4dbf",
+        "predicted": "Critical"
+      },
+      {
+        "id": "4584e34a",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "506c9c25",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "aeef5bea",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "e0c73eee",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "6f17a820",
+        "predicted": "Critical"
+      },
+      {
+        "id": "37142aef",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "14c4ffc3",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "a2197468",
+        "predicted": "Critical"
+      },
+      {
+        "id": "2295f6d8",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "2ef6cc03",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "7df2dd39",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "5153d479",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "a8a2eaa6",
+        "predicted": "Critical"
+      },
+      {
+        "id": "abecfdb9",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "ceb9c3f8",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "3ac66b63",
+        "predicted": "Critical"
+      },
+      {
+        "id": "f081b2dc",
+        "predicted": "Critical"
+      },
+      {
+        "id": "06edc5b2",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "bc603b39",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "9ba5d0f0",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "194a9bbc",
+        "predicted": "Critical"
+      },
+      {
+        "id": "45237b03",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "78ddaf81",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "25dbe3a2",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "f3422e40",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "b5e841af",
+        "predicted": "Critical"
+      },
+      {
+        "id": "e5fdf5b5",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "7a35150e",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "b4e4b924",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "8e9ffdda",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "b5674ec8",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "4bf423db",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "ad5eb1e9",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "7d6a11a5",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "17318109",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "44034a41",
+        "predicted": "Critical"
+      },
+      {
+        "id": "6a5ed962",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "614198de",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "7e50d471",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "a1c1b46c",
+        "predicted": "Critical"
+      },
+      {
+        "id": "801ae061",
+        "predicted": "Critical"
+      },
+      {
+        "id": "08668196",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "f74b9668",
+        "predicted": "Critical"
+      },
+      {
+        "id": "df811662",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "7cac6468",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "be5bca97",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "3879e156",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "dc371299",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "421373d1",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "67e825b1",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "c93d3998",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "e2fb9d6b",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "6aa3ed57",
+        "predicted": "Critical"
+      },
+      {
+        "id": "e798d35c",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "6fd4ebe1",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "bcb242bf",
+        "predicted": "Healthy"
+      }
+    ],
+    "SVM": [
+      {
+        "id": "aba37dce",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "1804099c",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "984e6dea",
+        "predicted": "Critical"
+      },
+      {
+        "id": "de1e4dbf",
+        "predicted": "Critical"
+      },
+      {
+        "id": "4584e34a",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "506c9c25",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "aeef5bea",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "e0c73eee",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "6f17a820",
+        "predicted": "Critical"
+      },
+      {
+        "id": "37142aef",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "14c4ffc3",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "a2197468",
+        "predicted": "Critical"
+      },
+      {
+        "id": "2295f6d8",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "2ef6cc03",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "7df2dd39",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "5153d479",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "a8a2eaa6",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "abecfdb9",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "ceb9c3f8",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "3ac66b63",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "f081b2dc",
+        "predicted": "Critical"
+      },
+      {
+        "id": "06edc5b2",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "bc603b39",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "9ba5d0f0",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "194a9bbc",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "45237b03",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "78ddaf81",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "25dbe3a2",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "f3422e40",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "b5e841af",
+        "predicted": "Critical"
+      },
+      {
+        "id": "e5fdf5b5",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "7a35150e",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "b4e4b924",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "8e9ffdda",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "b5674ec8",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "4bf423db",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "ad5eb1e9",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "7d6a11a5",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "17318109",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "44034a41",
+        "predicted": "Critical"
+      },
+      {
+        "id": "6a5ed962",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "614198de",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "7e50d471",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "a1c1b46c",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "801ae061",
+        "predicted": "Critical"
+      },
+      {
+        "id": "08668196",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "f74b9668",
+        "predicted": "Critical"
+      },
+      {
+        "id": "df811662",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "7cac6468",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "be5bca97",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "3879e156",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "dc371299",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "421373d1",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "67e825b1",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "c93d3998",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "e2fb9d6b",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "6aa3ed57",
+        "predicted": "Critical"
+      },
+      {
+        "id": "e798d35c",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "6fd4ebe1",
+        "predicted": "Degrading"
+      },
+      {
+        "id": "bcb242bf",
+        "predicted": "Healthy"
+      }
+    ],
+    "Majority": [
+      {
+        "id": "aba37dce",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "1804099c",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "984e6dea",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "de1e4dbf",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "4584e34a",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "506c9c25",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "aeef5bea",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "e0c73eee",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "6f17a820",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "37142aef",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "14c4ffc3",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "a2197468",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "2295f6d8",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "2ef6cc03",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "7df2dd39",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "5153d479",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "a8a2eaa6",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "abecfdb9",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "ceb9c3f8",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "3ac66b63",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "f081b2dc",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "06edc5b2",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "bc603b39",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "9ba5d0f0",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "194a9bbc",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "45237b03",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "78ddaf81",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "25dbe3a2",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "f3422e40",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "b5e841af",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "e5fdf5b5",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "7a35150e",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "b4e4b924",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "8e9ffdda",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "b5674ec8",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "4bf423db",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "ad5eb1e9",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "7d6a11a5",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "17318109",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "44034a41",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "6a5ed962",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "614198de",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "7e50d471",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "a1c1b46c",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "801ae061",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "08668196",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "f74b9668",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "df811662",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "7cac6468",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "be5bca97",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "3879e156",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "dc371299",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "421373d1",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "67e825b1",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "c93d3998",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "e2fb9d6b",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "6aa3ed57",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "e798d35c",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "6fd4ebe1",
+        "predicted": "Healthy"
+      },
+      {
+        "id": "bcb242bf",
+        "predicted": "Healthy"
+      }
+    ]
+  },
+  "tep": {
+    "RF": [
+      {
+        "id": "fc25d475",
+        "predicted": "Fault_4"
+      },
+      {
+        "id": "6b376348",
+        "predicted": "Fault_6"
+      },
+      {
+        "id": "1c4a86f7",
+        "predicted": "Fault_2"
+      },
+      {
+        "id": "de51c122",
+        "predicted": "Fault_4"
+      },
+      {
+        "id": "b87e7ece",
+        "predicted": "Fault_2"
+      },
+      {
+        "id": "6bfb98fe",
+        "predicted": "Fault_13"
+      },
+      {
+        "id": "b1664c48",
+        "predicted": "Fault_13"
+      },
+      {
+        "id": "8ae04666",
+        "predicted": "Fault_6"
+      },
+      {
+        "id": "47204ce6",
+        "predicted": "Fault_4"
+      },
+      {
+        "id": "0f1837bb",
+        "predicted": "Fault_13"
+      },
+      {
+        "id": "54911496",
+        "predicted": "Fault_13"
+      },
+      {
+        "id": "62cc2351",
+        "predicted": "Fault_6"
+      },
+      {
+        "id": "8e4fc933",
+        "predicted": "Fault_6"
+      },
+      {
+        "id": "b22aabe3",
+        "predicted": "Fault_6"
+      },
+      {
+        "id": "4dd9bfe8",
+        "predicted": "Fault_1"
+      },
+      {
+        "id": "4639edda",
+        "predicted": "Fault_7"
+      },
+      {
+        "id": "1ea8463a",
+        "predicted": "Fault_1"
+      },
+      {
+        "id": "9e159cbe",
+        "predicted": "Fault_6"
+      },
+      {
+        "id": "b1d31908",
+        "predicted": "Fault_4"
+      },
+      {
+        "id": "31bc0dec",
+        "predicted": "Fault_13"
+      },
+      {
+        "id": "61c58736",
+        "predicted": "Fault_7"
+      },
+      {
+        "id": "7bc2bb92",
+        "predicted": "Fault_1"
+      },
+      {
+        "id": "491e79bf",
+        "predicted": "Normal"
+      },
+      {
+        "id": "f2a7e169",
+        "predicted": "Fault_13"
+      },
+      {
+        "id": "2e2679ba",
+        "predicted": "Fault_7"
+      },
+      {
+        "id": "90423123",
+        "predicted": "Fault_2"
+      },
+      {
+        "id": "d16ba193",
+        "predicted": "Fault_6"
+      },
+      {
+        "id": "4d070877",
+        "predicted": "Fault_7"
+      },
+      {
+        "id": "e432e5b5",
+        "predicted": "Fault_13"
+      },
+      {
+        "id": "2145be35",
+        "predicted": "Fault_4"
+      },
+      {
+        "id": "c5a862c8",
+        "predicted": "Fault_7"
+      },
+      {
+        "id": "425155df",
+        "predicted": "Fault_13"
+      },
+      {
+        "id": "2a4e7743",
+        "predicted": "Fault_4"
+      },
+      {
+        "id": "40e81b15",
+        "predicted": "Fault_6"
+      },
+      {
+        "id": "d4af99eb",
+        "predicted": "Normal"
+      },
+      {
+        "id": "6d2ac0b1",
+        "predicted": "Fault_1"
+      },
+      {
+        "id": "5bce5a71",
+        "predicted": "Fault_2"
+      },
+      {
+        "id": "375a2c2d",
+        "predicted": "Normal"
+      },
+      {
+        "id": "446806cd",
+        "predicted": "Fault_7"
+      },
+      {
+        "id": "ba92f7b1",
+        "predicted": "Normal"
+      },
+      {
+        "id": "c2f5938a",
+        "predicted": "Fault_1"
+      },
+      {
+        "id": "60c42dc4",
+        "predicted": "Fault_13"
+      },
+      {
+        "id": "27895193",
+        "predicted": "Fault_7"
+      },
+      {
+        "id": "ee569bff",
+        "predicted": "Normal"
+      },
+      {
+        "id": "d5a6ffcb",
+        "predicted": "Fault_7"
+      },
+      {
+        "id": "6712d908",
+        "predicted": "Fault_1"
+      },
+      {
+        "id": "187aa8b9",
+        "predicted": "Normal"
+      },
+      {
+        "id": "87176e4e",
+        "predicted": "Fault_2"
+      },
+      {
+        "id": "0f43e063",
+        "predicted": "Normal"
+      },
+      {
+        "id": "f9ec913d",
+        "predicted": "Normal"
+      },
+      {
+        "id": "79519dfa",
+        "predicted": "Fault_13"
+      },
+      {
+        "id": "66bc72f5",
+        "predicted": "Fault_4"
+      },
+      {
+        "id": "baf78951",
+        "predicted": "Normal"
+      },
+      {
+        "id": "a8bb9560",
+        "predicted": "Fault_4"
+      },
+      {
+        "id": "6d23f630",
+        "predicted": "Fault_2"
+      },
+      {
+        "id": "b52466d8",
+        "predicted": "Fault_2"
+      },
+      {
+        "id": "547a133e",
+        "predicted": "Fault_6"
+      },
+      {
+        "id": "e6259387",
+        "predicted": "Fault_1"
+      },
+      {
+        "id": "2defae3d",
+        "predicted": "Fault_7"
+      },
+      {
+        "id": "e6112a89",
+        "predicted": "Normal"
+      },
+      {
+        "id": "669cc2e6",
+        "predicted": "Fault_6"
+      },
+      {
+        "id": "3e11f61c",
+        "predicted": "Fault_4"
+      },
+      {
+        "id": "ca248911",
+        "predicted": "Fault_2"
+      },
+      {
+        "id": "d0ca9246",
+        "predicted": "Fault_1"
+      },
+      {
+        "id": "5d56b189",
+        "predicted": "Fault_2"
+      },
+      {
+        "id": "22e0b661",
+        "predicted": "Fault_1"
+      },
+      {
+        "id": "e955e06f",
+        "predicted": "Fault_4"
+      },
+      {
+        "id": "9eb37d64",
+        "predicted": "Fault_7"
+      },
+      {
+        "id": "a460673f",
+        "predicted": "Fault_1"
+      },
+      {
+        "id": "63de1630",
+        "predicted": "Fault_2"
+      }
+    ],
+    "SVM": [
+      {
+        "id": "fc25d475",
+        "predicted": "Fault_4"
+      },
+      {
+        "id": "6b376348",
+        "predicted": "Fault_6"
+      },
+      {
+        "id": "1c4a86f7",
+        "predicted": "Fault_2"
+      },
+      {
+        "id": "de51c122",
+        "predicted": "Fault_4"
+      },
+      {
+        "id": "b87e7ece",
+        "predicted": "Fault_2"
+      },
+      {
+        "id": "6bfb98fe",
+        "predicted": "Fault_13"
+      },
+      {
+        "id": "b1664c48",
+        "predicted": "Fault_13"
+      },
+      {
+        "id": "8ae04666",
+        "predicted": "Fault_6"
+      },
+      {
+        "id": "47204ce6",
+        "predicted": "Fault_4"
+      },
+      {
+        "id": "0f1837bb",
+        "predicted": "Fault_13"
+      },
+      {
+        "id": "54911496",
+        "predicted": "Fault_13"
+      },
+      {
+        "id": "62cc2351",
+        "predicted": "Fault_6"
+      },
+      {
+        "id": "8e4fc933",
+        "predicted": "Fault_6"
+      },
+      {
+        "id": "b22aabe3",
+        "predicted": "Fault_6"
+      },
+      {
+        "id": "4dd9bfe8",
+        "predicted": "Fault_1"
+      },
+      {
+        "id": "4639edda",
+        "predicted": "Fault_7"
+      },
+      {
+        "id": "1ea8463a",
+        "predicted": "Fault_1"
+      },
+      {
+        "id": "9e159cbe",
+        "predicted": "Fault_6"
+      },
+      {
+        "id": "b1d31908",
+        "predicted": "Fault_4"
+      },
+      {
+        "id": "31bc0dec",
+        "predicted": "Fault_13"
+      },
+      {
+        "id": "61c58736",
+        "predicted": "Fault_7"
+      },
+      {
+        "id": "7bc2bb92",
+        "predicted": "Fault_1"
+      },
+      {
+        "id": "491e79bf",
+        "predicted": "Normal"
+      },
+      {
+        "id": "f2a7e169",
+        "predicted": "Fault_13"
+      },
+      {
+        "id": "2e2679ba",
+        "predicted": "Fault_7"
+      },
+      {
+        "id": "90423123",
+        "predicted": "Fault_2"
+      },
+      {
+        "id": "d16ba193",
+        "predicted": "Fault_6"
+      },
+      {
+        "id": "4d070877",
+        "predicted": "Fault_7"
+      },
+      {
+        "id": "e432e5b5",
+        "predicted": "Fault_13"
+      },
+      {
+        "id": "2145be35",
+        "predicted": "Fault_4"
+      },
+      {
+        "id": "c5a862c8",
+        "predicted": "Fault_7"
+      },
+      {
+        "id": "425155df",
+        "predicted": "Fault_13"
+      },
+      {
+        "id": "2a4e7743",
+        "predicted": "Fault_4"
+      },
+      {
+        "id": "40e81b15",
+        "predicted": "Fault_6"
+      },
+      {
+        "id": "d4af99eb",
+        "predicted": "Normal"
+      },
+      {
+        "id": "6d2ac0b1",
+        "predicted": "Fault_1"
+      },
+      {
+        "id": "5bce5a71",
+        "predicted": "Fault_2"
+      },
+      {
+        "id": "375a2c2d",
+        "predicted": "Normal"
+      },
+      {
+        "id": "446806cd",
+        "predicted": "Fault_7"
+      },
+      {
+        "id": "ba92f7b1",
+        "predicted": "Normal"
+      },
+      {
+        "id": "c2f5938a",
+        "predicted": "Fault_1"
+      },
+      {
+        "id": "60c42dc4",
+        "predicted": "Fault_13"
+      },
+      {
+        "id": "27895193",
+        "predicted": "Fault_7"
+      },
+      {
+        "id": "ee569bff",
+        "predicted": "Normal"
+      },
+      {
+        "id": "d5a6ffcb",
+        "predicted": "Fault_7"
+      },
+      {
+        "id": "6712d908",
+        "predicted": "Fault_1"
+      },
+      {
+        "id": "187aa8b9",
+        "predicted": "Normal"
+      },
+      {
+        "id": "87176e4e",
+        "predicted": "Fault_2"
+      },
+      {
+        "id": "0f43e063",
+        "predicted": "Normal"
+      },
+      {
+        "id": "f9ec913d",
+        "predicted": "Normal"
+      },
+      {
+        "id": "79519dfa",
+        "predicted": "Fault_13"
+      },
+      {
+        "id": "66bc72f5",
+        "predicted": "Fault_4"
+      },
+      {
+        "id": "baf78951",
+        "predicted": "Normal"
+      },
+      {
+        "id": "a8bb9560",
+        "predicted": "Fault_4"
+      },
+      {
+        "id": "6d23f630",
+        "predicted": "Fault_2"
+      },
+      {
+        "id": "b52466d8",
+        "predicted": "Fault_2"
+      },
+      {
+        "id": "547a133e",
+        "predicted": "Fault_6"
+      },
+      {
+        "id": "e6259387",
+        "predicted": "Fault_1"
+      },
+      {
+        "id": "2defae3d",
+        "predicted": "Fault_7"
+      },
+      {
+        "id": "e6112a89",
+        "predicted": "Normal"
+      },
+      {
+        "id": "669cc2e6",
+        "predicted": "Fault_6"
+      },
+      {
+        "id": "3e11f61c",
+        "predicted": "Fault_4"
+      },
+      {
+        "id": "ca248911",
+        "predicted": "Fault_2"
+      },
+      {
+        "id": "d0ca9246",
+        "predicted": "Fault_1"
+      },
+      {
+        "id": "5d56b189",
+        "predicted": "Fault_2"
+      },
+      {
+        "id": "22e0b661",
+        "predicted": "Fault_1"
+      },
+      {
+        "id": "e955e06f",
+        "predicted": "Fault_4"
+      },
+      {
+        "id": "9eb37d64",
+        "predicted": "Fault_7"
+      },
+      {
+        "id": "a460673f",
+        "predicted": "Fault_1"
+      },
+      {
+        "id": "63de1630",
+        "predicted": "Fault_2"
+      }
+    ],
+    "Majority": [
+      {
+        "id": "fc25d475",
+        "predicted": "Normal"
+      },
+      {
+        "id": "6b376348",
+        "predicted": "Normal"
+      },
+      {
+        "id": "1c4a86f7",
+        "predicted": "Normal"
+      },
+      {
+        "id": "de51c122",
+        "predicted": "Normal"
+      },
+      {
+        "id": "b87e7ece",
+        "predicted": "Normal"
+      },
+      {
+        "id": "6bfb98fe",
+        "predicted": "Normal"
+      },
+      {
+        "id": "b1664c48",
+        "predicted": "Normal"
+      },
+      {
+        "id": "8ae04666",
+        "predicted": "Normal"
+      },
+      {
+        "id": "47204ce6",
+        "predicted": "Normal"
+      },
+      {
+        "id": "0f1837bb",
+        "predicted": "Normal"
+      },
+      {
+        "id": "54911496",
+        "predicted": "Normal"
+      },
+      {
+        "id": "62cc2351",
+        "predicted": "Normal"
+      },
+      {
+        "id": "8e4fc933",
+        "predicted": "Normal"
+      },
+      {
+        "id": "b22aabe3",
+        "predicted": "Normal"
+      },
+      {
+        "id": "4dd9bfe8",
+        "predicted": "Normal"
+      },
+      {
+        "id": "4639edda",
+        "predicted": "Normal"
+      },
+      {
+        "id": "1ea8463a",
+        "predicted": "Normal"
+      },
+      {
+        "id": "9e159cbe",
+        "predicted": "Normal"
+      },
+      {
+        "id": "b1d31908",
+        "predicted": "Normal"
+      },
+      {
+        "id": "31bc0dec",
+        "predicted": "Normal"
+      },
+      {
+        "id": "61c58736",
+        "predicted": "Normal"
+      },
+      {
+        "id": "7bc2bb92",
+        "predicted": "Normal"
+      },
+      {
+        "id": "491e79bf",
+        "predicted": "Normal"
+      },
+      {
+        "id": "f2a7e169",
+        "predicted": "Normal"
+      },
+      {
+        "id": "2e2679ba",
+        "predicted": "Normal"
+      },
+      {
+        "id": "90423123",
+        "predicted": "Normal"
+      },
+      {
+        "id": "d16ba193",
+        "predicted": "Normal"
+      },
+      {
+        "id": "4d070877",
+        "predicted": "Normal"
+      },
+      {
+        "id": "e432e5b5",
+        "predicted": "Normal"
+      },
+      {
+        "id": "2145be35",
+        "predicted": "Normal"
+      },
+      {
+        "id": "c5a862c8",
+        "predicted": "Normal"
+      },
+      {
+        "id": "425155df",
+        "predicted": "Normal"
+      },
+      {
+        "id": "2a4e7743",
+        "predicted": "Normal"
+      },
+      {
+        "id": "40e81b15",
+        "predicted": "Normal"
+      },
+      {
+        "id": "d4af99eb",
+        "predicted": "Normal"
+      },
+      {
+        "id": "6d2ac0b1",
+        "predicted": "Normal"
+      },
+      {
+        "id": "5bce5a71",
+        "predicted": "Normal"
+      },
+      {
+        "id": "375a2c2d",
+        "predicted": "Normal"
+      },
+      {
+        "id": "446806cd",
+        "predicted": "Normal"
+      },
+      {
+        "id": "ba92f7b1",
+        "predicted": "Normal"
+      },
+      {
+        "id": "c2f5938a",
+        "predicted": "Normal"
+      },
+      {
+        "id": "60c42dc4",
+        "predicted": "Normal"
+      },
+      {
+        "id": "27895193",
+        "predicted": "Normal"
+      },
+      {
+        "id": "ee569bff",
+        "predicted": "Normal"
+      },
+      {
+        "id": "d5a6ffcb",
+        "predicted": "Normal"
+      },
+      {
+        "id": "6712d908",
+        "predicted": "Normal"
+      },
+      {
+        "id": "187aa8b9",
+        "predicted": "Normal"
+      },
+      {
+        "id": "87176e4e",
+        "predicted": "Normal"
+      },
+      {
+        "id": "0f43e063",
+        "predicted": "Normal"
+      },
+      {
+        "id": "f9ec913d",
+        "predicted": "Normal"
+      },
+      {
+        "id": "79519dfa",
+        "predicted": "Normal"
+      },
+      {
+        "id": "66bc72f5",
+        "predicted": "Normal"
+      },
+      {
+        "id": "baf78951",
+        "predicted": "Normal"
+      },
+      {
+        "id": "a8bb9560",
+        "predicted": "Normal"
+      },
+      {
+        "id": "6d23f630",
+        "predicted": "Normal"
+      },
+      {
+        "id": "b52466d8",
+        "predicted": "Normal"
+      },
+      {
+        "id": "547a133e",
+        "predicted": "Normal"
+      },
+      {
+        "id": "e6259387",
+        "predicted": "Normal"
+      },
+      {
+        "id": "2defae3d",
+        "predicted": "Normal"
+      },
+      {
+        "id": "e6112a89",
+        "predicted": "Normal"
+      },
+      {
+        "id": "669cc2e6",
+        "predicted": "Normal"
+      },
+      {
+        "id": "3e11f61c",
+        "predicted": "Normal"
+      },
+      {
+        "id": "ca248911",
+        "predicted": "Normal"
+      },
+      {
+        "id": "d0ca9246",
+        "predicted": "Normal"
+      },
+      {
+        "id": "5d56b189",
+        "predicted": "Normal"
+      },
+      {
+        "id": "22e0b661",
+        "predicted": "Normal"
+      },
+      {
+        "id": "e955e06f",
+        "predicted": "Normal"
+      },
+      {
+        "id": "9eb37d64",
+        "predicted": "Normal"
+      },
+      {
+        "id": "a460673f",
+        "predicted": "Normal"
+      },
+      {
+        "id": "63de1630",
+        "predicted": "Normal"
+      }
+    ]
+  }
+}

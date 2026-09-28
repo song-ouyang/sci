@@ -1,0 +1,8 @@
+{
+  "results/revision_v3/analysis/scores.json": "10f745d19be562781f40ce5b98c957041109f51a214398ba0b947c3523e342bb",
+  "results/mechanism_extension/analysis/scores.json": "1bfafd7c82001a62920d3167a70f53fe111fb4565ecea288d0be7971cf84afec",
+  "results/domestic_extension_v2/analysis/scores.json": "426817973531343d8c007f06f86c478ce11c2820214aae19a5b2138abcb1942e",
+  "results/revision_v3/predictions/frozen_manifest.json": "fb5238702c25c8e1a34729433faca575ee5835523f1d20e6d817230009111a54",
+  "results/mechanism_extension/predictions/frozen_manifest.json": "ad6006c18b37c9ae7761fc8e74a319f80932f1c4a04fb9c9ab8c9182c0156b19",
+  "results/domestic_extension_v2/frozen_manifest.json": "1e01198839eb630d95752c6ee56f3a0eaeb68cb780bd2396fec0d124e0b67d88"
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "evidence_id": "E001",
+    "path": "results/revision_v3/analysis/scores.json",
+    "sha256": "10f745d19be562781f40ce5b98c957041109f51a214398ba0b947c3523e342bb",
+    "verification": "machine_checked_local_artifact; human approval pending"
+  },
+  {
+    "evidence_id": "E002",
+    "path": "results/mechanism_extension/analysis/scores.json",
+    "sha256": "1bfafd7c82001a62920d3167a70f53fe111fb4565ecea288d0be7971cf84afec",
+    "verification": "machine_checked_local_artifact; human approval pending"
+  },
+  {
+    "evidence_id": "E003",
+    "path": "results/domestic_extension_v2/analysis/scores.json",
+    "sha256": "426817973531343d8c007f06f86c478ce11c2820214aae19a5b2138abcb1942e",
+    "verification": "machine_checked_local_artifact; human approval pending"
+  },
+  {
+    "evidence_id": "E004",
+    "path": "results/revision_v3_claude_extension/audit/report.json",
+    "sha256": "b6f07ac66f9c170cf3ee11a3dc81d8e46570aa1e1a6f53bd94dc76b775a7825a",
+    "verification": "machine_checked_local_artifact; human approval pending"
+  },
+  {
+    "evidence_id": "E005",
+    "path": "results/claude_reported_summary_2026-09-27/artifact_checks.json",
+    "sha256": "ba7e21f2960eef1ae934add632e15f40a82ae220fa54214e0d88cbdd86e4b1e9",
+    "verification": "machine_checked_local_artifact; human approval pending"
+  },
+  {
+    "evidence_id": "E006",
+    "path": "results/cross_provider_revision/usable_predictions/summary.json",
+    "sha256": "e7a7519f9abde8ef08b01457402908e752ec1575665a915b298087cc2e8b155c",
+    "verification": "machine_checked_local_artifact; human approval pending"
+  },
+  {
+    "evidence_id": "E007",
+    "path": "results/independent_validation/analysis/scores.json",
+    "sha256": "98409ddff332ede3fc923a6fe20d00f5ae82c19a1d84df96a6bf3f2a9677ec41",
+    "verification": "machine_checked_local_artifact; human approval pending"
+  },
+  {
+    "evidence_id": "E008",
+    "path": "results/independent_validation/protocol.json",
+    "sha256": "4faf7317ad2b92a1599b892f9b68c1eca0427b5a764f8f8b030846efa20bd5c4",
+    "verification": "machine_checked_local_artifact; human approval pending"
+  },
+  {
+    "evidence_id": "E009",
+    "path": "results/independent_validation/analysis/independent_count_check.json",
+    "sha256": "2931c7b5d522bef92e6ff98c0d113f76c84e1c30313db84089c6a9b6b4163959",
+    "verification": "machine_checked_local_artifact; human approval pending"
+  }
+]

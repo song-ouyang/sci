@@ -1,0 +1,6 @@
+2026-09-26T15:16:27.235290Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back
+2026-09-26T15:16:27.238399Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back
+2026-09-26T15:16:27.241485Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back
+2026-09-26T15:16:27.244626Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back
+2026-09-26T15:16:27.275209Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back
+2026-09-26T15:16:32.225311Z ERROR codex_models_manager::manager: failed to refresh available models: timeout waiting for child process to exit

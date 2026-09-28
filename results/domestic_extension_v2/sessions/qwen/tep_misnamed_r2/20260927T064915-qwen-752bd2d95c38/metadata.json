@@ -1,0 +1,17 @@
+{
+  "provider": "qwen",
+  "model": "qwen3.8-max",
+  "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "key_env": "DASHSCOPE_API_KEY",
+  "key_configured": true,
+  "started_at": "2026-09-27T06:49:15.040724+00:00",
+  "status": "invalid_response",
+  "timeout_seconds": 120,
+  "automatic_retries": 0,
+  "adapter_sha256": "477c2a51bfb447ba73d64ffb916d3e09362287b252c80af137323140a15a3f34",
+  "http_status": 200,
+  "request_id": "41dbd2ca-d297-9878-8161-a208a841bae8",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "finished_at": "2026-09-27T06:54:06.918581+00:00",
+  "elapsed_seconds": 291.872
+}

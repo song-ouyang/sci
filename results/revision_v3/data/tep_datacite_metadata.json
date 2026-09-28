@@ -1,0 +1,904 @@
+{
+  "data": {
+    "id": "10.7910/dvn/6c3jr1",
+    "type": "dois",
+    "attributes": {
+      "doi": "10.7910/dvn/6c3jr1",
+      "prefix": "10.7910",
+      "suffix": "dvn/6c3jr1",
+      "identifiers": [],
+      "alternateIdentifiers": [],
+      "creators": [
+        {
+          "name": "Rieth, Cory A.",
+          "nameType": "Personal",
+          "givenName": "Cory A.",
+          "familyName": "Rieth",
+          "affiliation": [
+            "Pacific Science and Engineering Group, Inc"
+          ],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Amsel, Ben D.",
+          "nameType": "Personal",
+          "givenName": "Ben D.",
+          "familyName": "Amsel",
+          "affiliation": [
+            "Pacific Science and Engineering Group, Inc"
+          ],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Tran, Randy",
+          "nameType": "Personal",
+          "givenName": "Randy",
+          "familyName": "Tran",
+          "affiliation": [
+            "Pacific Science and Engineering Group, Inc"
+          ],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Cook, Maia B.",
+          "nameType": "Personal",
+          "givenName": "Maia B.",
+          "familyName": "Cook",
+          "affiliation": [
+            "Pacific Science and Engineering Group, Inc"
+          ],
+          "nameIdentifiers": []
+        }
+      ],
+      "titles": [
+        {
+          "title": "Additional Tennessee Eastman Process Simulation Data for Anomaly Detection Evaluation"
+        }
+      ],
+      "publisher": "Harvard Dataverse",
+      "container": {},
+      "publicationYear": 2017,
+      "subjects": [
+        {
+          "subject": "Computer and Information Science"
+        },
+        {
+          "subject": "Engineering"
+        },
+        {
+          "subject": "Social Sciences"
+        },
+        {
+          "subject": "Automation evaluation, Anomaly detection, Tennessee Eastman process simulation"
+        }
+      ],
+      "contributors": [
+        {
+          "name": "Rieth, Cory",
+          "nameType": "Personal",
+          "givenName": "Cory",
+          "familyName": "Rieth",
+          "affiliation": [
+            "Pacific Science and Engineering Group, Inc"
+          ],
+          "contributorType": "ContactPerson",
+          "nameIdentifiers": []
+        }
+      ],
+      "dates": [
+        {
+          "date": "2017-03-10",
+          "dateType": "Submitted"
+        },
+        {
+          "date": "2017-07-06",
+          "dateType": "Available"
+        },
+        {
+          "date": "2017",
+          "dateType": "Issued"
+        }
+      ],
+      "language": null,
+      "types": {
+        "ris": "DATA",
+        "bibtex": "misc",
+        "citeproc": "dataset",
+        "schemaOrg": "Dataset",
+        "resourceTypeGeneral": "Dataset"
+      },
+      "relatedIdentifiers": [
+        {
+          "relationType": "HasPart",
+          "relatedIdentifier": "10.7910/dvn/6c3jr1/q4nofd",
+          "relatedIdentifierType": "DOI"
+        },
+        {
+          "relationType": "HasPart",
+          "relatedIdentifier": "10.7910/dvn/6c3jr1/tmbuvj",
+          "relatedIdentifierType": "DOI"
+        },
+        {
+          "relationType": "HasPart",
+          "relatedIdentifier": "10.7910/dvn/6c3jr1/il0xp0",
+          "relatedIdentifierType": "DOI"
+        },
+        {
+          "relationType": "HasPart",
+          "relatedIdentifier": "10.7910/dvn/6c3jr1/6qowuu",
+          "relatedIdentifierType": "DOI"
+        }
+      ],
+      "relatedItems": [],
+      "sizes": [
+        "47327663",
+        "24678017",
+        "494063194",
+        "836882037"
+      ],
+      "formats": [
+        "application/x-rlang-transport",
+        "application/x-rlang-transport",
+        "application/x-rlang-transport",
+        "application/x-rlang-transport"
+      ],
+      "version": "1.0",
+      "rightsList": [
+        {
+          "rightsUri": "info:eu-repo/semantics/openAccess"
+        },
+        {
+          "rights": "Custom terms specific to this dataset",
+          "rightsUri": "https://dataverse.harvard.edu/api/datasets/:persistentId/versions/1.0/customlicense?persistentId=doi:10.7910/DVN/6C3JR1"
+        }
+      ],
+      "descriptions": [
+        {
+          "description": "&lt;h3&gt;User Agreement, Public Domain Dedication, and Disclaimer of Liability. &lt;/h3&gt;\r\n&lt;br&gt;&lt;br&gt;\r\nBy accessing or downloading the data or work provided here, you, the User, agree that you have read this agreement in full and agree to its terms.\r\n&lt;br&gt;&lt;br&gt;\r\nThe person who owns, created, or contributed a work to the data or work provided here dedicated the work to the public domain and has waived his or her rights to the work worldwide under copyright law. You can copy, modify, distribute, and perform the work, for any lawful purpose, without asking permission.\r\n&lt;br&gt;&lt;br&gt;\r\nIn no way are the patent or trademark rights of any person affected by this agreement, nor are the rights that any other person may have in the work or in how the work is used, such as publicity or privacy rights.\r\n&lt;br&gt;&lt;br&gt;\r\nPacific Science &amp; Engineering Group, Inc., its agents and assigns, make no warranties about the work and disclaim all liability for all uses of the work, to the fullest extent permitted by law.\r\n&lt;br&gt;&lt;br&gt;\r\nWhen you use or cite the work, you shall not imply endorsement by Pacific Science &amp; Engineering Group, Inc., its agents or assigns, or by another author or affirmer of the work.\r\n&lt;br&gt;&lt;br&gt;\r\nThis Agreement may be amended, and the use of the data or work shall be governed by the terms of the Agreement at the time that you access or download the data or work from this Website.\r\n\r\n&lt;h3&gt; Description &lt;/h3&gt;\r\n\r\n&lt;p&gt;This dataverse contains the data referenced in Rieth et al. (2017). Issues and Advances in Anomaly Detection Evaluation for Joint Human-Automated Systems. To be presented at Applied Human Factors and Ergonomics 2017.\r\n\r\n&lt;p&gt;Each .RData file is an external representation of an R dataframe that can be read into an R environment with the 'load' function. The variables loaded are named ‘fault_free_training’, ‘fault_free_testing’, ‘faulty_testing’, and ‘faulty_training’, corresponding to the RData files.\r\n\r\n&lt;p&gt;Each dataframe contains 55 columns:\r\n\r\n&lt;p&gt;Column 1 ('faultNumber') ranges from 1 to 20 in the “Faulty” datasets and represents the fault type in the TEP. The “FaultFree” datasets only contain fault 0 (i.e. normal operating conditions).\r\n\r\n&lt;p&gt;Column 2 ('simulationRun') ranges from 1 to 500 and represents a different random number generator state from which a full TEP dataset was generated (Note: the actual seeds used to generate training and testing datasets were non-overlapping).\r\n\r\n&lt;p&gt;Column 3 ('sample') ranges either from 1 to 500 (“Training” datasets) or 1 to 960 (“Testing” datasets). The TEP variables (columns 4 to 55) were sampled every 3 minutes for a total duration of 25 hours and 48 hours respectively. Note that the faults were introduced 1 and 8 hours into the Faulty Training and Faulty Testing datasets, respectively.\r\n\r\n&lt;p&gt;Columns 4 to 55 contain the process variables; the column names retain the original variable names.\r\n\r\n&lt;p&gt;Acknowledgments. This work was sponsored by the Office of Naval Research, Human &amp; Bioengineered Systems (ONR 341), program officer Dr. Jeffrey G. Morrison under contract N00014-15-C-5003. The views expressed are those of the authors and do not reflect the official policy or position of the Office of Naval Research, Department of Defense, or US Government.",
+          "descriptionType": "Abstract"
+        }
+      ],
+      "geoLocations": [],
+      "fundingReferences": [],
+      "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjUvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC43OTEwL0RWTi82QzNKUjE8L2lkZW50aWZpZXI+CiAgPGNyZWF0b3JzPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlJpZXRoLCBDb3J5IEEuPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5Db3J5IEEuPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlJpZXRoPC9mYW1pbHlOYW1lPgogICAgICA8YWZmaWxpYXRpb24+UGFjaWZpYyBTY2llbmNlIGFuZCBFbmdpbmVlcmluZyBHcm91cCwgSW5jPC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5BbXNlbCwgQmVuIEQuPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5CZW4gRC48L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+QW1zZWw8L2ZhbWlseU5hbWU+CiAgICAgIDxhZmZpbGlhdGlvbj5QYWNpZmljIFNjaWVuY2UgYW5kIEVuZ2luZWVyaW5nIEdyb3VwLCBJbmM8L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlRyYW4sIFJhbmR5PC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5SYW5keTwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5UcmFuPC9mYW1pbHlOYW1lPgogICAgICA8YWZmaWxpYXRpb24+UGFjaWZpYyBTY2llbmNlIGFuZCBFbmdpbmVlcmluZyBHcm91cCwgSW5jPC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5Db29rLCBNYWlhIEIuPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5NYWlhIEIuPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkNvb2s8L2ZhbWlseU5hbWU+CiAgICAgIDxhZmZpbGlhdGlvbj5QYWNpZmljIFNjaWVuY2UgYW5kIEVuZ2luZWVyaW5nIEdyb3VwLCBJbmM8L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5BZGRpdGlvbmFsIFRlbm5lc3NlZSBFYXN0bWFuIFByb2Nlc3MgU2ltdWxhdGlvbiBEYXRhIGZvciBBbm9tYWx5IERldGVjdGlvbiBFdmFsdWF0aW9uPC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPkhhcnZhcmQgRGF0YXZlcnNlPC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDE3PC9wdWJsaWNhdGlvblllYXI+CiAgPHN1YmplY3RzPgogICAgPHN1YmplY3Q+Q29tcHV0ZXIgYW5kIEluZm9ybWF0aW9uIFNjaWVuY2U8L3N1YmplY3Q+CiAgICA8c3ViamVjdD5FbmdpbmVlcmluZzwvc3ViamVjdD4KICAgIDxzdWJqZWN0PlNvY2lhbCBTY2llbmNlczwvc3ViamVjdD4KICAgIDxzdWJqZWN0PkF1dG9tYXRpb24gZXZhbHVhdGlvbiwgQW5vbWFseSBkZXRlY3Rpb24sIFRlbm5lc3NlZSBFYXN0bWFuIHByb2Nlc3Mgc2ltdWxhdGlvbjwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxjb250cmlidXRvcnM+CiAgICA8Y29udHJpYnV0b3IgY29udHJpYnV0b3JUeXBlPSJDb250YWN0UGVyc29uIj4KICAgICAgPGNvbnRyaWJ1dG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlJpZXRoLCBDb3J5PC9jb250cmlidXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+Q29yeTwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5SaWV0aDwvZmFtaWx5TmFtZT4KICAgICAgPGFmZmlsaWF0aW9uPlBhY2lmaWMgU2NpZW5jZSBhbmQgRW5naW5lZXJpbmcgR3JvdXAsIEluYzwvYWZmaWxpYXRpb24+CiAgICA8L2NvbnRyaWJ1dG9yPgogIDwvY29udHJpYnV0b3JzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJTdWJtaXR0ZWQiPjIwMTctMDMtMTA8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iQXZhaWxhYmxlIj4yMDE3LTA3LTA2PC9kYXRlPgogIDwvZGF0ZXM+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJEYXRhc2V0Ii8+CiAgPHJlbGF0ZWRJZGVudGlmaWVycz4KICAgIDxyZWxhdGVkSWRlbnRpZmllciByZWxhdGlvblR5cGU9Ikhhc1BhcnQiIHJlbGF0ZWRJZGVudGlmaWVyVHlwZT0iRE9JIj4xMC43OTEwL0RWTi82QzNKUjEvUTROT0ZEPC9yZWxhdGVkSWRlbnRpZmllcj4KICAgIDxyZWxhdGVkSWRlbnRpZmllciByZWxhdGlvblR5cGU9Ikhhc1BhcnQiIHJlbGF0ZWRJZGVudGlmaWVyVHlwZT0iRE9JIj4xMC43OTEwL0RWTi82QzNKUjEvVE1CVVZKPC9yZWxhdGVkSWRlbnRpZmllcj4KICAgIDxyZWxhdGVkSWRlbnRpZmllciByZWxhdGlvblR5cGU9Ikhhc1BhcnQiIHJlbGF0ZWRJZGVudGlmaWVyVHlwZT0iRE9JIj4xMC43OTEwL0RWTi82QzNKUjEvSUwwWFAwPC9yZWxhdGVkSWRlbnRpZmllcj4KICAgIDxyZWxhdGVkSWRlbnRpZmllciByZWxhdGlvblR5cGU9Ikhhc1BhcnQiIHJlbGF0ZWRJZGVudGlmaWVyVHlwZT0iRE9JIj4xMC43OTEwL0RWTi82QzNKUjEvNlFPV1VVPC9yZWxhdGVkSWRlbnRpZmllcj4KICA8L3JlbGF0ZWRJZGVudGlmaWVycz4KICA8c2l6ZXM+CiAgICA8c2l6ZT40NzMyNzY2Mzwvc2l6ZT4KICAgIDxzaXplPjI0Njc4MDE3PC9zaXplPgogICAgPHNpemU+NDk0MDYzMTk0PC9zaXplPgogICAgPHNpemU+ODM2ODgyMDM3PC9zaXplPgogIDwvc2l6ZXM+CiAgPGZvcm1hdHM+CiAgICA8Zm9ybWF0PmFwcGxpY2F0aW9uL3gtcmxhbmctdHJhbnNwb3J0PC9mb3JtYXQ+CiAgICA8Zm9ybWF0PmFwcGxpY2F0aW9uL3gtcmxhbmctdHJhbnNwb3J0PC9mb3JtYXQ+CiAgICA8Zm9ybWF0PmFwcGxpY2F0aW9uL3gtcmxhbmctdHJhbnNwb3J0PC9mb3JtYXQ+CiAgICA8Zm9ybWF0PmFwcGxpY2F0aW9uL3gtcmxhbmctdHJhbnNwb3J0PC9mb3JtYXQ+CiAgPC9mb3JtYXRzPgogIDx2ZXJzaW9uPjEuMDwvdmVyc2lvbj4KICA8cmlnaHRzTGlzdD4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJpbmZvOmV1LXJlcG8vc2VtYW50aWNzL29wZW5BY2Nlc3MiLz4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJodHRwczovL2RhdGF2ZXJzZS5oYXJ2YXJkLmVkdS9hcGkvZGF0YXNldHMvOnBlcnNpc3RlbnRJZC92ZXJzaW9ucy8xLjAvY3VzdG9tbGljZW5zZT9wZXJzaXN0ZW50SWQ9ZG9pOjEwLjc5MTAvRFZOLzZDM0pSMSI+Q3VzdG9tIHRlcm1zIHNwZWNpZmljIHRvIHRoaXMgZGF0YXNldDwvcmlnaHRzPgogIDwvcmlnaHRzTGlzdD4KICA8ZGVzY3JpcHRpb25zPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iQWJzdHJhY3QiPiZhbXA7bHQ7aDMmYW1wO2d0O1VzZXIgQWdyZWVtZW50LCBQdWJsaWMgRG9tYWluIERlZGljYXRpb24sIGFuZCBEaXNjbGFpbWVyIG9mIExpYWJpbGl0eS4gJmFtcDtsdDsvaDMmYW1wO2d0OyYjMTM7CiZhbXA7bHQ7YnImYW1wO2d0OyZhbXA7bHQ7YnImYW1wO2d0OyYjMTM7CkJ5IGFjY2Vzc2luZyBvciBkb3dubG9hZGluZyB0aGUgZGF0YSBvciB3b3JrIHByb3ZpZGVkIGhlcmUsIHlvdSwgdGhlIFVzZXIsIGFncmVlIHRoYXQgeW91IGhhdmUgcmVhZCB0aGlzIGFncmVlbWVudCBpbiBmdWxsIGFuZCBhZ3JlZSB0byBpdHMgdGVybXMuJiMxMzsKJmFtcDtsdDticiZhbXA7Z3Q7JmFtcDtsdDticiZhbXA7Z3Q7JiMxMzsKVGhlIHBlcnNvbiB3aG8gb3ducywgY3JlYXRlZCwgb3IgY29udHJpYnV0ZWQgYSB3b3JrIHRvIHRoZSBkYXRhIG9yIHdvcmsgcHJvdmlkZWQgaGVyZSBkZWRpY2F0ZWQgdGhlIHdvcmsgdG8gdGhlIHB1YmxpYyBkb21haW4gYW5kIGhhcyB3YWl2ZWQgaGlzIG9yIGhlciByaWdodHMgdG8gdGhlIHdvcmsgd29ybGR3aWRlIHVuZGVyIGNvcHlyaWdodCBsYXcuIFlvdSBjYW4gY29weSwgbW9kaWZ5LCBkaXN0cmlidXRlLCBhbmQgcGVyZm9ybSB0aGUgd29yaywgZm9yIGFueSBsYXdmdWwgcHVycG9zZSwgd2l0aG91dCBhc2tpbmcgcGVybWlzc2lvbi4mIzEzOwomYW1wO2x0O2JyJmFtcDtndDsmYW1wO2x0O2JyJmFtcDtndDsmIzEzOwpJbiBubyB3YXkgYXJlIHRoZSBwYXRlbnQgb3IgdHJhZGVtYXJrIHJpZ2h0cyBvZiBhbnkgcGVyc29uIGFmZmVjdGVkIGJ5IHRoaXMgYWdyZWVtZW50LCBub3IgYXJlIHRoZSByaWdodHMgdGhhdCBhbnkgb3RoZXIgcGVyc29uIG1heSBoYXZlIGluIHRoZSB3b3JrIG9yIGluIGhvdyB0aGUgd29yayBpcyB1c2VkLCBzdWNoIGFzIHB1YmxpY2l0eSBvciBwcml2YWN5IHJpZ2h0cy4mIzEzOwomYW1wO2x0O2JyJmFtcDtndDsmYW1wO2x0O2JyJmFtcDtndDsmIzEzOwpQYWNpZmljIFNjaWVuY2UgJmFtcDthbXA7IEVuZ2luZWVyaW5nIEdyb3VwLCBJbmMuLCBpdHMgYWdlbnRzIGFuZCBhc3NpZ25zLCBtYWtlIG5vIHdhcnJhbnRpZXMgYWJvdXQgdGhlIHdvcmsgYW5kIGRpc2NsYWltIGFsbCBsaWFiaWxpdHkgZm9yIGFsbCB1c2VzIG9mIHRoZSB3b3JrLCB0byB0aGUgZnVsbGVzdCBleHRlbnQgcGVybWl0dGVkIGJ5IGxhdy4mIzEzOwomYW1wO2x0O2JyJmFtcDtndDsmYW1wO2x0O2JyJmFtcDtndDsmIzEzOwpXaGVuIHlvdSB1c2Ugb3IgY2l0ZSB0aGUgd29yaywgeW91IHNoYWxsIG5vdCBpbXBseSBlbmRvcnNlbWVudCBieSBQYWNpZmljIFNjaWVuY2UgJmFtcDthbXA7IEVuZ2luZWVyaW5nIEdyb3VwLCBJbmMuLCBpdHMgYWdlbnRzIG9yIGFzc2lnbnMsIG9yIGJ5IGFub3RoZXIgYXV0aG9yIG9yIGFmZmlybWVyIG9mIHRoZSB3b3JrLiYjMTM7CiZhbXA7bHQ7YnImYW1wO2d0OyZhbXA7bHQ7YnImYW1wO2d0OyYjMTM7ClRoaXMgQWdyZWVtZW50IG1heSBiZSBhbWVuZGVkLCBhbmQgdGhlIHVzZSBvZiB0aGUgZGF0YSBvciB3b3JrIHNoYWxsIGJlIGdvdmVybmVkIGJ5IHRoZSB0ZXJtcyBvZiB0aGUgQWdyZWVtZW50IGF0IHRoZSB0aW1lIHRoYXQgeW91IGFjY2VzcyBvciBkb3dubG9hZCB0aGUgZGF0YSBvciB3b3JrIGZyb20gdGhpcyBXZWJzaXRlLiYjMTM7CiYjMTM7CiZhbXA7bHQ7aDMmYW1wO2d0OyBEZXNjcmlwdGlvbiAmYW1wO2x0Oy9oMyZhbXA7Z3Q7JiMxMzsKJiMxMzsKJmFtcDtsdDtwJmFtcDtndDtUaGlzIGRhdGF2ZXJzZSBjb250YWlucyB0aGUgZGF0YSByZWZlcmVuY2VkIGluIFJpZXRoIGV0IGFsLiAoMjAxNykuIElzc3VlcyBhbmQgQWR2YW5jZXMgaW4gQW5vbWFseSBEZXRlY3Rpb24gRXZhbHVhdGlvbiBmb3IgSm9pbnQgSHVtYW4tQXV0b21hdGVkIFN5c3RlbXMuIFRvIGJlIHByZXNlbnRlZCBhdCBBcHBsaWVkIEh1bWFuIEZhY3RvcnMgYW5kIEVyZ29ub21pY3MgMjAxNy4mIzEzOwomIzEzOwomYW1wO2x0O3AmYW1wO2d0O0VhY2ggLlJEYXRhIGZpbGUgaXMgYW4gZXh0ZXJuYWwgcmVwcmVzZW50YXRpb24gb2YgYW4gUiBkYXRhZnJhbWUgdGhhdCBjYW4gYmUgcmVhZCBpbnRvIGFuIFIgZW52aXJvbm1lbnQgd2l0aCB0aGUgJmFtcDthcG9zO2xvYWQmYW1wO2Fwb3M7IGZ1bmN0aW9uLiBUaGUgdmFyaWFibGVzIGxvYWRlZCBhcmUgbmFtZWQg4oCYZmF1bHRfZnJlZV90cmFpbmluZ+KAmSwg4oCYZmF1bHRfZnJlZV90ZXN0aW5n4oCZLCDigJhmYXVsdHlfdGVzdGluZ+KAmSwgYW5kIOKAmGZhdWx0eV90cmFpbmluZ+KAmSwgY29ycmVzcG9uZGluZyB0byB0aGUgUkRhdGEgZmlsZXMuJiMxMzsKJiMxMzsKJmFtcDtsdDtwJmFtcDtndDtFYWNoIGRhdGFmcmFtZSBjb250YWlucyA1NSBjb2x1bW5zOiYjMTM7CiYjMTM7CiZhbXA7bHQ7cCZhbXA7Z3Q7Q29sdW1uIDEgKCZhbXA7YXBvcztmYXVsdE51bWJlciZhbXA7YXBvczspIHJhbmdlcyBmcm9tIDEgdG8gMjAgaW4gdGhlIOKAnEZhdWx0eeKAnSBkYXRhc2V0cyBhbmQgcmVwcmVzZW50cyB0aGUgZmF1bHQgdHlwZSBpbiB0aGUgVEVQLiBUaGUg4oCcRmF1bHRGcmVl4oCdIGRhdGFzZXRzIG9ubHkgY29udGFpbiBmYXVsdCAwIChpLmUuIG5vcm1hbCBvcGVyYXRpbmcgY29uZGl0aW9ucykuJiMxMzsKJiMxMzsKJmFtcDtsdDtwJmFtcDtndDtDb2x1bW4gMiAoJmFtcDthcG9zO3NpbXVsYXRpb25SdW4mYW1wO2Fwb3M7KSByYW5nZXMgZnJvbSAxIHRvIDUwMCBhbmQgcmVwcmVzZW50cyBhIGRpZmZlcmVudCByYW5kb20gbnVtYmVyIGdlbmVyYXRvciBzdGF0ZSBmcm9tIHdoaWNoIGEgZnVsbCBURVAgZGF0YXNldCB3YXMgZ2VuZXJhdGVkIChOb3RlOiB0aGUgYWN0dWFsIHNlZWRzIHVzZWQgdG8gZ2VuZXJhdGUgdHJhaW5pbmcgYW5kIHRlc3RpbmcgZGF0YXNldHMgd2VyZSBub24tb3ZlcmxhcHBpbmcpLiYjMTM7CiYjMTM7CiZhbXA7bHQ7cCZhbXA7Z3Q7Q29sdW1uIDMgKCZhbXA7YXBvcztzYW1wbGUmYW1wO2Fwb3M7KSByYW5nZXMgZWl0aGVyIGZyb20gMSB0byA1MDAgKOKAnFRyYWluaW5n4oCdIGRhdGFzZXRzKSBvciAxIHRvIDk2MCAo4oCcVGVzdGluZ+KAnSBkYXRhc2V0cykuIFRoZSBURVAgdmFyaWFibGVzIChjb2x1bW5zIDQgdG8gNTUpIHdlcmUgc2FtcGxlZCBldmVyeSAzIG1pbnV0ZXMgZm9yIGEgdG90YWwgZHVyYXRpb24gb2YgMjUgaG91cnMgYW5kIDQ4IGhvdXJzIHJlc3BlY3RpdmVseS4gTm90ZSB0aGF0IHRoZSBmYXVsdHMgd2VyZSBpbnRyb2R1Y2VkIDEgYW5kIDggaG91cnMgaW50byB0aGUgRmF1bHR5IFRyYWluaW5nIGFuZCBGYXVsdHkgVGVzdGluZyBkYXRhc2V0cywgcmVzcGVjdGl2ZWx5LiYjMTM7CiYjMTM7CiZhbXA7bHQ7cCZhbXA7Z3Q7Q29sdW1ucyA0IHRvIDU1IGNvbnRhaW4gdGhlIHByb2Nlc3MgdmFyaWFibGVzOyB0aGUgY29sdW1uIG5hbWVzIHJldGFpbiB0aGUgb3JpZ2luYWwgdmFyaWFibGUgbmFtZXMuJiMxMzsKJiMxMzsKJmFtcDtsdDtwJmFtcDtndDtBY2tub3dsZWRnbWVudHMuIFRoaXMgd29yayB3YXMgc3BvbnNvcmVkIGJ5IHRoZSBPZmZpY2Ugb2YgTmF2YWwgUmVzZWFyY2gsIEh1bWFuICZhbXA7YW1wOyBCaW9lbmdpbmVlcmVkIFN5c3RlbXMgKE9OUiAzNDEpLCBwcm9ncmFtIG9mZmljZXIgRHIuIEplZmZyZXkgRy4gTW9ycmlzb24gdW5kZXIgY29udHJhY3QgTjAwMDE0LTE1LUMtNTAwMy4gVGhlIHZpZXdzIGV4cHJlc3NlZCBhcmUgdGhvc2Ugb2YgdGhlIGF1dGhvcnMgYW5kIGRvIG5vdCByZWZsZWN0IHRoZSBvZmZpY2lhbCBwb2xpY3kgb3IgcG9zaXRpb24gb2YgdGhlIE9mZmljZSBvZiBOYXZhbCBSZXNlYXJjaCwgRGVwYXJ0bWVudCBvZiBEZWZlbnNlLCBvciBVUyBHb3Zlcm5tZW50LjwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+",
+      "url": "https://dataverse.harvard.edu/citation?persistentId=doi:10.7910/DVN/6C3JR1",
+      "contentUrl": null,
+      "metadataVersion": 2,
+      "schemaVersion": "http://datacite.org/schema/kernel-4",
+      "source": "mds",
+      "isActive": true,
+      "state": "findable",
+      "reason": null,
+      "viewCount": 24806,
+      "viewsOverTime": [
+        {
+          "yearMonth": "2020-10",
+          "total": 612
+        },
+        {
+          "yearMonth": "2020-11",
+          "total": 496
+        },
+        {
+          "yearMonth": "2020-12",
+          "total": 562
+        },
+        {
+          "yearMonth": "2021-01",
+          "total": 553
+        },
+        {
+          "yearMonth": "2021-02",
+          "total": 430
+        },
+        {
+          "yearMonth": "2021-03",
+          "total": 528
+        },
+        {
+          "yearMonth": "2021-04",
+          "total": 590
+        },
+        {
+          "yearMonth": "2021-05",
+          "total": 623
+        },
+        {
+          "yearMonth": "2021-06",
+          "total": 507
+        },
+        {
+          "yearMonth": "2021-07",
+          "total": 420
+        },
+        {
+          "yearMonth": "2021-08",
+          "total": 431
+        },
+        {
+          "yearMonth": "2021-09",
+          "total": 451
+        },
+        {
+          "yearMonth": "2021-10",
+          "total": 483
+        },
+        {
+          "yearMonth": "2021-11",
+          "total": 452
+        },
+        {
+          "yearMonth": "2021-12",
+          "total": 427
+        },
+        {
+          "yearMonth": "2022-01",
+          "total": 358
+        },
+        {
+          "yearMonth": "2022-02",
+          "total": 322
+        },
+        {
+          "yearMonth": "2022-03",
+          "total": 441
+        },
+        {
+          "yearMonth": "2022-04",
+          "total": 384
+        },
+        {
+          "yearMonth": "2022-05",
+          "total": 478
+        },
+        {
+          "yearMonth": "2022-06",
+          "total": 379
+        },
+        {
+          "yearMonth": "2022-07",
+          "total": 392
+        },
+        {
+          "yearMonth": "2022-08",
+          "total": 477
+        },
+        {
+          "yearMonth": "2022-09",
+          "total": 203
+        },
+        {
+          "yearMonth": "2022-10",
+          "total": 231
+        },
+        {
+          "yearMonth": "2022-11",
+          "total": 194
+        },
+        {
+          "yearMonth": "2022-12",
+          "total": 205
+        },
+        {
+          "yearMonth": "2023-01",
+          "total": 206
+        },
+        {
+          "yearMonth": "2023-02",
+          "total": 173
+        },
+        {
+          "yearMonth": "2023-03",
+          "total": 208
+        },
+        {
+          "yearMonth": "2023-04",
+          "total": 174
+        },
+        {
+          "yearMonth": "2023-05",
+          "total": 195
+        },
+        {
+          "yearMonth": "2023-06",
+          "total": 204
+        },
+        {
+          "yearMonth": "2023-07",
+          "total": 235
+        },
+        {
+          "yearMonth": "2023-08",
+          "total": 349
+        },
+        {
+          "yearMonth": "2023-09",
+          "total": 379
+        },
+        {
+          "yearMonth": "2023-10",
+          "total": 363
+        },
+        {
+          "yearMonth": "2023-11",
+          "total": 414
+        },
+        {
+          "yearMonth": "2023-12",
+          "total": 378
+        },
+        {
+          "yearMonth": "2024-01",
+          "total": 406
+        },
+        {
+          "yearMonth": "2024-02",
+          "total": 386
+        },
+        {
+          "yearMonth": "2024-03",
+          "total": 386
+        },
+        {
+          "yearMonth": "2024-04",
+          "total": 421
+        },
+        {
+          "yearMonth": "2024-05",
+          "total": 377
+        },
+        {
+          "yearMonth": "2024-06",
+          "total": 384
+        },
+        {
+          "yearMonth": "2024-07",
+          "total": 327
+        },
+        {
+          "yearMonth": "2024-08",
+          "total": 361
+        },
+        {
+          "yearMonth": "2024-09",
+          "total": 365
+        },
+        {
+          "yearMonth": "2024-11",
+          "total": 323
+        },
+        {
+          "yearMonth": "2024-12",
+          "total": 293
+        },
+        {
+          "yearMonth": "2025-01",
+          "total": 335
+        },
+        {
+          "yearMonth": "2025-02",
+          "total": 371
+        },
+        {
+          "yearMonth": "2025-03",
+          "total": 492
+        },
+        {
+          "yearMonth": "2025-04",
+          "total": 410
+        },
+        {
+          "yearMonth": "2025-05",
+          "total": 386
+        },
+        {
+          "yearMonth": "2025-06",
+          "total": 313
+        },
+        {
+          "yearMonth": "2025-07",
+          "total": 364
+        },
+        {
+          "yearMonth": "2025-08",
+          "total": 330
+        },
+        {
+          "yearMonth": "2025-09",
+          "total": 191
+        },
+        {
+          "yearMonth": "2025-10",
+          "total": 225
+        },
+        {
+          "yearMonth": "2025-11",
+          "total": 380
+        },
+        {
+          "yearMonth": "2025-12",
+          "total": 221
+        },
+        {
+          "yearMonth": "2026-01",
+          "total": 226
+        },
+        {
+          "yearMonth": "2026-03",
+          "total": 647
+        },
+        {
+          "yearMonth": "2026-05",
+          "total": 461
+        },
+        {
+          "yearMonth": "2026-06",
+          "total": 518
+        }
+      ],
+      "downloadCount": 3984,
+      "downloadsOverTime": [
+        {
+          "yearMonth": "2020-10",
+          "total": 69
+        },
+        {
+          "yearMonth": "2020-11",
+          "total": 60
+        },
+        {
+          "yearMonth": "2020-12",
+          "total": 63
+        },
+        {
+          "yearMonth": "2021-01",
+          "total": 45
+        },
+        {
+          "yearMonth": "2021-02",
+          "total": 60
+        },
+        {
+          "yearMonth": "2021-03",
+          "total": 66
+        },
+        {
+          "yearMonth": "2021-04",
+          "total": 80
+        },
+        {
+          "yearMonth": "2021-05",
+          "total": 68
+        },
+        {
+          "yearMonth": "2021-06",
+          "total": 47
+        },
+        {
+          "yearMonth": "2021-07",
+          "total": 36
+        },
+        {
+          "yearMonth": "2021-08",
+          "total": 65
+        },
+        {
+          "yearMonth": "2021-09",
+          "total": 63
+        },
+        {
+          "yearMonth": "2021-10",
+          "total": 73
+        },
+        {
+          "yearMonth": "2021-11",
+          "total": 65
+        },
+        {
+          "yearMonth": "2021-12",
+          "total": 63
+        },
+        {
+          "yearMonth": "2022-01",
+          "total": 43
+        },
+        {
+          "yearMonth": "2022-02",
+          "total": 31
+        },
+        {
+          "yearMonth": "2022-03",
+          "total": 77
+        },
+        {
+          "yearMonth": "2022-04",
+          "total": 61
+        },
+        {
+          "yearMonth": "2022-05",
+          "total": 66
+        },
+        {
+          "yearMonth": "2022-06",
+          "total": 49
+        },
+        {
+          "yearMonth": "2022-07",
+          "total": 47
+        },
+        {
+          "yearMonth": "2022-08",
+          "total": 75
+        },
+        {
+          "yearMonth": "2022-09",
+          "total": 33
+        },
+        {
+          "yearMonth": "2022-10",
+          "total": 25
+        },
+        {
+          "yearMonth": "2022-11",
+          "total": 28
+        },
+        {
+          "yearMonth": "2022-12",
+          "total": 25
+        },
+        {
+          "yearMonth": "2023-01",
+          "total": 20
+        },
+        {
+          "yearMonth": "2023-02",
+          "total": 19
+        },
+        {
+          "yearMonth": "2023-03",
+          "total": 34
+        },
+        {
+          "yearMonth": "2023-04",
+          "total": 21
+        },
+        {
+          "yearMonth": "2023-05",
+          "total": 21
+        },
+        {
+          "yearMonth": "2023-06",
+          "total": 24
+        },
+        {
+          "yearMonth": "2023-07",
+          "total": 32
+        },
+        {
+          "yearMonth": "2023-08",
+          "total": 31
+        },
+        {
+          "yearMonth": "2023-09",
+          "total": 61
+        },
+        {
+          "yearMonth": "2023-10",
+          "total": 44
+        },
+        {
+          "yearMonth": "2023-11",
+          "total": 75
+        },
+        {
+          "yearMonth": "2023-12",
+          "total": 62
+        },
+        {
+          "yearMonth": "2024-01",
+          "total": 53
+        },
+        {
+          "yearMonth": "2024-02",
+          "total": 56
+        },
+        {
+          "yearMonth": "2024-03",
+          "total": 51
+        },
+        {
+          "yearMonth": "2024-04",
+          "total": 75
+        },
+        {
+          "yearMonth": "2024-05",
+          "total": 49
+        },
+        {
+          "yearMonth": "2024-06",
+          "total": 53
+        },
+        {
+          "yearMonth": "2024-07",
+          "total": 47
+        },
+        {
+          "yearMonth": "2024-08",
+          "total": 52
+        },
+        {
+          "yearMonth": "2024-09",
+          "total": 74
+        },
+        {
+          "yearMonth": "2024-11",
+          "total": 59
+        },
+        {
+          "yearMonth": "2024-12",
+          "total": 53
+        },
+        {
+          "yearMonth": "2025-01",
+          "total": 50
+        },
+        {
+          "yearMonth": "2025-02",
+          "total": 68
+        },
+        {
+          "yearMonth": "2025-03",
+          "total": 99
+        },
+        {
+          "yearMonth": "2025-04",
+          "total": 100
+        },
+        {
+          "yearMonth": "2025-05",
+          "total": 92
+        },
+        {
+          "yearMonth": "2025-06",
+          "total": 94
+        },
+        {
+          "yearMonth": "2025-07",
+          "total": 100
+        },
+        {
+          "yearMonth": "2025-08",
+          "total": 79
+        },
+        {
+          "yearMonth": "2025-09",
+          "total": 52
+        },
+        {
+          "yearMonth": "2025-10",
+          "total": 65
+        },
+        {
+          "yearMonth": "2025-11",
+          "total": 98
+        },
+        {
+          "yearMonth": "2025-12",
+          "total": 46
+        },
+        {
+          "yearMonth": "2026-01",
+          "total": 51
+        },
+        {
+          "yearMonth": "2026-03",
+          "total": 158
+        },
+        {
+          "yearMonth": "2026-05",
+          "total": 123
+        },
+        {
+          "yearMonth": "2026-06",
+          "total": 160
+        }
+      ],
+      "referenceCount": 0,
+      "citationCount": 27,
+      "citationsOverTime": [
+        {
+          "year": "2022",
+          "total": 3
+        },
+        {
+          "year": "2023",
+          "total": 2
+        },
+        {
+          "year": "2024",
+          "total": 8
+        },
+        {
+          "year": "2025",
+          "total": 8
+        },
+        {
+          "year": "2026",
+          "total": 6
+        }
+      ],
+      "partCount": 4,
+      "partOfCount": 0,
+      "versionCount": 0,
+      "versionOfCount": 0,
+      "created": "2017-07-06T15:23:41.000Z",
+      "registered": "2017-07-06T15:23:42.000Z",
+      "published": "2017",
+      "updated": "2026-04-17T06:11:20.000Z"
+    },
+    "relationships": {
+      "client": {
+        "data": {
+          "id": "gdcc.harvard-dv",
+          "type": "clients"
+        }
+      },
+      "provider": {
+        "data": {
+          "id": "harvardu",
+          "type": "providers"
+        }
+      },
+      "media": {
+        "data": {
+          "id": "10.7910/dvn/6c3jr1",
+          "type": "media"
+        }
+      },
+      "references": {
+        "data": []
+      },
+      "citations": {
+        "data": [
+          {
+            "id": "10.1007/s10260-021-00575-5",
+            "type": "dois"
+          },
+          {
+            "id": "10.1016/j.compchemeng.2022.107964",
+            "type": "dois"
+          },
+          {
+            "id": "10.1021/acs.iecr.2c02785",
+            "type": "dois"
+          },
+          {
+            "id": "10.1016/j.compchemeng.2021.107281",
+            "type": "dois"
+          },
+          {
+            "id": "10.1002/cite.202200224",
+            "type": "dois"
+          },
+          {
+            "id": "10.1007/s41066-023-00435-5",
+            "type": "dois"
+          },
+          {
+            "id": "10.1007/s12530-023-09523-y",
+            "type": "dois"
+          },
+          {
+            "id": "10.3390/pr7070411",
+            "type": "dois"
+          },
+          {
+            "id": "10.3390/s19214612",
+            "type": "dois"
+          },
+          {
+            "id": "10.1016/j.compchemeng.2024.108762",
+            "type": "dois"
+          },
+          {
+            "id": "10.1021/acs.iecr.4c01337",
+            "type": "dois"
+          },
+          {
+            "id": "10.69997/sct.184473",
+            "type": "dois"
+          },
+          {
+            "id": "10.1080/24725854.2024.2302355",
+            "type": "dois"
+          },
+          {
+            "id": "10.22395/rium.v23n44a1",
+            "type": "dois"
+          },
+          {
+            "id": "10.3390/pr13072187",
+            "type": "dois"
+          },
+          {
+            "id": "10.1007/s10489-025-06711-y",
+            "type": "dois"
+          },
+          {
+            "id": "10.1016/j.compchemeng.2025.109345",
+            "type": "dois"
+          },
+          {
+            "id": "10.1016/j.compchemeng.2020.106786",
+            "type": "dois"
+          },
+          {
+            "id": "10.1145/3770575",
+            "type": "dois"
+          },
+          {
+            "id": "10.1016/j.ifacol.2018.09.380",
+            "type": "dois"
+          },
+          {
+            "id": "10.1021/acs.iecr.5c03622",
+            "type": "dois"
+          },
+          {
+            "id": "10.1515/cppm-2025-0291",
+            "type": "dois"
+          },
+          {
+            "id": "10.1038/s41597-026-07124-3",
+            "type": "dois"
+          },
+          {
+            "id": "10.1080/00224065.2026.2664721",
+            "type": "dois"
+          },
+          {
+            "id": "10.1007/s10844-026-01078-z",
+            "type": "dois"
+          },
+          {
+            "id": "10.1145/3770855.3818901",
+            "type": "dois"
+          },
+          {
+            "id": "10.4018/ijiit.417368",
+            "type": "dois"
+          }
+        ]
+      },
+      "parts": {
+        "data": [
+          {
+            "id": "10.7910/dvn/6c3jr1/q4nofd",
+            "type": "dois"
+          },
+          {
+            "id": "10.7910/dvn/6c3jr1/tmbuvj",
+            "type": "dois"
+          },
+          {
+            "id": "10.7910/dvn/6c3jr1/il0xp0",
+            "type": "dois"
+          },
+          {
+            "id": "10.7910/dvn/6c3jr1/6qowuu",
+            "type": "dois"
+          }
+        ]
+      },
+      "partOf": {
+        "data": []
+      },
+      "versions": {
+        "data": []
+      },
+      "versionOf": {
+        "data": []
+      }
+    }
+  }
+}

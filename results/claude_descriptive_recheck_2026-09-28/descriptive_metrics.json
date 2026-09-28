@@ -1,0 +1,4551 @@
+{
+  "type": "retrospective_arithmetic_check_NOT_validated_experiment_results",
+  "created_at_utc": "2026-09-28T00:18:23.122032+00:00",
+  "eligible_for_primary_comparison": false,
+  "answer_keys_opened_for_descriptive_check": true,
+  "dataset_sha256": "0097dbb21981968f9ad5b8c59670a07ce701edfecbe61b5108542f7f0638fd1d",
+  "script_sha256": "c62c98616574f5b6a23eefc82ba058b4e6f55c2ab1580d434a8ec8fca5d8d137",
+  "source_snapshot_manifest_sha256": "852d74ccdf72b19dcacc207acb86e616a0e5b8fb2f98e9608154c74d8d63c8f2",
+  "counts": {
+    "stored_arrays": 27,
+    "stored_labels": 1800,
+    "distinct_sources": 130,
+    "new_model_calls": 0
+  },
+  "all_supplied_metrics_match_population_sd": true,
+  "independent_accuracy_and_macro_f1_recount_passed": true,
+  "interval_note": "Wilson intervals are arithmetic descriptions conditional on legacy arrays. They do not establish isolation, model identity, independence of grouped predictions, or experiment validity. No inferential model-ranking tests performed.",
+  "sessions": [
+    {
+      "model_label_unverified": "claude-sonnet-4-6",
+      "condition": "cmapss_clean",
+      "repeat": 1,
+      "eligible_for_primary_comparison": false,
+      "artifact_chain_consistent": true,
+      "n": 60,
+      "correct": 34,
+      "accuracy": 0.5666666666666667,
+      "accuracy_wilson95": [
+        0.44103438776125564,
+        0.6842760319531324
+      ],
+      "macro_f1": 0.5535643170051773,
+      "miss_definition": "critical_as_noncritical",
+      "miss_numerator": 9,
+      "miss_denominator": 20,
+      "miss_rate": 0.45,
+      "miss_rate_wilson95": [
+        0.2581978582556243,
+        0.6579146575496577
+      ],
+      "false_alarm_numerator": null,
+      "false_alarm_denominator": null,
+      "false_alarm_rate": null,
+      "false_alarm_rate_wilson95": [
+        null,
+        null
+      ],
+      "critical_as_healthy_count": 0,
+      "per_class": {
+        "Healthy": {
+          "support": 20,
+          "tp": 5,
+          "fp": 2,
+          "fn": 15,
+          "precision": 0.7142857142857143,
+          "recall": 0.25,
+          "recall_wilson95": [
+            0.11186170140766569,
+            0.468700877618744
+          ],
+          "f1": 0.37037037037037035
+        },
+        "Degrading": {
+          "support": 20,
+          "tp": 18,
+          "fp": 24,
+          "fn": 2,
+          "precision": 0.42857142857142855,
+          "recall": 0.9,
+          "recall_wilson95": [
+            0.6989663547715128,
+            0.9721335187862319
+          ],
+          "f1": 0.5806451612903226
+        },
+        "Critical": {
+          "support": 20,
+          "tp": 11,
+          "fp": 0,
+          "fn": 9,
+          "precision": 1.0,
+          "recall": 0.55,
+          "recall_wilson95": [
+            0.34208534245034233,
+            0.7418021417443759
+          ],
+          "f1": 0.7096774193548387
+        }
+      },
+      "confusion_matrix": {
+        "Healthy": {
+          "Healthy": 5,
+          "Degrading": 15,
+          "Critical": 0
+        },
+        "Degrading": {
+          "Healthy": 2,
+          "Degrading": 18,
+          "Critical": 0
+        },
+        "Critical": {
+          "Healthy": 0,
+          "Degrading": 9,
+          "Critical": 11
+        }
+      }
+    },
+    {
+      "model_label_unverified": "claude-sonnet-4-6",
+      "condition": "cmapss_clean",
+      "repeat": 2,
+      "eligible_for_primary_comparison": false,
+      "artifact_chain_consistent": true,
+      "n": 60,
+      "correct": 36,
+      "accuracy": 0.6,
+      "accuracy_wilson95": [
+        0.4736605349204075,
+        0.7143050946511744
+      ],
+      "macro_f1": 0.6009337068160597,
+      "miss_definition": "critical_as_noncritical",
+      "miss_numerator": 7,
+      "miss_denominator": 20,
+      "miss_rate": 0.35,
+      "miss_rate_wilson95": [
+        0.18119182410108206,
+        0.5671457233147638
+      ],
+      "false_alarm_numerator": null,
+      "false_alarm_denominator": null,
+      "false_alarm_rate": null,
+      "false_alarm_rate_wilson95": [
+        null,
+        null
+      ],
+      "critical_as_healthy_count": 0,
+      "per_class": {
+        "Healthy": {
+          "support": 20,
+          "tp": 7,
+          "fp": 3,
+          "fn": 13,
+          "precision": 0.7,
+          "recall": 0.35,
+          "recall_wilson95": [
+            0.18119182410108206,
+            0.5671457233147638
+          ],
+          "f1": 0.4666666666666667
+        },
+        "Degrading": {
+          "support": 20,
+          "tp": 16,
+          "fp": 20,
+          "fn": 4,
+          "precision": 0.4444444444444444,
+          "recall": 0.8,
+          "recall_wilson95": [
+            0.5839825677481064,
+            0.919342337420202
+          ],
+          "f1": 0.5714285714285714
+        },
+        "Critical": {
+          "support": 20,
+          "tp": 13,
+          "fp": 1,
+          "fn": 7,
+          "precision": 0.9285714285714286,
+          "recall": 0.65,
+          "recall_wilson95": [
+            0.43285427668523624,
+            0.818808175898918
+          ],
+          "f1": 0.7647058823529411
+        }
+      },
+      "confusion_matrix": {
+        "Healthy": {
+          "Healthy": 7,
+          "Degrading": 13,
+          "Critical": 0
+        },
+        "Degrading": {
+          "Healthy": 3,
+          "Degrading": 16,
+          "Critical": 1
+        },
+        "Critical": {
+          "Healthy": 0,
+          "Degrading": 7,
+          "Critical": 13
+        }
+      }
+    },
+    {
+      "model_label_unverified": "claude-sonnet-4-6",
+      "condition": "cmapss_clean",
+      "repeat": 3,
+      "eligible_for_primary_comparison": false,
+      "artifact_chain_consistent": true,
+      "n": 60,
+      "correct": 38,
+      "accuracy": 0.6333333333333333,
+      "accuracy_wilson95": [
+        0.5068300063010303,
+        0.7437908331277456
+      ],
+      "macro_f1": 0.6218855218855218,
+      "miss_definition": "critical_as_noncritical",
+      "miss_numerator": 7,
+      "miss_denominator": 20,
+      "miss_rate": 0.35,
+      "miss_rate_wilson95": [
+        0.18119182410108206,
+        0.5671457233147638
+      ],
+      "false_alarm_numerator": null,
+      "false_alarm_denominator": null,
+      "false_alarm_rate": null,
+      "false_alarm_rate_wilson95": [
+        null,
+        null
+      ],
+      "critical_as_healthy_count": 0,
+      "per_class": {
+        "Healthy": {
+          "support": 20,
+          "tp": 6,
+          "fp": 1,
+          "fn": 14,
+          "precision": 0.8571428571428571,
+          "recall": 0.3,
+          "recall_wilson95": [
+            0.1454772448676043,
+            0.5189728183535235
+          ],
+          "f1": 0.4444444444444444
+        },
+        "Degrading": {
+          "support": 20,
+          "tp": 19,
+          "fp": 21,
+          "fn": 1,
+          "precision": 0.475,
+          "recall": 0.95,
+          "recall_wilson95": [
+            0.763868806553258,
+            0.9911185511992047
+          ],
+          "f1": 0.6333333333333333
+        },
+        "Critical": {
+          "support": 20,
+          "tp": 13,
+          "fp": 0,
+          "fn": 7,
+          "precision": 1.0,
+          "recall": 0.65,
+          "recall_wilson95": [
+            0.43285427668523624,
+            0.818808175898918
+          ],
+          "f1": 0.7878787878787878
+        }
+      },
+      "confusion_matrix": {
+        "Healthy": {
+          "Healthy": 6,
+          "Degrading": 14,
+          "Critical": 0
+        },
+        "Degrading": {
+          "Healthy": 1,
+          "Degrading": 19,
+          "Critical": 0
+        },
+        "Critical": {
+          "Healthy": 0,
+          "Degrading": 7,
+          "Critical": 13
+        }
+      }
+    },
+    {
+      "model_label_unverified": "claude-sonnet-4-6",
+      "condition": "tep_clean",
+      "repeat": 1,
+      "eligible_for_primary_comparison": false,
+      "artifact_chain_consistent": true,
+      "n": 70,
+      "correct": 29,
+      "accuracy": 0.4142857142857143,
+      "accuracy_wilson95": [
+        0.30630178568736466,
+        0.5311878821543955
+      ],
+      "macro_f1": 0.3496240601503759,
+      "miss_definition": "fault_as_normal",
+      "miss_numerator": 20,
+      "miss_denominator": 60,
+      "miss_rate": 0.3333333333333333,
+      "miss_rate_wilson95": [
+        0.2272926152352268,
+        0.4594313354788031
+      ],
+      "false_alarm_numerator": 0,
+      "false_alarm_denominator": 10,
+      "false_alarm_rate": 0.0,
+      "false_alarm_rate_wilson95": [
+        0.0,
+        0.2775327998628892
+      ],
+      "critical_as_healthy_count": null,
+      "per_class": {
+        "Normal": {
+          "support": 10,
+          "tp": 10,
+          "fp": 20,
+          "fn": 0,
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 0.5
+        },
+        "Fault_1": {
+          "support": 10,
+          "tp": 0,
+          "fp": 10,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_2": {
+          "support": 10,
+          "tp": 0,
+          "fp": 1,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_4": {
+          "support": 10,
+          "tp": 0,
+          "fp": 0,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_6": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_7": {
+          "support": 10,
+          "tp": 0,
+          "fp": 10,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_13": {
+          "support": 10,
+          "tp": 9,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9,
+          "recall_wilson95": [
+            0.5958499732047615,
+            0.9821237869049271
+          ],
+          "f1": 0.9473684210526315
+        }
+      },
+      "confusion_matrix": {
+        "Normal": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_1": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 10,
+          "Fault_13": 0
+        },
+        "Fault_2": {
+          "Normal": 0,
+          "Fault_1": 10,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_4": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_6": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 10,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_7": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_13": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 1,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 9
+        }
+      }
+    },
+    {
+      "model_label_unverified": "claude-sonnet-4-6",
+      "condition": "tep_clean",
+      "repeat": 2,
+      "eligible_for_primary_comparison": false,
+      "artifact_chain_consistent": false,
+      "n": 70,
+      "correct": 43,
+      "accuracy": 0.6142857142857143,
+      "accuracy_wilson95": [
+        0.4971573558930424,
+        0.7195230869846111
+      ],
+      "macro_f1": 0.5421245421245421,
+      "miss_definition": "fault_as_normal",
+      "miss_numerator": 10,
+      "miss_denominator": 60,
+      "miss_rate": 0.16666666666666666,
+      "miss_rate_wilson95": [
+        0.0931317697919145,
+        0.2803161316361453
+      ],
+      "false_alarm_numerator": 0,
+      "false_alarm_denominator": 10,
+      "false_alarm_rate": 0.0,
+      "false_alarm_rate_wilson95": [
+        0.0,
+        0.2775327998628892
+      ],
+      "critical_as_healthy_count": null,
+      "per_class": {
+        "Normal": {
+          "support": 10,
+          "tp": 10,
+          "fp": 10,
+          "fn": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 0.6666666666666666
+        },
+        "Fault_1": {
+          "support": 10,
+          "tp": 10,
+          "fp": 10,
+          "fn": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 0.6666666666666666
+        },
+        "Fault_2": {
+          "support": 10,
+          "tp": 0,
+          "fp": 4,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_4": {
+          "support": 10,
+          "tp": 0,
+          "fp": 3,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_6": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_7": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_13": {
+          "support": 10,
+          "tp": 3,
+          "fp": 0,
+          "fn": 7,
+          "precision": 1.0,
+          "recall": 0.3,
+          "recall_wilson95": [
+            0.10779126740630099,
+            0.6032218525388546
+          ],
+          "f1": 0.46153846153846156
+        }
+      },
+      "confusion_matrix": {
+        "Normal": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_1": {
+          "Normal": 0,
+          "Fault_1": 10,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_2": {
+          "Normal": 0,
+          "Fault_1": 10,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_4": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_6": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 10,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_7": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 10,
+          "Fault_13": 0
+        },
+        "Fault_13": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 4,
+          "Fault_4": 3,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 3
+        }
+      }
+    },
+    {
+      "model_label_unverified": "claude-sonnet-4-6",
+      "condition": "tep_clean",
+      "repeat": 3,
+      "eligible_for_primary_comparison": false,
+      "artifact_chain_consistent": false,
+      "n": 70,
+      "correct": 57,
+      "accuracy": 0.8142857142857143,
+      "accuracy_wilson95": [
+        0.7077442179325669,
+        0.8881269999809797
+      ],
+      "macro_f1": 0.7682545158825994,
+      "miss_definition": "fault_as_normal",
+      "miss_numerator": 11,
+      "miss_denominator": 60,
+      "miss_rate": 0.18333333333333332,
+      "miss_rate_wilson95": [
+        0.10557796889197638,
+        0.2991975374646805
+      ],
+      "false_alarm_numerator": 0,
+      "false_alarm_denominator": 10,
+      "false_alarm_rate": 0.0,
+      "false_alarm_rate_wilson95": [
+        0.0,
+        0.2775327998628892
+      ],
+      "critical_as_healthy_count": null,
+      "per_class": {
+        "Normal": {
+          "support": 10,
+          "tp": 10,
+          "fp": 11,
+          "fn": 0,
+          "precision": 0.47619047619047616,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 0.6451612903225806
+        },
+        "Fault_1": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_2": {
+          "support": 10,
+          "tp": 10,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.8333333333333334,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 0.9090909090909091
+        },
+        "Fault_4": {
+          "support": 10,
+          "tp": 0,
+          "fp": 0,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_6": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_7": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_13": {
+          "support": 10,
+          "tp": 7,
+          "fp": 0,
+          "fn": 3,
+          "precision": 1.0,
+          "recall": 0.7,
+          "recall_wilson95": [
+            0.39677814746114537,
+            0.8922087325936989
+          ],
+          "f1": 0.8235294117647058
+        }
+      },
+      "confusion_matrix": {
+        "Normal": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_1": {
+          "Normal": 0,
+          "Fault_1": 10,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_2": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 10,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_4": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_6": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 10,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_7": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 10,
+          "Fault_13": 0
+        },
+        "Fault_13": {
+          "Normal": 1,
+          "Fault_1": 0,
+          "Fault_2": 2,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 7
+        }
+      }
+    },
+    {
+      "model_label_unverified": "claude-sonnet-4-6",
+      "condition": "tep_misnamed",
+      "repeat": 1,
+      "eligible_for_primary_comparison": false,
+      "artifact_chain_consistent": false,
+      "n": 70,
+      "correct": 20,
+      "accuracy": 0.2857142857142857,
+      "accuracy_wilson95": [
+        0.19322220378719757,
+        0.40050196581720254
+      ],
+      "macro_f1": 0.18996277756385574,
+      "miss_definition": "fault_as_normal",
+      "miss_numerator": 33,
+      "miss_denominator": 60,
+      "miss_rate": 0.55,
+      "miss_rate_wilson95": [
+        0.4249193588533434,
+        0.6690634559324476
+      ],
+      "false_alarm_numerator": 0,
+      "false_alarm_denominator": 10,
+      "false_alarm_rate": 0.0,
+      "false_alarm_rate_wilson95": [
+        0.0,
+        0.2775327998628892
+      ],
+      "critical_as_healthy_count": null,
+      "per_class": {
+        "Normal": {
+          "support": 10,
+          "tp": 10,
+          "fp": 33,
+          "fn": 0,
+          "precision": 0.23255813953488372,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 0.37735849056603776
+        },
+        "Fault_1": {
+          "support": 10,
+          "tp": 10,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 0.9523809523809523
+        },
+        "Fault_2": {
+          "support": 10,
+          "tp": 0,
+          "fp": 0,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_4": {
+          "support": 10,
+          "tp": 0,
+          "fp": 6,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_6": {
+          "support": 10,
+          "tp": 0,
+          "fp": 0,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_7": {
+          "support": 10,
+          "tp": 0,
+          "fp": 10,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_13": {
+          "support": 10,
+          "tp": 0,
+          "fp": 0,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        }
+      },
+      "confusion_matrix": {
+        "Normal": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_1": {
+          "Normal": 0,
+          "Fault_1": 10,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_2": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_4": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_6": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 10,
+          "Fault_13": 0
+        },
+        "Fault_7": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_13": {
+          "Normal": 3,
+          "Fault_1": 1,
+          "Fault_2": 0,
+          "Fault_4": 6,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        }
+      }
+    },
+    {
+      "model_label_unverified": "claude-sonnet-4-6",
+      "condition": "tep_misnamed",
+      "repeat": 2,
+      "eligible_for_primary_comparison": false,
+      "artifact_chain_consistent": true,
+      "n": 70,
+      "correct": 10,
+      "accuracy": 0.14285714285714285,
+      "accuracy_wilson95": [
+        0.07948941717066599,
+        0.2433841988366675
+      ],
+      "macro_f1": 0.06802721088435373,
+      "miss_definition": "fault_as_normal",
+      "miss_numerator": 22,
+      "miss_denominator": 60,
+      "miss_rate": 0.36666666666666664,
+      "miss_rate_wilson95": [
+        0.25620916687225426,
+        0.49316999369896963
+      ],
+      "false_alarm_numerator": 0,
+      "false_alarm_denominator": 10,
+      "false_alarm_rate": 0.0,
+      "false_alarm_rate_wilson95": [
+        0.0,
+        0.2775327998628892
+      ],
+      "critical_as_healthy_count": null,
+      "per_class": {
+        "Normal": {
+          "support": 10,
+          "tp": 10,
+          "fp": 22,
+          "fn": 0,
+          "precision": 0.3125,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 0.47619047619047616
+        },
+        "Fault_1": {
+          "support": 10,
+          "tp": 0,
+          "fp": 11,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_2": {
+          "support": 10,
+          "tp": 0,
+          "fp": 1,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_4": {
+          "support": 10,
+          "tp": 0,
+          "fp": 6,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_6": {
+          "support": 10,
+          "tp": 0,
+          "fp": 0,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_7": {
+          "support": 10,
+          "tp": 0,
+          "fp": 20,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_13": {
+          "support": 10,
+          "tp": 0,
+          "fp": 0,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        }
+      },
+      "confusion_matrix": {
+        "Normal": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_1": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 10,
+          "Fault_13": 0
+        },
+        "Fault_2": {
+          "Normal": 0,
+          "Fault_1": 10,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_4": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_6": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 10,
+          "Fault_13": 0
+        },
+        "Fault_7": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_13": {
+          "Normal": 2,
+          "Fault_1": 1,
+          "Fault_2": 1,
+          "Fault_4": 6,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        }
+      }
+    },
+    {
+      "model_label_unverified": "claude-sonnet-4-6",
+      "condition": "tep_misnamed",
+      "repeat": 3,
+      "eligible_for_primary_comparison": false,
+      "artifact_chain_consistent": false,
+      "n": 70,
+      "correct": 29,
+      "accuracy": 0.4142857142857143,
+      "accuracy_wilson95": [
+        0.30630178568736466,
+        0.5311878821543955
+      ],
+      "macro_f1": 0.41428571428571426,
+      "miss_definition": "fault_as_normal",
+      "miss_numerator": 6,
+      "miss_denominator": 60,
+      "miss_rate": 0.1,
+      "miss_rate_wilson95": [
+        0.04664283447388416,
+        0.20149464723978772
+      ],
+      "false_alarm_numerator": 6,
+      "false_alarm_denominator": 10,
+      "false_alarm_rate": 0.6,
+      "false_alarm_rate_wilson95": [
+        0.31267376973365824,
+        0.8318196702937638
+      ],
+      "critical_as_healthy_count": null,
+      "per_class": {
+        "Normal": {
+          "support": 10,
+          "tp": 4,
+          "fp": 6,
+          "fn": 6,
+          "precision": 0.4,
+          "recall": 0.4,
+          "recall_wilson95": [
+            0.16818032970623614,
+            0.6873262302663417
+          ],
+          "f1": 0.4
+        },
+        "Fault_1": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_2": {
+          "support": 10,
+          "tp": 8,
+          "fp": 2,
+          "fn": 2,
+          "precision": 0.8,
+          "recall": 0.8,
+          "recall_wilson95": [
+            0.49016247153664183,
+            0.9433178485456247
+          ],
+          "f1": 0.8
+        },
+        "Fault_4": {
+          "support": 10,
+          "tp": 2,
+          "fp": 8,
+          "fn": 8,
+          "precision": 0.2,
+          "recall": 0.2,
+          "recall_wilson95": [
+            0.05668215145437519,
+            0.5098375284633583
+          ],
+          "f1": 0.2
+        },
+        "Fault_6": {
+          "support": 10,
+          "tp": 0,
+          "fp": 10,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_7": {
+          "support": 10,
+          "tp": 0,
+          "fp": 10,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_13": {
+          "support": 10,
+          "tp": 5,
+          "fp": 5,
+          "fn": 5,
+          "precision": 0.5,
+          "recall": 0.5,
+          "recall_wilson95": [
+            0.236593090512564,
+            0.7634069094874361
+          ],
+          "f1": 0.5
+        }
+      },
+      "confusion_matrix": {
+        "Normal": {
+          "Normal": 4,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 2,
+          "Fault_6": 2,
+          "Fault_7": 0,
+          "Fault_13": 2
+        },
+        "Fault_1": {
+          "Normal": 0,
+          "Fault_1": 10,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_2": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 8,
+          "Fault_4": 2,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_4": {
+          "Normal": 5,
+          "Fault_1": 0,
+          "Fault_2": 1,
+          "Fault_4": 2,
+          "Fault_6": 1,
+          "Fault_7": 0,
+          "Fault_13": 1
+        },
+        "Fault_6": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 10,
+          "Fault_13": 0
+        },
+        "Fault_7": {
+          "Normal": 1,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 1,
+          "Fault_6": 6,
+          "Fault_7": 0,
+          "Fault_13": 2
+        },
+        "Fault_13": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 1,
+          "Fault_4": 3,
+          "Fault_6": 1,
+          "Fault_7": 0,
+          "Fault_13": 5
+        }
+      }
+    },
+    {
+      "model_label_unverified": "claude-opus-5-5",
+      "condition": "cmapss_clean",
+      "repeat": 1,
+      "eligible_for_primary_comparison": false,
+      "artifact_chain_consistent": true,
+      "n": 60,
+      "correct": 39,
+      "accuracy": 0.65,
+      "accuracy_wilson95": [
+        0.5236261884175486,
+        0.7583222559398244
+      ],
+      "macro_f1": 0.6555555555555556,
+      "miss_definition": "critical_as_noncritical",
+      "miss_numerator": 6,
+      "miss_denominator": 20,
+      "miss_rate": 0.3,
+      "miss_rate_wilson95": [
+        0.1454772448676043,
+        0.5189728183535235
+      ],
+      "false_alarm_numerator": null,
+      "false_alarm_denominator": null,
+      "false_alarm_rate": null,
+      "false_alarm_rate_wilson95": [
+        null,
+        null
+      ],
+      "critical_as_healthy_count": 1,
+      "per_class": {
+        "Healthy": {
+          "support": 20,
+          "tp": 15,
+          "fp": 10,
+          "fn": 5,
+          "precision": 0.6,
+          "recall": 0.75,
+          "recall_wilson95": [
+            0.531299122381256,
+            0.8881382985923343
+          ],
+          "f1": 0.6666666666666666
+        },
+        "Degrading": {
+          "support": 20,
+          "tp": 10,
+          "fp": 10,
+          "fn": 10,
+          "precision": 0.5,
+          "recall": 0.5,
+          "recall_wilson95": [
+            0.2992980081982123,
+            0.7007019918017877
+          ],
+          "f1": 0.5
+        },
+        "Critical": {
+          "support": 20,
+          "tp": 14,
+          "fp": 1,
+          "fn": 6,
+          "precision": 0.9333333333333333,
+          "recall": 0.7,
+          "recall_wilson95": [
+            0.4810271816464765,
+            0.8545227551323956
+          ],
+          "f1": 0.8
+        }
+      },
+      "confusion_matrix": {
+        "Healthy": {
+          "Healthy": 15,
+          "Degrading": 5,
+          "Critical": 0
+        },
+        "Degrading": {
+          "Healthy": 9,
+          "Degrading": 10,
+          "Critical": 1
+        },
+        "Critical": {
+          "Healthy": 1,
+          "Degrading": 5,
+          "Critical": 14
+        }
+      }
+    },
+    {
+      "model_label_unverified": "claude-opus-5-5",
+      "condition": "cmapss_clean",
+      "repeat": 2,
+      "eligible_for_primary_comparison": false,
+      "artifact_chain_consistent": true,
+      "n": 60,
+      "correct": 40,
+      "accuracy": 0.6666666666666666,
+      "accuracy_wilson95": [
+        0.5405686645211968,
+        0.7727073847647731
+      ],
+      "macro_f1": 0.6748153806977336,
+      "miss_definition": "critical_as_noncritical",
+      "miss_numerator": 7,
+      "miss_denominator": 20,
+      "miss_rate": 0.35,
+      "miss_rate_wilson95": [
+        0.18119182410108206,
+        0.5671457233147638
+      ],
+      "false_alarm_numerator": null,
+      "false_alarm_denominator": null,
+      "false_alarm_rate": null,
+      "false_alarm_rate_wilson95": [
+        null,
+        null
+      ],
+      "critical_as_healthy_count": 0,
+      "per_class": {
+        "Healthy": {
+          "support": 20,
+          "tp": 15,
+          "fp": 7,
+          "fn": 5,
+          "precision": 0.6818181818181818,
+          "recall": 0.75,
+          "recall_wilson95": [
+            0.531299122381256,
+            0.8881382985923343
+          ],
+          "f1": 0.7142857142857143
+        },
+        "Degrading": {
+          "support": 20,
+          "tp": 12,
+          "fp": 12,
+          "fn": 8,
+          "precision": 0.5,
+          "recall": 0.6,
+          "recall_wilson95": [
+            0.3865815007622531,
+            0.781193467627183
+          ],
+          "f1": 0.5454545454545454
+        },
+        "Critical": {
+          "support": 20,
+          "tp": 13,
+          "fp": 1,
+          "fn": 7,
+          "precision": 0.9285714285714286,
+          "recall": 0.65,
+          "recall_wilson95": [
+            0.43285427668523624,
+            0.818808175898918
+          ],
+          "f1": 0.7647058823529411
+        }
+      },
+      "confusion_matrix": {
+        "Healthy": {
+          "Healthy": 15,
+          "Degrading": 5,
+          "Critical": 0
+        },
+        "Degrading": {
+          "Healthy": 7,
+          "Degrading": 12,
+          "Critical": 1
+        },
+        "Critical": {
+          "Healthy": 0,
+          "Degrading": 7,
+          "Critical": 13
+        }
+      }
+    },
+    {
+      "model_label_unverified": "claude-opus-5-5",
+      "condition": "cmapss_clean",
+      "repeat": 3,
+      "eligible_for_primary_comparison": false,
+      "artifact_chain_consistent": true,
+      "n": 60,
+      "correct": 37,
+      "accuracy": 0.6166666666666667,
+      "accuracy_wilson95": [
+        0.49017595824099924,
+        0.7291172762591798
+      ],
+      "macro_f1": 0.6247357293868921,
+      "miss_definition": "critical_as_noncritical",
+      "miss_numerator": 8,
+      "miss_denominator": 20,
+      "miss_rate": 0.4,
+      "miss_rate_wilson95": [
+        0.21880653237281705,
+        0.6134184992377469
+      ],
+      "false_alarm_numerator": null,
+      "false_alarm_denominator": null,
+      "false_alarm_rate": null,
+      "false_alarm_rate_wilson95": [
+        null,
+        null
+      ],
+      "critical_as_healthy_count": 0,
+      "per_class": {
+        "Healthy": {
+          "support": 20,
+          "tp": 15,
+          "fp": 9,
+          "fn": 5,
+          "precision": 0.625,
+          "recall": 0.75,
+          "recall_wilson95": [
+            0.531299122381256,
+            0.8881382985923343
+          ],
+          "f1": 0.6818181818181818
+        },
+        "Degrading": {
+          "support": 20,
+          "tp": 10,
+          "fp": 13,
+          "fn": 10,
+          "precision": 0.43478260869565216,
+          "recall": 0.5,
+          "recall_wilson95": [
+            0.2992980081982123,
+            0.7007019918017877
+          ],
+          "f1": 0.46511627906976744
+        },
+        "Critical": {
+          "support": 20,
+          "tp": 12,
+          "fp": 1,
+          "fn": 8,
+          "precision": 0.9230769230769231,
+          "recall": 0.6,
+          "recall_wilson95": [
+            0.3865815007622531,
+            0.781193467627183
+          ],
+          "f1": 0.7272727272727273
+        }
+      },
+      "confusion_matrix": {
+        "Healthy": {
+          "Healthy": 15,
+          "Degrading": 5,
+          "Critical": 0
+        },
+        "Degrading": {
+          "Healthy": 9,
+          "Degrading": 10,
+          "Critical": 1
+        },
+        "Critical": {
+          "Healthy": 0,
+          "Degrading": 8,
+          "Critical": 12
+        }
+      }
+    },
+    {
+      "model_label_unverified": "claude-opus-5-5",
+      "condition": "tep_clean",
+      "repeat": 1,
+      "eligible_for_primary_comparison": false,
+      "artifact_chain_consistent": true,
+      "n": 70,
+      "correct": 70,
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "macro_f1": 1.0,
+      "miss_definition": "fault_as_normal",
+      "miss_numerator": 0,
+      "miss_denominator": 60,
+      "miss_rate": 0.0,
+      "miss_rate_wilson95": [
+        0.0,
+        0.06017185214208986
+      ],
+      "false_alarm_numerator": 0,
+      "false_alarm_denominator": 10,
+      "false_alarm_rate": 0.0,
+      "false_alarm_rate_wilson95": [
+        0.0,
+        0.2775327998628892
+      ],
+      "critical_as_healthy_count": null,
+      "per_class": {
+        "Normal": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_1": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_2": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_4": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_6": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_7": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_13": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        }
+      },
+      "confusion_matrix": {
+        "Normal": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_1": {
+          "Normal": 0,
+          "Fault_1": 10,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_2": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 10,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_4": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 10,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_6": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 10,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_7": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 10,
+          "Fault_13": 0
+        },
+        "Fault_13": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 10
+        }
+      }
+    },
+    {
+      "model_label_unverified": "claude-opus-5-5",
+      "condition": "tep_clean",
+      "repeat": 2,
+      "eligible_for_primary_comparison": false,
+      "artifact_chain_consistent": true,
+      "n": 70,
+      "correct": 70,
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "macro_f1": 1.0,
+      "miss_definition": "fault_as_normal",
+      "miss_numerator": 0,
+      "miss_denominator": 60,
+      "miss_rate": 0.0,
+      "miss_rate_wilson95": [
+        0.0,
+        0.06017185214208986
+      ],
+      "false_alarm_numerator": 0,
+      "false_alarm_denominator": 10,
+      "false_alarm_rate": 0.0,
+      "false_alarm_rate_wilson95": [
+        0.0,
+        0.2775327998628892
+      ],
+      "critical_as_healthy_count": null,
+      "per_class": {
+        "Normal": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_1": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_2": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_4": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_6": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_7": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_13": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        }
+      },
+      "confusion_matrix": {
+        "Normal": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_1": {
+          "Normal": 0,
+          "Fault_1": 10,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_2": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 10,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_4": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 10,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_6": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 10,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_7": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 10,
+          "Fault_13": 0
+        },
+        "Fault_13": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 10
+        }
+      }
+    },
+    {
+      "model_label_unverified": "claude-opus-5-5",
+      "condition": "tep_clean",
+      "repeat": 3,
+      "eligible_for_primary_comparison": false,
+      "artifact_chain_consistent": true,
+      "n": 70,
+      "correct": 70,
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "macro_f1": 1.0,
+      "miss_definition": "fault_as_normal",
+      "miss_numerator": 0,
+      "miss_denominator": 60,
+      "miss_rate": 0.0,
+      "miss_rate_wilson95": [
+        0.0,
+        0.06017185214208986
+      ],
+      "false_alarm_numerator": 0,
+      "false_alarm_denominator": 10,
+      "false_alarm_rate": 0.0,
+      "false_alarm_rate_wilson95": [
+        0.0,
+        0.2775327998628892
+      ],
+      "critical_as_healthy_count": null,
+      "per_class": {
+        "Normal": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_1": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_2": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_4": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_6": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_7": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_13": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        }
+      },
+      "confusion_matrix": {
+        "Normal": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_1": {
+          "Normal": 0,
+          "Fault_1": 10,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_2": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 10,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_4": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 10,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_6": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 10,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_7": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 10,
+          "Fault_13": 0
+        },
+        "Fault_13": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 10
+        }
+      }
+    },
+    {
+      "model_label_unverified": "claude-opus-5-5",
+      "condition": "tep_misnamed",
+      "repeat": 1,
+      "eligible_for_primary_comparison": false,
+      "artifact_chain_consistent": true,
+      "n": 70,
+      "correct": 70,
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "macro_f1": 1.0,
+      "miss_definition": "fault_as_normal",
+      "miss_numerator": 0,
+      "miss_denominator": 60,
+      "miss_rate": 0.0,
+      "miss_rate_wilson95": [
+        0.0,
+        0.06017185214208986
+      ],
+      "false_alarm_numerator": 0,
+      "false_alarm_denominator": 10,
+      "false_alarm_rate": 0.0,
+      "false_alarm_rate_wilson95": [
+        0.0,
+        0.2775327998628892
+      ],
+      "critical_as_healthy_count": null,
+      "per_class": {
+        "Normal": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_1": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_2": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_4": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_6": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_7": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_13": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        }
+      },
+      "confusion_matrix": {
+        "Normal": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_1": {
+          "Normal": 0,
+          "Fault_1": 10,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_2": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 10,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_4": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 10,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_6": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 10,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_7": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 10,
+          "Fault_13": 0
+        },
+        "Fault_13": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 10
+        }
+      }
+    },
+    {
+      "model_label_unverified": "claude-opus-5-5",
+      "condition": "tep_misnamed",
+      "repeat": 2,
+      "eligible_for_primary_comparison": false,
+      "artifact_chain_consistent": true,
+      "n": 70,
+      "correct": 70,
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "macro_f1": 1.0,
+      "miss_definition": "fault_as_normal",
+      "miss_numerator": 0,
+      "miss_denominator": 60,
+      "miss_rate": 0.0,
+      "miss_rate_wilson95": [
+        0.0,
+        0.06017185214208986
+      ],
+      "false_alarm_numerator": 0,
+      "false_alarm_denominator": 10,
+      "false_alarm_rate": 0.0,
+      "false_alarm_rate_wilson95": [
+        0.0,
+        0.2775327998628892
+      ],
+      "critical_as_healthy_count": null,
+      "per_class": {
+        "Normal": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_1": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_2": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_4": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_6": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_7": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_13": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        }
+      },
+      "confusion_matrix": {
+        "Normal": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_1": {
+          "Normal": 0,
+          "Fault_1": 10,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_2": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 10,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_4": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 10,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_6": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 10,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_7": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 10,
+          "Fault_13": 0
+        },
+        "Fault_13": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 10
+        }
+      }
+    },
+    {
+      "model_label_unverified": "claude-opus-5-5",
+      "condition": "tep_misnamed",
+      "repeat": 3,
+      "eligible_for_primary_comparison": false,
+      "artifact_chain_consistent": true,
+      "n": 70,
+      "correct": 70,
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "macro_f1": 1.0,
+      "miss_definition": "fault_as_normal",
+      "miss_numerator": 0,
+      "miss_denominator": 60,
+      "miss_rate": 0.0,
+      "miss_rate_wilson95": [
+        0.0,
+        0.06017185214208986
+      ],
+      "false_alarm_numerator": 0,
+      "false_alarm_denominator": 10,
+      "false_alarm_rate": 0.0,
+      "false_alarm_rate_wilson95": [
+        0.0,
+        0.2775327998628892
+      ],
+      "critical_as_healthy_count": null,
+      "per_class": {
+        "Normal": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_1": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_2": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_4": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_6": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_7": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_13": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        }
+      },
+      "confusion_matrix": {
+        "Normal": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_1": {
+          "Normal": 0,
+          "Fault_1": 10,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_2": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 10,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_4": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 10,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_6": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 10,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_7": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 10,
+          "Fault_13": 0
+        },
+        "Fault_13": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 10
+        }
+      }
+    },
+    {
+      "model_label_unverified": "claude-fable-5-1",
+      "condition": "cmapss_clean",
+      "repeat": 1,
+      "eligible_for_primary_comparison": false,
+      "artifact_chain_consistent": true,
+      "n": 60,
+      "correct": 36,
+      "accuracy": 0.6,
+      "accuracy_wilson95": [
+        0.4736605349204075,
+        0.7143050946511744
+      ],
+      "macro_f1": 0.6145510835913313,
+      "miss_definition": "critical_as_noncritical",
+      "miss_numerator": 7,
+      "miss_denominator": 20,
+      "miss_rate": 0.35,
+      "miss_rate_wilson95": [
+        0.18119182410108206,
+        0.5671457233147638
+      ],
+      "false_alarm_numerator": null,
+      "false_alarm_denominator": null,
+      "false_alarm_rate": null,
+      "false_alarm_rate_wilson95": [
+        null,
+        null
+      ],
+      "critical_as_healthy_count": 0,
+      "per_class": {
+        "Healthy": {
+          "support": 20,
+          "tp": 11,
+          "fp": 7,
+          "fn": 9,
+          "precision": 0.6111111111111112,
+          "recall": 0.55,
+          "recall_wilson95": [
+            0.34208534245034233,
+            0.7418021417443759
+          ],
+          "f1": 0.5789473684210527
+        },
+        "Degrading": {
+          "support": 20,
+          "tp": 12,
+          "fp": 16,
+          "fn": 8,
+          "precision": 0.42857142857142855,
+          "recall": 0.6,
+          "recall_wilson95": [
+            0.3865815007622531,
+            0.781193467627183
+          ],
+          "f1": 0.5
+        },
+        "Critical": {
+          "support": 20,
+          "tp": 13,
+          "fp": 1,
+          "fn": 7,
+          "precision": 0.9285714285714286,
+          "recall": 0.65,
+          "recall_wilson95": [
+            0.43285427668523624,
+            0.818808175898918
+          ],
+          "f1": 0.7647058823529411
+        }
+      },
+      "confusion_matrix": {
+        "Healthy": {
+          "Healthy": 11,
+          "Degrading": 9,
+          "Critical": 0
+        },
+        "Degrading": {
+          "Healthy": 7,
+          "Degrading": 12,
+          "Critical": 1
+        },
+        "Critical": {
+          "Healthy": 0,
+          "Degrading": 7,
+          "Critical": 13
+        }
+      }
+    },
+    {
+      "model_label_unverified": "claude-fable-5-1",
+      "condition": "cmapss_clean",
+      "repeat": 2,
+      "eligible_for_primary_comparison": false,
+      "artifact_chain_consistent": true,
+      "n": 60,
+      "correct": 37,
+      "accuracy": 0.6166666666666667,
+      "accuracy_wilson95": [
+        0.49017595824099924,
+        0.7291172762591798
+      ],
+      "macro_f1": 0.6212424633936262,
+      "miss_definition": "critical_as_noncritical",
+      "miss_numerator": 9,
+      "miss_denominator": 20,
+      "miss_rate": 0.45,
+      "miss_rate_wilson95": [
+        0.2581978582556243,
+        0.6579146575496577
+      ],
+      "false_alarm_numerator": null,
+      "false_alarm_denominator": null,
+      "false_alarm_rate": null,
+      "false_alarm_rate_wilson95": [
+        null,
+        null
+      ],
+      "critical_as_healthy_count": 0,
+      "per_class": {
+        "Healthy": {
+          "support": 20,
+          "tp": 16,
+          "fp": 9,
+          "fn": 4,
+          "precision": 0.64,
+          "recall": 0.8,
+          "recall_wilson95": [
+            0.5839825677481064,
+            0.919342337420202
+          ],
+          "f1": 0.7111111111111111
+        },
+        "Degrading": {
+          "support": 20,
+          "tp": 10,
+          "fp": 13,
+          "fn": 10,
+          "precision": 0.43478260869565216,
+          "recall": 0.5,
+          "recall_wilson95": [
+            0.2992980081982123,
+            0.7007019918017877
+          ],
+          "f1": 0.46511627906976744
+        },
+        "Critical": {
+          "support": 20,
+          "tp": 11,
+          "fp": 1,
+          "fn": 9,
+          "precision": 0.9166666666666666,
+          "recall": 0.55,
+          "recall_wilson95": [
+            0.34208534245034233,
+            0.7418021417443759
+          ],
+          "f1": 0.6875
+        }
+      },
+      "confusion_matrix": {
+        "Healthy": {
+          "Healthy": 16,
+          "Degrading": 4,
+          "Critical": 0
+        },
+        "Degrading": {
+          "Healthy": 9,
+          "Degrading": 10,
+          "Critical": 1
+        },
+        "Critical": {
+          "Healthy": 0,
+          "Degrading": 9,
+          "Critical": 11
+        }
+      }
+    },
+    {
+      "model_label_unverified": "claude-fable-5-1",
+      "condition": "cmapss_clean",
+      "repeat": 3,
+      "eligible_for_primary_comparison": false,
+      "artifact_chain_consistent": true,
+      "n": 60,
+      "correct": 40,
+      "accuracy": 0.6666666666666666,
+      "accuracy_wilson95": [
+        0.5405686645211968,
+        0.7727073847647731
+      ],
+      "macro_f1": 0.6597222222222222,
+      "miss_definition": "critical_as_noncritical",
+      "miss_numerator": 9,
+      "miss_denominator": 20,
+      "miss_rate": 0.45,
+      "miss_rate_wilson95": [
+        0.2581978582556243,
+        0.6579146575496577
+      ],
+      "false_alarm_numerator": null,
+      "false_alarm_denominator": null,
+      "false_alarm_rate": null,
+      "false_alarm_rate_wilson95": [
+        null,
+        null
+      ],
+      "critical_as_healthy_count": 0,
+      "per_class": {
+        "Healthy": {
+          "support": 20,
+          "tp": 19,
+          "fp": 9,
+          "fn": 1,
+          "precision": 0.6785714285714286,
+          "recall": 0.95,
+          "recall_wilson95": [
+            0.763868806553258,
+            0.9911185511992047
+          ],
+          "f1": 0.7916666666666666
+        },
+        "Degrading": {
+          "support": 20,
+          "tp": 10,
+          "fp": 10,
+          "fn": 10,
+          "precision": 0.5,
+          "recall": 0.5,
+          "recall_wilson95": [
+            0.2992980081982123,
+            0.7007019918017877
+          ],
+          "f1": 0.5
+        },
+        "Critical": {
+          "support": 20,
+          "tp": 11,
+          "fp": 1,
+          "fn": 9,
+          "precision": 0.9166666666666666,
+          "recall": 0.55,
+          "recall_wilson95": [
+            0.34208534245034233,
+            0.7418021417443759
+          ],
+          "f1": 0.6875
+        }
+      },
+      "confusion_matrix": {
+        "Healthy": {
+          "Healthy": 19,
+          "Degrading": 1,
+          "Critical": 0
+        },
+        "Degrading": {
+          "Healthy": 9,
+          "Degrading": 10,
+          "Critical": 1
+        },
+        "Critical": {
+          "Healthy": 0,
+          "Degrading": 9,
+          "Critical": 11
+        }
+      }
+    },
+    {
+      "model_label_unverified": "claude-fable-5-1",
+      "condition": "tep_clean",
+      "repeat": 1,
+      "eligible_for_primary_comparison": false,
+      "artifact_chain_consistent": true,
+      "n": 70,
+      "correct": 70,
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "macro_f1": 1.0,
+      "miss_definition": "fault_as_normal",
+      "miss_numerator": 0,
+      "miss_denominator": 60,
+      "miss_rate": 0.0,
+      "miss_rate_wilson95": [
+        0.0,
+        0.06017185214208986
+      ],
+      "false_alarm_numerator": 0,
+      "false_alarm_denominator": 10,
+      "false_alarm_rate": 0.0,
+      "false_alarm_rate_wilson95": [
+        0.0,
+        0.2775327998628892
+      ],
+      "critical_as_healthy_count": null,
+      "per_class": {
+        "Normal": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_1": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_2": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_4": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_6": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_7": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_13": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        }
+      },
+      "confusion_matrix": {
+        "Normal": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_1": {
+          "Normal": 0,
+          "Fault_1": 10,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_2": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 10,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_4": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 10,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_6": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 10,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_7": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 10,
+          "Fault_13": 0
+        },
+        "Fault_13": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 10
+        }
+      }
+    },
+    {
+      "model_label_unverified": "claude-fable-5-1",
+      "condition": "tep_clean",
+      "repeat": 2,
+      "eligible_for_primary_comparison": false,
+      "artifact_chain_consistent": true,
+      "n": 70,
+      "correct": 70,
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "macro_f1": 1.0,
+      "miss_definition": "fault_as_normal",
+      "miss_numerator": 0,
+      "miss_denominator": 60,
+      "miss_rate": 0.0,
+      "miss_rate_wilson95": [
+        0.0,
+        0.06017185214208986
+      ],
+      "false_alarm_numerator": 0,
+      "false_alarm_denominator": 10,
+      "false_alarm_rate": 0.0,
+      "false_alarm_rate_wilson95": [
+        0.0,
+        0.2775327998628892
+      ],
+      "critical_as_healthy_count": null,
+      "per_class": {
+        "Normal": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_1": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_2": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_4": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_6": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_7": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_13": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        }
+      },
+      "confusion_matrix": {
+        "Normal": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_1": {
+          "Normal": 0,
+          "Fault_1": 10,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_2": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 10,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_4": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 10,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_6": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 10,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_7": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 10,
+          "Fault_13": 0
+        },
+        "Fault_13": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 10
+        }
+      }
+    },
+    {
+      "model_label_unverified": "claude-fable-5-1",
+      "condition": "tep_clean",
+      "repeat": 3,
+      "eligible_for_primary_comparison": false,
+      "artifact_chain_consistent": true,
+      "n": 70,
+      "correct": 70,
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "macro_f1": 1.0,
+      "miss_definition": "fault_as_normal",
+      "miss_numerator": 0,
+      "miss_denominator": 60,
+      "miss_rate": 0.0,
+      "miss_rate_wilson95": [
+        0.0,
+        0.06017185214208986
+      ],
+      "false_alarm_numerator": 0,
+      "false_alarm_denominator": 10,
+      "false_alarm_rate": 0.0,
+      "false_alarm_rate_wilson95": [
+        0.0,
+        0.2775327998628892
+      ],
+      "critical_as_healthy_count": null,
+      "per_class": {
+        "Normal": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_1": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_2": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_4": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_6": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_7": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_13": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        }
+      },
+      "confusion_matrix": {
+        "Normal": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_1": {
+          "Normal": 0,
+          "Fault_1": 10,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_2": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 10,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_4": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 10,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_6": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 10,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_7": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 10,
+          "Fault_13": 0
+        },
+        "Fault_13": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 10
+        }
+      }
+    },
+    {
+      "model_label_unverified": "claude-fable-5-1",
+      "condition": "tep_misnamed",
+      "repeat": 1,
+      "eligible_for_primary_comparison": false,
+      "artifact_chain_consistent": true,
+      "n": 70,
+      "correct": 64,
+      "accuracy": 0.9142857142857143,
+      "accuracy_wilson95": [
+        0.8253432750766051,
+        0.9601233303548878
+      ],
+      "macro_f1": 0.9134199134199134,
+      "miss_definition": "fault_as_normal",
+      "miss_numerator": 2,
+      "miss_denominator": 60,
+      "miss_rate": 0.03333333333333333,
+      "miss_rate_wilson95": [
+        0.009189319256197877,
+        0.113637742743086
+      ],
+      "false_alarm_numerator": 4,
+      "false_alarm_denominator": 10,
+      "false_alarm_rate": 0.4,
+      "false_alarm_rate_wilson95": [
+        0.16818032970623614,
+        0.6873262302663417
+      ],
+      "critical_as_healthy_count": null,
+      "per_class": {
+        "Normal": {
+          "support": 10,
+          "tp": 6,
+          "fp": 2,
+          "fn": 4,
+          "precision": 0.75,
+          "recall": 0.6,
+          "recall_wilson95": [
+            0.31267376973365824,
+            0.8318196702937638
+          ],
+          "f1": 0.6666666666666666
+        },
+        "Fault_1": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_2": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_4": {
+          "support": 10,
+          "tp": 8,
+          "fp": 4,
+          "fn": 2,
+          "precision": 0.6666666666666666,
+          "recall": 0.8,
+          "recall_wilson95": [
+            0.49016247153664183,
+            0.9433178485456247
+          ],
+          "f1": 0.7272727272727273
+        },
+        "Fault_6": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_7": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_13": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        }
+      },
+      "confusion_matrix": {
+        "Normal": {
+          "Normal": 6,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 4,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_1": {
+          "Normal": 0,
+          "Fault_1": 10,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_2": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 10,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_4": {
+          "Normal": 2,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 8,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_6": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 10,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_7": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 10,
+          "Fault_13": 0
+        },
+        "Fault_13": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 10
+        }
+      }
+    },
+    {
+      "model_label_unverified": "claude-fable-5-1",
+      "condition": "tep_misnamed",
+      "repeat": 2,
+      "eligible_for_primary_comparison": false,
+      "artifact_chain_consistent": true,
+      "n": 70,
+      "correct": 67,
+      "accuracy": 0.9571428571428572,
+      "accuracy_wilson95": [
+        0.8814033125147246,
+        0.9853184589958887
+      ],
+      "macro_f1": 0.9550001818909382,
+      "miss_definition": "fault_as_normal",
+      "miss_numerator": 0,
+      "miss_denominator": 60,
+      "miss_rate": 0.0,
+      "miss_rate_wilson95": [
+        0.0,
+        0.06017185214208986
+      ],
+      "false_alarm_numerator": 0,
+      "false_alarm_denominator": 10,
+      "false_alarm_rate": 0.0,
+      "false_alarm_rate_wilson95": [
+        0.0,
+        0.2775327998628892
+      ],
+      "critical_as_healthy_count": null,
+      "per_class": {
+        "Normal": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_1": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_2": {
+          "support": 10,
+          "tp": 10,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.8333333333333334,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 0.9090909090909091
+        },
+        "Fault_4": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_6": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_7": {
+          "support": 10,
+          "tp": 10,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 0.9523809523809523
+        },
+        "Fault_13": {
+          "support": 10,
+          "tp": 7,
+          "fp": 0,
+          "fn": 3,
+          "precision": 1.0,
+          "recall": 0.7,
+          "recall_wilson95": [
+            0.39677814746114537,
+            0.8922087325936989
+          ],
+          "f1": 0.8235294117647058
+        }
+      },
+      "confusion_matrix": {
+        "Normal": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_1": {
+          "Normal": 0,
+          "Fault_1": 10,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_2": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 10,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_4": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 10,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_6": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 10,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_7": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 10,
+          "Fault_13": 0
+        },
+        "Fault_13": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 2,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 1,
+          "Fault_13": 7
+        }
+      }
+    },
+    {
+      "model_label_unverified": "claude-fable-5-1",
+      "condition": "tep_misnamed",
+      "repeat": 3,
+      "eligible_for_primary_comparison": false,
+      "artifact_chain_consistent": true,
+      "n": 70,
+      "correct": 70,
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "macro_f1": 1.0,
+      "miss_definition": "fault_as_normal",
+      "miss_numerator": 0,
+      "miss_denominator": 60,
+      "miss_rate": 0.0,
+      "miss_rate_wilson95": [
+        0.0,
+        0.06017185214208986
+      ],
+      "false_alarm_numerator": 0,
+      "false_alarm_denominator": 10,
+      "false_alarm_rate": 0.0,
+      "false_alarm_rate_wilson95": [
+        0.0,
+        0.2775327998628892
+      ],
+      "critical_as_healthy_count": null,
+      "per_class": {
+        "Normal": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_1": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_2": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_4": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_6": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_7": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_13": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        }
+      },
+      "confusion_matrix": {
+        "Normal": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_1": {
+          "Normal": 0,
+          "Fault_1": 10,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_2": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 10,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_4": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 10,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_6": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 10,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_7": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 10,
+          "Fault_13": 0
+        },
+        "Fault_13": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 10
+        }
+      }
+    }
+  ],
+  "aggregates": [
+    {
+      "model_label_unverified": "claude-sonnet-4-6",
+      "condition": "cmapss_clean",
+      "accuracy": {
+        "mean_pct": 60.0,
+        "population_sd_pp_ddof0": 2.721655269759086,
+        "sample_sd_pp_ddof1": 3.333333333333332,
+        "repeat_values_pct": [
+          56.666666666666664,
+          60.0,
+          63.33333333333333
+        ]
+      },
+      "macro_f1": {
+        "mean_pct": 59.21278485689196,
+        "population_sd_pp_ddof0": 2.857859471325872,
+        "sample_sd_pp_ddof1": 3.5001487306642396,
+        "repeat_values_pct": [
+          55.356431700517724,
+          60.093370681605975,
+          62.18855218855218
+        ]
+      },
+      "supplied_matches_ddof0": true,
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model_label_unverified": "claude-sonnet-4-6",
+      "condition": "tep_clean",
+      "accuracy": {
+        "mean_pct": 61.42857142857143,
+        "population_sd_pp_ddof0": 16.32993161855452,
+        "sample_sd_pp_ddof1": 20.0,
+        "repeat_values_pct": [
+          41.42857142857143,
+          61.42857142857143,
+          81.42857142857143
+        ]
+      },
+      "macro_f1": {
+        "mean_pct": 55.33343727191725,
+        "population_sd_pp_ddof0": 17.1088884975252,
+        "sample_sd_pp_ddof1": 20.95402344255454,
+        "repeat_values_pct": [
+          34.96240601503759,
+          54.21245421245421,
+          76.82545158825994
+        ]
+      },
+      "supplied_matches_ddof0": true,
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model_label_unverified": "claude-sonnet-4-6",
+      "condition": "tep_misnamed",
+      "accuracy": {
+        "mean_pct": 28.095238095238095,
+        "population_sd_pp_ddof0": 11.086139739831253,
+        "sample_sd_pp_ddof1": 13.577692789888815,
+        "repeat_values_pct": [
+          28.57142857142857,
+          14.285714285714285,
+          41.42857142857143
+        ]
+      },
+      "macro_f1": {
+        "mean_pct": 22.40919009113079,
+        "population_sd_pp_ddof0": 14.340463867389762,
+        "sample_sd_pp_ddof1": 17.563409574962005,
+        "repeat_values_pct": [
+          18.996277756385574,
+          6.802721088435374,
+          41.42857142857142
+        ]
+      },
+      "supplied_matches_ddof0": true,
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model_label_unverified": "claude-opus-5-5",
+      "condition": "cmapss_clean",
+      "accuracy": {
+        "mean_pct": 64.44444444444444,
+        "population_sd_pp_ddof0": 2.07869854820774,
+        "sample_sd_pp_ddof1": 2.5458753860865713,
+        "repeat_values_pct": [
+          65.0,
+          66.66666666666666,
+          61.66666666666667
+        ]
+      },
+      "macro_f1": {
+        "mean_pct": 65.17022218800605,
+        "population_sd_pp_ddof0": 2.062569601516347,
+        "sample_sd_pp_ddof1": 2.5261215413453395,
+        "repeat_values_pct": [
+          65.55555555555556,
+          67.48153806977336,
+          62.473572938689216
+        ]
+      },
+      "supplied_matches_ddof0": true,
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model_label_unverified": "claude-opus-5-5",
+      "condition": "tep_clean",
+      "accuracy": {
+        "mean_pct": 100.0,
+        "population_sd_pp_ddof0": 0.0,
+        "sample_sd_pp_ddof1": 0.0,
+        "repeat_values_pct": [
+          100.0,
+          100.0,
+          100.0
+        ]
+      },
+      "macro_f1": {
+        "mean_pct": 100.0,
+        "population_sd_pp_ddof0": 0.0,
+        "sample_sd_pp_ddof1": 0.0,
+        "repeat_values_pct": [
+          100.0,
+          100.0,
+          100.0
+        ]
+      },
+      "supplied_matches_ddof0": true,
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model_label_unverified": "claude-opus-5-5",
+      "condition": "tep_misnamed",
+      "accuracy": {
+        "mean_pct": 100.0,
+        "population_sd_pp_ddof0": 0.0,
+        "sample_sd_pp_ddof1": 0.0,
+        "repeat_values_pct": [
+          100.0,
+          100.0,
+          100.0
+        ]
+      },
+      "macro_f1": {
+        "mean_pct": 100.0,
+        "population_sd_pp_ddof0": 0.0,
+        "sample_sd_pp_ddof1": 0.0,
+        "repeat_values_pct": [
+          100.0,
+          100.0,
+          100.0
+        ]
+      },
+      "supplied_matches_ddof0": true,
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model_label_unverified": "claude-fable-5-1",
+      "condition": "cmapss_clean",
+      "accuracy": {
+        "mean_pct": 62.77777777777778,
+        "population_sd_pp_ddof0": 2.8327886186626534,
+        "sample_sd_pp_ddof1": 3.4694433324435483,
+        "repeat_values_pct": [
+          60.0,
+          61.66666666666667,
+          66.66666666666666
+        ]
+      },
+      "macro_f1": {
+        "mean_pct": 63.183858973572654,
+        "population_sd_pp_ddof0": 1.9905047289504316,
+        "sample_sd_pp_ddof1": 2.437860458262746,
+        "repeat_values_pct": [
+          61.45510835913313,
+          62.12424633936262,
+          65.97222222222221
+        ]
+      },
+      "supplied_matches_ddof0": true,
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model_label_unverified": "claude-fable-5-1",
+      "condition": "tep_clean",
+      "accuracy": {
+        "mean_pct": 100.0,
+        "population_sd_pp_ddof0": 0.0,
+        "sample_sd_pp_ddof1": 0.0,
+        "repeat_values_pct": [
+          100.0,
+          100.0,
+          100.0
+        ]
+      },
+      "macro_f1": {
+        "mean_pct": 100.0,
+        "population_sd_pp_ddof0": 0.0,
+        "sample_sd_pp_ddof1": 0.0,
+        "repeat_values_pct": [
+          100.0,
+          100.0,
+          100.0
+        ]
+      },
+      "supplied_matches_ddof0": true,
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model_label_unverified": "claude-fable-5-1",
+      "condition": "tep_misnamed",
+      "accuracy": {
+        "mean_pct": 95.71428571428572,
+        "population_sd_pp_ddof0": 3.499271061118825,
+        "sample_sd_pp_ddof1": 4.285714285714285,
+        "repeat_values_pct": [
+          91.42857142857143,
+          95.71428571428572,
+          100.0
+        ]
+      },
+      "macro_f1": {
+        "mean_pct": 95.61400317702838,
+        "population_sd_pp_ddof0": 3.5355360662511606,
+        "sample_sd_pp_ddof1": 4.3301296647611025,
+        "repeat_values_pct": [
+          91.34199134199133,
+          95.50001818909382,
+          100.0
+        ]
+      },
+      "supplied_matches_ddof0": true,
+      "eligible_for_primary_comparison": false
+    }
+  ],
+  "paired_contrasts": [
+    {
+      "model_label_unverified": "claude-sonnet-4-6",
+      "repeat": 1,
+      "paired_n": 70,
+      "flips": 40,
+      "flip_pct": 57.14285714285714,
+      "accuracy_clean_minus_misnamed_pp": 12.857142857142861,
+      "macro_f1_clean_minus_misnamed_pp": 15.966128258652015,
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model_label_unverified": "claude-sonnet-4-6",
+      "repeat": 2,
+      "paired_n": 70,
+      "flips": 37,
+      "flip_pct": 52.85714285714286,
+      "accuracy_clean_minus_misnamed_pp": 47.142857142857146,
+      "macro_f1_clean_minus_misnamed_pp": 47.409733124018835,
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model_label_unverified": "claude-sonnet-4-6",
+      "repeat": 3,
+      "paired_n": 70,
+      "flips": 38,
+      "flip_pct": 54.285714285714285,
+      "accuracy_clean_minus_misnamed_pp": 40.0,
+      "macro_f1_clean_minus_misnamed_pp": 35.396880159688514,
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model_label_unverified": "claude-opus-5-5",
+      "repeat": 1,
+      "paired_n": 70,
+      "flips": 0,
+      "flip_pct": 0.0,
+      "accuracy_clean_minus_misnamed_pp": 0.0,
+      "macro_f1_clean_minus_misnamed_pp": 0.0,
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model_label_unverified": "claude-opus-5-5",
+      "repeat": 2,
+      "paired_n": 70,
+      "flips": 0,
+      "flip_pct": 0.0,
+      "accuracy_clean_minus_misnamed_pp": 0.0,
+      "macro_f1_clean_minus_misnamed_pp": 0.0,
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model_label_unverified": "claude-opus-5-5",
+      "repeat": 3,
+      "paired_n": 70,
+      "flips": 0,
+      "flip_pct": 0.0,
+      "accuracy_clean_minus_misnamed_pp": 0.0,
+      "macro_f1_clean_minus_misnamed_pp": 0.0,
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model_label_unverified": "claude-fable-5-1",
+      "repeat": 1,
+      "paired_n": 70,
+      "flips": 6,
+      "flip_pct": 8.571428571428571,
+      "accuracy_clean_minus_misnamed_pp": 8.571428571428575,
+      "macro_f1_clean_minus_misnamed_pp": 8.658008658008665,
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model_label_unverified": "claude-fable-5-1",
+      "repeat": 2,
+      "paired_n": 70,
+      "flips": 3,
+      "flip_pct": 4.285714285714286,
+      "accuracy_clean_minus_misnamed_pp": 4.285714285714281,
+      "macro_f1_clean_minus_misnamed_pp": 4.499981810906184,
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model_label_unverified": "claude-fable-5-1",
+      "repeat": 3,
+      "paired_n": 70,
+      "flips": 0,
+      "flip_pct": 0.0,
+      "accuracy_clean_minus_misnamed_pp": 0.0,
+      "macro_f1_clean_minus_misnamed_pp": 0.0,
+      "eligible_for_primary_comparison": false
+    }
+  ]
+}

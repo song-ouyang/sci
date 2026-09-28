@@ -1,0 +1,6630 @@
+{
+  "schema": "baselines-v2",
+  "created_at": "2026-09-28T10:09:23.784438+00:00",
+  "seed": 20260926,
+  "script": "src/analysis/baselines_v2.py",
+  "script_sha256": "e202e67081a5e6ef5f2073e3eb9a8504a256167926317862d37b2aea20ef7734",
+  "inputs_sha256": {
+    "results/revision_v3/data/datasets.json": "0097dbb21981968f9ad5b8c59670a07ce701edfecbe61b5108542f7f0638fd1d",
+    "results/independent_validation/answers/records.json": "16c834644f6e5aa8daa1a25368f7977f2437bd43612d4a310eac039db85f4ecb",
+    "results/independent_validation/analysis/cases.csv": "d4522964207064ae1d03b70dd2b202de3f658b60b8b6753db9401e7e5cbb48cd",
+    "results/revision_v3/analysis/reuse/clean_correctness.csv": "342ff58fd01002f0382364435b7d0dbeaa8d05ad10e4c8cd5b3368dc50132845",
+    "data/cmapss/raw/train_FD002.txt": "dac6c4dbc4e7c1bdeb5747da3d313d05c395bb99801b44a002b26a2ba13d788f",
+    "data/cmapss/raw/test_FD002.txt": "de7b5bf7e998a985c378488480528b7c02cff1406a46740def362dda8d9b4e02",
+    "data/cmapss/raw/RUL_FD002.txt": "c851dd96a6ea6998d3c4a8f834d3c8013aa90e93a6ed950dc826ad0655b2906b",
+    "data/cmapss/raw/train_FD001.txt": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+    "data/cmapss/raw/test_FD001.txt": "3cda7109ce17bafb5443f2ac926cfcf88154b941b8c4cf95eb55d1ddd6f52851"
+  },
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit_learn": "1.9.1",
+    "pyreadr": "0.5.6"
+  },
+  "policy": "Training data only; hyperparameters by GroupKFold (5 folds, shuffled groups, seed) on training run/engine IDs, scoring macro-F1, refit on all training rows; each panel scored once. Test labels only for scoring.",
+  "variants": {
+    "original_train": {
+      "extra_information_vs_llm": false,
+      "description": "Tuned models trained only on the original revision-v3 training features (TEP late snapshots of 100 training runs; FD001 windows of 100 training engines) and scored on exactly the numeric features rendered in the LLM prompts. Like-for-like reference; hyperparameters by grouped CV."
+    },
+    "legacy_untuned": {
+      "extra_information_vs_llm": false,
+      "description": "Exact reproduction of the earlier untuned references (RF 300 trees, seed 20260926; StandardScaler + RBF SVM C=1, gamma=scale) on the original training features. Continuity check only."
+    },
+    "tep_phase_aware": {
+      "extra_information_vs_llm": true,
+      "description": "FAIR-TRANSFER (extra training information): original TEP late training rows plus the sample-40 snapshot (same definition as the early test panel) of the SAME 100 training runs for all 7 classes, i.e. labelled examples of the early phase. Run-disjoint from every test panel."
+    },
+    "fd002_in_domain_raw": {
+      "extra_information_vs_llm": true,
+      "description": "FAIR-TRANSFER (extra training information): labelled FD002 training engines (official train_FD002, disjoint partition from the 60 test engines). Same 60-feature 30-cycle summary as the LLM, no regime normalization. Balanced sampled cut points (see training_design)."
+    },
+    "fd002_in_domain_regime_norm": {
+      "extra_information_vs_llm": true,
+      "description": "FAIR-TRANSFER (extra training information + different features): as fd002_in_domain_raw, but every sensor is z-scored per operating regime (KMeans, 6 regimes, fitted on train_FD002 settings) before computing the same 30-cycle summaries. Test features are transformed the same way, so they are NOT the numbers the LLM saw."
+    },
+    "fd001_regime_norm_transfer": {
+      "extra_information_vs_llm": true,
+      "description": "FAIR-TRANSFER (unlabelled target statistics + different features): classifier trained only on FD001 labels (FD001 z-scored with its own training statistics, one regime). FD002 test engines are normalized with per-regime statistics estimated from UNLABELLED train_FD002 sensor data (no RUL used). Also scored on the FD001 panel (same normalization) as an in-domain check."
+    }
+  },
+  "panels": {
+    "tep_late": {
+      "description": "70 new TEP runs (10/class), late snapshot at a seeded sample in [200,500] (independent validation, LLM condition 'clean').",
+      "llm_case_file": "results/independent_validation/analysis/cases.csv",
+      "llm_selector": "condition=clean",
+      "n": 70,
+      "class_counts": {
+        "Fault_7": 10,
+        "Fault_13": 10,
+        "Normal": 10,
+        "Fault_4": 10,
+        "Fault_6": 10,
+        "Fault_2": 10,
+        "Fault_1": 10
+      }
+    },
+    "tep_early": {
+      "description": "Same 70 runs at sample 40 (~60 min after fault injection) (independent validation, LLM condition 'early').",
+      "llm_case_file": "results/independent_validation/analysis/cases.csv",
+      "llm_selector": "condition=early",
+      "n": 70,
+      "class_counts": {
+        "Fault_7": 10,
+        "Fault_4": 10,
+        "Fault_6": 10,
+        "Fault_1": 10,
+        "Normal": 10,
+        "Fault_13": 10,
+        "Fault_2": 10
+      }
+    },
+    "tep_v3": {
+      "description": "Original revision-v3 TEP held-out panel: 70 runs (10/class), late snapshot.",
+      "llm_case_file": "results/revision_v3/analysis/reuse/clean_correctness.csv",
+      "llm_selector": "dataset=tep",
+      "n": 70,
+      "class_counts": {
+        "Fault_4": 10,
+        "Fault_6": 10,
+        "Fault_2": 10,
+        "Fault_13": 10,
+        "Fault_1": 10,
+        "Fault_7": 10,
+        "Normal": 10
+      }
+    },
+    "fd001_v3": {
+      "description": "Original revision-v3 FD001 held-out panel: 60 official test engines (20/RUL class), last 30 cycles.",
+      "llm_case_file": "results/revision_v3/analysis/reuse/clean_correctness.csv",
+      "llm_selector": "dataset=cmapss",
+      "n": 60,
+      "class_counts": {
+        "Critical": 20,
+        "Healthy": 20,
+        "Degrading": 20
+      }
+    },
+    "fd002": {
+      "description": "60 FD002 official test engines (20/RUL class), last 30 cycles, FD001 feature representation (LLM condition 'fd002').",
+      "llm_case_file": "results/independent_validation/analysis/cases.csv",
+      "llm_selector": "condition=fd002",
+      "n": 60,
+      "class_counts": {
+        "Degrading": 20,
+        "Critical": 20,
+        "Healthy": 20
+      }
+    }
+  },
+  "methods": {
+    "pipelines": {
+      "RF": "RandomForestClassifier(n_estimators=500)",
+      "SVM-RBF": "StandardScaler + SVC(rbf)",
+      "HGB": "HistGradientBoostingClassifier(max_iter=200, early_stopping=False) (gradient-boosting reference in place of XGBoost)",
+      "MLP": "StandardScaler + MLPClassifier(adam, max_iter=2000)",
+      "kNN": "StandardScaler + KNeighborsClassifier",
+      "LogReg": "StandardScaler + multinomial LogisticRegression(lbfgs, L2, max_iter=10000)",
+      "RF-legacy": "RandomForestClassifier(n_estimators=300, seed 20260926), untuned",
+      "SVM-legacy": "StandardScaler + SVC(C=1, gamma='scale'), untuned"
+    },
+    "grids": {
+      "RF": {
+        "max_features": [
+          "sqrt",
+          0.3,
+          1.0
+        ],
+        "min_samples_leaf": [
+          1,
+          3,
+          10
+        ],
+        "class_weight": [
+          null,
+          "balanced"
+        ]
+      },
+      "SVM-RBF": {
+        "C": [
+          1.0,
+          0.1,
+          10.0,
+          100.0
+        ],
+        "gamma": [
+          "scale",
+          0.001,
+          0.01,
+          0.1
+        ],
+        "class_weight": [
+          null,
+          "balanced"
+        ]
+      },
+      "HGB": {
+        "learning_rate": [
+          0.1,
+          0.05
+        ],
+        "max_leaf_nodes": [
+          31,
+          7
+        ],
+        "l2_regularization": [
+          0.0,
+          1.0
+        ],
+        "class_weight": [
+          null,
+          "balanced"
+        ]
+      },
+      "MLP": {
+        "hidden_layer_sizes": [
+          [
+            100
+          ],
+          [
+            64
+          ],
+          [
+            128,
+            64
+          ]
+        ],
+        "alpha": [
+          0.0001,
+          0.01,
+          1.0
+        ]
+      },
+      "kNN": {
+        "n_neighbors": [
+          5,
+          1,
+          3,
+          9,
+          15,
+          25
+        ],
+        "weights": [
+          "uniform",
+          "distance"
+        ]
+      },
+      "LogReg": {
+        "C": [
+          1.0,
+          0.001,
+          0.01,
+          0.1,
+          10.0,
+          100.0
+        ],
+        "class_weight": [
+          null,
+          "balanced"
+        ]
+      }
+    },
+    "grid_note": "class_weight is searched only when training classes are imbalanced (max/min > 1.2: FD001 only). Ties broken by first candidate in grid order (defaults first)."
+  },
+  "training_design": {
+    "tep_phase_aware": {
+      "sampling": "All 7 classes x the 100 revision-v3 training runs at sample 40 (fault injected after sample 20; 3-minute sampling), 4-decimal rounding as in the prompts. Appended to the 2100 late training rows; CV groups = run ID shared across classes.",
+      "file": "tep_early_training_snapshots.csv"
+    },
+    "fd002": {
+      "sampling": "Balanced labelled windows from train_FD002 run-to-failure trajectories. For every training engine and every RUL class, FD002_CUTS_PER_CLASS observation endpoints are drawn without replacement (fixed seed) among those with a complete 30-cycle past window whose RUL (= failure cycle - endpoint cycle) falls into the class. Bins match the test panel: Healthy RUL>80, Degrading 30<RUL<=80, Critical RUL<=30. The FD002 test panel is balanced (20/20/20), so classes are balanced by construction.",
+      "cuts_per_engine_and_class": 2,
+      "seed": 20261228,
+      "file": "fd002_training_cutpoints.csv",
+      "rul_range_by_class": {
+        "Healthy": [
+          81,
+          311
+        ],
+        "Degrading": [
+          31,
+          80
+        ],
+        "Critical": [
+          0,
+          30
+        ]
+      }
+    },
+    "regime_normalization": {
+      "method": "Operating-regime-wise sensor standardization, standard in the C-MAPSS literature. Regimes are KMeans clusters of the three standardized operating settings (raw columns 2-4), fitted on training rows only; every sensor (columns 5-25) is then z-scored with the training mean/std of its regime. With one regime this reduces to global per-sensor standardization (FD001 has a single condition).",
+      "kmeans": {
+        "n_clusters": 6,
+        "n_init": 10,
+        "random_state": 20260926,
+        "fitted_on": "train_FD002 operating settings only"
+      },
+      "audit": {
+        "train_regime_counts": [
+          8002,
+          8122,
+          8096,
+          13458,
+          8044,
+          8037
+        ],
+        "max_train_distance_to_centroid_std_units": 0.004898158205520999,
+        "max_test_distance_to_centroid_std_units": 0.004897936036028327,
+        "centroids_in_setting_units": [
+          [
+            25.003,
+            0.6205,
+            60.0
+          ],
+          [
+            20.003,
+            0.7005,
+            100.0
+          ],
+          [
+            10.003,
+            0.2505,
+            100.0
+          ],
+          [
+            42.003,
+            0.8405,
+            100.0
+          ],
+          [
+            0.0015,
+            0.0005,
+            100.0
+          ],
+          [
+            35.003,
+            0.8405,
+            100.0
+          ]
+        ]
+      },
+      "sensors": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        20,
+        21
+      ],
+      "fd001": "Single regime: global per-sensor standardization with train_FD001 statistics."
+    }
+  },
+  "class_balance": {
+    "panels": {
+      "tep_late": {
+        "n": 70,
+        "class_counts": {
+          "Fault_7": 10,
+          "Fault_13": 10,
+          "Normal": 10,
+          "Fault_4": 10,
+          "Fault_6": 10,
+          "Fault_2": 10,
+          "Fault_1": 10
+        }
+      },
+      "tep_early": {
+        "n": 70,
+        "class_counts": {
+          "Fault_7": 10,
+          "Fault_4": 10,
+          "Fault_6": 10,
+          "Fault_1": 10,
+          "Normal": 10,
+          "Fault_13": 10,
+          "Fault_2": 10
+        }
+      },
+      "tep_v3": {
+        "n": 70,
+        "class_counts": {
+          "Fault_4": 10,
+          "Fault_6": 10,
+          "Fault_2": 10,
+          "Fault_13": 10,
+          "Fault_1": 10,
+          "Fault_7": 10,
+          "Normal": 10
+        }
+      },
+      "fd001_v3": {
+        "n": 60,
+        "class_counts": {
+          "Critical": 20,
+          "Healthy": 20,
+          "Degrading": 20
+        }
+      },
+      "fd002": {
+        "n": 60,
+        "class_counts": {
+          "Degrading": 20,
+          "Critical": 20,
+          "Healthy": 20
+        }
+      }
+    },
+    "training": {
+      "original_train/TEP": {
+        "n_records": 2100,
+        "n_groups": 100,
+        "class_counts": {
+          "Fault_7": 300,
+          "Fault_4": 300,
+          "Normal": 300,
+          "Fault_6": 300,
+          "Fault_13": 300,
+          "Fault_2": 300,
+          "Fault_1": 300
+        }
+      },
+      "original_train/C-MAPSS": {
+        "n_records": 500,
+        "n_groups": 100,
+        "class_counts": {
+          "Degrading": 131,
+          "Critical": 107,
+          "Healthy": 262
+        }
+      },
+      "tep_phase_aware/TEP": {
+        "n_records": 2800,
+        "n_groups": 100,
+        "class_counts": {
+          "Fault_7": 400,
+          "Fault_4": 400,
+          "Normal": 400,
+          "Fault_6": 400,
+          "Fault_13": 400,
+          "Fault_2": 400,
+          "Fault_1": 400
+        }
+      },
+      "fd002_in_domain_raw/C-MAPSS": {
+        "n_records": 1560,
+        "n_groups": 260,
+        "class_counts": {
+          "Healthy": 520,
+          "Degrading": 520,
+          "Critical": 520
+        }
+      },
+      "fd002_in_domain_regime_norm/C-MAPSS": {
+        "n_records": 1560,
+        "n_groups": 260,
+        "class_counts": {
+          "Healthy": 520,
+          "Degrading": 520,
+          "Critical": 520
+        }
+      },
+      "fd001_regime_norm_transfer/C-MAPSS": {
+        "n_records": 500,
+        "n_groups": 100,
+        "class_counts": {
+          "Degrading": 131,
+          "Critical": 107,
+          "Healthy": 262
+        }
+      }
+    }
+  },
+  "tuning": {
+    "original_train": {
+      "TEP": {
+        "RF": {
+          "best_params": {
+            "max_features": "sqrt",
+            "min_samples_leaf": 1
+          },
+          "cv_macro_f1_mean": 0.9985711308765778,
+          "cv_macro_f1_sd": 0.001905241541593641,
+          "n_candidates": 9,
+          "n_tied_best": 1,
+          "class_weight_searched": false,
+          "seed_sensitivity": {
+            "tep_late": {
+              "seeds": [
+                20260927,
+                20260928,
+                20260929,
+                20260930,
+                20260931
+              ],
+              "accuracy": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "min": 1.0,
+              "max": 1.0,
+              "mean": 1.0
+            },
+            "tep_early": {
+              "seeds": [
+                20260927,
+                20260928,
+                20260929,
+                20260930,
+                20260931
+              ],
+              "accuracy": [
+                0.2857142857142857,
+                0.2857142857142857,
+                0.2857142857142857,
+                0.2857142857142857,
+                0.2857142857142857
+              ],
+              "min": 0.2857142857142857,
+              "max": 0.2857142857142857,
+              "mean": 0.2857142857142857
+            },
+            "tep_v3": {
+              "seeds": [
+                20260927,
+                20260928,
+                20260929,
+                20260930,
+                20260931
+              ],
+              "accuracy": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "min": 1.0,
+              "max": 1.0,
+              "mean": 1.0
+            }
+          }
+        },
+        "SVM-RBF": {
+          "best_params": {
+            "C": 10.0,
+            "gamma": "scale"
+          },
+          "cv_macro_f1_mean": 0.991919866703153,
+          "cv_macro_f1_sd": 0.005326422001815489,
+          "n_candidates": 16,
+          "n_tied_best": 1,
+          "class_weight_searched": false
+        },
+        "HGB": {
+          "best_params": {
+            "l2_regularization": 0.0,
+            "learning_rate": 0.1,
+            "max_leaf_nodes": 7
+          },
+          "cv_macro_f1_mean": 0.9966662697585769,
+          "cv_macro_f1_sd": 0.0035637528499410337,
+          "n_candidates": 8,
+          "n_tied_best": 1,
+          "class_weight_searched": false
+        },
+        "MLP": {
+          "best_params": {
+            "alpha": 0.01,
+            "hidden_layer_sizes": [
+              100
+            ]
+          },
+          "cv_macro_f1_mean": 0.9942821397952748,
+          "cv_macro_f1_sd": 0.0024317016535253234,
+          "n_candidates": 9,
+          "n_tied_best": 3,
+          "class_weight_searched": false,
+          "mlp_iterations": 166,
+          "mlp_converged": true,
+          "seed_sensitivity": {
+            "tep_late": {
+              "seeds": [
+                20260927,
+                20260928,
+                20260929,
+                20260930,
+                20260931
+              ],
+              "accuracy": [
+                0.9714285714285714,
+                0.9714285714285714,
+                0.9714285714285714,
+                0.9571428571428572,
+                0.9571428571428572
+              ],
+              "min": 0.9571428571428572,
+              "max": 0.9714285714285714,
+              "mean": 0.9657142857142856
+            },
+            "tep_early": {
+              "seeds": [
+                20260927,
+                20260928,
+                20260929,
+                20260930,
+                20260931
+              ],
+              "accuracy": [
+                0.2857142857142857,
+                0.3,
+                0.35714285714285715,
+                0.2857142857142857,
+                0.34285714285714286
+              ],
+              "min": 0.2857142857142857,
+              "max": 0.35714285714285715,
+              "mean": 0.31428571428571433
+            },
+            "tep_v3": {
+              "seeds": [
+                20260927,
+                20260928,
+                20260929,
+                20260930,
+                20260931
+              ],
+              "accuracy": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "min": 1.0,
+              "max": 1.0,
+              "mean": 1.0
+            }
+          }
+        },
+        "kNN": {
+          "best_params": {
+            "n_neighbors": 1,
+            "weights": "uniform"
+          },
+          "cv_macro_f1_mean": 0.8547540934585675,
+          "cv_macro_f1_sd": 0.01223312262486606,
+          "n_candidates": 12,
+          "n_tied_best": 2,
+          "class_weight_searched": false
+        },
+        "LogReg": {
+          "best_params": {
+            "C": 100.0
+          },
+          "cv_macro_f1_mean": 0.973667135107179,
+          "cv_macro_f1_sd": 0.004216336748951388,
+          "n_candidates": 6,
+          "n_tied_best": 1,
+          "class_weight_searched": false
+        }
+      },
+      "C-MAPSS": {
+        "RF": {
+          "best_params": {
+            "class_weight": null,
+            "max_features": "sqrt",
+            "min_samples_leaf": 1
+          },
+          "cv_macro_f1_mean": 0.9150570340857058,
+          "cv_macro_f1_sd": 0.014959621967748119,
+          "n_candidates": 18,
+          "n_tied_best": 1,
+          "class_weight_searched": true,
+          "seed_sensitivity": {
+            "fd001_v3": {
+              "seeds": [
+                20260927,
+                20260928,
+                20260929,
+                20260930,
+                20260931
+              ],
+              "accuracy": [
+                0.7833333333333333,
+                0.7833333333333333,
+                0.7666666666666667,
+                0.7833333333333333,
+                0.75
+              ],
+              "min": 0.75,
+              "max": 0.7833333333333333,
+              "mean": 0.7733333333333333
+            },
+            "fd002": {
+              "seeds": [
+                20260927,
+                20260928,
+                20260929,
+                20260930,
+                20260931
+              ],
+              "accuracy": [
+                0.3333333333333333,
+                0.36666666666666664,
+                0.35,
+                0.36666666666666664,
+                0.35
+              ],
+              "min": 0.3333333333333333,
+              "max": 0.36666666666666664,
+              "mean": 0.35333333333333333
+            }
+          }
+        },
+        "SVM-RBF": {
+          "best_params": {
+            "C": 10.0,
+            "class_weight": "balanced",
+            "gamma": 0.001
+          },
+          "cv_macro_f1_mean": 0.9106628057682264,
+          "cv_macro_f1_sd": 0.02230075995446276,
+          "n_candidates": 32,
+          "n_tied_best": 1,
+          "class_weight_searched": true
+        },
+        "HGB": {
+          "best_params": {
+            "class_weight": null,
+            "l2_regularization": 1.0,
+            "learning_rate": 0.05,
+            "max_leaf_nodes": 31
+          },
+          "cv_macro_f1_mean": 0.9089300278021624,
+          "cv_macro_f1_sd": 0.017703703399471197,
+          "n_candidates": 16,
+          "n_tied_best": 1,
+          "class_weight_searched": true
+        },
+        "MLP": {
+          "best_params": {
+            "alpha": 1.0,
+            "hidden_layer_sizes": [
+              100
+            ]
+          },
+          "cv_macro_f1_mean": 0.8887996319256743,
+          "cv_macro_f1_sd": 0.02680653664297892,
+          "n_candidates": 9,
+          "n_tied_best": 1,
+          "class_weight_searched": true,
+          "mlp_iterations": 507,
+          "mlp_converged": true,
+          "seed_sensitivity": {
+            "fd001_v3": {
+              "seeds": [
+                20260927,
+                20260928,
+                20260929,
+                20260930,
+                20260931
+              ],
+              "accuracy": [
+                0.7833333333333333,
+                0.7833333333333333,
+                0.7833333333333333,
+                0.7833333333333333,
+                0.7833333333333333
+              ],
+              "min": 0.7833333333333333,
+              "max": 0.7833333333333333,
+              "mean": 0.7833333333333333
+            },
+            "fd002": {
+              "seeds": [
+                20260927,
+                20260928,
+                20260929,
+                20260930,
+                20260931
+              ],
+              "accuracy": [
+                0.3333333333333333,
+                0.4,
+                0.4,
+                0.3333333333333333,
+                0.3333333333333333
+              ],
+              "min": 0.3333333333333333,
+              "max": 0.4,
+              "mean": 0.36
+            }
+          }
+        },
+        "kNN": {
+          "best_params": {
+            "n_neighbors": 15,
+            "weights": "uniform"
+          },
+          "cv_macro_f1_mean": 0.9006413507361971,
+          "cv_macro_f1_sd": 0.02344611876537766,
+          "n_candidates": 12,
+          "n_tied_best": 1,
+          "class_weight_searched": true
+        },
+        "LogReg": {
+          "best_params": {
+            "C": 0.01,
+            "class_weight": null
+          },
+          "cv_macro_f1_mean": 0.9073257370914675,
+          "cv_macro_f1_sd": 0.014209416262996214,
+          "n_candidates": 12,
+          "n_tied_best": 1,
+          "class_weight_searched": true
+        }
+      }
+    },
+    "tep_phase_aware": {
+      "TEP": {
+        "RF": {
+          "best_params": {
+            "max_features": "sqrt",
+            "min_samples_leaf": 3
+          },
+          "cv_macro_f1_mean": 0.96600974496346,
+          "cv_macro_f1_sd": 0.0021517644486885312,
+          "n_candidates": 9,
+          "n_tied_best": 2,
+          "class_weight_searched": false,
+          "seed_sensitivity": {
+            "tep_late": {
+              "seeds": [
+                20260927,
+                20260928,
+                20260929,
+                20260930,
+                20260931
+              ],
+              "accuracy": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "min": 1.0,
+              "max": 1.0,
+              "mean": 1.0
+            },
+            "tep_early": {
+              "seeds": [
+                20260927,
+                20260928,
+                20260929,
+                20260930,
+                20260931
+              ],
+              "accuracy": [
+                0.8714285714285714,
+                0.8714285714285714,
+                0.8714285714285714,
+                0.8714285714285714,
+                0.8714285714285714
+              ],
+              "min": 0.8714285714285714,
+              "max": 0.8714285714285714,
+              "mean": 0.8714285714285716
+            },
+            "tep_v3": {
+              "seeds": [
+                20260927,
+                20260928,
+                20260929,
+                20260930,
+                20260931
+              ],
+              "accuracy": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "min": 1.0,
+              "max": 1.0,
+              "mean": 1.0
+            }
+          }
+        },
+        "SVM-RBF": {
+          "best_params": {
+            "C": 100.0,
+            "gamma": 0.01
+          },
+          "cv_macro_f1_mean": 0.959995719671816,
+          "cv_macro_f1_sd": 0.005012993287984451,
+          "n_candidates": 16,
+          "n_tied_best": 1,
+          "class_weight_searched": false
+        },
+        "HGB": {
+          "best_params": {
+            "l2_regularization": 1.0,
+            "learning_rate": 0.1,
+            "max_leaf_nodes": 31
+          },
+          "cv_macro_f1_mean": 0.9637384850774786,
+          "cv_macro_f1_sd": 0.0032272512447778963,
+          "n_candidates": 8,
+          "n_tied_best": 1,
+          "class_weight_searched": false
+        },
+        "MLP": {
+          "best_params": {
+            "alpha": 1.0,
+            "hidden_layer_sizes": [
+              128,
+              64
+            ]
+          },
+          "cv_macro_f1_mean": 0.9606547002425335,
+          "cv_macro_f1_sd": 0.0038729321405172102,
+          "n_candidates": 9,
+          "n_tied_best": 1,
+          "class_weight_searched": false,
+          "mlp_iterations": 207,
+          "mlp_converged": true,
+          "seed_sensitivity": {
+            "tep_late": {
+              "seeds": [
+                20260927,
+                20260928,
+                20260929,
+                20260930,
+                20260931
+              ],
+              "accuracy": [
+                0.9857142857142858,
+                0.9714285714285714,
+                0.9714285714285714,
+                1.0,
+                0.9714285714285714
+              ],
+              "min": 0.9714285714285714,
+              "max": 1.0,
+              "mean": 0.9800000000000001
+            },
+            "tep_early": {
+              "seeds": [
+                20260927,
+                20260928,
+                20260929,
+                20260930,
+                20260931
+              ],
+              "accuracy": [
+                0.8571428571428571,
+                0.8571428571428571,
+                0.8571428571428571,
+                0.8571428571428571,
+                0.8571428571428571
+              ],
+              "min": 0.8571428571428571,
+              "max": 0.8571428571428571,
+              "mean": 0.8571428571428571
+            },
+            "tep_v3": {
+              "seeds": [
+                20260927,
+                20260928,
+                20260929,
+                20260930,
+                20260931
+              ],
+              "accuracy": [
+                0.9857142857142858,
+                1.0,
+                0.9857142857142858,
+                1.0,
+                1.0
+              ],
+              "min": 0.9857142857142858,
+              "max": 1.0,
+              "mean": 0.9942857142857143
+            }
+          }
+        },
+        "kNN": {
+          "best_params": {
+            "n_neighbors": 1,
+            "weights": "uniform"
+          },
+          "cv_macro_f1_mean": 0.8257786485533087,
+          "cv_macro_f1_sd": 0.00782718595845016,
+          "n_candidates": 12,
+          "n_tied_best": 2,
+          "class_weight_searched": false
+        },
+        "LogReg": {
+          "best_params": {
+            "C": 100.0
+          },
+          "cv_macro_f1_mean": 0.9447861872603607,
+          "cv_macro_f1_sd": 0.0038198308535354387,
+          "n_candidates": 6,
+          "n_tied_best": 1,
+          "class_weight_searched": false
+        }
+      }
+    },
+    "fd002_in_domain_raw": {
+      "C-MAPSS": {
+        "RF": {
+          "best_params": {
+            "max_features": 0.3,
+            "min_samples_leaf": 10
+          },
+          "cv_macro_f1_mean": 0.7331366610401345,
+          "cv_macro_f1_sd": 0.023506831457815052,
+          "n_candidates": 9,
+          "n_tied_best": 1,
+          "class_weight_searched": false,
+          "seed_sensitivity": {
+            "fd002": {
+              "seeds": [
+                20260927,
+                20260928,
+                20260929,
+                20260930,
+                20260931
+              ],
+              "accuracy": [
+                0.8166666666666667,
+                0.8166666666666667,
+                0.8166666666666667,
+                0.8,
+                0.8
+              ],
+              "min": 0.8,
+              "max": 0.8166666666666667,
+              "mean": 0.8099999999999999
+            }
+          }
+        },
+        "SVM-RBF": {
+          "best_params": {
+            "C": 100.0,
+            "gamma": 0.001
+          },
+          "cv_macro_f1_mean": 0.7521602898017717,
+          "cv_macro_f1_sd": 0.03434006088300017,
+          "n_candidates": 16,
+          "n_tied_best": 1,
+          "class_weight_searched": false
+        },
+        "HGB": {
+          "best_params": {
+            "l2_regularization": 1.0,
+            "learning_rate": 0.1,
+            "max_leaf_nodes": 7
+          },
+          "cv_macro_f1_mean": 0.7321888889863374,
+          "cv_macro_f1_sd": 0.01563471579207381,
+          "n_candidates": 8,
+          "n_tied_best": 1,
+          "class_weight_searched": false
+        },
+        "MLP": {
+          "best_params": {
+            "alpha": 1.0,
+            "hidden_layer_sizes": [
+              100
+            ]
+          },
+          "cv_macro_f1_mean": 0.7618812049191118,
+          "cv_macro_f1_sd": 0.020105320107931195,
+          "n_candidates": 9,
+          "n_tied_best": 1,
+          "class_weight_searched": false,
+          "mlp_iterations": 268,
+          "mlp_converged": true,
+          "seed_sensitivity": {
+            "fd002": {
+              "seeds": [
+                20260927,
+                20260928,
+                20260929,
+                20260930,
+                20260931
+              ],
+              "accuracy": [
+                0.75,
+                0.7166666666666667,
+                0.6833333333333333,
+                0.8,
+                0.75
+              ],
+              "min": 0.6833333333333333,
+              "max": 0.8,
+              "mean": 0.74
+            }
+          }
+        },
+        "kNN": {
+          "best_params": {
+            "n_neighbors": 3,
+            "weights": "distance"
+          },
+          "cv_macro_f1_mean": 0.42854116965675554,
+          "cv_macro_f1_sd": 0.01748474362835868,
+          "n_candidates": 12,
+          "n_tied_best": 1,
+          "class_weight_searched": false
+        },
+        "LogReg": {
+          "best_params": {
+            "C": 100.0
+          },
+          "cv_macro_f1_mean": 0.8120817711206506,
+          "cv_macro_f1_sd": 0.019388852149286047,
+          "n_candidates": 6,
+          "n_tied_best": 1,
+          "class_weight_searched": false
+        }
+      }
+    },
+    "fd002_in_domain_regime_norm": {
+      "C-MAPSS": {
+        "RF": {
+          "best_params": {
+            "max_features": 0.3,
+            "min_samples_leaf": 3
+          },
+          "cv_macro_f1_mean": 0.8355371733973364,
+          "cv_macro_f1_sd": 0.018148887989251013,
+          "n_candidates": 9,
+          "n_tied_best": 1,
+          "class_weight_searched": false,
+          "seed_sensitivity": {
+            "fd002": {
+              "seeds": [
+                20260927,
+                20260928,
+                20260929,
+                20260930,
+                20260931
+              ],
+              "accuracy": [
+                0.85,
+                0.85,
+                0.8666666666666667,
+                0.85,
+                0.8666666666666667
+              ],
+              "min": 0.85,
+              "max": 0.8666666666666667,
+              "mean": 0.8566666666666667
+            }
+          }
+        },
+        "SVM-RBF": {
+          "best_params": {
+            "C": 1.0,
+            "gamma": 0.01
+          },
+          "cv_macro_f1_mean": 0.8475994750951695,
+          "cv_macro_f1_sd": 0.02391412796600096,
+          "n_candidates": 16,
+          "n_tied_best": 1,
+          "class_weight_searched": false
+        },
+        "HGB": {
+          "best_params": {
+            "l2_regularization": 0.0,
+            "learning_rate": 0.1,
+            "max_leaf_nodes": 31
+          },
+          "cv_macro_f1_mean": 0.8346327680740293,
+          "cv_macro_f1_sd": 0.01547281733542665,
+          "n_candidates": 8,
+          "n_tied_best": 1,
+          "class_weight_searched": false
+        },
+        "MLP": {
+          "best_params": {
+            "alpha": 1.0,
+            "hidden_layer_sizes": [
+              64
+            ]
+          },
+          "cv_macro_f1_mean": 0.8307073796405675,
+          "cv_macro_f1_sd": 0.02359462804051948,
+          "n_candidates": 9,
+          "n_tied_best": 1,
+          "class_weight_searched": false,
+          "mlp_iterations": 436,
+          "mlp_converged": true,
+          "seed_sensitivity": {
+            "fd002": {
+              "seeds": [
+                20260927,
+                20260928,
+                20260929,
+                20260930,
+                20260931
+              ],
+              "accuracy": [
+                0.8833333333333333,
+                0.8666666666666667,
+                0.85,
+                0.8166666666666667,
+                0.8833333333333333
+              ],
+              "min": 0.8166666666666667,
+              "max": 0.8833333333333333,
+              "mean": 0.8600000000000001
+            }
+          }
+        },
+        "kNN": {
+          "best_params": {
+            "n_neighbors": 25,
+            "weights": "distance"
+          },
+          "cv_macro_f1_mean": 0.8278517877773091,
+          "cv_macro_f1_sd": 0.016138439001417478,
+          "n_candidates": 12,
+          "n_tied_best": 1,
+          "class_weight_searched": false
+        },
+        "LogReg": {
+          "best_params": {
+            "C": 0.1
+          },
+          "cv_macro_f1_mean": 0.8408651583373954,
+          "cv_macro_f1_sd": 0.029284473968295813,
+          "n_candidates": 6,
+          "n_tied_best": 1,
+          "class_weight_searched": false
+        }
+      }
+    },
+    "fd001_regime_norm_transfer": {
+      "C-MAPSS": {
+        "RF": {
+          "best_params": {
+            "class_weight": null,
+            "max_features": "sqrt",
+            "min_samples_leaf": 1
+          },
+          "cv_macro_f1_mean": 0.9150570340857058,
+          "cv_macro_f1_sd": 0.014959621967748119,
+          "n_candidates": 18,
+          "n_tied_best": 1,
+          "class_weight_searched": true,
+          "seed_sensitivity": {
+            "fd001_v3": {
+              "seeds": [
+                20260927,
+                20260928,
+                20260929,
+                20260930,
+                20260931
+              ],
+              "accuracy": [
+                0.7833333333333333,
+                0.7833333333333333,
+                0.7666666666666667,
+                0.7833333333333333,
+                0.75
+              ],
+              "min": 0.75,
+              "max": 0.7833333333333333,
+              "mean": 0.7733333333333333
+            },
+            "fd002": {
+              "seeds": [
+                20260927,
+                20260928,
+                20260929,
+                20260930,
+                20260931
+              ],
+              "accuracy": [
+                0.7666666666666667,
+                0.7833333333333333,
+                0.7666666666666667,
+                0.7833333333333333,
+                0.7833333333333333
+              ],
+              "min": 0.7666666666666667,
+              "max": 0.7833333333333333,
+              "mean": 0.7766666666666666
+            }
+          }
+        },
+        "SVM-RBF": {
+          "best_params": {
+            "C": 10.0,
+            "class_weight": null,
+            "gamma": 0.001
+          },
+          "cv_macro_f1_mean": 0.9098319665960123,
+          "cv_macro_f1_sd": 0.01696766809266525,
+          "n_candidates": 32,
+          "n_tied_best": 1,
+          "class_weight_searched": true
+        },
+        "HGB": {
+          "best_params": {
+            "class_weight": null,
+            "l2_regularization": 1.0,
+            "learning_rate": 0.1,
+            "max_leaf_nodes": 31
+          },
+          "cv_macro_f1_mean": 0.9069446179521783,
+          "cv_macro_f1_sd": 0.013767883140737092,
+          "n_candidates": 16,
+          "n_tied_best": 1,
+          "class_weight_searched": true
+        },
+        "MLP": {
+          "best_params": {
+            "alpha": 1.0,
+            "hidden_layer_sizes": [
+              64
+            ]
+          },
+          "cv_macro_f1_mean": 0.888698885404339,
+          "cv_macro_f1_sd": 0.024486230572466076,
+          "n_candidates": 9,
+          "n_tied_best": 1,
+          "class_weight_searched": true,
+          "mlp_iterations": 486,
+          "mlp_converged": true,
+          "seed_sensitivity": {
+            "fd001_v3": {
+              "seeds": [
+                20260927,
+                20260928,
+                20260929,
+                20260930,
+                20260931
+              ],
+              "accuracy": [
+                0.7666666666666667,
+                0.7833333333333333,
+                0.7833333333333333,
+                0.7833333333333333,
+                0.7833333333333333
+              ],
+              "min": 0.7666666666666667,
+              "max": 0.7833333333333333,
+              "mean": 0.78
+            },
+            "fd002": {
+              "seeds": [
+                20260927,
+                20260928,
+                20260929,
+                20260930,
+                20260931
+              ],
+              "accuracy": [
+                0.8166666666666667,
+                0.8166666666666667,
+                0.7666666666666667,
+                0.7666666666666667,
+                0.8
+              ],
+              "min": 0.7666666666666667,
+              "max": 0.8166666666666667,
+              "mean": 0.7933333333333333
+            }
+          }
+        },
+        "kNN": {
+          "best_params": {
+            "n_neighbors": 15,
+            "weights": "uniform"
+          },
+          "cv_macro_f1_mean": 0.9006413507361971,
+          "cv_macro_f1_sd": 0.02344611876537766,
+          "n_candidates": 12,
+          "n_tied_best": 1,
+          "class_weight_searched": true
+        },
+        "LogReg": {
+          "best_params": {
+            "C": 0.01,
+            "class_weight": null
+          },
+          "cv_macro_f1_mean": 0.9073257370914675,
+          "cv_macro_f1_sd": 0.014209416262996214,
+          "n_candidates": 12,
+          "n_tied_best": 1,
+          "class_weight_searched": true
+        }
+      }
+    }
+  },
+  "results": [
+    {
+      "variant": "legacy_untuned",
+      "domain": "TEP",
+      "method": "RF-legacy",
+      "panel": "tep_late",
+      "n": 70,
+      "correct": 70,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "legacy_untuned",
+      "domain": "TEP",
+      "method": "RF-legacy",
+      "panel": "tep_early",
+      "n": 70,
+      "correct": 20,
+      "accuracy": 0.2857142857142857,
+      "macro_f1": 0.21428571428571427,
+      "accuracy_wilson95": [
+        0.19322220378719757,
+        0.40050196581720254
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ],
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          8,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ],
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "legacy_untuned",
+      "domain": "TEP",
+      "method": "RF-legacy",
+      "panel": "tep_v3",
+      "n": 70,
+      "correct": 70,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "legacy_untuned",
+      "domain": "TEP",
+      "method": "SVM-legacy",
+      "panel": "tep_late",
+      "n": 70,
+      "correct": 65,
+      "accuracy": 0.9285714285714286,
+      "macro_f1": 0.926427092576161,
+      "accuracy_wilson95": [
+        0.8434458778290468,
+        0.969105782962153
+      ],
+      "confusion_matrix": [
+        [
+          9,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "legacy_untuned",
+      "domain": "TEP",
+      "method": "SVM-legacy",
+      "panel": "tep_early",
+      "n": 70,
+      "correct": 22,
+      "accuracy": 0.3142857142857143,
+      "macro_f1": 0.2512664640324215,
+      "accuracy_wilson95": [
+        0.21762290046582755,
+        0.4302713798579859
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          6
+        ],
+        [
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ],
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "legacy_untuned",
+      "domain": "TEP",
+      "method": "SVM-legacy",
+      "panel": "tep_v3",
+      "n": 70,
+      "correct": 70,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "TEP",
+      "method": "RF",
+      "panel": "tep_late",
+      "n": 70,
+      "correct": 70,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "TEP",
+      "method": "RF",
+      "panel": "tep_early",
+      "n": 70,
+      "correct": 20,
+      "accuracy": 0.2857142857142857,
+      "macro_f1": 0.21428571428571427,
+      "accuracy_wilson95": [
+        0.19322220378719757,
+        0.40050196581720254
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ],
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ],
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "TEP",
+      "method": "RF",
+      "panel": "tep_v3",
+      "n": 70,
+      "correct": 70,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "TEP",
+      "method": "SVM-RBF",
+      "panel": "tep_late",
+      "n": 70,
+      "correct": 67,
+      "accuracy": 0.9571428571428572,
+      "macro_f1": 0.9561563755937158,
+      "accuracy_wilson95": [
+        0.8814033125147246,
+        0.9853184589958887
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "TEP",
+      "method": "SVM-RBF",
+      "panel": "tep_early",
+      "n": 70,
+      "correct": 20,
+      "accuracy": 0.2857142857142857,
+      "macro_f1": 0.2108843537414966,
+      "accuracy_wilson95": [
+        0.19322220378719757,
+        0.40050196581720254
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ],
+        [
+          7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ],
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "TEP",
+      "method": "SVM-RBF",
+      "panel": "tep_v3",
+      "n": 70,
+      "correct": 70,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "TEP",
+      "method": "HGB",
+      "panel": "tep_late",
+      "n": 70,
+      "correct": 70,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "TEP",
+      "method": "HGB",
+      "panel": "tep_early",
+      "n": 70,
+      "correct": 38,
+      "accuracy": 0.5428571428571428,
+      "macro_f1": 0.5076767204426779,
+      "accuracy_wilson95": [
+        0.42698259205475575,
+        0.6542725740243641
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0,
+          0,
+          0,
+          0,
+          5
+        ],
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          7,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "TEP",
+      "method": "HGB",
+      "panel": "tep_v3",
+      "n": 70,
+      "correct": 70,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "TEP",
+      "method": "MLP",
+      "panel": "tep_late",
+      "n": 70,
+      "correct": 67,
+      "accuracy": 0.9571428571428572,
+      "macro_f1": 0.9550001818909382,
+      "accuracy_wilson95": [
+        0.8814033125147246,
+        0.9853184589958887
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          1,
+          0,
+          0,
+          7
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "TEP",
+      "method": "MLP",
+      "panel": "tep_early",
+      "n": 70,
+      "correct": 22,
+      "accuracy": 0.3142857142857143,
+      "macro_f1": 0.2619047619047619,
+      "accuracy_wilson95": [
+        0.21762290046582755,
+        0.4302713798579859
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          1,
+          0,
+          7
+        ],
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ],
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "TEP",
+      "method": "MLP",
+      "panel": "tep_v3",
+      "n": 70,
+      "correct": 70,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "TEP",
+      "method": "kNN",
+      "panel": "tep_late",
+      "n": 70,
+      "correct": 54,
+      "accuracy": 0.7714285714285715,
+      "macro_f1": 0.7813416957829714,
+      "accuracy_wilson95": [
+        0.6604966840601509,
+        0.8541193677742756
+      ],
+      "confusion_matrix": [
+        [
+          7,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          8,
+          0
+        ],
+        [
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "TEP",
+      "method": "kNN",
+      "panel": "tep_early",
+      "n": 70,
+      "correct": 16,
+      "accuracy": 0.22857142857142856,
+      "macro_f1": 0.15893630179344465,
+      "accuracy_wilson95": [
+        0.14588063222572434,
+        0.33950331593984906
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          3,
+          0,
+          3,
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          5,
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          0,
+          8,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          9
+        ],
+        [
+          5,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "TEP",
+      "method": "kNN",
+      "panel": "tep_v3",
+      "n": 70,
+      "correct": 61,
+      "accuracy": 0.8714285714285714,
+      "macro_f1": 0.8695762890136292,
+      "accuracy_wilson95": [
+        0.7733524405057483,
+        0.9308589988466248
+      ],
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          0,
+          3,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          8,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          2,
+          7
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "TEP",
+      "method": "LogReg",
+      "panel": "tep_late",
+      "n": 70,
+      "correct": 64,
+      "accuracy": 0.9142857142857143,
+      "macro_f1": 0.9142857142857144,
+      "accuracy_wilson95": [
+        0.8253432750766051,
+        0.9601233303548878
+      ],
+      "confusion_matrix": [
+        [
+          7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "TEP",
+      "method": "LogReg",
+      "panel": "tep_early",
+      "n": 70,
+      "correct": 31,
+      "accuracy": 0.44285714285714284,
+      "macro_f1": 0.35830903790087465,
+      "accuracy_wilson95": [
+        0.3324952890930533,
+        0.55916448946812
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          9
+        ],
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          9,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "TEP",
+      "method": "LogReg",
+      "panel": "tep_v3",
+      "n": 70,
+      "correct": 69,
+      "accuracy": 0.9857142857142858,
+      "macro_f1": 0.9856784819190835,
+      "accuracy_wilson95": [
+        0.9234181286879168,
+        0.9974737535421097
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "legacy_untuned",
+      "domain": "C-MAPSS",
+      "method": "RF-legacy",
+      "panel": "fd001_v3",
+      "n": 60,
+      "correct": 49,
+      "accuracy": 0.8166666666666667,
+      "macro_f1": 0.8135994087213598,
+      "accuracy_wilson95": [
+        0.7008024625353194,
+        0.8944220311080237
+      ],
+      "confusion_matrix": [
+        [
+          20,
+          0,
+          0
+        ],
+        [
+          4,
+          15,
+          1
+        ],
+        [
+          0,
+          6,
+          14
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "legacy_untuned",
+      "domain": "C-MAPSS",
+      "method": "RF-legacy",
+      "panel": "fd002",
+      "n": 60,
+      "correct": 20,
+      "accuracy": 0.3333333333333333,
+      "macro_f1": 0.16666666666666666,
+      "accuracy_wilson95": [
+        0.2272926152352268,
+        0.4594313354788031
+      ],
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          20
+        ],
+        [
+          0,
+          0,
+          20
+        ],
+        [
+          0,
+          0,
+          20
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "legacy_untuned",
+      "domain": "C-MAPSS",
+      "method": "SVM-legacy",
+      "panel": "fd001_v3",
+      "n": 60,
+      "correct": 45,
+      "accuracy": 0.75,
+      "macro_f1": 0.7407407407407406,
+      "accuracy_wilson95": [
+        0.6276792992295218,
+        0.8422347746994333
+      ],
+      "confusion_matrix": [
+        [
+          20,
+          0,
+          0
+        ],
+        [
+          5,
+          15,
+          0
+        ],
+        [
+          0,
+          10,
+          10
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "legacy_untuned",
+      "domain": "C-MAPSS",
+      "method": "SVM-legacy",
+      "panel": "fd002",
+      "n": 60,
+      "correct": 20,
+      "accuracy": 0.3333333333333333,
+      "macro_f1": 0.16666666666666666,
+      "accuracy_wilson95": [
+        0.2272926152352268,
+        0.4594313354788031
+      ],
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          20
+        ],
+        [
+          0,
+          0,
+          20
+        ],
+        [
+          0,
+          0,
+          20
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "C-MAPSS",
+      "method": "RF",
+      "panel": "fd001_v3",
+      "n": 60,
+      "correct": 47,
+      "accuracy": 0.7833333333333333,
+      "macro_f1": 0.7780126849894291,
+      "accuracy_wilson95": [
+        0.6637997242680521,
+        0.868769559518097
+      ],
+      "confusion_matrix": [
+        [
+          20,
+          0,
+          0
+        ],
+        [
+          4,
+          15,
+          1
+        ],
+        [
+          0,
+          8,
+          12
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "C-MAPSS",
+      "method": "RF",
+      "panel": "fd002",
+      "n": 60,
+      "correct": 20,
+      "accuracy": 0.3333333333333333,
+      "macro_f1": 0.16666666666666666,
+      "accuracy_wilson95": [
+        0.2272926152352268,
+        0.4594313354788031
+      ],
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          20
+        ],
+        [
+          0,
+          0,
+          20
+        ],
+        [
+          0,
+          0,
+          20
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "C-MAPSS",
+      "method": "SVM-RBF",
+      "panel": "fd001_v3",
+      "n": 60,
+      "correct": 43,
+      "accuracy": 0.7166666666666667,
+      "macro_f1": 0.7191663670730245,
+      "accuracy_wilson95": [
+        0.5923271483560882,
+        0.8149317157156729
+      ],
+      "confusion_matrix": [
+        [
+          17,
+          3,
+          0
+        ],
+        [
+          5,
+          15,
+          0
+        ],
+        [
+          0,
+          9,
+          11
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "C-MAPSS",
+      "method": "SVM-RBF",
+      "panel": "fd002",
+      "n": 60,
+      "correct": 20,
+      "accuracy": 0.3333333333333333,
+      "macro_f1": 0.16666666666666666,
+      "accuracy_wilson95": [
+        0.2272926152352268,
+        0.4594313354788031
+      ],
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          20
+        ],
+        [
+          0,
+          0,
+          20
+        ],
+        [
+          0,
+          0,
+          20
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "C-MAPSS",
+      "method": "HGB",
+      "panel": "fd001_v3",
+      "n": 60,
+      "correct": 51,
+      "accuracy": 0.85,
+      "macro_f1": 0.8467532467532468,
+      "accuracy_wilson95": [
+        0.7388541093022145,
+        0.9190255941983225
+      ],
+      "confusion_matrix": [
+        [
+          20,
+          0,
+          0
+        ],
+        [
+          2,
+          18,
+          0
+        ],
+        [
+          0,
+          7,
+          13
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "C-MAPSS",
+      "method": "HGB",
+      "panel": "fd002",
+      "n": 60,
+      "correct": 27,
+      "accuracy": 0.45,
+      "macro_f1": 0.3666340914475243,
+      "accuracy_wilson95": [
+        0.3309365440675524,
+        0.5750806411466566
+      ],
+      "confusion_matrix": [
+        [
+          19,
+          0,
+          1
+        ],
+        [
+          15,
+          1,
+          4
+        ],
+        [
+          13,
+          0,
+          7
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "C-MAPSS",
+      "method": "MLP",
+      "panel": "fd001_v3",
+      "n": 60,
+      "correct": 47,
+      "accuracy": 0.7833333333333333,
+      "macro_f1": 0.7867586815403037,
+      "accuracy_wilson95": [
+        0.6637997242680521,
+        0.868769559518097
+      ],
+      "confusion_matrix": [
+        [
+          17,
+          3,
+          0
+        ],
+        [
+          4,
+          15,
+          1
+        ],
+        [
+          0,
+          5,
+          15
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "C-MAPSS",
+      "method": "MLP",
+      "panel": "fd002",
+      "n": 60,
+      "correct": 25,
+      "accuracy": 0.4166666666666667,
+      "macro_f1": 0.30273595596567915,
+      "accuracy_wilson95": [
+        0.30064278558341617,
+        0.5427191897735989
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          15
+        ],
+        [
+          4,
+          0,
+          16
+        ],
+        [
+          0,
+          0,
+          20
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "C-MAPSS",
+      "method": "kNN",
+      "panel": "fd001_v3",
+      "n": 60,
+      "correct": 41,
+      "accuracy": 0.6833333333333333,
+      "macro_f1": 0.6731928543775233,
+      "accuracy_wilson95": [
+        0.5576623297382323,
+        0.7869413244763347
+      ],
+      "confusion_matrix": [
+        [
+          20,
+          0,
+          0
+        ],
+        [
+          9,
+          11,
+          0
+        ],
+        [
+          0,
+          10,
+          10
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "C-MAPSS",
+      "method": "kNN",
+      "panel": "fd002",
+      "n": 60,
+      "correct": 21,
+      "accuracy": 0.35,
+      "macro_f1": 0.20124320124320125,
+      "accuracy_wilson95": [
+        0.24167774406017556,
+        0.47637381158245135
+      ],
+      "confusion_matrix": [
+        [
+          20,
+          0,
+          0
+        ],
+        [
+          19,
+          0,
+          1
+        ],
+        [
+          19,
+          0,
+          1
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "C-MAPSS",
+      "method": "LogReg",
+      "panel": "fd001_v3",
+      "n": 60,
+      "correct": 46,
+      "accuracy": 0.7666666666666667,
+      "macro_f1": 0.7601281633539697,
+      "accuracy_wilson95": [
+        0.6456372962239805,
+        0.8556043826335717
+      ],
+      "confusion_matrix": [
+        [
+          20,
+          0,
+          0
+        ],
+        [
+          5,
+          15,
+          0
+        ],
+        [
+          0,
+          9,
+          11
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "original_train",
+      "domain": "C-MAPSS",
+      "method": "LogReg",
+      "panel": "fd002",
+      "n": 60,
+      "correct": 20,
+      "accuracy": 0.3333333333333333,
+      "macro_f1": 0.16666666666666666,
+      "accuracy_wilson95": [
+        0.2272926152352268,
+        0.4594313354788031
+      ],
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          20
+        ],
+        [
+          0,
+          0,
+          20
+        ],
+        [
+          0,
+          0,
+          20
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "tep_phase_aware",
+      "domain": "TEP",
+      "method": "RF",
+      "panel": "tep_late",
+      "n": 70,
+      "correct": 70,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "tep_phase_aware",
+      "domain": "TEP",
+      "method": "RF",
+      "panel": "tep_early",
+      "n": 70,
+      "correct": 61,
+      "accuracy": 0.8714285714285714,
+      "macro_f1": 0.838781907747425,
+      "accuracy_wilson95": [
+        0.7733524405057483,
+        0.9308589988466248
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          9,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "tep_phase_aware",
+      "domain": "TEP",
+      "method": "RF",
+      "panel": "tep_v3",
+      "n": 70,
+      "correct": 70,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "tep_phase_aware",
+      "domain": "TEP",
+      "method": "SVM-RBF",
+      "panel": "tep_late",
+      "n": 70,
+      "correct": 68,
+      "accuracy": 0.9714285714285714,
+      "macro_f1": 0.9711399711399711,
+      "accuracy_wilson95": [
+        0.9016774388157609,
+        0.9921293880545587
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "tep_phase_aware",
+      "domain": "TEP",
+      "method": "SVM-RBF",
+      "panel": "tep_early",
+      "n": 70,
+      "correct": 60,
+      "accuracy": 0.8571428571428571,
+      "macro_f1": 0.8095238095238094,
+      "accuracy_wilson95": [
+        0.7566158011633325,
+        0.920510582829334
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "tep_phase_aware",
+      "domain": "TEP",
+      "method": "SVM-RBF",
+      "panel": "tep_v3",
+      "n": 70,
+      "correct": 70,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "tep_phase_aware",
+      "domain": "TEP",
+      "method": "HGB",
+      "panel": "tep_late",
+      "n": 70,
+      "correct": 69,
+      "accuracy": 0.9857142857142858,
+      "macro_f1": 0.9856784819190835,
+      "accuracy_wilson95": [
+        0.9234181286879168,
+        0.9974737535421097
+      ],
+      "confusion_matrix": [
+        [
+          9,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "tep_phase_aware",
+      "domain": "TEP",
+      "method": "HGB",
+      "panel": "tep_early",
+      "n": 70,
+      "correct": 61,
+      "accuracy": 0.8714285714285714,
+      "macro_f1": 0.838781907747425,
+      "accuracy_wilson95": [
+        0.7733524405057483,
+        0.9308589988466248
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          9,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "tep_phase_aware",
+      "domain": "TEP",
+      "method": "HGB",
+      "panel": "tep_v3",
+      "n": 70,
+      "correct": 70,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "tep_phase_aware",
+      "domain": "TEP",
+      "method": "MLP",
+      "panel": "tep_late",
+      "n": 70,
+      "correct": 68,
+      "accuracy": 0.9714285714285714,
+      "macro_f1": 0.9711399711399711,
+      "accuracy_wilson95": [
+        0.9016774388157609,
+        0.9921293880545587
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "tep_phase_aware",
+      "domain": "TEP",
+      "method": "MLP",
+      "panel": "tep_early",
+      "n": 70,
+      "correct": 60,
+      "accuracy": 0.8571428571428571,
+      "macro_f1": 0.8095238095238094,
+      "accuracy_wilson95": [
+        0.7566158011633325,
+        0.920510582829334
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "tep_phase_aware",
+      "domain": "TEP",
+      "method": "MLP",
+      "panel": "tep_v3",
+      "n": 70,
+      "correct": 70,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "tep_phase_aware",
+      "domain": "TEP",
+      "method": "kNN",
+      "panel": "tep_late",
+      "n": 70,
+      "correct": 55,
+      "accuracy": 0.7857142857142857,
+      "macro_f1": 0.795045351473923,
+      "accuracy_wilson95": [
+        0.676088137365211,
+        0.8656129698289221
+      ],
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          0,
+          3,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          8,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          1,
+          0,
+          0,
+          5
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "tep_phase_aware",
+      "domain": "TEP",
+      "method": "kNN",
+      "panel": "tep_early",
+      "n": 70,
+      "correct": 52,
+      "accuracy": 0.7428571428571429,
+      "macro_f1": 0.710204081632653,
+      "accuracy_wilson95": [
+        0.6297386985284517,
+        0.8307072425865616
+      ],
+      "confusion_matrix": [
+        [
+          4,
+          0,
+          0,
+          4,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          8,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "tep_phase_aware",
+      "domain": "TEP",
+      "method": "kNN",
+      "panel": "tep_v3",
+      "n": 70,
+      "correct": 60,
+      "accuracy": 0.8571428571428571,
+      "macro_f1": 0.8567044208987945,
+      "accuracy_wilson95": [
+        0.7566158011633325,
+        0.920510582829334
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          7,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          9,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          9
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "tep_phase_aware",
+      "domain": "TEP",
+      "method": "LogReg",
+      "panel": "tep_late",
+      "n": 70,
+      "correct": 66,
+      "accuracy": 0.9428571428571428,
+      "macro_f1": 0.9428571428571428,
+      "accuracy_wilson95": [
+        0.8620804952516177,
+        0.9775562208992887
+      ],
+      "confusion_matrix": [
+        [
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "tep_phase_aware",
+      "domain": "TEP",
+      "method": "LogReg",
+      "panel": "tep_early",
+      "n": 70,
+      "correct": 62,
+      "accuracy": 0.8857142857142857,
+      "macro_f1": 0.8639455782312925,
+      "accuracy_wilson95": [
+        0.7903577841784561,
+        0.9409387105336235
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "tep_phase_aware",
+      "domain": "TEP",
+      "method": "LogReg",
+      "panel": "tep_v3",
+      "n": 70,
+      "correct": 69,
+      "accuracy": 0.9857142857142858,
+      "macro_f1": 0.9856784819190835,
+      "accuracy_wilson95": [
+        0.9234181286879168,
+        0.9974737535421097
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9
+        ]
+      ],
+      "class_order": [
+        "Normal",
+        "Fault_1",
+        "Fault_2",
+        "Fault_4",
+        "Fault_6",
+        "Fault_7",
+        "Fault_13"
+      ]
+    },
+    {
+      "variant": "fd002_in_domain_raw",
+      "domain": "C-MAPSS",
+      "method": "RF",
+      "panel": "fd002",
+      "n": 60,
+      "correct": 49,
+      "accuracy": 0.8166666666666667,
+      "macro_f1": 0.8144078144078143,
+      "accuracy_wilson95": [
+        0.7008024625353194,
+        0.8944220311080237
+      ],
+      "confusion_matrix": [
+        [
+          16,
+          4,
+          0
+        ],
+        [
+          3,
+          14,
+          3
+        ],
+        [
+          0,
+          1,
+          19
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "fd002_in_domain_raw",
+      "domain": "C-MAPSS",
+      "method": "SVM-RBF",
+      "panel": "fd002",
+      "n": 60,
+      "correct": 47,
+      "accuracy": 0.7833333333333333,
+      "macro_f1": 0.7840525328330207,
+      "accuracy_wilson95": [
+        0.6637997242680521,
+        0.868769559518097
+      ],
+      "confusion_matrix": [
+        [
+          15,
+          5,
+          0
+        ],
+        [
+          4,
+          14,
+          2
+        ],
+        [
+          0,
+          2,
+          18
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "fd002_in_domain_raw",
+      "domain": "C-MAPSS",
+      "method": "HGB",
+      "panel": "fd002",
+      "n": 60,
+      "correct": 51,
+      "accuracy": 0.85,
+      "macro_f1": 0.8528596386613522,
+      "accuracy_wilson95": [
+        0.7388541093022145,
+        0.9190255941983225
+      ],
+      "confusion_matrix": [
+        [
+          16,
+          4,
+          0
+        ],
+        [
+          3,
+          17,
+          0
+        ],
+        [
+          0,
+          2,
+          18
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "fd002_in_domain_raw",
+      "domain": "C-MAPSS",
+      "method": "MLP",
+      "panel": "fd002",
+      "n": 60,
+      "correct": 47,
+      "accuracy": 0.7833333333333333,
+      "macro_f1": 0.7821994009413779,
+      "accuracy_wilson95": [
+        0.6637997242680521,
+        0.868769559518097
+      ],
+      "confusion_matrix": [
+        [
+          14,
+          6,
+          0
+        ],
+        [
+          4,
+          14,
+          2
+        ],
+        [
+          0,
+          1,
+          19
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "fd002_in_domain_raw",
+      "domain": "C-MAPSS",
+      "method": "kNN",
+      "panel": "fd002",
+      "n": 60,
+      "correct": 26,
+      "accuracy": 0.43333333333333335,
+      "macro_f1": 0.436026936026936,
+      "accuracy_wilson95": [
+        0.3157239680468677,
+        0.5589656122387444
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          7,
+          3
+        ],
+        [
+          7,
+          8,
+          5
+        ],
+        [
+          3,
+          9,
+          8
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "fd002_in_domain_raw",
+      "domain": "C-MAPSS",
+      "method": "LogReg",
+      "panel": "fd002",
+      "n": 60,
+      "correct": 52,
+      "accuracy": 0.8666666666666667,
+      "macro_f1": 0.8653741922034605,
+      "accuracy_wilson95": [
+        0.7583484032350039,
+        0.9308589051941303
+      ],
+      "confusion_matrix": [
+        [
+          16,
+          4,
+          0
+        ],
+        [
+          3,
+          16,
+          1
+        ],
+        [
+          0,
+          0,
+          20
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "fd002_in_domain_regime_norm",
+      "domain": "C-MAPSS",
+      "method": "RF",
+      "panel": "fd002",
+      "n": 60,
+      "correct": 52,
+      "accuracy": 0.8666666666666667,
+      "macro_f1": 0.86353227873364,
+      "accuracy_wilson95": [
+        0.7583484032350039,
+        0.9308589051941303
+      ],
+      "confusion_matrix": [
+        [
+          18,
+          2,
+          0
+        ],
+        [
+          5,
+          14,
+          1
+        ],
+        [
+          0,
+          0,
+          20
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "fd002_in_domain_regime_norm",
+      "domain": "C-MAPSS",
+      "method": "SVM-RBF",
+      "panel": "fd002",
+      "n": 60,
+      "correct": 51,
+      "accuracy": 0.85,
+      "macro_f1": 0.8479886863607794,
+      "accuracy_wilson95": [
+        0.7388541093022145,
+        0.9190255941983225
+      ],
+      "confusion_matrix": [
+        [
+          18,
+          2,
+          0
+        ],
+        [
+          5,
+          14,
+          1
+        ],
+        [
+          0,
+          1,
+          19
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "fd002_in_domain_regime_norm",
+      "domain": "C-MAPSS",
+      "method": "HGB",
+      "panel": "fd002",
+      "n": 60,
+      "correct": 52,
+      "accuracy": 0.8666666666666667,
+      "macro_f1": 0.860241066123419,
+      "accuracy_wilson95": [
+        0.7583484032350039,
+        0.9308589051941303
+      ],
+      "confusion_matrix": [
+        [
+          19,
+          1,
+          0
+        ],
+        [
+          5,
+          13,
+          2
+        ],
+        [
+          0,
+          0,
+          20
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "fd002_in_domain_regime_norm",
+      "domain": "C-MAPSS",
+      "method": "MLP",
+      "panel": "fd002",
+      "n": 60,
+      "correct": 52,
+      "accuracy": 0.8666666666666667,
+      "macro_f1": 0.8655388471177945,
+      "accuracy_wilson95": [
+        0.7583484032350039,
+        0.9308589051941303
+      ],
+      "confusion_matrix": [
+        [
+          18,
+          2,
+          0
+        ],
+        [
+          4,
+          15,
+          1
+        ],
+        [
+          0,
+          1,
+          19
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "fd002_in_domain_regime_norm",
+      "domain": "C-MAPSS",
+      "method": "kNN",
+      "panel": "fd002",
+      "n": 60,
+      "correct": 49,
+      "accuracy": 0.8166666666666667,
+      "macro_f1": 0.8144667923737691,
+      "accuracy_wilson95": [
+        0.7008024625353194,
+        0.8944220311080237
+      ],
+      "confusion_matrix": [
+        [
+          17,
+          3,
+          0
+        ],
+        [
+          6,
+          13,
+          1
+        ],
+        [
+          0,
+          1,
+          19
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "fd002_in_domain_regime_norm",
+      "domain": "C-MAPSS",
+      "method": "LogReg",
+      "panel": "fd002",
+      "n": 60,
+      "correct": 52,
+      "accuracy": 0.8666666666666667,
+      "macro_f1": 0.86353227873364,
+      "accuracy_wilson95": [
+        0.7583484032350039,
+        0.9308589051941303
+      ],
+      "confusion_matrix": [
+        [
+          18,
+          2,
+          0
+        ],
+        [
+          5,
+          14,
+          1
+        ],
+        [
+          0,
+          0,
+          20
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "fd001_regime_norm_transfer",
+      "domain": "C-MAPSS",
+      "method": "RF",
+      "panel": "fd001_v3",
+      "n": 60,
+      "correct": 48,
+      "accuracy": 0.8,
+      "macro_f1": 0.7960275019098549,
+      "accuracy_wilson95": [
+        0.6821819419437211,
+        0.8817149467710251
+      ],
+      "confusion_matrix": [
+        [
+          20,
+          0,
+          0
+        ],
+        [
+          4,
+          15,
+          1
+        ],
+        [
+          0,
+          7,
+          13
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "fd001_regime_norm_transfer",
+      "domain": "C-MAPSS",
+      "method": "RF",
+      "panel": "fd002",
+      "n": 60,
+      "correct": 47,
+      "accuracy": 0.7833333333333333,
+      "macro_f1": 0.7861377108983127,
+      "accuracy_wilson95": [
+        0.6637997242680521,
+        0.868769559518097
+      ],
+      "confusion_matrix": [
+        [
+          18,
+          2,
+          0
+        ],
+        [
+          5,
+          15,
+          0
+        ],
+        [
+          0,
+          6,
+          14
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "fd001_regime_norm_transfer",
+      "domain": "C-MAPSS",
+      "method": "SVM-RBF",
+      "panel": "fd001_v3",
+      "n": 60,
+      "correct": 45,
+      "accuracy": 0.75,
+      "macro_f1": 0.7407407407407406,
+      "accuracy_wilson95": [
+        0.6276792992295218,
+        0.8422347746994333
+      ],
+      "confusion_matrix": [
+        [
+          20,
+          0,
+          0
+        ],
+        [
+          5,
+          15,
+          0
+        ],
+        [
+          0,
+          10,
+          10
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "fd001_regime_norm_transfer",
+      "domain": "C-MAPSS",
+      "method": "SVM-RBF",
+      "panel": "fd002",
+      "n": 60,
+      "correct": 48,
+      "accuracy": 0.8,
+      "macro_f1": 0.8055555555555555,
+      "accuracy_wilson95": [
+        0.6821819419437211,
+        0.8817149467710251
+      ],
+      "confusion_matrix": [
+        [
+          14,
+          6,
+          0
+        ],
+        [
+          2,
+          18,
+          0
+        ],
+        [
+          0,
+          4,
+          16
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "fd001_regime_norm_transfer",
+      "domain": "C-MAPSS",
+      "method": "HGB",
+      "panel": "fd001_v3",
+      "n": 60,
+      "correct": 49,
+      "accuracy": 0.8166666666666667,
+      "macro_f1": 0.8119293712316967,
+      "accuracy_wilson95": [
+        0.7008024625353194,
+        0.8944220311080237
+      ],
+      "confusion_matrix": [
+        [
+          20,
+          0,
+          0
+        ],
+        [
+          3,
+          17,
+          0
+        ],
+        [
+          0,
+          8,
+          12
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "fd001_regime_norm_transfer",
+      "domain": "C-MAPSS",
+      "method": "HGB",
+      "panel": "fd002",
+      "n": 60,
+      "correct": 43,
+      "accuracy": 0.7166666666666667,
+      "macro_f1": 0.7217524077989195,
+      "accuracy_wilson95": [
+        0.5923271483560882,
+        0.8149317157156729
+      ],
+      "confusion_matrix": [
+        [
+          17,
+          3,
+          0
+        ],
+        [
+          7,
+          13,
+          0
+        ],
+        [
+          0,
+          7,
+          13
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "fd001_regime_norm_transfer",
+      "domain": "C-MAPSS",
+      "method": "MLP",
+      "panel": "fd001_v3",
+      "n": 60,
+      "correct": 47,
+      "accuracy": 0.7833333333333333,
+      "macro_f1": 0.7867586815403037,
+      "accuracy_wilson95": [
+        0.6637997242680521,
+        0.868769559518097
+      ],
+      "confusion_matrix": [
+        [
+          17,
+          3,
+          0
+        ],
+        [
+          4,
+          15,
+          1
+        ],
+        [
+          0,
+          5,
+          15
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "fd001_regime_norm_transfer",
+      "domain": "C-MAPSS",
+      "method": "MLP",
+      "panel": "fd002",
+      "n": 60,
+      "correct": 48,
+      "accuracy": 0.8,
+      "macro_f1": 0.8016835016835017,
+      "accuracy_wilson95": [
+        0.6821819419437211,
+        0.8817149467710251
+      ],
+      "confusion_matrix": [
+        [
+          14,
+          6,
+          0
+        ],
+        [
+          2,
+          16,
+          2
+        ],
+        [
+          0,
+          2,
+          18
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "fd001_regime_norm_transfer",
+      "domain": "C-MAPSS",
+      "method": "kNN",
+      "panel": "fd001_v3",
+      "n": 60,
+      "correct": 41,
+      "accuracy": 0.6833333333333333,
+      "macro_f1": 0.6731928543775233,
+      "accuracy_wilson95": [
+        0.5576623297382323,
+        0.7869413244763347
+      ],
+      "confusion_matrix": [
+        [
+          20,
+          0,
+          0
+        ],
+        [
+          9,
+          11,
+          0
+        ],
+        [
+          0,
+          10,
+          10
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "fd001_regime_norm_transfer",
+      "domain": "C-MAPSS",
+      "method": "kNN",
+      "panel": "fd002",
+      "n": 60,
+      "correct": 52,
+      "accuracy": 0.8666666666666667,
+      "macro_f1": 0.8668261562998404,
+      "accuracy_wilson95": [
+        0.7583484032350039,
+        0.9308589051941303
+      ],
+      "confusion_matrix": [
+        [
+          19,
+          1,
+          0
+        ],
+        [
+          5,
+          15,
+          0
+        ],
+        [
+          0,
+          2,
+          18
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "fd001_regime_norm_transfer",
+      "domain": "C-MAPSS",
+      "method": "LogReg",
+      "panel": "fd001_v3",
+      "n": 60,
+      "correct": 46,
+      "accuracy": 0.7666666666666667,
+      "macro_f1": 0.7601281633539697,
+      "accuracy_wilson95": [
+        0.6456372962239805,
+        0.8556043826335717
+      ],
+      "confusion_matrix": [
+        [
+          20,
+          0,
+          0
+        ],
+        [
+          5,
+          15,
+          0
+        ],
+        [
+          0,
+          9,
+          11
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    },
+    {
+      "variant": "fd001_regime_norm_transfer",
+      "domain": "C-MAPSS",
+      "method": "LogReg",
+      "panel": "fd002",
+      "n": 60,
+      "correct": 49,
+      "accuracy": 0.8166666666666667,
+      "macro_f1": 0.8052910052910053,
+      "accuracy_wilson95": [
+        0.7008024625353194,
+        0.8944220311080237
+      ],
+      "confusion_matrix": [
+        [
+          19,
+          1,
+          0
+        ],
+        [
+          6,
+          11,
+          3
+        ],
+        [
+          0,
+          1,
+          19
+        ]
+      ],
+      "class_order": [
+        "Healthy",
+        "Degrading",
+        "Critical"
+      ]
+    }
+  ],
+  "sanity_checks": {
+    "tep_training_run_ids": 100,
+    "tep_test_run_ids": 140,
+    "tep_train_test_run_overlap": 0,
+    "fd002_train_engines": 260,
+    "fd002_test_engines": 60,
+    "fd002_partition_note": "train_FD002 and test_FD002 are distinct official partitions; numeric engine IDs are namespaced by partition and denote different engines. Verified additionally by zero raw-row overlap.",
+    "raw_row_overlap": {
+      "fd002_test_windows_in_train_FD002": 0,
+      "fd001_test_windows_in_train_FD001": 0
+    },
+    "exact_feature_duplicates": {
+      "original_train/TEP/tep_late": 0,
+      "original_train/TEP/tep_early": 0,
+      "original_train/TEP/tep_v3": 0,
+      "original_train/C-MAPSS/fd001_v3": 0,
+      "original_train/C-MAPSS/fd002": 0,
+      "tep_phase_aware/TEP/tep_late": 0,
+      "tep_phase_aware/TEP/tep_early": 0,
+      "tep_phase_aware/TEP/tep_v3": 0,
+      "fd002_in_domain_raw/C-MAPSS/fd002": 0,
+      "fd002_in_domain_regime_norm/C-MAPSS/fd002": 0,
+      "fd001_regime_norm_transfer/C-MAPSS/fd001_v3": 0,
+      "fd001_regime_norm_transfer/C-MAPSS/fd002": 0
+    },
+    "fd002_test_features_recomputed_from_raw": true,
+    "fd001_training_windows_recomputed_from_raw": true,
+    "test_labels_used_only_for_scoring": true,
+    "tep_extraction": {
+      "early_training_records": 700,
+      "reextracted_and_matched_exactly": 2240,
+      "reextracted_sets": [
+        "2100 revision-v3 late training rows",
+        "70 independent late test rows",
+        "70 independent early (sample 40) test rows"
+      ]
+    },
+    "llm_id_match": {
+      "tep_late": {
+        "llm_case_file": "results/independent_validation/analysis/cases.csv",
+        "selector": "condition=clean",
+        "model_repeat_sessions_matched": 6
+      },
+      "tep_early": {
+        "llm_case_file": "results/independent_validation/analysis/cases.csv",
+        "selector": "condition=early",
+        "model_repeat_sessions_matched": 6
+      },
+      "fd002": {
+        "llm_case_file": "results/independent_validation/analysis/cases.csv",
+        "selector": "condition=fd002",
+        "model_repeat_sessions_matched": 6
+      },
+      "tep_v3": {
+        "llm_case_file": "results/revision_v3/analysis/reuse/clean_correctness.csv",
+        "selector": "dataset=tep",
+        "model_repeat_sessions_matched": 9
+      },
+      "fd001_v3": {
+        "llm_case_file": "results/revision_v3/analysis/reuse/clean_correctness.csv",
+        "selector": "dataset=cmapss",
+        "model_repeat_sessions_matched": 9
+      }
+    },
+    "legacy_reproduction": {
+      "RF-legacy/tep_late": {
+        "correct": 70,
+        "stored_correct": 70
+      },
+      "RF-legacy/tep_early": {
+        "correct": 20,
+        "stored_correct": 20
+      },
+      "RF-legacy/tep_v3": {
+        "correct": 70,
+        "stored_correct": 70
+      },
+      "SVM-legacy/tep_late": {
+        "correct": 65,
+        "stored_correct": 65
+      },
+      "SVM-legacy/tep_early": {
+        "correct": 22,
+        "stored_correct": 22
+      },
+      "SVM-legacy/tep_v3": {
+        "correct": 70,
+        "stored_correct": 70
+      },
+      "RF-legacy/fd001_v3": {
+        "correct": 49,
+        "stored_correct": 49
+      },
+      "RF-legacy/fd002": {
+        "correct": 20,
+        "stored_correct": 20
+      },
+      "SVM-legacy/fd001_v3": {
+        "correct": 45,
+        "stored_correct": 45
+      },
+      "SVM-legacy/fd002": {
+        "correct": 20,
+        "stored_correct": 20
+      }
+    }
+  }
+}

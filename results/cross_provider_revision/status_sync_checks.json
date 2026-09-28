@@ -1,0 +1,16 @@
+{
+  "tex_entries_synchronized": 3,
+  "pdf_aliases_synchronized": true,
+  "scientific_manuscript_tex_and_pdf_unchanged": false,
+  "claude_current_records": 27,
+  "claude_non_null_controlled_scores": 0,
+  "claude_structural_arrays": 27,
+  "claude_consistent_local_artifact_chains": 23,
+  "claude_preflight_status": "403 Request not allowed",
+  "claude_formal_rerun_sessions": 0,
+  "tests_passed": 92,
+  "original_scores_sha256": "10f745d19be562781f40ce5b98c957041109f51a214398ba0b947c3523e342bb",
+  "scientific_scores_unchanged": true,
+  "scope": "Updated after SCI author-review revision; prose and layout changed, frozen outcomes and controlled scores preserved",
+  "author_review_pdf_sha256": "03ff6e2425fcef94ce9929e561d5f9c555af29c58474eb8734f18bda90022a4b"
+}

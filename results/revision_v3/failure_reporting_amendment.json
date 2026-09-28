@@ -1,0 +1,21 @@
+{
+  "amendment_id": "failure-reporting-1",
+  "recorded_at_utc": "2026-09-26T15:28:38.494617+00:00",
+  "original_protocol_sha256": "2b743ec9d70567aa9e630521503a4d4cb456949b69dc37db0dc3f2a282be0d7c",
+  "trigger": {
+    "model": "gpt-5.5",
+    "group": "cmapss_clean_r1",
+    "status": "invalid_response",
+    "reason": "Incomplete prediction count",
+    "expected_n": 60,
+    "actual_raw_count": 59
+  },
+  "timing": "Recorded before computing any revision-v3 LLM classification score; the scorer has not opened answer keys. Data preparation and baseline fitting already used their own labels as documented.",
+  "why_amendment_needed": "The frozen protocol specified semantic failures fail closed, but the original scorer required every batch to succeed and did not implement terminal-failure reporting.",
+  "preserved": "Original protocol, requested model, payload, planned sample set, primary repeat, inference runner, raw response and failed metadata remain unchanged. No semantic retry or manual prediction repair.",
+  "handling": "Execute never-attempted planned sessions. Retain all 27 terminal outcomes. A semantically invalid batch has classification accuracy/F1/miss metrics N/A and 0 scored observations, not accuracy 0. None of its partial labels are scored. Report structural-output coverage separately.",
+  "primary": "Repeat1 remains primary even when invalid. Do not replace with repeat2 or repeat3. Summaries of valid primary results state how many models are available.",
+  "contrasts": "Only compare complete valid paired outcomes; every unavailable planned contrast is separately recorded with the reason.",
+  "repeats": "Display all planned repetitions including N/A; ranges and pairwise disagreements use only valid repetitions and report their number. They do not create extra independent samples.",
+  "reporting": "Describe this as a pre-score failure-reporting amendment, not as an originally prespecified missing-data rule."
+}

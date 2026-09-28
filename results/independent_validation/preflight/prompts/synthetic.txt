@@ -1,0 +1,3 @@
+Return only a JSON array of id and predicted for each sample.
+
+{"valid_labels": ["Low", "High"], "samples": [{"id": "a138ca20", "prompt": "Return Low for the number 1 and High for the number 2. Number: 1"}, {"id": "bf06e891", "prompt": "Return Low for the number 1 and High for the number 2. Number: 2"}]}

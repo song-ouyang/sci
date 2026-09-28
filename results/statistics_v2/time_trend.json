@@ -1,0 +1,20 @@
+{
+  "gpt-5.6-sol": {
+    "n_calls": 18,
+    "spearman_rho": 0.28184893793229854,
+    "spearman_p": 0.2571725533113711,
+    "mean_acc_first_12_min": 0.782312925170068,
+    "n_first": 7,
+    "mean_acc_after_12_min": 0.9645021645021646,
+    "n_after": 11
+  },
+  "gpt-6-astra": {
+    "n_calls": 18,
+    "spearman_rho": -0.3843988218816523,
+    "spearman_p": 0.11525508328000297,
+    "mean_acc_first_12_min": 0.987012987012987,
+    "n_first": 11,
+    "mean_acc_after_12_min": 0.9727891156462585,
+    "n_after": 7
+  }
+}

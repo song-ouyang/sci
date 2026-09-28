@@ -1,0 +1,18 @@
+2026-09-28T05:46:50.163988Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back
+2026-09-28T05:46:50.197417Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back
+2026-09-28T05:46:50.199513Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back
+2026-09-28T05:46:55.123098Z ERROR codex_models_manager::manager: failed to refresh available models: timeout waiting for child process to exit
+2026-09-28T05:47:00.235882Z  WARN codex_analytics::client: failed to send events request: error sending request for url (https://chatgpt.com/backend-api/codex/analytics-events/events)
+2026-09-28T05:48:22.364105Z  WARN codex_core::responses_retry: stream disconnected - retrying sampling request (1/5 in 218ms)... turn_id=01a0e68d-39f8-7262-b27c-f945d2b8e84f retries=1 max_retries=5 sampling_error=stream disconnected before completion: error sending request for url (https://chatgpt.com/backend-api/codex/responses)
+2026-09-28T05:49:27.406427Z  WARN codex_core::responses_retry: stream disconnected - retrying sampling request (2/5 in 380ms)... turn_id=01a0e68d-39f8-7262-b27c-f945d2b8e84f retries=2 max_retries=5 sampling_error=stream disconnected before completion: error sending request for url (https://chatgpt.com/backend-api/codex/responses)
+2026-09-28T05:51:07.347247Z  WARN codex_core::responses_retry: stream disconnected - retrying sampling request (3/5 in 852ms)... turn_id=01a0e68d-39f8-7262-b27c-f945d2b8e84f retries=3 max_retries=5 sampling_error=stream disconnected before completion: error sending request for url (https://chatgpt.com/backend-api/codex/responses)
+2026-09-28T05:51:30.134971Z ERROR codex_models_manager::manager: failed to refresh available models: timeout waiting for child process to exit
+2026-09-28T05:51:53.391847Z  WARN codex_core::responses_retry: stream connection failed; waiting to retry turn_id=01a0e68d-39f8-7262-b27c-f945d2b8e84f error=Connection failed: error sending request retry_delay=5s
+2026-09-28T05:52:26.543552Z  WARN codex_core::responses_retry: stream connection failed; waiting to retry turn_id=01a0e68d-39f8-7262-b27c-f945d2b8e84f error=Connection failed: error sending request retry_delay=10s
+2026-09-28T05:53:04.439332Z  WARN codex_core::responses_retry: stream connection failed; waiting to retry turn_id=01a0e68d-39f8-7262-b27c-f945d2b8e84f error=Connection failed: error sending request retry_delay=20s
+2026-09-28T05:53:52.364193Z  WARN codex_core::responses_retry: stream connection failed; waiting to retry turn_id=01a0e68d-39f8-7262-b27c-f945d2b8e84f error=Connection failed: error sending request retry_delay=40s
+2026-09-28T05:55:00.447776Z  WARN codex_core::responses_retry: stream connection failed; waiting to retry turn_id=01a0e68d-39f8-7262-b27c-f945d2b8e84f error=Connection failed: error sending request retry_delay=60s
+2026-09-28T05:56:05.147667Z ERROR codex_models_manager::manager: failed to refresh available models: timeout waiting for child process to exit
+2026-09-28T05:56:28.408928Z  WARN codex_core::responses_retry: stream connection failed; waiting to retry turn_id=01a0e68d-39f8-7262-b27c-f945d2b8e84f error=Connection failed: error sending request retry_delay=60s
+2026-09-28T06:00:40.161416Z ERROR codex_models_manager::manager: failed to refresh available models: timeout waiting for child process to exit
+2026-09-28T06:01:16.731747Z  WARN codex_core::responses_retry: stream connection failed; waiting to retry turn_id=01a0e68d-39f8-7262-b27c-f945d2b8e84f error=Connection failed: error sending request retry_delay=60s

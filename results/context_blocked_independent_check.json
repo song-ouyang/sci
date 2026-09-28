@@ -1,0 +1,778 @@
+{
+  "schema": "context-blocked-independent-numeric-check-v1",
+  "created_at_utc": "2026-09-28T09:02:10.886027+00:00",
+  "status": "PASS",
+  "scope": "Four completed frozen context_blocked_v1 blocks, 21 focal IDs; F=A=historical b_front, R=B=historical b_back",
+  "independence": {
+    "scorer_implementation_read_or_imported": false,
+    "project_analysis_modules_imported": false,
+    "new_model_calls": 0,
+    "frozen_prediction_files_modified": false,
+    "calculation_completed_before_score_loaded": true,
+    "ground_truth_files_read": [
+      "results/context_blocked_v1/answers/records.json"
+    ],
+    "answers_read_after_existing_freeze_verified": true,
+    "raw_responses_reparsed_independently": true,
+    "method": "Exact ID matching; two within pairs and four cross pairs per block; direct two-label equality classification"
+  },
+  "counts": {
+    "blocks": 4,
+    "focal_ids": 21,
+    "prediction_files": 16,
+    "frozen_files_hash_checked": 64,
+    "focal_request_rows": 16,
+    "focal_classification_slots": 336,
+    "pair_rows": 24,
+    "case_rows": 84,
+    "focal_correct_slots": 324,
+    "all_request_correct_slots": 652,
+    "mismatches": 0
+  },
+  "independent_block_results": [
+    {
+      "block": 1,
+      "sequence": "ABBA",
+      "focal_cases": 21,
+      "F_equals_A_front_correct_out_of_21": [
+        21,
+        21
+      ],
+      "R_equals_B_rear_correct_out_of_21": [
+        19,
+        21
+      ],
+      "within_F_flips": 0,
+      "within_R_flips": 2,
+      "cross_four_flip_counts": [
+        2,
+        0,
+        2,
+        0
+      ],
+      "cross_four_flip_min": 0,
+      "cross_four_flip_max": 2,
+      "category_ids": {
+        "observed_two_repeat_stable_different": [],
+        "observed_two_repeat_stable_same": [
+          "05167b30",
+          "ebd003a7",
+          "0c7ff630",
+          "0bce2ead",
+          "67baf676",
+          "2e8cf355",
+          "b1acf744",
+          "29fcbddb",
+          "3d9b14a1",
+          "6ed18610",
+          "65e889f7",
+          "dfa1b3a7",
+          "d5e4ed09",
+          "9bdc0558",
+          "6db1222c",
+          "31ed9467",
+          "cbc3dcfe",
+          "428cd6df",
+          "7fb34c2e"
+        ],
+        "any_condition_unstable": [
+          "0c7daa4b",
+          "e3a7aef0"
+        ],
+        "incomplete_block": []
+      },
+      "request_groups_by_condition": {
+        "A": [
+          "block01_pos1_a",
+          "block01_pos4_a"
+        ],
+        "B": [
+          "block01_pos2_b",
+          "block01_pos3_b"
+        ]
+      },
+      "observed_two_repeat_stable_different": 0,
+      "observed_two_repeat_stable_same": 19,
+      "any_condition_unstable": 2,
+      "incomplete_block": 0
+    },
+    {
+      "block": 2,
+      "sequence": "ABBA",
+      "focal_cases": 21,
+      "F_equals_A_front_correct_out_of_21": [
+        21,
+        19
+      ],
+      "R_equals_B_rear_correct_out_of_21": [
+        21,
+        21
+      ],
+      "within_F_flips": 2,
+      "within_R_flips": 0,
+      "cross_four_flip_counts": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "cross_four_flip_min": 0,
+      "cross_four_flip_max": 2,
+      "category_ids": {
+        "observed_two_repeat_stable_different": [],
+        "observed_two_repeat_stable_same": [
+          "05167b30",
+          "ebd003a7",
+          "0c7ff630",
+          "0bce2ead",
+          "2e8cf355",
+          "29fcbddb",
+          "3d9b14a1",
+          "6ed18610",
+          "65e889f7",
+          "dfa1b3a7",
+          "d5e4ed09",
+          "0c7daa4b",
+          "9bdc0558",
+          "6db1222c",
+          "31ed9467",
+          "e3a7aef0",
+          "cbc3dcfe",
+          "428cd6df",
+          "7fb34c2e"
+        ],
+        "any_condition_unstable": [
+          "67baf676",
+          "b1acf744"
+        ],
+        "incomplete_block": []
+      },
+      "request_groups_by_condition": {
+        "A": [
+          "block02_pos1_a",
+          "block02_pos4_a"
+        ],
+        "B": [
+          "block02_pos2_b",
+          "block02_pos3_b"
+        ]
+      },
+      "observed_two_repeat_stable_different": 0,
+      "observed_two_repeat_stable_same": 19,
+      "any_condition_unstable": 2,
+      "incomplete_block": 0
+    },
+    {
+      "block": 3,
+      "sequence": "BAAB",
+      "focal_cases": 21,
+      "F_equals_A_front_correct_out_of_21": [
+        21,
+        21
+      ],
+      "R_equals_B_rear_correct_out_of_21": [
+        21,
+        21
+      ],
+      "within_F_flips": 0,
+      "within_R_flips": 0,
+      "cross_four_flip_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "cross_four_flip_min": 0,
+      "cross_four_flip_max": 0,
+      "category_ids": {
+        "observed_two_repeat_stable_different": [],
+        "observed_two_repeat_stable_same": [
+          "05167b30",
+          "ebd003a7",
+          "0c7ff630",
+          "0bce2ead",
+          "67baf676",
+          "2e8cf355",
+          "b1acf744",
+          "29fcbddb",
+          "3d9b14a1",
+          "6ed18610",
+          "65e889f7",
+          "dfa1b3a7",
+          "d5e4ed09",
+          "0c7daa4b",
+          "9bdc0558",
+          "6db1222c",
+          "31ed9467",
+          "e3a7aef0",
+          "cbc3dcfe",
+          "428cd6df",
+          "7fb34c2e"
+        ],
+        "any_condition_unstable": [],
+        "incomplete_block": []
+      },
+      "request_groups_by_condition": {
+        "A": [
+          "block03_pos2_a",
+          "block03_pos3_a"
+        ],
+        "B": [
+          "block03_pos1_b",
+          "block03_pos4_b"
+        ]
+      },
+      "observed_two_repeat_stable_different": 0,
+      "observed_two_repeat_stable_same": 21,
+      "any_condition_unstable": 0,
+      "incomplete_block": 0
+    },
+    {
+      "block": 4,
+      "sequence": "BAAB",
+      "focal_cases": 21,
+      "F_equals_A_front_correct_out_of_21": [
+        21,
+        21
+      ],
+      "R_equals_B_rear_correct_out_of_21": [
+        19,
+        15
+      ],
+      "within_F_flips": 0,
+      "within_R_flips": 8,
+      "cross_four_flip_counts": [
+        2,
+        6,
+        2,
+        6
+      ],
+      "cross_four_flip_min": 2,
+      "cross_four_flip_max": 6,
+      "category_ids": {
+        "observed_two_repeat_stable_different": [],
+        "observed_two_repeat_stable_same": [
+          "05167b30",
+          "0c7ff630",
+          "67baf676",
+          "b1acf744",
+          "29fcbddb",
+          "6ed18610",
+          "65e889f7",
+          "dfa1b3a7",
+          "d5e4ed09",
+          "6db1222c",
+          "31ed9467",
+          "cbc3dcfe",
+          "7fb34c2e"
+        ],
+        "any_condition_unstable": [
+          "ebd003a7",
+          "0bce2ead",
+          "2e8cf355",
+          "3d9b14a1",
+          "0c7daa4b",
+          "9bdc0558",
+          "e3a7aef0",
+          "428cd6df"
+        ],
+        "incomplete_block": []
+      },
+      "request_groups_by_condition": {
+        "A": [
+          "block04_pos2_a",
+          "block04_pos3_a"
+        ],
+        "B": [
+          "block04_pos1_b",
+          "block04_pos4_b"
+        ]
+      },
+      "observed_two_repeat_stable_different": 0,
+      "observed_two_repeat_stable_same": 13,
+      "any_condition_unstable": 8,
+      "incomplete_block": 0
+    }
+  ],
+  "independent_focal_metrics": [
+    {
+      "block": 1,
+      "group": "block01_pos1_a",
+      "condition": "A",
+      "scheduled_cases": 21,
+      "valid_cases": 21,
+      "correct": 21,
+      "accuracy": 1.0,
+      "usable_correct": 21
+    },
+    {
+      "block": 1,
+      "group": "block01_pos4_a",
+      "condition": "A",
+      "scheduled_cases": 21,
+      "valid_cases": 21,
+      "correct": 21,
+      "accuracy": 1.0,
+      "usable_correct": 21
+    },
+    {
+      "block": 1,
+      "group": "block01_pos2_b",
+      "condition": "B",
+      "scheduled_cases": 21,
+      "valid_cases": 21,
+      "correct": 19,
+      "accuracy": 0.9047619047619048,
+      "usable_correct": 19
+    },
+    {
+      "block": 1,
+      "group": "block01_pos3_b",
+      "condition": "B",
+      "scheduled_cases": 21,
+      "valid_cases": 21,
+      "correct": 21,
+      "accuracy": 1.0,
+      "usable_correct": 21
+    },
+    {
+      "block": 2,
+      "group": "block02_pos1_a",
+      "condition": "A",
+      "scheduled_cases": 21,
+      "valid_cases": 21,
+      "correct": 21,
+      "accuracy": 1.0,
+      "usable_correct": 21
+    },
+    {
+      "block": 2,
+      "group": "block02_pos4_a",
+      "condition": "A",
+      "scheduled_cases": 21,
+      "valid_cases": 21,
+      "correct": 19,
+      "accuracy": 0.9047619047619048,
+      "usable_correct": 19
+    },
+    {
+      "block": 2,
+      "group": "block02_pos2_b",
+      "condition": "B",
+      "scheduled_cases": 21,
+      "valid_cases": 21,
+      "correct": 21,
+      "accuracy": 1.0,
+      "usable_correct": 21
+    },
+    {
+      "block": 2,
+      "group": "block02_pos3_b",
+      "condition": "B",
+      "scheduled_cases": 21,
+      "valid_cases": 21,
+      "correct": 21,
+      "accuracy": 1.0,
+      "usable_correct": 21
+    },
+    {
+      "block": 3,
+      "group": "block03_pos2_a",
+      "condition": "A",
+      "scheduled_cases": 21,
+      "valid_cases": 21,
+      "correct": 21,
+      "accuracy": 1.0,
+      "usable_correct": 21
+    },
+    {
+      "block": 3,
+      "group": "block03_pos3_a",
+      "condition": "A",
+      "scheduled_cases": 21,
+      "valid_cases": 21,
+      "correct": 21,
+      "accuracy": 1.0,
+      "usable_correct": 21
+    },
+    {
+      "block": 3,
+      "group": "block03_pos1_b",
+      "condition": "B",
+      "scheduled_cases": 21,
+      "valid_cases": 21,
+      "correct": 21,
+      "accuracy": 1.0,
+      "usable_correct": 21
+    },
+    {
+      "block": 3,
+      "group": "block03_pos4_b",
+      "condition": "B",
+      "scheduled_cases": 21,
+      "valid_cases": 21,
+      "correct": 21,
+      "accuracy": 1.0,
+      "usable_correct": 21
+    },
+    {
+      "block": 4,
+      "group": "block04_pos2_a",
+      "condition": "A",
+      "scheduled_cases": 21,
+      "valid_cases": 21,
+      "correct": 21,
+      "accuracy": 1.0,
+      "usable_correct": 21
+    },
+    {
+      "block": 4,
+      "group": "block04_pos3_a",
+      "condition": "A",
+      "scheduled_cases": 21,
+      "valid_cases": 21,
+      "correct": 21,
+      "accuracy": 1.0,
+      "usable_correct": 21
+    },
+    {
+      "block": 4,
+      "group": "block04_pos1_b",
+      "condition": "B",
+      "scheduled_cases": 21,
+      "valid_cases": 21,
+      "correct": 19,
+      "accuracy": 0.9047619047619048,
+      "usable_correct": 19
+    },
+    {
+      "block": 4,
+      "group": "block04_pos4_b",
+      "condition": "B",
+      "scheduled_cases": 21,
+      "valid_cases": 21,
+      "correct": 15,
+      "accuracy": 0.7142857142857143,
+      "usable_correct": 15
+    }
+  ],
+  "independent_pair_counts": [
+    {
+      "block": 1,
+      "comparison": "within_A",
+      "left": "block01_pos1_a",
+      "right": "block01_pos4_a",
+      "scheduled_cases": 21,
+      "paired_cases": 21,
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "block": 1,
+      "comparison": "within_B",
+      "left": "block01_pos2_b",
+      "right": "block01_pos3_b",
+      "scheduled_cases": 21,
+      "paired_cases": 21,
+      "flips": 2,
+      "flip_rate": 0.09523809523809523
+    },
+    {
+      "block": 1,
+      "comparison": "cross_A_B",
+      "left": "block01_pos1_a",
+      "right": "block01_pos2_b",
+      "scheduled_cases": 21,
+      "paired_cases": 21,
+      "flips": 2,
+      "flip_rate": 0.09523809523809523
+    },
+    {
+      "block": 1,
+      "comparison": "cross_A_B",
+      "left": "block01_pos1_a",
+      "right": "block01_pos3_b",
+      "scheduled_cases": 21,
+      "paired_cases": 21,
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "block": 1,
+      "comparison": "cross_A_B",
+      "left": "block01_pos4_a",
+      "right": "block01_pos2_b",
+      "scheduled_cases": 21,
+      "paired_cases": 21,
+      "flips": 2,
+      "flip_rate": 0.09523809523809523
+    },
+    {
+      "block": 1,
+      "comparison": "cross_A_B",
+      "left": "block01_pos4_a",
+      "right": "block01_pos3_b",
+      "scheduled_cases": 21,
+      "paired_cases": 21,
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "block": 2,
+      "comparison": "within_A",
+      "left": "block02_pos1_a",
+      "right": "block02_pos4_a",
+      "scheduled_cases": 21,
+      "paired_cases": 21,
+      "flips": 2,
+      "flip_rate": 0.09523809523809523
+    },
+    {
+      "block": 2,
+      "comparison": "within_B",
+      "left": "block02_pos2_b",
+      "right": "block02_pos3_b",
+      "scheduled_cases": 21,
+      "paired_cases": 21,
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "block": 2,
+      "comparison": "cross_A_B",
+      "left": "block02_pos1_a",
+      "right": "block02_pos2_b",
+      "scheduled_cases": 21,
+      "paired_cases": 21,
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "block": 2,
+      "comparison": "cross_A_B",
+      "left": "block02_pos1_a",
+      "right": "block02_pos3_b",
+      "scheduled_cases": 21,
+      "paired_cases": 21,
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "block": 2,
+      "comparison": "cross_A_B",
+      "left": "block02_pos4_a",
+      "right": "block02_pos2_b",
+      "scheduled_cases": 21,
+      "paired_cases": 21,
+      "flips": 2,
+      "flip_rate": 0.09523809523809523
+    },
+    {
+      "block": 2,
+      "comparison": "cross_A_B",
+      "left": "block02_pos4_a",
+      "right": "block02_pos3_b",
+      "scheduled_cases": 21,
+      "paired_cases": 21,
+      "flips": 2,
+      "flip_rate": 0.09523809523809523
+    },
+    {
+      "block": 3,
+      "comparison": "within_A",
+      "left": "block03_pos2_a",
+      "right": "block03_pos3_a",
+      "scheduled_cases": 21,
+      "paired_cases": 21,
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "block": 3,
+      "comparison": "within_B",
+      "left": "block03_pos1_b",
+      "right": "block03_pos4_b",
+      "scheduled_cases": 21,
+      "paired_cases": 21,
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "block": 3,
+      "comparison": "cross_A_B",
+      "left": "block03_pos2_a",
+      "right": "block03_pos1_b",
+      "scheduled_cases": 21,
+      "paired_cases": 21,
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "block": 3,
+      "comparison": "cross_A_B",
+      "left": "block03_pos2_a",
+      "right": "block03_pos4_b",
+      "scheduled_cases": 21,
+      "paired_cases": 21,
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "block": 3,
+      "comparison": "cross_A_B",
+      "left": "block03_pos3_a",
+      "right": "block03_pos1_b",
+      "scheduled_cases": 21,
+      "paired_cases": 21,
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "block": 3,
+      "comparison": "cross_A_B",
+      "left": "block03_pos3_a",
+      "right": "block03_pos4_b",
+      "scheduled_cases": 21,
+      "paired_cases": 21,
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "block": 4,
+      "comparison": "within_A",
+      "left": "block04_pos2_a",
+      "right": "block04_pos3_a",
+      "scheduled_cases": 21,
+      "paired_cases": 21,
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "block": 4,
+      "comparison": "within_B",
+      "left": "block04_pos1_b",
+      "right": "block04_pos4_b",
+      "scheduled_cases": 21,
+      "paired_cases": 21,
+      "flips": 8,
+      "flip_rate": 0.38095238095238093
+    },
+    {
+      "block": 4,
+      "comparison": "cross_A_B",
+      "left": "block04_pos2_a",
+      "right": "block04_pos1_b",
+      "scheduled_cases": 21,
+      "paired_cases": 21,
+      "flips": 2,
+      "flip_rate": 0.09523809523809523
+    },
+    {
+      "block": 4,
+      "comparison": "cross_A_B",
+      "left": "block04_pos2_a",
+      "right": "block04_pos4_b",
+      "scheduled_cases": 21,
+      "paired_cases": 21,
+      "flips": 6,
+      "flip_rate": 0.2857142857142857
+    },
+    {
+      "block": 4,
+      "comparison": "cross_A_B",
+      "left": "block04_pos3_a",
+      "right": "block04_pos1_b",
+      "scheduled_cases": 21,
+      "paired_cases": 21,
+      "flips": 2,
+      "flip_rate": 0.09523809523809523
+    },
+    {
+      "block": 4,
+      "comparison": "cross_A_B",
+      "left": "block04_pos3_a",
+      "right": "block04_pos4_b",
+      "scheduled_cases": 21,
+      "paired_cases": 21,
+      "flips": 6,
+      "flip_rate": 0.2857142857142857
+    }
+  ],
+  "source_sha256": {
+    "results/context_blocked_v1/protocol.json": "c8e4c5338551a0994f77279028f3d5e78a520e72f086b4a2d1611c3d405715cb",
+    "results/context_blocked_v1/predictions/frozen_manifest.json": "b4890ba19a8741e06b84275c501fc92e84d770cd577eca22dc22cedf3ed11779",
+    "results/context_blocked_v1/inference/panels.json": "ff35ce17e712d69fdbd3017dc8a9ddda9b5149747d4262e694ec7a2af5adea88",
+    "results/context_blocked_v1/inference/batches.json": "a25ae5cce292389d6de474f5722de46d71e6440dc10537af78ab8d86d2e375d1",
+    "results/context_blocked_v1/schedule.json": "15a0b5d79487678c27eb7a031f34b805764b10148de5fa8d774a128921bfd9c2",
+    "results/context_blocked_v1/answers/records.json": "43a97ced1f531e1f8f55d107ddf7ddbc938c5cb3e64a4fb11334c39e31e5daaf",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block01_pos1_a_results.json": "c8c10fe40d04860bf0916d0a1a71145bf08f324bfe1650382e09faa43e3e1ba9",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block01_pos1_a_metadata.json": "cc467dc6b396e2caa71643f0e11b9f562f97ff0fd2368bf1ee4b4f452ed20b83",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block01_pos1_a_request.json": "e11a3eabb928ef99ddf966d51bbc3ff4987311457be54f2079d78ff814529212",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block01_pos1_a_attempt1_response.txt": "e84d8af694024bd571416c2bef4200e24903b35acc4af487dda4be81bd04941b",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block01_pos2_b_results.json": "f04387aa3659fd0c97c000ad5244f47f26d7093c9494ba841c38550d50d697ff",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block01_pos2_b_metadata.json": "8a9cfa959c07c7e882b52d68c60c61fcf7e7dc6b1a50fac26d36669493605388",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block01_pos2_b_request.json": "dedec2bfd2f8aeb5a2d8b22e1a508e0c4b4e8454a94f4678f6d8d6bdc03dece6",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block01_pos2_b_attempt1_response.txt": "fd90c7c938c596521184e11639ccf9effe57d2492a0ae8c1bc5fa33f5f722daf",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block01_pos3_b_results.json": "e195b8607d7af8af8bb5ea89ee85c25e28b756202edd302a15fd7a13777afc26",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block01_pos3_b_metadata.json": "6a5b0ee7a1a39650d0aac796211726fce786e65d7b8bcbd9c3c9fb270b05c9b1",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block01_pos3_b_request.json": "dedec2bfd2f8aeb5a2d8b22e1a508e0c4b4e8454a94f4678f6d8d6bdc03dece6",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block01_pos3_b_attempt1_response.txt": "ab76b0cd476fb68a5500421a08cb0dabab6a9b97f6c4c0c93e12c325ba0516f3",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block01_pos4_a_results.json": "c8c10fe40d04860bf0916d0a1a71145bf08f324bfe1650382e09faa43e3e1ba9",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block01_pos4_a_metadata.json": "f6272fcd1831e8d638899d9649f757d0cabfcdbcbb44a955e1ea8c35c1560a59",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block01_pos4_a_request.json": "e11a3eabb928ef99ddf966d51bbc3ff4987311457be54f2079d78ff814529212",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block01_pos4_a_attempt1_response.txt": "2770483e4c3ae946473bfad5ba29babf9a65286deeff81241316a2fca9ea4b01",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block02_pos1_a_results.json": "c8c10fe40d04860bf0916d0a1a71145bf08f324bfe1650382e09faa43e3e1ba9",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block02_pos1_a_metadata.json": "0def54f13fec51cc46636fec09bf04118ebfd11977136e434c3644563f82f3d9",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block02_pos1_a_request.json": "e11a3eabb928ef99ddf966d51bbc3ff4987311457be54f2079d78ff814529212",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block02_pos1_a_attempt1_response.txt": "e84d8af694024bd571416c2bef4200e24903b35acc4af487dda4be81bd04941b",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block02_pos2_b_results.json": "e195b8607d7af8af8bb5ea89ee85c25e28b756202edd302a15fd7a13777afc26",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block02_pos2_b_metadata.json": "610e15db9771b90fe97949643aec4b9056d69bba1dc3a1bf0cb855c94d9e231f",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block02_pos2_b_request.json": "dedec2bfd2f8aeb5a2d8b22e1a508e0c4b4e8454a94f4678f6d8d6bdc03dece6",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block02_pos2_b_attempt1_response.txt": "ab76b0cd476fb68a5500421a08cb0dabab6a9b97f6c4c0c93e12c325ba0516f3",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block02_pos3_b_results.json": "e195b8607d7af8af8bb5ea89ee85c25e28b756202edd302a15fd7a13777afc26",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block02_pos3_b_metadata.json": "de8f20b19492a18706ff67567ec61d074c0b5a43dfe1a6a3485cea0f77427ace",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block02_pos3_b_request.json": "dedec2bfd2f8aeb5a2d8b22e1a508e0c4b4e8454a94f4678f6d8d6bdc03dece6",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block02_pos3_b_attempt1_response.txt": "ab76b0cd476fb68a5500421a08cb0dabab6a9b97f6c4c0c93e12c325ba0516f3",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block02_pos4_a_results.json": "873dcf986136f3593879d300651b8d6db61c0101e095ad1b12aaefdafea3248b",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block02_pos4_a_metadata.json": "33b34d8f68a0847732b8661eb78b474929d016736af0ce807f0511c4d050c068",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block02_pos4_a_request.json": "e11a3eabb928ef99ddf966d51bbc3ff4987311457be54f2079d78ff814529212",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block02_pos4_a_attempt1_response.txt": "bc9f6efcca1ef7696899b46e756565b82a12b01e2902803a6d6bf7ed571b33b7",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block03_pos1_b_results.json": "e195b8607d7af8af8bb5ea89ee85c25e28b756202edd302a15fd7a13777afc26",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block03_pos1_b_metadata.json": "86725de85bb3d72f6bbae144353022724a5754196ead96a9bb9d88eb403c6fac",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block03_pos1_b_request.json": "dedec2bfd2f8aeb5a2d8b22e1a508e0c4b4e8454a94f4678f6d8d6bdc03dece6",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block03_pos1_b_attempt1_response.txt": "59c2bbc4cbd2d998dcddfdc6bb342ca32692dc24d766c1d8a9bdf689cd3160af",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block03_pos2_a_results.json": "c8c10fe40d04860bf0916d0a1a71145bf08f324bfe1650382e09faa43e3e1ba9",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block03_pos2_a_metadata.json": "543084038a66fdd273c46154314e1e82e441a8d743802625008f81484eef2c67",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block03_pos2_a_request.json": "e11a3eabb928ef99ddf966d51bbc3ff4987311457be54f2079d78ff814529212",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block03_pos2_a_attempt1_response.txt": "2770483e4c3ae946473bfad5ba29babf9a65286deeff81241316a2fca9ea4b01",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block03_pos3_a_results.json": "c8c10fe40d04860bf0916d0a1a71145bf08f324bfe1650382e09faa43e3e1ba9",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block03_pos3_a_metadata.json": "eac65fd21dfcb4ad16425bff3e2c038cad4fcd72a03e2b1571f938b98b32a954",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block03_pos3_a_request.json": "e11a3eabb928ef99ddf966d51bbc3ff4987311457be54f2079d78ff814529212",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block03_pos3_a_attempt1_response.txt": "2770483e4c3ae946473bfad5ba29babf9a65286deeff81241316a2fca9ea4b01",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block03_pos4_b_results.json": "e195b8607d7af8af8bb5ea89ee85c25e28b756202edd302a15fd7a13777afc26",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block03_pos4_b_metadata.json": "cc2409963bca2537689f967808c49d1acbbe65483bf7aafe2b6ec6f01f7019a9",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block03_pos4_b_request.json": "dedec2bfd2f8aeb5a2d8b22e1a508e0c4b4e8454a94f4678f6d8d6bdc03dece6",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block03_pos4_b_attempt1_response.txt": "ab76b0cd476fb68a5500421a08cb0dabab6a9b97f6c4c0c93e12c325ba0516f3",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block04_pos1_b_results.json": "f04387aa3659fd0c97c000ad5244f47f26d7093c9494ba841c38550d50d697ff",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block04_pos1_b_metadata.json": "15a1fadc962d6e49e2704810ac955fd9a802fb41ebc0891d569e67bec3cb0f8c",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block04_pos1_b_request.json": "dedec2bfd2f8aeb5a2d8b22e1a508e0c4b4e8454a94f4678f6d8d6bdc03dece6",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block04_pos1_b_attempt1_response.txt": "fd90c7c938c596521184e11639ccf9effe57d2492a0ae8c1bc5fa33f5f722daf",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block04_pos2_a_results.json": "c8c10fe40d04860bf0916d0a1a71145bf08f324bfe1650382e09faa43e3e1ba9",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block04_pos2_a_metadata.json": "3bb3d02f23cdcc9d94d796500078b0d370da60e2975eefe422130b49f73c52af",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block04_pos2_a_request.json": "e11a3eabb928ef99ddf966d51bbc3ff4987311457be54f2079d78ff814529212",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block04_pos2_a_attempt1_response.txt": "e84d8af694024bd571416c2bef4200e24903b35acc4af487dda4be81bd04941b",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block04_pos3_a_results.json": "c8c10fe40d04860bf0916d0a1a71145bf08f324bfe1650382e09faa43e3e1ba9",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block04_pos3_a_metadata.json": "37878751322ba4f3b412f5b9d9f840c4a5f285d143d8c95362109648739c5d96",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block04_pos3_a_request.json": "e11a3eabb928ef99ddf966d51bbc3ff4987311457be54f2079d78ff814529212",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block04_pos3_a_attempt1_response.txt": "2770483e4c3ae946473bfad5ba29babf9a65286deeff81241316a2fca9ea4b01",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block04_pos4_b_results.json": "f10ffe0d21c6256745baf992914c6ec71f35028366d84371a3b5ce52abc6fad6",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block04_pos4_b_metadata.json": "b0995c627e73145282546582037948b9549f708247173ab60f5a15055290f30a",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block04_pos4_b_request.json": "dedec2bfd2f8aeb5a2d8b22e1a508e0c4b4e8454a94f4678f6d8d6bdc03dece6",
+    "results/context_blocked_v1/predictions/gpt-5.6-sol/block04_pos4_b_attempt1_response.txt": "58bd5a09c5c847f501d2a3b97f8652f24d211d2a33634e1d9c33e7363b0dd23f",
+    "results/context_blocked_v1/analysis/scores.json": "8715d96473aa2a332cd8811dc27e28c636fe5c9502598338b7684d0899254526"
+  },
+  "mismatches": [],
+  "interpretation": "Finite two-repeat categories only; D=0 does not establish no position effect. Pairs and focal cases are not independent block replications.",
+  "verification_program_sha256": "4effa3123ba9f8620066be92db7fae7f3ddb014ed2a0a614ebc5b52e5b7241a3",
+  "verification_program": "import hashlib,itertools,json,math\nfrom datetime import datetime,timezone\nfrom pathlib import Path\nROOT=Path('/Users/guoba/work/sci-paper-llm-pdm')\nBASE=ROOT/'results/context_blocked_v1'\nTARGET=ROOT/'results/context_blocked_independent_check.json'\nhashes={}\nmismatches=[]\ndef read(p):\n    b=p.read_bytes()\n    hashes[str(p.relative_to(ROOT))]=hashlib.sha256(b).hexdigest()\n    return b\ndef load(p): return json.loads(read(p))\ndef need(x,m):\n    if not x: raise ValueError(m)\ndef compare(k,x,y):\n    equal=math.isclose(x,y,rel_tol=0,abs_tol=1e-15) if isinstance(x,float) and isinstance(y,(float,int)) else x==y\n    if not equal: mismatches.append({'field':k,'independent':x,'scorer':y})\n\np=load(BASE/'protocol.json')\nfreeze=load(BASE/'predictions/frozen_manifest.json')\nneed(hashes['results/context_blocked_v1/protocol.json']==freeze['protocol_sha256'],'Protocol/freeze mismatch')\nneed(freeze['complete_sessions']==freeze['planned_sessions']==16,'Expected complete 16-call frozen study')\npanels=load(BASE/'inference/panels.json')\ngroups=load(BASE/'inference/batches.json')['groups']\nblocks=load(BASE/'schedule.json')['blocks']\nfor rel,key in [('inference/panels.json','panels_sha256'),('inference/batches.json','input_sha256'),('schedule.json','schedule_sha256')]:\n    need(hashes['results/context_blocked_v1/'+rel]==p[key],'Input/protocol hash mismatch: '+rel)\nfocal=panels['focal']; background=panels['background_b']\nneed(len(focal)==len(set(focal))==21 and len(background)==len(set(background))==21,'Panel count mismatch')\nneed(not set(focal)&set(background),'Panel IDs overlap')\nneed(len(blocks)==4 and all(len(b)==4 for b in blocks),'Block shape mismatch')\nneed(p['source_payloads']['A']['historical_condition']=='b_front_r1' and p['source_payloads']['B']['historical_condition']=='b_back_r1','A/B meaning mismatch')\nanswers=load(BASE/'answers/records.json')\nneed(hashes['results/context_blocked_v1/answers/records.json']==p['answers_sha256'],'Answers/protocol mismatch')\ntruth={r['id']:r['label'] for r in answers}\nneed(len(truth)==len(answers)==42 and set(truth)==set(focal+background),'Answer IDs mismatch')\nneed({r['id'] for r in answers if r['focal']}==set(focal),'Answer focal membership mismatch')\npred={}\nfrozen_files_checked=0\nfor b in blocks:\n    for name in b:\n        g=groups[name]; c=g['condition']\n        need(c in {'A','B'},'Invalid condition')\n        expected_ids=focal+background if c=='A' else background+focal\n        need([r['id'] for r in g['samples']]==expected_ids,'Batch order mismatch')\n        folder=BASE/'predictions'/p['model']\n        saved={}\n        for suffix in ['results.json','metadata.json','request.json']:\n            path=folder/f'{name}_{suffix}'\n            raw=read(path);sha=hashlib.sha256(raw).hexdigest()\n            need(freeze['files'].get(str(path.relative_to(BASE/'predictions')))==sha,'Frozen hash mismatch')\n            frozen_files_checked+=1\n            if suffix!='request.json': saved[suffix]=json.loads(raw)\n            else: need(sha==p['source_payloads'][c]['request_sha256'],'Historical request bytes differ')\n        m=saved['metadata.json']; rows=saved['results.json']\n        need(m['status']=='complete' and m['tools_observed']==0 and m['answer_keys_read'] is False,'Original inference validity mismatch')\n        need(m['protocol_sha256']==freeze['protocol_sha256'],'Metadata protocol mismatch')\n        need(m['prediction_sha256']==hashes[str((folder/f'{name}_results.json').relative_to(ROOT))],'Metadata prediction hash mismatch')\n        need([r['id'] for r in rows]==expected_ids,'Result ID/order mismatch')\n        need(all(set(r)=={'id','predicted'} and r['predicted'] in g['valid_labels'] for r in rows),'Invalid prediction schema')\n        path=folder/m['attempts'][-1]['response_file'];raw=read(path)\n        need(freeze['files'].get(str(path.relative_to(BASE/'predictions')))==hashlib.sha256(raw).hexdigest(),'Raw response hash mismatch')\n        frozen_files_checked+=1\n        text=raw.decode().strip();fence=chr(96)*3\n        if text.startswith(fence):\n            lines=text.splitlines()\n            need(lines[0].strip() in {fence,fence+'json'} and lines[-1].strip()==fence,'Malformed fence')\n            text='\\n'.join(lines[1:-1])\n        need(json.loads(text)==rows,'Raw response and parsed predictions differ')\n        pred[name]={r['id']:r['predicted'] for r in rows}\n\n# Independent computation precedes loading scores.json and imports no project implementation.\nresults=[];pairs=[];cases=[];focal_rows=[]\nfocal_correct=0;all_correct=0\nfor number,names in enumerate(blocks,1):\n    seq=''.join(groups[n]['condition'] for n in names)\n    need(seq==p['block_sequences'][number-1],'Sequence/protocol mismatch')\n    by={c:[n for n in names if groups[n]['condition']==c] for c in ('A','B')}\n    need(len(by['A'])==len(by['B'])==2,'Expected two calls per condition')\n    accuracy={}\n    for c,nn in by.items():\n        accuracy[c]=[]\n        for name in nn:\n            correct=sum(pred[name][i]==truth[i] for i in focal)\n            accuracy[c].append(correct);focal_correct+=correct\n            all_correct+=sum(pred[name][i]==truth[i] for i in focal+background)\n            focal_rows.append({'block':number,'group':name,'condition':c,'scheduled_cases':21,\n                               'valid_cases':21,'correct':correct,'accuracy':correct/21,'usable_correct':correct})\n    within={}\n    for c in ('A','B'):\n        l,r=by[c];flips=sum(pred[l][i]!=pred[r][i] for i in focal);within[c]=flips\n        pairs.append({'block':number,'comparison':'within_'+c,'left':l,'right':r,\n                      'scheduled_cases':21,'paired_cases':21,'flips':flips,'flip_rate':flips/21})\n    cross=[]\n    for l,r in itertools.product(by['A'],by['B']):\n        flips=sum(pred[l][i]!=pred[r][i] for i in focal);cross.append(flips)\n        pairs.append({'block':number,'comparison':'cross_A_B','left':l,'right':r,\n                      'scheduled_cases':21,'paired_cases':21,'flips':flips,'flip_rate':flips/21})\n    category_ids={k:[] for k in ['observed_two_repeat_stable_different','observed_two_repeat_stable_same','any_condition_unstable','incomplete_block']}\n    for i in focal:\n        a=[pred[n].get(i) for n in by['A']];b=[pred[n].get(i) for n in by['B']]\n        if None in a+b: cat='incomplete_block'\n        elif a[0]!=a[1] or b[0]!=b[1]: cat='any_condition_unstable'\n        elif a[0]==b[0]: cat='observed_two_repeat_stable_same'\n        else: cat='observed_two_repeat_stable_different'\n        category_ids[cat].append(i)\n        cases.append({'block':number,'id':i,'a_predictions':a,'b_predictions':b,'category':cat})\n    row={'block':number,'sequence':seq,'focal_cases':21,\n         'F_equals_A_front_correct_out_of_21':accuracy['A'],'R_equals_B_rear_correct_out_of_21':accuracy['B'],\n         'within_F_flips':within['A'],'within_R_flips':within['B'],\n         'cross_four_flip_counts':cross,'cross_four_flip_min':min(cross),'cross_four_flip_max':max(cross),\n         'category_ids':category_ids,'request_groups_by_condition':by}\n    row.update({k:len(v) for k,v in category_ids.items()});results.append(row)\n\nscore=load(BASE/'analysis/scores.json')\nneed(datetime.fromisoformat(score['scored_at'])>=datetime.fromisoformat(freeze['frozen_at']),'Scoring precedes freeze')\ncompare('score/protocol_sha256',score['protocol_sha256'],freeze['protocol_sha256'])\ncompare('score/frozen_manifest_sha256',score['frozen_manifest_sha256'],hashes['results/context_blocked_v1/predictions/frozen_manifest.json'])\ncompare('score/answers_sha256',score['answers_sha256'],hashes['results/context_blocked_v1/answers/records.json'])\nbs={r['block']:r for r in score['block_summaries']};need(len(bs)==4,'Scored block count mismatch')\nfor row in results:\n    for k in ['sequence','focal_cases','observed_two_repeat_stable_different','observed_two_repeat_stable_same','any_condition_unstable','incomplete_block']:\n        compare(f\"block/{row['block']}/{k}\",row[k],bs[row['block']][k])\nfm={r['group']:r for r in score['focal_metrics']};need(len(fm)==16,'Scored focal row count mismatch')\nfor row in focal_rows:\n    for k,v in row.items(): compare('focal/'+row['group']+'/'+k,v,fm[row['group']][k])\npm={(r['block'],r['comparison'],r['left'],r['right']):r for r in score['paired']}\nneed(len(pm)==len(score['paired'])==len(pairs)==24,'Scored pair cardinality mismatch')\nfor row in pairs:\n    key=(row['block'],row['comparison'],row['left'],row['right']);need(key in pm,'Missing scored pair')\n    for k in ['scheduled_cases','paired_cases','flips','flip_rate']: compare(str(key)+'/'+k,row[k],pm[key][k])\nfor row in results:\n    rr=[r['flips'] for r in score['paired'] if r['block']==row['block'] and r['comparison']=='cross_A_B']\n    need(len(rr)==4,'Expected four scored cross pairs')\n    compare(f\"block/{row['block']}/cross_min\",row['cross_four_flip_min'],min(rr))\n    compare(f\"block/{row['block']}/cross_max\",row['cross_four_flip_max'],max(rr))\ncm={(r['block'],r['id']):r for r in score['case_stability']}\nneed(len(cm)==len(score['case_stability'])==len(cases)==84,'Scored case cardinality mismatch')\nfor row in cases:\n    key=(row['block'],row['id']);need(key in cm,'Missing scored case')\n    for k in ['a_predictions','b_predictions','category']:compare(str(key)+'/'+k,row[k],cm[key][k])\nfor k,v in {'planned_sessions':16,'attempted_sessions':16,'complete_sessions':16,'not_attempted_sessions':0,\n            'planned_prediction_slots':672,'valid_prediction_slots':672,'usable_correct_slots':all_correct,\n            'valid_focal_slots':336,'scheduled_focal_slots':336,'complete_blocks':4}.items():\n    compare('totals/'+k,v,score['totals'][k])\nreport={'schema':'context-blocked-independent-numeric-check-v1','created_at_utc':datetime.now(timezone.utc).isoformat(),\n 'status':'PASS' if not mismatches else 'FAIL',\n 'scope':'Four completed frozen context_blocked_v1 blocks, 21 focal IDs; F=A=historical b_front, R=B=historical b_back',\n 'independence':{'scorer_implementation_read_or_imported':False,'project_analysis_modules_imported':False,\n 'new_model_calls':0,'frozen_prediction_files_modified':False,'calculation_completed_before_score_loaded':True,\n 'ground_truth_files_read':['results/context_blocked_v1/answers/records.json'],\n 'answers_read_after_existing_freeze_verified':True,'raw_responses_reparsed_independently':True,\n 'method':'Exact ID matching; two within pairs and four cross pairs per block; direct two-label equality classification'},\n 'counts':{'blocks':4,'focal_ids':21,'prediction_files':16,'frozen_files_hash_checked':frozen_files_checked,\n 'focal_request_rows':16,'focal_classification_slots':336,'pair_rows':len(pairs),'case_rows':len(cases),\n 'focal_correct_slots':focal_correct,'all_request_correct_slots':all_correct,'mismatches':len(mismatches)},\n 'independent_block_results':results,'independent_focal_metrics':focal_rows,'independent_pair_counts':pairs,\n 'source_sha256':hashes,'mismatches':mismatches,\n 'interpretation':'Finite two-repeat categories only; D=0 does not establish no position effect. Pairs and focal cases are not independent block replications.',\n 'verification_program_sha256':hashlib.sha256(SOURCE.encode()).hexdigest(),'verification_program':SOURCE}\nwith TARGET.open('x',encoding='utf-8') as f:\n    json.dump(report,f,ensure_ascii=False,indent=2);f.write('\\n')\nprint(json.dumps({'status':report['status'],'counts':report['counts'],\n'blocks':[{k:v for k,v in r.items() if k not in {'category_ids','request_groups_by_condition'}} for r in results]},ensure_ascii=False))\n"
+}

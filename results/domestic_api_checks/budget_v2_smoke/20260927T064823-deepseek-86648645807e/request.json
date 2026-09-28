@@ -1,0 +1,18 @@
+{
+  "model": "deepseek-v4-pro",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Return exactly this JSON array, with no other text: [{\"id\":\"smoke-1\",\"predicted\":\"OK\"}]"
+    }
+  ],
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  },
+  "max_tokens": 65536,
+  "thinking": {
+    "type": "enabled"
+  },
+  "reasoning_effort": "high"
+}

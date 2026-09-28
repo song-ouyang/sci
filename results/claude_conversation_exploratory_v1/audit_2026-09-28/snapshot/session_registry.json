@@ -1,0 +1,24 @@
+{
+  "note": "Agent task ID to session mapping. Results saved as predictions/{model}/{condition}_r{n}_predictions.json after each agent completes.",
+  "execution_note": "Agents loaded prompt files via Read tool (documented). Prompt content not passed through organizer context. Session isolation: fresh Agent subagent per session, no shared context between sessions.",
+  "sessions": {
+    "sonnet/cmapss_clean/r1": {"agent_id": "afb9a90730189637c", "status": "running"},
+    "sonnet/tep_clean/r1":    {"agent_id": "a5f67ca34fb4205ff", "status": "running"},
+    "sonnet/tep_misnamed/r1": {"agent_id": "a9418a4eb6195c70d", "status": "running"},
+    "opus/cmapss_clean/r1":   {"agent_id": "a047753f2ffe34e56", "status": "running"},
+    "opus/tep_clean/r1":      {"agent_id": "af1f4b398eeec7d86", "status": "running"},
+    "opus/tep_misnamed/r1":   {"agent_id": "a49e5851fcedeadb4", "status": "running"},
+    "sonnet/cmapss_clean/r2": {"agent_id": "ae9179754813e0418", "status": "running"},
+    "sonnet/tep_clean/r2":    {"agent_id": "aa76eec1eb1c914fb", "status": "running"},
+    "sonnet/tep_misnamed/r2": {"agent_id": "af266e38c38901607", "status": "running"},
+    "opus/cmapss_clean/r2":   {"agent_id": "a326f9e83b4136eba", "status": "running"},
+    "opus/tep_clean/r2":      {"agent_id": "ad3f122343d5d6fbd", "status": "running"},
+    "opus/tep_misnamed/r2":   {"agent_id": "a41c577abe7cfe555", "status": "running"},
+    "sonnet/cmapss_clean/r3": {"agent_id": "ab5a968507646c56d", "status": "running"},
+    "sonnet/tep_clean/r3":    {"agent_id": "a3fe1e4dd63d05f3d", "status": "running"},
+    "sonnet/tep_misnamed/r3": {"agent_id": "a1bce14f8daf42922", "status": "running"},
+    "opus/cmapss_clean/r3":   {"agent_id": "a4986b28848746255", "status": "running"},
+    "opus/tep_clean/r3":      {"agent_id": "a099ac7823b63165d", "status": "running"},
+    "opus/tep_misnamed/r3":   {"agent_id": "a3a994806e7d1dff0", "status": "running"}
+  }
+}

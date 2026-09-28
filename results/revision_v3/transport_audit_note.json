@@ -1,0 +1,17 @@
+{
+  "note_id": "transport-audit-1",
+  "recorded_at_utc": "2026-09-26T15:43:19.581564+00:00",
+  "original_protocol_sha256": "2b743ec9d70567aa9e630521503a4d4cb456949b69dc37db0dc3f2a282be0d7c",
+  "trigger": {
+    "model": "gpt-5.6-sol",
+    "group": "cmapss_clean_r3",
+    "attempt": 1,
+    "message": "Reconnecting... 1/5 (stream disconnected before completion: Transport error: network error: error decoding response body)"
+  },
+  "timing": "Recorded before any revision-v3 LLM classification score. The failed initial freeze did not read evaluation labels.",
+  "purpose": "Pre-score verifier correction distinguishes one explicitly logged recovered network-stream reconnect from fatal or unknown diagnostic errors. This is not a change to predictions, the original inference runner, model settings, prompts, or the frozen experimental protocol.",
+  "acceptance": "Only the exact top-level error event specified by the trigger is eligible. The same CLI session must subsequently emit a complete, schema-valid and ID-complete final response followed by turn.completed; raw output, saved predictions, event text, and metadata.errors must agree. Tool events remain forbidden.",
+  "transport_budget": "For every model/group, the number of CLI attempts plus the number of logged internal stream reconnections must not exceed two. Thus one CLI attempt plus one recovered reconnect exhausts the existing transport budget.",
+  "fatal_cases": "Unknown errors, turn.failed, item-level diagnostic errors, missing or invalid final output, missing turn.completed, extra reconnections, metadata mismatches, and semantic retries still fail closed.",
+  "reporting": "Retain the original diagnostic_errors_count and record recovered_stream_reconnections with event details. A recovered reconnect is not described as zero diagnostic errors or as a new independent experimental session."
+}

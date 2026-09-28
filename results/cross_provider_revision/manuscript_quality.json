@@ -1,0 +1,116 @@
+{
+  "pdf_sha256": "a1f547c2cdf509ee7e09ced7d620fd992541329388fbf4ae51ed2ddd6c278087",
+  "pages": 29,
+  "figures": 7,
+  "tables": 19,
+  "unresolved_template_markers": false,
+  "undefined_references": false,
+  "overfull_boxes": false,
+  "tex_sources_synchronized": true,
+  "main_pdf_alias_synchronized": true,
+  "abstract_whitespace_word_count": 238,
+  "cited_reference_count": 18,
+  "page_format": "A4",
+  "tests_passed": 118,
+  "new_model_requests_this_revision": 0,
+  "original_scores_and_frozen_manifests_unchanged": true,
+  "protected_file_count": 13,
+  "total_scheduled_requests": 213,
+  "total_valid_requests": 209,
+  "total_valid_labels": 10188,
+  "total_requested_labels": 10458,
+  "unique_source_units": 302,
+  "claude_historical_records_excluded": 27,
+  "claude_conversation_planned_records_excluded": 18,
+  "claude_conversation_exact_order_arrays": 15,
+  "claude_conversation_id_aligned_arrays": 16,
+  "claude_appendix_pages": [
+    26,
+    27,
+    28
+  ],
+  "claude_tables": [
+    18,
+    19
+  ],
+  "claude_table_numeric_checks": [
+    {
+      "alias": "sonnet",
+      "condition": "cmapss_clean",
+      "expected_tex": "$63.3 \\pm 6.7$ & $63.5 \\pm 7.1$",
+      "found": true
+    },
+    {
+      "alias": "sonnet",
+      "condition": "tep_clean",
+      "expected_tex": "$65.7 \\pm 6.1$ & $62.5 \\pm 10.6$",
+      "found": true
+    },
+    {
+      "alias": "sonnet",
+      "condition": "tep_misnamed",
+      "expected_tex": "$16.4 \\pm 1.0$ & $9.9 \\pm 2.6$",
+      "found": true
+    },
+    {
+      "alias": "opus",
+      "condition": "cmapss_clean",
+      "expected_tex": "$64.4 \\pm 1.0$ & $65.0 \\pm 1.0$",
+      "found": true
+    },
+    {
+      "alias": "opus",
+      "condition": "tep_clean",
+      "expected_tex": "$100.0 \\pm 0.0$ & $100.0 \\pm 0.0$",
+      "found": true
+    },
+    {
+      "alias": "opus",
+      "condition": "tep_misnamed",
+      "expected_tex": "$100.0 \\pm 0.0$ & $100.0 \\pm 0.0$",
+      "found": true
+    }
+  ],
+  "visual_review": "All 29 pages reviewed as rendered contact sheets; revised appendix pages 26-27 inspected at 145 dpi after the final build. No clipping, overlapping or broken references observed.",
+  "reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "submission_ready": false,
+  "author_declarations_complete": false,
+  "human_scientific_approval": "pending",
+  "journal_specific_compliance": "No target journal selected; no JCR Q2 acceptance or journal-specific certification claimed.",
+  "delivered_pdf": "output/pdf/industrial_monitoring_q2_review_2026-09-28.pdf",
+  "independent_offline_rebuild": "passed: separate extraction, Python network disabled, cached TeX, scientific scores and three TeX sources identical",
+  "overleaf_zip_independently_compiled": true,
+  "tests_passed_in_isolated_copy": 118,
+  "rebuilt_pdf_pages_pixel_identical": 29,
+  "status_documents_synchronized": true
+}

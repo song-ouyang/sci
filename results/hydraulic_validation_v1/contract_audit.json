@@ -1,0 +1,42 @@
+{
+  "diagnostic_inference": false,
+  "n_records": 54,
+  "results": [
+    {
+      "mode": "clean",
+      "n": 54,
+      "accepted": 54,
+      "rejected": 0,
+      "canonical_equals_clean": 54
+    },
+    {
+      "mode": "pair_reverse",
+      "n": 54,
+      "accepted": 54,
+      "rejected": 0,
+      "canonical_equals_clean": 54
+    },
+    {
+      "mode": "descriptor_rotation",
+      "n": 54,
+      "accepted": 0,
+      "rejected": 54,
+      "canonical_equals_clean": 0
+    },
+    {
+      "mode": "same_unit_swap",
+      "n": 54,
+      "accepted": 0,
+      "rejected": 54,
+      "canonical_equals_clean": 0
+    },
+    {
+      "mode": "hidden_value_swap",
+      "n": 54,
+      "accepted": 54,
+      "rejected": 0,
+      "canonical_equals_clean": 0
+    }
+  ],
+  "limitation": "Detection assumes independently trusted acquisition IDs; internally consistent value/channel misbinding is not detectable. Identical canonical bytes are software properties, not efficacy results."
+}

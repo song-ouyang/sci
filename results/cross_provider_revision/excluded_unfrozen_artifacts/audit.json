@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-09-27T09:05:49.129975+00:00",
+  "reason": "Unlisted 60-record result found beside frozen invalid 59/60 outcome during independent offline rebuild. It is excluded from all scores.",
+  "original_path": "results/revision_v3/predictions/gpt-5.5/cmapss_clean_r1_results.json",
+  "archived_path": "results/cross_provider_revision/excluded_unfrozen_artifacts/gpt-5.5/cmapss_clean_r1_results.json",
+  "sha256": "7d6e6bba4a4a11a85273dd01a4af0d6bd7a9dad38266b3166ba0cc6f772988e3",
+  "action": "Moved only the unlisted file to separate archive; frozen files and manifest unchanged.",
+  "primary_result": "N/A; original invalid_response retained",
+  "accuracy_computed": false
+}

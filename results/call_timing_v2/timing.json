@@ -1,0 +1,530 @@
+{
+  "schema": "call-timing-audit-v2",
+  "status": "descriptive_audit_complete",
+  "created_at_utc": "2026-09-28T08:28:14.128131+00:00",
+  "scope": "Seven TEP mapping conditions and four fixed-size contexts, both services, all three replicates; excludes early, focal-only and FD002",
+  "calls_audited": 66,
+  "contrasts_audited": 20,
+  "all_metadata_hashes_verified": true,
+  "metadata_files_verified": 66,
+  "input_source_hashes": {
+    "results/independent_validation/protocol.json": "4faf7317ad2b92a1599b892f9b68c1eca0427b5a764f8f8b030846efa20bd5c4",
+    "results/independent_validation/protocol.sha256": "c68e84e49f3dcc79b625b2a8c006e4b377b92a3de0d1b3a4915facebe3cdc435",
+    "results/independent_validation/session_schedule.json": "7dd02770e1818e7c3974660f9b7709bd1166d87b1ccdeb0fc05137bc76fec684",
+    "results/independent_validation/predictions/frozen_manifest.json": "7f9ca9cecacf838242f9f23af69053659426be88e4c8bd201f7468ff39c58ce6",
+    "src/experiments/run_revision_v3.py": "02231b78a0ebb14066884418feaa8d82f3f6b2e3d8868815a4954e18bb0d7159",
+    "results/independent_validation/predictions/gpt-5.6-sol/clean_r1_metadata.json": "4a9be265d92297bf0fdc4ca9a1ac701129ea59a17671af4ceb7ec3487d9b9643",
+    "results/independent_validation/predictions/gpt-5.6-sol/clean_r2_metadata.json": "7be7fc58cca9d7affde5b489a9c1584d58d6e0453177f026c737e5589390b6e5",
+    "results/independent_validation/predictions/gpt-5.6-sol/clean_r3_metadata.json": "237e186e60b63c8c8c8bc19e73ba0a1b3a4b7da99eebd84089c9ae6e9a265d22",
+    "results/independent_validation/predictions/gpt-5.6-sol/rotation_r1_metadata.json": "3c376971cce52080b4dc414036ad25a3d95e7ddb50643de5c5c89e1757f8a351",
+    "results/independent_validation/predictions/gpt-5.6-sol/rotation_r2_metadata.json": "979433fa19cb3b12cfec6c71797ab14abe3b5250342bad4536b3098c02dd9564",
+    "results/independent_validation/predictions/gpt-5.6-sol/rotation_r3_metadata.json": "e512fb334820e4cd705eb274b4151513abca83ab27886450ff4a51cda6444b47",
+    "results/independent_validation/predictions/gpt-5.6-sol/random_1_r1_metadata.json": "eba81c2c725b2bb6f31076a0ffd3be18d8b3b033f4e048ddb4222918818d3909",
+    "results/independent_validation/predictions/gpt-5.6-sol/random_1_r2_metadata.json": "de35a66537766b06ed443d457ef4cebdd7819c00bc38919defc565871a6e5504",
+    "results/independent_validation/predictions/gpt-5.6-sol/random_1_r3_metadata.json": "e3dc9e7934de20c8eca795c590c6056ab54ecb55c507fffe7c84de0acb0c7526",
+    "results/independent_validation/predictions/gpt-5.6-sol/random_2_r1_metadata.json": "e5d0b7a769c0382d8ec23914499d40aa485ea75024cb910b9d686193fbed2935",
+    "results/independent_validation/predictions/gpt-5.6-sol/random_2_r2_metadata.json": "955dc576b35d2c75591a0b34fc65a7ff3e3515a1c1b7d18e872b794226d0df02",
+    "results/independent_validation/predictions/gpt-5.6-sol/random_2_r3_metadata.json": "57cf4017636f8340f7410e69a38791cefc2f4d323b8b6f57a30b0b275909af3e",
+    "results/independent_validation/predictions/gpt-5.6-sol/random_3_r1_metadata.json": "48090eb0d29ce5830527ca84f7efbbfd62073e0c19c1ae4ba23d064460bc014c",
+    "results/independent_validation/predictions/gpt-5.6-sol/random_3_r2_metadata.json": "5336b872e32ecf5b43f2b639721316e6a03ca5d8018e1d0f330c11cfd792a3d3",
+    "results/independent_validation/predictions/gpt-5.6-sol/random_3_r3_metadata.json": "a30a3b50b7f76624d837957f2e5ae42ff9bca35426a798d9a23e889b823f5467",
+    "results/independent_validation/predictions/gpt-5.6-sol/same_unit_swap_r1_metadata.json": "05d3ad0eb5a6f881f838d6e9969d17aa0a771ccbbcc0cadcaa8c3398e2621adb",
+    "results/independent_validation/predictions/gpt-5.6-sol/same_unit_swap_r2_metadata.json": "f9a5f3982ab66877ba0b5156aa4c0ccb3d11bf646cd923d3e16e6d8724e14015",
+    "results/independent_validation/predictions/gpt-5.6-sol/same_unit_swap_r3_metadata.json": "7ebed927c2bd520f17846bcfed9f4a5bb914c27d41509ea80ee4798f66e8b245",
+    "results/independent_validation/predictions/gpt-5.6-sol/pair_shuffle_r1_metadata.json": "4b1d3e03c88dd4376504dbfe6bf8b553ec166f95f68eb0896b3e412cdabb3544",
+    "results/independent_validation/predictions/gpt-5.6-sol/pair_shuffle_r2_metadata.json": "ecbe8f5089096398ec9dad30e5a1696410783ad87a65c7b1d6bf0e0886c8999c",
+    "results/independent_validation/predictions/gpt-5.6-sol/pair_shuffle_r3_metadata.json": "53850581c6a73be5698ddcf7aa103513855671790cb2e9987d32eda9f97c875b",
+    "results/independent_validation/predictions/gpt-5.6-sol/a_front_r1_metadata.json": "d5a4b6c3318977064a09d36fd0fa9e889772b95db83b409d8060bb42e9c4268a",
+    "results/independent_validation/predictions/gpt-5.6-sol/a_front_r2_metadata.json": "7ccd5a76aded10f8f86eeb95474afd9fb95010568809ccf71c2a0793bd2cc75e",
+    "results/independent_validation/predictions/gpt-5.6-sol/a_front_r3_metadata.json": "86fb7304a428c1826cec31023c84657be9af60f1507b9d6044205a7ff40b90c8",
+    "results/independent_validation/predictions/gpt-5.6-sol/a_back_r1_metadata.json": "f8bf824935bffb880617926b8613db071c27a683a9dd21b2884e364168c49af6",
+    "results/independent_validation/predictions/gpt-5.6-sol/a_back_r2_metadata.json": "a3d2da43de1a66493709d6ab15913de3b9ac9a7149f568db0b1e035058f32b3f",
+    "results/independent_validation/predictions/gpt-5.6-sol/a_back_r3_metadata.json": "7852e8f690c7fe30334f422130c5acaa77b5103511643bd80b01495a3f9782ed",
+    "results/independent_validation/predictions/gpt-5.6-sol/b_front_r1_metadata.json": "8d75845d1e2c4532e854b602e2fff5d9ab154ad277c8b4832adfe152704e8208",
+    "results/independent_validation/predictions/gpt-5.6-sol/b_front_r2_metadata.json": "8b68ad74dc0a032ff652485a7783dd4a9899a5633e3b07f78db63a528f22f2b3",
+    "results/independent_validation/predictions/gpt-5.6-sol/b_front_r3_metadata.json": "db044e9a46251c932adebe9cc82077ed6e35b6395411b3969b61936e1acdc76e",
+    "results/independent_validation/predictions/gpt-5.6-sol/b_back_r1_metadata.json": "53c58349c9b30e7fcb748d96679af19baf1fc5d63d6dcee5f18c4b5b475457ac",
+    "results/independent_validation/predictions/gpt-5.6-sol/b_back_r2_metadata.json": "09673d14460b1d065ccc0a36d8a61edd64bc53f627086d87b8b2bed8581e21d9",
+    "results/independent_validation/predictions/gpt-5.6-sol/b_back_r3_metadata.json": "14f74d12e8f0eb506ed09219e3e37b005e82b5eaa3d1cf8d4336f372bd948a59",
+    "results/independent_validation/predictions/gpt-6-astra/clean_r1_metadata.json": "34858236166d1d61a6d24dd1cf0fac6c4c1d7d3e49c754b5c9c05a0051302ebc",
+    "results/independent_validation/predictions/gpt-6-astra/clean_r2_metadata.json": "3ae337564a19f2b85b50a63bef4f99104881cf005448a7a8af3d978c355bf5a9",
+    "results/independent_validation/predictions/gpt-6-astra/clean_r3_metadata.json": "fe5ab1e1a004bc8567d1b7236acb7becebdb6124bede3c1db383089c749f88dd",
+    "results/independent_validation/predictions/gpt-6-astra/rotation_r1_metadata.json": "5cd033e96a7be752163c9337036eca8ab8c538d154b6cd523f3f66ce765273fb",
+    "results/independent_validation/predictions/gpt-6-astra/rotation_r2_metadata.json": "2ed75f7f9e50c8c381a19544d11cfbeeded83cd07f1b0c8bed78cd02a12983f4",
+    "results/independent_validation/predictions/gpt-6-astra/rotation_r3_metadata.json": "d74e060b5f2ef5a4138c238666b53bedb78fb9a18ca0bd0ec4db9ffec7019280",
+    "results/independent_validation/predictions/gpt-6-astra/random_1_r1_metadata.json": "31cc2898fa7c2023bf64bc4bbd30cb438ec096e506bf74ffed7f0573281603f5",
+    "results/independent_validation/predictions/gpt-6-astra/random_1_r2_metadata.json": "5149a5cb07db611feaf6385113f28413ff6f0f85a6d4f1e00035a7d14d36d159",
+    "results/independent_validation/predictions/gpt-6-astra/random_1_r3_metadata.json": "afdec8ab06c86bb051e6e133e4e914de1243421905ea7160d081446421425cdd",
+    "results/independent_validation/predictions/gpt-6-astra/random_2_r1_metadata.json": "6241534989c840683ae934d68924a44dec10ae0c0e6b33e192ea014e785a5a94",
+    "results/independent_validation/predictions/gpt-6-astra/random_2_r2_metadata.json": "d654498ee2401dea1c62e29e8279d03f6054a787e3762fd560061b6a76544034",
+    "results/independent_validation/predictions/gpt-6-astra/random_2_r3_metadata.json": "9d84bcd8e5c3d224653cfa723cb01de25c265975600be940e5727c45789b935e",
+    "results/independent_validation/predictions/gpt-6-astra/random_3_r1_metadata.json": "c7a3b87fe4aabc730c1b851243774c24ad8afce95567870aa8affa3b208d22d7",
+    "results/independent_validation/predictions/gpt-6-astra/random_3_r2_metadata.json": "5f8f468daae786431a2d961da52a524a4336c861c2de2d0850c3e53943d99cb6",
+    "results/independent_validation/predictions/gpt-6-astra/random_3_r3_metadata.json": "941f40f11783b48df63d8a23ca5ee3721be07f9bd06c13d0fa5fd64536361ab7",
+    "results/independent_validation/predictions/gpt-6-astra/same_unit_swap_r1_metadata.json": "06203a75bfd53acb44497a34cc077d8e8e316bd19091594b3aeaa0d70c20cf96",
+    "results/independent_validation/predictions/gpt-6-astra/same_unit_swap_r2_metadata.json": "60dc7fadb6666463dae7ad4a72e223ef9fc09f283c3dbc3c565629ff458e593f",
+    "results/independent_validation/predictions/gpt-6-astra/same_unit_swap_r3_metadata.json": "1cab24b8bca1869ab18f4cc39419c2d7fe446dbdbb32dc7c8aa048b67eb4d8ac",
+    "results/independent_validation/predictions/gpt-6-astra/pair_shuffle_r1_metadata.json": "788f85c5680cac3d14028b35bb160daef7237e25a8e2be9c34ada2290470b553",
+    "results/independent_validation/predictions/gpt-6-astra/pair_shuffle_r2_metadata.json": "6f4463ae910f460a5c2aa5d3bbf3a803c5a8e3569834d33c9e0f11c58e1ff935",
+    "results/independent_validation/predictions/gpt-6-astra/pair_shuffle_r3_metadata.json": "6cd4b2710d20dacc7e009e0811bfb2bc09c20f1448c87831c85561007e90ff98",
+    "results/independent_validation/predictions/gpt-6-astra/a_front_r1_metadata.json": "60ef1523300451e6bab40f49c68cb5ac9aaa0f71f93b73e63044135ed8c6f147",
+    "results/independent_validation/predictions/gpt-6-astra/a_front_r2_metadata.json": "70b4250d1c5b2d864510e65d758e26208c205bea64c9843c506879f7568c63f6",
+    "results/independent_validation/predictions/gpt-6-astra/a_front_r3_metadata.json": "7a451157ed591ca998d1a94d635cdc2ff387005d9f663befee38d64c83b5fc5e",
+    "results/independent_validation/predictions/gpt-6-astra/a_back_r1_metadata.json": "c1aa896710d9a71e2446d0c9382a3a8b4621531611f728d4f2d2960c35f3c49b",
+    "results/independent_validation/predictions/gpt-6-astra/a_back_r2_metadata.json": "00f2d9948c72a156762c61c07e4f08053f104f0ecb9fe88b2870eb159e6c4a8f",
+    "results/independent_validation/predictions/gpt-6-astra/a_back_r3_metadata.json": "cba2b921dd238ac4d42ce854f39163220d070452781cd46cc446375f5327c065",
+    "results/independent_validation/predictions/gpt-6-astra/b_front_r1_metadata.json": "24ac8d4caff28a7e074f4114d1ce33ee935468cd17acbd4628a3c0be66186f96",
+    "results/independent_validation/predictions/gpt-6-astra/b_front_r2_metadata.json": "3955189f3d975a0863f42d9fd0472c14c74af4ccc028c8ab4a4e69f5eeae20e4",
+    "results/independent_validation/predictions/gpt-6-astra/b_front_r3_metadata.json": "e2e6b25ad3ba3fc42094ffa54f33482112abc4a11b6d39ba497f948e6fda0eb8",
+    "results/independent_validation/predictions/gpt-6-astra/b_back_r1_metadata.json": "c26b749c3da65db9137ea947a92895cf5b366a316c7d7501405844360caff2cb",
+    "results/independent_validation/predictions/gpt-6-astra/b_back_r2_metadata.json": "a64cef90d088cf2c0d2292efe9aa451d3a3d2fba9d2f0adbe8546d6ebb50535c",
+    "results/independent_validation/predictions/gpt-6-astra/b_back_r3_metadata.json": "ccf7c7bd3b07f96041364ff8b1d66f91c2789c9a54acde896866193ebe907fbf"
+  },
+  "analysis_code_sha256": "932a29cca4f1df682ad138427d261d1c229822379b4c71a963cd66c7920a14ac",
+  "timestamp_semantics": {
+    "started_at": "Local UTC wall-clock value assigned by the frozen runner after saving the request and before constructing/launching the Codex CLI subprocess. It is not a scheduler enqueue timestamp, exact network dispatch timestamp, or server inference start.",
+    "updated_at": "Local UTC metadata-write time after subprocess completion and event parsing; not a server inference completion timestamp.",
+    "elapsed_seconds": "Rounded local monotonic subprocess-duration measurement, including client/transport/service waiting; not isolated server compute time.",
+    "server_inference_timestamps": "Unavailable in the audited metadata; not inferred from client values."
+  },
+  "replicate_index_semantics": "R1/R2/R3 are preassigned replicate identifiers shuffled in the session schedule, not synchronous blocks or chronological labels.",
+  "condition_timing": {
+    "gpt-5.6-sol/clean": {
+      "start_min_utc": "2026-09-27T14:30:24.566455Z",
+      "start_max_utc": "2026-09-27T14:35:46.188463Z",
+      "replicate_labels_in_local_start_order": [
+        3,
+        2,
+        1
+      ],
+      "calls_in_local_start_order": [
+        "clean_r3",
+        "clean_r2",
+        "clean_r1"
+      ]
+    },
+    "gpt-5.6-sol/rotation": {
+      "start_min_utc": "2026-09-27T14:23:49.632405Z",
+      "start_max_utc": "2026-09-27T14:37:43.570036Z",
+      "replicate_labels_in_local_start_order": [
+        1,
+        2,
+        3
+      ],
+      "calls_in_local_start_order": [
+        "rotation_r1",
+        "rotation_r2",
+        "rotation_r3"
+      ]
+    },
+    "gpt-5.6-sol/random_1": {
+      "start_min_utc": "2026-09-27T14:17:49.201227Z",
+      "start_max_utc": "2026-09-27T14:23:09.109086Z",
+      "replicate_labels_in_local_start_order": [
+        1,
+        3,
+        2
+      ],
+      "calls_in_local_start_order": [
+        "random_1_r1",
+        "random_1_r3",
+        "random_1_r2"
+      ]
+    },
+    "gpt-5.6-sol/random_2": {
+      "start_min_utc": "2026-09-27T14:20:00.875785Z",
+      "start_max_utc": "2026-09-27T14:33:28.335003Z",
+      "replicate_labels_in_local_start_order": [
+        2,
+        3,
+        1
+      ],
+      "calls_in_local_start_order": [
+        "random_2_r2",
+        "random_2_r3",
+        "random_2_r1"
+      ]
+    },
+    "gpt-5.6-sol/random_3": {
+      "start_min_utc": "2026-09-27T14:12:01.559936Z",
+      "start_max_utc": "2026-09-27T14:25:55.145358Z",
+      "replicate_labels_in_local_start_order": [
+        1,
+        2,
+        3
+      ],
+      "calls_in_local_start_order": [
+        "random_3_r1",
+        "random_3_r2",
+        "random_3_r3"
+      ]
+    },
+    "gpt-5.6-sol/same_unit_swap": {
+      "start_min_utc": "2026-09-27T14:10:30.851144Z",
+      "start_max_utc": "2026-09-27T14:24:42.741993Z",
+      "replicate_labels_in_local_start_order": [
+        3,
+        1,
+        2
+      ],
+      "calls_in_local_start_order": [
+        "same_unit_swap_r3",
+        "same_unit_swap_r1",
+        "same_unit_swap_r2"
+      ]
+    },
+    "gpt-5.6-sol/pair_shuffle": {
+      "start_min_utc": "2026-09-27T14:22:50.887159Z",
+      "start_max_utc": "2026-09-27T14:36:17.848776Z",
+      "replicate_labels_in_local_start_order": [
+        3,
+        2,
+        1
+      ],
+      "calls_in_local_start_order": [
+        "pair_shuffle_r3",
+        "pair_shuffle_r2",
+        "pair_shuffle_r1"
+      ]
+    },
+    "gpt-5.6-sol/a_front": {
+      "start_min_utc": "2026-09-27T14:14:48.417205Z",
+      "start_max_utc": "2026-09-27T14:33:54.729307Z",
+      "replicate_labels_in_local_start_order": [
+        3,
+        1,
+        2
+      ],
+      "calls_in_local_start_order": [
+        "a_front_r3",
+        "a_front_r1",
+        "a_front_r2"
+      ]
+    },
+    "gpt-5.6-sol/a_back": {
+      "start_min_utc": "2026-09-27T14:13:27.845925Z",
+      "start_max_utc": "2026-09-27T14:34:32.023959Z",
+      "replicate_labels_in_local_start_order": [
+        3,
+        1,
+        2
+      ],
+      "calls_in_local_start_order": [
+        "a_back_r3",
+        "a_back_r1",
+        "a_back_r2"
+      ]
+    },
+    "gpt-5.6-sol/b_front": {
+      "start_min_utc": "2026-09-27T14:26:33.579748Z",
+      "start_max_utc": "2026-09-27T14:35:16.522218Z",
+      "replicate_labels_in_local_start_order": [
+        1,
+        3,
+        2
+      ],
+      "calls_in_local_start_order": [
+        "b_front_r1",
+        "b_front_r3",
+        "b_front_r2"
+      ]
+    },
+    "gpt-5.6-sol/b_back": {
+      "start_min_utc": "2026-09-27T14:10:30.851261Z",
+      "start_max_utc": "2026-09-27T14:21:49.402239Z",
+      "replicate_labels_in_local_start_order": [
+        1,
+        2,
+        3
+      ],
+      "calls_in_local_start_order": [
+        "b_back_r1",
+        "b_back_r2",
+        "b_back_r3"
+      ]
+    },
+    "gpt-6-astra/clean": {
+      "start_min_utc": "2026-09-27T14:19:59.673096Z",
+      "start_max_utc": "2026-09-27T14:22:54.909278Z",
+      "replicate_labels_in_local_start_order": [
+        2,
+        3,
+        1
+      ],
+      "calls_in_local_start_order": [
+        "clean_r2",
+        "clean_r3",
+        "clean_r1"
+      ]
+    },
+    "gpt-6-astra/rotation": {
+      "start_min_utc": "2026-09-27T14:13:30.986869Z",
+      "start_max_utc": "2026-09-27T14:37:58.188624Z",
+      "replicate_labels_in_local_start_order": [
+        3,
+        2,
+        1
+      ],
+      "calls_in_local_start_order": [
+        "rotation_r3",
+        "rotation_r2",
+        "rotation_r1"
+      ]
+    },
+    "gpt-6-astra/random_1": {
+      "start_min_utc": "2026-09-27T14:16:33.943848Z",
+      "start_max_utc": "2026-09-27T14:35:31.334984Z",
+      "replicate_labels_in_local_start_order": [
+        3,
+        2,
+        1
+      ],
+      "calls_in_local_start_order": [
+        "random_1_r3",
+        "random_1_r2",
+        "random_1_r1"
+      ]
+    },
+    "gpt-6-astra/random_2": {
+      "start_min_utc": "2026-09-27T14:10:30.851222Z",
+      "start_max_utc": "2026-09-27T14:18:24.476194Z",
+      "replicate_labels_in_local_start_order": [
+        2,
+        3,
+        1
+      ],
+      "calls_in_local_start_order": [
+        "random_2_r2",
+        "random_2_r3",
+        "random_2_r1"
+      ]
+    },
+    "gpt-6-astra/random_3": {
+      "start_min_utc": "2026-09-27T14:29:24.650625Z",
+      "start_max_utc": "2026-09-27T14:36:28.264088Z",
+      "replicate_labels_in_local_start_order": [
+        3,
+        1,
+        2
+      ],
+      "calls_in_local_start_order": [
+        "random_3_r3",
+        "random_3_r1",
+        "random_3_r2"
+      ]
+    },
+    "gpt-6-astra/same_unit_swap": {
+      "start_min_utc": "2026-09-27T14:28:03.472611Z",
+      "start_max_utc": "2026-09-27T14:34:24.111675Z",
+      "replicate_labels_in_local_start_order": [
+        3,
+        1,
+        2
+      ],
+      "calls_in_local_start_order": [
+        "same_unit_swap_r3",
+        "same_unit_swap_r1",
+        "same_unit_swap_r2"
+      ]
+    },
+    "gpt-6-astra/pair_shuffle": {
+      "start_min_utc": "2026-09-27T14:15:00.592422Z",
+      "start_max_utc": "2026-09-27T14:25:05.539243Z",
+      "replicate_labels_in_local_start_order": [
+        3,
+        1,
+        2
+      ],
+      "calls_in_local_start_order": [
+        "pair_shuffle_r3",
+        "pair_shuffle_r1",
+        "pair_shuffle_r2"
+      ]
+    },
+    "gpt-6-astra/a_front": {
+      "start_min_utc": "2026-09-27T14:11:51.205348Z",
+      "start_max_utc": "2026-09-27T14:26:23.021318Z",
+      "replicate_labels_in_local_start_order": [
+        2,
+        1,
+        3
+      ],
+      "calls_in_local_start_order": [
+        "a_front_r2",
+        "a_front_r1",
+        "a_front_r3"
+      ]
+    },
+    "gpt-6-astra/a_back": {
+      "start_min_utc": "2026-09-27T14:17:51.026911Z",
+      "start_max_utc": "2026-09-27T14:35:48.561414Z",
+      "replicate_labels_in_local_start_order": [
+        2,
+        3,
+        1
+      ],
+      "calls_in_local_start_order": [
+        "a_back_r2",
+        "a_back_r3",
+        "a_back_r1"
+      ]
+    },
+    "gpt-6-astra/b_front": {
+      "start_min_utc": "2026-09-27T14:17:40.710275Z",
+      "start_max_utc": "2026-09-27T14:35:05.381594Z",
+      "replicate_labels_in_local_start_order": [
+        1,
+        3,
+        2
+      ],
+      "calls_in_local_start_order": [
+        "b_front_r1",
+        "b_front_r3",
+        "b_front_r2"
+      ]
+    },
+    "gpt-6-astra/b_back": {
+      "start_min_utc": "2026-09-27T14:14:31.432545Z",
+      "start_max_utc": "2026-09-27T14:33:04.538110Z",
+      "replicate_labels_in_local_start_order": [
+        2,
+        3,
+        1
+      ],
+      "calls_in_local_start_order": [
+        "b_back_r2",
+        "b_back_r3",
+        "b_back_r1"
+      ]
+    }
+  },
+  "completely_separated_local_start_contrasts": [
+    {
+      "model_requested": "gpt-5.6-sol",
+      "left_condition": "clean",
+      "right_condition": "random_1",
+      "contrast_kind": "mapping",
+      "n_left_calls": 3,
+      "n_right_calls": 3,
+      "left_start_min_utc": "2026-09-27T14:30:24.566455Z",
+      "left_start_max_utc": "2026-09-27T14:35:46.188463Z",
+      "right_start_min_utc": "2026-09-27T14:17:49.201227Z",
+      "right_start_max_utc": "2026-09-27T14:23:09.109086Z",
+      "local_start_relation": "all_right_starts_before_all_left_starts",
+      "positive_gap_between_start_ranges_seconds": 435.457369,
+      "interpretation": "Local start order only; overlapping start ranges do not establish temporal balance, and separated starts do not by themselves prove server inference intervals were disjoint."
+    },
+    {
+      "model_requested": "gpt-5.6-sol",
+      "left_condition": "clean",
+      "right_condition": "random_3",
+      "contrast_kind": "mapping",
+      "n_left_calls": 3,
+      "n_right_calls": 3,
+      "left_start_min_utc": "2026-09-27T14:30:24.566455Z",
+      "left_start_max_utc": "2026-09-27T14:35:46.188463Z",
+      "right_start_min_utc": "2026-09-27T14:12:01.559936Z",
+      "right_start_max_utc": "2026-09-27T14:25:55.145358Z",
+      "local_start_relation": "all_right_starts_before_all_left_starts",
+      "positive_gap_between_start_ranges_seconds": 269.421097,
+      "interpretation": "Local start order only; overlapping start ranges do not establish temporal balance, and separated starts do not by themselves prove server inference intervals were disjoint."
+    },
+    {
+      "model_requested": "gpt-5.6-sol",
+      "left_condition": "clean",
+      "right_condition": "same_unit_swap",
+      "contrast_kind": "mapping",
+      "n_left_calls": 3,
+      "n_right_calls": 3,
+      "left_start_min_utc": "2026-09-27T14:30:24.566455Z",
+      "left_start_max_utc": "2026-09-27T14:35:46.188463Z",
+      "right_start_min_utc": "2026-09-27T14:10:30.851144Z",
+      "right_start_max_utc": "2026-09-27T14:24:42.741993Z",
+      "local_start_relation": "all_right_starts_before_all_left_starts",
+      "positive_gap_between_start_ranges_seconds": 341.824462,
+      "interpretation": "Local start order only; overlapping start ranges do not establish temporal balance, and separated starts do not by themselves prove server inference intervals were disjoint."
+    },
+    {
+      "model_requested": "gpt-5.6-sol",
+      "left_condition": "b_front",
+      "right_condition": "b_back",
+      "contrast_kind": "position_with_B",
+      "n_left_calls": 3,
+      "n_right_calls": 3,
+      "left_start_min_utc": "2026-09-27T14:26:33.579748Z",
+      "left_start_max_utc": "2026-09-27T14:35:16.522218Z",
+      "right_start_min_utc": "2026-09-27T14:10:30.851261Z",
+      "right_start_max_utc": "2026-09-27T14:21:49.402239Z",
+      "local_start_relation": "all_right_starts_before_all_left_starts",
+      "positive_gap_between_start_ranges_seconds": 284.177509,
+      "interpretation": "Local start order only; overlapping start ranges do not establish temporal balance, and separated starts do not by themselves prove server inference intervals were disjoint."
+    },
+    {
+      "model_requested": "gpt-6-astra",
+      "left_condition": "clean",
+      "right_condition": "random_2",
+      "contrast_kind": "mapping",
+      "n_left_calls": 3,
+      "n_right_calls": 3,
+      "left_start_min_utc": "2026-09-27T14:19:59.673096Z",
+      "left_start_max_utc": "2026-09-27T14:22:54.909278Z",
+      "right_start_min_utc": "2026-09-27T14:10:30.851222Z",
+      "right_start_max_utc": "2026-09-27T14:18:24.476194Z",
+      "local_start_relation": "all_right_starts_before_all_left_starts",
+      "positive_gap_between_start_ranges_seconds": 95.196902,
+      "interpretation": "Local start order only; overlapping start ranges do not establish temporal balance, and separated starts do not by themselves prove server inference intervals were disjoint."
+    },
+    {
+      "model_requested": "gpt-6-astra",
+      "left_condition": "clean",
+      "right_condition": "random_3",
+      "contrast_kind": "mapping",
+      "n_left_calls": 3,
+      "n_right_calls": 3,
+      "left_start_min_utc": "2026-09-27T14:19:59.673096Z",
+      "left_start_max_utc": "2026-09-27T14:22:54.909278Z",
+      "right_start_min_utc": "2026-09-27T14:29:24.650625Z",
+      "right_start_max_utc": "2026-09-27T14:36:28.264088Z",
+      "local_start_relation": "all_left_starts_before_all_right_starts",
+      "positive_gap_between_start_ranges_seconds": 389.741347,
+      "interpretation": "Local start order only; overlapping start ranges do not establish temporal balance, and separated starts do not by themselves prove server inference intervals were disjoint."
+    },
+    {
+      "model_requested": "gpt-6-astra",
+      "left_condition": "clean",
+      "right_condition": "same_unit_swap",
+      "contrast_kind": "mapping",
+      "n_left_calls": 3,
+      "n_right_calls": 3,
+      "left_start_min_utc": "2026-09-27T14:19:59.673096Z",
+      "left_start_max_utc": "2026-09-27T14:22:54.909278Z",
+      "right_start_min_utc": "2026-09-27T14:28:03.472611Z",
+      "right_start_max_utc": "2026-09-27T14:34:24.111675Z",
+      "local_start_relation": "all_left_starts_before_all_right_starts",
+      "positive_gap_between_start_ranges_seconds": 308.563333,
+      "interpretation": "Local start order only; overlapping start ranges do not establish temporal balance, and separated starts do not by themselves prove server inference intervals were disjoint."
+    }
+  ],
+  "sol_b_front_vs_b_back": {
+    "model_requested": "gpt-5.6-sol",
+    "left_condition": "b_front",
+    "right_condition": "b_back",
+    "contrast_kind": "position_with_B",
+    "n_left_calls": 3,
+    "n_right_calls": 3,
+    "left_start_min_utc": "2026-09-27T14:26:33.579748Z",
+    "left_start_max_utc": "2026-09-27T14:35:16.522218Z",
+    "right_start_min_utc": "2026-09-27T14:10:30.851261Z",
+    "right_start_max_utc": "2026-09-27T14:21:49.402239Z",
+    "local_start_relation": "all_right_starts_before_all_left_starts",
+    "positive_gap_between_start_ranges_seconds": 284.177509,
+    "interpretation": "Local start order only; overlapping start ranges do not establish temporal balance, and separated starts do not by themselves prove server inference intervals were disjoint."
+  },
+  "boundaries": [
+    "Start-range overlap is not evidence of adequate balance or absence of temporal confounding.",
+    "A stable difference across three calls per condition cannot isolate an input effect from unobserved service state or chance.",
+    "Model aliases do not establish immutable server weights; temperature was not exposed/set by the runner.",
+    "Calls sharing a batch induce case dependence; repeated labels and cross-pair comparisons are not new independent cases.",
+    "This is a post hoc audit of existing logs; no new inference, response scoring, protocol changes or outcome selection."
+  ]
+}

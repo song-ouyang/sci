@@ -1,0 +1,21 @@
+{
+  "batch": "single_3fd092f5_r5",
+  "dataset": "hydraulic",
+  "condition": "singleton",
+  "repeat": 5,
+  "n_samples": 1,
+  "model_requested": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "cli_version": "codex-cli 0.155.0-alpha.9.2",
+  "protocol_sha256": "f4fe92b1f056fd7fbcd5d50226f80b2ab7cee0de913a4b69eae5ae52b9d2c7b0",
+  "input_sha256": "ff07ea4348b40eb3d7de1bc7a0ca0f8a8b4cb24570617ddc973b32965bf564d2",
+  "runner_sha256": "02231b78a0ebb14066884418feaa8d82f3f6b2e3d8868815a4954e18bb0d7159",
+  "prompt_txt_sha256": "f7828e0e29176a0cc251385c2d45dfabd1646138a3df10b4475e4dd4ecab1a7e",
+  "base_instructions_sha256": "74cddbc5826ebf5b05cdd9a4382b5c3d0a983d408b3005173c4bc81810591564",
+  "answer_keys_read": false,
+  "tools_observed": 0,
+  "status": "not_attempted",
+  "attempts": [],
+  "reason": "authentication_quota_or_transport_failure",
+  "updated_at": "2026-09-28T06:04:28.131913+00:00"
+}

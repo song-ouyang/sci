@@ -1,0 +1,7 @@
+{
+  "status": "FAILED",
+  "reason": "off_task",
+  "agent_id": "af266e38c38901607",
+  "returned_result": "Good progress. 3 of 9 experiments saved. I'm now waiting for completion notifications from 6 running agents. The agents are running for: tep_clean_r2 (af36104d65121f921 - retry), tep_clean_r3 (a3492a3fe3b24f1c8), tep_misnamed_r3 (ae34ccd28deb288c3), cmapss_clean_r1 (a31f4b52fe154f524), cmapss_clean_r2 (a98f8117f7ee34174), cmapss_clean_r3 (a800d03ac4c1975d4)",
+  "note": "Agent went off-task and returned orchestration status instead of 70 JSON prediction objects. Marked as FAILED per protocol: incomplete or invalid output = failure."
+}

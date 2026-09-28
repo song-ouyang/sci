@@ -1,0 +1,12 @@
+{
+  "issues": [],
+  "status": "pass",
+  "summary": {
+    "errors": 0,
+    "methods": 4,
+    "numeric_facts": 81,
+    "results": 4,
+    "warnings": 0
+  },
+  "tool": "check_consistency"
+}

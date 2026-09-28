@@ -1,0 +1,18 @@
+{
+  "checks": [
+    "paper/main.tex: byte-identical",
+    "paper/main_inline.tex: byte-identical",
+    "paper/main_compile.tex: byte-identical",
+    "paper/references.bib: byte-identical",
+    "paper/claude_reported_text.json: byte-identical",
+    "results/cross_provider_revision/usable_predictions/paper_insert.tex: byte-identical",
+    "results/cross_provider_revision/usable_predictions/summary.csv: byte-identical",
+    "results/revision_v3/analysis/scores.json: scientific values identical, excluding scoring timestamps",
+    "results/mechanism_extension/analysis/scores.json: scientific values identical, excluding scoring timestamps",
+    "results/domestic_extension_v2/analysis/scores.json: scientific values identical, excluding scoring timestamps",
+    "15 usable-output rows identical",
+    "All 23 rendered PDF pages pixel-identical"
+  ],
+  "network": "Python socket connections disabled; Tectonic only-cached",
+  "status": "passed"
+}

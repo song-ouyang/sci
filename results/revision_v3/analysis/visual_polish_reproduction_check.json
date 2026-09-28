@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "extracted_archive": "/Users/guoba/work/sci-paper-llm-pdm/results/revision_v3_reproduction.zip",
+  "temporary_directory": "/var/folders/r7/ggshlc557f99yvjh6k6kv23h0000gn/T/revision-v3-polish-reproduce-s9pp5geg",
+  "log": "/var/folders/r7/ggshlc557f99yvjh6k6kv23h0000gn/T/revision-v3-polish-reproduce-s9pp5geg/reproduction.log",
+  "numerical_fields_equal": [
+    "metrics",
+    "paired_contrasts",
+    "unavailable_contrasts",
+    "repeat_variability",
+    "session_failures",
+    "structured_output_reliability"
+  ],
+  "case_exports_byte_identical": true,
+  "rendered_tex_byte_identical": true,
+  "offline_pdf_compilation": true,
+  "new_model_calls": 0
+}

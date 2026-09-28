@@ -1,0 +1,146 @@
+[
+  {
+    "id": "114efbdd",
+    "predicted": "Weak_leakage"
+  },
+  {
+    "id": "1711229b",
+    "predicted": "No_leakage"
+  },
+  {
+    "id": "26c57b70",
+    "predicted": "Weak_leakage"
+  },
+  {
+    "id": "342cff18",
+    "predicted": "Severe_leakage"
+  },
+  {
+    "id": "4a8cfcff",
+    "predicted": "No_leakage"
+  },
+  {
+    "id": "51937c4d",
+    "predicted": "No_leakage"
+  },
+  {
+    "id": "6d18af65",
+    "predicted": "No_leakage"
+  },
+  {
+    "id": "80688e29",
+    "predicted": "Weak_leakage"
+  },
+  {
+    "id": "80d5dd79",
+    "predicted": "Weak_leakage"
+  },
+  {
+    "id": "8c813e55",
+    "predicted": "Severe_leakage"
+  },
+  {
+    "id": "98e0598b",
+    "predicted": "No_leakage"
+  },
+  {
+    "id": "99482ae1",
+    "predicted": "Severe_leakage"
+  },
+  {
+    "id": "a28830d0",
+    "predicted": "Severe_leakage"
+  },
+  {
+    "id": "ada9f447",
+    "predicted": "Severe_leakage"
+  },
+  {
+    "id": "c720a330",
+    "predicted": "No_leakage"
+  },
+  {
+    "id": "e3ebe43d",
+    "predicted": "Severe_leakage"
+  },
+  {
+    "id": "f9ebea62",
+    "predicted": "Weak_leakage"
+  },
+  {
+    "id": "fffa280d",
+    "predicted": "Weak_leakage"
+  },
+  {
+    "id": "152325d2",
+    "predicted": "Weak_leakage"
+  },
+  {
+    "id": "2da54644",
+    "predicted": "Weak_leakage"
+  },
+  {
+    "id": "302d4f6b",
+    "predicted": "No_leakage"
+  },
+  {
+    "id": "39544394",
+    "predicted": "No_leakage"
+  },
+  {
+    "id": "3fd092f5",
+    "predicted": "Weak_leakage"
+  },
+  {
+    "id": "7717e048",
+    "predicted": "No_leakage"
+  },
+  {
+    "id": "7f492355",
+    "predicted": "No_leakage"
+  },
+  {
+    "id": "86d37e47",
+    "predicted": "No_leakage"
+  },
+  {
+    "id": "91e35d59",
+    "predicted": "No_leakage"
+  },
+  {
+    "id": "95924822",
+    "predicted": "No_leakage"
+  },
+  {
+    "id": "970596b6",
+    "predicted": "Weak_leakage"
+  },
+  {
+    "id": "9e6bbab5",
+    "predicted": "Severe_leakage"
+  },
+  {
+    "id": "a01f8332",
+    "predicted": "Severe_leakage"
+  },
+  {
+    "id": "a4ca3b84",
+    "predicted": "Severe_leakage"
+  },
+  {
+    "id": "e2d862fa",
+    "predicted": "No_leakage"
+  },
+  {
+    "id": "e54d89d6",
+    "predicted": "Weak_leakage"
+  },
+  {
+    "id": "f2c47650",
+    "predicted": "Severe_leakage"
+  },
+  {
+    "id": "f3364333",
+    "predicted": "Severe_leakage"
+  }
+]

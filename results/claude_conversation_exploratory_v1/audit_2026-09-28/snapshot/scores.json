@@ -1,0 +1,122 @@
+{
+  "sessions": {
+    "sonnet/cmapss_clean_r1": {
+      "status": "success",
+      "accuracy": 63.3,
+      "macro_f1": 63.4,
+      "n": 60,
+      "correct": 38
+    },
+    "sonnet/cmapss_clean_r2": {
+      "status": "success",
+      "accuracy": 56.7,
+      "macro_f1": 56.4,
+      "n": 60,
+      "correct": 34
+    },
+    "sonnet/cmapss_clean_r3": {
+      "status": "success",
+      "accuracy": 70.0,
+      "macro_f1": 70.6,
+      "n": 60,
+      "correct": 42
+    },
+    "sonnet/tep_clean_r1": {
+      "status": "success",
+      "accuracy": 62.9,
+      "macro_f1": 58.3,
+      "n": 70,
+      "correct": 44
+    },
+    "sonnet/tep_clean_r2": {
+      "status": "success",
+      "accuracy": 70.0,
+      "macro_f1": 70.0,
+      "n": 70,
+      "correct": 49
+    },
+    "sonnet/tep_clean_r3": {
+      "status": "success",
+      "accuracy": 61.4,
+      "macro_f1": 55.0,
+      "n": 70,
+      "correct": 43
+    },
+    "sonnet/tep_misnamed_r1": {
+      "status": "success",
+      "accuracy": 17.1,
+      "macro_f1": 11.7,
+      "n": 70,
+      "correct": 12
+    },
+    "sonnet/tep_misnamed_r2": {
+      "status": "not_run"
+    },
+    "sonnet/tep_misnamed_r3": {
+      "status": "success",
+      "accuracy": 15.7,
+      "macro_f1": 8.0,
+      "n": 70,
+      "correct": 11
+    },
+    "opus/cmapss_clean_r1": {
+      "status": "success",
+      "accuracy": 65.0,
+      "macro_f1": 66.0,
+      "n": 60,
+      "correct": 39
+    },
+    "opus/cmapss_clean_r2": {
+      "status": "success",
+      "accuracy": 63.3,
+      "macro_f1": 64.0,
+      "n": 60,
+      "correct": 38
+    },
+    "opus/cmapss_clean_r3": {
+      "status": "success",
+      "accuracy": 65.0,
+      "macro_f1": 64.9,
+      "n": 60,
+      "correct": 39
+    },
+    "opus/tep_clean_r1": {
+      "status": "success",
+      "accuracy": 100.0,
+      "macro_f1": 100.0,
+      "n": 70,
+      "correct": 70
+    },
+    "opus/tep_clean_r2": {
+      "status": "success",
+      "accuracy": 100.0,
+      "macro_f1": 100.0,
+      "n": 70,
+      "correct": 70
+    },
+    "opus/tep_clean_r3": {
+      "status": "success",
+      "accuracy": 100.0,
+      "macro_f1": 100.0,
+      "n": 70,
+      "correct": 70
+    },
+    "opus/tep_misnamed_r1": {
+      "status": "success",
+      "accuracy": 100.0,
+      "macro_f1": 100.0,
+      "n": 70,
+      "correct": 70
+    },
+    "opus/tep_misnamed_r2": {
+      "status": "success",
+      "accuracy": 100.0,
+      "macro_f1": 100.0,
+      "n": 70,
+      "correct": 70
+    },
+    "opus/tep_misnamed_r3": {
+      "status": "not_run"
+    }
+  }
+}

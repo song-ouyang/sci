@@ -1,0 +1,23 @@
+{
+  "reviewed_at_utc": "2026-09-27T04:28:26.219657+00:00",
+  "pdf_sha256": "3cbf2d34479b14912ec21a7e3c485796beb7a20670960dda9e362f228b2b846f",
+  "pdf_pages": 20,
+  "figures": 6,
+  "tables": 10,
+  "both_tex_entries_compiled": true,
+  "compilation_warnings": false,
+  "visual_review": "All pages inspected in rendered contact sheets; new tables and the matched context figure also inspected enlarged. After float-order correction, unchanged page PNGs were byte-checked against reviewed pages and all changed/new pages were inspected. No clipping, overlap or unreadable table/figure labels observed. Original figures precede the extension and audit tables precede references.",
+  "tests_passed": 48,
+  "original_scores_unchanged": true,
+  "original_scores_sha256": "10f745d19be562781f40ce5b98c957041109f51a214398ba0b947c3523e342bb",
+  "extension_protocol_sha256": "60ab4d257a3b9ea85df3ac1897927aa3a287f06bbd138c64fed8bcfb824f0f24",
+  "extension_frozen_sha256": "ad6006c18b37c9ae7761fc8e74a319f80932f1c4a04fb9c9ab8c9182c0156b19",
+  "extension_sessions": 84,
+  "extension_valid_sessions": 84,
+  "extension_valid_predictions": 2604,
+  "extension_paired_export_rows": 2226,
+  "independent_case_checks": "Every request accuracy and every paired denominator, accuracy difference and flip count recomputed from case exports; passed",
+  "offline_archive_reproduction": "Passed: independent extraction rebuilt both stages, matched metrics/contrasts and reproduced byte-identical TeX, extension case CSVs and context figure data; compiled offline.",
+  "release_status": "Local review package; no public repository, DOI, author identities or license invented",
+  "reproduction_report_sha256": "73653cf46a531d9583f249db26072f6e6b2c82b34e0b4ed013221c6b4036e8f1"
+}

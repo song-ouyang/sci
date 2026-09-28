@@ -1,0 +1,65 @@
+{
+  "models": {
+    "claude-sonnet-4-6": {
+      "cmapss": {
+        "acc_mean": 60.0,
+        "acc_std": 2.721655269759086,
+        "f1_mean": 59.21278485689195,
+        "f1_std": 2.8578594713258716
+      },
+      "tep_clean": {
+        "acc_mean": 61.42857142857142,
+        "acc_std": 16.32993161855452,
+        "f1_mean": 55.33343727191724,
+        "f1_std": 17.1088884975252
+      },
+      "tep_misnamed": {
+        "acc_mean": 28.09523809523809,
+        "acc_std": 11.086139739831253,
+        "f1_mean": 22.409190091130792,
+        "f1_std": 14.340463867389763
+      }
+    },
+    "claude-opus-5-5": {
+      "cmapss": {
+        "acc_mean": 64.44444444444444,
+        "acc_std": 2.07869854820774,
+        "f1_mean": 65.17022218800604,
+        "f1_std": 2.062569601516347
+      },
+      "tep_clean": {
+        "acc_mean": 100.0,
+        "acc_std": 0.0,
+        "f1_mean": 100.0,
+        "f1_std": 0.0
+      },
+      "tep_misnamed": {
+        "acc_mean": 100.0,
+        "acc_std": 0.0,
+        "f1_mean": 100.0,
+        "f1_std": 0.0
+      }
+    },
+    "claude-fable-5-1": {
+      "cmapss": {
+        "acc_mean": 62.77777777777777,
+        "acc_std": 2.8327886186626534,
+        "f1_mean": 63.183858973572654,
+        "f1_std": 1.9905047289504318
+      },
+      "tep_clean": {
+        "acc_mean": 100.0,
+        "acc_std": 0.0,
+        "f1_mean": 100.0,
+        "f1_std": 0.0
+      },
+      "tep_misnamed": {
+        "acc_mean": 95.71428571428572,
+        "acc_std": 3.499271061118825,
+        "f1_mean": 95.6140031770284,
+        "f1_std": 3.5355360662511552
+      }
+    }
+  },
+  "note": "27 groups, 3 models x 3 conditions x 3 repeats, via Claude Code Agent tool"
+}

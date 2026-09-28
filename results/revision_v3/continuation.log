@@ -1,0 +1,11 @@
+KEEP TERMINAL gpt-5.5 tep_clean_r1: complete
+KEEP TERMINAL gpt-5.5 tep_misnamed_r1: complete
+KEEP TERMINAL gpt-5.5 cmapss_clean_r3: complete
+KEEP TERMINAL gpt-5.5 tep_clean_r3: complete
+KEEP TERMINAL gpt-5.5 tep_misnamed_r3: complete
+KEEP TERMINAL gpt-5.5 tep_clean_r2: complete
+KEEP TERMINAL gpt-5.5 tep_misnamed_r2: complete
+KEEP TERMINAL gpt-5.5 cmapss_clean_r1: invalid_response
+CONTINUE NEVER-ATTEMPTED gpt-5.5 cmapss_clean_r2
+START gpt-5.5 cmapss_clean_r2 (60 samples), attempt 1
+DONE gpt-5.5 cmapss_clean_r2: 60 predictions in 43.912s

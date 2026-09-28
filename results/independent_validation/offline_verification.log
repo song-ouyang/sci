@@ -1,0 +1,31 @@
+Extracted manifest verified 2090
+{
+  "status": "passed",
+  "checks": [
+    "paper/main.tex: byte-identical",
+    "paper/main_inline.tex: byte-identical",
+    "paper/main_compile.tex: byte-identical",
+    "paper/references.bib: byte-identical",
+    "paper/independent_validation_text.json: byte-identical",
+    "results/revision_v3/analysis/scores.json: scientific values identical, ignoring generation timestamps",
+    "results/mechanism_extension/analysis/scores.json: scientific values identical, ignoring generation timestamps",
+    "results/domestic_extension_v2/analysis/scores.json: scientific values identical, ignoring generation timestamps",
+    "results/independent_validation/analysis/scores.json: scientific values identical, ignoring generation timestamps",
+    "results/revision_v3/analysis/paired.csv: byte-identical",
+    "results/revision_v3/analysis/unavailable_contrasts.csv: byte-identical",
+    "results/revision_v3/analysis/metrics.csv: byte-identical",
+    "results/revision_v3/analysis/session_failures.csv: byte-identical",
+    "results/mechanism_extension/analysis/context_figure_data.csv: byte-identical",
+    "results/independent_validation/analysis/cases.csv: byte-identical",
+    "results/independent_validation/analysis/figure_data.csv: byte-identical",
+    "All 28 rendered PDF pages pixel-identical"
+  ],
+  "archive_extracted_and_manifest_verified": true,
+  "python_socket_connections_disabled": true,
+  "tectonic_only_cached": true,
+  "no_inference_download_or_refreeze": true,
+  "rendered_pdf_pages_pixel_identical": 28,
+  "tests_passed_in_isolated_copy": 101,
+  "overleaf_zip_independently_compiled": true,
+  "scope": "Four-stage source-disjoint author-review release; local reconstruction of audited frozen evidence. Human approval pending."
+}

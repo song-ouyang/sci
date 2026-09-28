@@ -1,0 +1,128 @@
+{
+  "schema": "context-blocked-v1",
+  "created_at": "2026-09-28T08:37:26.404403+00:00",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "cli_version": "codex-cli 0.155.0-alpha.9.2",
+  "seed": 20260928,
+  "calls_scheduled": 16,
+  "slots_scheduled": 672,
+  "blocks_scheduled": 4,
+  "block_sequences": [
+    "ABBA",
+    "ABBA",
+    "BAAB",
+    "BAAB"
+  ],
+  "workers_max": 1,
+  "timeout_seconds": 300,
+  "max_elapsed_seconds": 1800,
+  "max_total_tokens": 1200000,
+  "retries_per_job": 0,
+  "study_type": "Exploratory replication chosen after prior simulation results and retrospective timing audit; new calls, zero new source units.",
+  "source_payloads": {
+    "A": {
+      "historical_condition": "b_front_r1",
+      "source_prompt": "results/independent_validation/inference/prompts/b_front_r1.txt",
+      "prompt_sha256": "be6b8fbfb6797a10a4891de666dadab862421731663e782fd476673089d70257",
+      "source_request": "results/independent_validation/predictions/gpt-5.6-sol/b_front_r1_request.json",
+      "request_sha256": "e11a3eabb928ef99ddf966d51bbc3ff4987311457be54f2079d78ff814529212"
+    },
+    "B": {
+      "historical_condition": "b_back_r1",
+      "source_prompt": "results/independent_validation/inference/prompts/b_back_r1.txt",
+      "prompt_sha256": "e1b838db745e1f645e8614fda6d096582c1043e63302cc19eb2b941400e292f7",
+      "source_request": "results/independent_validation/predictions/gpt-5.6-sol/b_back_r1_request.json",
+      "request_sha256": "dedec2bfd2f8aeb5a2d8b22e1a508e0c4b4e8454a94f4678f6d8d6bdc03dece6"
+    }
+  },
+  "source_protocol_sha256": "4faf7317ad2b92a1599b892f9b68c1eca0427b5a764f8f8b030846efa20bd5c4",
+  "source_output_manifest_sha256": "7f9ca9cecacf838242f9f23af69053659426be88e4c8bd201f7468ff39c58ce6",
+  "source_answers_sha256": "16c834644f6e5aa8daa1a25368f7977f2437bd43612d4a310eac039db85f4ecb",
+  "focal_cases": 21,
+  "shared_background_cases": 21,
+  "new_source_units": 0,
+  "design": "A is exact historical b_front; B is exact historical b_back. Four sequential blocks, ABBA twice and BAAB twice, shuffled once with seed 20260928. No new labels or text appear in either payload.",
+  "time_scope": "ABBA/BAAB balances nominal ordinal positions within each complete block. Unequal call durations and nonstationary service effects remain; no claim that clock time is equalized or drift eliminated. Preserve actual dispatch and completion timestamps.",
+  "selection_scope": "Model and B panel chosen after known outcomes. All four blocks retain the initial shuffled order (ABBA, ABBA, BAAB, BAAB for this seed); no seed selection to create an aesthetically alternating schedule.",
+  "budget_reference": {
+    "old_same_payload_usage": [
+      {
+        "condition": "A",
+        "historical_repeat": 1,
+        "input_tokens": 60126,
+        "output_tokens": 3202,
+        "total_tokens": 63328
+      },
+      {
+        "condition": "A",
+        "historical_repeat": 2,
+        "input_tokens": 60130,
+        "output_tokens": 2990,
+        "total_tokens": 63120
+      },
+      {
+        "condition": "A",
+        "historical_repeat": 3,
+        "input_tokens": 60128,
+        "output_tokens": 2431,
+        "total_tokens": 62559
+      },
+      {
+        "condition": "B",
+        "historical_repeat": 1,
+        "input_tokens": 60141,
+        "output_tokens": 2646,
+        "total_tokens": 62787
+      },
+      {
+        "condition": "B",
+        "historical_repeat": 2,
+        "input_tokens": 60128,
+        "output_tokens": 2545,
+        "total_tokens": 62673
+      },
+      {
+        "condition": "B",
+        "historical_repeat": 3,
+        "input_tokens": 60130,
+        "output_tokens": 2924,
+        "total_tokens": 63054
+      }
+    ],
+    "estimated_16_call_observed_tokens": 1006722.6666666666,
+    "estimated_16_call_input_tokens": 962088.0,
+    "pre_freeze_amendment": "Initial planning threshold 400,000 was inadequate for 16 exact historical payloads (approximately 60,130 input tokens each). Revised before protocol freeze or new inference to 1,200,000 solely to permit the same 16-call design; no added cases or outcome-informed change.",
+    "accounting": "Cached tokens are already included in reported input_tokens; do not subtract them. Observed token ceiling stops future dispatch and is not a reliable per-request generation cap."
+  },
+  "failure_policy": "One invocation per scheduled job. Any execution/validation failure or unknown token usage stops all new dispatch; no semantic retries, score-based reruns, substitutes or partial scoring. Reserve the full 300-second timeout before dispatch within the 1800-second study limit.",
+  "inference_access": "Subscription-authenticated isolated CLI; inherited tools/plugins/project-context-disabled helper; no API-key transport; runner never opens answer files.",
+  "scoring_plan": "Audit and freeze all terminal outputs before reading answers. Per-block within-A pair, within-B pair, all four A/B pairs; 21 focal ID-matched predictions; finite two-repeat stable-different, stable-same, either-unstable, and incomplete categories. Accuracy, scheduled/attempted/valid request and slot denominators, tokens, start/end timestamps and actual A/B mean-time offsets. No p-values, noise subtraction, causal lower bounds or independent-pair sample inflation. Incomplete blocks remain incomplete.",
+  "input_sha256": "a25ae5cce292389d6de474f5722de46d71e6440dc10537af78ab8d86d2e375d1",
+  "schedule_sha256": "15a0b5d79487678c27eb7a031f34b805764b10148de5fa8d774a128921bfd9c2",
+  "panels_sha256": "ff35ce17e712d69fdbd3017dc8a9ddda9b5149747d4262e694ec7a2af5adea88",
+  "answers_sha256": "43a97ced1f531e1f8f55d107ddf7ddbc938c5cb3e64a4fb11334c39e31e5daaf",
+  "prompts_sha256": {
+    "block01_pos1_a": "be6b8fbfb6797a10a4891de666dadab862421731663e782fd476673089d70257",
+    "block01_pos2_b": "e1b838db745e1f645e8614fda6d096582c1043e63302cc19eb2b941400e292f7",
+    "block01_pos3_b": "e1b838db745e1f645e8614fda6d096582c1043e63302cc19eb2b941400e292f7",
+    "block01_pos4_a": "be6b8fbfb6797a10a4891de666dadab862421731663e782fd476673089d70257",
+    "block02_pos1_a": "be6b8fbfb6797a10a4891de666dadab862421731663e782fd476673089d70257",
+    "block02_pos2_b": "e1b838db745e1f645e8614fda6d096582c1043e63302cc19eb2b941400e292f7",
+    "block02_pos3_b": "e1b838db745e1f645e8614fda6d096582c1043e63302cc19eb2b941400e292f7",
+    "block02_pos4_a": "be6b8fbfb6797a10a4891de666dadab862421731663e782fd476673089d70257",
+    "block03_pos1_b": "e1b838db745e1f645e8614fda6d096582c1043e63302cc19eb2b941400e292f7",
+    "block03_pos2_a": "be6b8fbfb6797a10a4891de666dadab862421731663e782fd476673089d70257",
+    "block03_pos3_a": "be6b8fbfb6797a10a4891de666dadab862421731663e782fd476673089d70257",
+    "block03_pos4_b": "e1b838db745e1f645e8614fda6d096582c1043e63302cc19eb2b941400e292f7",
+    "block04_pos1_b": "e1b838db745e1f645e8614fda6d096582c1043e63302cc19eb2b941400e292f7",
+    "block04_pos2_a": "be6b8fbfb6797a10a4891de666dadab862421731663e782fd476673089d70257",
+    "block04_pos3_a": "be6b8fbfb6797a10a4891de666dadab862421731663e782fd476673089d70257",
+    "block04_pos4_b": "e1b838db745e1f645e8614fda6d096582c1043e63302cc19eb2b941400e292f7"
+  },
+  "code_sha256": {
+    "src/experiments/run_revision_v3.py": "02231b78a0ebb14066884418feaa8d82f3f6b2e3d8868815a4954e18bb0d7159",
+    "src/experiments/context_blocked_v1.py": "79537fb05065217d19eb79290615f7f0691488975712e341f2311d06fcaa0ac2",
+    "src/analysis/score_context_blocked_v1.py": "fba3fb1c99e0208998297bcce70355b2c64dcd72033955869f4b262be911ed97"
+  }
+}

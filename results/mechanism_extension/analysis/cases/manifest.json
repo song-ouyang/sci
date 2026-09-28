@@ -1,0 +1,15 @@
+{
+  "protocol_sha256": "60ab4d257a3b9ea85df3ac1897927aa3a287f06bbd138c64fed8bcfb824f0f24",
+  "scores_sha256": "1bfafd7c82001a62920d3167a70f53fe111fb4565ecea288d0be7971cf84afec",
+  "frozen_manifest_sha256": "ad6006c18b37c9ae7761fc8e74a319f80932f1c4a04fb9c9ab8c9182c0156b19",
+  "answers_sha256": "0097dbb21981968f9ad5b8c59670a07ce701edfecbe61b5108542f7f0638fd1d",
+  "exporter_sha256": "c938d70ff11a84ae0ce25bc78bd45d229b3d729d7a940681c81042e5567b9857",
+  "independent_accuracy_and_pair_checks": "passed",
+  "requested_rows": 2604,
+  "paired_rows": 2226,
+  "unique_tep_source_groups": 70,
+  "files": {
+    "paired_transitions.csv": "b5f4f5dd70f142d1ca83e16a5631b8467ab596360bf839388a88812ac997785b",
+    "predictions.csv": "a217df3e5dd7b8c672df7e73412c87eb99ea7161aa4cf609eb648383389c001a"
+  }
+}

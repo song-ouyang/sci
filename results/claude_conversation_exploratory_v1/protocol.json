@@ -1,0 +1,45 @@
+{
+  "schema_version": "exploratory_v1",
+  "created_utc": "2026-09-28",
+  "description": "对话模式探索性实验（conversation-mode exploratory）。使用 Claude Code 桌面应用 Agent tool 直接调用模型，与旧数据和原 CLI 受控实验分开保存。不用于替代 CLI 协议受控结果。",
+  "execution_method": "Claude Code desktop app Agent tool (model='sonnet' / model='opus')",
+  "execution_context": "Current conversation (claude-sonnet-4-6) acts as organiser; each prediction session is a separate Agent subagent. Subagents inherit the desktop app's subscription login; tool access available to subagents (documented per session). Context isolation: subagents receive only the prompt file path; no labels, scores, prior predictions, paper content, or audit data are passed.",
+  "known_limitations": [
+    "Agent tool subagents may have tool access (Read, Bash, etc.) — documented but not machine-disabled",
+    "No native CLI event log; session identifiers are desktop-app task IDs, not service-native request IDs",
+    "Model version confirmed from Agent tool model parameter only; no server-returned model ID available",
+    "Subagents may inherit some project context from the desktop app environment"
+  ],
+  "models": {
+    "sonnet": {
+      "agent_model_param": "sonnet",
+      "inferred_model_id": "claude-sonnet-4-6",
+      "identity_source": "agent_tool_model_param",
+      "verified_server_id": false
+    },
+    "opus": {
+      "agent_model_param": "opus",
+      "inferred_model_id": "claude-opus-5-5",
+      "identity_source": "agent_tool_model_param",
+      "verified_server_id": false
+    }
+  },
+  "conditions": ["cmapss_clean", "tep_clean", "tep_misnamed"],
+  "repeats": [1, 2, 3],
+  "planned_sessions": 18,
+  "prompt_source": "results/revision_v3/inference/prompts/",
+  "prompt_hashes": {
+    "cmapss_clean": "8163840a7ad5a4fc431ce1d95ef761cd",
+    "tep_clean": "194714859be89cf7f86592a295d50e4f",
+    "tep_misnamed": "3d0b4d73e84bc53f6d84bcbbee3595dc"
+  },
+  "prompt_bytes": {
+    "cmapss_clean": 218242,
+    "tep_clean": 223740,
+    "tep_misnamed": 223740
+  },
+  "ground_truth_source": "results/revision_v3/data/datasets.json",
+  "scoring_rule": "All 18 session outcomes (success, failure, or not_run) saved and frozen before any scoring. Scoring only for sessions with complete, valid prediction arrays. Partial predictions scored N/A. No re-runs based on scores.",
+  "failure_rule": "Session with missing, incomplete, or malformed prediction array recorded as failure (N/A score). No manual label correction. No copying results across repeats.",
+  "result_labeling": "All results labeled 对话模式探索性结果 (conversation-mode exploratory). Not claimed to pass original CLI protocol validation."
+}

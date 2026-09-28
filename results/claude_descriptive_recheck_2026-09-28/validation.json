@@ -1,0 +1,17 @@
+{
+  "checked_at_utc": "2026-09-28T00:21:01.280321+00:00",
+  "new_tests_passed": 3,
+  "full_suite_rerun": false,
+  "snapshot_intact": true,
+  "original_claude_prediction_artifacts_unchanged_during_recheck": true,
+  "changes_since_previous_audit": [
+    "extension:predictions/claude-sonnet-4-6/tep_clean_r3_metadata.json"
+  ],
+  "primary_eligible": 0,
+  "descriptive_rows": 9,
+  "case_count": 1800,
+  "all_supplied_metrics_match_population_sd": true,
+  "formal_v2_prediction_directory_exists": true,
+  "no_new_model_calls": true,
+  "formal_v2_prediction_files": 0
+}

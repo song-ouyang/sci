@@ -1,0 +1,19 @@
+model,repeat,context,n_cases,correct,accuracy
+gpt-5.6-sol,1,70-record batch,7,7,1.0
+gpt-5.6-sol,1,7-record batch,7,2,0.2857142857142857
+gpt-5.6-sol,1,Single-record calls,7,4,0.5714285714285714
+gpt-5.6-sol,2,70-record batch,7,7,1.0
+gpt-5.6-sol,2,7-record batch,7,2,0.2857142857142857
+gpt-5.6-sol,2,Single-record calls,7,4,0.5714285714285714
+gpt-5.6-sol,3,70-record batch,7,7,1.0
+gpt-5.6-sol,3,7-record batch,7,2,0.2857142857142857
+gpt-5.6-sol,3,Single-record calls,7,3,0.42857142857142855
+gpt-6-astra,1,70-record batch,7,7,1.0
+gpt-6-astra,1,7-record batch,7,6,0.8571428571428571
+gpt-6-astra,1,Single-record calls,7,6,0.8571428571428571
+gpt-6-astra,2,70-record batch,7,7,1.0
+gpt-6-astra,2,7-record batch,7,6,0.8571428571428571
+gpt-6-astra,2,Single-record calls,7,6,0.8571428571428571
+gpt-6-astra,3,70-record batch,7,7,1.0
+gpt-6-astra,3,7-record batch,7,6,0.8571428571428571
+gpt-6-astra,3,Single-record calls,7,5,0.7142857142857143

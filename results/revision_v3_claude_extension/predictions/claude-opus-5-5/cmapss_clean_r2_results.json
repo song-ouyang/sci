@@ -1,0 +1,242 @@
+[
+  {
+    "id": "aba37dce",
+    "predicted": "Degrading"
+  },
+  {
+    "id": "1804099c",
+    "predicted": "Degrading"
+  },
+  {
+    "id": "984e6dea",
+    "predicted": "Critical"
+  },
+  {
+    "id": "de1e4dbf",
+    "predicted": "Critical"
+  },
+  {
+    "id": "4584e34a",
+    "predicted": "Degrading"
+  },
+  {
+    "id": "506c9c25",
+    "predicted": "Healthy"
+  },
+  {
+    "id": "aeef5bea",
+    "predicted": "Healthy"
+  },
+  {
+    "id": "e0c73eee",
+    "predicted": "Degrading"
+  },
+  {
+    "id": "6f17a820",
+    "predicted": "Critical"
+  },
+  {
+    "id": "37142aef",
+    "predicted": "Degrading"
+  },
+  {
+    "id": "14c4ffc3",
+    "predicted": "Degrading"
+  },
+  {
+    "id": "a2197468",
+    "predicted": "Critical"
+  },
+  {
+    "id": "2295f6d8",
+    "predicted": "Critical"
+  },
+  {
+    "id": "2ef6cc03",
+    "predicted": "Healthy"
+  },
+  {
+    "id": "7df2dd39",
+    "predicted": "Healthy"
+  },
+  {
+    "id": "5153d479",
+    "predicted": "Healthy"
+  },
+  {
+    "id": "a8a2eaa6",
+    "predicted": "Critical"
+  },
+  {
+    "id": "abecfdb9",
+    "predicted": "Healthy"
+  },
+  {
+    "id": "ceb9c3f8",
+    "predicted": "Degrading"
+  },
+  {
+    "id": "3ac66b63",
+    "predicted": "Degrading"
+  },
+  {
+    "id": "f081b2dc",
+    "predicted": "Critical"
+  },
+  {
+    "id": "06edc5b2",
+    "predicted": "Healthy"
+  },
+  {
+    "id": "bc603b39",
+    "predicted": "Healthy"
+  },
+  {
+    "id": "9ba5d0f0",
+    "predicted": "Healthy"
+  },
+  {
+    "id": "194a9bbc",
+    "predicted": "Degrading"
+  },
+  {
+    "id": "45237b03",
+    "predicted": "Degrading"
+  },
+  {
+    "id": "78ddaf81",
+    "predicted": "Healthy"
+  },
+  {
+    "id": "25dbe3a2",
+    "predicted": "Healthy"
+  },
+  {
+    "id": "f3422e40",
+    "predicted": "Degrading"
+  },
+  {
+    "id": "b5e841af",
+    "predicted": "Critical"
+  },
+  {
+    "id": "e5fdf5b5",
+    "predicted": "Degrading"
+  },
+  {
+    "id": "7a35150e",
+    "predicted": "Critical"
+  },
+  {
+    "id": "b4e4b924",
+    "predicted": "Degrading"
+  },
+  {
+    "id": "8e9ffdda",
+    "predicted": "Degrading"
+  },
+  {
+    "id": "b5674ec8",
+    "predicted": "Healthy"
+  },
+  {
+    "id": "4bf423db",
+    "predicted": "Degrading"
+  },
+  {
+    "id": "ad5eb1e9",
+    "predicted": "Healthy"
+  },
+  {
+    "id": "7d6a11a5",
+    "predicted": "Degrading"
+  },
+  {
+    "id": "17318109",
+    "predicted": "Degrading"
+  },
+  {
+    "id": "44034a41",
+    "predicted": "Critical"
+  },
+  {
+    "id": "6a5ed962",
+    "predicted": "Healthy"
+  },
+  {
+    "id": "614198de",
+    "predicted": "Healthy"
+  },
+  {
+    "id": "7e50d471",
+    "predicted": "Healthy"
+  },
+  {
+    "id": "a1c1b46c",
+    "predicted": "Critical"
+  },
+  {
+    "id": "801ae061",
+    "predicted": "Critical"
+  },
+  {
+    "id": "08668196",
+    "predicted": "Degrading"
+  },
+  {
+    "id": "f74b9668",
+    "predicted": "Critical"
+  },
+  {
+    "id": "df811662",
+    "predicted": "Degrading"
+  },
+  {
+    "id": "7cac6468",
+    "predicted": "Degrading"
+  },
+  {
+    "id": "be5bca97",
+    "predicted": "Healthy"
+  },
+  {
+    "id": "3879e156",
+    "predicted": "Degrading"
+  },
+  {
+    "id": "dc371299",
+    "predicted": "Degrading"
+  },
+  {
+    "id": "421373d1",
+    "predicted": "Healthy"
+  },
+  {
+    "id": "67e825b1",
+    "predicted": "Healthy"
+  },
+  {
+    "id": "c93d3998",
+    "predicted": "Healthy"
+  },
+  {
+    "id": "e2fb9d6b",
+    "predicted": "Healthy"
+  },
+  {
+    "id": "6aa3ed57",
+    "predicted": "Critical"
+  },
+  {
+    "id": "e798d35c",
+    "predicted": "Degrading"
+  },
+  {
+    "id": "6fd4ebe1",
+    "predicted": "Degrading"
+  },
+  {
+    "id": "bcb242bf",
+    "predicted": "Healthy"
+  }
+]

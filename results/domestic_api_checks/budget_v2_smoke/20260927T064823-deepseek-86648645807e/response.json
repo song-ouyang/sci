@@ -1,0 +1,20 @@
+{
+  "content": "[{\"id\":\"smoke-1\",\"predicted\":\"OK\"}]",
+  "reasoning_content": "We need answer exactly JSON array no other text. Need comply. User asks return exactly this JSON array, with no other text: [{\"id\":\"smoke-1\",\"predicted\":\"OK\"}] So final must be that. Ensure no markdown.",
+  "model": "deepseek-v4-pro",
+  "id": "ce4bbd56-9de3-4a21-ab4d-cf55d32940b4",
+  "usage": {
+    "prompt_tokens": 109,
+    "completion_tokens": 68,
+    "total_tokens": 177,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 52
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 109
+  },
+  "finish_reason": "stop"
+}

@@ -1,0 +1,16 @@
+{
+  "started_at": "2026-09-28T05:29:08.552580+00:00",
+  "protocol_sha256": "f4fe92b1f056fd7fbcd5d50226f80b2ab7cee0de913a4b69eae5ae52b9d2c7b0",
+  "stop_reason": "authentication_quota_or_transport_failure",
+  "token_limit_semantics": "Dispatch threshold; in-flight calls can exceed it; unknown usage halts dispatch.",
+  "updated_at": "2026-09-28T06:04:28.134085+00:00",
+  "planned_sessions": 63,
+  "attempted_sessions": 31,
+  "complete_sessions": 29,
+  "not_attempted_sessions": 32,
+  "planned_prediction_slots": 1278,
+  "valid_prediction_slots": 585,
+  "observed_total_tokens": 575999,
+  "unknown_usage_sessions": 2,
+  "finished_at": "2026-09-28T06:04:28.134087+00:00"
+}

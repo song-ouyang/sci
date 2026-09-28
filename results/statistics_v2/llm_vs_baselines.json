@@ -1,0 +1,573 @@
+[
+  {
+    "panel": "TEP late",
+    "gpt-5.6-sol": [
+      100.0,
+      97.14285714285714,
+      100.0
+    ],
+    "gpt-6-astra": [
+      100.0,
+      100.0,
+      100.0
+    ],
+    "like_range": [
+      77.14285714285715,
+      100.0
+    ],
+    "like": {
+      "RF": 100.0,
+      "SVM-RBF": 95.71428571428572,
+      "HGB": 100.0,
+      "MLP": 95.71428571428572,
+      "kNN": 77.14285714285715,
+      "LogReg": 91.42857142857143
+    },
+    "tests": {
+      "gpt-5.6-sol|RF|original_train": {
+        "llm_only": 0,
+        "ref_only": 0,
+        "p": 1.0
+      },
+      "gpt-5.6-sol|RF|tep_phase_aware": {
+        "llm_only": 0,
+        "ref_only": 0,
+        "p": 1.0
+      },
+      "gpt-5.6-sol|SVM-RBF|original_train": {
+        "llm_only": 3,
+        "ref_only": 0,
+        "p": 0.25
+      },
+      "gpt-5.6-sol|SVM-RBF|tep_phase_aware": {
+        "llm_only": 2,
+        "ref_only": 0,
+        "p": 0.5
+      },
+      "gpt-5.6-sol|HGB|original_train": {
+        "llm_only": 0,
+        "ref_only": 0,
+        "p": 1.0
+      },
+      "gpt-5.6-sol|HGB|tep_phase_aware": {
+        "llm_only": 1,
+        "ref_only": 0,
+        "p": 1.0
+      },
+      "gpt-5.6-sol|MLP|original_train": {
+        "llm_only": 3,
+        "ref_only": 0,
+        "p": 0.25
+      },
+      "gpt-5.6-sol|MLP|tep_phase_aware": {
+        "llm_only": 2,
+        "ref_only": 0,
+        "p": 0.5
+      },
+      "gpt-5.6-sol|kNN|original_train": {
+        "llm_only": 16,
+        "ref_only": 0,
+        "p": 3.0517578125e-05
+      },
+      "gpt-5.6-sol|kNN|tep_phase_aware": {
+        "llm_only": 15,
+        "ref_only": 0,
+        "p": 6.103515625e-05
+      },
+      "gpt-5.6-sol|LogReg|original_train": {
+        "llm_only": 6,
+        "ref_only": 0,
+        "p": 0.03125
+      },
+      "gpt-5.6-sol|LogReg|tep_phase_aware": {
+        "llm_only": 4,
+        "ref_only": 0,
+        "p": 0.125
+      },
+      "gpt-6-astra|RF|original_train": {
+        "llm_only": 0,
+        "ref_only": 0,
+        "p": 1.0
+      },
+      "gpt-6-astra|RF|tep_phase_aware": {
+        "llm_only": 0,
+        "ref_only": 0,
+        "p": 1.0
+      },
+      "gpt-6-astra|SVM-RBF|original_train": {
+        "llm_only": 3,
+        "ref_only": 0,
+        "p": 0.25
+      },
+      "gpt-6-astra|SVM-RBF|tep_phase_aware": {
+        "llm_only": 2,
+        "ref_only": 0,
+        "p": 0.5
+      },
+      "gpt-6-astra|HGB|original_train": {
+        "llm_only": 0,
+        "ref_only": 0,
+        "p": 1.0
+      },
+      "gpt-6-astra|HGB|tep_phase_aware": {
+        "llm_only": 1,
+        "ref_only": 0,
+        "p": 1.0
+      },
+      "gpt-6-astra|MLP|original_train": {
+        "llm_only": 3,
+        "ref_only": 0,
+        "p": 0.25
+      },
+      "gpt-6-astra|MLP|tep_phase_aware": {
+        "llm_only": 2,
+        "ref_only": 0,
+        "p": 0.5
+      },
+      "gpt-6-astra|kNN|original_train": {
+        "llm_only": 16,
+        "ref_only": 0,
+        "p": 3.0517578125e-05
+      },
+      "gpt-6-astra|kNN|tep_phase_aware": {
+        "llm_only": 15,
+        "ref_only": 0,
+        "p": 6.103515625e-05
+      },
+      "gpt-6-astra|LogReg|original_train": {
+        "llm_only": 6,
+        "ref_only": 0,
+        "p": 0.03125
+      },
+      "gpt-6-astra|LogReg|tep_phase_aware": {
+        "llm_only": 4,
+        "ref_only": 0,
+        "p": 0.125
+      }
+    },
+    "extra_variant": "tep_phase_aware",
+    "extra_range": [
+      78.57142857142857,
+      100.0
+    ],
+    "extra": {
+      "RF": 100.0,
+      "SVM-RBF": 97.14285714285714,
+      "HGB": 98.57142857142858,
+      "MLP": 97.14285714285714,
+      "kNN": 78.57142857142857,
+      "LogReg": 94.28571428571428
+    }
+  },
+  {
+    "panel": "TEP early",
+    "gpt-5.6-sol": [
+      87.14285714285714,
+      85.71428571428571,
+      88.57142857142857
+    ],
+    "gpt-6-astra": [
+      88.57142857142857,
+      87.14285714285714,
+      88.57142857142857
+    ],
+    "like_range": [
+      22.857142857142858,
+      54.285714285714285
+    ],
+    "like": {
+      "RF": 28.57142857142857,
+      "SVM-RBF": 28.57142857142857,
+      "HGB": 54.285714285714285,
+      "MLP": 31.428571428571427,
+      "kNN": 22.857142857142858,
+      "LogReg": 44.285714285714285
+    },
+    "tests": {
+      "gpt-5.6-sol|RF|original_train": {
+        "llm_only": 45,
+        "ref_only": 4,
+        "p": 8.225455871979648e-10
+      },
+      "gpt-5.6-sol|RF|tep_phase_aware": {
+        "llm_only": 4,
+        "ref_only": 4,
+        "p": 1.0
+      },
+      "gpt-5.6-sol|SVM-RBF|original_train": {
+        "llm_only": 45,
+        "ref_only": 4,
+        "p": 8.225455871979648e-10
+      },
+      "gpt-5.6-sol|SVM-RBF|tep_phase_aware": {
+        "llm_only": 5,
+        "ref_only": 4,
+        "p": 1.0
+      },
+      "gpt-5.6-sol|HGB|original_train": {
+        "llm_only": 27,
+        "ref_only": 4,
+        "p": 3.39532271027565e-05
+      },
+      "gpt-5.6-sol|HGB|tep_phase_aware": {
+        "llm_only": 4,
+        "ref_only": 4,
+        "p": 1.0
+      },
+      "gpt-5.6-sol|MLP|original_train": {
+        "llm_only": 43,
+        "ref_only": 4,
+        "p": 2.781192165457469e-09
+      },
+      "gpt-5.6-sol|MLP|tep_phase_aware": {
+        "llm_only": 5,
+        "ref_only": 4,
+        "p": 1.0
+      },
+      "gpt-5.6-sol|kNN|original_train": {
+        "llm_only": 48,
+        "ref_only": 3,
+        "p": 1.9674928353197174e-11
+      },
+      "gpt-5.6-sol|kNN|tep_phase_aware": {
+        "llm_only": 13,
+        "ref_only": 4,
+        "p": 0.049041748046875
+      },
+      "gpt-5.6-sol|LogReg|original_train": {
+        "llm_only": 35,
+        "ref_only": 5,
+        "p": 1.382612026645802e-06
+      },
+      "gpt-5.6-sol|LogReg|tep_phase_aware": {
+        "llm_only": 4,
+        "ref_only": 5,
+        "p": 1.0
+      },
+      "gpt-6-astra|RF|original_train": {
+        "llm_only": 42,
+        "ref_only": 0,
+        "p": 4.547473508864641e-13
+      },
+      "gpt-6-astra|RF|tep_phase_aware": {
+        "llm_only": 1,
+        "ref_only": 0,
+        "p": 1.0
+      },
+      "gpt-6-astra|SVM-RBF|original_train": {
+        "llm_only": 42,
+        "ref_only": 0,
+        "p": 4.547473508864641e-13
+      },
+      "gpt-6-astra|SVM-RBF|tep_phase_aware": {
+        "llm_only": 2,
+        "ref_only": 0,
+        "p": 0.5
+      },
+      "gpt-6-astra|HGB|original_train": {
+        "llm_only": 24,
+        "ref_only": 0,
+        "p": 1.1920928955078125e-07
+      },
+      "gpt-6-astra|HGB|tep_phase_aware": {
+        "llm_only": 1,
+        "ref_only": 0,
+        "p": 1.0
+      },
+      "gpt-6-astra|MLP|original_train": {
+        "llm_only": 40,
+        "ref_only": 0,
+        "p": 1.8189894035458565e-12
+      },
+      "gpt-6-astra|MLP|tep_phase_aware": {
+        "llm_only": 2,
+        "ref_only": 0,
+        "p": 0.5
+      },
+      "gpt-6-astra|kNN|original_train": {
+        "llm_only": 46,
+        "ref_only": 0,
+        "p": 2.842170943040401e-14
+      },
+      "gpt-6-astra|kNN|tep_phase_aware": {
+        "llm_only": 10,
+        "ref_only": 0,
+        "p": 0.001953125
+      },
+      "gpt-6-astra|LogReg|original_train": {
+        "llm_only": 32,
+        "ref_only": 1,
+        "p": 7.916241884231567e-09
+      },
+      "gpt-6-astra|LogReg|tep_phase_aware": {
+        "llm_only": 1,
+        "ref_only": 1,
+        "p": 1.0
+      }
+    },
+    "extra_variant": "tep_phase_aware",
+    "extra_range": [
+      74.28571428571429,
+      88.57142857142857
+    ],
+    "extra": {
+      "RF": 87.14285714285714,
+      "SVM-RBF": 85.71428571428571,
+      "HGB": 87.14285714285714,
+      "MLP": 85.71428571428571,
+      "kNN": 74.28571428571429,
+      "LogReg": 88.57142857142857
+    }
+  },
+  {
+    "panel": "FD001",
+    "gpt-5.6-sol": [
+      71.66666666666667,
+      68.33333333333333,
+      70.0
+    ],
+    "gpt-6-astra": [
+      71.66666666666667,
+      73.33333333333333,
+      75.0
+    ],
+    "like_range": [
+      68.33333333333333,
+      85.0
+    ],
+    "like": {
+      "RF": 78.33333333333333,
+      "SVM-RBF": 71.66666666666667,
+      "HGB": 85.0,
+      "MLP": 78.33333333333333,
+      "kNN": 68.33333333333333,
+      "LogReg": 76.66666666666667
+    },
+    "tests": {
+      "gpt-5.6-sol|RF|original_train": {
+        "llm_only": 7,
+        "ref_only": 11,
+        "p": 0.480682373046875
+      },
+      "gpt-5.6-sol|SVM-RBF|original_train": {
+        "llm_only": 9,
+        "ref_only": 9,
+        "p": 1.0
+      },
+      "gpt-5.6-sol|HGB|original_train": {
+        "llm_only": 6,
+        "ref_only": 14,
+        "p": 0.11531829833984375
+      },
+      "gpt-5.6-sol|MLP|original_train": {
+        "llm_only": 5,
+        "ref_only": 9,
+        "p": 0.4239501953125
+      },
+      "gpt-5.6-sol|kNN|original_train": {
+        "llm_only": 11,
+        "ref_only": 9,
+        "p": 0.8238029479980469
+      },
+      "gpt-5.6-sol|LogReg|original_train": {
+        "llm_only": 7,
+        "ref_only": 10,
+        "p": 0.629058837890625
+      },
+      "gpt-6-astra|RF|original_train": {
+        "llm_only": 4,
+        "ref_only": 8,
+        "p": 0.3876953125
+      },
+      "gpt-6-astra|SVM-RBF|original_train": {
+        "llm_only": 7,
+        "ref_only": 7,
+        "p": 1.0
+      },
+      "gpt-6-astra|HGB|original_train": {
+        "llm_only": 5,
+        "ref_only": 13,
+        "p": 0.09625244140625
+      },
+      "gpt-6-astra|MLP|original_train": {
+        "llm_only": 5,
+        "ref_only": 9,
+        "p": 0.4239501953125
+      },
+      "gpt-6-astra|kNN|original_train": {
+        "llm_only": 9,
+        "ref_only": 7,
+        "p": 0.803619384765625
+      },
+      "gpt-6-astra|LogReg|original_train": {
+        "llm_only": 5,
+        "ref_only": 8,
+        "p": 0.5810546875
+      }
+    }
+  },
+  {
+    "panel": "FD002",
+    "gpt-5.6-sol": [
+      60.0,
+      26.666666666666668,
+      56.666666666666664
+    ],
+    "gpt-6-astra": [
+      71.66666666666667,
+      76.66666666666667,
+      78.33333333333333
+    ],
+    "like_range": [
+      33.33333333333333,
+      45.0
+    ],
+    "like": {
+      "RF": 33.33333333333333,
+      "SVM-RBF": 33.33333333333333,
+      "HGB": 45.0,
+      "MLP": 41.66666666666667,
+      "kNN": 35.0,
+      "LogReg": 33.33333333333333
+    },
+    "tests": {
+      "gpt-5.6-sol|RF|original_train": {
+        "llm_only": 23,
+        "ref_only": 7,
+        "p": 0.005222879350185395
+      },
+      "gpt-5.6-sol|RF|fd002_in_domain_regime_norm": {
+        "llm_only": 4,
+        "ref_only": 20,
+        "p": 0.001543879508972168
+      },
+      "gpt-5.6-sol|SVM-RBF|original_train": {
+        "llm_only": 23,
+        "ref_only": 7,
+        "p": 0.005222879350185395
+      },
+      "gpt-5.6-sol|SVM-RBF|fd002_in_domain_regime_norm": {
+        "llm_only": 3,
+        "ref_only": 18,
+        "p": 0.0014896392822265625
+      },
+      "gpt-5.6-sol|HGB|original_train": {
+        "llm_only": 19,
+        "ref_only": 10,
+        "p": 0.13604594767093658
+      },
+      "gpt-5.6-sol|HGB|fd002_in_domain_regime_norm": {
+        "llm_only": 3,
+        "ref_only": 19,
+        "p": 0.0008554458618164062
+      },
+      "gpt-5.6-sol|MLP|original_train": {
+        "llm_only": 22,
+        "ref_only": 11,
+        "p": 0.08014331245794892
+      },
+      "gpt-5.6-sol|MLP|fd002_in_domain_regime_norm": {
+        "llm_only": 2,
+        "ref_only": 18,
+        "p": 0.0004024505615234375
+      },
+      "gpt-5.6-sol|kNN|original_train": {
+        "llm_only": 23,
+        "ref_only": 8,
+        "p": 0.010673840530216694
+      },
+      "gpt-5.6-sol|kNN|fd002_in_domain_regime_norm": {
+        "llm_only": 5,
+        "ref_only": 18,
+        "p": 0.010622024536132812
+      },
+      "gpt-5.6-sol|LogReg|original_train": {
+        "llm_only": 23,
+        "ref_only": 7,
+        "p": 0.005222879350185395
+      },
+      "gpt-5.6-sol|LogReg|fd002_in_domain_regime_norm": {
+        "llm_only": 2,
+        "ref_only": 18,
+        "p": 0.0004024505615234375
+      },
+      "gpt-6-astra|RF|original_train": {
+        "llm_only": 28,
+        "ref_only": 5,
+        "p": 6.618769839406013e-05
+      },
+      "gpt-6-astra|RF|fd002_in_domain_regime_norm": {
+        "llm_only": 2,
+        "ref_only": 11,
+        "p": 0.0224609375
+      },
+      "gpt-6-astra|SVM-RBF|original_train": {
+        "llm_only": 28,
+        "ref_only": 5,
+        "p": 6.618769839406013e-05
+      },
+      "gpt-6-astra|SVM-RBF|fd002_in_domain_regime_norm": {
+        "llm_only": 3,
+        "ref_only": 11,
+        "p": 0.057373046875
+      },
+      "gpt-6-astra|HGB|original_train": {
+        "llm_only": 24,
+        "ref_only": 8,
+        "p": 0.0070003666914999485
+      },
+      "gpt-6-astra|HGB|fd002_in_domain_regime_norm": {
+        "llm_only": 3,
+        "ref_only": 12,
+        "p": 0.03515625
+      },
+      "gpt-6-astra|MLP|original_train": {
+        "llm_only": 23,
+        "ref_only": 5,
+        "p": 0.0009122341871261597
+      },
+      "gpt-6-astra|MLP|fd002_in_domain_regime_norm": {
+        "llm_only": 3,
+        "ref_only": 12,
+        "p": 0.03515625
+      },
+      "gpt-6-astra|kNN|original_train": {
+        "llm_only": 29,
+        "ref_only": 7,
+        "p": 0.00031255115754902363
+      },
+      "gpt-6-astra|kNN|fd002_in_domain_regime_norm": {
+        "llm_only": 5,
+        "ref_only": 11,
+        "p": 0.210113525390625
+      },
+      "gpt-6-astra|LogReg|original_train": {
+        "llm_only": 28,
+        "ref_only": 5,
+        "p": 6.618769839406013e-05
+      },
+      "gpt-6-astra|LogReg|fd002_in_domain_regime_norm": {
+        "llm_only": 3,
+        "ref_only": 12,
+        "p": 0.03515625
+      }
+    },
+    "extra_variant": "fd002_in_domain_regime_norm",
+    "extra_range": [
+      81.66666666666667,
+      86.66666666666667
+    ],
+    "extra": {
+      "RF": 86.66666666666667,
+      "SVM-RBF": 85.0,
+      "HGB": 86.66666666666667,
+      "MLP": 86.66666666666667,
+      "kNN": 81.66666666666667,
+      "LogReg": 86.66666666666667
+    },
+    "fd001_regime_norm_transfer_range": [
+      71.66666666666667,
+      86.66666666666667
+    ]
+  }
+]

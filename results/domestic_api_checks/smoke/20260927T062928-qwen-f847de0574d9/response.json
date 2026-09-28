@@ -1,0 +1,16 @@
+{
+  "content": "[{\"id\":\"smoke-1\",\"predicted\":\"OK\"}]",
+  "reasoning_content": "",
+  "model": "qwen3.8-max",
+  "id": "chatcmpl-50461bad-2b14-9680-985a-0284308558e6",
+  "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 36,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 36
+    },
+    "total_tokens": 50
+  },
+  "finish_reason": "stop"
+}

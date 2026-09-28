@@ -1,0 +1,20 @@
+Generated evaluation_workflow.pdf/png (symbolic schematic).
+{
+  "figures": [
+    "/Users/guoba/work/sci-paper-llm-pdm/paper/figures/revision_v3/primary_accuracy.pdf",
+    "/Users/guoba/work/sci-paper-llm-pdm/paper/figures/revision_v3/mapping_sensitivity.pdf",
+    "/Users/guoba/work/sci-paper-llm-pdm/paper/figures/revision_v3/class_recall.pdf"
+  ],
+  "csv_directory": "/Users/guoba/work/sci-paper-llm-pdm/results/revision_v3/analysis/figure_data",
+  "source_hashes": {
+    "scores_sha256": "10f745d19be562781f40ce5b98c957041109f51a214398ba0b947c3523e342bb",
+    "datasets_sha256": "0097dbb21981968f9ad5b8c59670a07ce701edfecbe61b5108542f7f0638fd1d"
+  }
+}
+Built matched context figure and 18-row figure data.
+Built extension manuscript inserts.
+Generated cross-provider inserts from verified frozen outputs.
+Rendered separately labeled Claude reports and label-free snapshot checks; no classification scores computed.
+Wrote 15 descriptive groups from 45 audited scheduled requests.
+Rendered source-disjoint follow-up from audited frozen responses
+Generated synchronized manuscripts, original-study figures and audited follow-up inserts from verified scores.

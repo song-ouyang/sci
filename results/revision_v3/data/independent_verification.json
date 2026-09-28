@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "dataset_sha256": "0097dbb21981968f9ad5b8c59670a07ce701edfecbe61b5108542f7f0638fd1d",
+  "tep_selected_raw_rows_checked": 2170,
+  "tep_features_checked": 112840,
+  "verification": "Independent reread of original RData, exact named-column lookups by faultNumber/simulationRun/sample, decimal formatting comparison, labels checked from raw faultNumber; all baseline IDs/labels/counts checked against frozen test data.",
+  "baseline_prediction_records_checked": 390,
+  "dataset_unchanged": true
+}

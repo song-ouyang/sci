@@ -1,0 +1,19 @@
+provider,model,group,dataset,condition,repeat,primary,status,finish_reason,n_scored,correct,accuracy,macro_f1,error
+deepseek,deepseek-v4-pro,tep_misnamed_r1,tep,misnamed,1,True,invalid_response,length,0,,,,"Incomplete response, truncation, or non-stop finish"
+deepseek,deepseek-v4-pro,tep_clean_r3,tep,clean,3,False,valid,stop,70,24,0.34285714285714286,0.2783981517135156,
+deepseek,deepseek-v4-pro,tep_clean_r2,tep,clean,2,False,valid,stop,70,52,0.7428571428571429,0.7334570191713049,
+deepseek,deepseek-v4-pro,cmapss_clean_r3,cmapss,clean,3,False,valid,stop,60,37,0.6166666666666667,0.6099517226245337,
+deepseek,deepseek-v4-pro,cmapss_clean_r1,cmapss,clean,1,True,valid,stop,60,40,0.6666666666666666,0.6646394064872326,
+deepseek,deepseek-v4-pro,tep_misnamed_r2,tep,misnamed,2,False,valid,stop,70,11,0.15714285714285714,0.12061688311688312,
+deepseek,deepseek-v4-pro,tep_clean_r1,tep,clean,1,True,valid,stop,70,44,0.6285714285714286,0.5736961451247166,
+deepseek,deepseek-v4-pro,cmapss_clean_r2,cmapss,clean,2,False,valid,stop,60,40,0.6666666666666666,0.6748153806977336,
+deepseek,deepseek-v4-pro,tep_misnamed_r3,tep,misnamed,3,False,invalid_response,length,0,,,,"Incomplete response, truncation, or non-stop finish"
+qwen,qwen3.8-max,tep_misnamed_r2,tep,misnamed,2,False,invalid_response,stop,0,,,,Expecting value: line 1 column 1 (char 0)
+qwen,qwen3.8-max,tep_clean_r2,tep,clean,2,False,valid,stop,70,36,0.5142857142857142,0.45574083291853323,
+qwen,qwen3.8-max,tep_clean_r3,tep,clean,3,False,valid,stop,70,31,0.44285714285714284,0.36771072065189714,
+qwen,qwen3.8-max,cmapss_clean_r1,cmapss,clean,1,True,valid,stop,60,32,0.5333333333333333,0.5007597340930674,
+qwen,qwen3.8-max,tep_clean_r1,tep,clean,1,True,valid,stop,70,30,0.42857142857142855,0.3349753694581281,
+qwen,qwen3.8-max,cmapss_clean_r2,cmapss,clean,2,False,valid,stop,60,37,0.6166666666666667,0.5937273057371096,
+qwen,qwen3.8-max,tep_misnamed_r1,tep,misnamed,1,True,valid,stop,70,14,0.2,0.1230405205560485,
+qwen,qwen3.8-max,cmapss_clean_r3,cmapss,clean,3,False,valid,stop,60,36,0.6,0.5885958981293667,
+qwen,qwen3.8-max,tep_misnamed_r3,tep,misnamed,3,False,valid,stop,70,26,0.37142857142857144,0.31901431901431904,

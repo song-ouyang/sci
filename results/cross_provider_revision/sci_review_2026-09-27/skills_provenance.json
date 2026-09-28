@@ -1,0 +1,15 @@
+{
+  "repo": "K-Dense-AI/scientific-agent-skills",
+  "sha": "49c6e97775eaa18ba791bebe23162a70ae601c18",
+  "date": "2026-09-21T09:27:49Z",
+  "checked_on": "2026-09-27",
+  "installed_skills": {
+    "scientific-writing": "2.1",
+    "peer-review": "2.2"
+  },
+  "scope": "Author-requested manuscript development, not journal-appointed peer review",
+  "submission_ready": false,
+  "accountable_human_approval": "pending",
+  "target_venue": "not supplied; general A4 author-review format",
+  "external_manuscript_uploads": false
+}

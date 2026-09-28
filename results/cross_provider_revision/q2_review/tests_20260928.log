@@ -1,0 +1,56 @@
+..............BLOCKED: 0/18 records eligible for the primary comparison. Answer-key dataset files were not opened. See the Claude extension integrity audit.
+.BLOCKED: 0/18 records eligible for the primary comparison. Answer-key dataset files were not opened. See the Claude extension integrity audit.
+.........................{
+  "status": "blocked",
+  "counts": {
+    "planned": 18,
+    "audited_records": 18,
+    "artifact_arrays_valid": 18,
+    "artifact_chains_consistent": 18,
+    "eligible_primary": 0,
+    "reported_contaminated": 0,
+    "reported_suspect": 0
+  },
+  "report": "/private/var/folders/r7/ggshlc557f99yvjh6k6kv23h0000gn/T/tmpc67cjsl_/extension/audit/report.json"
+}
+Prepared 18 sessions; no model calls: /var/folders/r7/ggshlc557f99yvjh6k6kv23h0000gn/T/tmpa_ag1ob3/extension
+Prepared 18 sessions; no model calls: /var/folders/r7/ggshlc557f99yvjh6k6kv23h0000gn/T/tmpmmy88_sc/extension
+START deepseek tep_misnamed_r3
+deepseek tep_misnamed_r3: invalid_response
+START deepseek cmapss_clean_r1
+deepseek cmapss_clean_r1: invalid_response
+START deepseek tep_misnamed_r1
+deepseek tep_misnamed_r1: invalid_response
+START deepseek cmapss_clean_r2
+deepseek cmapss_clean_r2: invalid_response
+START deepseek tep_clean_r2
+deepseek tep_clean_r2: invalid_response
+START deepseek tep_clean_r1
+deepseek tep_clean_r1: invalid_response
+START deepseek cmapss_clean_r3
+deepseek cmapss_clean_r3: invalid_response
+START deepseek tep_misnamed_r2
+deepseek tep_misnamed_r2: invalid_response
+START deepseek tep_clean_r3
+deepseek tep_clean_r3: invalid_response
+KEEP deepseek tep_misnamed_r3: invalid_response
+KEEP deepseek cmapss_clean_r1: invalid_response
+KEEP deepseek tep_misnamed_r1: invalid_response
+KEEP deepseek cmapss_clean_r2: invalid_response
+KEEP deepseek tep_clean_r2: invalid_response
+KEEP deepseek tep_clean_r1: invalid_response
+KEEP deepseek cmapss_clean_r3: invalid_response
+KEEP deepseek tep_misnamed_r2: invalid_response
+KEEP deepseek tep_clean_r3: invalid_response
+....................................................ERROR: synthetic invalid freeze
+..........................
+----------------------------------------------------------------------
+Ran 118 tests in 10.210s
+
+OK
+Prepared 18 sessions; no model calls: /var/folders/r7/ggshlc557f99yvjh6k6kv23h0000gn/T/tmp7hehezb7/extension
+  ✓ tep_zero_shot_v2_1_haiku.json: 1/1 parseable; no answer keys read
+  ✓ tep_zero_shot_v2_1_haiku.json: 1/1 parseable; no answer keys read
+  ✓ tep_zero_shot_v2_1_haiku.json: 1/1 parseable; no answer keys read
+  ✓ tep_zero_shot_v2_1_haiku.json: 1/1 parseable; no answer keys read
+  CACHED tep_zero_shot_v2_1_haiku.json (1/1 valid)

@@ -1,0 +1,128 @@
+Reading TEP_FaultFree_Training.RData
+Reading TEP_Faulty_Training.RData
+train original_train/TEP {'n_records': 2100, 'n_groups': 100, 'class_counts': {'Fault_7': 300, 'Fault_4': 300, 'Normal': 300, 'Fault_6': 300, 'Fault_13': 300, 'Fault_2': 300, 'Fault_1': 300}}
+train original_train/C-MAPSS {'n_records': 500, 'n_groups': 100, 'class_counts': {'Degrading': 131, 'Critical': 107, 'Healthy': 262}}
+train tep_phase_aware/TEP {'n_records': 2800, 'n_groups': 100, 'class_counts': {'Fault_7': 400, 'Fault_4': 400, 'Normal': 400, 'Fault_6': 400, 'Fault_13': 400, 'Fault_2': 400, 'Fault_1': 400}}
+train fd002_in_domain_raw/C-MAPSS {'n_records': 1560, 'n_groups': 260, 'class_counts': {'Healthy': 520, 'Degrading': 520, 'Critical': 520}}
+train fd002_in_domain_regime_norm/C-MAPSS {'n_records': 1560, 'n_groups': 260, 'class_counts': {'Healthy': 520, 'Degrading': 520, 'Critical': 520}}
+train fd001_regime_norm_transfer/C-MAPSS {'n_records': 500, 'n_groups': 100, 'class_counts': {'Degrading': 131, 'Critical': 107, 'Healthy': 262}}
+  original_train               TEP      RF       cv=0.999 ties=1 {'max_features': 'sqrt', 'min_samples_leaf': 1}
+  original_train               TEP      SVM-RBF  cv=0.992 ties=1 {'C': 10.0, 'gamma': 'scale'}
+  original_train               TEP      HGB      cv=0.997 ties=1 {'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_leaf_nodes': 7}
+  original_train               TEP      MLP      cv=0.994 ties=3 {'alpha': 0.01, 'hidden_layer_sizes': [100]}
+  original_train               TEP      kNN      cv=0.855 ties=2 {'n_neighbors': 1, 'weights': 'uniform'}
+  original_train               TEP      LogReg   cv=0.974 ties=1 {'C': 100.0}
+  original_train               C-MAPSS  RF       cv=0.915 ties=1 {'class_weight': None, 'max_features': 'sqrt', 'min_samples_leaf': 1}
+  original_train               C-MAPSS  SVM-RBF  cv=0.911 ties=1 {'C': 10.0, 'class_weight': 'balanced', 'gamma': 0.001}
+  original_train               C-MAPSS  HGB      cv=0.909 ties=1 {'class_weight': None, 'l2_regularization': 1.0, 'learning_rate': 0.05, 'max_leaf_nodes': 31}
+  original_train               C-MAPSS  MLP      cv=0.889 ties=1 {'alpha': 1.0, 'hidden_layer_sizes': [100]}
+  original_train               C-MAPSS  kNN      cv=0.901 ties=1 {'n_neighbors': 15, 'weights': 'uniform'}
+  original_train               C-MAPSS  LogReg   cv=0.907 ties=1 {'C': 0.01, 'class_weight': None}
+  tep_phase_aware              TEP      RF       cv=0.966 ties=2 {'max_features': 'sqrt', 'min_samples_leaf': 3}
+  tep_phase_aware              TEP      SVM-RBF  cv=0.960 ties=1 {'C': 100.0, 'gamma': 0.01}
+  tep_phase_aware              TEP      HGB      cv=0.964 ties=1 {'l2_regularization': 1.0, 'learning_rate': 0.1, 'max_leaf_nodes': 31}
+  tep_phase_aware              TEP      MLP      cv=0.961 ties=1 {'alpha': 1.0, 'hidden_layer_sizes': [128, 64]}
+  tep_phase_aware              TEP      kNN      cv=0.826 ties=2 {'n_neighbors': 1, 'weights': 'uniform'}
+  tep_phase_aware              TEP      LogReg   cv=0.945 ties=1 {'C': 100.0}
+  fd002_in_domain_raw          C-MAPSS  RF       cv=0.733 ties=1 {'max_features': 0.3, 'min_samples_leaf': 10}
+  fd002_in_domain_raw          C-MAPSS  SVM-RBF  cv=0.752 ties=1 {'C': 100.0, 'gamma': 0.001}
+  fd002_in_domain_raw          C-MAPSS  HGB      cv=0.732 ties=1 {'l2_regularization': 1.0, 'learning_rate': 0.1, 'max_leaf_nodes': 7}
+  fd002_in_domain_raw          C-MAPSS  MLP      cv=0.762 ties=1 {'alpha': 1.0, 'hidden_layer_sizes': [100]}
+  fd002_in_domain_raw          C-MAPSS  kNN      cv=0.429 ties=1 {'n_neighbors': 3, 'weights': 'distance'}
+  fd002_in_domain_raw          C-MAPSS  LogReg   cv=0.812 ties=1 {'C': 100.0}
+  fd002_in_domain_regime_norm  C-MAPSS  RF       cv=0.836 ties=1 {'max_features': 0.3, 'min_samples_leaf': 3}
+  fd002_in_domain_regime_norm  C-MAPSS  SVM-RBF  cv=0.848 ties=1 {'C': 1.0, 'gamma': 0.01}
+  fd002_in_domain_regime_norm  C-MAPSS  HGB      cv=0.835 ties=1 {'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_leaf_nodes': 31}
+  fd002_in_domain_regime_norm  C-MAPSS  MLP      cv=0.831 ties=1 {'alpha': 1.0, 'hidden_layer_sizes': [64]}
+  fd002_in_domain_regime_norm  C-MAPSS  kNN      cv=0.828 ties=1 {'n_neighbors': 25, 'weights': 'distance'}
+  fd002_in_domain_regime_norm  C-MAPSS  LogReg   cv=0.841 ties=1 {'C': 0.1}
+  fd001_regime_norm_transfer   C-MAPSS  RF       cv=0.915 ties=1 {'class_weight': None, 'max_features': 'sqrt', 'min_samples_leaf': 1}
+  fd001_regime_norm_transfer   C-MAPSS  SVM-RBF  cv=0.910 ties=1 {'C': 10.0, 'class_weight': None, 'gamma': 0.001}
+  fd001_regime_norm_transfer   C-MAPSS  HGB      cv=0.907 ties=1 {'class_weight': None, 'l2_regularization': 1.0, 'learning_rate': 0.1, 'max_leaf_nodes': 31}
+  fd001_regime_norm_transfer   C-MAPSS  MLP      cv=0.889 ties=1 {'alpha': 1.0, 'hidden_layer_sizes': [64]}
+  fd001_regime_norm_transfer   C-MAPSS  kNN      cv=0.901 ties=1 {'n_neighbors': 15, 'weights': 'uniform'}
+  fd001_regime_norm_transfer   C-MAPSS  LogReg   cv=0.907 ties=1 {'C': 0.01, 'class_weight': None}
+legacy_untuned               RF-legacy  tep_late  acc=100.0 F1=100.0
+legacy_untuned               RF-legacy  tep_early acc= 28.6 F1= 21.4
+legacy_untuned               RF-legacy  tep_v3    acc=100.0 F1=100.0
+legacy_untuned               SVM-legacy tep_late  acc= 92.9 F1= 92.6
+legacy_untuned               SVM-legacy tep_early acc= 31.4 F1= 25.1
+legacy_untuned               SVM-legacy tep_v3    acc=100.0 F1=100.0
+original_train               RF         tep_late  acc=100.0 F1=100.0
+original_train               RF         tep_early acc= 28.6 F1= 21.4
+original_train               RF         tep_v3    acc=100.0 F1=100.0
+original_train               SVM-RBF    tep_late  acc= 95.7 F1= 95.6
+original_train               SVM-RBF    tep_early acc= 28.6 F1= 21.1
+original_train               SVM-RBF    tep_v3    acc=100.0 F1=100.0
+original_train               HGB        tep_late  acc=100.0 F1=100.0
+original_train               HGB        tep_early acc= 54.3 F1= 50.8
+original_train               HGB        tep_v3    acc=100.0 F1=100.0
+original_train               MLP        tep_late  acc= 95.7 F1= 95.5
+original_train               MLP        tep_early acc= 31.4 F1= 26.2
+original_train               MLP        tep_v3    acc=100.0 F1=100.0
+original_train               kNN        tep_late  acc= 77.1 F1= 78.1
+original_train               kNN        tep_early acc= 22.9 F1= 15.9
+original_train               kNN        tep_v3    acc= 87.1 F1= 87.0
+original_train               LogReg     tep_late  acc= 91.4 F1= 91.4
+original_train               LogReg     tep_early acc= 44.3 F1= 35.8
+original_train               LogReg     tep_v3    acc= 98.6 F1= 98.6
+legacy_untuned               RF-legacy  fd001_v3  acc= 81.7 F1= 81.4
+legacy_untuned               RF-legacy  fd002     acc= 33.3 F1= 16.7
+legacy_untuned               SVM-legacy fd001_v3  acc= 75.0 F1= 74.1
+legacy_untuned               SVM-legacy fd002     acc= 33.3 F1= 16.7
+original_train               RF         fd001_v3  acc= 78.3 F1= 77.8
+original_train               RF         fd002     acc= 33.3 F1= 16.7
+original_train               SVM-RBF    fd001_v3  acc= 71.7 F1= 71.9
+original_train               SVM-RBF    fd002     acc= 33.3 F1= 16.7
+original_train               HGB        fd001_v3  acc= 85.0 F1= 84.7
+original_train               HGB        fd002     acc= 45.0 F1= 36.7
+original_train               MLP        fd001_v3  acc= 78.3 F1= 78.7
+original_train               MLP        fd002     acc= 41.7 F1= 30.3
+original_train               kNN        fd001_v3  acc= 68.3 F1= 67.3
+original_train               kNN        fd002     acc= 35.0 F1= 20.1
+original_train               LogReg     fd001_v3  acc= 76.7 F1= 76.0
+original_train               LogReg     fd002     acc= 33.3 F1= 16.7
+tep_phase_aware              RF         tep_late  acc=100.0 F1=100.0
+tep_phase_aware              RF         tep_early acc= 87.1 F1= 83.9
+tep_phase_aware              RF         tep_v3    acc=100.0 F1=100.0
+tep_phase_aware              SVM-RBF    tep_late  acc= 97.1 F1= 97.1
+tep_phase_aware              SVM-RBF    tep_early acc= 85.7 F1= 81.0
+tep_phase_aware              SVM-RBF    tep_v3    acc=100.0 F1=100.0
+tep_phase_aware              HGB        tep_late  acc= 98.6 F1= 98.6
+tep_phase_aware              HGB        tep_early acc= 87.1 F1= 83.9
+tep_phase_aware              HGB        tep_v3    acc=100.0 F1=100.0
+tep_phase_aware              MLP        tep_late  acc= 97.1 F1= 97.1
+tep_phase_aware              MLP        tep_early acc= 85.7 F1= 81.0
+tep_phase_aware              MLP        tep_v3    acc=100.0 F1=100.0
+tep_phase_aware              kNN        tep_late  acc= 78.6 F1= 79.5
+tep_phase_aware              kNN        tep_early acc= 74.3 F1= 71.0
+tep_phase_aware              kNN        tep_v3    acc= 85.7 F1= 85.7
+tep_phase_aware              LogReg     tep_late  acc= 94.3 F1= 94.3
+tep_phase_aware              LogReg     tep_early acc= 88.6 F1= 86.4
+tep_phase_aware              LogReg     tep_v3    acc= 98.6 F1= 98.6
+fd002_in_domain_raw          RF         fd002     acc= 81.7 F1= 81.4
+fd002_in_domain_raw          SVM-RBF    fd002     acc= 78.3 F1= 78.4
+fd002_in_domain_raw          HGB        fd002     acc= 85.0 F1= 85.3
+fd002_in_domain_raw          MLP        fd002     acc= 78.3 F1= 78.2
+fd002_in_domain_raw          kNN        fd002     acc= 43.3 F1= 43.6
+fd002_in_domain_raw          LogReg     fd002     acc= 86.7 F1= 86.5
+fd002_in_domain_regime_norm  RF         fd002     acc= 86.7 F1= 86.4
+fd002_in_domain_regime_norm  SVM-RBF    fd002     acc= 85.0 F1= 84.8
+fd002_in_domain_regime_norm  HGB        fd002     acc= 86.7 F1= 86.0
+fd002_in_domain_regime_norm  MLP        fd002     acc= 86.7 F1= 86.6
+fd002_in_domain_regime_norm  kNN        fd002     acc= 81.7 F1= 81.4
+fd002_in_domain_regime_norm  LogReg     fd002     acc= 86.7 F1= 86.4
+fd001_regime_norm_transfer   RF         fd001_v3  acc= 80.0 F1= 79.6
+fd001_regime_norm_transfer   RF         fd002     acc= 78.3 F1= 78.6
+fd001_regime_norm_transfer   SVM-RBF    fd001_v3  acc= 75.0 F1= 74.1
+fd001_regime_norm_transfer   SVM-RBF    fd002     acc= 80.0 F1= 80.6
+fd001_regime_norm_transfer   HGB        fd001_v3  acc= 81.7 F1= 81.2
+fd001_regime_norm_transfer   HGB        fd002     acc= 71.7 F1= 72.2
+fd001_regime_norm_transfer   MLP        fd001_v3  acc= 78.3 F1= 78.7
+fd001_regime_norm_transfer   MLP        fd002     acc= 80.0 F1= 80.2
+fd001_regime_norm_transfer   kNN        fd001_v3  acc= 68.3 F1= 67.3
+fd001_regime_norm_transfer   kNN        fd002     acc= 86.7 F1= 86.7
+fd001_regime_norm_transfer   LogReg     fd001_v3  acc= 76.7 F1= 76.0
+fd001_regime_norm_transfer   LogReg     fd002     acc= 81.7 F1= 80.5
+.venv/bin/python -B src/analysis/baselines_v2.py  2130.17s user 143.54s system 497% cpu 7:36.96 total
+EXIT=0

@@ -1,0 +1,254 @@
+[
+  {
+    "id": "05167b30",
+    "label": "Fault_13",
+    "source_group": "TEP/Training/run-393",
+    "focal": true
+  },
+  {
+    "id": "ebd003a7",
+    "label": "Fault_7",
+    "source_group": "TEP/Training/run-019",
+    "focal": true
+  },
+  {
+    "id": "0c7ff630",
+    "label": "Fault_2",
+    "source_group": "TEP/Training/run-105",
+    "focal": true
+  },
+  {
+    "id": "0bce2ead",
+    "label": "Fault_7",
+    "source_group": "TEP/Training/run-444",
+    "focal": true
+  },
+  {
+    "id": "67baf676",
+    "label": "Fault_13",
+    "source_group": "TEP/Training/run-065",
+    "focal": true
+  },
+  {
+    "id": "2e8cf355",
+    "label": "Fault_1",
+    "source_group": "TEP/Training/run-188",
+    "focal": true
+  },
+  {
+    "id": "b1acf744",
+    "label": "Normal",
+    "source_group": "TEP/Training/run-037",
+    "focal": true
+  },
+  {
+    "id": "29fcbddb",
+    "label": "Fault_13",
+    "source_group": "TEP/Training/run-306",
+    "focal": true
+  },
+  {
+    "id": "3d9b14a1",
+    "label": "Fault_1",
+    "source_group": "TEP/Training/run-426",
+    "focal": true
+  },
+  {
+    "id": "6ed18610",
+    "label": "Normal",
+    "source_group": "TEP/Training/run-462",
+    "focal": true
+  },
+  {
+    "id": "65e889f7",
+    "label": "Fault_4",
+    "source_group": "TEP/Training/run-336",
+    "focal": true
+  },
+  {
+    "id": "dfa1b3a7",
+    "label": "Fault_6",
+    "source_group": "TEP/Training/run-346",
+    "focal": true
+  },
+  {
+    "id": "d5e4ed09",
+    "label": "Fault_2",
+    "source_group": "TEP/Training/run-100",
+    "focal": true
+  },
+  {
+    "id": "0c7daa4b",
+    "label": "Normal",
+    "source_group": "TEP/Training/run-220",
+    "focal": true
+  },
+  {
+    "id": "9bdc0558",
+    "label": "Fault_7",
+    "source_group": "TEP/Training/run-079",
+    "focal": true
+  },
+  {
+    "id": "6db1222c",
+    "label": "Fault_6",
+    "source_group": "TEP/Training/run-497",
+    "focal": true
+  },
+  {
+    "id": "31ed9467",
+    "label": "Fault_2",
+    "source_group": "TEP/Training/run-404",
+    "focal": true
+  },
+  {
+    "id": "e3a7aef0",
+    "label": "Fault_4",
+    "source_group": "TEP/Training/run-476",
+    "focal": true
+  },
+  {
+    "id": "cbc3dcfe",
+    "label": "Fault_4",
+    "source_group": "TEP/Training/run-040",
+    "focal": true
+  },
+  {
+    "id": "428cd6df",
+    "label": "Fault_1",
+    "source_group": "TEP/Training/run-193",
+    "focal": true
+  },
+  {
+    "id": "7fb34c2e",
+    "label": "Fault_6",
+    "source_group": "TEP/Training/run-499",
+    "focal": true
+  },
+  {
+    "id": "7aa4c2b8",
+    "label": "Fault_4",
+    "source_group": "TEP/Training/run-120",
+    "focal": false
+  },
+  {
+    "id": "e32768ce",
+    "label": "Fault_1",
+    "source_group": "TEP/Training/run-303",
+    "focal": false
+  },
+  {
+    "id": "801f4c22",
+    "label": "Fault_13",
+    "source_group": "TEP/Training/run-491",
+    "focal": false
+  },
+  {
+    "id": "18080e2c",
+    "label": "Fault_13",
+    "source_group": "TEP/Training/run-032",
+    "focal": false
+  },
+  {
+    "id": "1d470118",
+    "label": "Fault_7",
+    "source_group": "TEP/Training/run-077",
+    "focal": false
+  },
+  {
+    "id": "adccc571",
+    "label": "Fault_2",
+    "source_group": "TEP/Training/run-260",
+    "focal": false
+  },
+  {
+    "id": "94c8a249",
+    "label": "Normal",
+    "source_group": "TEP/Training/run-487",
+    "focal": false
+  },
+  {
+    "id": "dbb8e66d",
+    "label": "Fault_2",
+    "source_group": "TEP/Training/run-466",
+    "focal": false
+  },
+  {
+    "id": "f8758af2",
+    "label": "Fault_6",
+    "source_group": "TEP/Training/run-457",
+    "focal": false
+  },
+  {
+    "id": "ecc13702",
+    "label": "Fault_2",
+    "source_group": "TEP/Training/run-097",
+    "focal": false
+  },
+  {
+    "id": "2d8bf79d",
+    "label": "Fault_7",
+    "source_group": "TEP/Training/run-437",
+    "focal": false
+  },
+  {
+    "id": "d3f4ad0f",
+    "label": "Normal",
+    "source_group": "TEP/Training/run-417",
+    "focal": false
+  },
+  {
+    "id": "7c8f59d4",
+    "label": "Fault_13",
+    "source_group": "TEP/Training/run-020",
+    "focal": false
+  },
+  {
+    "id": "9d24d870",
+    "label": "Fault_4",
+    "source_group": "TEP/Training/run-145",
+    "focal": false
+  },
+  {
+    "id": "60733adc",
+    "label": "Fault_7",
+    "source_group": "TEP/Training/run-434",
+    "focal": false
+  },
+  {
+    "id": "74ff6f74",
+    "label": "Normal",
+    "source_group": "TEP/Training/run-366",
+    "focal": false
+  },
+  {
+    "id": "96655c74",
+    "label": "Fault_6",
+    "source_group": "TEP/Training/run-271",
+    "focal": false
+  },
+  {
+    "id": "dcb97b6c",
+    "label": "Fault_1",
+    "source_group": "TEP/Training/run-206",
+    "focal": false
+  },
+  {
+    "id": "f5c8f108",
+    "label": "Fault_4",
+    "source_group": "TEP/Training/run-291",
+    "focal": false
+  },
+  {
+    "id": "46242262",
+    "label": "Fault_1",
+    "source_group": "TEP/Training/run-376",
+    "focal": false
+  },
+  {
+    "id": "848d60e6",
+    "label": "Fault_6",
+    "source_group": "TEP/Training/run-085",
+    "focal": false
+  }
+]

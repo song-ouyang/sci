@@ -1,0 +1,338 @@
+[
+  {
+    "model": "gpt-5.6-sol",
+    "group": "same_unit_swap_r3"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "random_2_r3"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "b_back_r1"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "random_2_r2"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "fd002_r2"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "a_front_r2"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "random_3_r1"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "early_r2"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "focal_only_r3"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "focal_only_r1"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "a_back_r3"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "rotation_r3"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "random_3_r2"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "b_back_r2"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "a_front_r3"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "pair_shuffle_r3"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "early_r3"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "a_front_r1"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "b_back_r2"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "random_1_r3"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "a_back_r1"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "pair_shuffle_r1"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "early_r2"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "b_front_r1"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "random_1_r1"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "a_back_r2"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "same_unit_swap_r1"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "random_2_r1"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "a_front_r1"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "focal_only_r2"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "random_1_r3"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "clean_r2"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "random_2_r2"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "b_back_r3"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "fd002_r1"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "clean_r3"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "b_back_r3"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "b_front_r3"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "pair_shuffle_r3"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "clean_r1"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "random_1_r2"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "early_r3"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "rotation_r1"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "fd002_r1"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "same_unit_swap_r2"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "pair_shuffle_r2"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "random_3_r3"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "a_front_r3"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "b_front_r1"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "focal_only_r3"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "focal_only_r1"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "random_1_r2"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "fd002_r3"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "same_unit_swap_r3"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "random_2_r3"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "early_r1"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "rotation_r2"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "random_3_r3"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "clean_r3"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "random_3_r1"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "pair_shuffle_r2"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "rotation_r2"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "b_front_r3"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "same_unit_swap_r1"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "focal_only_r2"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "fd002_r3"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "clean_r2"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "b_back_r1"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "random_2_r1"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "a_back_r3"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "a_front_r2"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "same_unit_swap_r2"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "a_back_r2"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "b_front_r2"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "b_front_r2"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "random_1_r1"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "clean_r1"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "a_back_r1"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "pair_shuffle_r1"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "random_3_r2"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "early_r1"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "fd002_r2"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "group": "rotation_r3"
+  },
+  {
+    "model": "gpt-6-astra",
+    "group": "rotation_r1"
+  }
+]

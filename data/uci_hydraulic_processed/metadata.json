@@ -1,0 +1,368 @@
+{
+  "schema_version": 1,
+  "source_filename": "source.zip",
+  "source_zip_sha256": "24128aad2ee45eea7e6b63ebbd9992cdf25d0483a2cebefbfc13bc69079af1f2",
+  "source_zip_bytes": 76601704,
+  "source_dataset_doi": "10.24432/C5CW21",
+  "source_license": "CC BY 4.0 (UCI metadata; attribution required)",
+  "n_cycles": 2205,
+  "cycle_duration_seconds": 60,
+  "channels": [
+    {
+      "channel": "PS1",
+      "physical_quantity": "Pressure",
+      "unit": "bar",
+      "sampling_rate_hz": 100,
+      "samples_per_cycle": 6000,
+      "included_in_summary": true
+    },
+    {
+      "channel": "PS2",
+      "physical_quantity": "Pressure",
+      "unit": "bar",
+      "sampling_rate_hz": 100,
+      "samples_per_cycle": 6000,
+      "included_in_summary": true
+    },
+    {
+      "channel": "PS3",
+      "physical_quantity": "Pressure",
+      "unit": "bar",
+      "sampling_rate_hz": 100,
+      "samples_per_cycle": 6000,
+      "included_in_summary": true
+    },
+    {
+      "channel": "PS4",
+      "physical_quantity": "Pressure",
+      "unit": "bar",
+      "sampling_rate_hz": 100,
+      "samples_per_cycle": 6000,
+      "included_in_summary": true
+    },
+    {
+      "channel": "PS5",
+      "physical_quantity": "Pressure",
+      "unit": "bar",
+      "sampling_rate_hz": 100,
+      "samples_per_cycle": 6000,
+      "included_in_summary": true
+    },
+    {
+      "channel": "PS6",
+      "physical_quantity": "Pressure",
+      "unit": "bar",
+      "sampling_rate_hz": 100,
+      "samples_per_cycle": 6000,
+      "included_in_summary": true
+    },
+    {
+      "channel": "EPS1",
+      "physical_quantity": "Motor power",
+      "unit": "W",
+      "sampling_rate_hz": 100,
+      "samples_per_cycle": 6000,
+      "included_in_summary": true
+    },
+    {
+      "channel": "FS1",
+      "physical_quantity": "Volume flow",
+      "unit": "L/min",
+      "sampling_rate_hz": 10,
+      "samples_per_cycle": 600,
+      "included_in_summary": true
+    },
+    {
+      "channel": "FS2",
+      "physical_quantity": "Volume flow",
+      "unit": "L/min",
+      "sampling_rate_hz": 10,
+      "samples_per_cycle": 600,
+      "included_in_summary": true
+    },
+    {
+      "channel": "TS1",
+      "physical_quantity": "Temperature",
+      "unit": "degC",
+      "sampling_rate_hz": 1,
+      "samples_per_cycle": 60,
+      "included_in_summary": true
+    },
+    {
+      "channel": "TS2",
+      "physical_quantity": "Temperature",
+      "unit": "degC",
+      "sampling_rate_hz": 1,
+      "samples_per_cycle": 60,
+      "included_in_summary": true
+    },
+    {
+      "channel": "TS3",
+      "physical_quantity": "Temperature",
+      "unit": "degC",
+      "sampling_rate_hz": 1,
+      "samples_per_cycle": 60,
+      "included_in_summary": true
+    },
+    {
+      "channel": "TS4",
+      "physical_quantity": "Temperature",
+      "unit": "degC",
+      "sampling_rate_hz": 1,
+      "samples_per_cycle": 60,
+      "included_in_summary": true
+    },
+    {
+      "channel": "VS1",
+      "physical_quantity": "Vibration",
+      "unit": "mm/s",
+      "sampling_rate_hz": 1,
+      "samples_per_cycle": 60,
+      "included_in_summary": true
+    },
+    {
+      "channel": "CE",
+      "physical_quantity": "Cooling efficiency (virtual)",
+      "unit": "%",
+      "sampling_rate_hz": 1,
+      "samples_per_cycle": 60,
+      "included_in_summary": false
+    },
+    {
+      "channel": "CP",
+      "physical_quantity": "Cooling power (virtual)",
+      "unit": "kW",
+      "sampling_rate_hz": 1,
+      "samples_per_cycle": 60,
+      "included_in_summary": false
+    },
+    {
+      "channel": "SE",
+      "physical_quantity": "Efficiency factor",
+      "unit": "%",
+      "sampling_rate_hz": 1,
+      "samples_per_cycle": 60,
+      "included_in_summary": false
+    }
+  ],
+  "included_physical_channels": [
+    "PS1",
+    "PS2",
+    "PS3",
+    "PS4",
+    "PS5",
+    "PS6",
+    "EPS1",
+    "FS1",
+    "FS2",
+    "TS1",
+    "TS2",
+    "TS3",
+    "TS4",
+    "VS1"
+  ],
+  "excluded_channels": [
+    "CE",
+    "CP",
+    "SE"
+  ],
+  "exclusion_reason": "Pre-specified physical-sensor-only design; virtual/derived CE, CP, SE excluded without asserting proven target leakage.",
+  "summary_feature_order": [
+    "PS1_mean",
+    "PS1_std_population",
+    "PS2_mean",
+    "PS2_std_population",
+    "PS3_mean",
+    "PS3_std_population",
+    "PS4_mean",
+    "PS4_std_population",
+    "PS5_mean",
+    "PS5_std_population",
+    "PS6_mean",
+    "PS6_std_population",
+    "EPS1_mean",
+    "EPS1_std_population",
+    "FS1_mean",
+    "FS1_std_population",
+    "FS2_mean",
+    "FS2_std_population",
+    "TS1_mean",
+    "TS1_std_population",
+    "TS2_mean",
+    "TS2_std_population",
+    "TS3_mean",
+    "TS3_std_population",
+    "TS4_mean",
+    "TS4_std_population",
+    "VS1_mean",
+    "VS1_std_population"
+  ],
+  "summary_definition": "Per-channel full 60-second cycle arithmetic mean and population SD (ddof=0), native sampling; no resampling, fitting, scaling or feature selection.",
+  "measurement_npz_contains_labels": false,
+  "profile_columns": [
+    "cooler_condition_percent",
+    "valve_condition_percent",
+    "pump_leakage_level",
+    "accumulator_pressure_bar",
+    "stable_flag"
+  ],
+  "n_independent_devices_established": 1,
+  "independence_note": "The public source describes one test rig; no public per-cycle device or acquisition-session identifier supports a larger independent-device count.",
+  "split_status": "No split or sampling performed by this preprocessing script.",
+  "members": {
+    "CE.txt": {
+      "uncompressed_bytes": 911516,
+      "sha256": "2adc6e258be8e3b7a303b7962f485a7984099cea21248c3bf9f18c7d87283c09",
+      "validated_shape": [
+        2205,
+        60
+      ]
+    },
+    "CP.txt": {
+      "uncompressed_bytes": 779343,
+      "sha256": "63f60132cb5a30879c6f5c73640a39c69e416013195fe62dafe5133b0747baf4",
+      "validated_shape": [
+        2205,
+        60
+      ]
+    },
+    "description.txt": {
+      "uncompressed_bytes": 4044,
+      "sha256": "a115e362976a4532bc7d28c471caa257514584bb3f4f6f06f760ca1236761a63"
+    },
+    "EPS1.txt": {
+      "uncompressed_bytes": 87411594,
+      "sha256": "2a8d13ca793bb36c0ec4afd27b0103b97b3c1b5a176677be5e7a2ae98c277ab9",
+      "validated_shape": [
+        2205,
+        6000
+      ]
+    },
+    "FS1.txt": {
+      "uncompressed_bytes": 7581926,
+      "sha256": "7ff09b17047f776befc136b7902bc7bd4419f96dc107a7ae94d8c412effe0375",
+      "validated_shape": [
+        2205,
+        600
+      ]
+    },
+    "FS2.txt": {
+      "uncompressed_bytes": 8271923,
+      "sha256": "5ee983f88e15ee054846b183224ebcab568b07e3bbe70a4f7f838e603cf1177f",
+      "validated_shape": [
+        2205,
+        600
+      ]
+    },
+    "profile.txt": {
+      "uncompressed_bytes": 31196,
+      "sha256": "867987ca884b2f0fd607ad3918329eba887d095af2befa21122cea518eaa584a"
+    },
+    "PS1.txt": {
+      "uncompressed_bytes": 91391892,
+      "sha256": "168e2e663bb511043a15a9c978b93a6e0280b27b113133d0a26f738170af39c0",
+      "validated_shape": [
+        2205,
+        6000
+      ]
+    },
+    "PS2.txt": {
+      "uncompressed_bytes": 82373611,
+      "sha256": "2c283dac9a874828ac98badd172a136d52b1de580afb05311c47dc02e5e420c5",
+      "validated_shape": [
+        2205,
+        6000
+      ]
+    },
+    "PS3.txt": {
+      "uncompressed_bytes": 69916801,
+      "sha256": "e671e83d99f37bcfe001fed22cb429002a9da8cad026f8abe4c1b7b284c8637f",
+      "validated_shape": [
+        2205,
+        6000
+      ]
+    },
+    "PS4.txt": {
+      "uncompressed_bytes": 46698180,
+      "sha256": "fb58417e4a2c4f11d5614b31813b6942eb97f50690688d045090e3e4db2b252f",
+      "validated_shape": [
+        2205,
+        6000
+      ]
+    },
+    "PS5.txt": {
+      "uncompressed_bytes": 77776429,
+      "sha256": "42b08cddc1fda06ae0b1c665e208680deb7ad1fff9b9cd9b9879a5820fdf4eca",
+      "validated_shape": [
+        2205,
+        6000
+      ]
+    },
+    "PS6.txt": {
+      "uncompressed_bytes": 77875407,
+      "sha256": "9588d363210ab250cf179d930b6b8831643b55bfd8460e54374df18f37456573",
+      "validated_shape": [
+        2205,
+        6000
+      ]
+    },
+    "SE.txt": {
+      "uncompressed_bytes": 824838,
+      "sha256": "4c04994cb28b82c001b4931acecf8099e9fe5c864f361c0a7435fbf8745361a1",
+      "validated_shape": [
+        2205,
+        60
+      ]
+    },
+    "TS1.txt": {
+      "uncompressed_bytes": 904586,
+      "sha256": "49cae5e9013d8e230698d95f53a98bb77fedfe3c86985b812cf701dcc9ef06d8",
+      "validated_shape": [
+        2205,
+        60
+      ]
+    },
+    "TS2.txt": {
+      "uncompressed_bytes": 910594,
+      "sha256": "34115a5b86886d83c0592c1ed259605634a8c83d3a051e97bf3e5790f1db58fa",
+      "validated_shape": [
+        2205,
+        60
+      ]
+    },
+    "TS3.txt": {
+      "uncompressed_bytes": 908805,
+      "sha256": "cc271852b4caad39a3b8f5c36d948b57f6cab761dad8b4c7bdd7cb7e99c0b980",
+      "validated_shape": [
+        2205,
+        60
+      ]
+    },
+    "TS4.txt": {
+      "uncompressed_bytes": 910127,
+      "sha256": "548b903f7cd4ea7f2497c0063bdda4bdf8793d55ff43a7d694b8cb835eaf2f55",
+      "validated_shape": [
+        2205,
+        60
+      ]
+    },
+    "VS1.txt": {
+      "uncompressed_bytes": 778499,
+      "sha256": "a6227d9bcb807ee9835c32e73834d3eb9262f0f5cad1b176ca10c473ced25e99",
+      "validated_shape": [
+        2205,
+        60
+      ]
+    },
+    "documentation.txt": {
+      "uncompressed_bytes": 4719,
+      "sha256": "9fe5ce23d5b850df9bf38335588aa98601475b42b7551d10e84b1d075f7b62b4"
+    }
+  },
+  "validation": {
+    "all_17_sensor_files_validated": true,
+    "shape_checks_passed": true,
+    "finite_checks_passed": true,
+    "profile_labels_valid": true
+  }
+}

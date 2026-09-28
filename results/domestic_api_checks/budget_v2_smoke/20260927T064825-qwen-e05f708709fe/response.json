@@ -1,0 +1,20 @@
+{
+  "content": "[{\"id\":\"smoke-1\",\"predicted\":\"OK\"}]",
+  "reasoning_content": "The user wants me to return exactly a specific JSON array with no other text. Let me provide exactly what they requested.\n",
+  "model": "qwen3.8-max",
+  "id": "chatcmpl-1549194d-3a7c-9d96-9d32-9ba97561e528",
+  "usage": {
+    "completion_tokens": 41,
+    "completion_tokens_details": {
+      "reasoning_tokens": 24,
+      "text_tokens": 41
+    },
+    "prompt_tokens": 47,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 47
+    },
+    "total_tokens": 88
+  },
+  "finish_reason": "stop"
+}

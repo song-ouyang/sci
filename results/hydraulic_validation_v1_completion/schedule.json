@@ -1,0 +1,47 @@
+{
+  "blocks": [
+    [
+      "b_back_r3",
+      "single_86d37e47_r3",
+      "b_front_r3",
+      "clean_r3",
+      "a_back_r3",
+      "a_front_repeat_r3",
+      "descriptor_rotation_r3",
+      "single_a01f8332_r3",
+      "single_302d4f6b_r3",
+      "clean_repeat_r3",
+      "a_front_r3",
+      "single_f3364333_r3",
+      "pair_reverse_r3"
+    ],
+    [
+      "single_39544394_r4",
+      "clean_repeat_r4",
+      "descriptor_rotation_r4",
+      "pair_reverse_r4",
+      "a_front_repeat_r4",
+      "b_back_r4",
+      "b_front_r4",
+      "single_91e35d59_r4",
+      "single_a4ca3b84_r4",
+      "clean_r4",
+      "a_back_r4",
+      "a_front_r4"
+    ],
+    [
+      "pair_reverse_r5",
+      "b_back_r5",
+      "b_front_r5",
+      "clean_r5",
+      "a_back_r5",
+      "descriptor_rotation_r5",
+      "a_front_r5",
+      "single_e2d862fa_r5",
+      "single_3fd092f5_r5",
+      "single_95924822_r5",
+      "a_front_repeat_r5",
+      "clean_repeat_r5"
+    ]
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "recorded_at_utc": "2026-09-28T03:52:51.061802+00:00",
+  "type": "post_score_audit_copy_NOT_pre_score_freeze",
+  "files": {
+    "scores.json": "c46232d6b3c629dc10cdfa79a6a8ed91053e79f991c34f43cd1bda3e6ed15864",
+    "protocol.json": "d8daeb5ae50e164332c4d5f3d186a7b03316ee613fd67946904c10c4ddee71ca",
+    "session_registry.json": "0d76da2887483bb19856cf7d22dc1cd3ea7a7ca0d982167e5997cadeadbc3375",
+    "predictions/opus/tep_clean_r1_predictions.json": "f9e1cedada77cb9470bab5b87133f5695f9eb6685bc53cf62d06aac01b2ef071",
+    "predictions/opus/cmapss_clean_r2_predictions.json": "364e4160b106b202595b15dacb3c8e1f8fbf6685874d9c72f172be3fb22993e9",
+    "predictions/opus/tep_misnamed_r3_FAILED_incomplete.json": "e897295adb4c32dece8481a2bfce67c20809f8487e22fe2b0ecbed01cfbd0d5b",
+    "predictions/opus/cmapss_clean_r3_predictions.json": "c3e6b0fb94eae016de3143ab595d12418ca9550b9e85f94e00ab6aadb6a2d081",
+    "predictions/opus/tep_misnamed_r1_predictions.json": "f9e1cedada77cb9470bab5b87133f5695f9eb6685bc53cf62d06aac01b2ef071",
+    "predictions/opus/tep_clean_r3_predictions.json": "286104f029361f33bdcce62a0932e9858478723192e2776ae23c21aef5f99678",
+    "predictions/opus/tep_misnamed_r2_predictions.json": "286104f029361f33bdcce62a0932e9858478723192e2776ae23c21aef5f99678",
+    "predictions/opus/cmapss_clean_r1_predictions.json": "2c3aa069508643a7b10230aa55c1412b87d87db3809397c05b8b4946f8013168",
+    "predictions/opus/tep_clean_r2_predictions.json": "286104f029361f33bdcce62a0932e9858478723192e2776ae23c21aef5f99678",
+    "predictions/sonnet/tep_clean_r1_predictions.json": "f51113894d6e1ea45d89b6289a4a1d434e0b7188b0e6521e485cf0b7a55c4135",
+    "predictions/sonnet/cmapss_clean_r2_predictions.json": "5b1605c837f34d639ee8697826695d875e23763d5fa0ea8a8073efac3280115f",
+    "predictions/sonnet/cmapss_clean_r3_predictions.json": "269e0440c45ddc59f0708dc5af0eeff565508ac9c4bb7716ad28f0eaa85068f3",
+    "predictions/sonnet/tep_misnamed_r1_predictions.json": "46affd459f91502104fe2e28ba575274ca7cf6b7b1b541e9a4b105de28e97deb",
+    "predictions/sonnet/tep_misnamed_r2_FAILED_offtask.json": "9f140f05454e03feb9e8c17fed81bb5140d287306336287c7203816caf38f456",
+    "predictions/sonnet/tep_clean_r3_predictions.json": "ef5b7c575350cd171da7c4afc7a0dceec26aa7d6b1b1ae748e981373f0f1e36e",
+    "predictions/sonnet/cmapss_clean_r1_predictions.json": "0d4340de15fe0b51c80bd05db2ffb802eead03cb403580a17decae7ac3c755e4",
+    "predictions/sonnet/tep_clean_r2_predictions.json": "c1bf8cfb5501efb00ad10ee87d3b7f1467a1241eb0233b96b93f4b2f20c07c35",
+    "predictions/sonnet/tep_misnamed_r3_predictions.json": "9548e26ffbba45e92bb7039e5079004a7f00a8399310f7799746ad9e8fba1353"
+  },
+  "submitted_scorer_sha256": "ba0c25a68fd80b6a279b5371262e3f904bb71b05ba3582e2770b351d3dba2df1"
+}

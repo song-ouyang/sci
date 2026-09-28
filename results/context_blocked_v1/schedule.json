@@ -1,0 +1,28 @@
+{
+  "blocks": [
+    [
+      "block01_pos1_a",
+      "block01_pos2_b",
+      "block01_pos3_b",
+      "block01_pos4_a"
+    ],
+    [
+      "block02_pos1_a",
+      "block02_pos2_b",
+      "block02_pos3_b",
+      "block02_pos4_a"
+    ],
+    [
+      "block03_pos1_b",
+      "block03_pos2_a",
+      "block03_pos3_a",
+      "block03_pos4_b"
+    ],
+    [
+      "block04_pos1_b",
+      "block04_pos2_a",
+      "block04_pos3_a",
+      "block04_pos4_b"
+    ]
+  ]
+}

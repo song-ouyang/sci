@@ -1,0 +1,14 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Return exactly this JSON array, with no other text: [{\"id\":\"smoke-1\",\"predicted\":\"OK\"}]"
+    }
+  ],
+  "expected_ids": [
+    "smoke-1"
+  ],
+  "allowed_labels": [
+    "OK"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro",
+  "base_url": "https://api.deepseek.com",
+  "key_env": "DEEPSEEK_API_KEY",
+  "key_configured": true,
+  "started_at": "2026-09-27T06:31:40.263365+00:00",
+  "status": "valid",
+  "timeout_seconds": 120,
+  "automatic_retries": 0,
+  "adapter_sha256": "a94483c028ef2aad2b37bf012ba0b5a4f191fb20b954d2097c02bcd0e5b1ffff",
+  "http_status": 200,
+  "request_id": null,
+  "observed_model": "deepseek-v4-pro",
+  "usage": {
+    "prompt_tokens": 30,
+    "completion_tokens": 15,
+    "total_tokens": 45,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 30
+  },
+  "finished_at": "2026-09-27T06:31:41.507841+00:00",
+  "elapsed_seconds": 1.244
+}

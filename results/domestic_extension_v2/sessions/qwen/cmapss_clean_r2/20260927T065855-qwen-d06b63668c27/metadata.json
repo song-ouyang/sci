@@ -1,0 +1,30 @@
+{
+  "provider": "qwen",
+  "model": "qwen3.8-max",
+  "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "key_env": "DASHSCOPE_API_KEY",
+  "key_configured": true,
+  "started_at": "2026-09-27T06:58:55.683516+00:00",
+  "status": "valid",
+  "timeout_seconds": 120,
+  "automatic_retries": 0,
+  "adapter_sha256": "477c2a51bfb447ba73d64ffb916d3e09362287b252c80af137323140a15a3f34",
+  "http_status": 200,
+  "request_id": "66765e2c-427e-97b6-8697-5053b0691763",
+  "observed_model": "qwen3.8-max",
+  "usage": {
+    "completion_tokens": 14604,
+    "completion_tokens_details": {
+      "reasoning_tokens": 13375,
+      "text_tokens": 14604
+    },
+    "prompt_tokens": 89971,
+    "prompt_tokens_details": {
+      "cached_tokens": 89088,
+      "text_tokens": 89971
+    },
+    "total_tokens": 104575
+  },
+  "finished_at": "2026-09-27T07:02:47.164502+00:00",
+  "elapsed_seconds": 231.815
+}

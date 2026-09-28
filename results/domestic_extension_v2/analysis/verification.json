@@ -1,0 +1,17 @@
+{
+  "verified_at": "2026-09-27T07:38:09.992128+00:00",
+  "valid_sessions": 15,
+  "planned_sessions": 18,
+  "case_rows": 990,
+  "expected_case_rows": 1200,
+  "independent_accuracy_recomputation": "passed",
+  "inference_frozen_before_scoring": true,
+  "frozen_manifest_sha256": "1e01198839eb630d95752c6ee56f3a0eaeb68cb780bd2396fec0d124e0b67d88",
+  "scored_artifacts": {
+    "scores.json": "426817973531343d8c007f06f86c478ce11c2820214aae19a5b2138abcb1942e",
+    "metrics.csv": "a251ef023e949f08b12185346132df9859cd317d31277206b422f9ce8c5d4db4",
+    "paired.csv": "58347c21e6102db38c7eabc39084e1d66d9639555c9d97c738a2ad46bba5b41e",
+    "cases.csv": "e6254f295ece73b688321613219d26883c57abdd01c374f4fb2c76e75eb10bda",
+    "summary.md": "18b58c2117ed2ddde0de49ce72b0d17a81d35217231d3e6c1037ca2843d0dfbf"
+  }
+}

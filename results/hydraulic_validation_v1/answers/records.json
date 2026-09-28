@@ -1,0 +1,820 @@
+{
+  "panels": {
+    "focal": [
+      {
+        "id": "152325d2",
+        "cycle_1based": 288,
+        "block_id": 11,
+        "block_start": 283,
+        "block_end": 292,
+        "profile": [
+          3,
+          100,
+          1,
+          130,
+          0
+        ],
+        "true_label": "Weak_leakage"
+      },
+      {
+        "id": "2da54644",
+        "cycle_1based": 1020,
+        "block_id": 76,
+        "block_start": 1015,
+        "block_end": 1024,
+        "profile": [
+          20,
+          100,
+          1,
+          130,
+          0
+        ],
+        "true_label": "Weak_leakage"
+      },
+      {
+        "id": "302d4f6b",
+        "cycle_1based": 1061,
+        "block_id": 81,
+        "block_start": 1056,
+        "block_end": 1065,
+        "profile": [
+          20,
+          100,
+          0,
+          130,
+          0
+        ],
+        "true_label": "No_leakage"
+      },
+      {
+        "id": "39544394",
+        "cycle_1based": 1793,
+        "block_id": 146,
+        "block_start": 1788,
+        "block_end": 1797,
+        "profile": [
+          100,
+          100,
+          0,
+          130,
+          0
+        ],
+        "true_label": "No_leakage"
+      },
+      {
+        "id": "3fd092f5",
+        "cycle_1based": 1752,
+        "block_id": 141,
+        "block_start": 1747,
+        "block_end": 1756,
+        "profile": [
+          100,
+          100,
+          1,
+          130,
+          0
+        ],
+        "true_label": "Weak_leakage"
+      },
+      {
+        "id": "7717e048",
+        "cycle_1based": 667,
+        "block_id": 57,
+        "block_start": 662,
+        "block_end": 671,
+        "profile": [
+          3,
+          80,
+          1,
+          90,
+          0
+        ],
+        "true_label": "Weak_leakage"
+      },
+      {
+        "id": "7f492355",
+        "cycle_1based": 708,
+        "block_id": 62,
+        "block_start": 703,
+        "block_end": 712,
+        "profile": [
+          3,
+          80,
+          0,
+          90,
+          0
+        ],
+        "true_label": "No_leakage"
+      },
+      {
+        "id": "86d37e47",
+        "cycle_1based": 626,
+        "block_id": 52,
+        "block_start": 621,
+        "block_end": 630,
+        "profile": [
+          3,
+          80,
+          2,
+          90,
+          0
+        ],
+        "true_label": "Severe_leakage"
+      },
+      {
+        "id": "91e35d59",
+        "cycle_1based": 329,
+        "block_id": 16,
+        "block_start": 324,
+        "block_end": 333,
+        "profile": [
+          3,
+          100,
+          0,
+          130,
+          0
+        ],
+        "true_label": "No_leakage"
+      },
+      {
+        "id": "95924822",
+        "cycle_1based": 1440,
+        "block_id": 127,
+        "block_start": 1435,
+        "block_end": 1444,
+        "profile": [
+          20,
+          80,
+          0,
+          90,
+          0
+        ],
+        "true_label": "No_leakage"
+      },
+      {
+        "id": "970596b6",
+        "cycle_1based": 2131,
+        "block_id": 187,
+        "block_start": 2126,
+        "block_end": 2135,
+        "profile": [
+          100,
+          80,
+          1,
+          90,
+          0
+        ],
+        "true_label": "Weak_leakage"
+      },
+      {
+        "id": "9e6bbab5",
+        "cycle_1based": 1711,
+        "block_id": 136,
+        "block_start": 1706,
+        "block_end": 1715,
+        "profile": [
+          100,
+          100,
+          2,
+          130,
+          0
+        ],
+        "true_label": "Severe_leakage"
+      },
+      {
+        "id": "a01f8332",
+        "cycle_1based": 1358,
+        "block_id": 117,
+        "block_start": 1353,
+        "block_end": 1362,
+        "profile": [
+          20,
+          80,
+          2,
+          90,
+          0
+        ],
+        "true_label": "Severe_leakage"
+      },
+      {
+        "id": "a4ca3b84",
+        "cycle_1based": 979,
+        "block_id": 71,
+        "block_start": 974,
+        "block_end": 983,
+        "profile": [
+          20,
+          100,
+          2,
+          130,
+          0
+        ],
+        "true_label": "Severe_leakage"
+      },
+      {
+        "id": "e2d862fa",
+        "cycle_1based": 2172,
+        "block_id": 192,
+        "block_start": 2167,
+        "block_end": 2176,
+        "profile": [
+          100,
+          80,
+          0,
+          90,
+          0
+        ],
+        "true_label": "No_leakage"
+      },
+      {
+        "id": "e54d89d6",
+        "cycle_1based": 1399,
+        "block_id": 122,
+        "block_start": 1394,
+        "block_end": 1403,
+        "profile": [
+          20,
+          80,
+          1,
+          90,
+          0
+        ],
+        "true_label": "Weak_leakage"
+      },
+      {
+        "id": "f2c47650",
+        "cycle_1based": 247,
+        "block_id": 6,
+        "block_start": 242,
+        "block_end": 251,
+        "profile": [
+          3,
+          100,
+          2,
+          130,
+          0
+        ],
+        "true_label": "Severe_leakage"
+      },
+      {
+        "id": "f3364333",
+        "cycle_1based": 2090,
+        "block_id": 182,
+        "block_start": 2085,
+        "block_end": 2094,
+        "profile": [
+          100,
+          80,
+          2,
+          90,
+          0
+        ],
+        "true_label": "Severe_leakage"
+      }
+    ],
+    "a": [
+      {
+        "id": "114efbdd",
+        "cycle_1based": 258,
+        "block_id": 8,
+        "block_start": 253,
+        "block_end": 262,
+        "profile": [
+          3,
+          73,
+          1,
+          130,
+          0
+        ],
+        "true_label": "Weak_leakage"
+      },
+      {
+        "id": "1711229b",
+        "cycle_1based": 319,
+        "block_id": 15,
+        "block_start": 314,
+        "block_end": 323,
+        "profile": [
+          3,
+          90,
+          0,
+          130,
+          0
+        ],
+        "true_label": "No_leakage"
+      },
+      {
+        "id": "26c57b70",
+        "cycle_1based": 1010,
+        "block_id": 75,
+        "block_start": 1005,
+        "block_end": 1014,
+        "profile": [
+          20,
+          90,
+          1,
+          130,
+          0
+        ],
+        "true_label": "Weak_leakage"
+      },
+      {
+        "id": "342cff18",
+        "cycle_1based": 969,
+        "block_id": 70,
+        "block_start": 964,
+        "block_end": 973,
+        "profile": [
+          20,
+          90,
+          2,
+          130,
+          0
+        ],
+        "true_label": "Severe_leakage"
+      },
+      {
+        "id": "4a8cfcff",
+        "cycle_1based": 1051,
+        "block_id": 80,
+        "block_start": 1046,
+        "block_end": 1055,
+        "profile": [
+          20,
+          90,
+          0,
+          130,
+          0
+        ],
+        "true_label": "No_leakage"
+      },
+      {
+        "id": "51937c4d",
+        "cycle_1based": 299,
+        "block_id": 13,
+        "block_start": 294,
+        "block_end": 303,
+        "profile": [
+          3,
+          73,
+          0,
+          130,
+          0
+        ],
+        "true_label": "No_leakage"
+      },
+      {
+        "id": "6d18af65",
+        "cycle_1based": 1031,
+        "block_id": 78,
+        "block_start": 1026,
+        "block_end": 1035,
+        "profile": [
+          20,
+          73,
+          0,
+          130,
+          0
+        ],
+        "true_label": "No_leakage"
+      },
+      {
+        "id": "80688e29",
+        "cycle_1based": 1722,
+        "block_id": 138,
+        "block_start": 1717,
+        "block_end": 1726,
+        "profile": [
+          100,
+          73,
+          1,
+          130,
+          0
+        ],
+        "true_label": "Weak_leakage"
+      },
+      {
+        "id": "80d5dd79",
+        "cycle_1based": 990,
+        "block_id": 73,
+        "block_start": 985,
+        "block_end": 994,
+        "profile": [
+          20,
+          73,
+          1,
+          130,
+          0
+        ],
+        "true_label": "Weak_leakage"
+      },
+      {
+        "id": "8c813e55",
+        "cycle_1based": 237,
+        "block_id": 5,
+        "block_start": 232,
+        "block_end": 241,
+        "profile": [
+          3,
+          90,
+          2,
+          130,
+          0
+        ],
+        "true_label": "Severe_leakage"
+      },
+      {
+        "id": "98e0598b",
+        "cycle_1based": 1763,
+        "block_id": 143,
+        "block_start": 1758,
+        "block_end": 1767,
+        "profile": [
+          100,
+          73,
+          0,
+          130,
+          0
+        ],
+        "true_label": "No_leakage"
+      },
+      {
+        "id": "99482ae1",
+        "cycle_1based": 1701,
+        "block_id": 135,
+        "block_start": 1696,
+        "block_end": 1705,
+        "profile": [
+          100,
+          90,
+          2,
+          130,
+          0
+        ],
+        "true_label": "Severe_leakage"
+      },
+      {
+        "id": "a28830d0",
+        "cycle_1based": 1681,
+        "block_id": 133,
+        "block_start": 1676,
+        "block_end": 1685,
+        "profile": [
+          100,
+          73,
+          2,
+          130,
+          0
+        ],
+        "true_label": "Severe_leakage"
+      },
+      {
+        "id": "ada9f447",
+        "cycle_1based": 949,
+        "block_id": 68,
+        "block_start": 944,
+        "block_end": 953,
+        "profile": [
+          20,
+          73,
+          2,
+          130,
+          0
+        ],
+        "true_label": "Severe_leakage"
+      },
+      {
+        "id": "c720a330",
+        "cycle_1based": 1783,
+        "block_id": 145,
+        "block_start": 1778,
+        "block_end": 1787,
+        "profile": [
+          100,
+          90,
+          0,
+          130,
+          0
+        ],
+        "true_label": "No_leakage"
+      },
+      {
+        "id": "e3ebe43d",
+        "cycle_1based": 217,
+        "block_id": 3,
+        "block_start": 212,
+        "block_end": 221,
+        "profile": [
+          3,
+          73,
+          2,
+          130,
+          0
+        ],
+        "true_label": "Severe_leakage"
+      },
+      {
+        "id": "f9ebea62",
+        "cycle_1based": 278,
+        "block_id": 10,
+        "block_start": 273,
+        "block_end": 282,
+        "profile": [
+          3,
+          90,
+          1,
+          130,
+          0
+        ],
+        "true_label": "Weak_leakage"
+      },
+      {
+        "id": "fffa280d",
+        "cycle_1based": 1742,
+        "block_id": 140,
+        "block_start": 1737,
+        "block_end": 1746,
+        "profile": [
+          100,
+          90,
+          1,
+          130,
+          0
+        ],
+        "true_label": "Weak_leakage"
+      }
+    ],
+    "b": [
+      {
+        "id": "0317d657",
+        "cycle_1based": 1896,
+        "block_id": 159,
+        "block_start": 1891,
+        "block_end": 1900,
+        "profile": [
+          100,
+          73,
+          0,
+          115,
+          0
+        ],
+        "true_label": "No_leakage"
+      },
+      {
+        "id": "076a5d11",
+        "cycle_1based": 360,
+        "block_id": 20,
+        "block_start": 355,
+        "block_end": 364,
+        "profile": [
+          3,
+          80,
+          2,
+          115,
+          0
+        ],
+        "true_label": "Severe_leakage"
+      },
+      {
+        "id": "0a8e27f2",
+        "cycle_1based": 1824,
+        "block_id": 150,
+        "block_start": 1819,
+        "block_end": 1828,
+        "profile": [
+          100,
+          80,
+          2,
+          115,
+          0
+        ],
+        "true_label": "Severe_leakage"
+      },
+      {
+        "id": "16ef5e68",
+        "cycle_1based": 1164,
+        "block_id": 94,
+        "block_start": 1159,
+        "block_end": 1168,
+        "profile": [
+          20,
+          73,
+          0,
+          115,
+          0
+        ],
+        "true_label": "No_leakage"
+      },
+      {
+        "id": "21f92f96",
+        "cycle_1based": 1814,
+        "block_id": 149,
+        "block_start": 1809,
+        "block_end": 1818,
+        "profile": [
+          100,
+          73,
+          2,
+          115,
+          0
+        ],
+        "true_label": "Severe_leakage"
+      },
+      {
+        "id": "4fe93b1d",
+        "cycle_1based": 391,
+        "block_id": 24,
+        "block_start": 386,
+        "block_end": 395,
+        "profile": [
+          3,
+          73,
+          1,
+          115,
+          0
+        ],
+        "true_label": "Weak_leakage"
+      },
+      {
+        "id": "5ad3cba9",
+        "cycle_1based": 1855,
+        "block_id": 154,
+        "block_start": 1850,
+        "block_end": 1859,
+        "profile": [
+          100,
+          73,
+          1,
+          115,
+          0
+        ],
+        "true_label": "Weak_leakage"
+      },
+      {
+        "id": "745b4f97",
+        "cycle_1based": 442,
+        "block_id": 30,
+        "block_start": 437,
+        "block_end": 446,
+        "profile": [
+          3,
+          80,
+          0,
+          115,
+          0
+        ],
+        "true_label": "No_leakage"
+      },
+      {
+        "id": "79ffc996",
+        "cycle_1based": 432,
+        "block_id": 29,
+        "block_start": 427,
+        "block_end": 436,
+        "profile": [
+          3,
+          73,
+          0,
+          115,
+          0
+        ],
+        "true_label": "No_leakage"
+      },
+      {
+        "id": "7f6007a8",
+        "cycle_1based": 401,
+        "block_id": 25,
+        "block_start": 396,
+        "block_end": 405,
+        "profile": [
+          3,
+          80,
+          1,
+          115,
+          0
+        ],
+        "true_label": "Weak_leakage"
+      },
+      {
+        "id": "97c76df6",
+        "cycle_1based": 350,
+        "block_id": 19,
+        "block_start": 345,
+        "block_end": 354,
+        "profile": [
+          3,
+          73,
+          2,
+          115,
+          0
+        ],
+        "true_label": "Severe_leakage"
+      },
+      {
+        "id": "a6fd1d9c",
+        "cycle_1based": 1906,
+        "block_id": 160,
+        "block_start": 1901,
+        "block_end": 1910,
+        "profile": [
+          100,
+          80,
+          0,
+          115,
+          0
+        ],
+        "true_label": "No_leakage"
+      },
+      {
+        "id": "bb034839",
+        "cycle_1based": 1174,
+        "block_id": 95,
+        "block_start": 1169,
+        "block_end": 1178,
+        "profile": [
+          20,
+          80,
+          0,
+          115,
+          0
+        ],
+        "true_label": "No_leakage"
+      },
+      {
+        "id": "d5e4f15c",
+        "cycle_1based": 1082,
+        "block_id": 84,
+        "block_start": 1077,
+        "block_end": 1086,
+        "profile": [
+          20,
+          73,
+          2,
+          115,
+          0
+        ],
+        "true_label": "Severe_leakage"
+      },
+      {
+        "id": "d7502137",
+        "cycle_1based": 1133,
+        "block_id": 90,
+        "block_start": 1128,
+        "block_end": 1137,
+        "profile": [
+          20,
+          80,
+          1,
+          115,
+          0
+        ],
+        "true_label": "Weak_leakage"
+      },
+      {
+        "id": "e09b0abe",
+        "cycle_1based": 1123,
+        "block_id": 89,
+        "block_start": 1118,
+        "block_end": 1127,
+        "profile": [
+          20,
+          73,
+          1,
+          115,
+          0
+        ],
+        "true_label": "Weak_leakage"
+      },
+      {
+        "id": "f513bd76",
+        "cycle_1based": 1865,
+        "block_id": 155,
+        "block_start": 1860,
+        "block_end": 1869,
+        "profile": [
+          100,
+          80,
+          1,
+          115,
+          0
+        ],
+        "true_label": "Weak_leakage"
+      },
+      {
+        "id": "fc75c3b9",
+        "cycle_1based": 1092,
+        "block_id": 85,
+        "block_start": 1087,
+        "block_end": 1096,
+        "profile": [
+          20,
+          80,
+          2,
+          115,
+          0
+        ],
+        "true_label": "Severe_leakage"
+      }
+    ]
+  }
+}

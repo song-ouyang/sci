@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "metric_rows": 84,
+  "paired_rows": 84,
+  "focal_rows": 36,
+  "case_rows": 4854,
+  "new_unique_sources": 172,
+  "data_audit_sha256": "ff7183b9edf9d211cb8dba2c741c90341e4244009b9d719c22d84f4a04980227",
+  "scores_sha256": "98409ddff332ede3fc923a6fe20d00f5ae82c19a1d84df96a6bf3f2a9677ec41",
+  "human_approval": "pending"
+}

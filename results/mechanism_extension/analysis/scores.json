@@ -1,0 +1,2866 @@
+{
+  "schema": "mechanism-extension-scores-v1",
+  "scored_at": "2026-09-27T04:18:21.500268+00:00",
+  "protocol_sha256": "60ab4d257a3b9ea85df3ac1897927aa3a287f06bbd138c64fed8bcfb824f0f24",
+  "frozen_manifest_sha256": "ad6006c18b37c9ae7761fc8e74a319f80932f1c4a04fb9c9ab8c9182c0156b19",
+  "answers_sha256": "0097dbb21981968f9ad5b8c59670a07ce701edfecbe61b5108542f7f0638fd1d",
+  "coverage": {
+    "planned": 84,
+    "valid": 84,
+    "requested_labels": 2604,
+    "valid_labels": 2604
+  },
+  "context_subset_class_counts": {
+    "Normal": 0,
+    "Fault_1": 0,
+    "Fault_2": 3,
+    "Fault_4": 1,
+    "Fault_6": 2,
+    "Fault_7": 0,
+    "Fault_13": 1
+  },
+  "metrics": [
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_single_04_r1",
+      "condition": "single_04",
+      "repeat": 1,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 9.939,
+      "usage": {
+        "input_tokens": 10875,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 50,
+        "reasoning_output_tokens": 26
+      },
+      "accuracy": 1.0,
+      "macro_f1": 0.14285714285714285,
+      "correct": 1,
+      "conditional_accuracy_wilson": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_pair_shuffle_r1",
+      "condition": "pair_shuffle",
+      "repeat": 1,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 50.071,
+      "usage": {
+        "input_tokens": 94436,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1245,
+        "reasoning_output_tokens": 86
+      },
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "correct": 70,
+      "conditional_accuracy_wilson": [
+        0.9479769375897331,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_rotation_r1",
+      "condition": "rotation",
+      "repeat": 1,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 161.428,
+      "usage": {
+        "input_tokens": 93315,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7771,
+        "reasoning_output_tokens": 6751
+      },
+      "accuracy": 0.24285714285714285,
+      "macro_f1": 0.24285714285714288,
+      "correct": 17,
+      "conditional_accuracy_wilson": [
+        0.15751861122890576,
+        0.3549503922963744
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_single_03_r2",
+      "condition": "single_03",
+      "repeat": 2,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 23.783,
+      "usage": {
+        "input_tokens": 12003,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 381,
+        "reasoning_output_tokens": 356
+      },
+      "accuracy": 1.0,
+      "macro_f1": 0.14285714285714285,
+      "correct": 1,
+      "conditional_accuracy_wilson": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_anonymous_r3",
+      "condition": "anonymous",
+      "repeat": 3,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 78.704,
+      "usage": {
+        "input_tokens": 57543,
+        "cached_input_tokens": 5888,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4019,
+        "reasoning_output_tokens": 2999
+      },
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "correct": 70,
+      "conditional_accuracy_wilson": [
+        0.9479769375897331,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_sample_shuffle_r2",
+      "condition": "sample_shuffle",
+      "repeat": 2,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 48.887,
+      "usage": {
+        "input_tokens": 94434,
+        "cached_input_tokens": 6784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1260,
+        "reasoning_output_tokens": 101
+      },
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "correct": 70,
+      "conditional_accuracy_wilson": [
+        0.9479769375897331,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_rotation_r2",
+      "condition": "rotation",
+      "repeat": 2,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 202.456,
+      "usage": {
+        "input_tokens": 93309,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10599,
+        "reasoning_output_tokens": 9440
+      },
+      "accuracy": 0.5285714285714286,
+      "macro_f1": 0.5285714285714286,
+      "correct": 37,
+      "conditional_accuracy_wilson": [
+        0.4132188746832562,
+        0.6409512360361571
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_single_06_r1",
+      "condition": "single_06",
+      "repeat": 1,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 23.423,
+      "usage": {
+        "input_tokens": 12004,
+        "cached_input_tokens": 6784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 153,
+        "reasoning_output_tokens": 131
+      },
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "correct": 0,
+      "conditional_accuracy_wilson": [
+        0.0,
+        0.7934506856227626
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_clean_r3",
+      "condition": "clean",
+      "repeat": 3,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 73.199,
+      "usage": {
+        "input_tokens": 93309,
+        "cached_input_tokens": 5888,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3140,
+        "reasoning_output_tokens": 1981
+      },
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "correct": 70,
+      "conditional_accuracy_wilson": [
+        0.9479769375897331,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_clean_r2",
+      "condition": "clean",
+      "repeat": 2,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 46.298,
+      "usage": {
+        "input_tokens": 94436,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1248,
+        "reasoning_output_tokens": 89
+      },
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "correct": 70,
+      "conditional_accuracy_wilson": [
+        0.9479769375897331,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_single_01_r2",
+      "condition": "single_01",
+      "repeat": 2,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 17.268,
+      "usage": {
+        "input_tokens": 10876,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 590,
+        "reasoning_output_tokens": 565
+      },
+      "accuracy": 1.0,
+      "macro_f1": 0.14285714285714285,
+      "correct": 1,
+      "conditional_accuracy_wilson": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_single_01_r2",
+      "condition": "single_01",
+      "repeat": 2,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 14.502,
+      "usage": {
+        "input_tokens": 12001,
+        "cached_input_tokens": 9728,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 196,
+        "reasoning_output_tokens": 171
+      },
+      "accuracy": 1.0,
+      "macro_f1": 0.14285714285714285,
+      "correct": 1,
+      "conditional_accuracy_wilson": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_single_01_r3",
+      "condition": "single_01",
+      "repeat": 3,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 37.083,
+      "usage": {
+        "input_tokens": 10876,
+        "cached_input_tokens": 8576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1378,
+        "reasoning_output_tokens": 1353
+      },
+      "accuracy": 1.0,
+      "macro_f1": 0.14285714285714285,
+      "correct": 1,
+      "conditional_accuracy_wilson": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_anonymous_r3",
+      "condition": "anonymous",
+      "repeat": 3,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 57.12,
+      "usage": {
+        "input_tokens": 58668,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1549,
+        "reasoning_output_tokens": 390
+      },
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "correct": 70,
+      "conditional_accuracy_wilson": [
+        0.9479769375897331,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_pair_shuffle_r1",
+      "condition": "pair_shuffle",
+      "repeat": 1,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 105.076,
+      "usage": {
+        "input_tokens": 93311,
+        "cached_input_tokens": 5888,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5335,
+        "reasoning_output_tokens": 4176
+      },
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "correct": 70,
+      "conditional_accuracy_wilson": [
+        0.9479769375897331,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_single_06_r2",
+      "condition": "single_06",
+      "repeat": 2,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 9.98,
+      "usage": {
+        "input_tokens": 12002,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 117,
+        "reasoning_output_tokens": 95
+      },
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "correct": 0,
+      "conditional_accuracy_wilson": [
+        0.0,
+        0.7934506856227626
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_sample_shuffle_r2",
+      "condition": "sample_shuffle",
+      "repeat": 2,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 65.999,
+      "usage": {
+        "input_tokens": 93311,
+        "cached_input_tokens": 8576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3195,
+        "reasoning_output_tokens": 2175
+      },
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "correct": 70,
+      "conditional_accuracy_wilson": [
+        0.9479769375897331,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_rotation_r2",
+      "condition": "rotation",
+      "repeat": 2,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 71.699,
+      "usage": {
+        "input_tokens": 94438,
+        "cached_input_tokens": 6784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1838,
+        "reasoning_output_tokens": 679
+      },
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "correct": 70,
+      "conditional_accuracy_wilson": [
+        0.9479769375897331,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_rotation_r3",
+      "condition": "rotation",
+      "repeat": 3,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 176.577,
+      "usage": {
+        "input_tokens": 93311,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9298,
+        "reasoning_output_tokens": 8278
+      },
+      "accuracy": 0.21428571428571427,
+      "macro_f1": 0.21428571428571427,
+      "correct": 15,
+      "conditional_accuracy_wilson": [
+        0.1343870301710779,
+        0.3239118626347889
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_random_mapping_r1",
+      "condition": "random_mapping",
+      "repeat": 1,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 81.755,
+      "usage": {
+        "input_tokens": 94436,
+        "cached_input_tokens": 6784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2470,
+        "reasoning_output_tokens": 1311
+      },
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "correct": 70,
+      "conditional_accuracy_wilson": [
+        0.9479769375897331,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_single_05_r1",
+      "condition": "single_05",
+      "repeat": 1,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 30.347,
+      "usage": {
+        "input_tokens": 10879,
+        "cached_input_tokens": 8576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1161,
+        "reasoning_output_tokens": 1137
+      },
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "correct": 0,
+      "conditional_accuracy_wilson": [
+        0.0,
+        0.7934506856227626
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_anonymous_r1",
+      "condition": "anonymous",
+      "repeat": 1,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 46.255,
+      "usage": {
+        "input_tokens": 58668,
+        "cached_input_tokens": 9728,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1247,
+        "reasoning_output_tokens": 88
+      },
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "correct": 70,
+      "conditional_accuracy_wilson": [
+        0.9479769375897331,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_pair_shuffle_r3",
+      "condition": "pair_shuffle",
+      "repeat": 3,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 71.452,
+      "usage": {
+        "input_tokens": 93309,
+        "cached_input_tokens": 8576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3588,
+        "reasoning_output_tokens": 2588
+      },
+      "accuracy": 0.5714285714285714,
+      "macro_f1": 0.5238095238095238,
+      "correct": 40,
+      "conditional_accuracy_wilson": [
+        0.45477836559850204,
+        0.6806469112000313
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_single_05_r2",
+      "condition": "single_05",
+      "repeat": 2,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 19.124,
+      "usage": {
+        "input_tokens": 12000,
+        "cached_input_tokens": 6784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 333,
+        "reasoning_output_tokens": 309
+      },
+      "accuracy": 1.0,
+      "macro_f1": 0.14285714285714285,
+      "correct": 1,
+      "conditional_accuracy_wilson": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_single_04_r3",
+      "condition": "single_04",
+      "repeat": 3,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 9.771,
+      "usage": {
+        "input_tokens": 10877,
+        "cached_input_tokens": 8576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 56,
+        "reasoning_output_tokens": 32
+      },
+      "accuracy": 1.0,
+      "macro_f1": 0.14285714285714285,
+      "correct": 1,
+      "conditional_accuracy_wilson": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_single_05_r1",
+      "condition": "single_05",
+      "repeat": 1,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 41.948,
+      "usage": {
+        "input_tokens": 12002,
+        "cached_input_tokens": 6784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 518,
+        "reasoning_output_tokens": 494
+      },
+      "accuracy": 1.0,
+      "macro_f1": 0.14285714285714285,
+      "correct": 1,
+      "conditional_accuracy_wilson": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_random_mapping_r3",
+      "condition": "random_mapping",
+      "repeat": 3,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 221.006,
+      "usage": {
+        "input_tokens": 93313,
+        "cached_input_tokens": 8576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 11740,
+        "reasoning_output_tokens": 10581
+      },
+      "accuracy": 0.5285714285714286,
+      "macro_f1": 0.5285714285714286,
+      "correct": 37,
+      "conditional_accuracy_wilson": [
+        0.4132188746832562,
+        0.6409512360361571
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_anonymous_r2",
+      "condition": "anonymous",
+      "repeat": 2,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 64.008,
+      "usage": {
+        "input_tokens": 58668,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1675,
+        "reasoning_output_tokens": 516
+      },
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "correct": 70,
+      "conditional_accuracy_wilson": [
+        0.9479769375897331,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_subset_batch_r3",
+      "condition": "subset_batch",
+      "repeat": 3,
+      "n": 7,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 62.035,
+      "usage": {
+        "input_tokens": 18044,
+        "cached_input_tokens": 8576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2798,
+        "reasoning_output_tokens": 2685
+      },
+      "accuracy": 0.2857142857142857,
+      "macro_f1": 0.14285714285714285,
+      "correct": 2,
+      "conditional_accuracy_wilson": [
+        0.08221892400405678,
+        0.6410655481673808
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_single_02_r3",
+      "condition": "single_02",
+      "repeat": 3,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 7.234,
+      "usage": {
+        "input_tokens": 12002,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 22,
+        "reasoning_output_tokens": 0
+      },
+      "accuracy": 1.0,
+      "macro_f1": 0.14285714285714285,
+      "correct": 1,
+      "conditional_accuracy_wilson": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_subset_batch_r2",
+      "condition": "subset_batch",
+      "repeat": 2,
+      "n": 7,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 61.903,
+      "usage": {
+        "input_tokens": 18044,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2677,
+        "reasoning_output_tokens": 2564
+      },
+      "accuracy": 0.2857142857142857,
+      "macro_f1": 0.14285714285714285,
+      "correct": 2,
+      "conditional_accuracy_wilson": [
+        0.08221892400405678,
+        0.6410655481673808
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_single_01_r1",
+      "condition": "single_01",
+      "repeat": 1,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 18.361,
+      "usage": {
+        "input_tokens": 12001,
+        "cached_input_tokens": 6784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 324,
+        "reasoning_output_tokens": 299
+      },
+      "accuracy": 1.0,
+      "macro_f1": 0.14285714285714285,
+      "correct": 1,
+      "conditional_accuracy_wilson": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_anonymous_r1",
+      "condition": "anonymous",
+      "repeat": 1,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 104.255,
+      "usage": {
+        "input_tokens": 57541,
+        "cached_input_tokens": 8576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5369,
+        "reasoning_output_tokens": 4349
+      },
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "correct": 70,
+      "conditional_accuracy_wilson": [
+        0.9479769375897331,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_pair_shuffle_r3",
+      "condition": "pair_shuffle",
+      "repeat": 3,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 48.958,
+      "usage": {
+        "input_tokens": 94438,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1253,
+        "reasoning_output_tokens": 94
+      },
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "correct": 70,
+      "conditional_accuracy_wilson": [
+        0.9479769375897331,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_single_02_r2",
+      "condition": "single_02",
+      "repeat": 2,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 7.543,
+      "usage": {
+        "input_tokens": 10873,
+        "cached_input_tokens": 8576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 45,
+        "reasoning_output_tokens": 21
+      },
+      "accuracy": 1.0,
+      "macro_f1": 0.14285714285714285,
+      "correct": 1,
+      "conditional_accuracy_wilson": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_clean_r3",
+      "condition": "clean",
+      "repeat": 3,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 49.724,
+      "usage": {
+        "input_tokens": 94438,
+        "cached_input_tokens": 6784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1229,
+        "reasoning_output_tokens": 70
+      },
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "correct": 70,
+      "conditional_accuracy_wilson": [
+        0.9479769375897331,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_single_01_r1",
+      "condition": "single_01",
+      "repeat": 1,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 27.349,
+      "usage": {
+        "input_tokens": 10876,
+        "cached_input_tokens": 8576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1183,
+        "reasoning_output_tokens": 1158
+      },
+      "accuracy": 1.0,
+      "macro_f1": 0.14285714285714285,
+      "correct": 1,
+      "conditional_accuracy_wilson": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_single_05_r3",
+      "condition": "single_05",
+      "repeat": 3,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 16.725,
+      "usage": {
+        "input_tokens": 12002,
+        "cached_input_tokens": 6784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 304,
+        "reasoning_output_tokens": 280
+      },
+      "accuracy": 1.0,
+      "macro_f1": 0.14285714285714285,
+      "correct": 1,
+      "conditional_accuracy_wilson": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_single_03_r3",
+      "condition": "single_03",
+      "repeat": 3,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 25.446,
+      "usage": {
+        "input_tokens": 10878,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 926,
+        "reasoning_output_tokens": 903
+      },
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "correct": 0,
+      "conditional_accuracy_wilson": [
+        0.0,
+        0.7934506856227626
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_random_mapping_r3",
+      "condition": "random_mapping",
+      "repeat": 3,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 75.572,
+      "usage": {
+        "input_tokens": 94436,
+        "cached_input_tokens": 6784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2193,
+        "reasoning_output_tokens": 1034
+      },
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "correct": 70,
+      "conditional_accuracy_wilson": [
+        0.9479769375897331,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_single_04_r2",
+      "condition": "single_04",
+      "repeat": 2,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 7.384,
+      "usage": {
+        "input_tokens": 10879,
+        "cached_input_tokens": 8576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 55,
+        "reasoning_output_tokens": 31
+      },
+      "accuracy": 1.0,
+      "macro_f1": 0.14285714285714285,
+      "correct": 1,
+      "conditional_accuracy_wilson": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_single_03_r3",
+      "condition": "single_03",
+      "repeat": 3,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 22.046,
+      "usage": {
+        "input_tokens": 12003,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 344,
+        "reasoning_output_tokens": 319
+      },
+      "accuracy": 1.0,
+      "macro_f1": 0.14285714285714285,
+      "correct": 1,
+      "conditional_accuracy_wilson": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_single_07_r2",
+      "condition": "single_07",
+      "repeat": 2,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 42.021,
+      "usage": {
+        "input_tokens": 10872,
+        "cached_input_tokens": 8576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1643,
+        "reasoning_output_tokens": 1620
+      },
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "correct": 0,
+      "conditional_accuracy_wilson": [
+        0.0,
+        0.7934506856227626
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_single_06_r3",
+      "condition": "single_06",
+      "repeat": 3,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 13.328,
+      "usage": {
+        "input_tokens": 12002,
+        "cached_input_tokens": 9728,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 204,
+        "reasoning_output_tokens": 182
+      },
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "correct": 0,
+      "conditional_accuracy_wilson": [
+        0.0,
+        0.7934506856227626
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_pair_shuffle_r2",
+      "condition": "pair_shuffle",
+      "repeat": 2,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 108.77,
+      "usage": {
+        "input_tokens": 93313,
+        "cached_input_tokens": 8576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5162,
+        "reasoning_output_tokens": 4142
+      },
+      "accuracy": 0.7142857142857143,
+      "macro_f1": 0.7142857142857143,
+      "correct": 50,
+      "conditional_accuracy_wilson": [
+        0.5994980341827975,
+        0.8067777962128025
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_single_04_r3",
+      "condition": "single_04",
+      "repeat": 3,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 11.647,
+      "usage": {
+        "input_tokens": 12000,
+        "cached_input_tokens": 6784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 22,
+        "reasoning_output_tokens": 0
+      },
+      "accuracy": 1.0,
+      "macro_f1": 0.14285714285714285,
+      "correct": 1,
+      "conditional_accuracy_wilson": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_single_06_r3",
+      "condition": "single_06",
+      "repeat": 3,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 25.602,
+      "usage": {
+        "input_tokens": 10875,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 828,
+        "reasoning_output_tokens": 806
+      },
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "correct": 0,
+      "conditional_accuracy_wilson": [
+        0.0,
+        0.7934506856227626
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_single_04_r2",
+      "condition": "single_04",
+      "repeat": 2,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 9.313,
+      "usage": {
+        "input_tokens": 12004,
+        "cached_input_tokens": 6784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 22,
+        "reasoning_output_tokens": 0
+      },
+      "accuracy": 1.0,
+      "macro_f1": 0.14285714285714285,
+      "correct": 1,
+      "conditional_accuracy_wilson": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_sample_shuffle_r3",
+      "condition": "sample_shuffle",
+      "repeat": 3,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 114.161,
+      "usage": {
+        "input_tokens": 93311,
+        "cached_input_tokens": 8576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5963,
+        "reasoning_output_tokens": 4943
+      },
+      "accuracy": 0.9857142857142858,
+      "macro_f1": 0.9856784819190835,
+      "correct": 69,
+      "conditional_accuracy_wilson": [
+        0.9234181286879168,
+        0.9974737535421097
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_single_07_r1",
+      "condition": "single_07",
+      "repeat": 1,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 17.097,
+      "usage": {
+        "input_tokens": 11999,
+        "cached_input_tokens": 6784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 361,
+        "reasoning_output_tokens": 338
+      },
+      "accuracy": 1.0,
+      "macro_f1": 0.14285714285714285,
+      "correct": 1,
+      "conditional_accuracy_wilson": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_single_03_r1",
+      "condition": "single_03",
+      "repeat": 1,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 39.06,
+      "usage": {
+        "input_tokens": 10876,
+        "cached_input_tokens": 8576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1532,
+        "reasoning_output_tokens": 1507
+      },
+      "accuracy": 1.0,
+      "macro_f1": 0.14285714285714285,
+      "correct": 1,
+      "conditional_accuracy_wilson": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_single_02_r1",
+      "condition": "single_02",
+      "repeat": 1,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 8.878,
+      "usage": {
+        "input_tokens": 12000,
+        "cached_input_tokens": 9728,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 22,
+        "reasoning_output_tokens": 0
+      },
+      "accuracy": 1.0,
+      "macro_f1": 0.14285714285714285,
+      "correct": 1,
+      "conditional_accuracy_wilson": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_anonymous_r2",
+      "condition": "anonymous",
+      "repeat": 2,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 128.526,
+      "usage": {
+        "input_tokens": 57541,
+        "cached_input_tokens": 8576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6515,
+        "reasoning_output_tokens": 5491
+      },
+      "accuracy": 0.9428571428571428,
+      "macro_f1": 0.942594581692326,
+      "correct": 66,
+      "conditional_accuracy_wilson": [
+        0.8620804952516177,
+        0.9775562208992887
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_single_03_r1",
+      "condition": "single_03",
+      "repeat": 1,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 15.286,
+      "usage": {
+        "input_tokens": 12001,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 283,
+        "reasoning_output_tokens": 258
+      },
+      "accuracy": 1.0,
+      "macro_f1": 0.14285714285714285,
+      "correct": 1,
+      "conditional_accuracy_wilson": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_random_mapping_r1",
+      "condition": "random_mapping",
+      "repeat": 1,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 174.241,
+      "usage": {
+        "input_tokens": 93311,
+        "cached_input_tokens": 8576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9007,
+        "reasoning_output_tokens": 7987
+      },
+      "accuracy": 0.5,
+      "macro_f1": 0.5,
+      "correct": 35,
+      "conditional_accuracy_wilson": [
+        0.3859571764530239,
+        0.6140428235469761
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_single_04_r1",
+      "condition": "single_04",
+      "repeat": 1,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 9.778,
+      "usage": {
+        "input_tokens": 12000,
+        "cached_input_tokens": 9728,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 22,
+        "reasoning_output_tokens": 0
+      },
+      "accuracy": 1.0,
+      "macro_f1": 0.14285714285714285,
+      "correct": 1,
+      "conditional_accuracy_wilson": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_single_06_r2",
+      "condition": "single_06",
+      "repeat": 2,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 32.004,
+      "usage": {
+        "input_tokens": 10873,
+        "cached_input_tokens": 8576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 986,
+        "reasoning_output_tokens": 962
+      },
+      "accuracy": 1.0,
+      "macro_f1": 0.14285714285714285,
+      "correct": 1,
+      "conditional_accuracy_wilson": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_pair_shuffle_r2",
+      "condition": "pair_shuffle",
+      "repeat": 2,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 56.162,
+      "usage": {
+        "input_tokens": 94442,
+        "cached_input_tokens": 9728,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1530,
+        "reasoning_output_tokens": 371
+      },
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "correct": 70,
+      "conditional_accuracy_wilson": [
+        0.9479769375897331,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_single_02_r1",
+      "condition": "single_02",
+      "repeat": 1,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 7.375,
+      "usage": {
+        "input_tokens": 10877,
+        "cached_input_tokens": 5888,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 55,
+        "reasoning_output_tokens": 31
+      },
+      "accuracy": 1.0,
+      "macro_f1": 0.14285714285714285,
+      "correct": 1,
+      "conditional_accuracy_wilson": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_clean_r1",
+      "condition": "clean",
+      "repeat": 1,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 46.241,
+      "usage": {
+        "input_tokens": 94438,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1236,
+        "reasoning_output_tokens": 77
+      },
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "correct": 70,
+      "conditional_accuracy_wilson": [
+        0.9479769375897331,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_subset_batch_r1",
+      "condition": "subset_batch",
+      "repeat": 1,
+      "n": 7,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 56.423,
+      "usage": {
+        "input_tokens": 18044,
+        "cached_input_tokens": 8576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2059,
+        "reasoning_output_tokens": 1946
+      },
+      "accuracy": 0.2857142857142857,
+      "macro_f1": 0.14285714285714285,
+      "correct": 2,
+      "conditional_accuracy_wilson": [
+        0.08221892400405678,
+        0.6410655481673808
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_single_07_r3",
+      "condition": "single_07",
+      "repeat": 3,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 24.356,
+      "usage": {
+        "input_tokens": 12001,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 504,
+        "reasoning_output_tokens": 481
+      },
+      "accuracy": 1.0,
+      "macro_f1": 0.14285714285714285,
+      "correct": 1,
+      "conditional_accuracy_wilson": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_single_05_r2",
+      "condition": "single_05",
+      "repeat": 2,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 24.545,
+      "usage": {
+        "input_tokens": 10875,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 717,
+        "reasoning_output_tokens": 693
+      },
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "correct": 0,
+      "conditional_accuracy_wilson": [
+        0.0,
+        0.7934506856227626
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_rotation_r1",
+      "condition": "rotation",
+      "repeat": 1,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 38.324,
+      "usage": {
+        "input_tokens": 94436,
+        "cached_input_tokens": 9728,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1986,
+        "reasoning_output_tokens": 827
+      },
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "correct": 70,
+      "conditional_accuracy_wilson": [
+        0.9479769375897331,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_single_07_r1",
+      "condition": "single_07",
+      "repeat": 1,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 30.477,
+      "usage": {
+        "input_tokens": 10874,
+        "cached_input_tokens": 8576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1020,
+        "reasoning_output_tokens": 997
+      },
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "correct": 0,
+      "conditional_accuracy_wilson": [
+        0.0,
+        0.7934506856227626
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_subset_batch_r3",
+      "condition": "subset_batch",
+      "repeat": 3,
+      "n": 7,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 20.609,
+      "usage": {
+        "input_tokens": 19175,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 392,
+        "reasoning_output_tokens": 266
+      },
+      "accuracy": 0.8571428571428571,
+      "macro_f1": 0.42857142857142855,
+      "correct": 6,
+      "conditional_accuracy_wilson": [
+        0.4868721707256811,
+        0.9743203756552565
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_random_mapping_r2",
+      "condition": "random_mapping",
+      "repeat": 2,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 165.299,
+      "usage": {
+        "input_tokens": 93311,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8813,
+        "reasoning_output_tokens": 7658
+      },
+      "accuracy": 0.5571428571428572,
+      "macro_f1": 0.5521596198287927,
+      "correct": 39,
+      "conditional_accuracy_wilson": [
+        0.44083551053188,
+        0.6675047109069467
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_subset_batch_r2",
+      "condition": "subset_batch",
+      "repeat": 2,
+      "n": 7,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 18.341,
+      "usage": {
+        "input_tokens": 19173,
+        "cached_input_tokens": 2688,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 328,
+        "reasoning_output_tokens": 202
+      },
+      "accuracy": 0.8571428571428571,
+      "macro_f1": 0.42857142857142855,
+      "correct": 6,
+      "conditional_accuracy_wilson": [
+        0.4868721707256811,
+        0.9743203756552565
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_single_07_r3",
+      "condition": "single_07",
+      "repeat": 3,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 17.285,
+      "usage": {
+        "input_tokens": 10874,
+        "cached_input_tokens": 8576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 365,
+        "reasoning_output_tokens": 344
+      },
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "correct": 0,
+      "conditional_accuracy_wilson": [
+        0.0,
+        0.7934506856227626
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_sample_shuffle_r3",
+      "condition": "sample_shuffle",
+      "repeat": 3,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 49.381,
+      "usage": {
+        "input_tokens": 94440,
+        "cached_input_tokens": 6784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1236,
+        "reasoning_output_tokens": 77
+      },
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "correct": 70,
+      "conditional_accuracy_wilson": [
+        0.9479769375897331,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_single_02_r3",
+      "condition": "single_02",
+      "repeat": 3,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 7.883,
+      "usage": {
+        "input_tokens": 10877,
+        "cached_input_tokens": 8576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 49,
+        "reasoning_output_tokens": 25
+      },
+      "accuracy": 1.0,
+      "macro_f1": 0.14285714285714285,
+      "correct": 1,
+      "conditional_accuracy_wilson": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_single_02_r2",
+      "condition": "single_02",
+      "repeat": 2,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 9.412,
+      "usage": {
+        "input_tokens": 12002,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 22,
+        "reasoning_output_tokens": 0
+      },
+      "accuracy": 1.0,
+      "macro_f1": 0.14285714285714285,
+      "correct": 1,
+      "conditional_accuracy_wilson": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_single_06_r1",
+      "condition": "single_06",
+      "repeat": 1,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 15.336,
+      "usage": {
+        "input_tokens": 10875,
+        "cached_input_tokens": 8576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 366,
+        "reasoning_output_tokens": 344
+      },
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "correct": 0,
+      "conditional_accuracy_wilson": [
+        0.0,
+        0.7934506856227626
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_subset_batch_r1",
+      "condition": "subset_batch",
+      "repeat": 1,
+      "n": 7,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 17.775,
+      "usage": {
+        "input_tokens": 19175,
+        "cached_input_tokens": 6784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 316,
+        "reasoning_output_tokens": 190
+      },
+      "accuracy": 0.8571428571428571,
+      "macro_f1": 0.42857142857142855,
+      "correct": 6,
+      "conditional_accuracy_wilson": [
+        0.4868721707256811,
+        0.9743203756552565
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_clean_r2",
+      "condition": "clean",
+      "repeat": 2,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 69.377,
+      "usage": {
+        "input_tokens": 93307,
+        "cached_input_tokens": 8576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3435,
+        "reasoning_output_tokens": 2276
+      },
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "correct": 70,
+      "conditional_accuracy_wilson": [
+        0.9479769375897331,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_random_mapping_r2",
+      "condition": "random_mapping",
+      "repeat": 2,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 73.72,
+      "usage": {
+        "input_tokens": 94436,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2193,
+        "reasoning_output_tokens": 1034
+      },
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "correct": 70,
+      "conditional_accuracy_wilson": [
+        0.9479769375897331,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_clean_r1",
+      "condition": "clean",
+      "repeat": 1,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 78.312,
+      "usage": {
+        "input_tokens": 93309,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4009,
+        "reasoning_output_tokens": 2850
+      },
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "correct": 70,
+      "conditional_accuracy_wilson": [
+        0.9479769375897331,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_single_07_r2",
+      "condition": "single_07",
+      "repeat": 2,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 20.174,
+      "usage": {
+        "input_tokens": 11999,
+        "cached_input_tokens": 9728,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 369,
+        "reasoning_output_tokens": 346
+      },
+      "accuracy": 1.0,
+      "macro_f1": 0.14285714285714285,
+      "correct": 1,
+      "conditional_accuracy_wilson": [
+        0.20654931437723745,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_sample_shuffle_r1",
+      "condition": "sample_shuffle",
+      "repeat": 1,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 107.987,
+      "usage": {
+        "input_tokens": 93311,
+        "cached_input_tokens": 8576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5354,
+        "reasoning_output_tokens": 4334
+      },
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "correct": 70,
+      "conditional_accuracy_wilson": [
+        0.9479769375897331,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_single_01_r3",
+      "condition": "single_01",
+      "repeat": 3,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 24.577,
+      "usage": {
+        "input_tokens": 12003,
+        "cached_input_tokens": 6784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 465,
+        "reasoning_output_tokens": 442
+      },
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "correct": 0,
+      "conditional_accuracy_wilson": [
+        0.0,
+        0.7934506856227626
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_single_05_r3",
+      "condition": "single_05",
+      "repeat": 3,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 12.108,
+      "usage": {
+        "input_tokens": 10873,
+        "cached_input_tokens": 8576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 185,
+        "reasoning_output_tokens": 163
+      },
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "correct": 0,
+      "conditional_accuracy_wilson": [
+        0.0,
+        0.7934506856227626
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_sample_shuffle_r1",
+      "condition": "sample_shuffle",
+      "repeat": 1,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 51.697,
+      "usage": {
+        "input_tokens": 94438,
+        "cached_input_tokens": 6784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1242,
+        "reasoning_output_tokens": 83
+      },
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "correct": 70,
+      "conditional_accuracy_wilson": [
+        0.9479769375897331,
+        1.0
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "group": "tep_single_03_r2",
+      "condition": "single_03",
+      "repeat": 2,
+      "n": 1,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 44.174,
+      "usage": {
+        "input_tokens": 10876,
+        "cached_input_tokens": 8576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1763,
+        "reasoning_output_tokens": 1738
+      },
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "correct": 0,
+      "conditional_accuracy_wilson": [
+        0.0,
+        0.7934506856227626
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "group": "tep_rotation_r3",
+      "condition": "rotation",
+      "repeat": 3,
+      "n": 70,
+      "status": "complete",
+      "diagnostics": 0,
+      "elapsed_seconds": 60.638,
+      "usage": {
+        "input_tokens": 94436,
+        "cached_input_tokens": 6784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1621,
+        "reasoning_output_tokens": 462
+      },
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "correct": 70,
+      "conditional_accuracy_wilson": [
+        0.9479769375897331,
+        1.0
+      ]
+    }
+  ],
+  "paired_contrasts": [
+    {
+      "model": "gpt-5.6-sol",
+      "repeat": 1,
+      "left": "clean",
+      "right": "rotation",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 0.24285714285714285,
+      "accuracy_difference": 0.7571428571428571,
+      "conditional_paired_ci": [
+        0.6571428571428571,
+        0.8571428571428571
+      ],
+      "flips": 53,
+      "flip_rate": 0.7571428571428571
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "repeat": 1,
+      "left": "clean",
+      "right": "pair_shuffle",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 1.0,
+      "accuracy_difference": 0.0,
+      "conditional_paired_ci": [
+        0.0,
+        0.0
+      ],
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "repeat": 1,
+      "left": "clean",
+      "right": "anonymous",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 1.0,
+      "accuracy_difference": 0.0,
+      "conditional_paired_ci": [
+        0.0,
+        0.0
+      ],
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "repeat": 1,
+      "left": "clean",
+      "right": "random_mapping",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 0.5,
+      "accuracy_difference": 0.5,
+      "conditional_paired_ci": [
+        0.38571428571428573,
+        0.6142857142857143
+      ],
+      "flips": 35,
+      "flip_rate": 0.5
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "repeat": 1,
+      "left": "clean",
+      "right": "sample_shuffle",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 1.0,
+      "accuracy_difference": 0.0,
+      "conditional_paired_ci": [
+        0.0,
+        0.0
+      ],
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "repeat": 1,
+      "left": "clean",
+      "right": "subset_batch",
+      "requested_n": 7,
+      "paired_n": 7,
+      "left_accuracy": 1.0,
+      "right_accuracy": 0.2857142857142857,
+      "accuracy_difference": 0.7142857142857143,
+      "conditional_paired_ci": [
+        0.42857142857142855,
+        1.0
+      ],
+      "flips": 5,
+      "flip_rate": 0.7142857142857143
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "repeat": 1,
+      "left": "subset_batch",
+      "right": "single_panel",
+      "requested_n": 7,
+      "paired_n": 7,
+      "left_accuracy": 0.2857142857142857,
+      "right_accuracy": 0.5714285714285714,
+      "accuracy_difference": -0.2857142857142857,
+      "conditional_paired_ci": [
+        -0.5714285714285714,
+        0.0
+      ],
+      "flips": 3,
+      "flip_rate": 0.42857142857142855
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "repeat": 1,
+      "left": "clean",
+      "right": "single_panel",
+      "requested_n": 7,
+      "paired_n": 7,
+      "left_accuracy": 1.0,
+      "right_accuracy": 0.5714285714285714,
+      "accuracy_difference": 0.42857142857142855,
+      "conditional_paired_ci": [
+        0.14285714285714285,
+        0.8571428571428571
+      ],
+      "flips": 3,
+      "flip_rate": 0.42857142857142855
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "repeat": 2,
+      "left": "clean",
+      "right": "rotation",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 0.5285714285714286,
+      "accuracy_difference": 0.4714285714285714,
+      "conditional_paired_ci": [
+        0.35714285714285715,
+        0.5857142857142857
+      ],
+      "flips": 33,
+      "flip_rate": 0.4714285714285714
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "repeat": 2,
+      "left": "clean",
+      "right": "pair_shuffle",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 0.7142857142857143,
+      "accuracy_difference": 0.2857142857142857,
+      "conditional_paired_ci": [
+        0.1853571428571432,
+        0.4
+      ],
+      "flips": 20,
+      "flip_rate": 0.2857142857142857
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "repeat": 2,
+      "left": "clean",
+      "right": "anonymous",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 0.9428571428571428,
+      "accuracy_difference": 0.05714285714285714,
+      "conditional_paired_ci": [
+        0.014285714285714285,
+        0.11428571428571428
+      ],
+      "flips": 4,
+      "flip_rate": 0.05714285714285714
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "repeat": 2,
+      "left": "clean",
+      "right": "random_mapping",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 0.5571428571428572,
+      "accuracy_difference": 0.44285714285714284,
+      "conditional_paired_ci": [
+        0.32857142857142857,
+        0.5571428571428572
+      ],
+      "flips": 31,
+      "flip_rate": 0.44285714285714284
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "repeat": 2,
+      "left": "clean",
+      "right": "sample_shuffle",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 1.0,
+      "accuracy_difference": 0.0,
+      "conditional_paired_ci": [
+        0.0,
+        0.0
+      ],
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "repeat": 2,
+      "left": "clean",
+      "right": "subset_batch",
+      "requested_n": 7,
+      "paired_n": 7,
+      "left_accuracy": 1.0,
+      "right_accuracy": 0.2857142857142857,
+      "accuracy_difference": 0.7142857142857143,
+      "conditional_paired_ci": [
+        0.42857142857142855,
+        1.0
+      ],
+      "flips": 5,
+      "flip_rate": 0.7142857142857143
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "repeat": 2,
+      "left": "subset_batch",
+      "right": "single_panel",
+      "requested_n": 7,
+      "paired_n": 7,
+      "left_accuracy": 0.2857142857142857,
+      "right_accuracy": 0.5714285714285714,
+      "accuracy_difference": -0.2857142857142857,
+      "conditional_paired_ci": [
+        -0.5714285714285714,
+        0.0
+      ],
+      "flips": 2,
+      "flip_rate": 0.2857142857142857
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "repeat": 2,
+      "left": "clean",
+      "right": "single_panel",
+      "requested_n": 7,
+      "paired_n": 7,
+      "left_accuracy": 1.0,
+      "right_accuracy": 0.5714285714285714,
+      "accuracy_difference": 0.42857142857142855,
+      "conditional_paired_ci": [
+        0.14285714285714285,
+        0.8571428571428571
+      ],
+      "flips": 3,
+      "flip_rate": 0.42857142857142855
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "repeat": 3,
+      "left": "clean",
+      "right": "rotation",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 0.21428571428571427,
+      "accuracy_difference": 0.7857142857142857,
+      "conditional_paired_ci": [
+        0.6857142857142857,
+        0.8714285714285714
+      ],
+      "flips": 55,
+      "flip_rate": 0.7857142857142857
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "repeat": 3,
+      "left": "clean",
+      "right": "pair_shuffle",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 0.5714285714285714,
+      "accuracy_difference": 0.42857142857142855,
+      "conditional_paired_ci": [
+        0.3142857142857143,
+        0.5428571428571428
+      ],
+      "flips": 30,
+      "flip_rate": 0.42857142857142855
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "repeat": 3,
+      "left": "clean",
+      "right": "anonymous",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 1.0,
+      "accuracy_difference": 0.0,
+      "conditional_paired_ci": [
+        0.0,
+        0.0
+      ],
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "repeat": 3,
+      "left": "clean",
+      "right": "random_mapping",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 0.5285714285714286,
+      "accuracy_difference": 0.4714285714285714,
+      "conditional_paired_ci": [
+        0.35714285714285715,
+        0.5857142857142857
+      ],
+      "flips": 33,
+      "flip_rate": 0.4714285714285714
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "repeat": 3,
+      "left": "clean",
+      "right": "sample_shuffle",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 0.9857142857142858,
+      "accuracy_difference": 0.014285714285714285,
+      "conditional_paired_ci": [
+        0.0,
+        0.04285714285714286
+      ],
+      "flips": 1,
+      "flip_rate": 0.014285714285714285
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "repeat": 3,
+      "left": "clean",
+      "right": "subset_batch",
+      "requested_n": 7,
+      "paired_n": 7,
+      "left_accuracy": 1.0,
+      "right_accuracy": 0.2857142857142857,
+      "accuracy_difference": 0.7142857142857143,
+      "conditional_paired_ci": [
+        0.42857142857142855,
+        1.0
+      ],
+      "flips": 5,
+      "flip_rate": 0.7142857142857143
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "repeat": 3,
+      "left": "subset_batch",
+      "right": "single_panel",
+      "requested_n": 7,
+      "paired_n": 7,
+      "left_accuracy": 0.2857142857142857,
+      "right_accuracy": 0.42857142857142855,
+      "accuracy_difference": -0.14285714285714285,
+      "conditional_paired_ci": [
+        -0.42857142857142855,
+        0.0
+      ],
+      "flips": 4,
+      "flip_rate": 0.5714285714285714
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "repeat": 3,
+      "left": "clean",
+      "right": "single_panel",
+      "requested_n": 7,
+      "paired_n": 7,
+      "left_accuracy": 1.0,
+      "right_accuracy": 0.42857142857142855,
+      "accuracy_difference": 0.5714285714285714,
+      "conditional_paired_ci": [
+        0.14285714285714285,
+        0.8571428571428571
+      ],
+      "flips": 4,
+      "flip_rate": 0.5714285714285714
+    },
+    {
+      "model": "gpt-6-astra",
+      "repeat": 1,
+      "left": "clean",
+      "right": "rotation",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 1.0,
+      "accuracy_difference": 0.0,
+      "conditional_paired_ci": [
+        0.0,
+        0.0
+      ],
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "model": "gpt-6-astra",
+      "repeat": 1,
+      "left": "clean",
+      "right": "pair_shuffle",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 1.0,
+      "accuracy_difference": 0.0,
+      "conditional_paired_ci": [
+        0.0,
+        0.0
+      ],
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "model": "gpt-6-astra",
+      "repeat": 1,
+      "left": "clean",
+      "right": "anonymous",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 1.0,
+      "accuracy_difference": 0.0,
+      "conditional_paired_ci": [
+        0.0,
+        0.0
+      ],
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "model": "gpt-6-astra",
+      "repeat": 1,
+      "left": "clean",
+      "right": "random_mapping",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 1.0,
+      "accuracy_difference": 0.0,
+      "conditional_paired_ci": [
+        0.0,
+        0.0
+      ],
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "model": "gpt-6-astra",
+      "repeat": 1,
+      "left": "clean",
+      "right": "sample_shuffle",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 1.0,
+      "accuracy_difference": 0.0,
+      "conditional_paired_ci": [
+        0.0,
+        0.0
+      ],
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "model": "gpt-6-astra",
+      "repeat": 1,
+      "left": "clean",
+      "right": "subset_batch",
+      "requested_n": 7,
+      "paired_n": 7,
+      "left_accuracy": 1.0,
+      "right_accuracy": 0.8571428571428571,
+      "accuracy_difference": 0.14285714285714285,
+      "conditional_paired_ci": [
+        0.0,
+        0.42857142857142855
+      ],
+      "flips": 1,
+      "flip_rate": 0.14285714285714285
+    },
+    {
+      "model": "gpt-6-astra",
+      "repeat": 1,
+      "left": "subset_batch",
+      "right": "single_panel",
+      "requested_n": 7,
+      "paired_n": 7,
+      "left_accuracy": 0.8571428571428571,
+      "right_accuracy": 0.8571428571428571,
+      "accuracy_difference": 0.0,
+      "conditional_paired_ci": [
+        0.0,
+        0.0
+      ],
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "model": "gpt-6-astra",
+      "repeat": 1,
+      "left": "clean",
+      "right": "single_panel",
+      "requested_n": 7,
+      "paired_n": 7,
+      "left_accuracy": 1.0,
+      "right_accuracy": 0.8571428571428571,
+      "accuracy_difference": 0.14285714285714285,
+      "conditional_paired_ci": [
+        0.0,
+        0.42857142857142855
+      ],
+      "flips": 1,
+      "flip_rate": 0.14285714285714285
+    },
+    {
+      "model": "gpt-6-astra",
+      "repeat": 2,
+      "left": "clean",
+      "right": "rotation",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 1.0,
+      "accuracy_difference": 0.0,
+      "conditional_paired_ci": [
+        0.0,
+        0.0
+      ],
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "model": "gpt-6-astra",
+      "repeat": 2,
+      "left": "clean",
+      "right": "pair_shuffle",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 1.0,
+      "accuracy_difference": 0.0,
+      "conditional_paired_ci": [
+        0.0,
+        0.0
+      ],
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "model": "gpt-6-astra",
+      "repeat": 2,
+      "left": "clean",
+      "right": "anonymous",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 1.0,
+      "accuracy_difference": 0.0,
+      "conditional_paired_ci": [
+        0.0,
+        0.0
+      ],
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "model": "gpt-6-astra",
+      "repeat": 2,
+      "left": "clean",
+      "right": "random_mapping",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 1.0,
+      "accuracy_difference": 0.0,
+      "conditional_paired_ci": [
+        0.0,
+        0.0
+      ],
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "model": "gpt-6-astra",
+      "repeat": 2,
+      "left": "clean",
+      "right": "sample_shuffle",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 1.0,
+      "accuracy_difference": 0.0,
+      "conditional_paired_ci": [
+        0.0,
+        0.0
+      ],
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "model": "gpt-6-astra",
+      "repeat": 2,
+      "left": "clean",
+      "right": "subset_batch",
+      "requested_n": 7,
+      "paired_n": 7,
+      "left_accuracy": 1.0,
+      "right_accuracy": 0.8571428571428571,
+      "accuracy_difference": 0.14285714285714285,
+      "conditional_paired_ci": [
+        0.0,
+        0.42857142857142855
+      ],
+      "flips": 1,
+      "flip_rate": 0.14285714285714285
+    },
+    {
+      "model": "gpt-6-astra",
+      "repeat": 2,
+      "left": "subset_batch",
+      "right": "single_panel",
+      "requested_n": 7,
+      "paired_n": 7,
+      "left_accuracy": 0.8571428571428571,
+      "right_accuracy": 0.8571428571428571,
+      "accuracy_difference": 0.0,
+      "conditional_paired_ci": [
+        0.0,
+        0.0
+      ],
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "model": "gpt-6-astra",
+      "repeat": 2,
+      "left": "clean",
+      "right": "single_panel",
+      "requested_n": 7,
+      "paired_n": 7,
+      "left_accuracy": 1.0,
+      "right_accuracy": 0.8571428571428571,
+      "accuracy_difference": 0.14285714285714285,
+      "conditional_paired_ci": [
+        0.0,
+        0.42857142857142855
+      ],
+      "flips": 1,
+      "flip_rate": 0.14285714285714285
+    },
+    {
+      "model": "gpt-6-astra",
+      "repeat": 3,
+      "left": "clean",
+      "right": "rotation",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 1.0,
+      "accuracy_difference": 0.0,
+      "conditional_paired_ci": [
+        0.0,
+        0.0
+      ],
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "model": "gpt-6-astra",
+      "repeat": 3,
+      "left": "clean",
+      "right": "pair_shuffle",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 1.0,
+      "accuracy_difference": 0.0,
+      "conditional_paired_ci": [
+        0.0,
+        0.0
+      ],
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "model": "gpt-6-astra",
+      "repeat": 3,
+      "left": "clean",
+      "right": "anonymous",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 1.0,
+      "accuracy_difference": 0.0,
+      "conditional_paired_ci": [
+        0.0,
+        0.0
+      ],
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "model": "gpt-6-astra",
+      "repeat": 3,
+      "left": "clean",
+      "right": "random_mapping",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 1.0,
+      "accuracy_difference": 0.0,
+      "conditional_paired_ci": [
+        0.0,
+        0.0
+      ],
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "model": "gpt-6-astra",
+      "repeat": 3,
+      "left": "clean",
+      "right": "sample_shuffle",
+      "requested_n": 70,
+      "paired_n": 70,
+      "left_accuracy": 1.0,
+      "right_accuracy": 1.0,
+      "accuracy_difference": 0.0,
+      "conditional_paired_ci": [
+        0.0,
+        0.0
+      ],
+      "flips": 0,
+      "flip_rate": 0.0
+    },
+    {
+      "model": "gpt-6-astra",
+      "repeat": 3,
+      "left": "clean",
+      "right": "subset_batch",
+      "requested_n": 7,
+      "paired_n": 7,
+      "left_accuracy": 1.0,
+      "right_accuracy": 0.8571428571428571,
+      "accuracy_difference": 0.14285714285714285,
+      "conditional_paired_ci": [
+        0.0,
+        0.42857142857142855
+      ],
+      "flips": 1,
+      "flip_rate": 0.14285714285714285
+    },
+    {
+      "model": "gpt-6-astra",
+      "repeat": 3,
+      "left": "subset_batch",
+      "right": "single_panel",
+      "requested_n": 7,
+      "paired_n": 7,
+      "left_accuracy": 0.8571428571428571,
+      "right_accuracy": 0.7142857142857143,
+      "accuracy_difference": 0.14285714285714285,
+      "conditional_paired_ci": [
+        0.0,
+        0.42857142857142855
+      ],
+      "flips": 1,
+      "flip_rate": 0.14285714285714285
+    },
+    {
+      "model": "gpt-6-astra",
+      "repeat": 3,
+      "left": "clean",
+      "right": "single_panel",
+      "requested_n": 7,
+      "paired_n": 7,
+      "left_accuracy": 1.0,
+      "right_accuracy": 0.7142857142857143,
+      "accuracy_difference": 0.2857142857142857,
+      "conditional_paired_ci": [
+        0.0,
+        0.5714285714285714
+      ],
+      "flips": 2,
+      "flip_rate": 0.2857142857142857
+    }
+  ],
+  "limitations": [
+    "Same previously inspected 70 TEP runs; no new generalization evidence",
+    "Two selected services from one provider",
+    "One random permutation per transformation; no population of permutations",
+    "Only seven label-free-selected context probe cases, possibly missing classes",
+    "Three fresh sessions do not estimate a stable service variance",
+    "Descriptor invariance cannot prove memorization, causal reasoning or independence"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Revision v3 successful classification batch",
+  "description": "A complete successful prediction file is an array containing exactly id and predicted in every object. C-MAPSS has 60 rows and TEP has 70 rows. Labels below are the frozen valid_labels values for this revision; case is significant. This schema describes successful *_results.json files only. The semantically failed session has no repaired result file, and N/A is not a prediction label.",
+  "$comment": "Ordinary JSON Schema cannot compare this array with the separate inference/batches.json sample list. It cannot enforce unique id values independently of other properties, or prove exact sample identity/order, prompt hashes, raw-response correspondence, tool absence, and prior freezing. uniqueItems rejects identical objects only. score_revision_v3.py performs these cross-file checks and is authoritative. For a future dataset, supply that dataset's frozen valid_labels enum rather than accepting the union of label vocabularies.",
+  "oneOf": [
+    { "$ref": "#/$defs/cmapss_predictions" },
+    { "$ref": "#/$defs/tep_predictions" }
+  ],
+  "$defs": {
+    "prediction": {
+      "type": "object",
+      "required": ["id", "predicted"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}$",
+          "description": "Exact lowercase eight-character hexadecimal ID from the frozen v3 input. Preserve leading zeros; do not coerce to an integer. Equality to the selected input row is checked separately."
+        },
+        "predicted": { "type": "string" }
+      }
+    },
+    "cmapss_row": {
+      "allOf": [
+        { "$ref": "#/$defs/prediction" },
+        { "properties": { "predicted": { "enum": ["Healthy", "Degrading", "Critical"] } } }
+      ]
+    },
+    "tep_row": {
+      "allOf": [
+        { "$ref": "#/$defs/prediction" },
+        { "properties": { "predicted": { "enum": ["Normal", "Fault_1", "Fault_2", "Fault_4", "Fault_6", "Fault_7", "Fault_13"] } } }
+      ]
+    },
+    "cmapss_predictions": {
+      "type": "array",
+      "minItems": 60,
+      "maxItems": 60,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/cmapss_row" }
+    },
+    "tep_predictions": {
+      "type": "array",
+      "minItems": 70,
+      "maxItems": 70,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/tep_row" }
+    }
+  }
+}

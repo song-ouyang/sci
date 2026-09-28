@@ -1,0 +1,977 @@
+{
+  "checked_on": "2026-09-27",
+  "scope": "Bibliographic metadata only; no unpublished manuscript uploaded. Does not certify cited claim support or human review.",
+  "references": [
+    {
+      "key": "abboush2026sensor",
+      "bibliography_title": "Sensor-Level Fault Diagnosis for Automotive Software Validation Using Large Language Models",
+      "bibliography_doi": "10.48550/arXiv.2608.05921",
+      "human_verified": false,
+      "status": "official_source_opened_separately",
+      "source_url": "https://arxiv.org/abs/2608.05921"
+    },
+    {
+      "key": "chen2014cognitive",
+      "bibliography_title": "Cognitive fault diagnosis in {Tennessee Eastman Process} using learning in the model space",
+      "bibliography_doi": "10.1016/j.compchemeng.2014.03.015",
+      "human_verified": false,
+      "status": "metadata_retrieved_not_fulltext_claim_validation",
+      "resolved_title": [
+        "Cognitive fault diagnosis in Tennessee Eastman Process using learning in the model space"
+      ],
+      "resolved_doi": "10.1016/j.compchemeng.2014.03.015",
+      "resolved_authors": [
+        {
+          "given": "Huanhuan",
+          "family": "Chen",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Peter",
+          "family": "Ti\u0148o",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xin",
+          "family": "Yao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "initial_lookup_error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "key": "constantinides2025failuresensoriq",
+      "bibliography_title": "{FailureSensorIQ}: A Multi-Choice {QA} Dataset for Understanding Sensor Relationships and Failure Modes",
+      "bibliography_doi": "10.52202/085713-4212",
+      "human_verified": false,
+      "status": "official_proceedings_metadata_opened",
+      "source_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/b7ba530076dee3b4f19847d8dce983da-Abstract-Datasets_and_Benchmarks_Track.html",
+      "resolved_doi": "10.52202/085713-4212",
+      "resolved_title": "FailureSensorIQ: A Multi-Choice QA Dataset for Understanding Sensor Relationships and Failure Modes",
+      "initial_lookup_error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "key": "downs1993plant",
+      "bibliography_title": "A plant-wide industrial process control problem",
+      "bibliography_doi": "10.1016/0098-1354(93)80018-i",
+      "human_verified": false,
+      "resolved_title": [
+        "A plant-wide industrial process control problem"
+      ],
+      "resolved_doi": "10.1016/0098-1354(93)80018-i",
+      "resolved_authors": [
+        {
+          "given": "J.J.",
+          "family": "Downs",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "E.F.",
+          "family": "Vogel",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1993,
+            3
+          ]
+        ]
+      },
+      "container_title": [
+        "Computers &amp; Chemical Engineering"
+      ],
+      "volume": "17",
+      "page": "245-255",
+      "status": "metadata_retrieved_not_fulltext_claim_validation",
+      "metadata_source": "https://api.crossref.org/works?rows=1&query.title=A%20plant-wide%20industrial%20process%20control%20problem",
+      "doi_added_after_metadata_check": true
+    },
+    {
+      "key": "kassis2026skills",
+      "bibliography_title": "Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents",
+      "bibliography_doi": "10.48550/arXiv.2609.00065",
+      "human_verified": false,
+      "status": "official_source_opened_separately",
+      "source_url": "https://arxiv.org/abs/2609.00065"
+    },
+    {
+      "key": "lei2020applications",
+      "bibliography_title": "Applications of machine learning to machine fault diagnosis: A review and roadmap",
+      "bibliography_doi": "10.1016/j.ymssp.2019.106587",
+      "human_verified": false,
+      "resolved_title": [
+        "Applications of machine learning to machine fault diagnosis: A review and roadmap"
+      ],
+      "resolved_doi": "10.1016/j.ymssp.2019.106587",
+      "resolved_authors": [
+        {
+          "given": "Yaguo",
+          "family": "Lei",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3555-1916",
+          "authenticated-orcid": false,
+          "given": "Bin",
+          "family": "Yang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xinwei",
+          "family": "Jiang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Feng",
+          "family": "Jia",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Naipeng",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Asoke K.",
+          "family": "Nandi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4
+          ]
+        ]
+      },
+      "container_title": [
+        "Mechanical Systems and Signal Processing"
+      ],
+      "volume": "138",
+      "page": "106587",
+      "status": "metadata_retrieved_not_fulltext_claim_validation",
+      "metadata_source": "https://api.crossref.org/works?rows=1&query.title=Applications%20of%20machine%20learning%20to%20machine%20fault%20diagnosis%3A%20A%20review%20and%20roadmap",
+      "doi_added_after_metadata_check": true
+    },
+    {
+      "key": "lin2025finetuned",
+      "bibliography_title": "Fine-Tuned Thoughts: Leveraging Chain-of-Thought Reasoning for Industrial Asset Health Monitoring",
+      "bibliography_doi": "10.18653/v1/2025.findings-emnlp.1126",
+      "human_verified": false,
+      "resolved_title": [
+        "Fine-Tuned Thoughts: Leveraging Chain-of-Thought Reasoning for Industrial Asset Health Monitoring"
+      ],
+      "resolved_doi": "10.18653/v1/2025.findings-emnlp.1126",
+      "resolved_authors": [
+        {
+          "given": "Shuxin",
+          "family": "Lin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Dhaval C",
+          "family": "Patel",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Christodoulos",
+          "family": "Constantinides",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "container_title": [
+        "Findings of the Association for Computational Linguistics: EMNLP 2025"
+      ],
+      "volume": null,
+      "page": "20687-20700",
+      "status": "metadata_retrieved_not_fulltext_claim_validation",
+      "metadata_source": "https://api.crossref.org/works/10.18653%2Fv1%2F2025.findings-emnlp.1126"
+    },
+    {
+      "key": "qaid2026explainable",
+      "bibliography_title": "Large language models for explainable fault diagnosis of machines",
+      "bibliography_doi": "10.1016/j.engappai.2025.113131",
+      "human_verified": false,
+      "resolved_title": [
+        "Large language models for explainable fault diagnosis of machines"
+      ],
+      "resolved_doi": "10.1016/j.engappai.2025.113131",
+      "resolved_authors": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0095-9401",
+          "authenticated-orcid": false,
+          "given": "Hamzah A.A.M.",
+          "family": "Qaid",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1129-1109",
+          "authenticated-orcid": false,
+          "given": "Bo",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shuai",
+          "family": "Su",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3787-1673",
+          "authenticated-orcid": false,
+          "given": "Dan",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6565-7511",
+          "authenticated-orcid": false,
+          "given": "See-Kiong",
+          "family": "Ng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Wei",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            1
+          ]
+        ]
+      },
+      "container_title": [
+        "Engineering Applications of Artificial Intelligence"
+      ],
+      "volume": "163",
+      "page": "113131",
+      "status": "metadata_retrieved_not_fulltext_claim_validation",
+      "metadata_source": "https://api.crossref.org/works/10.1016%2Fj.engappai.2025.113131"
+    },
+    {
+      "key": "ricker1995optimal",
+      "bibliography_title": "Optimal steady-state operation of the {Tennessee Eastman} challenge process",
+      "bibliography_doi": "10.1016/0098-1354(94)00043-N",
+      "human_verified": false,
+      "resolved_title": [
+        "Optimal steady-state operation of the Tennessee Eastman challenge process"
+      ],
+      "resolved_doi": "10.1016/0098-1354(94)00043-n",
+      "resolved_authors": [
+        {
+          "given": "N.L.",
+          "family": "Ricker",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1995,
+            9
+          ]
+        ]
+      },
+      "container_title": [
+        "Computers &amp; Chemical Engineering"
+      ],
+      "volume": "19",
+      "page": "949-959",
+      "status": "metadata_retrieved_not_fulltext_claim_validation",
+      "metadata_source": "https://api.crossref.org/works/10.1016%2F0098-1354%2894%2900043-N"
+    },
+    {
+      "key": "rieth2017additional",
+      "bibliography_title": "Additional {Tennessee Eastman Process} Simulation Data for Anomaly Detection Evaluation",
+      "bibliography_doi": "10.7910/DVN/6C3JR1",
+      "human_verified": false,
+      "resolved_title": "Additional Tennessee Eastman Process Simulation Data for Anomaly Detection Evaluation",
+      "resolved_doi": "10.7910/dvn/6c3jr1",
+      "resolved_creators": [
+        {
+          "name": "Rieth, Cory A.",
+          "nameType": "Personal",
+          "givenName": "Cory A.",
+          "familyName": "Rieth",
+          "affiliation": [
+            "Pacific Science and Engineering Group, Inc"
+          ],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Amsel, Ben D.",
+          "nameType": "Personal",
+          "givenName": "Ben D.",
+          "familyName": "Amsel",
+          "affiliation": [
+            "Pacific Science and Engineering Group, Inc"
+          ],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Tran, Randy",
+          "nameType": "Personal",
+          "givenName": "Randy",
+          "familyName": "Tran",
+          "affiliation": [
+            "Pacific Science and Engineering Group, Inc"
+          ],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Cook, Maia B.",
+          "nameType": "Personal",
+          "givenName": "Maia B.",
+          "familyName": "Cook",
+          "affiliation": [
+            "Pacific Science and Engineering Group, Inc"
+          ],
+          "nameIdentifiers": []
+        }
+      ],
+      "status": "metadata_retrieved_not_fulltext_claim_validation",
+      "metadata_source": "https://api.datacite.org/dois/10.7910%2FDVN%2F6C3JR1"
+    },
+    {
+      "key": "saxena2008damage",
+      "bibliography_title": "Damage propagation modeling for aircraft engine run-to-failure simulation",
+      "bibliography_doi": "10.1109/PHM.2008.4711414",
+      "human_verified": false,
+      "resolved_title": [
+        "Damage propagation modeling for aircraft engine run-to-failure simulation"
+      ],
+      "resolved_doi": "10.1109/phm.2008.4711414",
+      "resolved_authors": [
+        {
+          "given": "Abhinav",
+          "family": "Saxena",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kai",
+          "family": "Goebel",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Don",
+          "family": "Simon",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Neil",
+          "family": "Eklund",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            10
+          ]
+        ]
+      },
+      "container_title": [
+        "2008 International Conference on Prognostics and Health Management"
+      ],
+      "volume": null,
+      "page": "1-9",
+      "status": "metadata_retrieved_not_fulltext_claim_validation",
+      "metadata_source": "https://api.crossref.org/works/10.1109%2FPHM.2008.4711414"
+    },
+    {
+      "key": "saxena2008dataset",
+      "bibliography_title": "Turbofan Engine Degradation Simulation Data Set",
+      "bibliography_doi": null,
+      "human_verified": false,
+      "status": "official_source_opened_separately",
+      "source_url": "https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/"
+    },
+    {
+      "key": "sensorbench2025",
+      "bibliography_title": "{SensorBench}: Benchmarking {LLMs} in Coding-Based Sensor Processing",
+      "bibliography_doi": "10.1145/3708468.3711882",
+      "human_verified": false,
+      "resolved_title": [
+        "SensorBench: Benchmarking LLMs in Coding-Based Sensor Processing"
+      ],
+      "resolved_doi": "10.1145/3708468.3711882",
+      "resolved_authors": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0458-3966",
+          "authenticated-orcid": false,
+          "given": "Pengrui",
+          "family": "Quan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "UCLA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0710-0963",
+          "authenticated-orcid": false,
+          "given": "Xiaomin",
+          "family": "Ouyang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "HKUST"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0322-7086",
+          "authenticated-orcid": false,
+          "given": "Jeya Vikranth",
+          "family": "Jeyakumar",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "NVIDIA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0232-125X",
+          "authenticated-orcid": false,
+          "given": "Ziqi",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Qualcomm"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0000-9978-3102",
+          "authenticated-orcid": false,
+          "given": "Yang",
+          "family": "Xing",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "UCLA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3782-9192",
+          "authenticated-orcid": false,
+          "given": "Mani",
+          "family": "Srivastava",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "UCLA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            2,
+            26
+          ]
+        ]
+      },
+      "container_title": [
+        "Proceedings of the 26th International Workshop on Mobile Computing Systems and Applications"
+      ],
+      "volume": null,
+      "page": "25-30",
+      "status": "metadata_retrieved_not_fulltext_claim_validation",
+      "metadata_source": "https://api.crossref.org/works/10.1145%2F3708468.3711882"
+    },
+    {
+      "key": "vieira2026realistic",
+      "bibliography_title": "Towards a more realistic evaluation of machine learning models for bearing fault diagnosis",
+      "bibliography_doi": "10.1016/j.ymssp.2026.114640",
+      "human_verified": false,
+      "resolved_title": [
+        "Towards a more realistic evaluation of machine learning models for bearing fault diagnosis"
+      ],
+      "resolved_doi": "10.1016/j.ymssp.2026.114640",
+      "resolved_authors": [
+        {
+          "ORCID": "https://orcid.org/0009-0002-0971-1610",
+          "authenticated-orcid": false,
+          "given": "Jo\u00e3o Paulo",
+          "family": "Vieira",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0001-4754-9610",
+          "authenticated-orcid": false,
+          "given": "Victor Afonso",
+          "family": "Bauler",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0008-9325-3600",
+          "authenticated-orcid": false,
+          "given": "Rodrigo Kobashikawa",
+          "family": "Rosa",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6290-7968",
+          "authenticated-orcid": false,
+          "given": "Danilo",
+          "family": "Silva",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            8
+          ]
+        ]
+      },
+      "container_title": [
+        "Mechanical Systems and Signal Processing"
+      ],
+      "volume": "258",
+      "page": "114640",
+      "status": "metadata_retrieved_not_fulltext_claim_validation",
+      "metadata_source": "https://api.crossref.org/works/10.1016%2Fj.ymssp.2026.114640"
+    },
+    {
+      "key": "zhao2019deep",
+      "bibliography_title": "Deep learning and its applications to machine health monitoring",
+      "bibliography_doi": "10.1016/j.ymssp.2018.05.050",
+      "human_verified": false,
+      "resolved_title": [
+        "Deep learning and its applications to machine health monitoring"
+      ],
+      "resolved_doi": "10.1016/j.ymssp.2018.05.050",
+      "resolved_authors": [
+        {
+          "given": "Rui",
+          "family": "Zhao",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ruqiang",
+          "family": "Yan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhenghua",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kezhi",
+          "family": "Mao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Peng",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Robert X.",
+          "family": "Gao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            1
+          ]
+        ]
+      },
+      "container_title": [
+        "Mechanical Systems and Signal Processing"
+      ],
+      "volume": "115",
+      "page": "213-237",
+      "status": "metadata_retrieved_not_fulltext_claim_validation",
+      "metadata_source": "https://api.crossref.org/works?rows=1&query.title=Deep%20learning%20and%20its%20applications%20to%20machine%20health%20monitoring",
+      "doi_added_after_metadata_check": true
+    },
+    {
+      "key": "zheng2024empirical",
+      "bibliography_title": "Empirical study on fine-tuning pre-trained large language models for fault diagnosis of complex systems",
+      "bibliography_doi": "10.1016/j.ress.2024.110382",
+      "human_verified": false,
+      "resolved_title": [
+        "Empirical study on fine-tuning pre-trained large language models for fault diagnosis of complex systems"
+      ],
+      "resolved_doi": "10.1016/j.ress.2024.110382",
+      "resolved_authors": [
+        {
+          "given": "Shuwen",
+          "family": "Zheng",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kai",
+          "family": "Pan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0895-7598",
+          "authenticated-orcid": false,
+          "given": "Jie",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yunxia",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            12
+          ]
+        ]
+      },
+      "container_title": [
+        "Reliability Engineering &amp; System Safety"
+      ],
+      "volume": "252",
+      "page": "110382",
+      "status": "metadata_retrieved_not_fulltext_claim_validation",
+      "metadata_source": "https://api.crossref.org/works/10.1016%2Fj.ress.2024.110382"
+    }
+  ],
+  "bibliography_sha256": "4ca649313fde359841726bda45b9ccd9126887aed756b7325ceb95e191ce82ad"
+}

@@ -1,0 +1,153 @@
+test_additional_model_is_audited_without_promoting_or_rewriting_protocol (test_audit_claude_extension.AuditTests.test_additional_model_is_audited_without_promoting_or_rewriting_protocol) ... ok
+test_answers_scores_and_unlisted_files_never_read (test_audit_claude_extension.AuditTests.test_answers_scores_and_unlisted_files_never_read) ... ok
+test_cli_writes_only_audit_and_returns_blocked (test_audit_claude_extension.AuditTests.test_cli_writes_only_audit_and_returns_blocked) ... ok
+test_consistent_arrays_never_imply_verified_inference (test_audit_claude_extension.AuditTests.test_consistent_arrays_never_imply_verified_inference) ... ok
+test_contaminated_and_suspect_are_not_eligible (test_audit_claude_extension.AuditTests.test_contaminated_and_suspect_are_not_eligible) ... ok
+test_exact_v3_raw_parser_rejects_prose_and_invalid_fence (test_audit_claude_extension.AuditTests.test_exact_v3_raw_parser_rejects_prose_and_invalid_fence) ... ok
+test_invalid_case_sensitive_label_fails (test_audit_claude_extension.AuditTests.test_invalid_case_sensitive_label_fails) ... ok
+test_manifest_paths_cannot_redirect_to_answers (test_audit_claude_extension.AuditTests.test_manifest_paths_cannot_redirect_to_answers) ... ok
+test_markdown_retains_local_missing_hash_even_with_global_same_code (test_audit_claude_extension.AuditTests.test_markdown_retains_local_missing_hash_even_with_global_same_code) ... ok
+test_missing_record_fails (test_audit_claude_extension.AuditTests.test_missing_record_fails) ... ok
+test_missing_request_fails_even_with_valid_results (test_audit_claude_extension.AuditTests.test_missing_request_fails_even_with_valid_results) ... ok
+test_partial_additional_directory_cannot_hide_missing_groups (test_audit_claude_extension.AuditTests.test_partial_additional_directory_cannot_hide_missing_groups) ... ok
+test_placeholder_parent_hash_and_fake_later_freeze_do_not_restore_eligibility (test_audit_claude_extension.AuditTests.test_placeholder_parent_hash_and_fake_later_freeze_do_not_restore_eligibility) ... ok
+test_response_hash_change_detected_even_when_json_same (test_audit_claude_extension.AuditTests.test_response_hash_change_detected_even_when_json_same) ... ok
+test_root_scorer_contaminated_session_has_null_metrics_without_keys (test_audit_claude_extension.AuditTests.test_root_scorer_contaminated_session_has_null_metrics_without_keys) ... BLOCKED: 0/18 records eligible for the primary comparison. Answer-key dataset files were not opened. See the Claude extension integrity audit.
+ok
+test_root_validate_only_does_not_create_or_change_any_file (test_audit_claude_extension.AuditTests.test_root_validate_only_does_not_create_or_change_any_file) ... BLOCKED: 0/18 records eligible for the primary comparison. Answer-key dataset files were not opened. See the Claude extension integrity audit.
+ok
+test_wrong_id_order_and_extra_fields_rejected (test_audit_claude_extension.AuditTests.test_wrong_id_order_and_extra_fields_rejected) ... ok
+test_answer_key_rejected (test_domestic_api.DomesticAPITests.test_answer_key_rejected) ... ok
+test_both_stream_usage_shapes (test_domestic_api.DomesticAPITests.test_both_stream_usage_shapes) ... ok
+test_complete_batch_validation (test_domestic_api.DomesticAPITests.test_complete_batch_validation) ... ok
+test_endpoint_rejects_credential_redirect_hosts (test_domestic_api.DomesticAPITests.test_endpoint_rejects_credential_redirect_hosts) ... ok
+test_env_is_literal_and_preserves_existing_config (test_domestic_api.DomesticAPITests.test_env_is_literal_and_preserves_existing_config) ... ok
+test_extension_refuses_interrupted_job (test_domestic_api.DomesticAPITests.test_extension_refuses_interrupted_job) ... ok
+test_extension_resume_keeps_terminal_jobs_without_new_calls (test_domestic_api.DomesticAPITests.test_extension_resume_keeps_terminal_jobs_without_new_calls) ... {
+  "status": "blocked",
+  "counts": {
+    "planned": 18,
+    "audited_records": 18,
+    "artifact_arrays_valid": 18,
+    "artifact_chains_consistent": 18,
+    "eligible_primary": 0,
+    "reported_contaminated": 0,
+    "reported_suspect": 0
+  },
+  "report": "/private/var/folders/r7/ggshlc557f99yvjh6k6kv23h0000gn/T/tmpsp_a4xqh/extension/audit/report.json"
+}
+Prepared 18 sessions; no model calls: /var/folders/r7/ggshlc557f99yvjh6k6kv23h0000gn/T/tmptwo7hkly/extension
+Prepared 18 sessions; no model calls: /var/folders/r7/ggshlc557f99yvjh6k6kv23h0000gn/T/tmpfte1_tb5/extension
+START deepseek tep_misnamed_r3
+deepseek tep_misnamed_r3: invalid_response
+START deepseek cmapss_clean_r1
+deepseek cmapss_clean_r1: invalid_response
+START deepseek tep_misnamed_r1
+deepseek tep_misnamed_r1: invalid_response
+START deepseek cmapss_clean_r2
+deepseek cmapss_clean_r2: invalid_response
+START deepseek tep_clean_r2
+deepseek tep_clean_r2: invalid_response
+START deepseek tep_clean_r1
+deepseek tep_clean_r1: invalid_response
+START deepseek cmapss_clean_r3
+deepseek cmapss_clean_r3: invalid_response
+START deepseek tep_misnamed_r2
+deepseek tep_misnamed_r2: invalid_response
+START deepseek tep_clean_r3
+deepseek tep_clean_r3: invalid_response
+KEEP deepseek tep_misnamed_r3: invalid_response
+KEEP deepseek cmapss_clean_r1: invalid_response
+KEEP deepseek tep_misnamed_r1: invalid_response
+KEEP deepseek cmapss_clean_r2: invalid_response
+KEEP deepseek tep_clean_r2: invalid_response
+KEEP deepseek tep_clean_r1: invalid_response
+KEEP deepseek cmapss_clean_r3: invalid_response
+KEEP deepseek tep_misnamed_r2: invalid_response
+KEEP deepseek tep_clean_r3: invalid_response
+ok
+test_http_failure_redacts_key_without_retry (test_domestic_api.DomesticAPITests.test_http_failure_redacts_key_without_retry) ... ok
+test_missing_key_makes_no_call (test_domestic_api.DomesticAPITests.test_missing_key_makes_no_call) ... ok
+test_network_failure_is_recorded (test_domestic_api.DomesticAPITests.test_network_failure_is_recorded) ... ok
+test_prepare_matches_original_prompts_and_detects_tampering (test_domestic_api.DomesticAPITests.test_prepare_matches_original_prompts_and_detects_tampering) ... ok
+test_provider_parameters_preserve_prompt (test_domestic_api.DomesticAPITests.test_provider_parameters_preserve_prompt) ... ok
+test_reject_truncated_and_tool_streams (test_domestic_api.DomesticAPITests.test_reject_truncated_and_tool_streams) ... ok
+test_semantic_failure_never_retries_or_writes_predictions (test_domestic_api.DomesticAPITests.test_semantic_failure_never_retries_or_writes_predictions) ... ok
+test_single_json_fence_matches_original_protocol (test_domestic_api.DomesticAPITests.test_single_json_fence_matches_original_protocol) ... ok
+test_success_archives_hashes_and_omits_secret (test_domestic_api.DomesticAPITests.test_success_archives_hashes_and_omits_secret) ... ok
+test_all_valid_freeze_counts_and_idempotence (test_domestic_audit.DomesticAuditTests.test_all_valid_freeze_counts_and_idempotence) ... ok
+test_incomplete_plan_cannot_be_frozen (test_domestic_audit.DomesticAuditTests.test_incomplete_plan_cannot_be_frozen) ... ok
+test_invalid_batches_stay_unscored (test_domestic_audit.DomesticAuditTests.test_invalid_batches_stay_unscored) ... ok
+test_raw_response_tampering_is_detected (test_domestic_audit.DomesticAuditTests.test_raw_response_tampering_is_detected) ... ok
+test_scoring_known_synthetic_labels (test_domestic_audit.DomesticAuditTests.test_scoring_known_synthetic_labels) ... ok
+test_scoring_without_freeze_cannot_open_labels (test_domestic_audit.DomesticAuditTests.test_scoring_without_freeze_cannot_open_labels) ... ok
+test_source_snapshot_is_part_of_freeze (test_domestic_audit.DomesticAuditTests.test_source_snapshot_is_part_of_freeze) ... ok
+test_truncated_stream_still_records_usage (test_domestic_audit.DomesticAuditTests.test_truncated_stream_still_records_usage) ... ok
+test_concurrency_is_bounded_and_results_freeze (test_domestic_v2.BudgetV2Tests.test_concurrency_is_bounded_and_results_freeze) ... ok
+test_explicit_budgets (test_domestic_v2.BudgetV2Tests.test_explicit_budgets) ... ok
+test_http_failure_stops_new_submissions (test_domestic_v2.BudgetV2Tests.test_http_failure_stops_new_submissions) ... ok
+test_anonymous_removes_all_descriptors_and_retains_values (test_mechanism_extension.InterventionTests.test_anonymous_removes_all_descriptors_and_retains_values) ... ok
+test_context_comparisons_share_exact_records (test_mechanism_extension.InterventionTests.test_context_comparisons_share_exact_records) ... ok
+test_generation_is_deterministic_and_does_not_mutate_source (test_mechanism_extension.InterventionTests.test_generation_is_deterministic_and_does_not_mutate_source) ... ok
+test_joint_reordering_preserves_every_semantic_pair (test_mechanism_extension.InterventionTests.test_joint_reordering_preserves_every_semantic_pair) ... ok
+test_no_answers_in_extension (test_mechanism_extension.InterventionTests.test_no_answers_in_extension) ... ok
+test_reject_malformed_sensor_block (test_mechanism_extension.InterventionTests.test_reject_malformed_sensor_block) ... ok
+test_rotation_exactly_matches_original_frozen_intervention (test_mechanism_extension.InterventionTests.test_rotation_exactly_matches_original_frozen_intervention) ... ok
+test_wrong_mapping_preserves_numeric_strings_and_descriptor_inventory (test_mechanism_extension.InterventionTests.test_wrong_mapping_preserves_numeric_strings_and_descriptor_inventory) ... ok
+test_modified_input_fails_without_call_or_overwrite (test_response_parsing.CacheTests.test_modified_input_fails_without_call_or_overwrite) ... ok
+test_modified_model_parser_or_budget_fails (test_response_parsing.CacheTests.test_modified_model_parser_or_budget_fails) ... ok
+test_modified_output_and_incomplete_cache_fail (test_response_parsing.CacheTests.test_modified_output_and_incomplete_cache_fail) ... ok
+test_old_cache_fails_without_call_or_overwrite (test_response_parsing.CacheTests.test_old_cache_fails_without_call_or_overwrite) ... ok
+test_saves_full_response_without_reading_answer_key_and_reuses_valid_cache (test_response_parsing.CacheTests.test_saves_full_response_without_reading_answer_key_and_reuses_valid_cache) ... ok
+test_exact_labels_do_not_overlap (test_response_parsing.ParsingTests.test_exact_labels_do_not_overlap) ... ok
+test_full_response_and_all_text_blocks_are_preserved (test_response_parsing.ParsingTests.test_full_response_and_all_text_blocks_are_preserved) ... ok
+test_missing_and_empty_text_blocks_fail_closed (test_response_parsing.ParsingTests.test_missing_and_empty_text_blocks_fail_closed) ... ok
+test_reasoning_requires_one_final_conclusion (test_response_parsing.ParsingTests.test_reasoning_requires_one_final_conclusion) ... ok
+test_truncation_is_not_a_prediction (test_response_parsing.ParsingTests.test_truncation_is_not_a_prediction) ... ok
+test_all_27_verified_with_leading_zero_ids_and_without_any_keys (test_score_revision_v3.FrozenAuditTests.test_all_27_verified_with_leading_zero_ids_and_without_any_keys) ... ok
+test_amendment_cannot_be_future_dated_or_post_freeze (test_score_revision_v3.FrozenAuditTests.test_amendment_cannot_be_future_dated_or_post_freeze) ... ok
+test_amendment_hash_and_protocol_reference_are_checked (test_score_revision_v3.FrozenAuditTests.test_amendment_hash_and_protocol_reference_are_checked) ... ok
+test_cli_retry_plus_internal_reconnect_exceeds_shared_transport_ceiling (test_score_revision_v3.FrozenAuditTests.test_cli_retry_plus_internal_reconnect_exceeds_shared_transport_ceiling) ... ok
+test_diagnostic_error_is_not_hidden_as_non_tool (test_score_revision_v3.FrozenAuditTests.test_diagnostic_error_is_not_hidden_as_non_tool) ... ok
+test_exact_reconnect_is_retained_and_counted_after_valid_completed_output (test_score_revision_v3.FrozenAuditTests.test_exact_reconnect_is_retained_and_counted_after_valid_completed_output) ... ok
+test_failed_partial_response_cannot_be_hand_repaired (test_score_revision_v3.FrozenAuditTests.test_failed_partial_response_cannot_be_hand_repaired) ... ok
+test_freezer_accepts_27_terminal_outcomes_without_opening_labels (test_score_revision_v3.FrozenAuditTests.test_freezer_accepts_27_terminal_outcomes_without_opening_labels) ... ok
+test_hash_mutation_is_rejected_before_keys (test_score_revision_v3.FrozenAuditTests.test_hash_mutation_is_rejected_before_keys) ... ok
+test_main_never_opens_keys_if_audit_fails (test_score_revision_v3.FrozenAuditTests.test_main_never_opens_keys_if_audit_fails) ... ERROR: synthetic invalid freeze
+ok
+test_missing_file_is_rejected (test_score_revision_v3.FrozenAuditTests.test_missing_file_is_rejected) ... ok
+test_missing_or_pending_outcome_cannot_be_frozen (test_score_revision_v3.FrozenAuditTests.test_missing_or_pending_outcome_cannot_be_frozen) ... ok
+test_reconnect_does_not_excuse_invalid_output (test_score_revision_v3.FrozenAuditTests.test_reconnect_does_not_excuse_invalid_output) ... ok
+test_reconnect_requires_matching_metadata_error_and_audit_note (test_score_revision_v3.FrozenAuditTests.test_reconnect_requires_matching_metadata_error_and_audit_note) ... ok
+test_report_keeps_27_sessions_separate_and_has_zero_paired_differences (test_score_revision_v3.FrozenAuditTests.test_report_keeps_27_sessions_separate_and_has_zero_paired_differences) ... ok
+test_reused_session_is_rejected (test_score_revision_v3.FrozenAuditTests.test_reused_session_is_rejected) ... ok
+test_semantic_failure_is_na_and_never_replaced_by_repeat2 (test_score_revision_v3.FrozenAuditTests.test_semantic_failure_is_na_and_never_replaced_by_repeat2) ... ok
+test_semantic_failure_requires_pre_score_amendment (test_score_revision_v3.FrozenAuditTests.test_semantic_failure_requires_pre_score_amendment) ... ok
+test_semantic_retry_is_rejected_even_if_second_output_is_valid (test_score_revision_v3.FrozenAuditTests.test_semantic_retry_is_rejected_even_if_second_output_is_valid) ... ok
+test_session_prediction_disagreement_is_distinct_from_mapping_contrast (test_score_revision_v3.FrozenAuditTests.test_session_prediction_disagreement_is_distinct_from_mapping_contrast) ... ok
+test_tool_event_rejected_even_when_hash_is_frozen (test_score_revision_v3.FrozenAuditTests.test_tool_event_rejected_even_when_hash_is_frozen) ... ok
+test_turn_failed_is_fatal_even_if_followed_by_complete_output (test_score_revision_v3.FrozenAuditTests.test_turn_failed_is_fatal_even_if_followed_by_complete_output) ... ok
+test_two_internal_reconnections_exceed_shared_transport_ceiling (test_score_revision_v3.FrozenAuditTests.test_two_internal_reconnections_exceed_shared_transport_ceiling) ... ok
+test_unknown_error_does_not_become_recoverable_by_completing (test_score_revision_v3.FrozenAuditTests.test_unknown_error_does_not_become_recoverable_by_completing) ... ok
+test_critical_miss_definition_and_support (test_score_revision_v3.StatisticsTests.test_critical_miss_definition_and_support) ... ok
+test_fixed_label_macro_f1_with_fault_label_permutation (test_score_revision_v3.StatisticsTests.test_fixed_label_macro_f1_with_fault_label_permutation) ... ok
+test_identical_paired_predictions_have_exact_zero_differences (test_score_revision_v3.StatisticsTests.test_identical_paired_predictions_have_exact_zero_differences) ... ok
+test_paired_difference_uses_same_resampled_groups (test_score_revision_v3.StatisticsTests.test_paired_difference_uses_same_resampled_groups) ... ok
+test_tep_false_alarm_is_normal_fn_over_normal_support (test_score_revision_v3.StatisticsTests.test_tep_false_alarm_is_normal_fn_over_normal_support) ... ok
+test_wilson_perfect_score_retains_uncertainty (test_score_revision_v3.StatisticsTests.test_wilson_perfect_score_retains_uncertainty) ... ok
+test_all_failed_is_zero_delivery_but_no_classification_estimate (test_usable_predictions.UsablePredictionTests.test_all_failed_is_zero_delivery_but_no_classification_estimate) ... ok
+test_corrupt_summary_is_rejected_using_confusion_counts (test_usable_predictions.UsablePredictionTests.test_corrupt_summary_is_rejected_using_confusion_counts) ... ok
+test_duplicate_repeat_cannot_replace_missing_outcome (test_usable_predictions.UsablePredictionTests.test_duplicate_repeat_cannot_replace_missing_outcome) ... ok
+test_failed_batch_retains_scheduled_denominator_without_imputing_accuracy (test_usable_predictions.UsablePredictionTests.test_failed_batch_retains_scheduled_denominator_without_imputing_accuracy) ... ok
+test_partial_failure_cannot_contribute_labels (test_usable_predictions.UsablePredictionTests.test_partial_failure_cannot_contribute_labels) ... ok
+
+----------------------------------------------------------------------
+Ran 97 tests in 10.611s
+
+OK
+Prepared 18 sessions; no model calls: /var/folders/r7/ggshlc557f99yvjh6k6kv23h0000gn/T/tmpdzsz4f08/extension
+  ✓ tep_zero_shot_v2_1_haiku.json: 1/1 parseable; no answer keys read
+  ✓ tep_zero_shot_v2_1_haiku.json: 1/1 parseable; no answer keys read
+  ✓ tep_zero_shot_v2_1_haiku.json: 1/1 parseable; no answer keys read
+  ✓ tep_zero_shot_v2_1_haiku.json: 1/1 parseable; no answer keys read
+  CACHED tep_zero_shot_v2_1_haiku.json (1/1 valid)

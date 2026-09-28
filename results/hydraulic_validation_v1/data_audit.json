@@ -1,0 +1,394 @@
+{
+  "single_rig": true,
+  "cycles": 54,
+  "joint_condition_blocks": 54,
+  "source_units_not_independent_devices": true,
+  "panels": {
+    "focal": [
+      "152325d2",
+      "2da54644",
+      "302d4f6b",
+      "39544394",
+      "3fd092f5",
+      "7717e048",
+      "7f492355",
+      "86d37e47",
+      "91e35d59",
+      "95924822",
+      "970596b6",
+      "9e6bbab5",
+      "a01f8332",
+      "a4ca3b84",
+      "e2d862fa",
+      "e54d89d6",
+      "f2c47650",
+      "f3364333"
+    ],
+    "a": [
+      "114efbdd",
+      "1711229b",
+      "26c57b70",
+      "342cff18",
+      "4a8cfcff",
+      "51937c4d",
+      "6d18af65",
+      "80688e29",
+      "80d5dd79",
+      "8c813e55",
+      "98e0598b",
+      "99482ae1",
+      "a28830d0",
+      "ada9f447",
+      "c720a330",
+      "e3ebe43d",
+      "f9ebea62",
+      "fffa280d"
+    ],
+    "b": [
+      "0317d657",
+      "076a5d11",
+      "0a8e27f2",
+      "16ef5e68",
+      "21f92f96",
+      "4fe93b1d",
+      "5ad3cba9",
+      "745b4f97",
+      "79ffc996",
+      "7f6007a8",
+      "97c76df6",
+      "a6fd1d9c",
+      "bb034839",
+      "d5e4f15c",
+      "d7502137",
+      "e09b0abe",
+      "f513bd76",
+      "fc75c3b9"
+    ]
+  },
+  "eligible_strata": [
+    {
+      "pump": 0,
+      "cooler": 3,
+      "eligible_blocks": 16,
+      "chosen_nuisance_settings": [
+        [
+          100,
+          130
+        ],
+        [
+          80,
+          90
+        ],
+        [
+          73,
+          130
+        ],
+        [
+          90,
+          130
+        ],
+        [
+          73,
+          115
+        ],
+        [
+          80,
+          115
+        ]
+      ]
+    },
+    {
+      "pump": 0,
+      "cooler": 20,
+      "eligible_blocks": 16,
+      "chosen_nuisance_settings": [
+        [
+          100,
+          130
+        ],
+        [
+          80,
+          90
+        ],
+        [
+          73,
+          130
+        ],
+        [
+          90,
+          130
+        ],
+        [
+          73,
+          115
+        ],
+        [
+          80,
+          115
+        ]
+      ]
+    },
+    {
+      "pump": 0,
+      "cooler": 100,
+      "eligible_blocks": 16,
+      "chosen_nuisance_settings": [
+        [
+          100,
+          130
+        ],
+        [
+          80,
+          90
+        ],
+        [
+          73,
+          130
+        ],
+        [
+          90,
+          130
+        ],
+        [
+          73,
+          115
+        ],
+        [
+          80,
+          115
+        ]
+      ]
+    },
+    {
+      "pump": 1,
+      "cooler": 3,
+      "eligible_blocks": 16,
+      "chosen_nuisance_settings": [
+        [
+          100,
+          130
+        ],
+        [
+          80,
+          90
+        ],
+        [
+          73,
+          130
+        ],
+        [
+          90,
+          130
+        ],
+        [
+          73,
+          115
+        ],
+        [
+          80,
+          115
+        ]
+      ]
+    },
+    {
+      "pump": 1,
+      "cooler": 20,
+      "eligible_blocks": 16,
+      "chosen_nuisance_settings": [
+        [
+          100,
+          130
+        ],
+        [
+          80,
+          90
+        ],
+        [
+          73,
+          130
+        ],
+        [
+          90,
+          130
+        ],
+        [
+          73,
+          115
+        ],
+        [
+          80,
+          115
+        ]
+      ]
+    },
+    {
+      "pump": 1,
+      "cooler": 100,
+      "eligible_blocks": 16,
+      "chosen_nuisance_settings": [
+        [
+          100,
+          130
+        ],
+        [
+          80,
+          90
+        ],
+        [
+          73,
+          130
+        ],
+        [
+          90,
+          130
+        ],
+        [
+          73,
+          115
+        ],
+        [
+          80,
+          115
+        ]
+      ]
+    },
+    {
+      "pump": 2,
+      "cooler": 3,
+      "eligible_blocks": 16,
+      "chosen_nuisance_settings": [
+        [
+          100,
+          130
+        ],
+        [
+          80,
+          90
+        ],
+        [
+          73,
+          130
+        ],
+        [
+          90,
+          130
+        ],
+        [
+          73,
+          115
+        ],
+        [
+          80,
+          115
+        ]
+      ]
+    },
+    {
+      "pump": 2,
+      "cooler": 20,
+      "eligible_blocks": 16,
+      "chosen_nuisance_settings": [
+        [
+          100,
+          130
+        ],
+        [
+          80,
+          90
+        ],
+        [
+          73,
+          130
+        ],
+        [
+          90,
+          130
+        ],
+        [
+          73,
+          115
+        ],
+        [
+          80,
+          115
+        ]
+      ]
+    },
+    {
+      "pump": 2,
+      "cooler": 100,
+      "eligible_blocks": 16,
+      "chosen_nuisance_settings": [
+        [
+          100,
+          130
+        ],
+        [
+          80,
+          90
+        ],
+        [
+          73,
+          130
+        ],
+        [
+          90,
+          130
+        ],
+        [
+          73,
+          115
+        ],
+        [
+          80,
+          115
+        ]
+      ]
+    }
+  ],
+  "selection": "Six hash-selected valve/accumulator combinations shared across all nine pump x cooler strata; >=5 stable cycles per block; middle stable cycle; same two nuisance combinations per panel. No outcome selection.",
+  "cooler_segments": [
+    {
+      "block_id": 1,
+      "start_cycle_1based": 1,
+      "end_cycle_1based_inclusive": 732,
+      "n_cycles": 732,
+      "condition_values": [
+        3
+      ],
+      "n_stable_cycles_flag_0": 480,
+      "n_potentially_unstable_cycles_flag_1": 252
+    },
+    {
+      "block_id": 2,
+      "start_cycle_1based": 733,
+      "end_cycle_1based_inclusive": 1464,
+      "n_cycles": 732,
+      "condition_values": [
+        20
+      ],
+      "n_stable_cycles_flag_0": 480,
+      "n_potentially_unstable_cycles_flag_1": 252
+    },
+    {
+      "block_id": 3,
+      "start_cycle_1based": 1465,
+      "end_cycle_1based_inclusive": 2205,
+      "n_cycles": 741,
+      "condition_values": [
+        100
+      ],
+      "n_stable_cycles_flag_0": 489,
+      "n_potentially_unstable_cycles_flag_1": 252
+    }
+  ],
+  "data_metadata_sha256": "a82f28c149fb4b378a524db223567b9ae1c4e8a9850360b1a8ac1bb1a71846a4",
+  "features": "14 physical channels, cycle mean and population SD, fixed six decimals; virtual/efficiency channels CE/CP/SE excluded",
+  "target_change": "Cooler was a candidate in the draft. Before inference, raw annotations showed one contiguous time segment per cooler state. Pump leakage chosen with balanced cooler strata; no new predictions had been obtained.",
+  "limits": [
+    "One rig; blocks/cycles remain dependent",
+    "Stable-cycle selection excludes transients",
+    "Public pretraining exposure unknown",
+    "No fitting or labelled prompt examples; no claimed independent-device generalization"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "protocol": "claude-extension-grouped-revision-v3",
+  "model_requested": "claude-sonnet-4-6",
+  "model_alias": "sonnet",
+  "transport": "claude-code-agent-tool",
+  "dataset": "cmapss",
+  "condition": "clean",
+  "repeat": 3,
+  "group_name": "cmapss_clean_r3",
+  "n_samples": 60,
+  "started_at": "2026-09-27T03:53:36.024535+00:00",
+  "completed_at": "2026-09-27T03:53:36.032430+00:00",
+  "attempt": 1,
+  "status": "complete",
+  "validation_error": null,
+  "response_text_sha256": "29e018f8a1704ee0b1cbc289fd3c88bc91e8f664f7b62251213b4125e210e1d0",
+  "request_sha256": "eb9bbc60d503827801578c26b9f17bb5fc2f1ea93a342aa68ef81994f57f96c4",
+  "answer_keys_read": false,
+  "independent_session_per_group": true,
+  "independent_session_per_sample": false,
+  "metadata_unavailable": [
+    "token_usage",
+    "server_returned_model_id",
+    "stop_finish_reason",
+    "request_session_id",
+    "temperature"
+  ],
+  "metadata_unavailable_reason": "Claude CLI subprocess returns 'OAuth session expired'; Agent tool interface does not expose these fields.",
+  "prediction_sha256": "71ff74a5819afbb7231bd75f4bebe156018a0dfdcd98fda6e8fdad08446de5a6",
+  "n_predictions": 60
+}

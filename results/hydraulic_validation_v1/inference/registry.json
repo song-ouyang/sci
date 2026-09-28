@@ -1,0 +1,114 @@
+[
+  {
+    "channel_id": "PS1.mean",
+    "descriptor": "PS1 pressure mean (bar)"
+  },
+  {
+    "channel_id": "PS1.sd",
+    "descriptor": "PS1 pressure SD (bar)"
+  },
+  {
+    "channel_id": "PS2.mean",
+    "descriptor": "PS2 pressure mean (bar)"
+  },
+  {
+    "channel_id": "PS2.sd",
+    "descriptor": "PS2 pressure SD (bar)"
+  },
+  {
+    "channel_id": "PS3.mean",
+    "descriptor": "PS3 pressure mean (bar)"
+  },
+  {
+    "channel_id": "PS3.sd",
+    "descriptor": "PS3 pressure SD (bar)"
+  },
+  {
+    "channel_id": "PS4.mean",
+    "descriptor": "PS4 pressure mean (bar)"
+  },
+  {
+    "channel_id": "PS4.sd",
+    "descriptor": "PS4 pressure SD (bar)"
+  },
+  {
+    "channel_id": "PS5.mean",
+    "descriptor": "PS5 pressure mean (bar)"
+  },
+  {
+    "channel_id": "PS5.sd",
+    "descriptor": "PS5 pressure SD (bar)"
+  },
+  {
+    "channel_id": "PS6.mean",
+    "descriptor": "PS6 pressure mean (bar)"
+  },
+  {
+    "channel_id": "PS6.sd",
+    "descriptor": "PS6 pressure SD (bar)"
+  },
+  {
+    "channel_id": "EPS1.mean",
+    "descriptor": "EPS1 motor power mean (W)"
+  },
+  {
+    "channel_id": "EPS1.sd",
+    "descriptor": "EPS1 motor power SD (W)"
+  },
+  {
+    "channel_id": "FS1.mean",
+    "descriptor": "FS1 volume flow mean (L/min)"
+  },
+  {
+    "channel_id": "FS1.sd",
+    "descriptor": "FS1 volume flow SD (L/min)"
+  },
+  {
+    "channel_id": "FS2.mean",
+    "descriptor": "FS2 volume flow mean (L/min)"
+  },
+  {
+    "channel_id": "FS2.sd",
+    "descriptor": "FS2 volume flow SD (L/min)"
+  },
+  {
+    "channel_id": "TS1.mean",
+    "descriptor": "TS1 temperature mean (deg C)"
+  },
+  {
+    "channel_id": "TS1.sd",
+    "descriptor": "TS1 temperature SD (deg C)"
+  },
+  {
+    "channel_id": "TS2.mean",
+    "descriptor": "TS2 temperature mean (deg C)"
+  },
+  {
+    "channel_id": "TS2.sd",
+    "descriptor": "TS2 temperature SD (deg C)"
+  },
+  {
+    "channel_id": "TS3.mean",
+    "descriptor": "TS3 temperature mean (deg C)"
+  },
+  {
+    "channel_id": "TS3.sd",
+    "descriptor": "TS3 temperature SD (deg C)"
+  },
+  {
+    "channel_id": "TS4.mean",
+    "descriptor": "TS4 temperature mean (deg C)"
+  },
+  {
+    "channel_id": "TS4.sd",
+    "descriptor": "TS4 temperature SD (deg C)"
+  },
+  {
+    "channel_id": "VS1.mean",
+    "descriptor": "VS1 vibration mean (mm/s)"
+  },
+  {
+    "channel_id": "VS1.sd",
+    "descriptor": "VS1 vibration SD (mm/s)"
+  }
+]

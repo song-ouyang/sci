@@ -1,0 +1,411 @@
+{
+  "dataset_sha256": "0097dbb21981968f9ad5b8c59670a07ce701edfecbe61b5108542f7f0638fd1d",
+  "seed": 20260926,
+  "datasets": {
+    "cmapss": {
+      "metrics": {
+        "RF": {
+          "n_samples": 60,
+          "correct": 49,
+          "accuracy_pct": 81.66666666666667,
+          "macro_f1_pct": 81.35994087213598,
+          "labels": [
+            "Healthy",
+            "Degrading",
+            "Critical"
+          ],
+          "confusion_matrix_true_rows": [
+            [
+              20,
+              0,
+              0
+            ],
+            [
+              4,
+              15,
+              1
+            ],
+            [
+              0,
+              6,
+              14
+            ]
+          ]
+        },
+        "SVM": {
+          "n_samples": 60,
+          "correct": 45,
+          "accuracy_pct": 75.0,
+          "macro_f1_pct": 74.07407407407406,
+          "labels": [
+            "Healthy",
+            "Degrading",
+            "Critical"
+          ],
+          "confusion_matrix_true_rows": [
+            [
+              20,
+              0,
+              0
+            ],
+            [
+              5,
+              15,
+              0
+            ],
+            [
+              0,
+              10,
+              10
+            ]
+          ]
+        },
+        "Majority": {
+          "n_samples": 60,
+          "correct": 20,
+          "accuracy_pct": 33.33333333333333,
+          "macro_f1_pct": 16.666666666666664,
+          "labels": [
+            "Healthy",
+            "Degrading",
+            "Critical"
+          ],
+          "confusion_matrix_true_rows": [
+            [
+              20,
+              0,
+              0
+            ],
+            [
+              20,
+              0,
+              0
+            ],
+            [
+              20,
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "training_class_priors": {
+        "Healthy": 0.524,
+        "Degrading": 0.262,
+        "Critical": 0.214
+      },
+      "majority_label": "Healthy",
+      "majority_tie_break": "valid_labels order",
+      "prior_random_expected_accuracy_pct": 33.333333333333336,
+      "uniform_random_expected_accuracy_pct": 33.333333333333336,
+      "random_macro_f1": "Not reported: F1 is nonlinear, so accuracy expectation is not an F1 estimate.",
+      "train_records": 500,
+      "test_records": 60,
+      "settings": {
+        "RF": {
+          "n_estimators": 300,
+          "random_state": 20260926,
+          "other_parameters": "scikit-learn defaults"
+        },
+        "SVM": {
+          "pipeline": [
+            "StandardScaler fitted to train only",
+            "SVC"
+          ],
+          "C": 1.0,
+          "kernel": "rbf",
+          "gamma": "scale",
+          "other_parameters": "scikit-learn defaults"
+        }
+      },
+      "test_tuning": false,
+      "feature_input": "Exactly the stored, rounded features used to render LLM prompts."
+    },
+    "tep": {
+      "metrics": {
+        "RF": {
+          "n_samples": 70,
+          "correct": 70,
+          "accuracy_pct": 100.0,
+          "macro_f1_pct": 100.0,
+          "labels": [
+            "Normal",
+            "Fault_1",
+            "Fault_2",
+            "Fault_4",
+            "Fault_6",
+            "Fault_7",
+            "Fault_13"
+          ],
+          "confusion_matrix_true_rows": [
+            [
+              10,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              10,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              10,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              10,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              10,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              10
+            ]
+          ]
+        },
+        "SVM": {
+          "n_samples": 70,
+          "correct": 70,
+          "accuracy_pct": 100.0,
+          "macro_f1_pct": 100.0,
+          "labels": [
+            "Normal",
+            "Fault_1",
+            "Fault_2",
+            "Fault_4",
+            "Fault_6",
+            "Fault_7",
+            "Fault_13"
+          ],
+          "confusion_matrix_true_rows": [
+            [
+              10,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              10,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              10,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              10,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              10,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              10
+            ]
+          ]
+        },
+        "Majority": {
+          "n_samples": 70,
+          "correct": 10,
+          "accuracy_pct": 14.285714285714285,
+          "macro_f1_pct": 3.571428571428571,
+          "labels": [
+            "Normal",
+            "Fault_1",
+            "Fault_2",
+            "Fault_4",
+            "Fault_6",
+            "Fault_7",
+            "Fault_13"
+          ],
+          "confusion_matrix_true_rows": [
+            [
+              10,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              10,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              10,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              10,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              10,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              10,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              10,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "training_class_priors": {
+        "Normal": 0.14285714285714285,
+        "Fault_1": 0.14285714285714285,
+        "Fault_2": 0.14285714285714285,
+        "Fault_4": 0.14285714285714285,
+        "Fault_6": 0.14285714285714285,
+        "Fault_7": 0.14285714285714285,
+        "Fault_13": 0.14285714285714285
+      },
+      "majority_label": "Normal",
+      "majority_tie_break": "valid_labels order",
+      "prior_random_expected_accuracy_pct": 14.285714285714286,
+      "uniform_random_expected_accuracy_pct": 14.285714285714286,
+      "random_macro_f1": "Not reported: F1 is nonlinear, so accuracy expectation is not an F1 estimate.",
+      "train_records": 2100,
+      "test_records": 70,
+      "settings": {
+        "RF": {
+          "n_estimators": 300,
+          "random_state": 20260926,
+          "other_parameters": "scikit-learn defaults"
+        },
+        "SVM": {
+          "pipeline": [
+            "StandardScaler fitted to train only",
+            "SVC"
+          ],
+          "C": 1.0,
+          "kernel": "rbf",
+          "gamma": "scale",
+          "other_parameters": "scikit-learn defaults"
+        }
+      },
+      "test_tuning": false,
+      "feature_input": "Exactly the stored, rounded features used to render LLM prompts."
+    }
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit_learn": "1.9.1",
+    "pyreadr": "0.5.6"
+  }
+}

@@ -1,0 +1,11 @@
+metric_id,dataset,model,condition,repeat,primary,available,status,failure_reason,n_expected,n_scored,correct,accuracy_percent,wilson95_low_percent,wilson95_high_percent
+gpt-5.5/cmapss_clean_r1,cmapss,gpt-5.5,clean,1,True,False,invalid_response,Incomplete prediction count,60,0,,,,
+gpt-5.6-sol/cmapss_clean_r1,cmapss,gpt-5.6-sol,clean,1,True,True,complete,,60,60,43,71.66666666666667,59.232714835608824,81.49317157156729
+gpt-6-astra/cmapss_clean_r1,cmapss,gpt-6-astra,clean,1,True,True,complete,,60,60,43,71.66666666666667,59.232714835608824,81.49317157156729
+RF/cmapss_clean,cmapss,RF,clean,,True,True,complete,,60,60,49,81.66666666666667,70.08024625353194,89.44220311080237
+SVM/cmapss_clean,cmapss,SVM,clean,,True,True,complete,,60,60,45,75.0,62.767929922952185,84.22347746994333
+gpt-5.5/tep_clean_r1,tep,gpt-5.5,clean,1,True,True,complete,,70,70,51,72.85714285714285,61.45568826371893,81.88040031181171
+gpt-5.6-sol/tep_clean_r1,tep,gpt-5.6-sol,clean,1,True,True,complete,,70,70,70,100.0,94.79769375897331,100.0
+gpt-6-astra/tep_clean_r1,tep,gpt-6-astra,clean,1,True,True,complete,,70,70,70,100.0,94.79769375897331,100.0
+RF/tep_clean,tep,RF,clean,,True,True,complete,,70,70,70,100.0,94.79769375897331,100.0
+SVM/tep_clean,tep,SVM,clean,,True,True,complete,,70,70,70,100.0,94.79769375897331,100.0

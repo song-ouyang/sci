@@ -1,0 +1,53 @@
+{
+  "protocol": "codex-grouped-revision-v3",
+  "model_requested": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "transport": "codex-cli-chatgpt-auth-https",
+  "cli_version": "codex-cli 0.155.0-alpha.9.2",
+  "runner_sha256": "02231b78a0ebb14066884418feaa8d82f3f6b2e3d8868815a4954e18bb0d7159",
+  "protocol_sha256": "4faf7317ad2b92a1599b892f9b68c1eca0427b5a764f8f8b030846efa20bd5c4",
+  "dataset": "tep",
+  "condition": "random_2",
+  "repeat": 2,
+  "input_sha256": "863587ecd5e8960418c3cca3e79e5f6520ea2d53d5ae825921e53437c955cda9",
+  "fingerprint": "9cb5d96326425c544422538e4b9f2ee615b1aeac28eb02b1893e6b62eb7ec912",
+  "prompt_file": "/Users/guoba/work/sci-paper-llm-pdm/results/independent_validation/inference/prompts/random_2_r2.txt",
+  "prompt_txt_sha256": "f7a463ae9886355b067c6be27ac01843577fe3dc70a38983fb079d1f1ddce251",
+  "base_instructions_sha256": "74cddbc5826ebf5b05cdd9a4382b5c3d0a983d408b3005173c4bc81810591564",
+  "batch": "random_2_r2",
+  "n_samples": 70,
+  "started_at": "2026-09-27T14:20:00.875785+00:00",
+  "updated_at": "2026-09-27T14:22:17.140016+00:00",
+  "attempts": [
+    {
+      "attempt": 1,
+      "returncode": 0,
+      "timed_out": false,
+      "elapsed_seconds": 136.257,
+      "events_file": "random_2_r2_attempt1_events.jsonl",
+      "response_file": "random_2_r2_attempt1_response.txt",
+      "stderr_file": "random_2_r2_attempt1_stderr.txt",
+      "usage": {
+        "input_tokens": 93579,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7078,
+        "reasoning_output_tokens": 6053
+      },
+      "errors": [],
+      "malformed_event_lines": []
+    }
+  ],
+  "tools_observed": 0,
+  "answer_keys_read": false,
+  "independent_session_per_group": true,
+  "independent_session_per_sample": false,
+  "temperature": null,
+  "temperature_note": "Not exposed/set by Codex CLI",
+  "system_prompt_note": "Codex base instructions retained; user config, project instructions, skills and plugins disabled",
+  "status": "complete",
+  "previous_execution_metadata_file": null,
+  "server_resolved_model": null,
+  "model_identity_note": "Model requested explicitly; server-resolved model identity is not provided by the CLI event stream",
+  "prediction_sha256": "4ca2669f63ebae7f856b2234a3c57b199311ee287c3365df0a20ff7f1edfa234"
+}

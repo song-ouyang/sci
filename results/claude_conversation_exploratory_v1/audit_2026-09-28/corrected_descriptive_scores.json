@@ -1,0 +1,3119 @@
+{
+  "type": "post_score_descriptive_audit_of_tool_enabled_conversations",
+  "audited_at_utc": "2026-09-28T03:54:22.582484+00:00",
+  "eligible_for_controlled_primary": false,
+  "native_identity_verified": false,
+  "pre_score_freeze_verified": false,
+  "raw_response_chain_verified": false,
+  "planned_sessions": 18,
+  "complete_arrays": 15,
+  "failed_artifacts": 3,
+  "scored_labels": 990,
+  "planned_labels": 1200,
+  "distinct_sources": 130,
+  "snapshot_manifest_sha256": "275ab1f5c2f1c935d364422ba4998568fa399dd52dd91c122b6ac109680d41be",
+  "dataset_sha256": "0097dbb21981968f9ad5b8c59670a07ce701edfecbe61b5108542f7f0638fd1d",
+  "batches_sha256": "48b648d949fac2119222007b8bba7e95c1a2019281df5a17c95fa4f2f59bd8d8",
+  "auditor_sha256": "3b4a04821122584865b8dcc109de81f40b9fdb62dd1d29128da7c036dc0c6d63",
+  "prompt_checks": [
+    {
+      "condition": "cmapss_clean",
+      "bytes": 218242,
+      "declared_hash_unspecified_algorithm": "8163840a7ad5a4fc431ce1d95ef761cd",
+      "current_sha256": "1f927abb09bbfe317ffe2f77621b421cf02d1c8bfedf0fab230477a0162c4814",
+      "current_md5": "8163840a7ad5a4fc431ce1d95ef761cd",
+      "declared_matches_sha256": false,
+      "declared_matches_md5": true
+    },
+    {
+      "condition": "tep_clean",
+      "bytes": 223740,
+      "declared_hash_unspecified_algorithm": "194714859be89cf7f86592a295d50e4f",
+      "current_sha256": "3b3bdaf51da410ede9ad453dc63e0bdd634b1612935e6d33c9bcff99500856ad",
+      "current_md5": "194714859be89cf7f86592a295d50e4f",
+      "declared_matches_sha256": false,
+      "declared_matches_md5": true
+    },
+    {
+      "condition": "tep_misnamed",
+      "bytes": 223740,
+      "declared_hash_unspecified_algorithm": "3d0b4d73e84bc53f6d84bcbbee3595dc",
+      "current_sha256": "a0dc583c59100af856f5b5a25d816d634b4dba96a8059a7c6ee3294d9265e19e",
+      "current_md5": "3d0b4d73e84bc53f6d84bcbbee3595dc",
+      "declared_matches_sha256": false,
+      "declared_matches_md5": true
+    }
+  ],
+  "sessions": {
+    "sonnet/cmapss_clean_r1": {
+      "model_alias": "sonnet",
+      "condition": "cmapss_clean",
+      "repeat": 1,
+      "status": "array_complete",
+      "failure_reason": null,
+      "eligible_for_controlled_primary": false,
+      "inference_provenance_verified": false,
+      "expected_n": 60,
+      "submitted_score_status": "success",
+      "registry_status": "running",
+      "accuracy": 0.6333333333333333,
+      "macro_f1": 0.6337169650468883,
+      "n_scored": 60,
+      "n": 60,
+      "correct": 38,
+      "accuracy_wilson95": [
+        0.5068300063010303,
+        0.7437908331277456
+      ],
+      "miss_definition": "critical_as_noncritical",
+      "miss_numerator": 3,
+      "miss_denominator": 20,
+      "miss_rate": 0.15,
+      "miss_rate_wilson95": [
+        0.052368745896216595,
+        0.36041886474075696
+      ],
+      "false_alarm_numerator": null,
+      "false_alarm_denominator": null,
+      "false_alarm_rate": null,
+      "false_alarm_rate_wilson95": [
+        null,
+        null
+      ],
+      "critical_as_healthy_count": 0,
+      "per_class": {
+        "Healthy": {
+          "support": 20,
+          "tp": 9,
+          "fp": 5,
+          "fn": 11,
+          "precision": 0.6428571428571429,
+          "recall": 0.45,
+          "recall_wilson95": [
+            0.2581978582556243,
+            0.6579146575496577
+          ],
+          "f1": 0.5294117647058824
+        },
+        "Degrading": {
+          "support": 20,
+          "tp": 12,
+          "fp": 14,
+          "fn": 8,
+          "precision": 0.46153846153846156,
+          "recall": 0.6,
+          "recall_wilson95": [
+            0.3865815007622531,
+            0.781193467627183
+          ],
+          "f1": 0.5217391304347826
+        },
+        "Critical": {
+          "support": 20,
+          "tp": 17,
+          "fp": 3,
+          "fn": 3,
+          "precision": 0.85,
+          "recall": 0.85,
+          "recall_wilson95": [
+            0.6395811352592431,
+            0.9476312541037835
+          ],
+          "f1": 0.85
+        }
+      },
+      "confusion_matrix": {
+        "Healthy": {
+          "Healthy": 9,
+          "Degrading": 11,
+          "Critical": 0
+        },
+        "Degrading": {
+          "Healthy": 5,
+          "Degrading": 12,
+          "Critical": 3
+        },
+        "Critical": {
+          "Healthy": 0,
+          "Degrading": 3,
+          "Critical": 17
+        }
+      },
+      "submitted_rounded_metrics_match": true
+    },
+    "sonnet/cmapss_clean_r2": {
+      "model_alias": "sonnet",
+      "condition": "cmapss_clean",
+      "repeat": 2,
+      "status": "array_complete",
+      "failure_reason": null,
+      "eligible_for_controlled_primary": false,
+      "inference_provenance_verified": false,
+      "expected_n": 60,
+      "submitted_score_status": "success",
+      "registry_status": "running",
+      "accuracy": 0.5666666666666667,
+      "macro_f1": 0.5641215106732348,
+      "n_scored": 60,
+      "n": 60,
+      "correct": 34,
+      "accuracy_wilson95": [
+        0.44103438776125564,
+        0.6842760319531324
+      ],
+      "miss_definition": "critical_as_noncritical",
+      "miss_numerator": 7,
+      "miss_denominator": 20,
+      "miss_rate": 0.35,
+      "miss_rate_wilson95": [
+        0.18119182410108206,
+        0.5671457233147638
+      ],
+      "false_alarm_numerator": null,
+      "false_alarm_denominator": null,
+      "false_alarm_rate": null,
+      "false_alarm_rate_wilson95": [
+        null,
+        null
+      ],
+      "critical_as_healthy_count": 0,
+      "per_class": {
+        "Healthy": {
+          "support": 20,
+          "tp": 6,
+          "fp": 3,
+          "fn": 14,
+          "precision": 0.6666666666666666,
+          "recall": 0.3,
+          "recall_wilson95": [
+            0.1454772448676043,
+            0.5189728183535235
+          ],
+          "f1": 0.41379310344827586
+        },
+        "Degrading": {
+          "support": 20,
+          "tp": 15,
+          "fp": 21,
+          "fn": 5,
+          "precision": 0.4166666666666667,
+          "recall": 0.75,
+          "recall_wilson95": [
+            0.531299122381256,
+            0.8881382985923343
+          ],
+          "f1": 0.5357142857142857
+        },
+        "Critical": {
+          "support": 20,
+          "tp": 13,
+          "fp": 2,
+          "fn": 7,
+          "precision": 0.8666666666666667,
+          "recall": 0.65,
+          "recall_wilson95": [
+            0.43285427668523624,
+            0.818808175898918
+          ],
+          "f1": 0.7428571428571429
+        }
+      },
+      "confusion_matrix": {
+        "Healthy": {
+          "Healthy": 6,
+          "Degrading": 14,
+          "Critical": 0
+        },
+        "Degrading": {
+          "Healthy": 3,
+          "Degrading": 15,
+          "Critical": 2
+        },
+        "Critical": {
+          "Healthy": 0,
+          "Degrading": 7,
+          "Critical": 13
+        }
+      },
+      "submitted_rounded_metrics_match": true
+    },
+    "sonnet/cmapss_clean_r3": {
+      "model_alias": "sonnet",
+      "condition": "cmapss_clean",
+      "repeat": 3,
+      "status": "array_complete",
+      "failure_reason": null,
+      "eligible_for_controlled_primary": false,
+      "inference_provenance_verified": false,
+      "expected_n": 60,
+      "submitted_score_status": "success",
+      "registry_status": "running",
+      "accuracy": 0.7,
+      "macro_f1": 0.7062289562289562,
+      "n_scored": 60,
+      "n": 60,
+      "correct": 42,
+      "accuracy_wilson95": [
+        0.5749129205308552,
+        0.8010183386123089
+      ],
+      "miss_definition": "critical_as_noncritical",
+      "miss_numerator": 6,
+      "miss_denominator": 20,
+      "miss_rate": 0.3,
+      "miss_rate_wilson95": [
+        0.1454772448676043,
+        0.5189728183535235
+      ],
+      "false_alarm_numerator": null,
+      "false_alarm_denominator": null,
+      "false_alarm_rate": null,
+      "false_alarm_rate_wilson95": [
+        null,
+        null
+      ],
+      "critical_as_healthy_count": 0,
+      "per_class": {
+        "Healthy": {
+          "support": 20,
+          "tp": 15,
+          "fp": 5,
+          "fn": 5,
+          "precision": 0.75,
+          "recall": 0.75,
+          "recall_wilson95": [
+            0.531299122381256,
+            0.8881382985923343
+          ],
+          "f1": 0.75
+        },
+        "Degrading": {
+          "support": 20,
+          "tp": 13,
+          "fp": 11,
+          "fn": 7,
+          "precision": 0.5416666666666666,
+          "recall": 0.65,
+          "recall_wilson95": [
+            0.43285427668523624,
+            0.818808175898918
+          ],
+          "f1": 0.5909090909090909
+        },
+        "Critical": {
+          "support": 20,
+          "tp": 14,
+          "fp": 2,
+          "fn": 6,
+          "precision": 0.875,
+          "recall": 0.7,
+          "recall_wilson95": [
+            0.4810271816464765,
+            0.8545227551323956
+          ],
+          "f1": 0.7777777777777778
+        }
+      },
+      "confusion_matrix": {
+        "Healthy": {
+          "Healthy": 15,
+          "Degrading": 5,
+          "Critical": 0
+        },
+        "Degrading": {
+          "Healthy": 5,
+          "Degrading": 13,
+          "Critical": 2
+        },
+        "Critical": {
+          "Healthy": 0,
+          "Degrading": 6,
+          "Critical": 14
+        }
+      },
+      "submitted_rounded_metrics_match": true
+    },
+    "sonnet/tep_clean_r1": {
+      "model_alias": "sonnet",
+      "condition": "tep_clean",
+      "repeat": 1,
+      "status": "failed_invalid_array",
+      "failure_reason": "Record 16 ID differs from ordered input",
+      "eligible_for_controlled_primary": false,
+      "inference_provenance_verified": false,
+      "expected_n": 70,
+      "submitted_score_status": "success",
+      "registry_status": "running",
+      "accuracy": null,
+      "macro_f1": null,
+      "n_scored": 0,
+      "posthoc_id_aligned_arithmetic_only": {
+        "n": 70,
+        "correct": 44,
+        "accuracy": 0.6285714285714286,
+        "accuracy_wilson95": [
+          0.5114720115842711,
+          0.7322934866530887
+        ],
+        "macro_f1": 0.5833333333333333,
+        "miss_definition": "fault_as_normal",
+        "miss_numerator": 25,
+        "miss_denominator": 60,
+        "miss_rate": 0.4166666666666667,
+        "miss_rate_wilson95": [
+          0.30064278558341617,
+          0.5427191897735989
+        ],
+        "false_alarm_numerator": 0,
+        "false_alarm_denominator": 10,
+        "false_alarm_rate": 0.0,
+        "false_alarm_rate_wilson95": [
+          0.0,
+          0.2775327998628892
+        ],
+        "critical_as_healthy_count": null,
+        "per_class": {
+          "Normal": {
+            "support": 10,
+            "tp": 10,
+            "fp": 25,
+            "fn": 0,
+            "precision": 0.2857142857142857,
+            "recall": 1.0,
+            "recall_wilson95": [
+              0.7224672001371107,
+              0.9999999999999999
+            ],
+            "f1": 0.4444444444444444
+          },
+          "Fault_1": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "recall_wilson95": [
+              0.7224672001371107,
+              0.9999999999999999
+            ],
+            "f1": 1.0
+          },
+          "Fault_2": {
+            "support": 10,
+            "tp": 0,
+            "fp": 1,
+            "fn": 10,
+            "precision": 0.0,
+            "recall": 0.0,
+            "recall_wilson95": [
+              0.0,
+              0.2775327998628892
+            ],
+            "f1": 0.0
+          },
+          "Fault_4": {
+            "support": 10,
+            "tp": 0,
+            "fp": 0,
+            "fn": 10,
+            "precision": 0.0,
+            "recall": 0.0,
+            "recall_wilson95": [
+              0.0,
+              0.2775327998628892
+            ],
+            "f1": 0.0
+          },
+          "Fault_6": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "recall_wilson95": [
+              0.7224672001371107,
+              0.9999999999999999
+            ],
+            "f1": 1.0
+          },
+          "Fault_7": {
+            "support": 10,
+            "tp": 8,
+            "fp": 0,
+            "fn": 2,
+            "precision": 1.0,
+            "recall": 0.8,
+            "recall_wilson95": [
+              0.49016247153664183,
+              0.9433178485456247
+            ],
+            "f1": 0.8888888888888888
+          },
+          "Fault_13": {
+            "support": 10,
+            "tp": 6,
+            "fp": 0,
+            "fn": 4,
+            "precision": 1.0,
+            "recall": 0.6,
+            "recall_wilson95": [
+              0.31267376973365824,
+              0.8318196702937638
+            ],
+            "f1": 0.75
+          }
+        },
+        "confusion_matrix": {
+          "Normal": {
+            "Normal": 10,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_1": {
+            "Normal": 0,
+            "Fault_1": 10,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_2": {
+            "Normal": 10,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_4": {
+            "Normal": 10,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_6": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 10,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_7": {
+            "Normal": 2,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 8,
+            "Fault_13": 0
+          },
+          "Fault_13": {
+            "Normal": 3,
+            "Fault_1": 0,
+            "Fault_2": 1,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 6
+          }
+        }
+      },
+      "order_mismatches": [
+        {
+          "position_one_based": 17,
+          "expected_id": "1ea8463a",
+          "returned_id": "9e159cbe"
+        },
+        {
+          "position_one_based": 18,
+          "expected_id": "9e159cbe",
+          "returned_id": "1ea8463a"
+        }
+      ],
+      "submitted_rounded_metrics_match": true
+    },
+    "sonnet/tep_clean_r2": {
+      "model_alias": "sonnet",
+      "condition": "tep_clean",
+      "repeat": 2,
+      "status": "array_complete",
+      "failure_reason": null,
+      "eligible_for_controlled_primary": false,
+      "inference_provenance_verified": false,
+      "expected_n": 70,
+      "submitted_score_status": "success",
+      "registry_status": "running",
+      "accuracy": 0.7,
+      "macro_f1": 0.7000000000000001,
+      "n_scored": 70,
+      "n": 70,
+      "correct": 49,
+      "accuracy_wilson95": [
+        0.5845568276122731,
+        0.79463394742362
+      ],
+      "miss_definition": "fault_as_normal",
+      "miss_numerator": 5,
+      "miss_denominator": 60,
+      "miss_rate": 0.08333333333333333,
+      "miss_rate_wilson95": [
+        0.03612045660173077,
+        0.1806894201833441
+      ],
+      "false_alarm_numerator": 5,
+      "false_alarm_denominator": 10,
+      "false_alarm_rate": 0.5,
+      "false_alarm_rate_wilson95": [
+        0.236593090512564,
+        0.7634069094874361
+      ],
+      "critical_as_healthy_count": null,
+      "per_class": {
+        "Normal": {
+          "support": 10,
+          "tp": 5,
+          "fp": 5,
+          "fn": 5,
+          "precision": 0.5,
+          "recall": 0.5,
+          "recall_wilson95": [
+            0.236593090512564,
+            0.7634069094874361
+          ],
+          "f1": 0.5
+        },
+        "Fault_1": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_2": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_4": {
+          "support": 10,
+          "tp": 2,
+          "fp": 8,
+          "fn": 8,
+          "precision": 0.2,
+          "recall": 0.2,
+          "recall_wilson95": [
+            0.05668215145437519,
+            0.5098375284633583
+          ],
+          "f1": 0.2
+        },
+        "Fault_6": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_7": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_13": {
+          "support": 10,
+          "tp": 2,
+          "fp": 8,
+          "fn": 8,
+          "precision": 0.2,
+          "recall": 0.2,
+          "recall_wilson95": [
+            0.05668215145437519,
+            0.5098375284633583
+          ],
+          "f1": 0.2
+        }
+      },
+      "confusion_matrix": {
+        "Normal": {
+          "Normal": 5,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 5
+        },
+        "Fault_1": {
+          "Normal": 0,
+          "Fault_1": 10,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_2": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 10,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_4": {
+          "Normal": 5,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 2,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 3
+        },
+        "Fault_6": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 10,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_7": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 10,
+          "Fault_13": 0
+        },
+        "Fault_13": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 8,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 2
+        }
+      },
+      "submitted_rounded_metrics_match": true
+    },
+    "sonnet/tep_clean_r3": {
+      "model_alias": "sonnet",
+      "condition": "tep_clean",
+      "repeat": 3,
+      "status": "array_complete",
+      "failure_reason": null,
+      "eligible_for_controlled_primary": false,
+      "inference_provenance_verified": false,
+      "expected_n": 70,
+      "submitted_score_status": "success",
+      "registry_status": "running",
+      "accuracy": 0.6142857142857143,
+      "macro_f1": 0.5498145746592952,
+      "n_scored": 70,
+      "n": 70,
+      "correct": 43,
+      "accuracy_wilson95": [
+        0.4971573558930424,
+        0.7195230869846111
+      ],
+      "miss_definition": "fault_as_normal",
+      "miss_numerator": 26,
+      "miss_denominator": 60,
+      "miss_rate": 0.43333333333333335,
+      "miss_rate_wilson95": [
+        0.3157239680468677,
+        0.5589656122387444
+      ],
+      "false_alarm_numerator": 0,
+      "false_alarm_denominator": 10,
+      "false_alarm_rate": 0.0,
+      "false_alarm_rate_wilson95": [
+        0.0,
+        0.2775327998628892
+      ],
+      "critical_as_healthy_count": null,
+      "per_class": {
+        "Normal": {
+          "support": 10,
+          "tp": 10,
+          "fp": 26,
+          "fn": 0,
+          "precision": 0.2777777777777778,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 0.43478260869565216
+        },
+        "Fault_1": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_2": {
+          "support": 10,
+          "tp": 10,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 0.9523809523809523
+        },
+        "Fault_4": {
+          "support": 10,
+          "tp": 0,
+          "fp": 0,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_6": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_7": {
+          "support": 10,
+          "tp": 0,
+          "fp": 0,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_13": {
+          "support": 10,
+          "tp": 3,
+          "fp": 0,
+          "fn": 7,
+          "precision": 1.0,
+          "recall": 0.3,
+          "recall_wilson95": [
+            0.10779126740630099,
+            0.6032218525388546
+          ],
+          "f1": 0.46153846153846156
+        }
+      },
+      "confusion_matrix": {
+        "Normal": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_1": {
+          "Normal": 0,
+          "Fault_1": 10,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_2": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 10,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_4": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_6": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 10,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_7": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_13": {
+          "Normal": 6,
+          "Fault_1": 0,
+          "Fault_2": 1,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 3
+        }
+      },
+      "submitted_rounded_metrics_match": true
+    },
+    "sonnet/tep_misnamed_r1": {
+      "model_alias": "sonnet",
+      "condition": "tep_misnamed",
+      "repeat": 1,
+      "status": "array_complete",
+      "failure_reason": null,
+      "eligible_for_controlled_primary": false,
+      "inference_provenance_verified": false,
+      "expected_n": 70,
+      "submitted_score_status": "success",
+      "registry_status": "running",
+      "accuracy": 0.17142857142857143,
+      "macro_f1": 0.1173054587688734,
+      "n_scored": 70,
+      "n": 70,
+      "correct": 12,
+      "accuracy_wilson95": [
+        0.10087724640529248,
+        0.2761664803214543
+      ],
+      "miss_definition": "fault_as_normal",
+      "miss_numerator": 21,
+      "miss_denominator": 60,
+      "miss_rate": 0.35,
+      "miss_rate_wilson95": [
+        0.24167774406017556,
+        0.47637381158245135
+      ],
+      "false_alarm_numerator": 0,
+      "false_alarm_denominator": 10,
+      "false_alarm_rate": 0.0,
+      "false_alarm_rate_wilson95": [
+        0.0,
+        0.2775327998628892
+      ],
+      "critical_as_healthy_count": null,
+      "per_class": {
+        "Normal": {
+          "support": 10,
+          "tp": 10,
+          "fp": 21,
+          "fn": 0,
+          "precision": 0.3225806451612903,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 0.4878048780487805
+        },
+        "Fault_1": {
+          "support": 10,
+          "tp": 0,
+          "fp": 10,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_2": {
+          "support": 10,
+          "tp": 0,
+          "fp": 11,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_4": {
+          "support": 10,
+          "tp": 0,
+          "fp": 6,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_6": {
+          "support": 10,
+          "tp": 0,
+          "fp": 0,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_7": {
+          "support": 10,
+          "tp": 0,
+          "fp": 10,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_13": {
+          "support": 10,
+          "tp": 2,
+          "fp": 0,
+          "fn": 8,
+          "precision": 1.0,
+          "recall": 0.2,
+          "recall_wilson95": [
+            0.05668215145437519,
+            0.5098375284633583
+          ],
+          "f1": 0.3333333333333333
+        }
+      },
+      "confusion_matrix": {
+        "Normal": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_1": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 10,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_2": {
+          "Normal": 0,
+          "Fault_1": 10,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_4": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_6": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 10,
+          "Fault_13": 0
+        },
+        "Fault_7": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_13": {
+          "Normal": 1,
+          "Fault_1": 0,
+          "Fault_2": 1,
+          "Fault_4": 6,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 2
+        }
+      },
+      "submitted_rounded_metrics_match": true
+    },
+    "sonnet/tep_misnamed_r2": {
+      "model_alias": "sonnet",
+      "condition": "tep_misnamed",
+      "repeat": 2,
+      "status": "failed_off_task",
+      "failure_reason": "off_task",
+      "eligible_for_controlled_primary": false,
+      "inference_provenance_verified": false,
+      "expected_n": 70,
+      "submitted_score_status": "not_run",
+      "registry_status": "running",
+      "accuracy": null,
+      "macro_f1": null,
+      "n_scored": 0
+    },
+    "sonnet/tep_misnamed_r3": {
+      "model_alias": "sonnet",
+      "condition": "tep_misnamed",
+      "repeat": 3,
+      "status": "array_complete",
+      "failure_reason": null,
+      "eligible_for_controlled_primary": false,
+      "inference_provenance_verified": false,
+      "expected_n": 70,
+      "submitted_score_status": "success",
+      "registry_status": "running",
+      "accuracy": 0.15714285714285714,
+      "macro_f1": 0.07988238176917421,
+      "n_scored": 70,
+      "n": 70,
+      "correct": 11,
+      "accuracy_wilson95": [
+        0.09007620559861788,
+        0.2598824657684222
+      ],
+      "miss_definition": "fault_as_normal",
+      "miss_numerator": 33,
+      "miss_denominator": 60,
+      "miss_rate": 0.55,
+      "miss_rate_wilson95": [
+        0.4249193588533434,
+        0.6690634559324476
+      ],
+      "false_alarm_numerator": 0,
+      "false_alarm_denominator": 10,
+      "false_alarm_rate": 0.0,
+      "false_alarm_rate_wilson95": [
+        0.0,
+        0.2775327998628892
+      ],
+      "critical_as_healthy_count": null,
+      "per_class": {
+        "Normal": {
+          "support": 10,
+          "tp": 10,
+          "fp": 33,
+          "fn": 0,
+          "precision": 0.23255813953488372,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 0.37735849056603776
+        },
+        "Fault_1": {
+          "support": 10,
+          "tp": 0,
+          "fp": 10,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_2": {
+          "support": 10,
+          "tp": 0,
+          "fp": 0,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_4": {
+          "support": 10,
+          "tp": 0,
+          "fp": 6,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_6": {
+          "support": 10,
+          "tp": 0,
+          "fp": 0,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_7": {
+          "support": 10,
+          "tp": 0,
+          "fp": 10,
+          "fn": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "recall_wilson95": [
+            0.0,
+            0.2775327998628892
+          ],
+          "f1": 0.0
+        },
+        "Fault_13": {
+          "support": 10,
+          "tp": 1,
+          "fp": 0,
+          "fn": 9,
+          "precision": 1.0,
+          "recall": 0.1,
+          "recall_wilson95": [
+            0.017876213095072896,
+            0.4041500267952385
+          ],
+          "f1": 0.18181818181818182
+        }
+      },
+      "confusion_matrix": {
+        "Normal": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_1": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_2": {
+          "Normal": 0,
+          "Fault_1": 10,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_4": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_6": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 10,
+          "Fault_13": 0
+        },
+        "Fault_7": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_13": {
+          "Normal": 3,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 6,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 1
+        }
+      },
+      "submitted_rounded_metrics_match": true
+    },
+    "opus/cmapss_clean_r1": {
+      "model_alias": "opus",
+      "condition": "cmapss_clean",
+      "repeat": 1,
+      "status": "array_complete",
+      "failure_reason": null,
+      "eligible_for_controlled_primary": false,
+      "inference_provenance_verified": false,
+      "expected_n": 60,
+      "submitted_score_status": "success",
+      "registry_status": "running",
+      "accuracy": 0.65,
+      "macro_f1": 0.6603220149848558,
+      "n_scored": 60,
+      "n": 60,
+      "correct": 39,
+      "accuracy_wilson95": [
+        0.5236261884175486,
+        0.7583222559398244
+      ],
+      "miss_definition": "critical_as_noncritical",
+      "miss_numerator": 7,
+      "miss_denominator": 20,
+      "miss_rate": 0.35,
+      "miss_rate_wilson95": [
+        0.18119182410108206,
+        0.5671457233147638
+      ],
+      "false_alarm_numerator": null,
+      "false_alarm_denominator": null,
+      "false_alarm_rate": null,
+      "false_alarm_rate_wilson95": [
+        null,
+        null
+      ],
+      "critical_as_healthy_count": 0,
+      "per_class": {
+        "Healthy": {
+          "support": 20,
+          "tp": 14,
+          "fp": 7,
+          "fn": 6,
+          "precision": 0.6666666666666666,
+          "recall": 0.7,
+          "recall_wilson95": [
+            0.4810271816464765,
+            0.8545227551323956
+          ],
+          "f1": 0.6829268292682927
+        },
+        "Degrading": {
+          "support": 20,
+          "tp": 12,
+          "fp": 13,
+          "fn": 8,
+          "precision": 0.48,
+          "recall": 0.6,
+          "recall_wilson95": [
+            0.3865815007622531,
+            0.781193467627183
+          ],
+          "f1": 0.5333333333333333
+        },
+        "Critical": {
+          "support": 20,
+          "tp": 13,
+          "fp": 1,
+          "fn": 7,
+          "precision": 0.9285714285714286,
+          "recall": 0.65,
+          "recall_wilson95": [
+            0.43285427668523624,
+            0.818808175898918
+          ],
+          "f1": 0.7647058823529411
+        }
+      },
+      "confusion_matrix": {
+        "Healthy": {
+          "Healthy": 14,
+          "Degrading": 6,
+          "Critical": 0
+        },
+        "Degrading": {
+          "Healthy": 7,
+          "Degrading": 12,
+          "Critical": 1
+        },
+        "Critical": {
+          "Healthy": 0,
+          "Degrading": 7,
+          "Critical": 13
+        }
+      },
+      "submitted_rounded_metrics_match": true
+    },
+    "opus/cmapss_clean_r2": {
+      "model_alias": "opus",
+      "condition": "cmapss_clean",
+      "repeat": 2,
+      "status": "array_complete",
+      "failure_reason": null,
+      "eligible_for_controlled_primary": false,
+      "inference_provenance_verified": false,
+      "expected_n": 60,
+      "submitted_score_status": "success",
+      "registry_status": "running",
+      "accuracy": 0.6333333333333333,
+      "macro_f1": 0.6397258090227961,
+      "n_scored": 60,
+      "n": 60,
+      "correct": 38,
+      "accuracy_wilson95": [
+        0.5068300063010303,
+        0.7437908331277456
+      ],
+      "miss_definition": "critical_as_noncritical",
+      "miss_numerator": 7,
+      "miss_denominator": 20,
+      "miss_rate": 0.35,
+      "miss_rate_wilson95": [
+        0.18119182410108206,
+        0.5671457233147638
+      ],
+      "false_alarm_numerator": null,
+      "false_alarm_denominator": null,
+      "false_alarm_rate": null,
+      "false_alarm_rate_wilson95": [
+        null,
+        null
+      ],
+      "critical_as_healthy_count": 1,
+      "per_class": {
+        "Healthy": {
+          "support": 20,
+          "tp": 15,
+          "fp": 10,
+          "fn": 5,
+          "precision": 0.6,
+          "recall": 0.75,
+          "recall_wilson95": [
+            0.531299122381256,
+            0.8881382985923343
+          ],
+          "f1": 0.6666666666666666
+        },
+        "Degrading": {
+          "support": 20,
+          "tp": 10,
+          "fp": 11,
+          "fn": 10,
+          "precision": 0.47619047619047616,
+          "recall": 0.5,
+          "recall_wilson95": [
+            0.2992980081982123,
+            0.7007019918017877
+          ],
+          "f1": 0.4878048780487805
+        },
+        "Critical": {
+          "support": 20,
+          "tp": 13,
+          "fp": 1,
+          "fn": 7,
+          "precision": 0.9285714285714286,
+          "recall": 0.65,
+          "recall_wilson95": [
+            0.43285427668523624,
+            0.818808175898918
+          ],
+          "f1": 0.7647058823529411
+        }
+      },
+      "confusion_matrix": {
+        "Healthy": {
+          "Healthy": 15,
+          "Degrading": 5,
+          "Critical": 0
+        },
+        "Degrading": {
+          "Healthy": 9,
+          "Degrading": 10,
+          "Critical": 1
+        },
+        "Critical": {
+          "Healthy": 1,
+          "Degrading": 6,
+          "Critical": 13
+        }
+      },
+      "submitted_rounded_metrics_match": true
+    },
+    "opus/cmapss_clean_r3": {
+      "model_alias": "opus",
+      "condition": "cmapss_clean",
+      "repeat": 3,
+      "status": "array_complete",
+      "failure_reason": null,
+      "eligible_for_controlled_primary": false,
+      "inference_provenance_verified": false,
+      "expected_n": 60,
+      "submitted_score_status": "success",
+      "registry_status": "running",
+      "accuracy": 0.65,
+      "macro_f1": 0.6489078087375301,
+      "n_scored": 60,
+      "n": 60,
+      "correct": 39,
+      "accuracy_wilson95": [
+        0.5236261884175486,
+        0.7583222559398244
+      ],
+      "miss_definition": "critical_as_noncritical",
+      "miss_numerator": 7,
+      "miss_denominator": 20,
+      "miss_rate": 0.35,
+      "miss_rate_wilson95": [
+        0.18119182410108206,
+        0.5671457233147638
+      ],
+      "false_alarm_numerator": null,
+      "false_alarm_denominator": null,
+      "false_alarm_rate": null,
+      "false_alarm_rate_wilson95": [
+        null,
+        null
+      ],
+      "critical_as_healthy_count": 1,
+      "per_class": {
+        "Healthy": {
+          "support": 20,
+          "tp": 17,
+          "fp": 11,
+          "fn": 3,
+          "precision": 0.6071428571428571,
+          "recall": 0.85,
+          "recall_wilson95": [
+            0.6395811352592431,
+            0.9476312541037835
+          ],
+          "f1": 0.7083333333333334
+        },
+        "Degrading": {
+          "support": 20,
+          "tp": 9,
+          "fp": 9,
+          "fn": 11,
+          "precision": 0.5,
+          "recall": 0.45,
+          "recall_wilson95": [
+            0.2581978582556243,
+            0.6579146575496577
+          ],
+          "f1": 0.47368421052631576
+        },
+        "Critical": {
+          "support": 20,
+          "tp": 13,
+          "fp": 1,
+          "fn": 7,
+          "precision": 0.9285714285714286,
+          "recall": 0.65,
+          "recall_wilson95": [
+            0.43285427668523624,
+            0.818808175898918
+          ],
+          "f1": 0.7647058823529411
+        }
+      },
+      "confusion_matrix": {
+        "Healthy": {
+          "Healthy": 17,
+          "Degrading": 3,
+          "Critical": 0
+        },
+        "Degrading": {
+          "Healthy": 10,
+          "Degrading": 9,
+          "Critical": 1
+        },
+        "Critical": {
+          "Healthy": 1,
+          "Degrading": 6,
+          "Critical": 13
+        }
+      },
+      "submitted_rounded_metrics_match": true
+    },
+    "opus/tep_clean_r1": {
+      "model_alias": "opus",
+      "condition": "tep_clean",
+      "repeat": 1,
+      "status": "array_complete",
+      "failure_reason": null,
+      "eligible_for_controlled_primary": false,
+      "inference_provenance_verified": false,
+      "expected_n": 70,
+      "submitted_score_status": "success",
+      "registry_status": "running",
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "n_scored": 70,
+      "n": 70,
+      "correct": 70,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "miss_definition": "fault_as_normal",
+      "miss_numerator": 0,
+      "miss_denominator": 60,
+      "miss_rate": 0.0,
+      "miss_rate_wilson95": [
+        0.0,
+        0.06017185214208986
+      ],
+      "false_alarm_numerator": 0,
+      "false_alarm_denominator": 10,
+      "false_alarm_rate": 0.0,
+      "false_alarm_rate_wilson95": [
+        0.0,
+        0.2775327998628892
+      ],
+      "critical_as_healthy_count": null,
+      "per_class": {
+        "Normal": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_1": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_2": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_4": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_6": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_7": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_13": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        }
+      },
+      "confusion_matrix": {
+        "Normal": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_1": {
+          "Normal": 0,
+          "Fault_1": 10,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_2": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 10,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_4": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 10,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_6": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 10,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_7": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 10,
+          "Fault_13": 0
+        },
+        "Fault_13": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 10
+        }
+      },
+      "submitted_rounded_metrics_match": true
+    },
+    "opus/tep_clean_r2": {
+      "model_alias": "opus",
+      "condition": "tep_clean",
+      "repeat": 2,
+      "status": "array_complete",
+      "failure_reason": null,
+      "eligible_for_controlled_primary": false,
+      "inference_provenance_verified": false,
+      "expected_n": 70,
+      "submitted_score_status": "success",
+      "registry_status": "running",
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "n_scored": 70,
+      "n": 70,
+      "correct": 70,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "miss_definition": "fault_as_normal",
+      "miss_numerator": 0,
+      "miss_denominator": 60,
+      "miss_rate": 0.0,
+      "miss_rate_wilson95": [
+        0.0,
+        0.06017185214208986
+      ],
+      "false_alarm_numerator": 0,
+      "false_alarm_denominator": 10,
+      "false_alarm_rate": 0.0,
+      "false_alarm_rate_wilson95": [
+        0.0,
+        0.2775327998628892
+      ],
+      "critical_as_healthy_count": null,
+      "per_class": {
+        "Normal": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_1": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_2": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_4": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_6": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_7": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_13": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        }
+      },
+      "confusion_matrix": {
+        "Normal": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_1": {
+          "Normal": 0,
+          "Fault_1": 10,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_2": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 10,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_4": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 10,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_6": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 10,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_7": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 10,
+          "Fault_13": 0
+        },
+        "Fault_13": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 10
+        }
+      },
+      "submitted_rounded_metrics_match": true
+    },
+    "opus/tep_clean_r3": {
+      "model_alias": "opus",
+      "condition": "tep_clean",
+      "repeat": 3,
+      "status": "array_complete",
+      "failure_reason": null,
+      "eligible_for_controlled_primary": false,
+      "inference_provenance_verified": false,
+      "expected_n": 70,
+      "submitted_score_status": "success",
+      "registry_status": "running",
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "n_scored": 70,
+      "n": 70,
+      "correct": 70,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "miss_definition": "fault_as_normal",
+      "miss_numerator": 0,
+      "miss_denominator": 60,
+      "miss_rate": 0.0,
+      "miss_rate_wilson95": [
+        0.0,
+        0.06017185214208986
+      ],
+      "false_alarm_numerator": 0,
+      "false_alarm_denominator": 10,
+      "false_alarm_rate": 0.0,
+      "false_alarm_rate_wilson95": [
+        0.0,
+        0.2775327998628892
+      ],
+      "critical_as_healthy_count": null,
+      "per_class": {
+        "Normal": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_1": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_2": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_4": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_6": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_7": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_13": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        }
+      },
+      "confusion_matrix": {
+        "Normal": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_1": {
+          "Normal": 0,
+          "Fault_1": 10,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_2": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 10,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_4": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 10,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_6": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 10,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_7": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 10,
+          "Fault_13": 0
+        },
+        "Fault_13": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 10
+        }
+      },
+      "submitted_rounded_metrics_match": true
+    },
+    "opus/tep_misnamed_r1": {
+      "model_alias": "opus",
+      "condition": "tep_misnamed",
+      "repeat": 1,
+      "status": "array_complete",
+      "failure_reason": null,
+      "eligible_for_controlled_primary": false,
+      "inference_provenance_verified": false,
+      "expected_n": 70,
+      "submitted_score_status": "success",
+      "registry_status": "running",
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "n_scored": 70,
+      "n": 70,
+      "correct": 70,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "miss_definition": "fault_as_normal",
+      "miss_numerator": 0,
+      "miss_denominator": 60,
+      "miss_rate": 0.0,
+      "miss_rate_wilson95": [
+        0.0,
+        0.06017185214208986
+      ],
+      "false_alarm_numerator": 0,
+      "false_alarm_denominator": 10,
+      "false_alarm_rate": 0.0,
+      "false_alarm_rate_wilson95": [
+        0.0,
+        0.2775327998628892
+      ],
+      "critical_as_healthy_count": null,
+      "per_class": {
+        "Normal": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_1": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_2": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_4": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_6": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_7": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_13": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        }
+      },
+      "confusion_matrix": {
+        "Normal": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_1": {
+          "Normal": 0,
+          "Fault_1": 10,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_2": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 10,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_4": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 10,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_6": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 10,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_7": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 10,
+          "Fault_13": 0
+        },
+        "Fault_13": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 10
+        }
+      },
+      "submitted_rounded_metrics_match": true
+    },
+    "opus/tep_misnamed_r2": {
+      "model_alias": "opus",
+      "condition": "tep_misnamed",
+      "repeat": 2,
+      "status": "array_complete",
+      "failure_reason": null,
+      "eligible_for_controlled_primary": false,
+      "inference_provenance_verified": false,
+      "expected_n": 70,
+      "submitted_score_status": "success",
+      "registry_status": "running",
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "n_scored": 70,
+      "n": 70,
+      "correct": 70,
+      "accuracy_wilson95": [
+        0.9479769375897331,
+        1.0
+      ],
+      "miss_definition": "fault_as_normal",
+      "miss_numerator": 0,
+      "miss_denominator": 60,
+      "miss_rate": 0.0,
+      "miss_rate_wilson95": [
+        0.0,
+        0.06017185214208986
+      ],
+      "false_alarm_numerator": 0,
+      "false_alarm_denominator": 10,
+      "false_alarm_rate": 0.0,
+      "false_alarm_rate_wilson95": [
+        0.0,
+        0.2775327998628892
+      ],
+      "critical_as_healthy_count": null,
+      "per_class": {
+        "Normal": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_1": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_2": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_4": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_6": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_7": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        },
+        "Fault_13": {
+          "support": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recall_wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "f1": 1.0
+        }
+      },
+      "confusion_matrix": {
+        "Normal": {
+          "Normal": 10,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_1": {
+          "Normal": 0,
+          "Fault_1": 10,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_2": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 10,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_4": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 10,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_6": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 10,
+          "Fault_7": 0,
+          "Fault_13": 0
+        },
+        "Fault_7": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 10,
+          "Fault_13": 0
+        },
+        "Fault_13": {
+          "Normal": 0,
+          "Fault_1": 0,
+          "Fault_2": 0,
+          "Fault_4": 0,
+          "Fault_6": 0,
+          "Fault_7": 0,
+          "Fault_13": 10
+        }
+      },
+      "submitted_rounded_metrics_match": true
+    },
+    "opus/tep_misnamed_r3": {
+      "model_alias": "opus",
+      "condition": "tep_misnamed",
+      "repeat": 3,
+      "status": "failed_incomplete",
+      "failure_reason": "69/70 stored records; entire batch N/A",
+      "eligible_for_controlled_primary": false,
+      "inference_provenance_verified": false,
+      "expected_n": 70,
+      "submitted_score_status": "not_run",
+      "registry_status": "running",
+      "accuracy": null,
+      "macro_f1": null,
+      "n_scored": 0
+    }
+  },
+  "aggregates": [
+    {
+      "model_alias": "sonnet",
+      "condition": "cmapss_clean",
+      "available_repeats": [
+        1,
+        2,
+        3
+      ],
+      "accuracy": {
+        "mean_pct": 63.33333333333333,
+        "sample_sd_pp": 6.666666666666668,
+        "n_available": 3,
+        "n_planned": 3,
+        "repeat_values_pct": [
+          63.33333333333333,
+          56.666666666666664,
+          70.0
+        ]
+      },
+      "macro_f1": {
+        "mean_pct": 63.468914398302644,
+        "sample_sd_pp": 7.105871072223299,
+        "n_available": 3,
+        "n_planned": 3,
+        "repeat_values_pct": [
+          63.371696504688835,
+          56.41215106732348,
+          70.62289562289563
+        ]
+      }
+    },
+    {
+      "model_alias": "sonnet",
+      "condition": "tep_clean",
+      "available_repeats": [
+        2,
+        3
+      ],
+      "accuracy": {
+        "mean_pct": 65.71428571428572,
+        "sample_sd_pp": 6.060915267313263,
+        "n_available": 2,
+        "n_planned": 3,
+        "repeat_values_pct": [
+          70.0,
+          61.42857142857143
+        ]
+      },
+      "macro_f1": {
+        "mean_pct": 62.490728732964754,
+        "sample_sd_pp": 10.619713269379835,
+        "n_available": 2,
+        "n_planned": 3,
+        "repeat_values_pct": [
+          70.0,
+          54.981457465929516
+        ]
+      }
+    },
+    {
+      "model_alias": "sonnet",
+      "condition": "tep_misnamed",
+      "available_repeats": [
+        1,
+        3
+      ],
+      "accuracy": {
+        "mean_pct": 16.428571428571427,
+        "sample_sd_pp": 1.0101525445522108,
+        "n_available": 2,
+        "n_planned": 3,
+        "repeat_values_pct": [
+          17.142857142857142,
+          15.714285714285714
+        ]
+      },
+      "macro_f1": {
+        "mean_pct": 9.85939202690238,
+        "sample_sd_pp": 2.646211151935361,
+        "n_available": 2,
+        "n_planned": 3,
+        "repeat_values_pct": [
+          11.730545876887339,
+          7.988238176917421
+        ]
+      }
+    },
+    {
+      "model_alias": "opus",
+      "condition": "cmapss_clean",
+      "available_repeats": [
+        1,
+        2,
+        3
+      ],
+      "accuracy": {
+        "mean_pct": 64.44444444444444,
+        "sample_sd_pp": 0.962250448649379,
+        "n_available": 3,
+        "n_planned": 3,
+        "repeat_values_pct": [
+          65.0,
+          63.33333333333333,
+          65.0
+        ]
+      },
+      "macro_f1": {
+        "mean_pct": 64.96518775817273,
+        "sample_sd_pp": 1.0318243738232509,
+        "n_available": 3,
+        "n_planned": 3,
+        "repeat_values_pct": [
+          66.03220149848558,
+          63.97258090227961,
+          64.890780873753
+        ]
+      }
+    },
+    {
+      "model_alias": "opus",
+      "condition": "tep_clean",
+      "available_repeats": [
+        1,
+        2,
+        3
+      ],
+      "accuracy": {
+        "mean_pct": 100.0,
+        "sample_sd_pp": 0.0,
+        "n_available": 3,
+        "n_planned": 3,
+        "repeat_values_pct": [
+          100.0,
+          100.0,
+          100.0
+        ]
+      },
+      "macro_f1": {
+        "mean_pct": 100.0,
+        "sample_sd_pp": 0.0,
+        "n_available": 3,
+        "n_planned": 3,
+        "repeat_values_pct": [
+          100.0,
+          100.0,
+          100.0
+        ]
+      }
+    },
+    {
+      "model_alias": "opus",
+      "condition": "tep_misnamed",
+      "available_repeats": [
+        1,
+        2
+      ],
+      "accuracy": {
+        "mean_pct": 100.0,
+        "sample_sd_pp": 0.0,
+        "n_available": 2,
+        "n_planned": 3,
+        "repeat_values_pct": [
+          100.0,
+          100.0
+        ]
+      },
+      "macro_f1": {
+        "mean_pct": 100.0,
+        "sample_sd_pp": 0.0,
+        "n_available": 2,
+        "n_planned": 3,
+        "repeat_values_pct": [
+          100.0,
+          100.0
+        ]
+      }
+    }
+  ],
+  "pairs": [
+    {
+      "model_alias": "sonnet",
+      "repeat": 1,
+      "status": "pair_unavailable"
+    },
+    {
+      "model_alias": "sonnet",
+      "repeat": 2,
+      "status": "pair_unavailable"
+    },
+    {
+      "model_alias": "sonnet",
+      "repeat": 3,
+      "status": "paired_arrays_available",
+      "n_paired": 70,
+      "flips": 37,
+      "clean_accuracy_pct": 61.42857142857143,
+      "misnamed_accuracy_pct": 15.714285714285714,
+      "accuracy_delta_misnamed_minus_clean_pp": -45.714285714285715,
+      "macro_f1_delta_misnamed_minus_clean_pp": -46.993219289012096
+    },
+    {
+      "model_alias": "opus",
+      "repeat": 1,
+      "status": "paired_arrays_available",
+      "n_paired": 70,
+      "flips": 0,
+      "clean_accuracy_pct": 100.0,
+      "misnamed_accuracy_pct": 100.0,
+      "accuracy_delta_misnamed_minus_clean_pp": 0.0,
+      "macro_f1_delta_misnamed_minus_clean_pp": 0.0
+    },
+    {
+      "model_alias": "opus",
+      "repeat": 2,
+      "status": "paired_arrays_available",
+      "n_paired": 70,
+      "flips": 0,
+      "clean_accuracy_pct": 100.0,
+      "misnamed_accuracy_pct": 100.0,
+      "accuracy_delta_misnamed_minus_clean_pp": 0.0,
+      "macro_f1_delta_misnamed_minus_clean_pp": 0.0
+    },
+    {
+      "model_alias": "opus",
+      "repeat": 3,
+      "status": "pair_unavailable"
+    }
+  ],
+  "paired_summaries": {
+    "sonnet": {
+      "paired_repeats": [
+        3
+      ],
+      "clean_accuracy_mean_pct": 61.42857142857143,
+      "misnamed_accuracy_mean_pct": 15.714285714285714,
+      "accuracy_delta_misnamed_minus_clean_pp": -45.714285714285715,
+      "macro_f1_delta_misnamed_minus_clean_pp": -46.993219289012096,
+      "flip_counts": [
+        37
+      ],
+      "paired_cases_each_repeat": [
+        70
+      ]
+    },
+    "opus": {
+      "paired_repeats": [
+        1,
+        2
+      ],
+      "clean_accuracy_mean_pct": 100.0,
+      "misnamed_accuracy_mean_pct": 100.0,
+      "accuracy_delta_misnamed_minus_clean_pp": 0.0,
+      "macro_f1_delta_misnamed_minus_clean_pp": 0.0,
+      "flip_counts": [
+        0,
+        0
+      ],
+      "paired_cases_each_repeat": [
+        70,
+        70
+      ]
+    }
+  },
+  "posthoc_id_alignment_sensitivity": {
+    "note": "Allows the one complete but misordered array for retrospective arithmetic only. This does not alter original files or waive the exact-order prompt requirement.",
+    "aggregates": [
+      {
+        "model_alias": "sonnet",
+        "condition": "cmapss_clean",
+        "available_repeats": [
+          1,
+          2,
+          3
+        ],
+        "accuracy": {
+          "mean_pct": 63.33333333333333,
+          "sample_sd_pp": 6.666666666666668,
+          "n_available": 3,
+          "n_planned": 3,
+          "repeat_values_pct": [
+            63.33333333333333,
+            56.666666666666664,
+            70.0
+          ]
+        },
+        "macro_f1": {
+          "mean_pct": 63.468914398302644,
+          "sample_sd_pp": 7.105871072223299,
+          "n_available": 3,
+          "n_planned": 3,
+          "repeat_values_pct": [
+            63.371696504688835,
+            56.41215106732348,
+            70.62289562289563
+          ]
+        }
+      },
+      {
+        "model_alias": "sonnet",
+        "condition": "tep_clean",
+        "available_repeats": [
+          1,
+          2,
+          3
+        ],
+        "accuracy": {
+          "mean_pct": 64.76190476190476,
+          "sample_sd_pp": 4.5922146480918835,
+          "n_available": 3,
+          "n_planned": 3,
+          "repeat_values_pct": [
+            62.857142857142854,
+            70.0,
+            61.42857142857143
+          ]
+        },
+        "macro_f1": {
+          "mean_pct": 61.10493026642095,
+          "sample_sd_pp": 7.88355675641056,
+          "n_available": 3,
+          "n_planned": 3,
+          "repeat_values_pct": [
+            58.33333333333333,
+            70.0,
+            54.981457465929516
+          ]
+        }
+      },
+      {
+        "model_alias": "sonnet",
+        "condition": "tep_misnamed",
+        "available_repeats": [
+          1,
+          3
+        ],
+        "accuracy": {
+          "mean_pct": 16.428571428571427,
+          "sample_sd_pp": 1.0101525445522108,
+          "n_available": 2,
+          "n_planned": 3,
+          "repeat_values_pct": [
+            17.142857142857142,
+            15.714285714285714
+          ]
+        },
+        "macro_f1": {
+          "mean_pct": 9.85939202690238,
+          "sample_sd_pp": 2.646211151935361,
+          "n_available": 2,
+          "n_planned": 3,
+          "repeat_values_pct": [
+            11.730545876887339,
+            7.988238176917421
+          ]
+        }
+      },
+      {
+        "model_alias": "opus",
+        "condition": "cmapss_clean",
+        "available_repeats": [
+          1,
+          2,
+          3
+        ],
+        "accuracy": {
+          "mean_pct": 64.44444444444444,
+          "sample_sd_pp": 0.962250448649379,
+          "n_available": 3,
+          "n_planned": 3,
+          "repeat_values_pct": [
+            65.0,
+            63.33333333333333,
+            65.0
+          ]
+        },
+        "macro_f1": {
+          "mean_pct": 64.96518775817273,
+          "sample_sd_pp": 1.0318243738232509,
+          "n_available": 3,
+          "n_planned": 3,
+          "repeat_values_pct": [
+            66.03220149848558,
+            63.97258090227961,
+            64.890780873753
+          ]
+        }
+      },
+      {
+        "model_alias": "opus",
+        "condition": "tep_clean",
+        "available_repeats": [
+          1,
+          2,
+          3
+        ],
+        "accuracy": {
+          "mean_pct": 100.0,
+          "sample_sd_pp": 0.0,
+          "n_available": 3,
+          "n_planned": 3,
+          "repeat_values_pct": [
+            100.0,
+            100.0,
+            100.0
+          ]
+        },
+        "macro_f1": {
+          "mean_pct": 100.0,
+          "sample_sd_pp": 0.0,
+          "n_available": 3,
+          "n_planned": 3,
+          "repeat_values_pct": [
+            100.0,
+            100.0,
+            100.0
+          ]
+        }
+      },
+      {
+        "model_alias": "opus",
+        "condition": "tep_misnamed",
+        "available_repeats": [
+          1,
+          2
+        ],
+        "accuracy": {
+          "mean_pct": 100.0,
+          "sample_sd_pp": 0.0,
+          "n_available": 2,
+          "n_planned": 3,
+          "repeat_values_pct": [
+            100.0,
+            100.0
+          ]
+        },
+        "macro_f1": {
+          "mean_pct": 100.0,
+          "sample_sd_pp": 0.0,
+          "n_available": 2,
+          "n_planned": 3,
+          "repeat_values_pct": [
+            100.0,
+            100.0
+          ]
+        }
+      }
+    ],
+    "paired_summaries": {
+      "sonnet": {
+        "paired_repeats": [
+          1,
+          3
+        ],
+        "clean_accuracy_mean_pct": 62.14285714285714,
+        "misnamed_accuracy_mean_pct": 16.428571428571427,
+        "accuracy_delta_misnamed_minus_clean_pp": -45.714285714285715,
+        "macro_f1_delta_misnamed_minus_clean_pp": -46.79800337272904,
+        "flip_counts": [
+          47,
+          37
+        ],
+        "paired_cases_each_repeat": [
+          70,
+          70
+        ]
+      },
+      "opus": {
+        "paired_repeats": [
+          1,
+          2
+        ],
+        "clean_accuracy_mean_pct": 100.0,
+        "misnamed_accuracy_mean_pct": 100.0,
+        "accuracy_delta_misnamed_minus_clean_pp": 0.0,
+        "macro_f1_delta_misnamed_minus_clean_pp": 0.0,
+        "flip_counts": [
+          0,
+          0
+        ],
+        "paired_cases_each_repeat": [
+          70,
+          70
+        ]
+      }
+    }
+  },
+  "note": "Array completeness and arithmetic agreement do not validate tool-enabled inference. All failed arrays remain unscored. No logs or prospective freeze reconstructed."
+}

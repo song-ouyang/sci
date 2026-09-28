@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0e770-2602-7fc2-bfd4-bed0bf27115a"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"[{\"id\":\"e2d862fa\",\"predicted\":\"Weak_leakage\"}]"}}
+{"type":"turn.completed","usage":{"input_tokens":10325,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":918,"reasoning_output_tokens":893}}
