@@ -1,0 +1,3085 @@
+{
+  "schema": "bearing-baseline-scores-v1",
+  "generated_at_utc": "2026-09-28T16:02:28.022039+00:00",
+  "protocol_sha256": "1ac4446dcad7f8b34a0477ccf058463fd43895f229802f22955e67518769bf05",
+  "prediction_manifest_sha256": "db615145071afcab4b162bbd2801fbd652c08fee6423479740a1a1f59cab8561",
+  "dimensions": {
+    "development_records": 120,
+    "development_bearings": 6,
+    "test_records": 36,
+    "test_bearings": 9,
+    "physical_rigs": 1,
+    "inner_folds": 8,
+    "loro_tasks": 4,
+    "loro_train_records": 90,
+    "loro_test_records": 9
+  },
+  "source_sha256": {
+    "data/bearing_baseline_v1/development.json": "6951fa16439a4dd1d6446a9bff0733e76fa49612b4ffbe5da38cc73c4cc7547b",
+    "data/bearing_baseline_v1/test.json": "15a1e53b10eea94a80899a70a1152f565f616f2624512d23d96eb2ab6fb9a4e8",
+    "data/bearing_baseline_v1/plan.json": "85619113667ab32f3b8d2d12800642553fb0fd428cb3208be3ef14da3379de46",
+    "data/bearing_baseline_v1/plan.sha256": "57e21c06a13be8aad0849106eab1d6e6eaade83d35e19359aa975bd57c06dedf",
+    "data/bearing_baseline_v1/audit.json": "6240e21f7f537ae35d0553a0b05714df0f294817a57c9b0407fce496fd55fe6d",
+    "data/paderborn_processed_v1/dataset.json": "0f59b8c5704b93796e8cfa1deb52abef3b97d4a8aa91352ce106cd884a202293",
+    "results/policy_paderborn_v1/analysis/predictions.csv": "04e992afceb6499e98219b2a5bc87ec17df7e6df114fd462b2c4ddfcc73a6f77",
+    "src/analysis/bearing_baseline_v1.py": "2134b22fe377bc00d0fdfe7af0c0ee877418c4ba2e7a8184bc9dbc3b89f856fc",
+    "tests/test_bearing_baseline_v1.py": "70a26ac4cb28144f19094643bf6b7a015586b91c8d056227316d46116791c9d5",
+    "data/bearing_baseline_v1/extraction_amendment_v2.json": "d24d1f9cbf006fd854d8f584cb6cdb34013826337077544d39c049463b9766cf",
+    "data/bearing_baseline_v1/extraction_amendment_v2.sha256": "71d4baaa1fef6a0f5273f90caa130d2a6b4fcf9d9acba0c5bb44735feb41d220",
+    "data/bearing_baseline_v1/extraction_failure.json": "b782e413685205956c53b2193f23b2442399d4df403ebd4f42d67753a4400c76",
+    "src/analysis/prepare_bearing_baseline_v1.py": "44967bbe8b03fd9da7a41ce3f780f27c3c01e8cbd217b90be6e509ced2a93f20",
+    "tests/test_bearing_baseline_data_v1.py": "49cb8f151a6181b8da5b98a6e39410e12ac17e021cd864f9d2f5adb11f6582f4",
+    "src/analysis/prepare_paderborn_v1.py": "4f1824df456dad0f8e6b7442d4fd30b12e5c921145455e93b71073604d17119b",
+    "src/analysis/extract_bearing_baseline_v2.py": "4b380bc8df4771a0f96815345128bf05e16c5ed71b78fd2958205db4521cf5dd",
+    "tests/test_bearing_baseline_extraction_v2.py": "f803c05cab2257b25fbc70f3a6b181037aa6b4da7efe4c10a14d2f8a6b3f708f",
+    "data/bearing_baseline_v1/measurement_summary.npz": "56d77fba241dc106b2a9e3d1bb5f7a938677fdec6f3953cc772c24d5b8e701d2"
+  },
+  "baseline": {
+    "primary/SVM": {
+      "correct": 10,
+      "total": 36,
+      "accuracy": 0.2777777777777778,
+      "macro_f1": 0.2736842105263158,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          3,
+          9,
+          0
+        ],
+        [
+          0,
+          6,
+          6
+        ],
+        [
+          0,
+          11,
+          1
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 0.25,
+        "outer_race_fault": 0.5,
+        "inner_race_fault": 0.08333333333333333
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "K003",
+          "correct": 3,
+          "total": 4
+        },
+        {
+          "bearing": "K005",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KA04",
+          "correct": 2,
+          "total": 4
+        },
+        {
+          "bearing": "KA16",
+          "correct": 1,
+          "total": 4
+        },
+        {
+          "bearing": "KA30",
+          "correct": 3,
+          "total": 4
+        },
+        {
+          "bearing": "KI04",
+          "correct": 1,
+          "total": 4
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 4
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N09_M07_F10",
+          "correct": 3,
+          "total": 9
+        },
+        {
+          "regime": "N15_M01_F10",
+          "correct": 3,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F04",
+          "correct": 1,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F10",
+          "correct": 3,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        3
+      ]
+    },
+    "primary/RF": {
+      "correct": 4,
+      "total": 36,
+      "accuracy": 0.1111111111111111,
+      "macro_f1": 0.07407407407407407,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          0,
+          12,
+          0
+        ],
+        [
+          1,
+          4,
+          7
+        ],
+        [
+          4,
+          8,
+          0
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 0.0,
+        "outer_race_fault": 0.3333333333333333,
+        "inner_race_fault": 0.0
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "K003",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "K005",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KA04",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KA16",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KA30",
+          "correct": 4,
+          "total": 4
+        },
+        {
+          "bearing": "KI04",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 4
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N09_M07_F10",
+          "correct": 1,
+          "total": 9
+        },
+        {
+          "regime": "N15_M01_F10",
+          "correct": 1,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F04",
+          "correct": 1,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F10",
+          "correct": 1,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        4
+      ]
+    },
+    "primary/Constant": {
+      "correct": 12,
+      "total": 36,
+      "accuracy": 0.3333333333333333,
+      "macro_f1": 0.16666666666666666,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          12,
+          0,
+          0
+        ],
+        [
+          12,
+          0,
+          0
+        ],
+        [
+          12,
+          0,
+          0
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 1.0,
+        "outer_race_fault": 0.0,
+        "inner_race_fault": 0.0
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 4,
+          "total": 4
+        },
+        {
+          "bearing": "K003",
+          "correct": 4,
+          "total": 4
+        },
+        {
+          "bearing": "K005",
+          "correct": 4,
+          "total": 4
+        },
+        {
+          "bearing": "KA04",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KA16",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KA30",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI04",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 4
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N09_M07_F10",
+          "correct": 3,
+          "total": 9
+        },
+        {
+          "regime": "N15_M01_F10",
+          "correct": 3,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F04",
+          "correct": 3,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F10",
+          "correct": 3,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        4
+      ]
+    },
+    "loro_N15_M07_F10/SVM": {
+      "correct": 4,
+      "total": 9,
+      "accuracy": 0.4444444444444444,
+      "macro_f1": 0.4481481481481482,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 0.3333333333333333,
+        "outer_race_fault": 0.6666666666666666,
+        "inner_race_fault": 0.3333333333333333
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "K003",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "K005",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KA04",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "KA16",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KA30",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "KI04",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 1
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N15_M07_F10",
+          "correct": 4,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        1
+      ]
+    },
+    "loro_N15_M07_F10/RF": {
+      "correct": 1,
+      "total": 9,
+      "accuracy": 0.1111111111111111,
+      "macro_f1": 0.07407407407407407,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 0.0,
+        "outer_race_fault": 0.3333333333333333,
+        "inner_race_fault": 0.0
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "K003",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "K005",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KA04",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KA16",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KA30",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "KI04",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 1
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N15_M07_F10",
+          "correct": 1,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        1
+      ]
+    },
+    "loro_N15_M07_F10/Constant": {
+      "correct": 3,
+      "total": 9,
+      "accuracy": 0.3333333333333333,
+      "macro_f1": 0.16666666666666666,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 1.0,
+        "outer_race_fault": 0.0,
+        "inner_race_fault": 0.0
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "K003",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "K005",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "KA04",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KA16",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KA30",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KI04",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 1
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N15_M07_F10",
+          "correct": 3,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        1
+      ]
+    },
+    "loro_N09_M07_F10/SVM": {
+      "correct": 3,
+      "total": 9,
+      "accuracy": 0.3333333333333333,
+      "macro_f1": 0.16666666666666666,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 1.0,
+        "outer_race_fault": 0.0,
+        "inner_race_fault": 0.0
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "K003",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "K005",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "KA04",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KA16",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KA30",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KI04",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 1
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N09_M07_F10",
+          "correct": 3,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        1
+      ]
+    },
+    "loro_N09_M07_F10/RF": {
+      "correct": 3,
+      "total": 9,
+      "accuracy": 0.3333333333333333,
+      "macro_f1": 0.2222222222222222,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          2,
+          1,
+          0
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 1.0,
+        "outer_race_fault": 0.0,
+        "inner_race_fault": 0.0
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "K003",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "K005",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "KA04",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KA16",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KA30",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KI04",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 1
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N09_M07_F10",
+          "correct": 3,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        1
+      ]
+    },
+    "loro_N09_M07_F10/Constant": {
+      "correct": 3,
+      "total": 9,
+      "accuracy": 0.3333333333333333,
+      "macro_f1": 0.16666666666666666,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 1.0,
+        "outer_race_fault": 0.0,
+        "inner_race_fault": 0.0
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "K003",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "K005",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "KA04",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KA16",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KA30",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KI04",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 1
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N09_M07_F10",
+          "correct": 3,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        1
+      ]
+    },
+    "loro_N15_M01_F10/SVM": {
+      "correct": 3,
+      "total": 9,
+      "accuracy": 0.3333333333333333,
+      "macro_f1": 0.16666666666666666,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 0.0,
+        "outer_race_fault": 1.0,
+        "inner_race_fault": 0.0
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "K003",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "K005",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KA04",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "KA16",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "KA30",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "KI04",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 1
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N15_M01_F10",
+          "correct": 3,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        1
+      ]
+    },
+    "loro_N15_M01_F10/RF": {
+      "correct": 2,
+      "total": 9,
+      "accuracy": 0.2222222222222222,
+      "macro_f1": 0.21666666666666667,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          0
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 0.3333333333333333,
+        "outer_race_fault": 0.3333333333333333,
+        "inner_race_fault": 0.0
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "K003",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "K005",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KA04",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KA16",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KA30",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "KI04",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 1
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N15_M01_F10",
+          "correct": 2,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        1
+      ]
+    },
+    "loro_N15_M01_F10/Constant": {
+      "correct": 3,
+      "total": 9,
+      "accuracy": 0.3333333333333333,
+      "macro_f1": 0.16666666666666666,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 1.0,
+        "outer_race_fault": 0.0,
+        "inner_race_fault": 0.0
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "K003",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "K005",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "KA04",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KA16",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KA30",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KI04",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 1
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N15_M01_F10",
+          "correct": 3,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        1
+      ]
+    },
+    "loro_N15_M07_F04/SVM": {
+      "correct": 3,
+      "total": 9,
+      "accuracy": 0.3333333333333333,
+      "macro_f1": 0.16666666666666666,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 0.0,
+        "outer_race_fault": 1.0,
+        "inner_race_fault": 0.0
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "K003",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "K005",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KA04",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "KA16",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "KA30",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "KI04",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 1
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N15_M07_F04",
+          "correct": 3,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        1
+      ]
+    },
+    "loro_N15_M07_F04/RF": {
+      "correct": 3,
+      "total": 9,
+      "accuracy": 0.3333333333333333,
+      "macro_f1": 0.33968253968253964,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 0.3333333333333333,
+        "outer_race_fault": 0.3333333333333333,
+        "inner_race_fault": 0.3333333333333333
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "K003",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "K005",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "KA04",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KA16",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KA30",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "KI04",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 1
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N15_M07_F04",
+          "correct": 3,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        1
+      ]
+    },
+    "loro_N15_M07_F04/Constant": {
+      "correct": 3,
+      "total": 9,
+      "accuracy": 0.3333333333333333,
+      "macro_f1": 0.16666666666666666,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 1.0,
+        "outer_race_fault": 0.0,
+        "inner_race_fault": 0.0
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "K003",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "K005",
+          "correct": 1,
+          "total": 1
+        },
+        {
+          "bearing": "KA04",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KA16",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KA30",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KI04",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 1
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 1
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N15_M07_F04",
+          "correct": 3,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        1
+      ]
+    },
+    "loro_combined/SVM": {
+      "correct": 13,
+      "total": 36,
+      "accuracy": 0.3611111111111111,
+      "macro_f1": 0.31697931697931697,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          4,
+          8,
+          0
+        ],
+        [
+          3,
+          8,
+          1
+        ],
+        [
+          3,
+          8,
+          1
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 0.3333333333333333,
+        "outer_race_fault": 0.6666666666666666,
+        "inner_race_fault": 0.08333333333333333
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 1,
+          "total": 4
+        },
+        {
+          "bearing": "K003",
+          "correct": 2,
+          "total": 4
+        },
+        {
+          "bearing": "K005",
+          "correct": 1,
+          "total": 4
+        },
+        {
+          "bearing": "KA04",
+          "correct": 3,
+          "total": 4
+        },
+        {
+          "bearing": "KA16",
+          "correct": 2,
+          "total": 4
+        },
+        {
+          "bearing": "KA30",
+          "correct": 3,
+          "total": 4
+        },
+        {
+          "bearing": "KI04",
+          "correct": 1,
+          "total": 4
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 4
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N09_M07_F10",
+          "correct": 3,
+          "total": 9
+        },
+        {
+          "regime": "N15_M01_F10",
+          "correct": 3,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F04",
+          "correct": 3,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F10",
+          "correct": 4,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        3
+      ]
+    },
+    "loro_combined/RF": {
+      "correct": 9,
+      "total": 36,
+      "accuracy": 0.25,
+      "macro_f1": 0.2398496240601504,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          5,
+          7,
+          0
+        ],
+        [
+          3,
+          3,
+          6
+        ],
+        [
+          5,
+          6,
+          1
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 0.4166666666666667,
+        "outer_race_fault": 0.25,
+        "inner_race_fault": 0.08333333333333333
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 1,
+          "total": 4
+        },
+        {
+          "bearing": "K003",
+          "correct": 2,
+          "total": 4
+        },
+        {
+          "bearing": "K005",
+          "correct": 2,
+          "total": 4
+        },
+        {
+          "bearing": "KA04",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KA16",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KA30",
+          "correct": 3,
+          "total": 4
+        },
+        {
+          "bearing": "KI04",
+          "correct": 1,
+          "total": 4
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 4
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N09_M07_F10",
+          "correct": 3,
+          "total": 9
+        },
+        {
+          "regime": "N15_M01_F10",
+          "correct": 2,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F04",
+          "correct": 3,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F10",
+          "correct": 1,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        3
+      ]
+    },
+    "loro_combined/Constant": {
+      "correct": 12,
+      "total": 36,
+      "accuracy": 0.3333333333333333,
+      "macro_f1": 0.16666666666666666,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          12,
+          0,
+          0
+        ],
+        [
+          12,
+          0,
+          0
+        ],
+        [
+          12,
+          0,
+          0
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 1.0,
+        "outer_race_fault": 0.0,
+        "inner_race_fault": 0.0
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 4,
+          "total": 4
+        },
+        {
+          "bearing": "K003",
+          "correct": 4,
+          "total": 4
+        },
+        {
+          "bearing": "K005",
+          "correct": 4,
+          "total": 4
+        },
+        {
+          "bearing": "KA04",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KA16",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KA30",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI04",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 4
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N09_M07_F10",
+          "correct": 3,
+          "total": 9
+        },
+        {
+          "regime": "N15_M01_F10",
+          "correct": 3,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F04",
+          "correct": 3,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F10",
+          "correct": 3,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        4
+      ]
+    }
+  },
+  "llm_calls": {
+    "b01_p1_f": {
+      "condition": "F",
+      "round": 1,
+      "repeat": 1,
+      "correct": 4,
+      "total": 36,
+      "accuracy": 0.1111111111111111,
+      "macro_f1": 0.10074074074074074,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          3,
+          9,
+          0
+        ],
+        [
+          3,
+          1,
+          8
+        ],
+        [
+          9,
+          3,
+          0
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 0.25,
+        "outer_race_fault": 0.08333333333333333,
+        "inner_race_fault": 0.0
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "K003",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "K005",
+          "correct": 3,
+          "total": 4
+        },
+        {
+          "bearing": "KA04",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KA16",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KA30",
+          "correct": 1,
+          "total": 4
+        },
+        {
+          "bearing": "KI04",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 4
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N09_M07_F10",
+          "correct": 1,
+          "total": 9
+        },
+        {
+          "regime": "N15_M01_F10",
+          "correct": 1,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F04",
+          "correct": 1,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F10",
+          "correct": 1,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        3
+      ]
+    },
+    "b01_p1_r": {
+      "condition": "R",
+      "round": 1,
+      "repeat": 1,
+      "correct": 13,
+      "total": 36,
+      "accuracy": 0.3611111111111111,
+      "macro_f1": 0.38585858585858585,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          4,
+          0,
+          8
+        ],
+        [
+          3,
+          8,
+          1
+        ],
+        [
+          11,
+          0,
+          1
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 0.3333333333333333,
+        "outer_race_fault": 0.6666666666666666,
+        "inner_race_fault": 0.08333333333333333
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "K003",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "K005",
+          "correct": 4,
+          "total": 4
+        },
+        {
+          "bearing": "KA04",
+          "correct": 4,
+          "total": 4
+        },
+        {
+          "bearing": "KA16",
+          "correct": 4,
+          "total": 4
+        },
+        {
+          "bearing": "KA30",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI04",
+          "correct": 1,
+          "total": 4
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 4
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N09_M07_F10",
+          "correct": 4,
+          "total": 9
+        },
+        {
+          "regime": "N15_M01_F10",
+          "correct": 3,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F04",
+          "correct": 3,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F10",
+          "correct": 3,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        4
+      ]
+    },
+    "b01_p2_f": {
+      "condition": "F",
+      "round": 1,
+      "repeat": 2,
+      "correct": 4,
+      "total": 36,
+      "accuracy": 0.1111111111111111,
+      "macro_f1": 0.10074074074074074,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          3,
+          9,
+          0
+        ],
+        [
+          3,
+          1,
+          8
+        ],
+        [
+          9,
+          3,
+          0
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 0.25,
+        "outer_race_fault": 0.08333333333333333,
+        "inner_race_fault": 0.0
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "K003",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "K005",
+          "correct": 3,
+          "total": 4
+        },
+        {
+          "bearing": "KA04",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KA16",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KA30",
+          "correct": 1,
+          "total": 4
+        },
+        {
+          "bearing": "KI04",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 4
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N09_M07_F10",
+          "correct": 1,
+          "total": 9
+        },
+        {
+          "regime": "N15_M01_F10",
+          "correct": 1,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F04",
+          "correct": 1,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F10",
+          "correct": 1,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        3
+      ]
+    },
+    "b01_p2_r": {
+      "condition": "R",
+      "round": 1,
+      "repeat": 2,
+      "correct": 14,
+      "total": 36,
+      "accuracy": 0.3888888888888889,
+      "macro_f1": 0.4207407407407407,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          3,
+          0,
+          9
+        ],
+        [
+          3,
+          8,
+          1
+        ],
+        [
+          9,
+          0,
+          3
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 0.25,
+        "outer_race_fault": 0.6666666666666666,
+        "inner_race_fault": 0.25
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "K003",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "K005",
+          "correct": 3,
+          "total": 4
+        },
+        {
+          "bearing": "KA04",
+          "correct": 4,
+          "total": 4
+        },
+        {
+          "bearing": "KA16",
+          "correct": 4,
+          "total": 4
+        },
+        {
+          "bearing": "KA30",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI04",
+          "correct": 1,
+          "total": 4
+        },
+        {
+          "bearing": "KI14",
+          "correct": 1,
+          "total": 4
+        },
+        {
+          "bearing": "KI21",
+          "correct": 1,
+          "total": 4
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N09_M07_F10",
+          "correct": 5,
+          "total": 9
+        },
+        {
+          "regime": "N15_M01_F10",
+          "correct": 3,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F04",
+          "correct": 3,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F10",
+          "correct": 3,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        4
+      ]
+    },
+    "b01_p3_f": {
+      "condition": "F",
+      "round": 1,
+      "repeat": 3,
+      "correct": 4,
+      "total": 36,
+      "accuracy": 0.1111111111111111,
+      "macro_f1": 0.10074074074074074,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          3,
+          9,
+          0
+        ],
+        [
+          3,
+          1,
+          8
+        ],
+        [
+          9,
+          3,
+          0
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 0.25,
+        "outer_race_fault": 0.08333333333333333,
+        "inner_race_fault": 0.0
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "K003",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "K005",
+          "correct": 3,
+          "total": 4
+        },
+        {
+          "bearing": "KA04",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KA16",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KA30",
+          "correct": 1,
+          "total": 4
+        },
+        {
+          "bearing": "KI04",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 4
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N09_M07_F10",
+          "correct": 1,
+          "total": 9
+        },
+        {
+          "regime": "N15_M01_F10",
+          "correct": 1,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F04",
+          "correct": 1,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F10",
+          "correct": 1,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        3
+      ]
+    },
+    "b01_p3_r": {
+      "condition": "R",
+      "round": 1,
+      "repeat": 3,
+      "correct": 4,
+      "total": 36,
+      "accuracy": 0.1111111111111111,
+      "macro_f1": 0.10074074074074074,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          3,
+          9,
+          0
+        ],
+        [
+          3,
+          1,
+          8
+        ],
+        [
+          9,
+          3,
+          0
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 0.25,
+        "outer_race_fault": 0.08333333333333333,
+        "inner_race_fault": 0.0
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "K003",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "K005",
+          "correct": 3,
+          "total": 4
+        },
+        {
+          "bearing": "KA04",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KA16",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KA30",
+          "correct": 1,
+          "total": 4
+        },
+        {
+          "bearing": "KI04",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 4
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N09_M07_F10",
+          "correct": 1,
+          "total": 9
+        },
+        {
+          "regime": "N15_M01_F10",
+          "correct": 1,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F04",
+          "correct": 1,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F10",
+          "correct": 1,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        3
+      ]
+    },
+    "b02_p1_f": {
+      "condition": "F",
+      "round": 2,
+      "repeat": 1,
+      "correct": 7,
+      "total": 36,
+      "accuracy": 0.19444444444444445,
+      "macro_f1": 0.19882783882783883,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          3,
+          9,
+          0
+        ],
+        [
+          0,
+          1,
+          11
+        ],
+        [
+          6,
+          3,
+          3
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 0.25,
+        "outer_race_fault": 0.08333333333333333,
+        "inner_race_fault": 0.25
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "K003",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "K005",
+          "correct": 3,
+          "total": 4
+        },
+        {
+          "bearing": "KA04",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KA16",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KA30",
+          "correct": 1,
+          "total": 4
+        },
+        {
+          "bearing": "KI04",
+          "correct": 3,
+          "total": 4
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 4
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N09_M07_F10",
+          "correct": 1,
+          "total": 9
+        },
+        {
+          "regime": "N15_M01_F10",
+          "correct": 2,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F04",
+          "correct": 2,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F10",
+          "correct": 2,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        3
+      ]
+    },
+    "b02_p1_r": {
+      "condition": "R",
+      "round": 2,
+      "repeat": 1,
+      "correct": 12,
+      "total": 36,
+      "accuracy": 0.3333333333333333,
+      "macro_f1": 0.35000000000000003,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          0,
+          0,
+          12
+        ],
+        [
+          0,
+          8,
+          4
+        ],
+        [
+          8,
+          0,
+          4
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 0.0,
+        "outer_race_fault": 0.6666666666666666,
+        "inner_race_fault": 0.3333333333333333
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "K003",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "K005",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KA04",
+          "correct": 4,
+          "total": 4
+        },
+        {
+          "bearing": "KA16",
+          "correct": 4,
+          "total": 4
+        },
+        {
+          "bearing": "KA30",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI04",
+          "correct": 4,
+          "total": 4
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 4
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N09_M07_F10",
+          "correct": 3,
+          "total": 9
+        },
+        {
+          "regime": "N15_M01_F10",
+          "correct": 3,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F04",
+          "correct": 3,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F10",
+          "correct": 3,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        4
+      ]
+    },
+    "b02_p2_f": {
+      "condition": "F",
+      "round": 2,
+      "repeat": 2,
+      "correct": 4,
+      "total": 36,
+      "accuracy": 0.1111111111111111,
+      "macro_f1": 0.10074074074074074,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          3,
+          9,
+          0
+        ],
+        [
+          3,
+          1,
+          8
+        ],
+        [
+          9,
+          3,
+          0
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 0.25,
+        "outer_race_fault": 0.08333333333333333,
+        "inner_race_fault": 0.0
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "K003",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "K005",
+          "correct": 3,
+          "total": 4
+        },
+        {
+          "bearing": "KA04",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KA16",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KA30",
+          "correct": 1,
+          "total": 4
+        },
+        {
+          "bearing": "KI04",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 4
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N09_M07_F10",
+          "correct": 1,
+          "total": 9
+        },
+        {
+          "regime": "N15_M01_F10",
+          "correct": 1,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F04",
+          "correct": 1,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F10",
+          "correct": 1,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        3
+      ]
+    },
+    "b02_p2_r": {
+      "condition": "R",
+      "round": 2,
+      "repeat": 2,
+      "correct": 16,
+      "total": 36,
+      "accuracy": 0.4444444444444444,
+      "macro_f1": 0.47301587301587295,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          4,
+          0,
+          8
+        ],
+        [
+          0,
+          8,
+          4
+        ],
+        [
+          8,
+          0,
+          4
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 0.3333333333333333,
+        "outer_race_fault": 0.6666666666666666,
+        "inner_race_fault": 0.3333333333333333
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "K003",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "K005",
+          "correct": 4,
+          "total": 4
+        },
+        {
+          "bearing": "KA04",
+          "correct": 4,
+          "total": 4
+        },
+        {
+          "bearing": "KA16",
+          "correct": 4,
+          "total": 4
+        },
+        {
+          "bearing": "KA30",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI04",
+          "correct": 4,
+          "total": 4
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 4
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N09_M07_F10",
+          "correct": 4,
+          "total": 9
+        },
+        {
+          "regime": "N15_M01_F10",
+          "correct": 4,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F04",
+          "correct": 4,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F10",
+          "correct": 4,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        4
+      ]
+    },
+    "b02_p3_f": {
+      "condition": "F",
+      "round": 2,
+      "repeat": 3,
+      "correct": 7,
+      "total": 36,
+      "accuracy": 0.19444444444444445,
+      "macro_f1": 0.19882783882783883,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          3,
+          9,
+          0
+        ],
+        [
+          0,
+          1,
+          11
+        ],
+        [
+          6,
+          3,
+          3
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 0.25,
+        "outer_race_fault": 0.08333333333333333,
+        "inner_race_fault": 0.25
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "K003",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "K005",
+          "correct": 3,
+          "total": 4
+        },
+        {
+          "bearing": "KA04",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KA16",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KA30",
+          "correct": 1,
+          "total": 4
+        },
+        {
+          "bearing": "KI04",
+          "correct": 3,
+          "total": 4
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 4
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N09_M07_F10",
+          "correct": 1,
+          "total": 9
+        },
+        {
+          "regime": "N15_M01_F10",
+          "correct": 2,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F04",
+          "correct": 2,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F10",
+          "correct": 2,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        3
+      ]
+    },
+    "b02_p3_r": {
+      "condition": "R",
+      "round": 2,
+      "repeat": 3,
+      "correct": 8,
+      "total": 36,
+      "accuracy": 0.2222222222222222,
+      "macro_f1": 0.2183372183372183,
+      "labels": [
+        "healthy",
+        "outer_race_fault",
+        "inner_race_fault"
+      ],
+      "confusion_matrix_truth_rows": [
+        [
+          4,
+          8,
+          0
+        ],
+        [
+          0,
+          1,
+          11
+        ],
+        [
+          8,
+          1,
+          3
+        ]
+      ],
+      "per_class_recall": {
+        "healthy": 0.3333333333333333,
+        "outer_race_fault": 0.08333333333333333,
+        "inner_race_fault": 0.25
+      },
+      "by_bearing": [
+        {
+          "bearing": "K002",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "K003",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "K005",
+          "correct": 4,
+          "total": 4
+        },
+        {
+          "bearing": "KA04",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KA16",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KA30",
+          "correct": 1,
+          "total": 4
+        },
+        {
+          "bearing": "KI04",
+          "correct": 3,
+          "total": 4
+        },
+        {
+          "bearing": "KI14",
+          "correct": 0,
+          "total": 4
+        },
+        {
+          "bearing": "KI21",
+          "correct": 0,
+          "total": 4
+        }
+      ],
+      "by_regime": [
+        {
+          "regime": "N09_M07_F10",
+          "correct": 2,
+          "total": 9
+        },
+        {
+          "regime": "N15_M01_F10",
+          "correct": 2,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F04",
+          "correct": 2,
+          "total": 9
+        },
+        {
+          "regime": "N15_M07_F10",
+          "correct": 2,
+          "total": 9
+        }
+      ],
+      "bearing_correct_count_range": [
+        0,
+        4
+      ]
+    }
+  },
+  "uniform_prior_expected_accuracy": 0.3333333333333333,
+  "uniform_prior_expected_correct_out_of_36": 12,
+  "limitations": [
+    "Outcome-informed supervised representation benchmark after known LLM findings. Test labels excluded from fitting/tuning. Supervised label/sample budget differs from zero-shot LLM; not a fair algorithm ranking or proof of input sufficiency/mechanism. LORO changes both regime support and training size.",
+    "No p values or bootstrap CIs. Records and repeated LLM calls are dependent; report nine test specimens and per-call descriptive comparisons.",
+    "Structural prediction checks test fixed row-wise software behavior; they do not identify a causal mechanism or remove supervised-information differences.",
+    "LORO combined reuses the same nine specimens; 12 LLM calls reuse the same 36 records. No aggregated 432-independent-record comparison."
+  ]
+}

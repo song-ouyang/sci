@@ -1,0 +1,48 @@
+{
+  "checked_at": "2026-09-28T14:25:49.979370+00:00",
+  "kind": "Independent local code/output consistency check; not human peer review",
+  "selection_sha256": "2584e8a20b5e653d8df12179f5a1819e8a571b11b768433aa4ac6a255e43e015",
+  "dataset_sha256": "0f59b8c5704b93796e8cfa1deb52abef3b97d4a8aa91352ce106cd884a202293",
+  "truth_sha256": "ded962118c72b0b49337331f30ef7289e2f9254adf61b37e70f0afc0ecd05d39",
+  "status": "passed",
+  "records": 48,
+  "features": 28,
+  "focal_records": 36,
+  "background_records": 12,
+  "focal_bearings": 9,
+  "background_bearings": 6,
+  "physical_bearings": 15,
+  "measurement_rigs": 1,
+  "selection_and_features_unchanged_after_transport_revision": true,
+  "source_mat_sha_and_crc_checked": 48,
+  "derived_member_archive_sha_checked": 48,
+  "source_amplitude_units_empty_audits_checked": 48,
+  "raw_mat_units_independently_checked": 2,
+  "decoded_numeric_checks": [
+    {
+      "selection_index": 0,
+      "id": "0974931a",
+      "features_recomputed": 28,
+      "max_absolute_numeric_difference": 3.183231456205249e-12,
+      "six_decimal_strings_exact": true
+    },
+    {
+      "selection_index": 47,
+      "id": "527470df",
+      "features_recomputed": 28,
+      "max_absolute_numeric_difference": 9.777068044058979e-12,
+      "six_decimal_strings_exact": true
+    }
+  ],
+  "download_reserved_body_bytes": 102235418,
+  "download_body_limit": 300000000,
+  "no_prediction_access": true,
+  "model_calls": 0,
+  "network_calls": 0,
+  "limits": [
+    "Two fixed records numerically recomputed; all48 serialized rows matched saved numeric matrix",
+    "Source-unit emptiness for all48 checked from provenance audits; directly re-read for2",
+    "One rig and15bearing specimens, not15rigs; four focal operating regimes are dependent",
+    "Different bearing task does not demonstrate pump-leakage cross-device generalization"
+  ]
+}

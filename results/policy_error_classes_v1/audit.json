@@ -1,0 +1,1442 @@
+{
+  "schema": "policy-error-classes-v1",
+  "generated_at": "2026-09-28T15:15:31.378466+00:00",
+  "analysis_type": "post_hoc_descriptive_true_class_accounting",
+  "post_hoc": true,
+  "source_study": "policy_hydraulic_v1",
+  "script_sha256": "19901aec730653928f4adf0a9c704469adb2aadc402f26559e7473eb5d3b4dd4",
+  "source_files_sha256": {
+    "results/policy_hydraulic_v1/analysis/policy_cases.csv": "b03b5f10ae6219d67e01226ed24608552ac724bd88bd406bd939bd963020279b",
+    "results/policy_hydraulic_v1/answers/truth.json": "218f02386ac6258c899d44c325fc0599e7abd81e73e1643256faafbd2c8bb6ae"
+  },
+  "scope": {
+    "policy_case_rows": 432,
+    "policies": 8,
+    "planned_decisions_per_policy": 54,
+    "distinct_focal_cycles": 27,
+    "rounds": 2,
+    "physical_rigs": 1,
+    "decisions_per_true_class_per_policy": {
+      "No_leakage": 18,
+      "Weak_leakage": 18,
+      "Severe_leakage": 18
+    }
+  },
+  "retained_errors_by_policy": {
+    "Single_F": {
+      "count": 10,
+      "unique_cycles": 8,
+      "by_truth": {
+        "No_leakage": 1,
+        "Weak_leakage": 5,
+        "Severe_leakage": 4
+      },
+      "cases": [
+        {
+          "id": "73b45c55",
+          "panel": "hydraulic_p02",
+          "round": 1,
+          "block": 2,
+          "truth": "Severe_leakage",
+          "base_prediction": "No_leakage",
+          "output": "No_leakage"
+        },
+        {
+          "id": "91167869",
+          "panel": "hydraulic_p02",
+          "round": 1,
+          "block": 2,
+          "truth": "Weak_leakage",
+          "base_prediction": "No_leakage",
+          "output": "No_leakage"
+        },
+        {
+          "id": "d53bdf8e",
+          "panel": "hydraulic_p02",
+          "round": 1,
+          "block": 2,
+          "truth": "Severe_leakage",
+          "base_prediction": "No_leakage",
+          "output": "No_leakage"
+        },
+        {
+          "id": "e46abcac",
+          "panel": "hydraulic_p02",
+          "round": 1,
+          "block": 2,
+          "truth": "Weak_leakage",
+          "base_prediction": "Severe_leakage",
+          "output": "Severe_leakage"
+        },
+        {
+          "id": "eb5702a2",
+          "panel": "hydraulic_p02",
+          "round": 1,
+          "block": 2,
+          "truth": "Weak_leakage",
+          "base_prediction": "No_leakage",
+          "output": "No_leakage"
+        },
+        {
+          "id": "142c6afc",
+          "panel": "hydraulic_p02",
+          "round": 2,
+          "block": 4,
+          "truth": "No_leakage",
+          "base_prediction": "Weak_leakage",
+          "output": "Weak_leakage"
+        },
+        {
+          "id": "1f6ef00a",
+          "panel": "hydraulic_p03",
+          "round": 1,
+          "block": 0,
+          "truth": "Severe_leakage",
+          "base_prediction": "Weak_leakage",
+          "output": "Weak_leakage"
+        },
+        {
+          "id": "a2d872b1",
+          "panel": "hydraulic_p03",
+          "round": 1,
+          "block": 0,
+          "truth": "Weak_leakage",
+          "base_prediction": "No_leakage",
+          "output": "No_leakage"
+        },
+        {
+          "id": "1f6ef00a",
+          "panel": "hydraulic_p03",
+          "round": 2,
+          "block": 5,
+          "truth": "Severe_leakage",
+          "base_prediction": "Weak_leakage",
+          "output": "Weak_leakage"
+        },
+        {
+          "id": "a2d872b1",
+          "panel": "hydraulic_p03",
+          "round": 2,
+          "block": 5,
+          "truth": "Weak_leakage",
+          "base_prediction": "No_leakage",
+          "output": "No_leakage"
+        }
+      ],
+      "true_to_wrong_label": [
+        {
+          "truth": "No_leakage",
+          "wrong_prediction": "Weak_leakage",
+          "count": 1,
+          "unique_cycles": 1,
+          "by_truth": {
+            "No_leakage": 1,
+            "Weak_leakage": 0,
+            "Severe_leakage": 0
+          },
+          "cases": [
+            {
+              "id": "142c6afc",
+              "panel": "hydraulic_p02",
+              "round": 2,
+              "block": 4,
+              "truth": "No_leakage",
+              "base_prediction": "Weak_leakage",
+              "output": "Weak_leakage"
+            }
+          ]
+        },
+        {
+          "truth": "Weak_leakage",
+          "wrong_prediction": "No_leakage",
+          "count": 4,
+          "unique_cycles": 3,
+          "by_truth": {
+            "No_leakage": 0,
+            "Weak_leakage": 4,
+            "Severe_leakage": 0
+          },
+          "cases": [
+            {
+              "id": "91167869",
+              "panel": "hydraulic_p02",
+              "round": 1,
+              "block": 2,
+              "truth": "Weak_leakage",
+              "base_prediction": "No_leakage",
+              "output": "No_leakage"
+            },
+            {
+              "id": "eb5702a2",
+              "panel": "hydraulic_p02",
+              "round": 1,
+              "block": 2,
+              "truth": "Weak_leakage",
+              "base_prediction": "No_leakage",
+              "output": "No_leakage"
+            },
+            {
+              "id": "a2d872b1",
+              "panel": "hydraulic_p03",
+              "round": 1,
+              "block": 0,
+              "truth": "Weak_leakage",
+              "base_prediction": "No_leakage",
+              "output": "No_leakage"
+            },
+            {
+              "id": "a2d872b1",
+              "panel": "hydraulic_p03",
+              "round": 2,
+              "block": 5,
+              "truth": "Weak_leakage",
+              "base_prediction": "No_leakage",
+              "output": "No_leakage"
+            }
+          ]
+        },
+        {
+          "truth": "Weak_leakage",
+          "wrong_prediction": "Severe_leakage",
+          "count": 1,
+          "unique_cycles": 1,
+          "by_truth": {
+            "No_leakage": 0,
+            "Weak_leakage": 1,
+            "Severe_leakage": 0
+          },
+          "cases": [
+            {
+              "id": "e46abcac",
+              "panel": "hydraulic_p02",
+              "round": 1,
+              "block": 2,
+              "truth": "Weak_leakage",
+              "base_prediction": "Severe_leakage",
+              "output": "Severe_leakage"
+            }
+          ]
+        },
+        {
+          "truth": "Severe_leakage",
+          "wrong_prediction": "No_leakage",
+          "count": 2,
+          "unique_cycles": 2,
+          "by_truth": {
+            "No_leakage": 0,
+            "Weak_leakage": 0,
+            "Severe_leakage": 2
+          },
+          "cases": [
+            {
+              "id": "73b45c55",
+              "panel": "hydraulic_p02",
+              "round": 1,
+              "block": 2,
+              "truth": "Severe_leakage",
+              "base_prediction": "No_leakage",
+              "output": "No_leakage"
+            },
+            {
+              "id": "d53bdf8e",
+              "panel": "hydraulic_p02",
+              "round": 1,
+              "block": 2,
+              "truth": "Severe_leakage",
+              "base_prediction": "No_leakage",
+              "output": "No_leakage"
+            }
+          ]
+        },
+        {
+          "truth": "Severe_leakage",
+          "wrong_prediction": "Weak_leakage",
+          "count": 2,
+          "unique_cycles": 1,
+          "by_truth": {
+            "No_leakage": 0,
+            "Weak_leakage": 0,
+            "Severe_leakage": 2
+          },
+          "cases": [
+            {
+              "id": "1f6ef00a",
+              "panel": "hydraulic_p03",
+              "round": 1,
+              "block": 0,
+              "truth": "Severe_leakage",
+              "base_prediction": "Weak_leakage",
+              "output": "Weak_leakage"
+            },
+            {
+              "id": "1f6ef00a",
+              "panel": "hydraulic_p03",
+              "round": 2,
+              "block": 5,
+              "truth": "Severe_leakage",
+              "base_prediction": "Weak_leakage",
+              "output": "Weak_leakage"
+            }
+          ]
+        }
+      ]
+    },
+    "Single_R": {
+      "count": 4,
+      "unique_cycles": 2,
+      "by_truth": {
+        "No_leakage": 0,
+        "Weak_leakage": 2,
+        "Severe_leakage": 2
+      },
+      "cases": [
+        {
+          "id": "1f6ef00a",
+          "panel": "hydraulic_p03",
+          "round": 1,
+          "block": 0,
+          "truth": "Severe_leakage",
+          "base_prediction": "Weak_leakage",
+          "output": "Weak_leakage"
+        },
+        {
+          "id": "a2d872b1",
+          "panel": "hydraulic_p03",
+          "round": 1,
+          "block": 0,
+          "truth": "Weak_leakage",
+          "base_prediction": "No_leakage",
+          "output": "No_leakage"
+        },
+        {
+          "id": "1f6ef00a",
+          "panel": "hydraulic_p03",
+          "round": 2,
+          "block": 5,
+          "truth": "Severe_leakage",
+          "base_prediction": "Weak_leakage",
+          "output": "Weak_leakage"
+        },
+        {
+          "id": "a2d872b1",
+          "panel": "hydraulic_p03",
+          "round": 2,
+          "block": 5,
+          "truth": "Weak_leakage",
+          "base_prediction": "No_leakage",
+          "output": "No_leakage"
+        }
+      ],
+      "true_to_wrong_label": [
+        {
+          "truth": "Weak_leakage",
+          "wrong_prediction": "No_leakage",
+          "count": 2,
+          "unique_cycles": 1,
+          "by_truth": {
+            "No_leakage": 0,
+            "Weak_leakage": 2,
+            "Severe_leakage": 0
+          },
+          "cases": [
+            {
+              "id": "a2d872b1",
+              "panel": "hydraulic_p03",
+              "round": 1,
+              "block": 0,
+              "truth": "Weak_leakage",
+              "base_prediction": "No_leakage",
+              "output": "No_leakage"
+            },
+            {
+              "id": "a2d872b1",
+              "panel": "hydraulic_p03",
+              "round": 2,
+              "block": 5,
+              "truth": "Weak_leakage",
+              "base_prediction": "No_leakage",
+              "output": "No_leakage"
+            }
+          ]
+        },
+        {
+          "truth": "Severe_leakage",
+          "wrong_prediction": "Weak_leakage",
+          "count": 2,
+          "unique_cycles": 1,
+          "by_truth": {
+            "No_leakage": 0,
+            "Weak_leakage": 0,
+            "Severe_leakage": 2
+          },
+          "cases": [
+            {
+              "id": "1f6ef00a",
+              "panel": "hydraulic_p03",
+              "round": 1,
+              "block": 0,
+              "truth": "Severe_leakage",
+              "base_prediction": "Weak_leakage",
+              "output": "Weak_leakage"
+            },
+            {
+              "id": "1f6ef00a",
+              "panel": "hydraulic_p03",
+              "round": 2,
+              "block": 5,
+              "truth": "Severe_leakage",
+              "base_prediction": "Weak_leakage",
+              "output": "Weak_leakage"
+            }
+          ]
+        }
+      ]
+    },
+    "Same": {
+      "count": 4,
+      "unique_cycles": 2,
+      "by_truth": {
+        "No_leakage": 0,
+        "Weak_leakage": 2,
+        "Severe_leakage": 2
+      },
+      "cases": [
+        {
+          "id": "1f6ef00a",
+          "panel": "hydraulic_p03",
+          "round": 1,
+          "block": 0,
+          "truth": "Severe_leakage",
+          "base_prediction": "Weak_leakage",
+          "output": "Weak_leakage"
+        },
+        {
+          "id": "a2d872b1",
+          "panel": "hydraulic_p03",
+          "round": 1,
+          "block": 0,
+          "truth": "Weak_leakage",
+          "base_prediction": "No_leakage",
+          "output": "No_leakage"
+        },
+        {
+          "id": "1f6ef00a",
+          "panel": "hydraulic_p03",
+          "round": 2,
+          "block": 5,
+          "truth": "Severe_leakage",
+          "base_prediction": "Weak_leakage",
+          "output": "Weak_leakage"
+        },
+        {
+          "id": "a2d872b1",
+          "panel": "hydraulic_p03",
+          "round": 2,
+          "block": 5,
+          "truth": "Weak_leakage",
+          "base_prediction": "No_leakage",
+          "output": "No_leakage"
+        }
+      ],
+      "true_to_wrong_label": [
+        {
+          "truth": "Weak_leakage",
+          "wrong_prediction": "No_leakage",
+          "count": 2,
+          "unique_cycles": 1,
+          "by_truth": {
+            "No_leakage": 0,
+            "Weak_leakage": 2,
+            "Severe_leakage": 0
+          },
+          "cases": [
+            {
+              "id": "a2d872b1",
+              "panel": "hydraulic_p03",
+              "round": 1,
+              "block": 0,
+              "truth": "Weak_leakage",
+              "base_prediction": "No_leakage",
+              "output": "No_leakage"
+            },
+            {
+              "id": "a2d872b1",
+              "panel": "hydraulic_p03",
+              "round": 2,
+              "block": 5,
+              "truth": "Weak_leakage",
+              "base_prediction": "No_leakage",
+              "output": "No_leakage"
+            }
+          ]
+        },
+        {
+          "truth": "Severe_leakage",
+          "wrong_prediction": "Weak_leakage",
+          "count": 2,
+          "unique_cycles": 1,
+          "by_truth": {
+            "No_leakage": 0,
+            "Weak_leakage": 0,
+            "Severe_leakage": 2
+          },
+          "cases": [
+            {
+              "id": "1f6ef00a",
+              "panel": "hydraulic_p03",
+              "round": 1,
+              "block": 0,
+              "truth": "Severe_leakage",
+              "base_prediction": "Weak_leakage",
+              "output": "Weak_leakage"
+            },
+            {
+              "id": "1f6ef00a",
+              "panel": "hydraulic_p03",
+              "round": 2,
+              "block": 5,
+              "truth": "Severe_leakage",
+              "base_prediction": "Weak_leakage",
+              "output": "Weak_leakage"
+            }
+          ]
+        }
+      ]
+    },
+    "View": {
+      "count": 5,
+      "unique_cycles": 3,
+      "by_truth": {
+        "No_leakage": 1,
+        "Weak_leakage": 2,
+        "Severe_leakage": 2
+      },
+      "cases": [
+        {
+          "id": "142c6afc",
+          "panel": "hydraulic_p02",
+          "round": 2,
+          "block": 4,
+          "truth": "No_leakage",
+          "base_prediction": "Weak_leakage",
+          "output": "Weak_leakage"
+        },
+        {
+          "id": "1f6ef00a",
+          "panel": "hydraulic_p03",
+          "round": 1,
+          "block": 0,
+          "truth": "Severe_leakage",
+          "base_prediction": "Weak_leakage",
+          "output": "Weak_leakage"
+        },
+        {
+          "id": "a2d872b1",
+          "panel": "hydraulic_p03",
+          "round": 1,
+          "block": 0,
+          "truth": "Weak_leakage",
+          "base_prediction": "No_leakage",
+          "output": "No_leakage"
+        },
+        {
+          "id": "1f6ef00a",
+          "panel": "hydraulic_p03",
+          "round": 2,
+          "block": 5,
+          "truth": "Severe_leakage",
+          "base_prediction": "Weak_leakage",
+          "output": "Weak_leakage"
+        },
+        {
+          "id": "a2d872b1",
+          "panel": "hydraulic_p03",
+          "round": 2,
+          "block": 5,
+          "truth": "Weak_leakage",
+          "base_prediction": "No_leakage",
+          "output": "No_leakage"
+        }
+      ],
+      "true_to_wrong_label": [
+        {
+          "truth": "No_leakage",
+          "wrong_prediction": "Weak_leakage",
+          "count": 1,
+          "unique_cycles": 1,
+          "by_truth": {
+            "No_leakage": 1,
+            "Weak_leakage": 0,
+            "Severe_leakage": 0
+          },
+          "cases": [
+            {
+              "id": "142c6afc",
+              "panel": "hydraulic_p02",
+              "round": 2,
+              "block": 4,
+              "truth": "No_leakage",
+              "base_prediction": "Weak_leakage",
+              "output": "Weak_leakage"
+            }
+          ]
+        },
+        {
+          "truth": "Weak_leakage",
+          "wrong_prediction": "No_leakage",
+          "count": 2,
+          "unique_cycles": 1,
+          "by_truth": {
+            "No_leakage": 0,
+            "Weak_leakage": 2,
+            "Severe_leakage": 0
+          },
+          "cases": [
+            {
+              "id": "a2d872b1",
+              "panel": "hydraulic_p03",
+              "round": 1,
+              "block": 0,
+              "truth": "Weak_leakage",
+              "base_prediction": "No_leakage",
+              "output": "No_leakage"
+            },
+            {
+              "id": "a2d872b1",
+              "panel": "hydraulic_p03",
+              "round": 2,
+              "block": 5,
+              "truth": "Weak_leakage",
+              "base_prediction": "No_leakage",
+              "output": "No_leakage"
+            }
+          ]
+        },
+        {
+          "truth": "Severe_leakage",
+          "wrong_prediction": "Weak_leakage",
+          "count": 2,
+          "unique_cycles": 1,
+          "by_truth": {
+            "No_leakage": 0,
+            "Weak_leakage": 0,
+            "Severe_leakage": 2
+          },
+          "cases": [
+            {
+              "id": "1f6ef00a",
+              "panel": "hydraulic_p03",
+              "round": 1,
+              "block": 0,
+              "truth": "Severe_leakage",
+              "base_prediction": "Weak_leakage",
+              "output": "Weak_leakage"
+            },
+            {
+              "id": "1f6ef00a",
+              "panel": "hydraulic_p03",
+              "round": 2,
+              "block": 5,
+              "truth": "Severe_leakage",
+              "base_prediction": "Weak_leakage",
+              "output": "Weak_leakage"
+            }
+          ]
+        }
+      ]
+    },
+    "Majority_F": {
+      "count": 4,
+      "unique_cycles": 2,
+      "by_truth": {
+        "No_leakage": 0,
+        "Weak_leakage": 2,
+        "Severe_leakage": 2
+      },
+      "cases": [
+        {
+          "id": "1f6ef00a",
+          "panel": "hydraulic_p03",
+          "round": 1,
+          "block": 0,
+          "truth": "Severe_leakage",
+          "base_prediction": "Weak_leakage",
+          "output": "Weak_leakage"
+        },
+        {
+          "id": "a2d872b1",
+          "panel": "hydraulic_p03",
+          "round": 1,
+          "block": 0,
+          "truth": "Weak_leakage",
+          "base_prediction": "No_leakage",
+          "output": "No_leakage"
+        },
+        {
+          "id": "1f6ef00a",
+          "panel": "hydraulic_p03",
+          "round": 2,
+          "block": 5,
+          "truth": "Severe_leakage",
+          "base_prediction": "Weak_leakage",
+          "output": "Weak_leakage"
+        },
+        {
+          "id": "a2d872b1",
+          "panel": "hydraulic_p03",
+          "round": 2,
+          "block": 5,
+          "truth": "Weak_leakage",
+          "base_prediction": "No_leakage",
+          "output": "No_leakage"
+        }
+      ],
+      "true_to_wrong_label": [
+        {
+          "truth": "Weak_leakage",
+          "wrong_prediction": "No_leakage",
+          "count": 2,
+          "unique_cycles": 1,
+          "by_truth": {
+            "No_leakage": 0,
+            "Weak_leakage": 2,
+            "Severe_leakage": 0
+          },
+          "cases": [
+            {
+              "id": "a2d872b1",
+              "panel": "hydraulic_p03",
+              "round": 1,
+              "block": 0,
+              "truth": "Weak_leakage",
+              "base_prediction": "No_leakage",
+              "output": "No_leakage"
+            },
+            {
+              "id": "a2d872b1",
+              "panel": "hydraulic_p03",
+              "round": 2,
+              "block": 5,
+              "truth": "Weak_leakage",
+              "base_prediction": "No_leakage",
+              "output": "No_leakage"
+            }
+          ]
+        },
+        {
+          "truth": "Severe_leakage",
+          "wrong_prediction": "Weak_leakage",
+          "count": 2,
+          "unique_cycles": 1,
+          "by_truth": {
+            "No_leakage": 0,
+            "Weak_leakage": 0,
+            "Severe_leakage": 2
+          },
+          "cases": [
+            {
+              "id": "1f6ef00a",
+              "panel": "hydraulic_p03",
+              "round": 1,
+              "block": 0,
+              "truth": "Severe_leakage",
+              "base_prediction": "Weak_leakage",
+              "output": "Weak_leakage"
+            },
+            {
+              "id": "1f6ef00a",
+              "panel": "hydraulic_p03",
+              "round": 2,
+              "block": 5,
+              "truth": "Severe_leakage",
+              "base_prediction": "Weak_leakage",
+              "output": "Weak_leakage"
+            }
+          ]
+        }
+      ]
+    },
+    "Majority_R": {
+      "count": 7,
+      "unique_cycles": 5,
+      "by_truth": {
+        "No_leakage": 0,
+        "Weak_leakage": 4,
+        "Severe_leakage": 3
+      },
+      "cases": [
+        {
+          "id": "73b45c55",
+          "panel": "hydraulic_p02",
+          "round": 2,
+          "block": 4,
+          "truth": "Severe_leakage",
+          "base_prediction": "Severe_leakage",
+          "output": "No_leakage"
+        },
+        {
+          "id": "91167869",
+          "panel": "hydraulic_p02",
+          "round": 2,
+          "block": 4,
+          "truth": "Weak_leakage",
+          "base_prediction": "Weak_leakage",
+          "output": "No_leakage"
+        },
+        {
+          "id": "e46abcac",
+          "panel": "hydraulic_p02",
+          "round": 2,
+          "block": 4,
+          "truth": "Weak_leakage",
+          "base_prediction": "Weak_leakage",
+          "output": "Severe_leakage"
+        },
+        {
+          "id": "1f6ef00a",
+          "panel": "hydraulic_p03",
+          "round": 1,
+          "block": 0,
+          "truth": "Severe_leakage",
+          "base_prediction": "Weak_leakage",
+          "output": "Weak_leakage"
+        },
+        {
+          "id": "a2d872b1",
+          "panel": "hydraulic_p03",
+          "round": 1,
+          "block": 0,
+          "truth": "Weak_leakage",
+          "base_prediction": "No_leakage",
+          "output": "No_leakage"
+        },
+        {
+          "id": "1f6ef00a",
+          "panel": "hydraulic_p03",
+          "round": 2,
+          "block": 5,
+          "truth": "Severe_leakage",
+          "base_prediction": "Weak_leakage",
+          "output": "Weak_leakage"
+        },
+        {
+          "id": "a2d872b1",
+          "panel": "hydraulic_p03",
+          "round": 2,
+          "block": 5,
+          "truth": "Weak_leakage",
+          "base_prediction": "No_leakage",
+          "output": "No_leakage"
+        }
+      ],
+      "true_to_wrong_label": [
+        {
+          "truth": "Weak_leakage",
+          "wrong_prediction": "No_leakage",
+          "count": 3,
+          "unique_cycles": 2,
+          "by_truth": {
+            "No_leakage": 0,
+            "Weak_leakage": 3,
+            "Severe_leakage": 0
+          },
+          "cases": [
+            {
+              "id": "91167869",
+              "panel": "hydraulic_p02",
+              "round": 2,
+              "block": 4,
+              "truth": "Weak_leakage",
+              "base_prediction": "Weak_leakage",
+              "output": "No_leakage"
+            },
+            {
+              "id": "a2d872b1",
+              "panel": "hydraulic_p03",
+              "round": 1,
+              "block": 0,
+              "truth": "Weak_leakage",
+              "base_prediction": "No_leakage",
+              "output": "No_leakage"
+            },
+            {
+              "id": "a2d872b1",
+              "panel": "hydraulic_p03",
+              "round": 2,
+              "block": 5,
+              "truth": "Weak_leakage",
+              "base_prediction": "No_leakage",
+              "output": "No_leakage"
+            }
+          ]
+        },
+        {
+          "truth": "Weak_leakage",
+          "wrong_prediction": "Severe_leakage",
+          "count": 1,
+          "unique_cycles": 1,
+          "by_truth": {
+            "No_leakage": 0,
+            "Weak_leakage": 1,
+            "Severe_leakage": 0
+          },
+          "cases": [
+            {
+              "id": "e46abcac",
+              "panel": "hydraulic_p02",
+              "round": 2,
+              "block": 4,
+              "truth": "Weak_leakage",
+              "base_prediction": "Weak_leakage",
+              "output": "Severe_leakage"
+            }
+          ]
+        },
+        {
+          "truth": "Severe_leakage",
+          "wrong_prediction": "No_leakage",
+          "count": 1,
+          "unique_cycles": 1,
+          "by_truth": {
+            "No_leakage": 0,
+            "Weak_leakage": 0,
+            "Severe_leakage": 1
+          },
+          "cases": [
+            {
+              "id": "73b45c55",
+              "panel": "hydraulic_p02",
+              "round": 2,
+              "block": 4,
+              "truth": "Severe_leakage",
+              "base_prediction": "Severe_leakage",
+              "output": "No_leakage"
+            }
+          ]
+        },
+        {
+          "truth": "Severe_leakage",
+          "wrong_prediction": "Weak_leakage",
+          "count": 2,
+          "unique_cycles": 1,
+          "by_truth": {
+            "No_leakage": 0,
+            "Weak_leakage": 0,
+            "Severe_leakage": 2
+          },
+          "cases": [
+            {
+              "id": "1f6ef00a",
+              "panel": "hydraulic_p03",
+              "round": 1,
+              "block": 0,
+              "truth": "Severe_leakage",
+              "base_prediction": "Weak_leakage",
+              "output": "Weak_leakage"
+            },
+            {
+              "id": "1f6ef00a",
+              "panel": "hydraulic_p03",
+              "round": 2,
+              "block": 5,
+              "truth": "Severe_leakage",
+              "base_prediction": "Weak_leakage",
+              "output": "Weak_leakage"
+            }
+          ]
+        }
+      ]
+    },
+    "Unanimity_F": {
+      "count": 4,
+      "unique_cycles": 2,
+      "by_truth": {
+        "No_leakage": 0,
+        "Weak_leakage": 2,
+        "Severe_leakage": 2
+      },
+      "cases": [
+        {
+          "id": "1f6ef00a",
+          "panel": "hydraulic_p03",
+          "round": 1,
+          "block": 0,
+          "truth": "Severe_leakage",
+          "base_prediction": "Weak_leakage",
+          "output": "Weak_leakage"
+        },
+        {
+          "id": "a2d872b1",
+          "panel": "hydraulic_p03",
+          "round": 1,
+          "block": 0,
+          "truth": "Weak_leakage",
+          "base_prediction": "No_leakage",
+          "output": "No_leakage"
+        },
+        {
+          "id": "1f6ef00a",
+          "panel": "hydraulic_p03",
+          "round": 2,
+          "block": 5,
+          "truth": "Severe_leakage",
+          "base_prediction": "Weak_leakage",
+          "output": "Weak_leakage"
+        },
+        {
+          "id": "a2d872b1",
+          "panel": "hydraulic_p03",
+          "round": 2,
+          "block": 5,
+          "truth": "Weak_leakage",
+          "base_prediction": "No_leakage",
+          "output": "No_leakage"
+        }
+      ],
+      "true_to_wrong_label": [
+        {
+          "truth": "Weak_leakage",
+          "wrong_prediction": "No_leakage",
+          "count": 2,
+          "unique_cycles": 1,
+          "by_truth": {
+            "No_leakage": 0,
+            "Weak_leakage": 2,
+            "Severe_leakage": 0
+          },
+          "cases": [
+            {
+              "id": "a2d872b1",
+              "panel": "hydraulic_p03",
+              "round": 1,
+              "block": 0,
+              "truth": "Weak_leakage",
+              "base_prediction": "No_leakage",
+              "output": "No_leakage"
+            },
+            {
+              "id": "a2d872b1",
+              "panel": "hydraulic_p03",
+              "round": 2,
+              "block": 5,
+              "truth": "Weak_leakage",
+              "base_prediction": "No_leakage",
+              "output": "No_leakage"
+            }
+          ]
+        },
+        {
+          "truth": "Severe_leakage",
+          "wrong_prediction": "Weak_leakage",
+          "count": 2,
+          "unique_cycles": 1,
+          "by_truth": {
+            "No_leakage": 0,
+            "Weak_leakage": 0,
+            "Severe_leakage": 2
+          },
+          "cases": [
+            {
+              "id": "1f6ef00a",
+              "panel": "hydraulic_p03",
+              "round": 1,
+              "block": 0,
+              "truth": "Severe_leakage",
+              "base_prediction": "Weak_leakage",
+              "output": "Weak_leakage"
+            },
+            {
+              "id": "1f6ef00a",
+              "panel": "hydraulic_p03",
+              "round": 2,
+              "block": 5,
+              "truth": "Severe_leakage",
+              "base_prediction": "Weak_leakage",
+              "output": "Weak_leakage"
+            }
+          ]
+        }
+      ]
+    },
+    "Unanimity_R": {
+      "count": 4,
+      "unique_cycles": 2,
+      "by_truth": {
+        "No_leakage": 0,
+        "Weak_leakage": 2,
+        "Severe_leakage": 2
+      },
+      "cases": [
+        {
+          "id": "1f6ef00a",
+          "panel": "hydraulic_p03",
+          "round": 1,
+          "block": 0,
+          "truth": "Severe_leakage",
+          "base_prediction": "Weak_leakage",
+          "output": "Weak_leakage"
+        },
+        {
+          "id": "a2d872b1",
+          "panel": "hydraulic_p03",
+          "round": 1,
+          "block": 0,
+          "truth": "Weak_leakage",
+          "base_prediction": "No_leakage",
+          "output": "No_leakage"
+        },
+        {
+          "id": "1f6ef00a",
+          "panel": "hydraulic_p03",
+          "round": 2,
+          "block": 5,
+          "truth": "Severe_leakage",
+          "base_prediction": "Weak_leakage",
+          "output": "Weak_leakage"
+        },
+        {
+          "id": "a2d872b1",
+          "panel": "hydraulic_p03",
+          "round": 2,
+          "block": 5,
+          "truth": "Weak_leakage",
+          "base_prediction": "No_leakage",
+          "output": "No_leakage"
+        }
+      ],
+      "true_to_wrong_label": [
+        {
+          "truth": "Weak_leakage",
+          "wrong_prediction": "No_leakage",
+          "count": 2,
+          "unique_cycles": 1,
+          "by_truth": {
+            "No_leakage": 0,
+            "Weak_leakage": 2,
+            "Severe_leakage": 0
+          },
+          "cases": [
+            {
+              "id": "a2d872b1",
+              "panel": "hydraulic_p03",
+              "round": 1,
+              "block": 0,
+              "truth": "Weak_leakage",
+              "base_prediction": "No_leakage",
+              "output": "No_leakage"
+            },
+            {
+              "id": "a2d872b1",
+              "panel": "hydraulic_p03",
+              "round": 2,
+              "block": 5,
+              "truth": "Weak_leakage",
+              "base_prediction": "No_leakage",
+              "output": "No_leakage"
+            }
+          ]
+        },
+        {
+          "truth": "Severe_leakage",
+          "wrong_prediction": "Weak_leakage",
+          "count": 2,
+          "unique_cycles": 1,
+          "by_truth": {
+            "No_leakage": 0,
+            "Weak_leakage": 0,
+            "Severe_leakage": 2
+          },
+          "cases": [
+            {
+              "id": "1f6ef00a",
+              "panel": "hydraulic_p03",
+              "round": 1,
+              "block": 0,
+              "truth": "Severe_leakage",
+              "base_prediction": "Weak_leakage",
+              "output": "Weak_leakage"
+            },
+            {
+              "id": "1f6ef00a",
+              "panel": "hydraulic_p03",
+              "round": 2,
+              "block": 5,
+              "truth": "Severe_leakage",
+              "base_prediction": "Weak_leakage",
+              "output": "Weak_leakage"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "persistent_retained_errors": {
+    "criterion": "Same wrong label retained by Same, View, Unanimity_F and Unanimity_R in each of both recorded rounds. Count a source-round decision once, not once per policy.",
+    "policies": [
+      "Same",
+      "View",
+      "Unanimity_F",
+      "Unanimity_R"
+    ],
+    "unique_cycles": 2,
+    "repeated_decisions": 4,
+    "records": [
+      {
+        "id": "1f6ef00a",
+        "panel": "hydraulic_p03",
+        "truth": "Severe_leakage",
+        "wrong_prediction": "Weak_leakage",
+        "rounds": [
+          1,
+          2
+        ],
+        "decisions": [
+          {
+            "round": 1,
+            "block": 0,
+            "retained_by": [
+              "Same",
+              "View",
+              "Unanimity_F",
+              "Unanimity_R"
+            ]
+          },
+          {
+            "round": 2,
+            "block": 5,
+            "retained_by": [
+              "Same",
+              "View",
+              "Unanimity_F",
+              "Unanimity_R"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "a2d872b1",
+        "panel": "hydraulic_p03",
+        "truth": "Weak_leakage",
+        "wrong_prediction": "No_leakage",
+        "rounds": [
+          1,
+          2
+        ],
+        "decisions": [
+          {
+            "round": 1,
+            "block": 0,
+            "retained_by": [
+              "Same",
+              "View",
+              "Unanimity_F",
+              "Unanimity_R"
+            ]
+          },
+          {
+            "round": 2,
+            "block": 5,
+            "retained_by": [
+              "Same",
+              "View",
+              "Unanimity_F",
+              "Unanimity_R"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "voting_changes": {
+    "Majority_F": {
+      "initial_policy": "Single_F",
+      "planned_decisions": 54,
+      "corrected_base_error": {
+        "count": 5,
+        "unique_cycles": 5,
+        "by_truth": {
+          "No_leakage": 0,
+          "Weak_leakage": 3,
+          "Severe_leakage": 2
+        },
+        "cases": [
+          {
+            "id": "73b45c55",
+            "panel": "hydraulic_p02",
+            "round": 1,
+            "block": 2,
+            "truth": "Severe_leakage",
+            "base_prediction": "No_leakage",
+            "output": "Severe_leakage"
+          },
+          {
+            "id": "91167869",
+            "panel": "hydraulic_p02",
+            "round": 1,
+            "block": 2,
+            "truth": "Weak_leakage",
+            "base_prediction": "No_leakage",
+            "output": "Weak_leakage"
+          },
+          {
+            "id": "d53bdf8e",
+            "panel": "hydraulic_p02",
+            "round": 1,
+            "block": 2,
+            "truth": "Severe_leakage",
+            "base_prediction": "No_leakage",
+            "output": "Severe_leakage"
+          },
+          {
+            "id": "e46abcac",
+            "panel": "hydraulic_p02",
+            "round": 1,
+            "block": 2,
+            "truth": "Weak_leakage",
+            "base_prediction": "Severe_leakage",
+            "output": "Weak_leakage"
+          },
+          {
+            "id": "eb5702a2",
+            "panel": "hydraulic_p02",
+            "round": 1,
+            "block": 2,
+            "truth": "Weak_leakage",
+            "base_prediction": "No_leakage",
+            "output": "Weak_leakage"
+          }
+        ]
+      },
+      "harmed_base_correct": {
+        "count": 0,
+        "unique_cycles": 0,
+        "by_truth": {
+          "No_leakage": 0,
+          "Weak_leakage": 0,
+          "Severe_leakage": 0
+        },
+        "cases": []
+      },
+      "rejected_base_correct": {
+        "count": 0,
+        "unique_cycles": 0,
+        "by_truth": {
+          "No_leakage": 0,
+          "Weak_leakage": 0,
+          "Severe_leakage": 0
+        },
+        "cases": []
+      },
+      "rejected_base_error": {
+        "count": 1,
+        "unique_cycles": 1,
+        "by_truth": {
+          "No_leakage": 1,
+          "Weak_leakage": 0,
+          "Severe_leakage": 0
+        },
+        "cases": [
+          {
+            "id": "142c6afc",
+            "panel": "hydraulic_p02",
+            "round": 2,
+            "block": 4,
+            "truth": "No_leakage",
+            "base_prediction": "Weak_leakage",
+            "output": ""
+          }
+        ]
+      }
+    },
+    "Majority_R": {
+      "initial_policy": "Single_R",
+      "planned_decisions": 54,
+      "corrected_base_error": {
+        "count": 0,
+        "unique_cycles": 0,
+        "by_truth": {
+          "No_leakage": 0,
+          "Weak_leakage": 0,
+          "Severe_leakage": 0
+        },
+        "cases": []
+      },
+      "harmed_base_correct": {
+        "count": 3,
+        "unique_cycles": 3,
+        "by_truth": {
+          "No_leakage": 0,
+          "Weak_leakage": 2,
+          "Severe_leakage": 1
+        },
+        "cases": [
+          {
+            "id": "73b45c55",
+            "panel": "hydraulic_p02",
+            "round": 2,
+            "block": 4,
+            "truth": "Severe_leakage",
+            "base_prediction": "Severe_leakage",
+            "output": "No_leakage"
+          },
+          {
+            "id": "91167869",
+            "panel": "hydraulic_p02",
+            "round": 2,
+            "block": 4,
+            "truth": "Weak_leakage",
+            "base_prediction": "Weak_leakage",
+            "output": "No_leakage"
+          },
+          {
+            "id": "e46abcac",
+            "panel": "hydraulic_p02",
+            "round": 2,
+            "block": 4,
+            "truth": "Weak_leakage",
+            "base_prediction": "Weak_leakage",
+            "output": "Severe_leakage"
+          }
+        ]
+      },
+      "rejected_base_correct": {
+        "count": 1,
+        "unique_cycles": 1,
+        "by_truth": {
+          "No_leakage": 0,
+          "Weak_leakage": 0,
+          "Severe_leakage": 1
+        },
+        "cases": [
+          {
+            "id": "d53bdf8e",
+            "panel": "hydraulic_p02",
+            "round": 2,
+            "block": 4,
+            "truth": "Severe_leakage",
+            "base_prediction": "Severe_leakage",
+            "output": ""
+          }
+        ]
+      },
+      "rejected_base_error": {
+        "count": 0,
+        "unique_cycles": 0,
+        "by_truth": {
+          "No_leakage": 0,
+          "Weak_leakage": 0,
+          "Severe_leakage": 0
+        },
+        "cases": []
+      }
+    }
+  },
+  "limits": [
+    "Post hoc interpretation after viewing aggregate policy results; not a preregistered class endpoint",
+    "All three true classes are counted; no thresholds, panels, policies, features or calls are selected or changed",
+    "Repeated decisions do not increase physical source count; class counts are descriptive, without subgroup significance tests or future-rate claims",
+    "Finite repeated wrong labels do not establish a model mechanism or universal stability",
+    "Input CSV and truth hashes bind this audit; it does not itself re-audit raw service outputs or the freeze process",
+    "No Paderborn data or predictions, network access, new inference, raw signal inspection or new policy scoring"
+  ]
+}

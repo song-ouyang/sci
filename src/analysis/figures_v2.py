@@ -266,6 +266,74 @@ def hydraulic():
     plt.close(fig)
 
 
+# ------------------------------------------------------------------ error structure + canaries
+def structure():
+    base = ROOT / "results/error_structure_v3"
+    groups = read_csv(base / "groups.csv")
+    calls = read_csv(base / "canary_calls.csv")
+    fail = {}
+    for c in calls:
+        key = (c["study"], c["service"], c["group"])
+        fail.setdefault(key, []).append(c["accepted"] != "True")
+    fig, axes = plt.subplots(1, 2, figsize=(7.0, 3.0))
+    ax = axes[0]
+    style = {"TEP": ("o", BLUE), "TEP ABBA": ("D", BLUE), "Hydraulic (5 blocks)": ("s", ORANGE),
+             "Hydraulic (new blocks)": ("^", ORANGE), "Paderborn bearing": ("v", INK2)}
+    for g in groups:
+        err = int(g["total_errors"])
+        if err < 5:
+            continue
+        k = int(g["calls"])
+        x = int(g["stable_error"]) * k / err
+        single = float(g["error_rate"])
+        y = 100 * (single - (1 - float(g["majority_accuracy"]))) / single
+        m, color = style[g["study"]]
+        ax.plot(x, y, m, color=color, ms=6, mec="white", mew=0.8, alpha=0.9, zorder=3)
+    ax.axhline(0, color=INK2, lw=0.6)
+    ax.axvspan(0.35, 1.05, color=GRID, alpha=0.5, lw=0, zorder=0)
+    ax.text(0.7, 60, "stable errors:\nvoting cannot help", ha="center", fontsize=6.8, color=INK2)
+    ax.text(0.08, -58, "whole-call failures in\nmost calls: voting harms", ha="left", fontsize=6.8, color=INK2)
+    ax.text(0.08, 86, "unstable errors:\nvoting helps", ha="left", fontsize=6.8, color=INK2)
+    ax.set_xlabel("Share of errors that recur in every call")
+    ax.set_ylabel("Error removed by 3-call majority (%)")
+    ax.set_xlim(-0.05, 1.05)
+    ax.set_ylim(-65, 110)
+    ax.set_title("(a) Error structure decides whether voting helps", loc="left", fontsize=7.8)
+    grid(ax)
+    ax = axes[1]
+    markers = {"TEP": "o", "TEP ABBA": "D", "Hydraulic (5 blocks)": "s", "Hydraulic (new blocks)": "^",
+               "Paderborn bearing": "v", "Hydraulic (prospective)": "*"}
+    colors = {"TEP": BLUE, "TEP ABBA": BLUE, "Hydraulic (5 blocks)": ORANGE, "Hydraulic (new blocks)": ORANGE,
+              "Paderborn bearing": INK2, "Hydraulic (prospective)": AQUA}
+    extra = ROOT / "results/canary_hydraulic_v1/analysis/scores.json"
+    if extra.exists():
+        for c in json.loads(extra.read_text())["calls"]:
+            if c["status"] == "complete":
+                calls.append({"study": "Hydraulic (prospective)", "service": "gpt-5.6-sol",
+                              "canary_accuracy": c["canary_accuracy"], "focal_accuracy": c["focal_accuracy"]})
+    rng = np.random.default_rng(1)
+    for study, m in markers.items():
+        sub = [c for c in calls if c["study"] == study and c["service"] == "gpt-5.6-sol"]
+        if not sub:
+            continue
+        xs = np.array([100 * float(c["canary_accuracy"]) for c in sub]) + rng.uniform(-1.2, 1.2, len(sub))
+        ys = np.array([100 * float(c["focal_accuracy"]) for c in sub]) + rng.uniform(-1.2, 1.2, len(sub))
+        ax.plot(xs, ys, m, color=colors[study], ms=6 if m != "*" else 9, mec="white", mew=0.7, ls="none",
+                label=study, alpha=0.9)
+    ax.axvline(80, color=INK2, lw=0.8, ls="--")
+    ax.text(81.5, 3, "accept \u2192", fontsize=6.5, color=INK2)
+    ax.set_xlabel("Canary accuracy in the same call (%)")
+    ax.set_ylabel("Focal accuracy of the call (%)")
+    ax.set_xlim(-3, 103)
+    ax.set_ylim(-3, 103)
+    ax.set_title("(b) Canaries track whole-call failures (GPT-5.6 Sol)", loc="left", fontsize=7.8)
+    grid(ax, "both")
+    ax.legend(frameon=False, loc="upper left", fontsize=6.3, handletextpad=0.2)
+    fig.tight_layout()
+    fig.savefig(OUT / "error_structure.pdf", bbox_inches="tight")
+    plt.close(fig)
+
+
 if __name__ == "__main__":
     OUT.mkdir(parents=True, exist_ok=True)
     targets = sys.argv[1:] or ["framework", "forest", "timing", "voting", "hydraulic"]

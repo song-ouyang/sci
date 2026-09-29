@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-09-28T16:14:43.577603+00:00",
+  "final_archives": {
+    "results/industrial_interface_focused_review.zip": {
+      "sha256": "eaf92dd95cbd5f5e3fd1f5ff78a41aac77cdd46361bc083abc447e85b2e6124e",
+      "bytes": 23136589
+    },
+    "results/industrial_interface_focused_overleaf.zip": {
+      "sha256": "e44e27b98e5c87b60ed4d24f0d1431abb0f9dabd0ae1fc3d781ee78fed69b8ed",
+      "bytes": 234847
+    }
+  },
+  "manifest_files_verified": 3539,
+  "metadata_only_changes_since_reproduced_archive": [
+    "paper/focused_submission/quality.json",
+    "results/focused_review/bearing_baseline_reproduction_check.json"
+  ],
+  "all_scientific_and_pdf_sources_unchanged_since_reproduction": true,
+  "overleaf_members_match_recompiled_and_text_checked_sources": true,
+  "delivery_pdfs_match_packaged_pdfs": true,
+  "pdf_pages": {
+    "main": 21,
+    "supplement": 44
+  },
+  "new_llm_calls": 0
+}

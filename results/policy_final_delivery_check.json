@@ -1,0 +1,95 @@
+{
+  "schema": "policy-final-delivery-member-check-v1",
+  "created_at_utc": "2026-09-28T15:30:14.465865+00:00",
+  "status": "PASS",
+  "scope": "Read-only final archive manifest and member comparison with preceding independently verified extraction. No compilation, scoring, inference or network.",
+  "prior_reproduction_report_sha256": "b3c0d406dc9a6e7a43fe5c4d3d0f5b212c202762bee8e15dbf77ef23db263b74",
+  "initial_check_correction": {
+    "retained_report": "results/policy_final_delivery_check.initial_path_assumption.json",
+    "sha256": "33d9383c235c6f09f2a66d8b84b9a47897a657d09a44daaf84314557c529afe8",
+    "reason": "Corrected checker-only expected quality path from results/focused_review/quality.json to paper/focused_submission/quality.json; no package or scientific files changed."
+  },
+  "new_model_calls": 0,
+  "new_score_runs": 0,
+  "new_compile_runs": 0,
+  "full_archive": {
+    "sha256": "b11cf6c1dfe0ee71fdacbf9200ab5dcbe5aa0b88f220d0600e9c74a2c7f7c42a",
+    "manifest_sha256": "3277279875a185fe134d61a5be25b3d7bc892d34e70c6b23637908c8496b69ff",
+    "manifest_files_verified": 3368,
+    "previous_manifest_files": 3367,
+    "added": [
+      {
+        "path": "results/focused_review/policy_reproduction_check.json",
+        "sha256": "b3c0d406dc9a6e7a43fe5c4d3d0f5b212c202762bee8e15dbf77ef23db263b74"
+      }
+    ],
+    "changed": [
+      {
+        "path": "paper/focused_submission/quality.json",
+        "previous_sha256": "439863e937d2fd8d5796678e7da34d038e05bd8b01489fa63692b973417816e9",
+        "final_sha256": "29506f5fcdefbc6a7557b26eab380d4fe48f5b1d8d29a75a8aee96dda5e52b85"
+      }
+    ],
+    "removed": [],
+    "unchanged_previous_member_count": 3366,
+    "all_scientific_files_figures_pdfs_and_source_unchanged": true
+  },
+  "overleaf_archive": {
+    "sha256": "6af89bb7fc0f357cbee339c4e9fd81643fe1d06d799591e643946dd0a4a50f4d",
+    "previous_archive_sha256": "ef46cb57386f3741c7af1b81c76d5185efb1c143162c2de38766d11d5524cfe0",
+    "members_verified": 12,
+    "all_member_contents_unchanged": true,
+    "members": [
+      {
+        "path": "README.txt",
+        "sha256": "5d4132b51f0dc6584dd38b34238d8d47ca3a975657bce811dc003b3599205a3c"
+      },
+      {
+        "path": "figures/independent_validation/independent_controls.pdf",
+        "sha256": "def27ff4a51868e20b9878562bda7de469423338d1d418d827c54d0ef9573125"
+      },
+      {
+        "path": "figures/mechanism_extension/matched_context.pdf",
+        "sha256": "6865e07020e1c280158a7aaaf53fb2b52ed65a922b7f22283d9d11abfa2dbaa5"
+      },
+      {
+        "path": "figures/policy_design_v1.pdf",
+        "sha256": "1fcd4df5f1c648cd2b381e890a4468092dd5a12eee73d7ab5e8fd8d520c050ed"
+      },
+      {
+        "path": "figures/revision_v3/class_recall.pdf",
+        "sha256": "817ea36f86349e761fd7b108a443ec01c35872e3002998b75ba84112f89c8750"
+      },
+      {
+        "path": "figures/revision_v3/evaluation_workflow.pdf",
+        "sha256": "e6218bf2911572f6e6819c834161cc7443191bc716cd0b42cf3fc6fe8e0549f6"
+      },
+      {
+        "path": "figures/revision_v3/mapping_sensitivity.pdf",
+        "sha256": "105766b71b27b641cc49e4fb87646d889fb0d237694c75e3f4c4539787add68b"
+      },
+      {
+        "path": "figures/revision_v3/primary_accuracy.pdf",
+        "sha256": "809b85d1c9f0ae620785705fbca62b1a8ac74bb5b81c217288683cf8675fb5ed"
+      },
+      {
+        "path": "figures/revision_v3/repeat_accuracy.pdf",
+        "sha256": "adddc7d056458f0fcdb4fc7d120952b365394e2164d31f95b659d20c5b283679"
+      },
+      {
+        "path": "main.tex",
+        "sha256": "e193702bd817855e1820e272573856d38a697c46f904984771cb402fc230059c"
+      },
+      {
+        "path": "references.bib",
+        "sha256": "066136085c2661b55d86c99ec0e622f1bcb28bd9be3510ffd6dad029bddcc15f"
+      },
+      {
+        "path": "supplement.tex",
+        "sha256": "133389a5484038db4789b9f4c3f82baa1fb2f5d05aa8356f0bc1cad574ef6739"
+      }
+    ],
+    "zip_byte_hash_changed_but_member_content_equal": true
+  },
+  "completed_at_utc": "2026-09-28T15:30:14.857161+00:00"
+}

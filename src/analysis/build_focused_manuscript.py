@@ -11,6 +11,8 @@ import re
 from hydraulic_manuscript_fragments import make_fragments
 from repeat_condition_manuscript_v2 import make_repeat_fragments
 from context_blocked_manuscript_v1 import make_context_fragments
+from policy_manuscript_v1 import make_policy_fragments
+from bearing_baseline_manuscript_v1 import make_baseline_fragments
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / 'paper/focused_submission'
@@ -99,6 +101,10 @@ def main():
     replacements.update(repeat_fragments)
     blocked_fragments, blocked_supplement = make_context_fragments()
     replacements.update(blocked_fragments)
+    policy_fragments, policy_supplement = make_policy_fragments()
+    replacements.update(policy_fragments)
+    baseline_fragments, baseline_supplement = make_baseline_fragments()
+    replacements.update(baseline_fragments)
     replacements['PRIOR_WORK_COMPARISON'] = (OUT/'prior_work_comparison.tex').read_text()
     replacements = {key:value for key,value in replacements.items() if '@@'+key+'@@' in text}
     if set(re.findall(r'@@([A-Z_]+)@@', text)) != set(replacements):
@@ -115,7 +121,7 @@ def main():
                                     'pdftitle={Supplementary Report: Sensor Mapping and Context Effects in Industrial Monitoring}')
     supplement = supplement.replace(r'\bibliography{references}', r'\bibliography{../references}')
     addendum = measured_supplement + r'\subsection{Post hoc identical-input focal audit}' + '\n' + r'This analysis reuses frozen simulation outputs. It adds no observations or model calls. Identical-request variability can reach the primary context contrast, so a context effect separated from service variation is not estimated.' + '\n\n' + repeat_table + '\n' + r'\FloatBarrier' + '\n' + repeat_supplement
-    addendum += '\n' + blocked_supplement
+    addendum += '\n' + blocked_supplement + '\n' + policy_supplement + '\n' + baseline_supplement
     anchor = supplement.rfind(r'\begingroup')
     if anchor < 0: raise ValueError('Missing supplement bibliography anchor')
     supplement = supplement[:anchor] + addendum + supplement[anchor:]
@@ -123,6 +129,9 @@ def main():
     supplement = supplement.replace('Auditing Sensor Mapping and Context Dependence in LLM-Based Industrial Diagnosis', 'Auditing Sensor Mapping, Context and Repeatability in LLM-Based Industrial Diagnosis')
     supplement = supplement.replace('single-rig follow-up in Appendix C.', 'single-rig follow-up in Appendix C, plus a post hoc repetition and timing audit in Appendix D.')
     supplement = supplement.replace('timing audit in Appendix D.', 'timing audit in Appendix D and a separately frozen sequence-balanced follow-up in Appendix E.')
+    supplement = supplement.replace('Auditing Sensor Mapping, Context and Repeatability in LLM-Based Industrial Diagnosis', 'Sensor Mapping, Context and Decision Checks in LLM-Based Industrial Diagnosis')
+    supplement = supplement.replace('follow-up in Appendix E.', 'follow-up in Appendix E and new randomized fixed-policy studies in Appendix F.')
+    supplement = supplement.replace('studies in Appendix F.', 'studies in Appendix F. Appendix G adds a result-informed, same-feature supervised bearing benchmark with fixed physical-specimen holdouts.')
     bib = ROOT / 'paper/references.bib'
     bibkeys = set(re.findall(r'@\w+\{([^,]+),', bib.read_text()))
     info = {'main': check_tex(text, bibkeys), 'supplement': check_tex(supplement, bibkeys)}
@@ -132,8 +141,15 @@ def main():
     inputs += [ROOT / f'results/{stage}/analysis/scores.json' for stage in ['revision_v3', 'mechanism_extension', 'domestic_extension_v2']]
     inputs += [OUT/'prior_work_comparison.tex', ROOT/'src/analysis/repeat_condition_manuscript_v2.py', ROOT/'src/analysis/audit_repeat_condition_v2.py', ROOT/'results/repeat_condition_v2/audit.json', ROOT/'src/analysis/audit_call_timing_v2.py', ROOT/'results/call_timing_v2/timing.json']
     inputs += [ROOT/'src/analysis/context_blocked_manuscript_v1.py', ROOT/'results/context_blocked_v1/protocol.json', ROOT/'results/context_blocked_v1/analysis/scores.json', ROOT/'results/context_blocked_v1/predictions/frozen_manifest.json']
+    inputs += [ROOT/'src/analysis/audit_policy_error_classes_v1.py', ROOT/'results/policy_error_classes_v1/audit.json']
+    inputs += [ROOT/'src/analysis/policy_manuscript_v1.py', ROOT/'src/analysis/plot_policy_design_v1.py', ROOT/'paper/figures/policy_design_v1.pdf']
+    inputs += [ROOT/p for p in ['src/analysis/bearing_baseline_manuscript_v1.py', 'src/analysis/bearing_baseline_v1.py', 'results/bearing_baseline_v1/protocol.json', 'results/bearing_baseline_v1/prediction_manifest.json', 'results/bearing_baseline_v1/analysis/scores.json', 'results/bearing_baseline_v1/fit/selections.json', 'results/bearing_baseline_v1/fit/cv.json', 'results/bearing_baseline_v1/fit/structural_checks.json', 'data/bearing_baseline_v1/plan.json', 'data/bearing_baseline_v1/audit.json']]
+    inputs += [OUT/'bearing_baseline_interpretation.tex']
+    for dataset in ['hydraulic','paderborn']:
+        inputs += [ROOT/f'results/policy_{dataset}_v1'/f for f in ['protocol.json','analysis/scores.json','predictions/frozen_manifest.json']]
+        inputs += sorted((ROOT/f'results/policy_{dataset}_v1/analysis').glob('*.csv'))
     manifest = {'status': 'author_review_draft', 'new_inference_requests': 0,
-                'scope': 'Existing simulation evidence, post hoc all-pair/timing audits, separately frozen hydraulic and sequence-balanced follow-ups; no inference in builder.',
+                'scope': 'Existing simulation and measured evidence plus a result-informed same-feature supervised bearing reference with specimen and operating-regime holdouts; no inference in builder.',
                 'inputs': {str(p.relative_to(ROOT)): digest(p) for p in inputs},
                 'outputs': {str(p.relative_to(ROOT)): digest(p) for p in [OUT/'main.tex', OUT/'supplement.tex']},
                 'checks': info, 'human_scientific_verification': 'pending',

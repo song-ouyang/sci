@@ -1,0 +1,20 @@
+family,contrast,single_call_p,call_level_p,min_attainable_p,pooled_ci_excludes_zero,single_call_significant,call_level_supported,verdict
+gpt-5.6-sol/mapping,Cyclic rotation,1.4210854715202004e-14,0.1,0.1,True,True,True,agree: effect
+gpt-5.6-sol/mapping,Random derangement 1,1.0,1.0,0.4,False,False,False,agree: none
+gpt-5.6-sol/mapping,Random derangement 2,0.5,0.7,0.1,False,False,False,agree: none
+gpt-5.6-sol/mapping,Random derangement 3,2.9802322387695312e-08,0.7,0.1,False,True,False,single-call only
+gpt-5.6-sol/mapping,Same-unit swap,1.0,0.7,0.1,False,False,False,agree: none
+gpt-5.6-sol/mapping,Correct-pair reorder,1.0,1.0,0.4,False,False,False,agree: none
+gpt-5.6-sol/context,A: front vs back,1.0,1.0,0.4,False,False,False,agree: none
+gpt-5.6-sol/context,B: front vs back,0.00048828125,0.3,0.3,True,True,False,single-call only
+gpt-5.6-sol/context,Front: A vs B,1.0,1.0,0.4,False,False,False,agree: none
+gpt-5.6-sol/context,Back: A vs B,0.00048828125,0.1,0.1,True,True,True,agree: effect
+gpt-5.6-sol/context,Focal only vs within 70,1.0,1.0,0.4,False,False,False,agree: none
+sol/abba,Focal first vs focal last (ABBA/BAAB),0.5,0.4166666666666667,0.08333333333333333,False,False,False,agree: none
+sol/hydraulic,Descriptor rotation,0.7744140625,0.00823045267489712,0.00823045267489712,True,False,True,call-level only
+sol/hydraulic,Intact-pair reversal,0.00634765625,0.00411522633744856,0.00411522633744856,True,True,True,agree: effect
+sol/hydraulic,A: front vs back,0.03857421875,1.0,0.024691358024691357,False,True,False,single-call only
+sol/hydraulic,B: front vs back,0.01171875,0.875,0.0625,False,True,False,single-call only
+sol/hydraulic,Front: A vs B,0.01171875,1.0,0.012345679012345678,False,True,False,single-call only
+sol/hydraulic,Back: A vs B,0.03857421875,0.5,0.125,False,True,False,single-call only
+sol/hydraulic,Focal only vs focal+A (front),0.7744140625,0.027777777777777776,0.027777777777777776,True,False,True,call-level only

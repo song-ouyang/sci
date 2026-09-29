@@ -1,0 +1,82 @@
+[
+  {
+    "task": "primary",
+    "model": "SVM",
+    "reversed_row_order": true,
+    "single_row_calls": true,
+    "unlabeled_background_appended": true,
+    "elapsed_seconds": 0.006299125001532957
+  },
+  {
+    "task": "primary",
+    "model": "RF",
+    "reversed_row_order": true,
+    "single_row_calls": true,
+    "unlabeled_background_appended": true,
+    "elapsed_seconds": 0.2478769590088632
+  },
+  {
+    "task": "loro_N15_M07_F10",
+    "model": "SVM",
+    "reversed_row_order": true,
+    "single_row_calls": true,
+    "unlabeled_background_appended": true,
+    "elapsed_seconds": 0.0019431670079939067
+  },
+  {
+    "task": "loro_N15_M07_F10",
+    "model": "RF",
+    "reversed_row_order": true,
+    "single_row_calls": true,
+    "unlabeled_background_appended": true,
+    "elapsed_seconds": 0.06184858302003704
+  },
+  {
+    "task": "loro_N09_M07_F10",
+    "model": "SVM",
+    "reversed_row_order": true,
+    "single_row_calls": true,
+    "unlabeled_background_appended": true,
+    "elapsed_seconds": 0.0019490410049911588
+  },
+  {
+    "task": "loro_N09_M07_F10",
+    "model": "RF",
+    "reversed_row_order": true,
+    "single_row_calls": true,
+    "unlabeled_background_appended": true,
+    "elapsed_seconds": 0.0616328330070246
+  },
+  {
+    "task": "loro_N15_M01_F10",
+    "model": "SVM",
+    "reversed_row_order": true,
+    "single_row_calls": true,
+    "unlabeled_background_appended": true,
+    "elapsed_seconds": 0.0018205410160589963
+  },
+  {
+    "task": "loro_N15_M01_F10",
+    "model": "RF",
+    "reversed_row_order": true,
+    "single_row_calls": true,
+    "unlabeled_background_appended": true,
+    "elapsed_seconds": 0.06578429200453684
+  },
+  {
+    "task": "loro_N15_M07_F04",
+    "model": "SVM",
+    "reversed_row_order": true,
+    "single_row_calls": true,
+    "unlabeled_background_appended": true,
+    "elapsed_seconds": 0.002430791995720938
+  },
+  {
+    "task": "loro_N15_M07_F04",
+    "model": "RF",
+    "reversed_row_order": true,
+    "single_row_calls": true,
+    "unlabeled_background_appended": true,
+    "elapsed_seconds": 0.06238162500085309
+  }
+]

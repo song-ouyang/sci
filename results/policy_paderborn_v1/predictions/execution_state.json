@@ -1,0 +1,66 @@
+{
+  "started_at": "2026-09-28T15:04:30.294064+00:00",
+  "protocol_sha256": "7fbc151c12cf5352a757c3fe26ad52c8b8461a076ce818b76af32b25dd77e7bc",
+  "pairs": [
+    {
+      "index": 0,
+      "finished_at": "2026-09-28T15:06:09.291139+00:00",
+      "statuses": [
+        "complete",
+        "complete"
+      ]
+    },
+    {
+      "index": 1,
+      "finished_at": "2026-09-28T15:08:59.905751+00:00",
+      "statuses": [
+        "complete",
+        "complete"
+      ]
+    },
+    {
+      "index": 2,
+      "finished_at": "2026-09-28T15:11:40.209590+00:00",
+      "statuses": [
+        "complete",
+        "complete"
+      ]
+    },
+    {
+      "index": 3,
+      "finished_at": "2026-09-28T15:15:12.396788+00:00",
+      "statuses": [
+        "complete",
+        "complete"
+      ]
+    },
+    {
+      "index": 4,
+      "finished_at": "2026-09-28T15:18:14.772109+00:00",
+      "statuses": [
+        "complete",
+        "complete"
+      ]
+    },
+    {
+      "index": 5,
+      "finished_at": "2026-09-28T15:21:21.402596+00:00",
+      "statuses": [
+        "complete",
+        "complete"
+      ]
+    }
+  ],
+  "stop_reason": null,
+  "audit_errors": [],
+  "updated_at": "2026-09-28T15:21:21.402605+00:00",
+  "planned_sessions": 12,
+  "attempted_sessions": 12,
+  "complete_sessions": 12,
+  "not_attempted_sessions": 0,
+  "planned_prediction_slots": 576,
+  "valid_prediction_slots": 576,
+  "observed_total_tokens": 266818,
+  "unknown_usage_sessions": 0,
+  "finished_at": "2026-09-28T15:21:21.403891+00:00"
+}

@@ -1,0 +1,5263 @@
+{
+  "limit_bytes": 300000000,
+  "prior_probe_bytes": 0,
+  "reserved_body_bytes": 222306421,
+  "requests": [
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 0,
+      "end": 19,
+      "requested_bytes": 20,
+      "status": "complete",
+      "body_bytes": 20,
+      "sha256": "30cbdc8b7afd4e079e93f1666220080b31a9b177f4d94ddcc1e5555fb8821f41"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 0,
+      "end": 19,
+      "requested_bytes": 20,
+      "status": "complete",
+      "body_bytes": 20,
+      "sha256": "30cbdc8b7afd4e079e93f1666220080b31a9b177f4d94ddcc1e5555fb8821f41"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 0,
+      "end": 19,
+      "requested_bytes": 20,
+      "status": "complete",
+      "body_bytes": 20,
+      "sha256": "30cbdc8b7afd4e079e93f1666220080b31a9b177f4d94ddcc1e5555fb8821f41"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 0,
+      "end": 19,
+      "requested_bytes": 20,
+      "status": "complete",
+      "body_bytes": 20,
+      "sha256": "30cbdc8b7afd4e079e93f1666220080b31a9b177f4d94ddcc1e5555fb8821f41"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 20,
+      "end": 531,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "19f106536c3458499f789010bd44fda550e4e6f426ca6c16c1d0e6036f3fcbe1"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 20,
+      "end": 531,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "fd0b8a310ca3dcc0e1eb1df2b6e8b362fed22651d589b6ee63a94e41a522a171"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 20,
+      "end": 531,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "e54c4ec7c6d4fef86fdbaa7a0be5b2771b5a1410bac95604a1e4935510cb8ab3"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 20,
+      "end": 531,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "b04e2afde4342fcab3638dc4c60190c0d5a706afd353d2b94fd5afa083b1852c"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 1946393,
+      "end": 1946904,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "6b9fd7f7e7e3afae8be916aee3f43d3a103da4557eebb2300300f234e7ce7b89"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 2423429,
+      "end": 2423940,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "fcebdb1e552ad7fd1510f744e17fa34f8d189376ab251c6414372dfda42cc183"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 1926741,
+      "end": 1927252,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "bad5199b6fabca85b4aa663b3d8f3e3f3919638762982d7d9c684af96597645a"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 84,
+      "end": 2247763,
+      "requested_bytes": 2247680,
+      "status": "complete",
+      "body_bytes": 2247680,
+      "sha256": "e487acc7cb4a92f340b43aa173ab462f1970e4f6a234172fbfc71893c8c46ee0"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 1946457,
+      "end": 4047682,
+      "requested_bytes": 2101226,
+      "status": "complete",
+      "body_bytes": 2101226,
+      "sha256": "6011b76070b46271d3a668a58846b956d75f638717b47cc9b740b5384904d3ea"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 5002718,
+      "end": 5003229,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "35f59744cbfb3461d600d3c5eb830e047963a7a43fb58121c8a0ac467385a0aa"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 4070772,
+      "end": 4071283,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "729680824549ebf47e015692509c1dc088317e780b78546bbea4fd58fef01fce"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 7257985,
+      "end": 7258496,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "b6f28fc71b92124e9b61e167ff05efd6b800145d986613e86b27db8f2b4e9f87"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 6060563,
+      "end": 6061074,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "096d7e6e5dbd0ba72df030d4d78cbe12b4507fbd0421ce1ee2d96f9d8d2588c5"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 7258050,
+      "end": 9826550,
+      "requested_bytes": 2568501,
+      "status": "complete",
+      "body_bytes": 2568501,
+      "sha256": "8729e43ce9acc1d0bc56ea22beef0c2a778c3503ae19a90379290da3d7fbf554"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 7983589,
+      "end": 7984100,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "dbb0515c5a5c9d7f98cd715b3a4f3b94f9b5f5bc62272f3d223f33c2fdb29820"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 8013801,
+      "end": 8014312,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "c76736548589f738d2d965625d87e0ba883e975d2e3fe77e1772ae53202a74f8"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 8013866,
+      "end": 10321605,
+      "requested_bytes": 2307740,
+      "status": "complete",
+      "body_bytes": 2307740,
+      "sha256": "d11bfb5e19361bbad2c5c473004a8ae387bbf7d2e7ce8c8598cf05bce2bfe6b2"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 4047683,
+      "end": 4048194,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "074e5a21324d7cf71634fa7729ae57ecede1c6bf767968ea562139593b2988cc"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 2247764,
+      "end": 2248275,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "3f55ea7278807a6f34c1990b8d86744536968a9674e5e25cae7e351778d3f052"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 6010431,
+      "end": 6010942,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "5ce5cb689a792abbefa764af8eb5982fd92a613ac06d4872667d7fc3d2b6ece0"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 4515284,
+      "end": 4515795,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "decad114c0457d707aa9b58efa8f76d2c3df6a5f615922c4887b4aa2da4e3cb0"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 7912383,
+      "end": 7912894,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "fa0ed2b1c57682f48ed2cf61ba5c44e1537dc781f0b077dd7c94fbe6506efde6"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 6468997,
+      "end": 6469508,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "11eb9c4ac57b153516dd51be4495099c033e219b7a1361f9fcc5d63159161d0d"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 9826551,
+      "end": 9827062,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "5108d53734c59c96506ba72f2a2f607850e947e1a8a2ff7cd345f4b840708e40"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 9762291,
+      "end": 9762802,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "d9c5abf6b8e6971bc132c1880293c6436d81fd711ae47f353b3d34e6cec6d162"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 11839431,
+      "end": 11839942,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "ee8ff239b2df4adf6ed7904c2b4d41f5f6a72c965369fc17879156cc2337ff96"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 8315101,
+      "end": 8315612,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "561ac3b13499ad5b00757c5a7f7ce188989a564eb237ee51e0abafc6e99078ba"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 11742823,
+      "end": 11743334,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "52e9511b8f63046991e608f7602e3293428c205d55ad613fa2fff7e090541b98"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 8315166,
+      "end": 10195003,
+      "requested_bytes": 1879838,
+      "status": "complete",
+      "body_bytes": 1879838,
+      "sha256": "6c54404c14ef094f5f4cd2943c9bca407116d192c179c4ed992a5beaa25c6704"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 14216484,
+      "end": 14216995,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "f69977c5ce5f84eca64859836ac1df0805a3c86fb8f471c9c7ed559336ff08c1"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 10321606,
+      "end": 10322117,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "6241f8847593f654685cacef7a2ad11166b5b1b70a0dab0338dd8f3abc3eeefa"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 13584320,
+      "end": 13584831,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "951286548904a92ab97978c63bde13599d91178980632c8673e44aae222b38e3"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 16793582,
+      "end": 16794093,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "a327d4f1b244cea0d213cefc89fd8e35672bdcf80b33473640c914b94583c5bc"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 12426006,
+      "end": 12426517,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "164bcfdde6f7c641558bc538b1d19ca11a25d1929e5a8a484cf48cfb93a0e578"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 15668426,
+      "end": 15668937,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "68d22cae13d27aefb7c82bdf7c74fcbd3cb879ca4eca6e99303d759422347f2c"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 19070625,
+      "end": 19071136,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "71a0015a340c1ad6bd3035e8b39d00f2abf1043be2c5dcb8ec7db837306a17b6"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 10195004,
+      "end": 10195515,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "1c25bef8fb1edb3c54741c07babdeea0626601df36807f44d79555fcf7c20ceb"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 14638248,
+      "end": 14638759,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "c5e466b040ee75503daaa3b88c5e2c2344bed2ee6b91240949de07098f6d503e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 15668491,
+      "end": 17720993,
+      "requested_bytes": 2052503,
+      "status": "complete",
+      "body_bytes": 2052503,
+      "sha256": "517f4654bbf0ef2a4275abadd18a34ffe9f3b15cf9f0f3dc7afa1d794ddc62e7"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 20970220,
+      "end": 20970731,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "fe0eb0fcb5cfdce8145642bcc02e97d029ff7fe1272d1e772ac618860fce20bd"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 12301887,
+      "end": 12302398,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "af28190afc875f6318c37c68670b0140cbabe5e4a3f86e2d75d576b263b0dd11"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 16517709,
+      "end": 16518220,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "45f602dca1388bbfa3e802c9260835b24414df4a566205444801035186b42622"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 23227850,
+      "end": 23228361,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "6897345e041e95be44b053cf00b5b3f13243b359190b5f96077edc1bd7ad4104"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 14403717,
+      "end": 14404228,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "8fe33a4e5ed7b38e89dc7d6da834f941dcec25c17cacf4fad2715ab9ae2f405b"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 18402322,
+      "end": 18402833,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "77741fc6af0cfc4d6f77153aebae4c8404c6fa1b857d3fb7601ac977acfe48d4"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 25189380,
+      "end": 25189891,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "87561b5b2f16b4ce08e3c392b4ef62762f3e264f3fc73ceb15c6d93eb05be2f8"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 16367176,
+      "end": 16367687,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "e4c1d0f9135f83fe5c8c4dcc2f9ba20ae5170f3762ba5e83b05ff98881311ddd"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 20616997,
+      "end": 20617508,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "58a86b004a5b59ea721f3dc04de2daea0541fd9a09f0040a304f0f8e43b32390"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 25189445,
+      "end": 27433275,
+      "requested_bytes": 2243831,
+      "status": "complete",
+      "body_bytes": 2243831,
+      "sha256": "a7ee22e5ab0cc105ccd02df5330606e271189e3581d8aeab10d2377ae8aa1e0a"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 18617962,
+      "end": 18618473,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "bd8577e2acf3049f2caf548dc490308dff23143e056263b3c735956e2b57ab04"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 22702084,
+      "end": 22702595,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "60cef4bce946c7c27705f69e56ddc2d8f0069483b4bd023569f3df6564a82c3e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 24641502,
+      "end": 24642013,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "cafcf89d93282def441e8dc925c51cd425756f48c4b191610468b33ac1ee8ec2"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 20813864,
+      "end": 20814375,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "c849a3fa667fc2ac33c0b41721cc499616592d1c0099f58c9cf81210e86e4108"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 17720994,
+      "end": 17721505,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "37f663c22ce01c8e763838b4c58d95523fbf675a460b3f34e25ab8d50f430086"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 17721058,
+      "end": 19679351,
+      "requested_bytes": 1958294,
+      "status": "complete",
+      "body_bytes": 1958294,
+      "sha256": "7d44db91fee6892539469574dd033a9e0cd422e34aefa8418d0a375fd61db9d3"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 22908015,
+      "end": 22908526,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "3a654e1cc66a7fa76953196584de6f4412bba57c0c15c23323ec98a295b20b76"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 26686468,
+      "end": 26686979,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "4422a5df475d314beba8c59ab40ebeffd097e039e77647542fd478871848b58a"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 25049002,
+      "end": 25049513,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "4e2ef5b246130f53225e294d8fee4f991507244845c2520ec421d5bc01381d25"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 28838521,
+      "end": 28839032,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "0ff048f08da646fca744b723fc19097f016ccc0922095799052ae982084c3677"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 30994530,
+      "end": 30995041,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "290ac22e3519f204a86141c6ea30da576feeb0322f07ac4e84fab96e4f0266ae"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 25049067,
+      "end": 27305745,
+      "requested_bytes": 2256679,
+      "status": "complete",
+      "body_bytes": 2256679,
+      "sha256": "eca5be565577328eebf48ade06bcbef47deb4efd3e4d789b3a3cf76298b35583"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 27433276,
+      "end": 27433787,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "86b60b4fe02d61660b993b5811cd8522a9fe56a5f992ebfc52b7ddb6351b68d9"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 33166780,
+      "end": 33167291,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "6e791fd0ab38bf7bc08df740baec450df2753dcfafe7dd21c9a23db083f94676"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 29654858,
+      "end": 29655369,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "f052589ef597267883531f4e8f46e07332aefc39ea379f8ac6919f74c362d4f3"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 35132173,
+      "end": 35132684,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "c67017bfcaf7cb6d64c20894600c88bc28450d777f24b3540e2600fb89e1463e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 31939425,
+      "end": 31939936,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "cc9a337059c4611791f496198828258f669fbef6e9d0c38fe9c93983df1631f1"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 36967106,
+      "end": 36967617,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "4c26dc17d0553538ad80a7f7e8e506333d2defae3ddedae1737c30614466300c"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 34464361,
+      "end": 34464872,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "5c68e7d53a050f179b1c6ea22306c2adabbc6d8801efdb5e91d0cdde0061097e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 39103718,
+      "end": 39104229,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "9359c18dee0caa48cf3aa6e173fa53b296fa79cf97bcc67c41e9c6f4e83b49b3"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 27305746,
+      "end": 27306257,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "06060edacb5b348a3bacf401b6c26f5d2807342c85293a633ab608234583b860"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 34464426,
+      "end": 36671403,
+      "requested_bytes": 2206978,
+      "status": "complete",
+      "body_bytes": 2206978,
+      "sha256": "91085964723d9320c529ecf4e8c5fec0e9ccb330c8f90a0abd664431f99194af"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 19679352,
+      "end": 19679863,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "b8d29516536ed8626819df0007cf97b8b16d5414e78a0be0cd9feaa9494d0538"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 41318109,
+      "end": 41318620,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "3f532a2a991bdfd50fe51121e256e405ba6d0b670b19d358e300f6ca7fc4ef63"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 29100886,
+      "end": 29101397,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "12a068acd13a9ce8e1dc27ecd4c5259ff2749fda0a42e7aaaf069e52dcaa213c"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 21720929,
+      "end": 21721440,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "1d22bffbbd36dc07d80c658dcc306bd1de15034f302174c782bfe2c6da8d06a7"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 43453811,
+      "end": 43454322,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "ea05af8c2b1b52c58090ad7b71391ac8a18a271df4d0da3db3601cd4d4ed00bc"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 31311027,
+      "end": 31311538,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "86ceb0b638b0e74c2c864684f85dff45a363c456abc5c219956501d7d5514d72"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 23517081,
+      "end": 23517592,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "0af40a2b1d52c5225274d2c0aebfb64c95b1a8c4a5a36213e50cd1125c3f72cd"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 36671404,
+      "end": 36671915,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "ed586b841f2b5c250ba9c217b40bdbb69ed891637b44e2b1e916ddddf2c85d7b"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 43453876,
+      "end": 45556966,
+      "requested_bytes": 2103091,
+      "status": "complete",
+      "body_bytes": 2103091,
+      "sha256": "d88518d3d8dca826d77e207b38d1d7083ddfdfa25fc6f53e1e62632c8b1300b6"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 31311091,
+      "end": 33298429,
+      "requested_bytes": 1987339,
+      "status": "complete",
+      "body_bytes": 1987339,
+      "sha256": "07a96f0be6b921969af1fd03b9464f2a4e0c6ebcdf7d1389bec890c032d47296"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 25430462,
+      "end": 25430973,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "677f53b46c723968df2200fde8386a208b1417ecbdb3a42e3d4508fe69b81c62"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 36671468,
+      "end": 38595468,
+      "requested_bytes": 1924001,
+      "status": "complete",
+      "body_bytes": 1924001,
+      "sha256": "e967af9d256957e981460587ddfb74d58bb0a78a276c65761913f08d5377d6cc"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 27252608,
+      "end": 27253119,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "dc04dda26ebe52b09a4b09b70d8422ca39298a18f58bb9aeaf177be2584efee4"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 29183878,
+      "end": 29184389,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "8c759d6d402416eea51bc93cec4d42251dca1ffefe207df4e1790f4e13d181f4"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 30926825,
+      "end": 30927336,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "3d3090e21c255d462df6fb7646a35bd5b58487954076f1c665509931a44c0d6c"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 38595469,
+      "end": 38595980,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "ad580b3db06884337290cb7a6cedaf9d62fe1a5876b6116ad1cd2fd34be65f1d"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 33298430,
+      "end": 33298941,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "04c585eaad05dddbd02f1f28dcb45180b8c1c22f58f74f0435474190fce5867a"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 32903401,
+      "end": 32903912,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "53adda4d8ccbf75e89ef10d96d7d103ab1d2eadad3df21182a8fca337b7569b3"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 40553759,
+      "end": 40554270,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "09f45bb271785fd595d456ae2cba9af321ac03de1603bff1f68537f1f84f1ed8"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 33298495,
+      "end": 35442477,
+      "requested_bytes": 2143983,
+      "status": "complete",
+      "body_bytes": 2143983,
+      "sha256": "52dfd6f982b46ba2bca20e2f3df31d70120c446326a707cbf4b524e957c3921a"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 45556967,
+      "end": 45557478,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "d977d3637714efddbf3329774d9309bb513becd261e0b03f9ed8696a017e8c42"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 34994439,
+      "end": 34994950,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "ea3556bbc54b5859f5946b014f093432f55d8551fa7de6d029363805c58334d7"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 42623830,
+      "end": 42624341,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "bf4092fc86da18ebd6bc60c60da9993881ba68813ee88d826e8d751377a30603"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 47440586,
+      "end": 47441097,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "23b93611bcc71765e7e96ae096bfa450b1bde7a3288dd7baef5643c72abd2e5e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 34994503,
+      "end": 37003634,
+      "requested_bytes": 2009132,
+      "status": "complete",
+      "body_bytes": 2009132,
+      "sha256": "44a9bc40c3c0f19d6f4dc3304be7eab45562c39a31b807d37425dee078b42b9b"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 42623894,
+      "end": 44628629,
+      "requested_bytes": 2004736,
+      "status": "complete",
+      "body_bytes": 2004736,
+      "sha256": "bace979483ae3f26cf35ce31815aaddd1dcad53c6b37aa4f4dd3e32fe55e5d14"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 47440650,
+      "end": 49431716,
+      "requested_bytes": 1991067,
+      "status": "complete",
+      "body_bytes": 1991067,
+      "sha256": "99bdb6ad75531884816f31a88f6bde849fc38a242c9c774b89921f94ada41ad1"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 35442478,
+      "end": 35442989,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "845279b09a486c7aa08d533e831b0acd55b28c21276e21b05ed6a3d507b29823"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 37577461,
+      "end": 37577972,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "12a4c9875880efc3975365f0ecadc1f984e5230885ab4cf2b3c06487d04d966a"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 39479664,
+      "end": 39480175,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "356d03f9d929a6ec7e9dda3889f339953f7a88bd4499779a69ff5a34e3d20bb7"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 49431717,
+      "end": 49432228,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "13196852175cccde1b628cb4609c188b55fac3b6b8966f66311dfa0886ff4995"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 39479729,
+      "end": 41535362,
+      "requested_bytes": 2055634,
+      "status": "complete",
+      "body_bytes": 2055634,
+      "sha256": "d5deaae39c6905f9d7011b79945187f8a173bf1c3bdb5aef74f347d4285f62b4"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 44628630,
+      "end": 44629141,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "f6e3518ac679ad7a93bc1908636968003d2d46b848648f2ee2121b26036eda7e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 49546509,
+      "end": 49547020,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "59ce4f8fe72af40c26e43c789cf0980750a4bfbee7fb4fdafad55ea612449b21"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 46753692,
+      "end": 46754203,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "0864f79a287b5244f0dc7927c2fc47e536b1fccfb6025d73a01867d1106a69f4"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 37003635,
+      "end": 37004146,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "f7d504551dc4da2e466f6ce8682935a109e13eebfd84158127f2c5160b9e6b15"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 51694311,
+      "end": 51694822,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "3124e4864a72426c12c2af1d4209b8792c35b4baed106ba30d909868b0f079b6"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 49122208,
+      "end": 49122719,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "a2c2afa82987d750b9e04ae7dec84007075a659c0e373a79f7b214bcbf0fc3c5"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 37003699,
+      "end": 38852970,
+      "requested_bytes": 1849272,
+      "status": "complete",
+      "body_bytes": 1849272,
+      "sha256": "9641b2f26e9c113c4b407cf4d8d9295d2e02c9ef164e6b15cbef982d1cedc30f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 53596826,
+      "end": 53597337,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "3efb3b0d4e191fec88aa0d665c2355e21ba55ca393f203d01ba5be6cb6d85e6d"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 49122273,
+      "end": 51261180,
+      "requested_bytes": 2138908,
+      "status": "complete",
+      "body_bytes": 2138908,
+      "sha256": "a10430f39749461ff255b7f88f8fe4495e19ed13891193fcc888fa6b84e6c0f8"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 55713629,
+      "end": 55714140,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "aeb26597896482f4253cf2582cf95453419690ebe5e568c1930d3f29ae3fcc4b"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 41535363,
+      "end": 41535874,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "922c711bf8ed755bedfc74ed4a5db2c642fc9bcae650351adf5d85b5ef6283a2"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 57832387,
+      "end": 57832898,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "76756d76e0e23470f0d447fc9b7b789da35e432e214bf37ae4530cfafc48b845"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 41535428,
+      "end": 43704346,
+      "requested_bytes": 2168919,
+      "status": "complete",
+      "body_bytes": 2168919,
+      "sha256": "ee7f81b3f80601c576a2daa05114a3be680a1d16f6f5a7ab1b00317462ba6f09"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 59778221,
+      "end": 59778732,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "f67a4a4c61c932854daee6adafb15cc8de6bbe6260f2997fc833a0c43003c115"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 61798422,
+      "end": 61798933,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "fa4b30120bf6ede4606cb071cddf02d7f7df9ae25bd3f92470b5ccc7d09c88d4"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 61798487,
+      "end": 63689640,
+      "requested_bytes": 1891154,
+      "status": "complete",
+      "body_bytes": 1891154,
+      "sha256": "9872c12205103e790a6d33863af103304cbd1d7acdd3beb297bd2ceb04ecf64f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 38852971,
+      "end": 38853482,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "1c4078438856278149bd68a9ace93b6a539f14f730cdbcb90f6cc9c8ceaa4a9f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 38853036,
+      "end": 40963795,
+      "requested_bytes": 2110760,
+      "status": "complete",
+      "body_bytes": 2110760,
+      "sha256": "f0475e58a64f4d1dd070063ec3cb4d640849cc6f3bc43e0ea49acd0c23ee8eb4"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 43704347,
+      "end": 43704858,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "38eb90decd75774f6cde4460e9282614c8dd94372bdca8f8335dbdbde675e045"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 45890563,
+      "end": 45891074,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "e26ab593a8fe16867c264cde5316a87f3147df487bc751e2e69a87bc7ff4f2a9"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 47703523,
+      "end": 47704034,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "3dff28eb45e42575f76aaf67482a59803624ee7ceaeeaf35d9d3a3515f99eeb0"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 63689641,
+      "end": 63690152,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "39481364a63dd7d86d52689f2ef08eb2643744cdb3eaf88832b51564469308a0"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 49556790,
+      "end": 49557301,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "87b5cb16df079012e6e795e4b5f5de4232bae94444ef7d75497633db2877a586"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 65858539,
+      "end": 65859050,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "76d84792a689313ac3b20531cc24c1b03f67e2654678435d425315136fdf4aa5"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 51431708,
+      "end": 51432219,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "73c82d8371a54d36a7ecf6359e4a87911ed2cea9e4ad92e5c7d2fbf27a87fe03"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 65858604,
+      "end": 67855285,
+      "requested_bytes": 1996682,
+      "status": "complete",
+      "body_bytes": 1996682,
+      "sha256": "845ac7466b6f0ee3d2158b4e782b977fa162e2e2846fa1a03cd3c73057bb1373"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 53418317,
+      "end": 53418828,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "04dbbf20b5c2064a6dc4e3a5ac013a2233996fa49309b26ab662f261ce838fe1"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 40963796,
+      "end": 40964307,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "dbb5554eaf07d8994a76c36dfcec84083aac0d8771537055beec1340e546d993"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 53418381,
+      "end": 55320781,
+      "requested_bytes": 1902401,
+      "status": "complete",
+      "body_bytes": 1902401,
+      "sha256": "646f64b98c5d1f6154c8050a8703672232b2c1571f32e4df4c056b3165811de3"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 42869590,
+      "end": 42870101,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "e2ba1da3a6a40cc655cb0ecd1c04930fe41e49560ef7651d84226f162a814679"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 67855286,
+      "end": 67855797,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "c24f9c1ea5902e481b5a9232cde4b4adf321aea2e0fa244d67fdda2adb941434"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 44979639,
+      "end": 44980150,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "93879ad8bb2e86811ddd7b8af0383444ebac54cc958948f5573607f51e1e90b9"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 67855350,
+      "end": 69937971,
+      "requested_bytes": 2082622,
+      "status": "complete",
+      "body_bytes": 2082622,
+      "sha256": "8a54d73e06f03983c1bcfce7b679ecc86a81b70554b368ec413545b7e506c9ed"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 47146263,
+      "end": 47146774,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "74f2be524f2b3fe3d44bbca9f9465ffb8f44325bd7446faad3e28b7e4fb380ec"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 49341368,
+      "end": 49341879,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "bc3950165ae95204aed4182417b492ccfaa62813fb9651048636975d30a7f1f4"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 51261181,
+      "end": 51261692,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "c2a918728ddb0915626206029a37738cf28b6a0e150932cfb563f6415cb6303c"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 51453774,
+      "end": 51454285,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "c25539ed38491768f72a8e5fe035c617524f9508f769b7993a27ea2f82f4c6f1"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 53262260,
+      "end": 53262771,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "5ee6d31f5cf1d522bb07c82d39d216a722f08eee89dde7e4c6e861c7245fd0b4"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 69937972,
+      "end": 69938483,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "56316867fdeae1ba536751a513981466a4a6a4097149a40eb0198a751d77ce45"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 53600252,
+      "end": 53600763,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "f4f4d804ba532e4e5edf6ed3f575ac5a09616f400a28e36f8576e6730277cfea"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 55255268,
+      "end": 55255779,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "eb2a7cd48aad4d75c58d1d9c4a3fae9938171ba0787c99e77be737828bcaee7d"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 55320782,
+      "end": 55321293,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "bad453fb833f95d4b3ab4ed55b1db9fdbaac483123ebc4c3a6b0c9a29893ee5b"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 71782059,
+      "end": 71782570,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "08e4f9e70c12e393ec964dea9ed73e4b3ca79221aa7333be1399065b7bdbb830"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 55709029,
+      "end": 55709540,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "f5fea1f79c36ecb114938ea9bc46227322cd8619de0c04382230915a93355c5f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 55255332,
+      "end": 57569759,
+      "requested_bytes": 2314428,
+      "status": "complete",
+      "body_bytes": 2314428,
+      "sha256": "f65f02df393ac9bccd648876d770e82ad54b6ce603f51bddd293edfed77d6258"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 57201192,
+      "end": 57201703,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "b1374bb6d43574e42e960319f958802c525d83c5afecc9cd1b3717abe8a1628a"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 73665742,
+      "end": 73666253,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "f66450779dd91758b194e2164f69bf9d663161a8225cecee8b33971c6b7a0f95"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 57554345,
+      "end": 57554856,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "24dfc077299d325d0bde78a961869b4361ed08a19c52d001bab921622f02bf0c"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 59410972,
+      "end": 59411483,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "71182c86e6fecdd7cabb07d1747fdeb9ece39827eee41a81999dacf5ba383022"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 76014140,
+      "end": 76014651,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "3da618e5ac5cc033ce2c7cdb9835cd15c6403a36250325119b24391f48dd7f8a"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 59488429,
+      "end": 59488940,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "d7da3a19745e73d34871f7e6fb8d815e9a04740d1313b32e31a931361ab46ddf"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 61385069,
+      "end": 61385580,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "c81d0f407ef32286efa11f229e1ad3eed1538f5d0109731ac94db02c3204f0c9"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 61259097,
+      "end": 61259608,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "edc6400744022c56e76e127575bd08e8f9aff5cf33fcadc4a9751d342e2e0a56"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 78012974,
+      "end": 78013485,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "f0d899a559a31b50f762294f536f3eb6556d7ad33a2330c9e1a475b6c29f4518"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 63309442,
+      "end": 63309953,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "4a22444b9a7821d816f7ac2de3017d36b325920eba3eb50d90e9b7eb21fa8219"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 63261689,
+      "end": 63262200,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "f7ad0529ecb72abfeb3fdc6eb8e6369bff118b6478b79c12841c74b805e78e74"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 80119184,
+      "end": 80119695,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "96c64b97ce26a6a41c02a3506a2092069213fe7854fc0e6b9af3d28a9c1e612a"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 65145245,
+      "end": 65145756,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "260e92f6897c53c228e2dd1a1fa2ddca6273506eed34b5b69a6e6365aae126ee"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 80119248,
+      "end": 82314623,
+      "requested_bytes": 2195376,
+      "status": "complete",
+      "body_bytes": 2195376,
+      "sha256": "de5767f63722d90022cf1fed1a69029f8ad3133a7c729bb727652c3d0d2bb94f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 65342815,
+      "end": 65343326,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "2fb0993b2652d20a324f7f684b1104ead3e2c32896c1bd1a50b3aedeaf788a16"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 67254628,
+      "end": 67255139,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "6644a5c4dcb20ee6b3befeadd2925103ac47c1ccd91d878e754d0c19b16cf845"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 67563276,
+      "end": 67563787,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "84082af1709f0a3ce535c950ecdee546b9fbfbe27445d4dad1040eac5e759aab"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 67254693,
+      "end": 69345267,
+      "requested_bytes": 2090575,
+      "status": "complete",
+      "body_bytes": 2090575,
+      "sha256": "14b18e3237153d530a43f9509aa5287e88d768ff22e2201368751068a8f4de29"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 67563340,
+      "end": 69747147,
+      "requested_bytes": 2183808,
+      "status": "complete",
+      "body_bytes": 2183808,
+      "sha256": "c5cc14df64999c860be84cecd275f9d88ec0426abbf0efd4fc252e17306b9bd6"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 57569760,
+      "end": 57570271,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "b9b2c4102fca2f37ff00b768c89d49c282e91bc73c4b20845e53963e07b28501"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 82314624,
+      "end": 82315135,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "3879e0235965e862da38da75cbd55c486652365ccaad14c7cd2e09e12cc1bf01"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 59593653,
+      "end": 59594164,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "4c6cc05e9f4b8e917ce7e647a292d383624cb1a5fe08989cae057524e890407f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 82314688,
+      "end": 84182413,
+      "requested_bytes": 1867726,
+      "status": "complete",
+      "body_bytes": 1867726,
+      "sha256": "dd59087aff17f852f0072951d7b9f8e83fbb570c7906abe9fc3aabda9a88ab85"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 61840042,
+      "end": 61840553,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "7ecae736cf8efed2c8e0bd7a96cbe733ecbaa606035736ae3d466aa609505283"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 64060216,
+      "end": 64060727,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "a03c2c5352727b543439e55a7145de84cc302d310159afdffd084ff976335a71"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 66372160,
+      "end": 66372671,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "395eada7553ad89fa6c96f338ae93d465c5bb333c7bdd486deaa270c19f75a41"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 68400725,
+      "end": 68401236,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "f1f18c20b678b1bc0864778ffd32be1367ae6f6726e4d9e17cc0c19bcc8c5142"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 69345268,
+      "end": 69345779,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "09db7019e47ed6d8fd814d0696837c5f03ccc8cf47c33285e7ae19fc273ed517"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 70635084,
+      "end": 70635595,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "990cf2f707f7323f9a6401e07918558ab8ad955d558acacedae28a6ef340c1ea"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 71475458,
+      "end": 71475969,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "1fbe2949bf66e712b8e8c7f06cc5196d2f454f8bb3084ce4a6d9f0eb95c5c405"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 71475522,
+      "end": 73396548,
+      "requested_bytes": 1921027,
+      "status": "complete",
+      "body_bytes": 1921027,
+      "sha256": "3ff3f6a3e3295ce4e6947487de4c0cb75d84b5a691956a3909e9488da90eb677"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 70635149,
+      "end": 72733744,
+      "requested_bytes": 2098596,
+      "status": "complete",
+      "body_bytes": 2098596,
+      "sha256": "37469063906f272826c18731e0ad086909d427ad2ca04ad2baf58099d19f16e6"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 84182414,
+      "end": 84182925,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "73cbdaa217da720dbb02555bb2110aa4b5d071d7cad8f4404f952b9cc512df3f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 84182479,
+      "end": 86315233,
+      "requested_bytes": 2132755,
+      "status": "complete",
+      "body_bytes": 2132755,
+      "sha256": "40c5418c43aae9935cac4d248166e8b1d464d51fba2dc52a78bad982d6229f86"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 72733745,
+      "end": 72734256,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "6024e8c02238deec4e165e452430ae29d2dbc815f885588ec141a47992cafd3d"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 73396549,
+      "end": 73397060,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "40a7e26e3da7a2e8bdabd3ded0bbbcf8cc1230afb26c1f833fe07db8162152a2"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 74645495,
+      "end": 74646006,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "0cd40232c0235bd62e82414bea641c65fa4f4a0ae5852b4bb2e68ab0c3307229"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 73396613,
+      "end": 75327368,
+      "requested_bytes": 1930756,
+      "status": "complete",
+      "body_bytes": 1930756,
+      "sha256": "cbbf090c1ffd232fdad954aaae27ca6703782c8f5eae77b57a8d425da6a46893"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 76825843,
+      "end": 76826354,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "2a7ad012dfada294228e09a4c6d18de820fd44adbe79e0cce944b09a8416e092"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 86315234,
+      "end": 86315745,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "3c8c4013ea4b2b939ec5c5115312527c2c221bbcf024f16b851fcf63e83e952c"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 76825907,
+      "end": 78859698,
+      "requested_bytes": 2033792,
+      "status": "complete",
+      "body_bytes": 2033792,
+      "sha256": "390b3ab0aa0befd4e7e99fb8ab35099dc36fc286b09204445827a0e0f24e5e4d"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 86315299,
+      "end": 88319774,
+      "requested_bytes": 2004476,
+      "status": "complete",
+      "body_bytes": 2004476,
+      "sha256": "61e10a2cc55dad8ee25bd6d63072a4d72903da669426fb405c6a8670d9026288"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 75327369,
+      "end": 75327880,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "981217d384475e7965b381f9f6f8cc21e7530c7930b199958e1793e3007b6bae"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 75327433,
+      "end": 77187250,
+      "requested_bytes": 1859818,
+      "status": "complete",
+      "body_bytes": 1859818,
+      "sha256": "967bf5e13deb066c28764d27972e8122010d2d3083dc3cdbe9afc5bc024631de"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 88319775,
+      "end": 88320286,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "ae6dbe06340228adf16986679a74b0cb9cf9e64540733ab752beb7b2ebe42d85"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 90216420,
+      "end": 90216931,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "cd4fe685fedd35b7a172d4c7a480ee7250153a8a0f7378106a71d20d509ab617"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 69747148,
+      "end": 69747659,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "e93fd0c94a8d8349623699d92ec6e8b908c060b21865386a31bc64eea8442c5f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 92256665,
+      "end": 92257176,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "1d88766b638ba4b545a8ff642ef5074d638e77a80738d93a0a940fbc236f50e8"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 71668893,
+      "end": 71669404,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "b465e8897aed83d89c4bcbd2a73feaa786519afa12aa3566e2b1a47f11715005"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 77187251,
+      "end": 77187762,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "55b796439627c139c3c7306932fcf2d76d3d2a9eeebef4e743715053d15d2da9"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 94059427,
+      "end": 94059938,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "7a2bd265edae2ca08f44f4deae5aa003254f4f856b1d8f3ad64ee102b1aee26b"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 73742954,
+      "end": 73743465,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "5955fe78bbdfd96c1c2fdd2fbfc7c792d14b62634f940f8902e02977a3e880c0"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 95829978,
+      "end": 95830489,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "00427e5e1ebc2ec1c8e34ba7c70ee1a8d94e737f1440fac26b99f33a3c0dc215"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 79173615,
+      "end": 79174126,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "85331db92afa06785325c5553af40b09023e9faa778099d3a7a497d0847ff84e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 75740303,
+      "end": 75740814,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "66a37e9bf0c31d1dc14795e2a87d8cbbd3341ccbe451ecd18041b132e207104d"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 81225569,
+      "end": 81226080,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "c6aa5008931829e622ac309adf63dcde3ff621ff967d43e4f7ec1aa36a58922c"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 98038009,
+      "end": 98038520,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "7122510e2ff064ade4ffcdd172b3b80bd265834dbde3608d372502aa24c27dc4"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 75740368,
+      "end": 77801049,
+      "requested_bytes": 2060682,
+      "status": "complete",
+      "body_bytes": 2060682,
+      "sha256": "1f742d524610ceae2737a9487040fe3542796fb1d0e087b56c238284ca775a0e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 83431152,
+      "end": 83431663,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "97d376d421ccb78d7438b175ccb76b814b95577e6ca5803784980a988a5fa883"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 98038073,
+      "end": 100138581,
+      "requested_bytes": 2100509,
+      "status": "complete",
+      "body_bytes": 2100509,
+      "sha256": "a0abf1611b677f69e7bb9fee0c54ca0f457a66538df13821060039b2e50bdc93"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 78859699,
+      "end": 78860210,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "907c0328e637851deb19c909f6425d2cb889b32bc938cf296a020bb32dd3ab18"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 85471335,
+      "end": 85471846,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "cd5e85a5f7e9d89ae80a2860925536f719aa76b50f5391a9074da995847e2efa"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 81108257,
+      "end": 81108768,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "2af31299d9410e29971f53d36726657da32d0885a6302091a457b4bfe322b7df"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 85471399,
+      "end": 87637160,
+      "requested_bytes": 2165762,
+      "status": "complete",
+      "body_bytes": 2165762,
+      "sha256": "389a27be504767b6d0d72a1c8387c0bf2a190fd2b1deeec8979a66fcd2443179"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 83154181,
+      "end": 83154692,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "22a78e3802a0bf0cbb516091b4201b8209ad129058c020271b5bf1b5c36c0e38"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 83154246,
+      "end": 85123637,
+      "requested_bytes": 1969392,
+      "status": "complete",
+      "body_bytes": 1969392,
+      "sha256": "e9014b20b444c36eae7d472e760ceefc54e6f661cb702818c5d980d1894e4dde"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 100138582,
+      "end": 100139093,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "7c96207d761131031d1f98b377098eb407bbb4ab5522ac1328d296bfea0cd33b"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 87637161,
+      "end": 87637672,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "fba02097d61a68e9d7dc57dff8e28d175b619a0cd3e826b809ea30be8fad4434"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 102241759,
+      "end": 102242270,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "09d1733de22a3ecc9e1d812fbcc9c200870e719ff9f982cf2666b707de5abc21"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 89484476,
+      "end": 89484987,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "373632c976a1870a01cff58a87cc69b23801eb83a76270d3c83641fa4b4479ee"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 102241824,
+      "end": 104104833,
+      "requested_bytes": 1863010,
+      "status": "complete",
+      "body_bytes": 1863010,
+      "sha256": "da0f974d397949ec6601cddc787cf02944f14c07f93a076b7881d4e769fbc54a"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 89484540,
+      "end": 91702820,
+      "requested_bytes": 2218281,
+      "status": "complete",
+      "body_bytes": 2218281,
+      "sha256": "42bb4802ec6ae0e01dffc26bb673b013a8e06d6ae84d6797d996ae76a740ac3a"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 91702821,
+      "end": 91703332,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "38f71998a6e0a36b796102decbc9939287bcbea4bd1c638d91fc09f7aa6b2372"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 104104834,
+      "end": 104105345,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "01f1fd6452049c6779e61dffd0ec6b3b728e6690c6187ee69408c330797005b1"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 93686028,
+      "end": 93686539,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "44b127ab0aa788f59da4f2815b49553695c5e0ca97fe5ab032a34281aa7e809e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 106280428,
+      "end": 106280939,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "6a9a27ea0cd475b631e01321683a693cd4ab3cecce2a50ba34a789a276dfea7f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 95586260,
+      "end": 95586771,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "282e53b9862484d287111d75f0a03746591400871db09a3896d669b632b1aedd"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 106280492,
+      "end": 108471241,
+      "requested_bytes": 2190750,
+      "status": "complete",
+      "body_bytes": 2190750,
+      "sha256": "d6c2e1c6cdf662db9bc719fd52ff3eacef3c33843e8922dde7ec7a69f1701bb1"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 97491306,
+      "end": 97491817,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "377b16468ed05be7cbe341ed4138bbef0300923364eccc2f7f3ca449236afff3"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 97606109,
+      "end": 97606620,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "dcbab2187d8dd363539d09fb909a5be65ad36aa1a56f5e1491162ff4ef70376e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 99758399,
+      "end": 99758910,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "32491ee3ba431e4238eacf78fb077de5e9dc642b85a45fc9935f4b108dc547e6"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 99758463,
+      "end": 101815982,
+      "requested_bytes": 2057520,
+      "status": "complete",
+      "body_bytes": 2057520,
+      "sha256": "270afbf9fa4bcd415eaf8c1e63302b4d7a3dd23cda4ab3f28b25731b8d2c2661"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 85123638,
+      "end": 85124149,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "423774fcf331fed837f753b6c2115ce0f657979cb18a0ab511284de14ded6ea6"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 108471242,
+      "end": 108471753,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "97cae00d5e4c88b2c97fa415bfda945569be282fbff0fac63cdc8b4f375bbdc4"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 87208075,
+      "end": 87208586,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "5c6b46cbe947490119587ebab0153b2e85217b24d123f50e7531b0af7a8bc7bd"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 110282134,
+      "end": 110282645,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "66583d4d7d849012c7b945b28be567e6db702f8f824f24072d8701ea055f8607"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 77801050,
+      "end": 77801561,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "83a1c03419b73525f8166f1c883a8d89a17abcb233830bbc3277a8a6f8086749"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 89147151,
+      "end": 89147662,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "90fe4cdffd3fa6b03d760c186322be4fbd97a3e4809aa5756f448aef9c293041"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 112236704,
+      "end": 112237215,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "083f4f3c1767e908f9f3036a843ab15175e8972ceb5d1d15ea04fbf5d0c4df82"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 79858322,
+      "end": 79858833,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "b339a972566c3da74b315e9137de0b156377088057242f9090765ebc5a21788e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 91623231,
+      "end": 91623742,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "f7c8154dda261359616abf8169d3ba389dcf2ad9e410786a1dc58fc4be4f0722"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 112236768,
+      "end": 114479865,
+      "requested_bytes": 2243098,
+      "status": "complete",
+      "body_bytes": 2243098,
+      "sha256": "75d14e64b3ebee9c46200a4008bda74c6a9fc4b0a630fec07ea4c4b9eb05473b"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 82025431,
+      "end": 82025942,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "e9ba3a2ef6e7012d87d923f6dfe6ef04118d5f8f1ad8cca25a9164589a6f7c7f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 93651174,
+      "end": 93651685,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "509840376ba89262d8311af569a159271187e01a2da273186ef4c534c28a1f5f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 101815983,
+      "end": 101816494,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "38b7d2fdf98227f197b9d59a6a18635d3a201f0baf4c5388471cfb69a02f78e5"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 83977717,
+      "end": 83978228,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "f7ec51e1b2065e0255ec08c7caa36d433ae69d8b95cde0324c6fb5c688ecd3db"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 93651238,
+      "end": 95675367,
+      "requested_bytes": 2024130,
+      "status": "complete",
+      "body_bytes": 2024130,
+      "sha256": "3f7e52b0e55fbcfec4463d67c3a1593f19e49a45e1b69bbfe657432bc049ed3a"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 103599879,
+      "end": 103600390,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "d0e5a0835fc4c474fe25fac6a914c3f50e24f19d3ed721981724e00a2fb002b0"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 85922723,
+      "end": 85923234,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "702a646e9661a4c51494bf8be3ba1960d5c1bca59edf8829a1d0b0d63bae61a5"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 114479866,
+      "end": 114480377,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "f50268c586ec9833521343d518dedc69ed97a2549c4ad34ec62ed57b6fca57a6"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 105604210,
+      "end": 105604721,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "cbb5ed27cbd21ec3b4dc75ea125aeef55b4adffae9ba9654f79479392e3a0974"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 88194373,
+      "end": 88194884,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "cced41204a390d903621afd0321c256bdce67c069f19377109e0d66a115724c2"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 116745045,
+      "end": 116745556,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "da50a07c71ffd584aa9af8369a4eeeae3dbed52fdbdb63df58ea42c69e63ed44"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 107506931,
+      "end": 107507442,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "dbb2b9868dfa7ac76f8557df8f522a6f1f6ede29516f60def3d6dbf4fc7ebc21"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 90274112,
+      "end": 90274623,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "cef3ed912c4b731b270b926586c1fdae90a3718451d5374f3cf45104ec355e88"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 116745109,
+      "end": 118758821,
+      "requested_bytes": 2013713,
+      "status": "complete",
+      "body_bytes": 2013713,
+      "sha256": "1c4a705a8f5936b65c7129036869477b03f4bff705bbe99c8df4ddd15e5acc0c"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 109405423,
+      "end": 109405934,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "f83dabae8a8dfee53296636b4faaa8425535c1d0943df46f1bf06fad3023b91f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 92191836,
+      "end": 92192347,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "ec897c0e14162d4038451c67e391fafc751e9d97cc19591a710d16d3d8e94d5f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 111187626,
+      "end": 111188137,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "4e6d91b58909d62a77f77a08b4fcff451b9c789ee316610a701d518603e25466"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 94145248,
+      "end": 94145759,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "4d409a69df09fdf18f3a39a76a98fee2e0af34faab8c39a37e6719fff3823af7"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 111187690,
+      "end": 113066774,
+      "requested_bytes": 1879085,
+      "status": "complete",
+      "body_bytes": 1879085,
+      "sha256": "e857b1a56e64cf291eacf46cacfc18e2c8a071ce7990c943241500742275878a"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 96209650,
+      "end": 96210161,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "6497a7e8d19135c063699a2482eeda19581501f3d7a630bab1f5b9cccc2ddcd5"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 98499751,
+      "end": 98500262,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "d4593fd5a1a71ac714b05565b75862e331f5faa01f3ec78a1a1fbdbcb0b718ae"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 118758822,
+      "end": 118759333,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "840dcf0d6c1d4e8a44337ed3be06e06ab5c4a3331943102b644f10701954f8e3"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 100470388,
+      "end": 100470899,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "c9e61e9415d7b3cce2ace5ecd61f4eb5b091b8dd404f143d9884c9e8e980c08f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 120583215,
+      "end": 120583726,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "4b9e8a736161e1832ef1ff8adbb5328535c7fd2d44c18884e84d81b54e6404f3"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 122471700,
+      "end": 122472211,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "df76399d2e9a86e1c58c8433302e3c5fffa7f3fb7040536ff385ad63431b5ce6"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 100470453,
+      "end": 102373140,
+      "requested_bytes": 1902688,
+      "status": "complete",
+      "body_bytes": 1902688,
+      "sha256": "f7d168aec35c737250fe3d79d5dee0fde944c750c86f5ab6657cccdf6e405001"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 95675368,
+      "end": 95675879,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "627aa14dc2af139bf07dacd90b030621474f8ae2cd1423c7ff1e62ae1f91a117"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 124333923,
+      "end": 124334434,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "486cc15b2fb0ca0863714edd2aa102d969a1e58ba9118b84ea93a8db351c10a7"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 97986264,
+      "end": 97986775,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "dacbdda1e3815d38aed4b291bc4cd3199e01c4f5b642b4307efd3cadae1a91da"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 113066775,
+      "end": 113067286,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "fccfb05a502a27dfec1aeb44cf535d2b8436ad79ab446ffcf8d9a8aeb077342f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 124333987,
+      "end": 126237214,
+      "requested_bytes": 1903228,
+      "status": "complete",
+      "body_bytes": 1903228,
+      "sha256": "56ff119b72d293f6d31db65e981e18864e1406f0d73586e14a2c796919eb5884"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 100072662,
+      "end": 100073173,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "b69573ac2481dcedf762b4f6ad115fb4c42d9c8ca447fc05041a2003437ba433"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 114970679,
+      "end": 114971190,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "6c6da68a9ffe7478079f610708f8651aabfdbeafdd0aa44277405c14dfe3ccd0"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 100072726,
+      "end": 102328470,
+      "requested_bytes": 2255745,
+      "status": "complete",
+      "body_bytes": 2255745,
+      "sha256": "df583f92e8a4805ee81d2a34e4551d956ae91baa595934187962f1bb183faaad"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 116931983,
+      "end": 116932494,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "efda3f921dabbe5b0491b50231bad78b29ad9928b11868a087c8fbf87516d00e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 119082138,
+      "end": 119082649,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "8ffcda2575083eb4853f6a5d45d2420a18ea3869285d777ae635153a8ce504b7"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 121196490,
+      "end": 121197001,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "e1ee572805ca40b0c64603b7f2824c277ec2a0f54c6c9c085c1a06dc4eafd8f8"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 126237215,
+      "end": 126237726,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "1396d39e13db387d450da6d261a0fbf731e6bef636a1c9c9d96b6c7cea245a72"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 123060764,
+      "end": 123061275,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "f5daaeb3e38ae248427fae39063958683e4bb9c417962d76ab712e642a547a78"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 128205103,
+      "end": 128205614,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "c6719d354aa18933034514d6bb52c88cf9f63852a0448b4233846a28ff3b538e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 125132569,
+      "end": 125133080,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "277c994bdc1ae4dfa6d7c1946dd5ec5a8384383b6a61eb0d539537d7ba38b20e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 126897143,
+      "end": 126897654,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "75ee419d510e4e79e264c2dd7da98625d84dc762de7317d1c65fd9cd5b27daf0"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 130314630,
+      "end": 130315141,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "4d7f6102cc8156641248a501ea3838a67afc9e71e3229662ec60e08a7681fcee"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 129067230,
+      "end": 129067741,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "ad31942163fa090b28bb7036b9c7049b0b9e21032d805a2774172fb27e220693"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 132357984,
+      "end": 132358495,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "eafc75db36e71cf7da8caafad2f133bfc1c47e6972abdd56e59d15d796dd4219"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 131052974,
+      "end": 131053485,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "1e882692fadb0c955fda666fb6999e5245391f11434994e5706fcd51027ba806"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 134798091,
+      "end": 134798602,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "287203a2f55dfb45f7e58d8be65dc675380db78806c6a8b4eaa8c0ba49ff3ac0"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 133077795,
+      "end": 133078306,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "66308a1639bc3fe9bcf2a4124766675e2679937aed29f360767661c8c58cc141"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 136876928,
+      "end": 136877439,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "4750a5b80b2ade5703a0970f99f51f925a3b964184d750bad35baafad8fabdc5"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 102328471,
+      "end": 102328982,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "fa3dceb13b07f82c7bb59389507653b0a8bbe567cd58ae18fcdda5ca054661c8"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 133077860,
+      "end": 135261044,
+      "requested_bytes": 2183185,
+      "status": "complete",
+      "body_bytes": 2183185,
+      "sha256": "6929ff90df14198c7d82c111742e3f8c629c8b77c250bebd917552fedb56796f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 139035421,
+      "end": 139035932,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "1598e4aae49dc8698808dd83d61a8f41622bd18a00f04b3ccec4ad15c8e36409"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 104709048,
+      "end": 104709559,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "dc3f77fea499396d73c3a1626b74cceb68e9a33d89ac64c8a5482cd709fb5e15"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 140917506,
+      "end": 140918017,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "e716916e6fdfa2376ca2363327f10bddc1bcbc8e3308082402334d71dd91e4a0"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 143175999,
+      "end": 143176510,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "8e48df787304853704d2715f78cfa9a110b0c136a38bf017126730b8317593b5"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 145157310,
+      "end": 145157821,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "400807aebe2c778668c8a3368c7d54070f47bb89f577014ab832041b3c4f691b"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 147250064,
+      "end": 147250575,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "1a1cb10b60415f47a80b94f65bd26804d04db8d654fb444555330d3afb302c0e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 149162009,
+      "end": 149162520,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "70debd9a8d8fcf55d2a9b26f1350d4e8e95adb8e821725d58a0e0e45e09d4a46"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 107049234,
+      "end": 107049745,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "7449a486b84b8c9ce9ff2179256794f872c7488a2773161f2731ef04f725b637"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 151127885,
+      "end": 151128396,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "2cb3ebe348a311212f5df92837e087a16e34afbb8464f4ed7d56b13087bb85eb"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 107049298,
+      "end": 109248299,
+      "requested_bytes": 2199002,
+      "status": "complete",
+      "body_bytes": 2199002,
+      "sha256": "e770b20122ede0b30f20ccb25a42f265855c101d6f0f01bbc7bb8059a66c3311"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 153186075,
+      "end": 153186586,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "e4e81885d5104ed3c3a2af4c40f49d5b77dc667bea416e86513d22cdf50c90ec"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 155038849,
+      "end": 155039360,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "e89f07e14005e1df6338de96514030b8fc2b422cf25522ab8f7a0d581b5d1643"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 155038914,
+      "end": 156999210,
+      "requested_bytes": 1960297,
+      "status": "complete",
+      "body_bytes": 1960297,
+      "sha256": "3126b5dd8e8b077de892a99a9be659800cfd40b414ce24a052ef8a9cb11f6321"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 156999211,
+      "end": 156999722,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "b23620f2544c7778b3cc4a98b4835770a078e51c30925d172e2fac769cb487b4"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 159275854,
+      "end": 159276365,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "7eb39aff2f2f702057306933c985704abb7785ab19dd31836d181a32c81c392f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar",
+      "start": 159275919,
+      "end": 161261537,
+      "requested_bytes": 1985619,
+      "status": "complete",
+      "body_bytes": 1985619,
+      "sha256": "982a2d3bbadf4eaecf9bccc79ab682c1fd95e26b2c57b491d6ca0556bb7937c3"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 135261045,
+      "end": 135261556,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "318f71ea3c3df83012c5dcee90f1670ead160b11d6461eb7b1f2f0b0bb5c00de"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 137284570,
+      "end": 137285081,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "2b45e87215bf1141e78ab1ce0c281a2c632d90e270bf4eba203a8a35033c43c2"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 102373141,
+      "end": 102373652,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "f8c510e39bc8a7c848a94c4778cde2421f91c98f38fdd8e3936a6ff750fad94f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 139345835,
+      "end": 139346346,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "b9eb3f219dea92f196d62c6a7eea5a5806c1078886e97939dad3c360353b5f00"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 102373205,
+      "end": 104306370,
+      "requested_bytes": 1933166,
+      "status": "complete",
+      "body_bytes": 1933166,
+      "sha256": "23b3a09d4dc0f3ea17b7166ab586554a004ca9ebaa8703aa755b05eb18db88f4"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 141540402,
+      "end": 141540913,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "652f0b5274c13e5c53b1d2603c9cfe7156b0c174343225d6f79fea9559a90591"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 143538558,
+      "end": 143539069,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "34868ffdc52690ac15c338447c9b79a7b1619a90358587fa208276ae4a725601"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 0,
+      "end": 19,
+      "requested_bytes": 20,
+      "status": "complete",
+      "body_bytes": 20,
+      "sha256": "30cbdc8b7afd4e079e93f1666220080b31a9b177f4d94ddcc1e5555fb8821f41"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 145588226,
+      "end": 145588737,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "90e0ec5c3b5d9a8f95337a9b2eec9f2128d6491811987ba924f5e4effa352742"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 20,
+      "end": 531,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "d99ed42a90e34d6cbb9f9390f785d54866450601712ae28172b2491068d93b94"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 147712804,
+      "end": 147713315,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "3a05be6dc3d0fed671daa753c0ed4116778212fe58fe401dab85662a2170424f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 1878006,
+      "end": 1878517,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "82ac7c3464b2572a6b4d0822736710fdf62f3770392c441990b3f0a732951e73"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 149795984,
+      "end": 149796495,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "1c2f8d7ab882db5a374d4db9bf94657ab9ee67ea7cbc69cbc6d25c52fb224713"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 3662237,
+      "end": 3662748,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "c24e98a839800ca64f0ab543b8eea61d39ee6a1ef9ac3b11f12c444fbb6f2462"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 149796048,
+      "end": 151591226,
+      "requested_bytes": 1795179,
+      "status": "complete",
+      "body_bytes": 1795179,
+      "sha256": "eca000056e7551ac40dcc32550f8774ea9648e6833d9d1d9a92d55d6e7408668"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 109248300,
+      "end": 109248811,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "e15130ee4ce0a2f2927283a2ecc0082979dcbc2abc94cfe6dcbabbcf1457a163"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 3662297,
+      "end": 5566836,
+      "requested_bytes": 1904540,
+      "status": "complete",
+      "body_bytes": 1904540,
+      "sha256": "aa0fabd320a90e6a930920a747e6c0326c453380c19f83accff7ae52a6eb8108"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 109248364,
+      "end": 111222823,
+      "requested_bytes": 1974460,
+      "status": "complete",
+      "body_bytes": 1974460,
+      "sha256": "4ecb7aa6aa77150694d83ebac2c55e0853c80ccba7e6127f7c46fa4c40dafec8"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 5566837,
+      "end": 5567348,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "8f9b83061d335a2db622d7bbe191d21283693dd0ec26eeb24f912d1fb8afa97f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 7764177,
+      "end": 7764688,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "060e67e49a3d2112d7d26782d9d8df3f53dcce53e430f10fc5c2d460c1e3a134"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 9875114,
+      "end": 9875625,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "aab3af6942604f8545131a12eaf8a055456db4684e89d136a901b1a7fb52501c"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 11792748,
+      "end": 11793259,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "8e98540cdbbcf46365c92461351ffdd4c40a6bd2fa9d2c6d82d65fe5766d88fc"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 11792808,
+      "end": 13765869,
+      "requested_bytes": 1973062,
+      "status": "complete",
+      "body_bytes": 1973062,
+      "sha256": "3e58978931caf008c600531cbe482b5c171d0130dcac45a7489a5abb46637bec"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 111222824,
+      "end": 111223335,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "d9aa1cce7cd0c014a1dcaac89b715dedc92a774dd4aa800cbd97b8dfb74243cb"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 113516299,
+      "end": 113516810,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "e56ceb52e94298476029d4d72390431a24ce5d6290dba011dbf1fcb50fe712f7"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 104306371,
+      "end": 104306882,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "c2da26e6332b0605f7df0e33c197edb5321d3ee8e298cef7f82230f8c254331b"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 115486019,
+      "end": 115486530,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "1ae9f4f29a359cc0eb675178d72719190099c54557a1088349a4a54adc465706"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 13765870,
+      "end": 13766381,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "8b1d453a77393183dc959a4580cf590a20b760a77069c567ffa3be755d9256f1"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 104306435,
+      "end": 106385708,
+      "requested_bytes": 2079274,
+      "status": "complete",
+      "body_bytes": 2079274,
+      "sha256": "742a5289ce5b97ba41187a4f3c05b01e9e35528c97b6e64d0045e8e4d57759fe"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 117987077,
+      "end": 117987588,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "a92966ef55e2634f1fa3249866894f5f13e702f5ef9e498c25babaaba4c95473"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 15614916,
+      "end": 15615427,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "af1a414c70ab88831285d0cbe56a77526836501b2316320edfe95abcc18a745d"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 120197082,
+      "end": 120197593,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "cfeabaecb2ca8579716ad648f195b67870d66c066db99264255d9ef6468b04a1"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 17615248,
+      "end": 17615759,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "e4b9c676f8a1fd493d23a4cba1f9c558fa134d8bc96b7acf56a865eb7c47fc39"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 122147274,
+      "end": 122147785,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "b4ab7b146cea734b9f097258f177362ae747980dd2a3628add341b6141c76aca"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 17615308,
+      "end": 19683971,
+      "requested_bytes": 2068664,
+      "status": "complete",
+      "body_bytes": 2068664,
+      "sha256": "cde968c7ef9bf8e7823cd6b17f4b0f36f5e45f3e707f5550eebbc10ed6e6860d"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 124407839,
+      "end": 124408350,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "a94c636603309c8bf4a8ba1bc192918bbd3ec4946ac5982003fb2432d8f612bd"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 126522719,
+      "end": 126523230,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "bb1628674c57ba8f28fab31989fd684402d4d7b201458cfb4c83396ad8b76b1e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 126552970,
+      "end": 126553481,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "90dfeffc86f51e4412c51520d12a13a8f1d021b3371fa0398e81a7c1e455b115"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 19683972,
+      "end": 19684483,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "c017d11cca92df7da70a8b4ef04f9053cb7f8a4c3e94b13bf308afa2b7cac337"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 126553034,
+      "end": 128905528,
+      "requested_bytes": 2352495,
+      "status": "complete",
+      "body_bytes": 2352495,
+      "sha256": "4ca136f191ad8c4bf5dc1660f5b5495d64fc005501ce576a9f27b2042e2fe6bc"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 21898972,
+      "end": 21899483,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "5d3eb5cdd8e659b2b1bf0404c9c94cf966a5304fefe2f1c8060e5a69ee880387"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 151591227,
+      "end": 151591738,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "102c48493c61ba8785195dc22911fb57fc5ada4bac14278f5758a4ba1e15152c"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 23741151,
+      "end": 23741662,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "c7a3111dbdad14c2194cb65c18461f1c672a0ccb24d749f6da13f9da74192fae"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 153446478,
+      "end": 153446989,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "9f79457f27a0b9e939017b652680d7a40070cfb01d1541520516d271e1c2cf47"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 25920097,
+      "end": 25920608,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "57be689949211de4b5d57893615338aa316e5fceaeb850f24876647b64565daf"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 153446543,
+      "end": 155275569,
+      "requested_bytes": 1829027,
+      "status": "complete",
+      "body_bytes": 1829027,
+      "sha256": "431bc075ff48e53c5d13f5ccaef10c0b9c1e1b94a3d9906a4545c7b98ab66c74"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 27863957,
+      "end": 27864468,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "3cbd1798ed8260509008fe1581aa31927bfd1e7db811010fced7f6cd6be595fc"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 106385709,
+      "end": 106386220,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "aa19730d8c1811b4d2c8f74ac4092a43525f12a5a025a49c7a8d30e54078d2f3"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 29934953,
+      "end": 29935464,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "f4c8c712c3dc9f3b379e9aaa6feaad49b3de37ba427d647738b26a1f3cf10b27"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 108281439,
+      "end": 108281950,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "d589b562b94f22815f410740080b78c0e3914fd84802ad124fd3c0b785c2c705"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 32161997,
+      "end": 32162508,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "057fdad3d3a94b7c75c85d7c2efe1ae0caa17a00b087808017e5a0c1fd29fce9"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 110500534,
+      "end": 110501045,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "82f73623567a59e698d8ab46d8ba8d96fbc45eec450dc2c8e0da497ad5d624d4"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 34279038,
+      "end": 34279549,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "d25bb1ea120f58fbb11ecde88e897e89f4cb8f5a012420ee2645f223c7bf023b"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 112743257,
+      "end": 112743768,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "f41b3cce28d807df5ed236a3dac48c89658f8f6c3874642e2ae670bd623784ca"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 36454119,
+      "end": 36454630,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "40c12e93fcd2ba121db1823298d94db9fedfa3d1416fe742a33014706ff1c559"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 114815464,
+      "end": 114815975,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "b534032655013f4f9e25cc23c12ee79cfac3e5765ec300716d8c39525c5b8a9a"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 38637788,
+      "end": 38638299,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "41155d963215e33280d46b80b131853fa4f9bbe8bafa6ecdb51a4329dd864199"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 114930258,
+      "end": 114930769,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "ac1da205f64abdf4d82573924253141437d5e9743fdeef32909567f0e2a3a2f7"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 40618259,
+      "end": 40618770,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "5078a0a0914684f1c3925c9aafce443672133f68c9b4fd697836bd5d1748a5a6"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 116978952,
+      "end": 116979463,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "e659d4c47af3e41f964d6aa70f7e64a9184d61183081d6d5dcf902a082f4ec67"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 42794212,
+      "end": 42794723,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "cd93ffac88cd0a2a082d4ef21378de0d64c40950eea53f55ee19a5491a140f88"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 116979017,
+      "end": 119050995,
+      "requested_bytes": 2071979,
+      "status": "complete",
+      "body_bytes": 2071979,
+      "sha256": "fa7247778cb8d9429739829ad23c16990352598ea3c9e4dcc13fb46a49c0f7ed"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 44611628,
+      "end": 44612139,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "0d836fce060b264ab6ede5151e111902791dedb58a54f52673989a43303c3129"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 46562346,
+      "end": 46562857,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "3217a27473c207e451612f08a981a02994cf6d99a08868f6213c2090a4ed0b6f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 48968158,
+      "end": 48968669,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "881c2ff9f8b20b9c82bceba6f824c79100a8e1311dd0b43f1f7e319fa12ce97f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 155275570,
+      "end": 155276081,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "39cc99aba8827f32a26df391e1e921707818538e84ffa9af1031d934a47eb2e9"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 50854910,
+      "end": 50855421,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "3455194cebe4661319ef7a0d448ec4b8e573152f83aa1e7f85bd3f0f2a069f84"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar",
+      "start": 155275635,
+      "end": 157149336,
+      "requested_bytes": 1873702,
+      "status": "complete",
+      "body_bytes": 1873702,
+      "sha256": "81fe2e00689fc322745a849c04f915cc9319c1fc42b9ad8118a1961f306ce699"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 53085768,
+      "end": 53086279,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "dff7ea0efff99c5ddf50110aefe59f11138be8a2de88228cb492272c4632c323"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 55086604,
+      "end": 55087115,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "8cb7c7cef87ad5a6cb893c2cd167c11bb437140cc5c1d024a70b724089a67c53"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 57372234,
+      "end": 57372745,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "654a6b9032ce95815f84afd994656c34c309db2d805ef8788d450fe4e09f4353"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 119050996,
+      "end": 119051507,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "657d02988bc8439ace06a96bdaaa82393e20748c2ff21b0351958906bbb35e92"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 57372293,
+      "end": 59528007,
+      "requested_bytes": 2155715,
+      "status": "complete",
+      "body_bytes": 2155715,
+      "sha256": "65ef29770f41d25d0e629388a31610b3ab665622d489166e64587a545396cefc"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 128905529,
+      "end": 128906040,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "4e9a64d7dbac626dc5734fa37a7f5b64ff1e21ba79910a0ee4d72d4ec9609394"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 121231528,
+      "end": 121232039,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "82dd04c0b30943bfc3da5cee43f8a13fc116bc3d03757ce92e8afb0f212f2053"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 128905593,
+      "end": 131037760,
+      "requested_bytes": 2132168,
+      "status": "complete",
+      "body_bytes": 2132168,
+      "sha256": "879275dcd54f25f393ecc4880872957be14412f403d26503ea029883a59483ef"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 123294466,
+      "end": 123294977,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "07f9fb952acc92c72f9c685b4efe1254bd9edb7456467c6032047ec2ba72f971"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 125343605,
+      "end": 125344116,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "ae94956819ad6911718b6f40899a3be6911b591d299c7f5afebe9fb500852fda"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 127220475,
+      "end": 127220986,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "3a943389221966efa154ca852306fe2a9a4cdc91ec171a80d4d88620cc7cdf49"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 127220540,
+      "end": 129088500,
+      "requested_bytes": 1867961,
+      "status": "complete",
+      "body_bytes": 1867961,
+      "sha256": "3051c4a23ce661340a31272703187d19e41dbcca5ad4157ab0ac2927ec502b9b"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 59528008,
+      "end": 59528519,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "cf90d5acffc1925a36051ff810f496c6e0c871975df638d9ed610d5cdd99bac9"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 0,
+      "end": 19,
+      "requested_bytes": 20,
+      "status": "complete",
+      "body_bytes": 20,
+      "sha256": "30cbdc8b7afd4e079e93f1666220080b31a9b177f4d94ddcc1e5555fb8821f41"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 61793729,
+      "end": 61794240,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "b4df11eeb4b9cc5a995814a7dccdfba89df0e58e3f12ecb5a43d0f564731b246"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 20,
+      "end": 531,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "c322cceed885e87899c37ffa5f2c36434c0fdf2eb6dff3ca4ce1f9066e5a09c4"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 61834599,
+      "end": 61835110,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "994302754e6ab47ef9e3d74833489fe775475931e5b71f050f1023626593cd4a"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 2068985,
+      "end": 2069496,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "74f0f78b004d5a7dc4bbc984cce8e0d49442c0f653bbde7da7f4d29b0e79a0aa"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 131037761,
+      "end": 131038272,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "0ee47ffe2a9943b8b5fd8dc1585cf5c77eb73cb816e24cbf00e9c2a3e4d79dc9"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 63837106,
+      "end": 63837617,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "9bb81e9865edfdee56b4f60078f41a603dffe60f43756f16e7be0a15f1b7d894"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 4141496,
+      "end": 4142007,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "19ac6c04741fb9db3929f196052222f5fe03956f885d381b3cec5ee413f4db07"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 133111175,
+      "end": 133111686,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "5e31fa0c6644b7ad0d71874bbe90a688524a337c7db2d3ee1cee3084e3c68d1a"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 6356495,
+      "end": 6357006,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "ab6f831855f49f35a74774bb34dcf3faa0e8a6df969a25aa0eef782e69a04692"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 63837165,
+      "end": 66385453,
+      "requested_bytes": 2548289,
+      "status": "complete",
+      "body_bytes": 2548289,
+      "sha256": "b956982a4d51814d4b5afe069252b94530274dd4eb7ca148a35199141568574e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 135375626,
+      "end": 135376137,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "6f731074c7578118a1690f12e5cf6a904dcf581eb5dac027e91941aaea09eeeb"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 129088501,
+      "end": 129089012,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "1d9537edb0029810aa973f68b0955971acefc303600a18c0594c278ddebd9f36"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 8249699,
+      "end": 8250210,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "088067528f593c3b661e2901da7c65ca4d48b5ca46c7312cc7438952a8e7b4ba"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 137592762,
+      "end": 137593273,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "46d0064c62f1c13ce1c7296b5b193b472b5704797ff16bf8e4cc454a2618e0e7"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 131270594,
+      "end": 131271105,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "6bf008e9464dffd52e10a6462deb1bc494a983db1effb545ac9ba32c5e465029"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 10258669,
+      "end": 10259180,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "3091c12ecfecf096ce2114c5b8285b23123b70d238f43b32e90a250dae5af588"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 139587268,
+      "end": 139587779,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "6346ddad0c3c2c72a2fc0b112c00ccc5bd55e1c7ecb7a8211729309a75a74e17"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 133412430,
+      "end": 133412941,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "f2207c956c88ccaddc8b9c93bb288340ad8ee4d2e740091849e84acf0d89fb90"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 12224290,
+      "end": 12224801,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "3659413dc190cfba9acd01b693ccddb2c1e633518c805857db016140d003e4de"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 141545255,
+      "end": 141545766,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "ed057c76cb9fa39a76e67733f7450ceacb97892adde3ec68fc79237b7879a21d"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 135616839,
+      "end": 135617350,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "ebdcc07b8c7fe20f8bb99260c450b87577ab39946ba0ac816b32ce36f6db5cca"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 14305681,
+      "end": 14306192,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "d0dc9ff731b021e5c320f356a0a1e8719e7a76dc33370310d675db3d055affa2"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 143468434,
+      "end": 143468945,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "b45ba54ebbbe945e3c933829c6305295c133d55925812ffeb7de26e845cf138b"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 137771047,
+      "end": 137771558,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "8b7797d586445171051d2f877748e84ab086b5931b15c19cfbf0315051ac0cac"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 14305741,
+      "end": 16091672,
+      "requested_bytes": 1785932,
+      "status": "complete",
+      "body_bytes": 1785932,
+      "sha256": "b449a455a59eef991b02735868769f87ad0a2e64f5ea289ea519483e5227d9c1"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 145540828,
+      "end": 145541339,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "1f3792239dd3504a29b104ca37e1e3565b97f2f848f555aeef209da871bdd53b"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 139681669,
+      "end": 139682180,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "cf8bf8edb60ce2ab6b328f63052a5a368555a16e868b4f1edec9a86494d6638d"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 147868026,
+      "end": 147868537,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "3ebb367fba0abaa740e86d90b0f46723527e9899a9bc0ac931969a3654961241"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 141906110,
+      "end": 141906621,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "d0435e5c2969a9f1285c5c749101a995f2599018324e2289131b79a6540877a0"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 150300768,
+      "end": 150301279,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "e7912edf14dc19ae64035da7c973154bce080fdb831e2933454ac381fe109d20"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 143805708,
+      "end": 143806219,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "00b0b9e7f03115c1c10e27c26ca1c6564be94d8e1b254b2af328fdb0d0dbb25e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 152422529,
+      "end": 152423040,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "0708289f746d2d2ab5ec74c12d0c3c4968255d7de07f5c4fb790380df4e99e0d"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 145869422,
+      "end": 145869933,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "f4e4280048c404329c5e1cdd5af3db5c426408879e2440e1517b0c327e852ea1"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 154366463,
+      "end": 154366974,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "2953e233d6770c5f9f92aad83f7fc09e644cc40eaa7a2dc0839c96f0696cb7fb"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 66385454,
+      "end": 66385965,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "50ab9457a49fdcd6e522c44c65e18a341502a9bad170ed9dae7c0daae08bf90a"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 147958071,
+      "end": 147958582,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "bf4dc1a0dec41bff92ee2d9e13363877ef39311a3c4c1005d8af0bb6e46bf582"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 16091673,
+      "end": 16092184,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "128f20852a9987cd9168e0f3c99a3e2f81b4fba9a236d1db5a997d5dce4412bb"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 156598915,
+      "end": 156599426,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "a5333451e350f576e06dec573518817a04a94854659e84a96d95f1fce5b2743c"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 68432219,
+      "end": 68432730,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "57d7835da73dab884f246be818a9906c7161e790a24524598b309e3dc79744ff"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 150193975,
+      "end": 150194486,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "fb470744c7b30a3138f64500350197908a88c9b29be98eca6e2d1896bf622aa0"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 16251471,
+      "end": 16251982,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "0e06154d98cb5c02f2f24f3e392962f8ce73d8c5f77e9904d07c0699aea6b2c5"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 158619539,
+      "end": 158620050,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "0f1b86de7afbf7b40308f7f03c1f09fee47bc4642b064caf1cf09638c934d1e4"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 70620600,
+      "end": 70621111,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "dc11d4ffb65898828faec9559badc6676109f776f01a10d6e47a1071fa69b7e2"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 152576208,
+      "end": 152576719,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "a96f1832d0bccd1b5d1c9a283ae4203e097e15f3cf9f5c79a0028d71e83659d5"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 18282523,
+      "end": 18283034,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "5ffd2e2aeb0abb9f162dd7794cd04131f2dc0f2a221e453da597bb2b93e08b47"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 160545709,
+      "end": 160546220,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "69139b544a85f11e13d73507b79955c76de2bc21e0404760eeda75a5ba97bb51"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 72737423,
+      "end": 72737934,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "5e4f80cc5a1d02ce20e3e05f1ceceebddd5f94459c35b6cfd0d7e4d4e9efa19d"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 152616982,
+      "end": 152617493,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "a4b5aa642c53011695930f674054b8404d3575bc7fc9419658584f2fc8ac025f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 20211986,
+      "end": 20212497,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "58c45bc106b1536d921d33a187502166665e3df7d63c84e303b8b7583187c7b1"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 162761451,
+      "end": 162761962,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "88b45440bf3afabe9c7f3cc4d6c56292bd084a66274fa3d56323a17e87a830e0"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 72737483,
+      "end": 74944748,
+      "requested_bytes": 2207266,
+      "status": "complete",
+      "body_bytes": 2207266,
+      "sha256": "28df6064c7da18a36cb5d01f007733793a772777face12e075f8a43577899ab2"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 22077180,
+      "end": 22077691,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "d22771ff6da522d3583c4da6e2c2678ab1a654b73ab7f9d5fe83d3fb30bb3ec7"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 152617047,
+      "end": 154393400,
+      "requested_bytes": 1776354,
+      "status": "complete",
+      "body_bytes": 1776354,
+      "sha256": "51599d646462284c7e8bb06f944883da67c91d2ecbfdddf9bf603967dd29968d"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 162761516,
+      "end": 164997605,
+      "requested_bytes": 2236090,
+      "status": "complete",
+      "body_bytes": 2236090,
+      "sha256": "6d64245ba19d23b84338ba6a5447a4d1bb48c4fd581aa56eec085440fc5e8773"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 22077240,
+      "end": 24298049,
+      "requested_bytes": 2220810,
+      "status": "complete",
+      "body_bytes": 2220810,
+      "sha256": "8e616f914a36d21b040e873f3fb3baa9c81130f267d3f6647ea322f158945804"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 24298050,
+      "end": 24298561,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "80715be0797d519eaf1005842ed39aa77097e0ed3b4bd1d62e6a2248a269521f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 26180361,
+      "end": 26180872,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "06e2419895e361872827ffdb3ae9e937ca9f77ba93b9f0bd25a7507f5b9fd13e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 154393401,
+      "end": 154393912,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "3a2f6e43bacf438b752b56169feb12ca067f7724ad46c2faea032dc447ded848"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 28139621,
+      "end": 28140132,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "c4af45fee0be0a7d79da2861ae76fe7573dcf21fbf9f7b726feb56f847943645"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 156250845,
+      "end": 156251356,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "ac179ab2384e10c4fcf1bf8e5b9cce8dc85e7b38800e16bf9d304635c51f69c6"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 30163763,
+      "end": 30164274,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "59811ab7102cccd29f816d1642a38917327cd8d8ed1ea0e4596f9b167f724667"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 158378615,
+      "end": 158379126,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "8425451f1fece6540e9946b99365f9848fc2b6d6c7ba4aeee50ce6d0ebd47b2f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 32226541,
+      "end": 32227052,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "43055c7a8ab4819fb2cad1825209f551295b70b7900f72bbf5a8322db64ce81a"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 158378680,
+      "end": 160269905,
+      "requested_bytes": 1891226,
+      "status": "complete",
+      "body_bytes": 1891226,
+      "sha256": "d60f0665b23406b8956d492a8796d20e82e39f76a549b3657dafe32f687acbca"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 74944749,
+      "end": 74945260,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "f2fa7ce1f49f86d24ad5bf76489802a360933cfa945e0b2e3f87915020630e8e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 34222387,
+      "end": 34222898,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "3588d81446fae0f5af3d3c2f70fca7f10e64b74c0af1ad5698914b60981d9f3f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 77011850,
+      "end": 77012361,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "bbdb11219034f8f9b8ebd6d739b3e61206956296cf2ea416319a5c6b0877ae3d"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 34222447,
+      "end": 36218778,
+      "requested_bytes": 1996332,
+      "status": "complete",
+      "body_bytes": 1996332,
+      "sha256": "1570bbd99a024d282d79a7c94f25b2c73c6416ab418aeb67b624a255ccc2e2dc"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 77011910,
+      "end": 78941655,
+      "requested_bytes": 1929746,
+      "status": "complete",
+      "body_bytes": 1929746,
+      "sha256": "565eb77af5c76cd8aecab56fa914c4d5a024bcc13d16cabce148d81e4cfe45d3"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 164997606,
+      "end": 164998117,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "c27a939eb64e7abe97a94d168aa40a6de93255d162aacba41a2ec5c838d8ea4a"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar",
+      "start": 164997671,
+      "end": 167115769,
+      "requested_bytes": 2118099,
+      "status": "complete",
+      "body_bytes": 2118099,
+      "sha256": "cb74d7c47db98c8ce4301cf1bf12f5e0e069a0d56751662960c1aa90f2e2b06e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 36218779,
+      "end": 36219290,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "c7b60e4dde0bc6b7d7dc6c1667007cea17a3d0d2e6e944509e7d8ec38309e97f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 36218839,
+      "end": 38336294,
+      "requested_bytes": 2117456,
+      "status": "complete",
+      "body_bytes": 2117456,
+      "sha256": "3d6186eabd0221fcce86231d4629aae7ddc42b3fe8ec3a465b65d14e79b00385"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 160269906,
+      "end": 160270417,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "d31e54081ed7e86bffc7d5f04a1bbb8d2697ca1abfdb79ab5c7fc6478778c9cf"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 78941656,
+      "end": 78942167,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "9c2b177da5ee5fd8127a0c4d25f641dbe44e641a93fffe0977519b09e2108e49"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+      "start": 160269971,
+      "end": 162391354,
+      "requested_bytes": 2121384,
+      "status": "complete",
+      "body_bytes": 2121384,
+      "sha256": "a84b1c73da03d9b716c0bd75adf5761c8f6e21311ae9b4f9291c665133152a35"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 80986535,
+      "end": 80987046,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "22363a3c65a407fa2430d4c8b1d891b99bed0a7148cda297bd5a468ebe6a6aeb"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 80986594,
+      "end": 82830301,
+      "requested_bytes": 1843708,
+      "status": "complete",
+      "body_bytes": 1843708,
+      "sha256": "aa38cbe8207a4bfa3b8cae300ac994bdb20280fe4948f7e4bb65f6ea64dd0850"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 38336295,
+      "end": 38336806,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "541cfb80a25bab1c8e6b1e1e7633aafab721eb46353240583380a97ba37046c8"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 40448177,
+      "end": 40448688,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "c9e1f8a363f115bb011c4be82bffac78684b9831dd7bc88e65aac6a142390bd4"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 40448237,
+      "end": 42546483,
+      "requested_bytes": 2098247,
+      "status": "complete",
+      "body_bytes": 2098247,
+      "sha256": "ed6e4c440e6871aac676ffa77ddec84ca5e9a064607b758a1331a0900464a64a"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 82830302,
+      "end": 82830813,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "6b79521a1ee11468525d7516e36d8442d0979b53840849a533c155b93d806b20"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 84750073,
+      "end": 84750584,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "ec1e3db51fade26f00da6bef4621a74701ea4950cd1f475dcaee4a8f397037f3"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 86664410,
+      "end": 86664921,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "848cd94128dce24924505284b727a85266b9e5ff7fac8dfce53e639cc9f2ed01"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 88652208,
+      "end": 88652719,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "0ba7516f71802a6b968bbcd1eb3f510cdcbab1c2732a9b702a72e6ca8d294662"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 90838507,
+      "end": 90839018,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "a285d7640b24e33ff4e3d4187a80acf4aaab80059d34faa75022a51ecf191f80"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 42546484,
+      "end": 42546995,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "4129df10e1660a732e775d1b0fae38dc1dbfcdb5a501d47b1dbc1fa6488179e4"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 90838566,
+      "end": 92816727,
+      "requested_bytes": 1978162,
+      "status": "complete",
+      "body_bytes": 1978162,
+      "sha256": "8037583b44b1c2a65be8a181ac2135df4b806d19f4151309f9ae5d6932dfa58b"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 44871648,
+      "end": 44872159,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "0b598f731ef9df84ffff029519bea9b4982bc9247c31189a46da168b9d86e23e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 46790186,
+      "end": 46790697,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "8cc22d79b1578d480dee93a98537b0c4145d260c611848eec0ec8355294f7775"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 48927860,
+      "end": 48928371,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "12345382af949eb0f97bd4d9fe529eceb2edd90eecf5e1c5e617c1c2b58bc751"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 50857394,
+      "end": 50857905,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "588a32168a108bcbd9acb5db3a75b7b440498c282cbea43270c9671fdf5da264"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 52689760,
+      "end": 52690271,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "2bc339520109a76390d7a6a9218dcd6bc1e5893cf50c04ff34dc0f0fac73a467"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 54724778,
+      "end": 54725289,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "5e47151da63b57571fb81357df74d2f08894f504a1d27a2de6f3a08f105a1e06"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 54724837,
+      "end": 56587992,
+      "requested_bytes": 1863156,
+      "status": "complete",
+      "body_bytes": 1863156,
+      "sha256": "706b96f37cf86f38de33f5d782f51a9e0ab420e140e686576163cfe78bcc40e6"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 92816728,
+      "end": 92817239,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "39f471130eb95cc583cd6e9a8f1bb883b19b018bd85c2a2d048bbf5fce66bd56"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 94933610,
+      "end": 94934121,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "c7881c666edfcdc01b46d8240e6bb0ca65fe679a898831b3483d41a22c2fc04a"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 94933670,
+      "end": 97364526,
+      "requested_bytes": 2430857,
+      "status": "complete",
+      "body_bytes": 2430857,
+      "sha256": "a7b91e96f2c3cb39f20535495958a84806db6272ee7e235c1c0381b0f4d4f5f6"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 56587993,
+      "end": 56588504,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "6681e4c4c0c70db34475cce84038fd7bf251109aa0c40e6003dab3292fff7098"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 56588052,
+      "end": 58612535,
+      "requested_bytes": 2024484,
+      "status": "complete",
+      "body_bytes": 2024484,
+      "sha256": "c949390560dc410dac7d621972033916620c4ed5465a37d584ccfa2ae5e8eb41"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 97364527,
+      "end": 97365038,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "98db2e5c56f0e79c56308622a5f5d33a11df69f68a23577c5aa646b44ed7ad02"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 99491751,
+      "end": 99492262,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "b7c7e37e816ec22773bd90327717e4859caf60e4e8b299c9df2768eff57b0733"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 99491810,
+      "end": 101566422,
+      "requested_bytes": 2074613,
+      "status": "complete",
+      "body_bytes": 2074613,
+      "sha256": "48fc713d161aeb13e321598c3a1b49c99f98f433f234b417be529b6d06847a62"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 58612536,
+      "end": 58613047,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "b007d0a320cc3fd103ea03d26acad27d5ebfa86a82af679d3291cd7c6b1a2563"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 60616807,
+      "end": 60617318,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "882a4945d09701906dd24c4a4701c0531c297e8b25b407b69659ac1451fdd500"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 62518170,
+      "end": 62518681,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "af039aa0f110564c657604efea21a86b162ca0f993020240238d18ab1577cefe"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 62518230,
+      "end": 64492406,
+      "requested_bytes": 1974177,
+      "status": "complete",
+      "body_bytes": 1974177,
+      "sha256": "fb1195b1e6b675f710b51fed046818d27d2f864a0f071e74ef4063313a91316e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 101566423,
+      "end": 101566934,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "a462abb2e21fd5bff45aada89caaacf3e9bb17f2e7fd32e8b2474efebd8ab1d7"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 101566483,
+      "end": 103701510,
+      "requested_bytes": 2135028,
+      "status": "complete",
+      "body_bytes": 2135028,
+      "sha256": "b72b248be5f757876082af61474ca0b45f49827834264325ba19a779b2edf7dc"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 64492407,
+      "end": 64492918,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "d3ac91ae124bbc5a8aaa025293c048716e8800fd971224ec14bf1e012e318dc6"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 66485589,
+      "end": 66486100,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "3ab33c80ec2cd0e174b875fdcf663424770b2b7d43d82f3da8fec81b76ff9da4"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 68514951,
+      "end": 68515462,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "527bc64d66a68aae094a69e940ed1970e756f66e29d9481aceb06d3088960556"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 68515010,
+      "end": 70384207,
+      "requested_bytes": 1869198,
+      "status": "complete",
+      "body_bytes": 1869198,
+      "sha256": "424b6c7507fe3cc38b58077926ea44420bd7b96757612953727b99009c9ac9d9"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 103701511,
+      "end": 103702022,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "196d75fdb4bfe8fccf1e85bc35972c6e6cd1f27ac5adeb7116020a175fa99316"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 103701570,
+      "end": 105703696,
+      "requested_bytes": 2002127,
+      "status": "complete",
+      "body_bytes": 2002127,
+      "sha256": "7da6925b39a314b6884648406f1fde0a4a254d567c8213827aea2ed34d47ced1"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 105703697,
+      "end": 105704208,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "0f58fb7687b35d584b57ce4ef935380fc73b5a810c19d211569f7927cf123ca5"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 107672561,
+      "end": 107673072,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "68197d31751bed94e6239a95a9c24b614f73688f5062752ba0aecb23d387519e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 70384208,
+      "end": 70384719,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "845c4c45787a1dc58cbbde5dbaa85faa4b1726698d60fb0ebdbeb5e462ed9fd0"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 109854469,
+      "end": 109854980,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "d322bc8618b10974a38495de9cf3726c06b219fdee17825dc75ca33a934b61e7"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 72480159,
+      "end": 72480670,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "24b4bb3477e3f2e98cb876ce85c5857fb2658735aa9139769504459d964b30c3"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 109854529,
+      "end": 111800385,
+      "requested_bytes": 1945857,
+      "status": "complete",
+      "body_bytes": 1945857,
+      "sha256": "c46247736c7a2bb83bfd93a5540a71c33a245751da0baf0244dc73a26608a327"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 74333404,
+      "end": 74333915,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "4cda486312f2a23d2c720b05fab130a012609719201a922b80fe00dbcbf5d2d6"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 76186018,
+      "end": 76186529,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "6399f4cc61fd7c98bdcdb7cf8762da1595771015cb493a19ce0219b44539b5ca"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 78331202,
+      "end": 78331713,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "745f54f03be12b7a0cc24828314693ddd3e1caeccf13e5fc99dd5c14a7fb42d8"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 80397790,
+      "end": 80398301,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "fa5f5c7f08fa0bc978c63560bd87b3451435765cda27ff85f2a18779586de1b0"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 111800386,
+      "end": 111800897,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "ed39a9bb16e9631f2cd56d8b24873cbd5020a593ced8cc0be83a3f7a2b3bcb99"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 82490760,
+      "end": 82491271,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "28d89fb635365eda54f577e9a0cf820bf09c7d8dc4e42f08e01e99ca04280402"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 113789213,
+      "end": 113789724,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "566ea8c04fab915b0dde2f3e5baa81a92bac52638fefa90a5c17a4d1246db6b6"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 84551881,
+      "end": 84552392,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "a1fa5f6f9291c549cec3862ef38f3e031bb48f8664edb48fff35feaf9976383b"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 115864132,
+      "end": 115864643,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "c7c8cea222d93b5b2d63888ea7c510cd18c8c03271d91257ff4460aa2f4a04d7"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 86438272,
+      "end": 86438783,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "c23c7ea702a23cf3b79c45ffbf324a661e19f7c5ee25b99cc7028d7ec7e7227d"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 115864192,
+      "end": 118074034,
+      "requested_bytes": 2209843,
+      "status": "complete",
+      "body_bytes": 2209843,
+      "sha256": "e66ceaf3d2cc5713461686ea9979f662b76130b5956caacc7457ec321873d5fe"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 88538685,
+      "end": 88539196,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "e4c4ed5d414aeca8b3cfb95d62c1a37fe4377a6dcd6a1a830fdbc0a67afdc33e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 90590896,
+      "end": 90591407,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "1ca760b2a715ac1155b168505e14d373c50bf517d4d970279a2bdfa1e43b859e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 92379889,
+      "end": 92380400,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "b69efab8ddafd970aee3f7b6a7ae7638ec4ea62b9a77ed56653593ea61ddc608"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 94631586,
+      "end": 94632097,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "1925f79ceea6635f3d5e06ce5b7c3f4f2dfcf81dd666c8b60a943d1e7dc68f8b"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 94631645,
+      "end": 96897951,
+      "requested_bytes": 2266307,
+      "status": "complete",
+      "body_bytes": 2266307,
+      "sha256": "da00b37dd420915fa9a720c0e097ca8f734c31c0938da21b65e0a26d0840a322"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 118074035,
+      "end": 118074546,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "bf55fd6132c2576e2c76402a7468a276caefed27748f342f298c3fd008a78f4c"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 119957722,
+      "end": 119958233,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "2aeeb50c735bed6dbe6f2c6f5ecfef5b46da1850f158376725e4a5b38ef1fc4b"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 122147514,
+      "end": 122148025,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "7ee88f87fb945ec00a53a09ad070f3f1f3f8bb433fcd0bf6ab6a25a14ba32bf0"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 124396561,
+      "end": 124397072,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "abef22dbd508e04b55b0bdf3aa7df22a1c827e44a2078eacbf42ed841e54d6e6"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 126498946,
+      "end": 126499457,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "5c5d9e99a604d81918a7ce23d2704acc29513cb4c0aa29e37aa5dd194ac17e0a"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 126499005,
+      "end": 128707122,
+      "requested_bytes": 2208118,
+      "status": "complete",
+      "body_bytes": 2208118,
+      "sha256": "37940b8f0b4180703061e87a1a4707efb08a4a33a24c73c8061b146671457336"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 96897952,
+      "end": 96898463,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "b6b03c9343297be39a873ab2d0546a2918977688937f99ac6124dc1529a6ed3b"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 98978876,
+      "end": 98979387,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "7885bb01300773e57358f0956cc6046111ec5a847774488875c2cf431e5eac30"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 128707123,
+      "end": 128707634,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "8fd13a65c1161115a470e00f47f8e0ca9789fb1eab6224c55d2adaac3cf47e85"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 100830173,
+      "end": 100830684,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "93f5ebc182d33a98ceb4b4ccf6a10e45f1bb44c22b0c7aca3f31c10e645c036f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 130928352,
+      "end": 130928863,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "44e1c7e0305ece6d2b003b4d8a8c36e12ac5109add1d3d3f02629c80e092da72"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 102737507,
+      "end": 102738018,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "8a9812ee1baf68e1676c9b6d3a2f7b21a9fbe1f035ff58dd3f13172d9028541c"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 132825659,
+      "end": 132826170,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "aa9d1f8e6cfeff7a8ed64f6ac06797e1ba1b84f98122e6347ed953945e98e174"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 102737567,
+      "end": 104695927,
+      "requested_bytes": 1958361,
+      "status": "complete",
+      "body_bytes": 1958361,
+      "sha256": "87a98f1156f097f26feeb5d154b9cb9598347942a35af02a69cb243bcb6684fa"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 134887569,
+      "end": 134888080,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "c4075cba3f66b494d8704f75fb07b8d431ea76f5e88b5c93c5cca6cb8d6378d6"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 136766890,
+      "end": 136767401,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "67e9b1d57ba12a8c60985f0964c063d6327b579cc84bdbd44da114dba53b6cfe"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 138795620,
+      "end": 138796131,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "43896d22e18752c35f0cf4a259be963045b56d9c39da41b078f76ea72d0b279b"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 138795679,
+      "end": 140747636,
+      "requested_bytes": 1951958,
+      "status": "complete",
+      "body_bytes": 1951958,
+      "sha256": "0709625ec27796c7c9f02dd69c701d12a2ad7bfe35962362aeb8c46e9476085f"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 140747637,
+      "end": 140748148,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "7e4c1cfe4ed56eb556636b23bb6f76fb1b494e15ee51a2153df36066933043c2"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 104695928,
+      "end": 104696439,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "0c0640cf3eee5e646e7ee88320ab65c2c69e478678ebf0ebf4ab8293e75499f1"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 142876058,
+      "end": 142876569,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "d635970946dcbc04cf660f98ca5add5c3aa3bc643d10d1bb7cb415e8e78d8f55"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 104695987,
+      "end": 106608518,
+      "requested_bytes": 1912532,
+      "status": "complete",
+      "body_bytes": 1912532,
+      "sha256": "6b4abcddf622476f00c40ed72ac1c15bdfb01af612d4a99121f4606c3441f6ff"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar",
+      "start": 142876118,
+      "end": 145158726,
+      "requested_bytes": 2282609,
+      "status": "complete",
+      "body_bytes": 2282609,
+      "sha256": "c636c5df1dace55d69bad77c37b585ffab5a185fc6779cbcb79cf67d9c4427a7"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 106608519,
+      "end": 106609030,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "798519116a1d30de049dbab7dd59ad18bc2ce494817f68bd31dfc8f2f57e988e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 108518660,
+      "end": 108519171,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "0867b29594f756fe1ca8b2a51c6361d50088c51627633c1a1bae6dcbb3ac1188"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 108518720,
+      "end": 110545143,
+      "requested_bytes": 2026424,
+      "status": "complete",
+      "body_bytes": 2026424,
+      "sha256": "4fbd5d904ff150fa9223c1d0a25a123571667af25d5e32680a1091841b4380ae"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 110545144,
+      "end": 110545655,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "067ffa6be8a6859e60a7a3ea83c0c8bce239b8811a2cbe7666f360f7d63e9a8b"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 110660103,
+      "end": 110660614,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "15e8066c7adf771736ca159d5b778955847c4b18e92ac96a2fb77f98de82ba7b"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 112721501,
+      "end": 112722012,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "80fa3b50173115cdf6f98537c6141f7e97d91d4569f13bb501b153d4bb1a8b42"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 114765330,
+      "end": 114765841,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "086f09de1453e59963a724f37e511ce426f82524264a99fd581e504d7dcfbff3"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 116649309,
+      "end": 116649820,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "e0e9541c9b944e92c85bcdb23ad7eccc5ebb24fd19518215c55ed3189092f4c5"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 118615233,
+      "end": 118615744,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "e491081d7f8d87b84d58e4e4bf32a3297449ac56610641ec40bb42b356da7b14"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 120817969,
+      "end": 120818480,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "b5d477d84d61b307490cffeaeff7810307862bf2def719885dc3a3e445bb5007"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 122990184,
+      "end": 122990695,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "8938ced094781fd5d622bad2e6bee028773f3e03acf8e9b1a9b5aac41f37e8e2"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 125097666,
+      "end": 125098177,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "396ebd5474171f7a4a26a6af93b18fc86fa27339a44a19ef18dc11f9235e0d30"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 125097725,
+      "end": 126940850,
+      "requested_bytes": 1843126,
+      "status": "complete",
+      "body_bytes": 1843126,
+      "sha256": "3679264c7762ad8ece9c10c52412506297eb065154cc93726130bffc3941d42d"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 126940851,
+      "end": 126941362,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "dfb3dc4ae1beee6c1aed36016a71a5d1f97fb3cbdeb6520c295cb3254c0ee308"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 128799290,
+      "end": 128799801,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "5988762a3364ed7da157142de413dfc15eeffbdc07bf8703e996b47ed1d54d4e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 130718564,
+      "end": 130719075,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "1e28256225b21339c553deacb1cee98c9e8bbd6558d4f66e0b886bac7dcd8971"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 132822554,
+      "end": 132823065,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "8148972334852bff8dcf3d5853a85e29471193d1cfe54493b4342c758dd8862c"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 134633533,
+      "end": 134634044,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "6a0a46a64cb739e5983747d66c7c410e9f7ba8f53ece11cc8c012a0dc65176b3"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 134633592,
+      "end": 136546792,
+      "requested_bytes": 1913201,
+      "status": "complete",
+      "body_bytes": 1913201,
+      "sha256": "fb1fd044a3a36c6c2da4260708ccbf9bb2eafc8f9b335c43da4fffe893eb0409"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 136546793,
+      "end": 136547304,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "ed41cb103a96d9dd9725d7b59f56a49ee198d21997515f6c7d94e7367503867e"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 136546853,
+      "end": 138666099,
+      "requested_bytes": 2119247,
+      "status": "complete",
+      "body_bytes": 2119247,
+      "sha256": "68be64b9152f359fde8a0b0f402accead124e9fe1d03101e1b0f9a7f546474da"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 138666100,
+      "end": 138666611,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "ccd2a6821eb0b5fe49e2bc47ab89f8c5e6df1181e93e5736b7a8904bf278cfac"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 138666159,
+      "end": 140846968,
+      "requested_bytes": 2180810,
+      "status": "complete",
+      "body_bytes": 2180810,
+      "sha256": "9d8d56638f57c15d34bbb02f61114a7e371fd4823e7f0141206369693c0f3cd3"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 140846969,
+      "end": 140847480,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "3efaead60c704ffb9a53f9ddfbbc1c948453a91fadcee1c8b358843397d4a249"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 142859429,
+      "end": 142859940,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "45fcf3d1e7f75663576844af154070d8d14b0e3d65e166cdbbe0289b675b8dc2"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 144975034,
+      "end": 144975545,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "be59fb313b5056693cb06742ba72b877cf02a4cff2c8f78c4f34ea4a1c800f9d"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 147103963,
+      "end": 147104474,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "9ecb928914ea91b0b35ca21558db40a6509623bb41cd462224080d9d46f99376"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 149080922,
+      "end": 149081433,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "25cd4a920eb9620ae592b4932bf17f5924b8f2e964dde79c80245c05043be7b0"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 151302134,
+      "end": 151302645,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "d650a871fc5ccb4ce6dc3d1c99ce4a13515134a761c704abc90ef4632e615169"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 153208284,
+      "end": 153208795,
+      "requested_bytes": 512,
+      "status": "complete",
+      "body_bytes": 512,
+      "sha256": "c8d1a52bba1f127bd05c470157e42523277ec35355490d06b56b7cf839874160"
+    },
+    {
+      "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar",
+      "start": 153208344,
+      "end": 155209678,
+      "requested_bytes": 2001335,
+      "status": "complete",
+      "body_bytes": 2001335,
+      "sha256": "dade6b34af1eb63934fcd45bf895383b4def2240260d6ead405ad952b28fe17f"
+    }
+  ]
+}

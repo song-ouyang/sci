@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-09-28T16:02:02.592658+00:00",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_bearing_baseline*.py",
+    "-v"
+  ],
+  "exit_code": 0,
+  "passed_unique": 20,
+  "new_model_calls": 0,
+  "scope": "Synthetic split, leakage, frozen source dependencies, scorer, fixed grid, and numerical extraction boundary tests; no real benchmark fitting by tests.",
+  "test_file_sha256": {
+    "tests/test_bearing_baseline_data_v1.py": "49cb8f151a6181b8da5b98a6e39410e12ac17e021cd864f9d2f5adb11f6582f4",
+    "tests/test_bearing_baseline_v1.py": "70a26ac4cb28144f19094643bf6b7a015586b91c8d056227316d46116791c9d5",
+    "tests/test_bearing_baseline_extraction_v2.py": "f803c05cab2257b25fbc70f3a6b181037aa6b4da7efe4c10a14d2f8a6b3f708f"
+  }
+}

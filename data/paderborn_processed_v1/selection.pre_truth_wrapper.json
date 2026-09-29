@@ -1,0 +1,640 @@
+{
+  "created_at_utc": "2026-09-28T14:07:39.550748+00:00",
+  "code_sha256": "98f500a5eefaf1a801e62c55fa693ef3f54a5a53ce3e13768c352109d52a4cd0",
+  "schema": "paderborn-selection-and-representation-v1",
+  "seed": 20260928,
+  "classes": [
+    "healthy",
+    "outer_race_fault",
+    "inner_race_fault"
+  ],
+  "candidate_bearings": {
+    "healthy": [
+      "K001",
+      "K002",
+      "K003",
+      "K004",
+      "K005"
+    ],
+    "outer_race_fault": [
+      "KA04",
+      "KA15",
+      "KA16",
+      "KA22",
+      "KA30"
+    ],
+    "inner_race_fault": [
+      "KI04",
+      "KI14",
+      "KI16",
+      "KI18",
+      "KI21"
+    ]
+  },
+  "records": [
+    {
+      "id": "0974931a",
+      "label": "healthy",
+      "bearing": "K002",
+      "regime": "N15_M07_F04",
+      "repetition": 6,
+      "role": "focal",
+      "member": "K002/N15_M07_F04_K002_6.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K002.rar"
+    },
+    {
+      "id": "6c2e7d0e",
+      "label": "inner_race_fault",
+      "bearing": "KI18",
+      "regime": "N15_M07_F04",
+      "repetition": 3,
+      "role": "background",
+      "member": "KI18/N15_M07_F04_KI18_3.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar"
+    },
+    {
+      "id": "1092d737",
+      "label": "healthy",
+      "bearing": "K003",
+      "regime": "N15_M07_F10",
+      "repetition": 18,
+      "role": "focal",
+      "member": "K003/N15_M07_F10_K003_18.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K003.rar"
+    },
+    {
+      "id": "ad3bca2b",
+      "label": "inner_race_fault",
+      "bearing": "KI21",
+      "regime": "N09_M07_F10",
+      "repetition": 3,
+      "role": "focal",
+      "member": "KI21/N09_M07_F10_KI21_3.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI21.rar"
+    },
+    {
+      "id": "f7cca0f1",
+      "label": "inner_race_fault",
+      "bearing": "KI04",
+      "regime": "N09_M07_F10",
+      "repetition": 9,
+      "role": "focal",
+      "member": "KI04/N09_M07_F10_KI04_9.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI04.rar"
+    },
+    {
+      "id": "3e385344",
+      "label": "inner_race_fault",
+      "bearing": "KI14",
+      "regime": "N09_M07_F10",
+      "repetition": 6,
+      "role": "focal",
+      "member": "KI14/N09_M07_F10_KI14_6.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI14.rar"
+    },
+    {
+      "id": "b18b03a6",
+      "label": "outer_race_fault",
+      "bearing": "KA30",
+      "regime": "N15_M07_F04",
+      "repetition": 9,
+      "role": "focal",
+      "member": "KA30/N15_M07_F04_KA30_9.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA30.rar"
+    },
+    {
+      "id": "0ff43cd8",
+      "label": "outer_race_fault",
+      "bearing": "KA16",
+      "regime": "N15_M07_F04",
+      "repetition": 20,
+      "role": "focal",
+      "member": "KA16/N15_M07_F04_KA16_20.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA16.rar"
+    },
+    {
+      "id": "3786d395",
+      "label": "outer_race_fault",
+      "bearing": "KA04",
+      "regime": "N15_M01_F10",
+      "repetition": 6,
+      "role": "focal",
+      "member": "KA04/N15_M01_F10_KA04_6.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA04.rar"
+    },
+    {
+      "id": "564e0b9b",
+      "label": "healthy",
+      "bearing": "K003",
+      "regime": "N15_M01_F10",
+      "repetition": 13,
+      "role": "focal",
+      "member": "K003/N15_M01_F10_K003_13.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K003.rar"
+    },
+    {
+      "id": "c096390f",
+      "label": "healthy",
+      "bearing": "K004",
+      "regime": "N15_M07_F04",
+      "repetition": 5,
+      "role": "background",
+      "member": "K004/N15_M07_F04_K004_5.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar"
+    },
+    {
+      "id": "90e4c432",
+      "label": "inner_race_fault",
+      "bearing": "KI18",
+      "regime": "N15_M01_F10",
+      "repetition": 13,
+      "role": "background",
+      "member": "KI18/N15_M01_F10_KI18_13.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI18.rar"
+    },
+    {
+      "id": "c07d1b55",
+      "label": "healthy",
+      "bearing": "K003",
+      "regime": "N15_M07_F04",
+      "repetition": 1,
+      "role": "focal",
+      "member": "K003/N15_M07_F04_K003_1.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K003.rar"
+    },
+    {
+      "id": "4d3e8ca5",
+      "label": "outer_race_fault",
+      "bearing": "KA22",
+      "regime": "N15_M01_F10",
+      "repetition": 8,
+      "role": "background",
+      "member": "KA22/N15_M01_F10_KA22_8.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar"
+    },
+    {
+      "id": "63827d9c",
+      "label": "healthy",
+      "bearing": "K004",
+      "regime": "N15_M01_F10",
+      "repetition": 3,
+      "role": "background",
+      "member": "K004/N15_M01_F10_K004_3.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K004.rar"
+    },
+    {
+      "id": "7008707d",
+      "label": "healthy",
+      "bearing": "K002",
+      "regime": "N15_M07_F10",
+      "repetition": 4,
+      "role": "focal",
+      "member": "K002/N15_M07_F10_K002_4.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K002.rar"
+    },
+    {
+      "id": "5125c77a",
+      "label": "healthy",
+      "bearing": "K003",
+      "regime": "N09_M07_F10",
+      "repetition": 20,
+      "role": "focal",
+      "member": "K003/N09_M07_F10_K003_20.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K003.rar"
+    },
+    {
+      "id": "53ea5c4b",
+      "label": "healthy",
+      "bearing": "K002",
+      "regime": "N09_M07_F10",
+      "repetition": 7,
+      "role": "focal",
+      "member": "K002/N09_M07_F10_K002_7.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K002.rar"
+    },
+    {
+      "id": "56d116d9",
+      "label": "inner_race_fault",
+      "bearing": "KI21",
+      "regime": "N15_M07_F04",
+      "repetition": 17,
+      "role": "focal",
+      "member": "KI21/N15_M07_F04_KI21_17.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI21.rar"
+    },
+    {
+      "id": "938ba945",
+      "label": "inner_race_fault",
+      "bearing": "KI04",
+      "regime": "N15_M01_F10",
+      "repetition": 6,
+      "role": "focal",
+      "member": "KI04/N15_M01_F10_KI04_6.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI04.rar"
+    },
+    {
+      "id": "fcd6d121",
+      "label": "healthy",
+      "bearing": "K005",
+      "regime": "N09_M07_F10",
+      "repetition": 5,
+      "role": "focal",
+      "member": "K005/N09_M07_F10_K005_5.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K005.rar"
+    },
+    {
+      "id": "65cb3261",
+      "label": "outer_race_fault",
+      "bearing": "KA16",
+      "regime": "N15_M07_F10",
+      "repetition": 15,
+      "role": "focal",
+      "member": "KA16/N15_M07_F10_KA16_15.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA16.rar"
+    },
+    {
+      "id": "bf6ecfcc",
+      "label": "outer_race_fault",
+      "bearing": "KA30",
+      "regime": "N15_M07_F10",
+      "repetition": 19,
+      "role": "focal",
+      "member": "KA30/N15_M07_F10_KA30_19.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA30.rar"
+    },
+    {
+      "id": "fe78cbf6",
+      "label": "outer_race_fault",
+      "bearing": "KA04",
+      "regime": "N09_M07_F10",
+      "repetition": 14,
+      "role": "focal",
+      "member": "KA04/N09_M07_F10_KA04_14.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA04.rar"
+    },
+    {
+      "id": "0378cdfc",
+      "label": "inner_race_fault",
+      "bearing": "KI14",
+      "regime": "N15_M01_F10",
+      "repetition": 10,
+      "role": "focal",
+      "member": "KI14/N15_M01_F10_KI14_10.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI14.rar"
+    },
+    {
+      "id": "c2279137",
+      "label": "healthy",
+      "bearing": "K005",
+      "regime": "N15_M01_F10",
+      "repetition": 14,
+      "role": "focal",
+      "member": "K005/N15_M01_F10_K005_14.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K005.rar"
+    },
+    {
+      "id": "06e539f0",
+      "label": "outer_race_fault",
+      "bearing": "KA30",
+      "regime": "N15_M01_F10",
+      "repetition": 16,
+      "role": "focal",
+      "member": "KA30/N15_M01_F10_KA30_16.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA30.rar"
+    },
+    {
+      "id": "d3695900",
+      "label": "outer_race_fault",
+      "bearing": "KA15",
+      "regime": "N15_M01_F10",
+      "repetition": 8,
+      "role": "background",
+      "member": "KA15/N15_M01_F10_KA15_8.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar"
+    },
+    {
+      "id": "a7233ea2",
+      "label": "inner_race_fault",
+      "bearing": "KI21",
+      "regime": "N15_M07_F10",
+      "repetition": 14,
+      "role": "focal",
+      "member": "KI21/N15_M07_F10_KI21_14.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI21.rar"
+    },
+    {
+      "id": "ca363c2d",
+      "label": "healthy",
+      "bearing": "K005",
+      "regime": "N15_M07_F04",
+      "repetition": 9,
+      "role": "focal",
+      "member": "K005/N15_M07_F04_K005_9.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K005.rar"
+    },
+    {
+      "id": "a5f79b8c",
+      "label": "inner_race_fault",
+      "bearing": "KI16",
+      "regime": "N15_M07_F04",
+      "repetition": 19,
+      "role": "background",
+      "member": "KI16/N15_M07_F04_KI16_19.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar"
+    },
+    {
+      "id": "f5940805",
+      "label": "healthy",
+      "bearing": "K001",
+      "regime": "N15_M07_F04",
+      "repetition": 15,
+      "role": "background",
+      "member": "K001/N15_M07_F04_K001_15.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar"
+    },
+    {
+      "id": "80f20960",
+      "label": "outer_race_fault",
+      "bearing": "KA04",
+      "regime": "N15_M07_F10",
+      "repetition": 12,
+      "role": "focal",
+      "member": "KA04/N15_M07_F10_KA04_12.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA04.rar"
+    },
+    {
+      "id": "4bfe2af4",
+      "label": "outer_race_fault",
+      "bearing": "KA15",
+      "regime": "N15_M07_F04",
+      "repetition": 15,
+      "role": "background",
+      "member": "KA15/N15_M07_F04_KA15_15.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar"
+    },
+    {
+      "id": "23dfa78f",
+      "label": "healthy",
+      "bearing": "K001",
+      "regime": "N15_M01_F10",
+      "repetition": 2,
+      "role": "background",
+      "member": "K001/N15_M01_F10_K001_2.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K001.rar"
+    },
+    {
+      "id": "25e63fe5",
+      "label": "inner_race_fault",
+      "bearing": "KI04",
+      "regime": "N15_M07_F04",
+      "repetition": 20,
+      "role": "focal",
+      "member": "KI04/N15_M07_F04_KI04_20.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI04.rar"
+    },
+    {
+      "id": "25fd0012",
+      "label": "inner_race_fault",
+      "bearing": "KI21",
+      "regime": "N15_M01_F10",
+      "repetition": 16,
+      "role": "focal",
+      "member": "KI21/N15_M01_F10_KI21_16.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI21.rar"
+    },
+    {
+      "id": "0a8cde0d",
+      "label": "inner_race_fault",
+      "bearing": "KI14",
+      "regime": "N15_M07_F04",
+      "repetition": 13,
+      "role": "focal",
+      "member": "KI14/N15_M07_F04_KI14_13.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI14.rar"
+    },
+    {
+      "id": "c50f758e",
+      "label": "outer_race_fault",
+      "bearing": "KA04",
+      "regime": "N15_M07_F04",
+      "repetition": 16,
+      "role": "focal",
+      "member": "KA04/N15_M07_F04_KA04_16.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA04.rar"
+    },
+    {
+      "id": "2ba5c5a3",
+      "label": "healthy",
+      "bearing": "K002",
+      "regime": "N15_M01_F10",
+      "repetition": 2,
+      "role": "focal",
+      "member": "K002/N15_M01_F10_K002_2.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K002.rar"
+    },
+    {
+      "id": "1ea9c347",
+      "label": "inner_race_fault",
+      "bearing": "KI04",
+      "regime": "N15_M07_F10",
+      "repetition": 12,
+      "role": "focal",
+      "member": "KI04/N15_M07_F10_KI04_12.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI04.rar"
+    },
+    {
+      "id": "3072ddc5",
+      "label": "inner_race_fault",
+      "bearing": "KI16",
+      "regime": "N15_M01_F10",
+      "repetition": 14,
+      "role": "background",
+      "member": "KI16/N15_M01_F10_KI16_14.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI16.rar"
+    },
+    {
+      "id": "82102301",
+      "label": "outer_race_fault",
+      "bearing": "KA16",
+      "regime": "N09_M07_F10",
+      "repetition": 5,
+      "role": "focal",
+      "member": "KA16/N09_M07_F10_KA16_5.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA16.rar"
+    },
+    {
+      "id": "50195250",
+      "label": "outer_race_fault",
+      "bearing": "KA22",
+      "regime": "N15_M07_F04",
+      "repetition": 1,
+      "role": "background",
+      "member": "KA22/N15_M07_F04_KA22_1.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA22.rar"
+    },
+    {
+      "id": "a0a559f1",
+      "label": "inner_race_fault",
+      "bearing": "KI14",
+      "regime": "N15_M07_F10",
+      "repetition": 12,
+      "role": "focal",
+      "member": "KI14/N15_M07_F10_KI14_12.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI14.rar"
+    },
+    {
+      "id": "cc0e3ed3",
+      "label": "healthy",
+      "bearing": "K005",
+      "regime": "N15_M07_F10",
+      "repetition": 15,
+      "role": "focal",
+      "member": "K005/N15_M07_F10_K005_15.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/K005.rar"
+    },
+    {
+      "id": "50c082e6",
+      "label": "outer_race_fault",
+      "bearing": "KA30",
+      "regime": "N09_M07_F10",
+      "repetition": 6,
+      "role": "focal",
+      "member": "KA30/N09_M07_F10_KA30_6.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA30.rar"
+    },
+    {
+      "id": "527470df",
+      "label": "outer_race_fault",
+      "bearing": "KA16",
+      "regime": "N15_M01_F10",
+      "repetition": 6,
+      "role": "focal",
+      "member": "KA16/N15_M01_F10_KA16_6.mat",
+      "archive_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA16.rar"
+    }
+  ],
+  "selection": "SHA256(seed|bearing-panel|bearing) per class: first3 focal, last2 background; all4 focal regimes; same2 SHA-ranked background regimes; one SHA-minimum repetition among1..20 per bearing/regime.",
+  "source": "Official Paderborn KAt DataCenter; original 2016 paper Table10 bearing IDs; healthy and accelerated-lifetime damage only.",
+  "unit_policy": "All source Y.Unit fields must be empty. Original amplitude values are retained with explicitly unspecified physical amplitude units; no inferred A or m/s^2 labels.",
+  "representation": "Whole source record, native sample counts, no windowing/resampling/normalization/fitting. Seven channel mean/popSD; three high-rate channel RMS/absolute crest/Pearson kurtosis; five fixed vibration periodogram fractions.",
+  "spectrum": "Subtract vibration mean; unwindowed rFFT, nominal fs64000Hz; double interior one-sided powers, leave DC and even-N Nyquist undoubled; fractions over [0,100),[100,500),[500,2000),[2000,10000),[10000,32000]Hz. No spectral feature/threshold selection by observations.",
+  "time_axis": "Validate finite increasing source X arrays and matched lengths; retain timing diagnostics. Nominal64kHz comes from publisher. HostService X is not treated as an independently calibrated regular hardware clock.",
+  "dictionary": [
+    {
+      "name": "force__mean",
+      "unit": "original recorded scale; physical amplitude unit unspecified"
+    },
+    {
+      "name": "force__population_sd",
+      "unit": "original recorded scale; physical amplitude unit unspecified"
+    },
+    {
+      "name": "phase_current_1__mean",
+      "unit": "original recorded scale; physical amplitude unit unspecified"
+    },
+    {
+      "name": "phase_current_1__population_sd",
+      "unit": "original recorded scale; physical amplitude unit unspecified"
+    },
+    {
+      "name": "phase_current_2__mean",
+      "unit": "original recorded scale; physical amplitude unit unspecified"
+    },
+    {
+      "name": "phase_current_2__population_sd",
+      "unit": "original recorded scale; physical amplitude unit unspecified"
+    },
+    {
+      "name": "speed__mean",
+      "unit": "original recorded scale; physical amplitude unit unspecified"
+    },
+    {
+      "name": "speed__population_sd",
+      "unit": "original recorded scale; physical amplitude unit unspecified"
+    },
+    {
+      "name": "temp_2_bearing_module__mean",
+      "unit": "original recorded scale; physical amplitude unit unspecified"
+    },
+    {
+      "name": "temp_2_bearing_module__population_sd",
+      "unit": "original recorded scale; physical amplitude unit unspecified"
+    },
+    {
+      "name": "torque__mean",
+      "unit": "original recorded scale; physical amplitude unit unspecified"
+    },
+    {
+      "name": "torque__population_sd",
+      "unit": "original recorded scale; physical amplitude unit unspecified"
+    },
+    {
+      "name": "vibration_1__mean",
+      "unit": "original recorded scale; physical amplitude unit unspecified"
+    },
+    {
+      "name": "vibration_1__population_sd",
+      "unit": "original recorded scale; physical amplitude unit unspecified"
+    },
+    {
+      "name": "phase_current_1__rms",
+      "unit": "original recorded scale; physical amplitude unit unspecified"
+    },
+    {
+      "name": "phase_current_1__absolute_crest_factor",
+      "unit": "dimensionless"
+    },
+    {
+      "name": "phase_current_1__pearson_kurtosis",
+      "unit": "dimensionless"
+    },
+    {
+      "name": "phase_current_2__rms",
+      "unit": "original recorded scale; physical amplitude unit unspecified"
+    },
+    {
+      "name": "phase_current_2__absolute_crest_factor",
+      "unit": "dimensionless"
+    },
+    {
+      "name": "phase_current_2__pearson_kurtosis",
+      "unit": "dimensionless"
+    },
+    {
+      "name": "vibration_1__rms",
+      "unit": "original recorded scale; physical amplitude unit unspecified"
+    },
+    {
+      "name": "vibration_1__absolute_crest_factor",
+      "unit": "dimensionless"
+    },
+    {
+      "name": "vibration_1__pearson_kurtosis",
+      "unit": "dimensionless"
+    },
+    {
+      "name": "vibration_1__relative_power_0_100_Hz",
+      "unit": "dimensionless"
+    },
+    {
+      "name": "vibration_1__relative_power_100_500_Hz",
+      "unit": "dimensionless"
+    },
+    {
+      "name": "vibration_1__relative_power_500_2000_Hz",
+      "unit": "dimensionless"
+    },
+    {
+      "name": "vibration_1__relative_power_2000_10000_Hz",
+      "unit": "dimensionless"
+    },
+    {
+      "name": "vibration_1__relative_power_10000_32000_Hz",
+      "unit": "dimensionless"
+    }
+  ],
+  "download_body_limit_bytes": 300000000,
+  "prior_probe_bytes": 2427525,
+  "new_model_calls": 0,
+  "interpretation": "48 records from15 physical bearing specimens on one measurement rig; focal36 from9 specimens, background12 from6 disjoint specimens. Four observations per focal bearing are dependent. A separate bearing task cannot establish pump-leakage cross-device generalization."
+}

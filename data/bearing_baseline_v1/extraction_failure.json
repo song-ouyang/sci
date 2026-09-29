@@ -1,0 +1,25 @@
+{
+  "schema": "bearing-baseline-extraction-failure-v1",
+  "plan_sha256": "85619113667ab32f3b8d2d12800642553fb0fd428cb3208be3ef14da3379de46",
+  "failure_count": 1,
+  "failures": [
+    {
+      "id": "ab06d281",
+      "member": "KI16/N15_M07_F04_KI16_16.mat",
+      "error": "Spectral partition does not sum to1",
+      "sample_count": 287568,
+      "max_rfftfreq_hz": 32000.000000000004,
+      "max_frequency_overshoot_hz": 3.637978807091713e-12,
+      "power_fraction_above_32000": 7.954795680041464e-09,
+      "bins_above_32000": 1
+    }
+  ],
+  "new_model_calls": 0,
+  "frozen_files_modified": false,
+  "outputs_created": [
+    false,
+    false,
+    false,
+    false
+  ]
+}

@@ -1,0 +1,1140 @@
+{
+  "unused_eligible_blocks_per_stratum": [
+    {
+      "pump": 0,
+      "cooler": 3,
+      "n": 10
+    },
+    {
+      "pump": 0,
+      "cooler": 20,
+      "n": 10
+    },
+    {
+      "pump": 0,
+      "cooler": 100,
+      "n": 10
+    },
+    {
+      "pump": 1,
+      "cooler": 3,
+      "n": 10
+    },
+    {
+      "pump": 1,
+      "cooler": 20,
+      "n": 10
+    },
+    {
+      "pump": 1,
+      "cooler": 100,
+      "n": 10
+    },
+    {
+      "pump": 2,
+      "cooler": 3,
+      "n": 10
+    },
+    {
+      "pump": 2,
+      "cooler": 20,
+      "n": 10
+    },
+    {
+      "pump": 2,
+      "cooler": 100,
+      "n": 10
+    }
+  ],
+  "n_unused_common_nuisance_settings": 10,
+  "chosen_nuisance_settings_in_panel_role_order": [
+    [
+      90,
+      115
+    ],
+    [
+      80,
+      100
+    ],
+    [
+      73,
+      100
+    ],
+    [
+      90,
+      90
+    ],
+    [
+      100,
+      90
+    ],
+    [
+      73,
+      90
+    ]
+  ],
+  "excluded_joint_condition_blocks": [
+    3,
+    5,
+    6,
+    8,
+    10,
+    11,
+    13,
+    15,
+    16,
+    19,
+    20,
+    24,
+    25,
+    29,
+    30,
+    52,
+    57,
+    62,
+    68,
+    70,
+    71,
+    73,
+    75,
+    76,
+    78,
+    80,
+    81,
+    84,
+    85,
+    89,
+    90,
+    94,
+    95,
+    117,
+    122,
+    127,
+    133,
+    135,
+    136,
+    138,
+    140,
+    141,
+    143,
+    145,
+    146,
+    149,
+    150,
+    154,
+    155,
+    159,
+    160,
+    182,
+    187,
+    192
+  ],
+  "selected_records": [
+    {
+      "id": "315e6fc1",
+      "cycle_1based": 452,
+      "block_id": 31,
+      "block_start": 447,
+      "block_end": 456,
+      "profile": [
+        3,
+        90,
+        0,
+        115,
+        0
+      ],
+      "true_label": "No_leakage",
+      "panel_id": "hydraulic_p01",
+      "role": "focal"
+    },
+    {
+      "id": "36171327",
+      "cycle_1based": 1143,
+      "block_id": 91,
+      "block_start": 1138,
+      "block_end": 1147,
+      "profile": [
+        20,
+        90,
+        1,
+        115,
+        0
+      ],
+      "true_label": "Weak_leakage",
+      "panel_id": "hydraulic_p01",
+      "role": "focal"
+    },
+    {
+      "id": "39440207",
+      "cycle_1based": 370,
+      "block_id": 21,
+      "block_start": 365,
+      "block_end": 374,
+      "profile": [
+        3,
+        90,
+        2,
+        115,
+        0
+      ],
+      "true_label": "Severe_leakage",
+      "panel_id": "hydraulic_p01",
+      "role": "focal"
+    },
+    {
+      "id": "5774e7c3",
+      "cycle_1based": 411,
+      "block_id": 26,
+      "block_start": 406,
+      "block_end": 415,
+      "profile": [
+        3,
+        90,
+        1,
+        115,
+        0
+      ],
+      "true_label": "Weak_leakage",
+      "panel_id": "hydraulic_p01",
+      "role": "focal"
+    },
+    {
+      "id": "771c4ac8",
+      "cycle_1based": 1102,
+      "block_id": 86,
+      "block_start": 1097,
+      "block_end": 1106,
+      "profile": [
+        20,
+        90,
+        2,
+        115,
+        0
+      ],
+      "true_label": "Severe_leakage",
+      "panel_id": "hydraulic_p01",
+      "role": "focal"
+    },
+    {
+      "id": "969000c1",
+      "cycle_1based": 1916,
+      "block_id": 161,
+      "block_start": 1911,
+      "block_end": 1920,
+      "profile": [
+        100,
+        90,
+        0,
+        115,
+        0
+      ],
+      "true_label": "No_leakage",
+      "panel_id": "hydraulic_p01",
+      "role": "focal"
+    },
+    {
+      "id": "9db2bd01",
+      "cycle_1based": 1834,
+      "block_id": 151,
+      "block_start": 1829,
+      "block_end": 1838,
+      "profile": [
+        100,
+        90,
+        2,
+        115,
+        0
+      ],
+      "true_label": "Severe_leakage",
+      "panel_id": "hydraulic_p01",
+      "role": "focal"
+    },
+    {
+      "id": "e0f7b06c",
+      "cycle_1based": 1184,
+      "block_id": 96,
+      "block_start": 1179,
+      "block_end": 1188,
+      "profile": [
+        20,
+        90,
+        0,
+        115,
+        0
+      ],
+      "true_label": "No_leakage",
+      "panel_id": "hydraulic_p01",
+      "role": "focal"
+    },
+    {
+      "id": "f4abb890",
+      "cycle_1based": 1875,
+      "block_id": 156,
+      "block_start": 1870,
+      "block_end": 1879,
+      "profile": [
+        100,
+        90,
+        1,
+        115,
+        0
+      ],
+      "true_label": "Weak_leakage",
+      "panel_id": "hydraulic_p01",
+      "role": "focal"
+    },
+    {
+      "id": "6a411e3a",
+      "cycle_1based": 1957,
+      "block_id": 166,
+      "block_start": 1952,
+      "block_end": 1961,
+      "profile": [
+        100,
+        80,
+        2,
+        100,
+        0
+      ],
+      "true_label": "Severe_leakage",
+      "panel_id": "hydraulic_p01",
+      "role": "background"
+    },
+    {
+      "id": "8bd05792",
+      "cycle_1based": 575,
+      "block_id": 46,
+      "block_start": 570,
+      "block_end": 579,
+      "profile": [
+        3,
+        80,
+        0,
+        100,
+        0
+      ],
+      "true_label": "No_leakage",
+      "panel_id": "hydraulic_p01",
+      "role": "background"
+    },
+    {
+      "id": "9d291d6a",
+      "cycle_1based": 493,
+      "block_id": 36,
+      "block_start": 488,
+      "block_end": 497,
+      "profile": [
+        3,
+        80,
+        2,
+        100,
+        0
+      ],
+      "true_label": "Severe_leakage",
+      "panel_id": "hydraulic_p01",
+      "role": "background"
+    },
+    {
+      "id": "a5d1121c",
+      "cycle_1based": 534,
+      "block_id": 41,
+      "block_start": 529,
+      "block_end": 538,
+      "profile": [
+        3,
+        80,
+        1,
+        100,
+        0
+      ],
+      "true_label": "Weak_leakage",
+      "panel_id": "hydraulic_p01",
+      "role": "background"
+    },
+    {
+      "id": "aefa8520",
+      "cycle_1based": 1225,
+      "block_id": 101,
+      "block_start": 1220,
+      "block_end": 1229,
+      "profile": [
+        20,
+        80,
+        2,
+        100,
+        0
+      ],
+      "true_label": "Severe_leakage",
+      "panel_id": "hydraulic_p01",
+      "role": "background"
+    },
+    {
+      "id": "b7881e2d",
+      "cycle_1based": 1307,
+      "block_id": 111,
+      "block_start": 1302,
+      "block_end": 1311,
+      "profile": [
+        20,
+        80,
+        0,
+        100,
+        0
+      ],
+      "true_label": "No_leakage",
+      "panel_id": "hydraulic_p01",
+      "role": "background"
+    },
+    {
+      "id": "cbb5e9eb",
+      "cycle_1based": 2039,
+      "block_id": 176,
+      "block_start": 2034,
+      "block_end": 2043,
+      "profile": [
+        100,
+        80,
+        0,
+        100,
+        0
+      ],
+      "true_label": "No_leakage",
+      "panel_id": "hydraulic_p01",
+      "role": "background"
+    },
+    {
+      "id": "d052fbed",
+      "cycle_1based": 1266,
+      "block_id": 106,
+      "block_start": 1261,
+      "block_end": 1270,
+      "profile": [
+        20,
+        80,
+        1,
+        100,
+        0
+      ],
+      "true_label": "Weak_leakage",
+      "panel_id": "hydraulic_p01",
+      "role": "background"
+    },
+    {
+      "id": "e4a4766c",
+      "cycle_1based": 1998,
+      "block_id": 171,
+      "block_start": 1993,
+      "block_end": 2002,
+      "profile": [
+        100,
+        80,
+        1,
+        100,
+        0
+      ],
+      "true_label": "Weak_leakage",
+      "panel_id": "hydraulic_p01",
+      "role": "background"
+    },
+    {
+      "id": "142c6afc",
+      "cycle_1based": 565,
+      "block_id": 45,
+      "block_start": 560,
+      "block_end": 569,
+      "profile": [
+        3,
+        73,
+        0,
+        100,
+        0
+      ],
+      "true_label": "No_leakage",
+      "panel_id": "hydraulic_p02",
+      "role": "focal"
+    },
+    {
+      "id": "64d2e50e",
+      "cycle_1based": 483,
+      "block_id": 35,
+      "block_start": 478,
+      "block_end": 487,
+      "profile": [
+        3,
+        73,
+        2,
+        100,
+        0
+      ],
+      "true_label": "Severe_leakage",
+      "panel_id": "hydraulic_p02",
+      "role": "focal"
+    },
+    {
+      "id": "73b45c55",
+      "cycle_1based": 1947,
+      "block_id": 165,
+      "block_start": 1942,
+      "block_end": 1951,
+      "profile": [
+        100,
+        73,
+        2,
+        100,
+        0
+      ],
+      "true_label": "Severe_leakage",
+      "panel_id": "hydraulic_p02",
+      "role": "focal"
+    },
+    {
+      "id": "73b6e9d7",
+      "cycle_1based": 2029,
+      "block_id": 175,
+      "block_start": 2024,
+      "block_end": 2033,
+      "profile": [
+        100,
+        73,
+        0,
+        100,
+        0
+      ],
+      "true_label": "No_leakage",
+      "panel_id": "hydraulic_p02",
+      "role": "focal"
+    },
+    {
+      "id": "91167869",
+      "cycle_1based": 1988,
+      "block_id": 170,
+      "block_start": 1983,
+      "block_end": 1992,
+      "profile": [
+        100,
+        73,
+        1,
+        100,
+        0
+      ],
+      "true_label": "Weak_leakage",
+      "panel_id": "hydraulic_p02",
+      "role": "focal"
+    },
+    {
+      "id": "94f3d111",
+      "cycle_1based": 1297,
+      "block_id": 110,
+      "block_start": 1292,
+      "block_end": 1301,
+      "profile": [
+        20,
+        73,
+        0,
+        100,
+        0
+      ],
+      "true_label": "No_leakage",
+      "panel_id": "hydraulic_p02",
+      "role": "focal"
+    },
+    {
+      "id": "d53bdf8e",
+      "cycle_1based": 1215,
+      "block_id": 100,
+      "block_start": 1210,
+      "block_end": 1219,
+      "profile": [
+        20,
+        73,
+        2,
+        100,
+        0
+      ],
+      "true_label": "Severe_leakage",
+      "panel_id": "hydraulic_p02",
+      "role": "focal"
+    },
+    {
+      "id": "e46abcac",
+      "cycle_1based": 524,
+      "block_id": 40,
+      "block_start": 519,
+      "block_end": 528,
+      "profile": [
+        3,
+        73,
+        1,
+        100,
+        0
+      ],
+      "true_label": "Weak_leakage",
+      "panel_id": "hydraulic_p02",
+      "role": "focal"
+    },
+    {
+      "id": "eb5702a2",
+      "cycle_1based": 1256,
+      "block_id": 105,
+      "block_start": 1251,
+      "block_end": 1260,
+      "profile": [
+        20,
+        73,
+        1,
+        100,
+        0
+      ],
+      "true_label": "Weak_leakage",
+      "panel_id": "hydraulic_p02",
+      "role": "focal"
+    },
+    {
+      "id": "0ce7448f",
+      "cycle_1based": 1368,
+      "block_id": 118,
+      "block_start": 1363,
+      "block_end": 1372,
+      "profile": [
+        20,
+        90,
+        2,
+        90,
+        0
+      ],
+      "true_label": "Severe_leakage",
+      "panel_id": "hydraulic_p02",
+      "role": "background"
+    },
+    {
+      "id": "145eb7fe",
+      "cycle_1based": 2141,
+      "block_id": 188,
+      "block_start": 2136,
+      "block_end": 2145,
+      "profile": [
+        100,
+        90,
+        1,
+        90,
+        0
+      ],
+      "true_label": "Weak_leakage",
+      "panel_id": "hydraulic_p02",
+      "role": "background"
+    },
+    {
+      "id": "33949001",
+      "cycle_1based": 636,
+      "block_id": 53,
+      "block_start": 631,
+      "block_end": 640,
+      "profile": [
+        3,
+        90,
+        2,
+        90,
+        0
+      ],
+      "true_label": "Severe_leakage",
+      "panel_id": "hydraulic_p02",
+      "role": "background"
+    },
+    {
+      "id": "4b4265eb",
+      "cycle_1based": 677,
+      "block_id": 58,
+      "block_start": 672,
+      "block_end": 681,
+      "profile": [
+        3,
+        90,
+        1,
+        90,
+        0
+      ],
+      "true_label": "Weak_leakage",
+      "panel_id": "hydraulic_p02",
+      "role": "background"
+    },
+    {
+      "id": "5b20a9ed",
+      "cycle_1based": 718,
+      "block_id": 63,
+      "block_start": 713,
+      "block_end": 722,
+      "profile": [
+        3,
+        90,
+        0,
+        90,
+        0
+      ],
+      "true_label": "No_leakage",
+      "panel_id": "hydraulic_p02",
+      "role": "background"
+    },
+    {
+      "id": "870e6903",
+      "cycle_1based": 1409,
+      "block_id": 123,
+      "block_start": 1404,
+      "block_end": 1413,
+      "profile": [
+        20,
+        90,
+        1,
+        90,
+        0
+      ],
+      "true_label": "Weak_leakage",
+      "panel_id": "hydraulic_p02",
+      "role": "background"
+    },
+    {
+      "id": "cec61f8e",
+      "cycle_1based": 2182,
+      "block_id": 193,
+      "block_start": 2177,
+      "block_end": 2186,
+      "profile": [
+        100,
+        90,
+        0,
+        90,
+        0
+      ],
+      "true_label": "No_leakage",
+      "panel_id": "hydraulic_p02",
+      "role": "background"
+    },
+    {
+      "id": "d78f1177",
+      "cycle_1based": 2100,
+      "block_id": 183,
+      "block_start": 2095,
+      "block_end": 2104,
+      "profile": [
+        100,
+        90,
+        2,
+        90,
+        0
+      ],
+      "true_label": "Severe_leakage",
+      "panel_id": "hydraulic_p02",
+      "role": "background"
+    },
+    {
+      "id": "fdb4d447",
+      "cycle_1based": 1450,
+      "block_id": 128,
+      "block_start": 1445,
+      "block_end": 1454,
+      "profile": [
+        20,
+        90,
+        0,
+        90,
+        0
+      ],
+      "true_label": "No_leakage",
+      "panel_id": "hydraulic_p02",
+      "role": "background"
+    },
+    {
+      "id": "1f6ef00a",
+      "cycle_1based": 646,
+      "block_id": 54,
+      "block_start": 641,
+      "block_end": 650,
+      "profile": [
+        3,
+        100,
+        2,
+        90,
+        0
+      ],
+      "true_label": "Severe_leakage",
+      "panel_id": "hydraulic_p03",
+      "role": "focal"
+    },
+    {
+      "id": "39ac8bdf",
+      "cycle_1based": 1378,
+      "block_id": 119,
+      "block_start": 1373,
+      "block_end": 1382,
+      "profile": [
+        20,
+        100,
+        2,
+        90,
+        0
+      ],
+      "true_label": "Severe_leakage",
+      "panel_id": "hydraulic_p03",
+      "role": "focal"
+    },
+    {
+      "id": "4219319f",
+      "cycle_1based": 2110,
+      "block_id": 184,
+      "block_start": 2105,
+      "block_end": 2114,
+      "profile": [
+        100,
+        100,
+        2,
+        90,
+        0
+      ],
+      "true_label": "Severe_leakage",
+      "panel_id": "hydraulic_p03",
+      "role": "focal"
+    },
+    {
+      "id": "480c5323",
+      "cycle_1based": 1460,
+      "block_id": 129,
+      "block_start": 1455,
+      "block_end": 1464,
+      "profile": [
+        20,
+        100,
+        0,
+        90,
+        0
+      ],
+      "true_label": "No_leakage",
+      "panel_id": "hydraulic_p03",
+      "role": "focal"
+    },
+    {
+      "id": "7838699c",
+      "cycle_1based": 2196,
+      "block_id": 194,
+      "block_start": 2187,
+      "block_end": 2205,
+      "profile": [
+        100,
+        100,
+        0,
+        90,
+        0
+      ],
+      "true_label": "No_leakage",
+      "panel_id": "hydraulic_p03",
+      "role": "focal"
+    },
+    {
+      "id": "a2d872b1",
+      "cycle_1based": 687,
+      "block_id": 59,
+      "block_start": 682,
+      "block_end": 691,
+      "profile": [
+        3,
+        100,
+        1,
+        90,
+        0
+      ],
+      "true_label": "Weak_leakage",
+      "panel_id": "hydraulic_p03",
+      "role": "focal"
+    },
+    {
+      "id": "c1ded284",
+      "cycle_1based": 2151,
+      "block_id": 189,
+      "block_start": 2146,
+      "block_end": 2155,
+      "profile": [
+        100,
+        100,
+        1,
+        90,
+        0
+      ],
+      "true_label": "Weak_leakage",
+      "panel_id": "hydraulic_p03",
+      "role": "focal"
+    },
+    {
+      "id": "d195b088",
+      "cycle_1based": 1419,
+      "block_id": 124,
+      "block_start": 1414,
+      "block_end": 1423,
+      "profile": [
+        20,
+        100,
+        1,
+        90,
+        0
+      ],
+      "true_label": "Weak_leakage",
+      "panel_id": "hydraulic_p03",
+      "role": "focal"
+    },
+    {
+      "id": "e9c5ef39",
+      "cycle_1based": 728,
+      "block_id": 64,
+      "block_start": 723,
+      "block_end": 732,
+      "profile": [
+        3,
+        100,
+        0,
+        90,
+        0
+      ],
+      "true_label": "No_leakage",
+      "panel_id": "hydraulic_p03",
+      "role": "focal"
+    },
+    {
+      "id": "3aaf4e4c",
+      "cycle_1based": 2080,
+      "block_id": 181,
+      "block_start": 2075,
+      "block_end": 2084,
+      "profile": [
+        100,
+        73,
+        2,
+        90,
+        0
+      ],
+      "true_label": "Severe_leakage",
+      "panel_id": "hydraulic_p03",
+      "role": "background"
+    },
+    {
+      "id": "4b132ce4",
+      "cycle_1based": 616,
+      "block_id": 51,
+      "block_start": 611,
+      "block_end": 620,
+      "profile": [
+        3,
+        73,
+        2,
+        90,
+        0
+      ],
+      "true_label": "Severe_leakage",
+      "panel_id": "hydraulic_p03",
+      "role": "background"
+    },
+    {
+      "id": "6da4d045",
+      "cycle_1based": 1348,
+      "block_id": 116,
+      "block_start": 1343,
+      "block_end": 1352,
+      "profile": [
+        20,
+        73,
+        2,
+        90,
+        0
+      ],
+      "true_label": "Severe_leakage",
+      "panel_id": "hydraulic_p03",
+      "role": "background"
+    },
+    {
+      "id": "7b3e18a7",
+      "cycle_1based": 698,
+      "block_id": 61,
+      "block_start": 693,
+      "block_end": 702,
+      "profile": [
+        3,
+        73,
+        0,
+        90,
+        0
+      ],
+      "true_label": "No_leakage",
+      "panel_id": "hydraulic_p03",
+      "role": "background"
+    },
+    {
+      "id": "a3252c57",
+      "cycle_1based": 2162,
+      "block_id": 191,
+      "block_start": 2157,
+      "block_end": 2166,
+      "profile": [
+        100,
+        73,
+        0,
+        90,
+        0
+      ],
+      "true_label": "No_leakage",
+      "panel_id": "hydraulic_p03",
+      "role": "background"
+    },
+    {
+      "id": "c4effd0a",
+      "cycle_1based": 657,
+      "block_id": 56,
+      "block_start": 652,
+      "block_end": 661,
+      "profile": [
+        3,
+        73,
+        1,
+        90,
+        0
+      ],
+      "true_label": "Weak_leakage",
+      "panel_id": "hydraulic_p03",
+      "role": "background"
+    },
+    {
+      "id": "caff9f85",
+      "cycle_1based": 2121,
+      "block_id": 186,
+      "block_start": 2116,
+      "block_end": 2125,
+      "profile": [
+        100,
+        73,
+        1,
+        90,
+        0
+      ],
+      "true_label": "Weak_leakage",
+      "panel_id": "hydraulic_p03",
+      "role": "background"
+    },
+    {
+      "id": "e924ed29",
+      "cycle_1based": 1389,
+      "block_id": 121,
+      "block_start": 1384,
+      "block_end": 1393,
+      "profile": [
+        20,
+        73,
+        1,
+        90,
+        0
+      ],
+      "true_label": "Weak_leakage",
+      "panel_id": "hydraulic_p03",
+      "role": "background"
+    },
+    {
+      "id": "f18f1438",
+      "cycle_1based": 1430,
+      "block_id": 126,
+      "block_start": 1425,
+      "block_end": 1434,
+      "profile": [
+        20,
+        73,
+        0,
+        90,
+        0
+      ],
+      "true_label": "No_leakage",
+      "panel_id": "hydraulic_p03",
+      "role": "background"
+    }
+  ],
+  "schema": "policy-hydraulic-v1-preparation",
+  "prepared_at": "2026-09-28T14:07:39.093599+00:00",
+  "seed": 20260928,
+  "hash_domain": "policy-hydraulic-v1",
+  "source_sha256": {
+    "data/uci_hydraulic_processed/metadata.json": "a82f28c149fb4b378a524db223567b9ae1c4e8a9850360b1a8ac1bb1a71846a4",
+    "data/uci_hydraulic_processed/blocks.json": "09397bddb3359d622137ae775bd9ca7057b57ee750a8b7e59c24271af4657d10",
+    "data/uci_hydraulic_processed/profile.json": "77b338addb6b32f6dc52b5d4afbedf2336ceea0c899d8f0de528a01f1cbf5ecf",
+    "data/uci_hydraulic_processed/measurement_summary.npz": "58485453dd5004f6b693eac15a6b4887f2884e999852fbc1f970889068a173a6",
+    "results/hydraulic_validation_v1/protocol.json": "f4fe92b1f056fd7fbcd5d50226f80b2ab7cee0de913a4b69eae5ae52b9d2c7b0",
+    "results/hydraulic_validation_v1/protocol.sha256": "35b35ba1e3a8ac1533c9866c25c107eaaa2d7f80e9c35705e5b33f4a8e52f833",
+    "results/hydraulic_validation_v1/answers/records.json": "381c59bc1a085a03b7c53da2ff4ddeb9a9ae034bb6bfffb37386c5ea732f9897"
+  },
+  "preparation_code_sha256": "b7a38d5c6e0228114431ed509cd173a861fc366e9221903c6dab3e04125fc185",
+  "source_archive_sha256": "24128aad2ee45eea7e6b63ebbd9992cdf25d0483a2cebefbfc13bc69079af1f2",
+  "prior_excluded_blocks": [
+    3,
+    5,
+    6,
+    8,
+    10,
+    11,
+    13,
+    15,
+    16,
+    19,
+    20,
+    24,
+    25,
+    29,
+    30,
+    52,
+    57,
+    62,
+    68,
+    70,
+    71,
+    73,
+    75,
+    76,
+    78,
+    80,
+    81,
+    84,
+    85,
+    89,
+    90,
+    94,
+    95,
+    117,
+    122,
+    127,
+    133,
+    135,
+    136,
+    138,
+    140,
+    141,
+    143,
+    145,
+    146,
+    149,
+    150,
+    154,
+    155,
+    159,
+    160,
+    182,
+    187,
+    192
+  ],
+  "additional_excluded_blocks": [],
+  "new_focal_cycles": 27,
+  "new_background_cycles": 27,
+  "new_joint_condition_blocks": 54,
+  "physical_rigs": 1,
+  "selection_policy": "Six hash-ordered unused valve/accumulator settings shared across all nine pump/cooler strata; alternating focal/background assignments across three panels; later-middle stable cycle; anonymous-ID order. No predictions or measurement-value selection.",
+  "representation_policy": "Same 14 physical channels and mean/population SD as v1; new shared-once dictionary and six-decimal values are fixed before calls. F/R changes only record order.",
+  "model_input_boundary": "dataset.json only. truth.json and audit.json must not be exposed to inference. Record roles and panel_id are runner-side scheduling metadata, not diagnostic features.",
+  "policy_indexing": "F1/R1 mean scheduled pair index 1, not earliest completion or first valid output. Same compares F1/F2; View compares F1/R2; both retain only F1's label on agreement. F2/R2 are paired contemporaneous checkers. Strategies are scored elsewhere after freezing outputs.",
+  "limits": [
+    "One rig; selected stable cycles; repeated acquisition order can retain dependence",
+    "Annotations used for balanced sampling, never disclosed per record to the model",
+    "These are previously unused blocks, not independent new devices",
+    "No inference, scoring, strategy fitting, or freezing is performed by this preparation"
+  ],
+  "dataset_sha256": "e0429a0bb565d89ac1d60f7e227632231274da336efb6c8308d8d83d1f02ddab",
+  "truth_sha256": "218f02386ac6258c899d44c325fc0599e7abd81e73e1643256faafbd2c8bb6ae"
+}

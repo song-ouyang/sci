@@ -1,0 +1,13 @@
+{
+  "schema": "bearing-baseline-prediction-freeze-v1",
+  "frozen_at_utc": "2026-09-28T16:02:08.290198+00:00",
+  "protocol_sha256": "1ac4446dcad7f8b34a0477ccf058463fd43895f229802f22955e67518769bf05",
+  "files_sha256": {
+    "started.json": "b3eccc8f610fb9f4503e6c3bfec4244f5aa38f2e4e40d11aa47872fa88b37389",
+    "cv.json": "6c1dee26e7b90cd5140b9e010bc7268fe7b686ff9d5ba106cd45478dd089c9d3",
+    "selections.json": "53dc27de84af57d528e8b4fbd9f0dbd480704ba71dd0ef12db9380258e6bf021",
+    "structural_checks.json": "78c2a8cb2da3839994ec2d8f689c0be96b8f00f84e42a8b9087c673f8675b93b",
+    "predictions.csv": "9f76ed25516997d4403bafac3c8ac732e80ac862e38cacdeda8bc4224e412485",
+    "run.json": "e7303290e1126302bd62b2d28d84001cb8f8b9e772d7a3e4bd40067d54ec3476"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "pairs": [
+    {
+      "index": 0,
+      "block": 0,
+      "panel_id": "p01",
+      "round": 1,
+      "repeat": 1,
+      "conditions": [
+        "F",
+        "R"
+      ],
+      "names": [
+        "b01_p1_f",
+        "b01_p1_r"
+      ]
+    },
+    {
+      "index": 1,
+      "block": 0,
+      "panel_id": "p01",
+      "round": 1,
+      "repeat": 2,
+      "conditions": [
+        "R",
+        "F"
+      ],
+      "names": [
+        "b01_p2_r",
+        "b01_p2_f"
+      ]
+    },
+    {
+      "index": 2,
+      "block": 0,
+      "panel_id": "p01",
+      "round": 1,
+      "repeat": 3,
+      "conditions": [
+        "F",
+        "R"
+      ],
+      "names": [
+        "b01_p3_f",
+        "b01_p3_r"
+      ]
+    },
+    {
+      "index": 3,
+      "block": 1,
+      "panel_id": "p01",
+      "round": 2,
+      "repeat": 1,
+      "conditions": [
+        "F",
+        "R"
+      ],
+      "names": [
+        "b02_p1_f",
+        "b02_p1_r"
+      ]
+    },
+    {
+      "index": 4,
+      "block": 1,
+      "panel_id": "p01",
+      "round": 2,
+      "repeat": 2,
+      "conditions": [
+        "R",
+        "F"
+      ],
+      "names": [
+        "b02_p2_r",
+        "b02_p2_f"
+      ]
+    },
+    {
+      "index": 5,
+      "block": 1,
+      "panel_id": "p01",
+      "round": 2,
+      "repeat": 3,
+      "conditions": [
+        "F",
+        "R"
+      ],
+      "names": [
+        "b02_p3_f",
+        "b02_p3_r"
+      ]
+    }
+  ]
+}

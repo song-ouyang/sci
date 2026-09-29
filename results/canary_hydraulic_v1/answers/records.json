@@ -1,0 +1,382 @@
+{
+  "records": [
+    {
+      "id": "9094bede",
+      "role": "focal",
+      "true_label": "No_leakage",
+      "cycle_1based": 1926,
+      "block_id": 162,
+      "profile": [
+        100,
+        100,
+        0,
+        115,
+        0
+      ]
+    },
+    {
+      "id": "ce94ee89",
+      "role": "canary",
+      "true_label": "No_leakage",
+      "cycle_1based": 1440,
+      "block_id": 127,
+      "profile": [
+        20,
+        80,
+        0,
+        90,
+        0
+      ]
+    },
+    {
+      "id": "970e3449",
+      "role": "canary",
+      "true_label": "Severe_leakage",
+      "cycle_1based": 1358,
+      "block_id": 117,
+      "profile": [
+        20,
+        80,
+        2,
+        90,
+        0
+      ]
+    },
+    {
+      "id": "5be697ac",
+      "role": "focal",
+      "true_label": "No_leakage",
+      "cycle_1based": 462,
+      "block_id": 32,
+      "profile": [
+        3,
+        100,
+        0,
+        115,
+        0
+      ]
+    },
+    {
+      "id": "42ecf789",
+      "role": "focal",
+      "true_label": "Severe_leakage",
+      "cycle_1based": 1844,
+      "block_id": 152,
+      "profile": [
+        100,
+        100,
+        2,
+        115,
+        0
+      ]
+    },
+    {
+      "id": "379c0943",
+      "role": "canary",
+      "true_label": "Severe_leakage",
+      "cycle_1based": 1711,
+      "block_id": 136,
+      "profile": [
+        100,
+        100,
+        2,
+        130,
+        0
+      ]
+    },
+    {
+      "id": "4315f205",
+      "role": "focal",
+      "true_label": "No_leakage",
+      "cycle_1based": 1194,
+      "block_id": 97,
+      "profile": [
+        20,
+        100,
+        0,
+        115,
+        0
+      ]
+    },
+    {
+      "id": "e6f39ea7",
+      "role": "canary",
+      "true_label": "No_leakage",
+      "cycle_1based": 329,
+      "block_id": 16,
+      "profile": [
+        3,
+        100,
+        0,
+        130,
+        0
+      ]
+    },
+    {
+      "id": "9bd7f62c",
+      "role": "focal",
+      "true_label": "Weak_leakage",
+      "cycle_1based": 268,
+      "block_id": 9,
+      "profile": [
+        3,
+        80,
+        1,
+        130,
+        0
+      ]
+    },
+    {
+      "id": "edf14453",
+      "role": "focal",
+      "true_label": "Weak_leakage",
+      "cycle_1based": 1732,
+      "block_id": 139,
+      "profile": [
+        100,
+        80,
+        1,
+        130,
+        0
+      ]
+    },
+    {
+      "id": "5a4ef21f",
+      "role": "canary",
+      "true_label": "Severe_leakage",
+      "cycle_1based": 247,
+      "block_id": 6,
+      "profile": [
+        3,
+        100,
+        2,
+        130,
+        0
+      ]
+    },
+    {
+      "id": "292f7df4",
+      "role": "canary",
+      "true_label": "Weak_leakage",
+      "cycle_1based": 1020,
+      "block_id": 76,
+      "profile": [
+        20,
+        100,
+        1,
+        130,
+        0
+      ]
+    },
+    {
+      "id": "a803b5c9",
+      "role": "canary",
+      "true_label": "No_leakage",
+      "cycle_1based": 2172,
+      "block_id": 192,
+      "profile": [
+        100,
+        80,
+        0,
+        90,
+        0
+      ]
+    },
+    {
+      "id": "8362862a",
+      "role": "focal",
+      "true_label": "No_leakage",
+      "cycle_1based": 309,
+      "block_id": 14,
+      "profile": [
+        3,
+        80,
+        0,
+        130,
+        0
+      ]
+    },
+    {
+      "id": "2ea86893",
+      "role": "focal",
+      "true_label": "Weak_leakage",
+      "cycle_1based": 1000,
+      "block_id": 74,
+      "profile": [
+        20,
+        80,
+        1,
+        130,
+        0
+      ]
+    },
+    {
+      "id": "ed6c25a1",
+      "role": "focal",
+      "true_label": "No_leakage",
+      "cycle_1based": 1041,
+      "block_id": 79,
+      "profile": [
+        20,
+        80,
+        0,
+        130,
+        0
+      ]
+    },
+    {
+      "id": "8d6d8963",
+      "role": "focal",
+      "true_label": "Severe_leakage",
+      "cycle_1based": 1112,
+      "block_id": 87,
+      "profile": [
+        20,
+        100,
+        2,
+        115,
+        0
+      ]
+    },
+    {
+      "id": "6ee2a23b",
+      "role": "focal",
+      "true_label": "Weak_leakage",
+      "cycle_1based": 1885,
+      "block_id": 157,
+      "profile": [
+        100,
+        100,
+        1,
+        115,
+        0
+      ]
+    },
+    {
+      "id": "ed1b2468",
+      "role": "focal",
+      "true_label": "Weak_leakage",
+      "cycle_1based": 421,
+      "block_id": 27,
+      "profile": [
+        3,
+        100,
+        1,
+        115,
+        0
+      ]
+    },
+    {
+      "id": "3a7a2f85",
+      "role": "focal",
+      "true_label": "Severe_leakage",
+      "cycle_1based": 380,
+      "block_id": 22,
+      "profile": [
+        3,
+        100,
+        2,
+        115,
+        0
+      ]
+    },
+    {
+      "id": "ea6c447c",
+      "role": "focal",
+      "true_label": "No_leakage",
+      "cycle_1based": 1773,
+      "block_id": 144,
+      "profile": [
+        100,
+        80,
+        0,
+        130,
+        0
+      ]
+    },
+    {
+      "id": "5cdd3f55",
+      "role": "focal",
+      "true_label": "Severe_leakage",
+      "cycle_1based": 959,
+      "block_id": 69,
+      "profile": [
+        20,
+        80,
+        2,
+        130,
+        0
+      ]
+    },
+    {
+      "id": "2ac65069",
+      "role": "canary",
+      "true_label": "Weak_leakage",
+      "cycle_1based": 667,
+      "block_id": 57,
+      "profile": [
+        3,
+        80,
+        1,
+        90,
+        0
+      ]
+    },
+    {
+      "id": "b55f9a71",
+      "role": "focal",
+      "true_label": "Weak_leakage",
+      "cycle_1based": 1153,
+      "block_id": 92,
+      "profile": [
+        20,
+        100,
+        1,
+        115,
+        0
+      ]
+    },
+    {
+      "id": "99c728b9",
+      "role": "canary",
+      "true_label": "Weak_leakage",
+      "cycle_1based": 1752,
+      "block_id": 141,
+      "profile": [
+        100,
+        100,
+        1,
+        130,
+        0
+      ]
+    },
+    {
+      "id": "854c8bc8",
+      "role": "focal",
+      "true_label": "Severe_leakage",
+      "cycle_1based": 1691,
+      "block_id": 134,
+      "profile": [
+        100,
+        80,
+        2,
+        130,
+        0
+      ]
+    },
+    {
+      "id": "069585c8",
+      "role": "focal",
+      "true_label": "Severe_leakage",
+      "cycle_1based": 227,
+      "block_id": 4,
+      "profile": [
+        3,
+        80,
+        2,
+        130,
+        0
+      ]
+    }
+  ]
+}

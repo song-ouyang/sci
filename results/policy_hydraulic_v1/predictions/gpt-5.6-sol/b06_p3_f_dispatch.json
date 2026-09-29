@@ -1,0 +1,9 @@
+{
+  "group": "b06_p3_f",
+  "block": 17,
+  "slot": 1,
+  "started_at": "2026-09-28T15:03:48.000454+00:00",
+  "monotonic_offset": 3060.010150874994,
+  "target_offset": 3060,
+  "protocol_sha256": "d77cb5331469db586c9159819777361a64f39fbd2e35c1cf4fc18bf8803c0220"
+}

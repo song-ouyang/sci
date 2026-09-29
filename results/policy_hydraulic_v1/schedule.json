@@ -1,0 +1,274 @@
+{
+  "pairs": [
+    {
+      "index": 0,
+      "block": 0,
+      "panel_id": "hydraulic_p03",
+      "round": 1,
+      "repeat": 1,
+      "conditions": [
+        "F",
+        "R"
+      ],
+      "names": [
+        "b01_p1_f",
+        "b01_p1_r"
+      ]
+    },
+    {
+      "index": 1,
+      "block": 0,
+      "panel_id": "hydraulic_p03",
+      "round": 1,
+      "repeat": 2,
+      "conditions": [
+        "R",
+        "F"
+      ],
+      "names": [
+        "b01_p2_r",
+        "b01_p2_f"
+      ]
+    },
+    {
+      "index": 2,
+      "block": 0,
+      "panel_id": "hydraulic_p03",
+      "round": 1,
+      "repeat": 3,
+      "conditions": [
+        "F",
+        "R"
+      ],
+      "names": [
+        "b01_p3_f",
+        "b01_p3_r"
+      ]
+    },
+    {
+      "index": 3,
+      "block": 1,
+      "panel_id": "hydraulic_p01",
+      "round": 1,
+      "repeat": 1,
+      "conditions": [
+        "R",
+        "F"
+      ],
+      "names": [
+        "b02_p1_r",
+        "b02_p1_f"
+      ]
+    },
+    {
+      "index": 4,
+      "block": 1,
+      "panel_id": "hydraulic_p01",
+      "round": 1,
+      "repeat": 2,
+      "conditions": [
+        "R",
+        "F"
+      ],
+      "names": [
+        "b02_p2_r",
+        "b02_p2_f"
+      ]
+    },
+    {
+      "index": 5,
+      "block": 1,
+      "panel_id": "hydraulic_p01",
+      "round": 1,
+      "repeat": 3,
+      "conditions": [
+        "R",
+        "F"
+      ],
+      "names": [
+        "b02_p3_r",
+        "b02_p3_f"
+      ]
+    },
+    {
+      "index": 6,
+      "block": 2,
+      "panel_id": "hydraulic_p02",
+      "round": 1,
+      "repeat": 1,
+      "conditions": [
+        "R",
+        "F"
+      ],
+      "names": [
+        "b03_p1_r",
+        "b03_p1_f"
+      ]
+    },
+    {
+      "index": 7,
+      "block": 2,
+      "panel_id": "hydraulic_p02",
+      "round": 1,
+      "repeat": 2,
+      "conditions": [
+        "F",
+        "R"
+      ],
+      "names": [
+        "b03_p2_f",
+        "b03_p2_r"
+      ]
+    },
+    {
+      "index": 8,
+      "block": 2,
+      "panel_id": "hydraulic_p02",
+      "round": 1,
+      "repeat": 3,
+      "conditions": [
+        "R",
+        "F"
+      ],
+      "names": [
+        "b03_p3_r",
+        "b03_p3_f"
+      ]
+    },
+    {
+      "index": 9,
+      "block": 3,
+      "panel_id": "hydraulic_p01",
+      "round": 2,
+      "repeat": 1,
+      "conditions": [
+        "F",
+        "R"
+      ],
+      "names": [
+        "b04_p1_f",
+        "b04_p1_r"
+      ]
+    },
+    {
+      "index": 10,
+      "block": 3,
+      "panel_id": "hydraulic_p01",
+      "round": 2,
+      "repeat": 2,
+      "conditions": [
+        "R",
+        "F"
+      ],
+      "names": [
+        "b04_p2_r",
+        "b04_p2_f"
+      ]
+    },
+    {
+      "index": 11,
+      "block": 3,
+      "panel_id": "hydraulic_p01",
+      "round": 2,
+      "repeat": 3,
+      "conditions": [
+        "F",
+        "R"
+      ],
+      "names": [
+        "b04_p3_f",
+        "b04_p3_r"
+      ]
+    },
+    {
+      "index": 12,
+      "block": 4,
+      "panel_id": "hydraulic_p02",
+      "round": 2,
+      "repeat": 1,
+      "conditions": [
+        "R",
+        "F"
+      ],
+      "names": [
+        "b05_p1_r",
+        "b05_p1_f"
+      ]
+    },
+    {
+      "index": 13,
+      "block": 4,
+      "panel_id": "hydraulic_p02",
+      "round": 2,
+      "repeat": 2,
+      "conditions": [
+        "F",
+        "R"
+      ],
+      "names": [
+        "b05_p2_f",
+        "b05_p2_r"
+      ]
+    },
+    {
+      "index": 14,
+      "block": 4,
+      "panel_id": "hydraulic_p02",
+      "round": 2,
+      "repeat": 3,
+      "conditions": [
+        "R",
+        "F"
+      ],
+      "names": [
+        "b05_p3_r",
+        "b05_p3_f"
+      ]
+    },
+    {
+      "index": 15,
+      "block": 5,
+      "panel_id": "hydraulic_p03",
+      "round": 2,
+      "repeat": 1,
+      "conditions": [
+        "F",
+        "R"
+      ],
+      "names": [
+        "b06_p1_f",
+        "b06_p1_r"
+      ]
+    },
+    {
+      "index": 16,
+      "block": 5,
+      "panel_id": "hydraulic_p03",
+      "round": 2,
+      "repeat": 2,
+      "conditions": [
+        "R",
+        "F"
+      ],
+      "names": [
+        "b06_p2_r",
+        "b06_p2_f"
+      ]
+    },
+    {
+      "index": 17,
+      "block": 5,
+      "panel_id": "hydraulic_p03",
+      "round": 2,
+      "repeat": 3,
+      "conditions": [
+        "R",
+        "F"
+      ],
+      "names": [
+        "b06_p3_r",
+        "b06_p3_f"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "bearing-baseline-extraction-amendment-v2",
+  "created_at_utc": "2026-09-28T15:56:31.641749+00:00",
+  "prior_plan_sha256": "85619113667ab32f3b8d2d12800642553fb0fd428cb3208be3ef14da3379de46",
+  "prior_failure_sha256": "b782e413685205956c53b2193f23b2442399d4df403ebd4f42d67753a4400c76",
+  "code_sha256": {
+    "src/analysis/extract_bearing_baseline_v2.py": "4b380bc8df4771a0f96815345128bf05e16c5ed71b78fd2958205db4521cf5dd",
+    "tests/test_bearing_baseline_extraction_v2.py": "f803c05cab2257b25fbc70f3a6b181037aa6b4da7efe4c10a14d2f8a6b3f708f"
+  },
+  "change": "For the final10000..32000Hz inclusive band, include all legal rFFT bins with frequency>=10000. rFFT has no mathematically above-Nyquist bins; a32000.000000000004Hz floating representation must not drop Nyquist. Other features, masks, one-sided weighting, normalization, records and source splits unchanged.",
+  "observed_trigger": {
+    "id": "ab06d281",
+    "member": "KI16/N15_M07_F04_KI16_16.mat",
+    "error": "Spectral partition does not sum to1",
+    "sample_count": 287568,
+    "max_rfftfreq_hz": 32000.000000000004,
+    "max_frequency_overshoot_hz": 3.637978807091713e-12,
+    "power_fraction_above_32000": 7.954795680041464e-09,
+    "bins_above_32000": 1
+  },
+  "output_checks": "Recompute all48 original records and require all28 six-decimal strings to equal frozen old inputs; retain original36 test strings verbatim. Compare corrected/unmodified operations on all120 development records; explicitly report changes and legacy assertion failures. No sample replacement or score access.",
+  "new_model_calls": 0,
+  "new_downloads": 0
+}

@@ -30,7 +30,7 @@
 \graphicspath{{./}}
 \begin{document}
 \maketitle
-\noindent\textbf{Contents.} Sections 1--7 reproduce the report of the preliminary stages (a 130-source paired study of five LLM services, a representation and context follow-up, a DeepSeek/Qwen API addition and the source-disjoint follow-up), with extended methods, all repeated outcomes and protocol amendments; its original numbering is retained. Appendix~A lists audit controls. Appendix~B documents two non-controlled Claude collections that are excluded from every analysis in the main paper. Appendices~C and~D give the first hydraulic run and the post hoc repetition and timing audit, and Appendix~E the ABBA/BAAB replication. Appendix~F reports the full inferential statistics, Appendix~G the completion of the hydraulic study, and Appendix~H the tuned supervised baselines.
+\noindent\textbf{Contents.} Sections 1--7 reproduce the report of the preliminary stages (a 130-source paired study of five LLM services, a representation and context follow-up, a DeepSeek/Qwen API addition and the source-disjoint follow-up), with extended methods, all repeated outcomes and protocol amendments; its original numbering is retained. Appendix~A lists audit controls. Appendix~B documents two non-controlled Claude collections that are excluded from every analysis in the main paper. Appendices~C and~D give the first hydraulic run and the post hoc repetition and timing audit, and Appendix~E the ABBA/BAAB replication. Appendix~F reports the full inferential statistics, including the single-call audit and the canary-threshold sensitivity, Appendix~G the completion of the hydraulic study, and Appendix~H the tuned supervised baselines. Appendix~I documents the paired-position and fixed-policy studies on new hydraulic blocks and on the Paderborn bearing rig, and Appendix~J the same-feature supervised bearing benchmark.
 
 \section*{Summary of the preliminary report}
 Correct fault labels do not establish that a large language model (LLM) uses sensor descriptions correctly. We examine this distinction in an exploratory paired study of 60 held-out C-MAPSS engines and 70 held-out Tennessee Eastman Process (TEP) runs. Three GPT services receive clean inputs and a TEP descriptor rotation that preserves numerical strings and positions. Supervised references use the same rounded features. Primary TEP accuracy losses are 28.6 percentage points for GPT-5.5 (conditional 95\% interval [11.4, 45.7]) and 77.1 for GPT-5.6 Sol ([67.1, 87.1]); GPT-6 Astra has unchanged labels. A separate 84-request follow-up tests field reordering, descriptor removal, noncyclic corruption and context. For seven matched cases, repeat-1 correct counts change from 7/7 to 2/7 for Sol and from 7/7 to 6/7 for Astra when the surrounding 63 records are removed. An additional DeepSeek/Qwen study yields 15/18 valid responses: Qwen's primary corruption loss is 22.9 percentage points, whereas DeepSeek's primary corrupted response is invalid. A further 84-request follow-up adds 172 disjoint sources, multiple mappings, crossed context controls and FD002 transfer. Across all stages, 209/213 responses are valid on 302 source units. Primary FD002 accuracy is 60.0\% for Sol and 71.7\% for Astra. Uncertainty is conditional on the observed grouped responses. Tool-enabled conversational records are reported separately and excluded from the controlled comparisons. The findings distinguish mapping sensitivity from classification accuracy and motivate reporting context effects and response availability alongside scores; they establish neither internal reasoning mechanisms nor industrial generalizability.
@@ -976,6 +976,12 @@ The smallest attainable randomization $p$-value is reported for each contrast. W
 \input{supp_stats_tables}
 
 \FloatBarrier
+\subsection*{Error structure, single-call audit and known-answer screening}
+The following tables were added in the second revision (code: \nolinkurl{src/analysis/error_structure_v3.py}, \nolinkurl{single_call_audit_v3.py} and \nolinkurl{decision_policies_v3.py}). Canaries are the labelled background records of the context studies and the dedicated canaries of the prospective study; the acceptance threshold $\tau=0.8$ was fixed before these analyses.
+
+\input{supp_structure_tables}
+
+\FloatBarrier
 \section{Completion of the hydraulic study}\label{app:hydraulic_completion}
 The first hydraulic run (Appendix~C) stopped after two network time-outs in block R3 (\texttt{a\_back\_r3}, \texttt{clean\_r3}), leaving 32 jobs unattempted. Its stopping rule prevented retries within that run. A separately versioned completion (\nolinkurl{results/hydraulic_validation_v1_completion}) was then prepared. It re-executes blocks R3, R4 and R5 in full, 37 jobs and 766 classification slots, using byte-identical prompt files (verified against the first protocol's SHA-256 values), the original within-block order, the same service alias, CLI version, reasoning setting, time-out, concurrency limit and single-attempt policy. Re-running R3 in full, rather than only its missing jobs, keeps every analysed block contemporaneous. The completion protocol was hashed before any new call.
 
@@ -997,6 +1003,276 @@ Refitting RF and MLP with five further seeds changed accuracy by 0--5 points in 
 \input{supp_baseline_tables}
 \FloatBarrier
 
+
+\clearpage\section{New-data randomized position and fixed-policy studies}
+
+\label{sec:policy_supp}
+
+This appendix adds two prospectively frozen exploratory studies after the archived results. It does not complete the interrupted earlier hydraulic schedule. Exact new protocols, fixed input/answer separation, selection manifests, raw outputs and per-decision exports are in the local reconstruction package.
+
+\subsection{Prospective new-data position and decision-check studies}
+Two subsequent studies fix their new data, prompts, assignment schedule, code and scoring rules before new inference, after the earlier outcomes are known. The hydraulic source pool excludes all 54 previously used joint-condition blocks. Among 90 remaining eligible blocks, fixed hashes select six common valve--accumulator settings in the nine pump--cooler strata. Three disjoint panels each contain nine focal and nine background cycles, one of each role per stratum. This adds 27 focal and 27 background cycles from 54 new condition blocks on the same rig, not 54 devices. The original 28 physical-channel summaries and units are retained.
+
+The separate Paderborn bearing task uses healthy and naturally damaged inner-/outer-race specimens produced in accelerated-life tests \citep{lessmeier2016benchmark}. A fixed specimen split assigns three bearings per class to the focal panel and two to its background. Each of nine focal bearings contributes one complete recording under each of four operating regimes (36 records); each of six other bearings contributes one recording under two fixed regimes (12 records). Hashed selection fixes the recording and regime choices without model outcomes. These are 15 physical specimens on one other test rig. No transient windows, fault thresholds or best-performing recordings are selected.
+
+Seven bearing channels (force, two phase currents, speed, bearing-module temperature, torque and vibration) supply mean and population standard deviation. The three high-rate current/vibration channels additionally supply RMS, crest factor and Pearson kurtosis; vibration supplies five fixed relative-power bands over 0--100, 100--500, 500--2000, 2000--10000 and 10000--32000 Hz, giving 28 features in total. Computation uses the full recording and the documented nominal 64 kHz rate for those high-rate channels, retaining actual lengths and time-axis checks. The MAT unit fields are empty: physical amplitude units are unspecified in the files and values retain their recorded scale; dimensionless ratios are distinguished from physical units. Empty unit fields do not establish that the sensors were uncalibrated. No per-record bearing identity, operating-setting code, source filename or reference label enters the model payload.
+
+Each new prompt contains one shared feature dictionary and six-decimal value arrays. This compact serialization is a new interface; it is not an exact-payload replication of earlier prompts. Condition F places the fixed focal group before its background; R places it after the same background, without changing any record or within-group order. Two sequential rounds each use three F/R pairs per panel. Within each round, hydraulic panel order is shuffled; within each pair, F/R are independently assigned to two near-simultaneous launch slots. A seed fixed before calls sets the entire schedule. The hydraulic design therefore plans 18 pairs/36 requests/648 output slots; the bearing design plans six pairs/12 requests/576 slots. Repeated outputs correspond to 27 and 36 distinct focal records, respectively, not to 324 and 432 independent sources.
+
+Both studies use Sol following its earlier variability, a result-informed service choice that cannot support a model-family ranking. They request GPT-5.6 Sol at medium reasoning effort through fresh isolated subscription-authenticated CLI sessions, with tools, project context and demonstrations disabled. Requests start on a fixed 180-second grid with a 170-second timeout and at most two active calls. Each job has one invocation. A failed/invalid call, unknown usage, token-dispatch threshold or grid deadline stops later pairs; failed and unattempted slots remain visible. The hydraulic/bearing token thresholds are 900,000/1,000,000 observed input-plus-output tokens, including cached input. In-flight calls may exceed a dispatch threshold. Terminal outputs are audited and frozen before the answer key is opened for scoring.
+
+For pair $j$, the position endpoint is $d_j=(C_{Fj}-C_{Rj})/n_j$, where $C$ counts usable correct focal labels and $n_j$ is the planned focal size. Failed requests supply zero usable correct output. The estimate is the mean over scheduled pairs. Only if every pair is dispatched, grid lateness is at most 3 s and launch skew at most 2 s is a two-sided within-pair sign-randomization reference calculated over all $2^J$ assignments. Its exactness additionally assumes the sharp null for slot outcomes, no cross-request interference or carryover, and assignment-invariant eligibility/complete-dispatch selection; timing checks alone do not prove these assumptions. This is a request-assignment analysis, not a test treating jointly generated labels as independent. The two datasets are analyzed separately; references are exploratory and unadjusted across datasets, with no threshold-based confirmation or pooled population claim. Sample size was fixed by feasibility rather than a population-effect power calculation.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=\linewidth]{figures/policy_design_v1.pdf}
+\caption{Frozen paired-position and decision-check design within one panel--round. F/R columns denote input conditions, not launch order: each pair randomizes their two launch slots. F1 is the common initial diagnosis; F2 and R2 are contemporaneous alternative checks.}
+\label{fig:policy_design}
+\end{figure}
+
+The engineering comparison fixes F1 as the initial label in each panel--round. \emph{Same} retains it only when F2 agrees; \emph{View} retains it only when R2 agrees. F2 and R2 are the two calls of the same second pair, making their time gaps from the common F1 similar. Both policies require two valid calls and otherwise abstain. Secondary policies use three F calls (or separately three R calls): majority returns a label with at least two votes and abstains on a three-way tie; unanimity requires all three labels to match. No policy is chosen or tuned after new results. ``First'' means frozen pair index, not earliest completion.
+
+For every fixed policy we count accepted correct/error outputs, rejected initially correct/error outputs, required-call failures, coverage, error among accepted cases and usable correct yield (accepted correct divided by planned decisions). Voting corrections and harms are counted separately because voting may change the initial label. Same/View also report errors and correct labels rejected by only one gate. Policy denominators repeat the same sources across two rounds (54 hydraulic and 72 bearing decision opportunities). Costs are the actual requests, known tokens and summed client execution seconds of each policy's prescribed calls; shared experimental calls are charged to each hypothetical policy, not treated as free cached evidence. These are discrete policies, not a fitted continuous risk--coverage curve.
+
+
+\subsection{Hydraulic execution and decision accounting}
+
+Scheduled/attempted/valid requests: 36/36/36; not attempted: 0; valid/planned full output slots: 648/648; valid/planned focal slots: 324/324; known tokens: 545,964; unknown-usage attempts: 0. The frozen protocol and output-manifest SHA-256 values are recorded in the package and the generated score artifact.
+
+\begin{table}[htbp]\centering\small
+\caption{Hydraulic paired request outcomes. F/R counts refer only to the fixed focal records. Client launch skew is not a server-time measurement.}
+\label{tab:policy_pairs_hydraulic}
+\begin{tabular}{@{}lrrrrrr@{}}\toprule
+Panel & Round & Repeat & F correct & R correct & Focal $n$ & Skew (s) \\\midrule
+hydraulic\_p03 & 1 & 1 & 7 & 7 & 9 & 0.000 \\
+hydraulic\_p03 & 1 & 2 & 7 & 7 & 9 & 0.001 \\
+hydraulic\_p03 & 1 & 3 & 7 & 7 & 9 & 0.000 \\
+hydraulic\_p01 & 1 & 1 & 9 & 9 & 9 & 0.000 \\
+hydraulic\_p01 & 1 & 2 & 9 & 9 & 9 & 0.005 \\
+hydraulic\_p01 & 1 & 3 & 6 & 9 & 9 & 0.001 \\
+hydraulic\_p02 & 1 & 1 & 4 & 9 & 9 & 0.002 \\
+hydraulic\_p02 & 1 & 2 & 9 & 9 & 9 & 0.008 \\
+hydraulic\_p02 & 1 & 3 & 9 & 9 & 9 & 0.001 \\
+hydraulic\_p01 & 2 & 1 & 9 & 9 & 9 & 0.001 \\
+hydraulic\_p01 & 2 & 2 & 3 & 9 & 9 & 0.000 \\
+hydraulic\_p01 & 2 & 3 & 8 & 9 & 9 & 0.000 \\
+hydraulic\_p02 & 2 & 1 & 8 & 9 & 9 & 0.001 \\
+hydraulic\_p02 & 2 & 2 & 3 & 3 & 9 & 0.001 \\
+hydraulic\_p02 & 2 & 3 & 9 & 4 & 9 & 0.001 \\
+hydraulic\_p03 & 2 & 1 & 7 & 7 & 9 & 0.000 \\
+hydraulic\_p03 & 2 & 2 & 7 & 7 & 9 & 0.001 \\
+hydraulic\_p03 & 2 & 3 & 7 & 7 & 9 & 0.001 \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[htbp]\centering\small
+\caption{Hydraulic complete fixed-policy outcomes, including R variants. Yield is accepted correct/planned. Missing means a required call was invalid or absent.}
+\label{tab:policy_full_hydraulic}
+\begin{tabular}{@{}lrrrrrrr@{}}\toprule
+Policy & AC & AE & RC & RE & Missing & Yield (\%) & Tokens \\\midrule
+Majority\_F & 49 & 4 & 0 & 1 & 0 & 90.7 & 272,270 \\
+Majority\_R & 46 & 7 & 1 & 0 & 0 & 85.2 & 273,694 \\
+Same & 33 & 4 & 11 & 6 & 0 & 61.1 & 178,936 \\
+Single\_F & 44 & 10 & 0 & 0 & 0 & 81.5 & 91,153 \\
+Single\_R & 50 & 4 & 0 & 0 & 0 & 92.6 & 94,951 \\
+Unanimity\_F & 29 & 4 & 15 & 6 & 0 & 53.7 & 272,270 \\
+Unanimity\_R & 43 & 4 & 7 & 0 & 0 & 79.6 & 273,694 \\
+View & 39 & 5 & 5 & 5 & 0 & 72.2 & 179,968 \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[htbp]\centering\small
+\caption{Hydraulic all-pair focal flip ranges by panel--round. Within each condition there are three dependent pairs; across conditions there are nine. No flip-rate subtraction is used.}
+\label{tab:policy_flips_hydraulic}
+\begin{tabular}{@{}llrrr@{}}\toprule
+Panel & Round & Within F & Within R & Cross F/R \\\midrule
+hydraulic\_p03 & 1 & 0--0 & 0--0 & 0--0 \\
+hydraulic\_p01 & 1 & 0--3 & 0--0 & 0--3 \\
+hydraulic\_p02 & 1 & 0--5 & 0--0 & 0--5 \\
+hydraulic\_p01 & 2 & 1--7 & 0--0 & 0--6 \\
+hydraulic\_p02 & 2 & 1--6 & 4--6 & 0--6 \\
+hydraulic\_p03 & 2 & 0--0 & 0--0 & 0--0 \\
+\bottomrule\end{tabular}\end{table}
+
+\FloatBarrier
+
+\subsection{Bearing execution and decision accounting}
+
+Scheduled/attempted/valid requests: 12/12/12; not attempted: 0; valid/planned full output slots: 576/576; valid/planned focal slots: 432/432; known tokens: 266,818; unknown-usage attempts: 0. The frozen protocol and output-manifest SHA-256 values are recorded in the package and the generated score artifact.
+
+\begin{table}[htbp]\centering\small
+\caption{Bearing paired request outcomes. F/R counts refer only to the fixed focal records. Client launch skew is not a server-time measurement.}
+\label{tab:policy_pairs_paderborn}
+\begin{tabular}{@{}lrrrrrr@{}}\toprule
+Panel & Round & Repeat & F correct & R correct & Focal $n$ & Skew (s) \\\midrule
+p01 & 1 & 1 & 4 & 13 & 36 & 0.000 \\
+p01 & 1 & 2 & 4 & 14 & 36 & 0.001 \\
+p01 & 1 & 3 & 4 & 4 & 36 & 0.001 \\
+p01 & 2 & 1 & 7 & 12 & 36 & 0.001 \\
+p01 & 2 & 2 & 4 & 16 & 36 & 0.003 \\
+p01 & 2 & 3 & 7 & 8 & 36 & 0.002 \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[htbp]\centering\small
+\caption{Bearing complete fixed-policy outcomes, including R variants. Yield is accepted correct/planned. Missing means a required call was invalid or absent.}
+\label{tab:policy_full_paderborn}
+\begin{tabular}{@{}lrrrrrrr@{}}\toprule
+Policy & AC & AE & RC & RE & Missing & Yield (\%) & Tokens \\\midrule
+Majority\_F & 11 & 61 & 0 & 0 & 0 & 15.3 & 131,890 \\
+Majority\_R & 28 & 41 & 1 & 2 & 0 & 38.9 & 134,928 \\
+Same & 8 & 58 & 3 & 3 & 0 & 11.1 & 87,942 \\
+Single\_F & 11 & 61 & 0 & 0 & 0 & 15.3 & 43,931 \\
+Single\_R & 25 & 47 & 0 & 0 & 0 & 34.7 & 44,833 \\
+Unanimity\_F & 8 & 58 & 3 & 3 & 0 & 11.1 & 131,890 \\
+Unanimity\_R & 6 & 23 & 19 & 24 & 0 & 8.3 & 134,928 \\
+View & 9 & 21 & 2 & 40 & 0 & 12.5 & 89,404 \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[htbp]\centering\small
+\caption{Bearing all-pair focal flip ranges by panel--round. Within each condition there are three dependent pairs; across conditions there are nine. No flip-rate subtraction is used.}
+\label{tab:policy_flips_paderborn}
+\begin{tabular}{@{}llrrr@{}}\toprule
+Panel & Round & Within F & Within R & Cross F/R \\\midrule
+p01 & 1 & 0--0 & 3--21 & 0--21 \\
+p01 & 2 & 0--6 & 4--22 & 3--30 \\
+\bottomrule\end{tabular}\end{table}
+
+\FloatBarrier
+
+The complete CSV exports additionally retain full-record labels, every gate action, the two one-sided incremental rejection sets, actual request start/end times, client execution durations and required-call costs. No source-pair resampling, continuous risk curve or independent-record significance test is added to these policies.
+\section{Same-feature supervised bearing benchmark}
+
+\label{sec:bearing_baseline_supp}
+
+This appendix documents the result-informed benchmark performed after the frozen bearing language-model outcomes. It adds 108 development recordings from the same six background specimens, no new test specimens and no new language-model requests. It does not retrospectively preregister the earlier study.
+
+\subsection{Same-feature supervised bearing reference}
+After the bearing language-model outcomes were known, a separately frozen follow-up retained their 36 focal recordings from nine physical bearings as the test set. Its development data use only the six original background specimens: K001/K004 (healthy), KA15/KA22 (outer-race fault) and KI16/KI18 (inner-race fault). Each contributes five complete recordings under each of four operating regimes, selected by the existing outcome-independent hash ordering, giving 120 development records. Twelve earlier background recordings are reused and 108 are added. The test specimens remain K002/K003/K005, KA04/KA16/KA30 and KI04/KI14/KI21. No physical bearing or raw recording crosses the development/test boundary; increasing repeated recordings adds no physical specimens.
+
+Both sides use exactly the original 28 numerical features, column order and six-decimal serialization. Test strings and record membership are unchanged; development features use the same full-record formulas. No test-bearing windows, additional test recordings, frequency-band selection or outcome-based source substitution is introduced. Bearing identity, regime code, filename and reference label are excluded from predictor features. This is a result-informed diagnostic benchmark, not an untouched prospective test: the test labels are excluded from conventional fitting and tuning, but prior language-model outcomes motivated the follow-up. The conventional classifiers receive development labels and more development recordings; the language-model calls did not receive those labels. Equal numerical representation does not equalize supervision, prior exposure or resources.
+
+An RBF SVM uses training-fitted standardization and the six combinations of $C\in\{0.1,1,10\}$ and $\gamma\in\{\mathrm{scale},0.1\}$. A 200-tree random forest uses the four combinations of maximum features in $\{\mathrm{sqrt},1.0\}$ and minimum leaf size in $\{1,3\}$, with seed 20260928. For each class, one of its two development bearings is held out for validation and the other is used for training. All eight combinations are enumerated; each trains on three bearings/60 records and validates on the other three/60. Preprocessing is fitted inside each training fold. Mean validation accuracy selects parameters separately for each model; ties select the first candidate in the fixed ordering. The eight overlapping splits are not eight independent replications. Both classifiers are reported, with no model choice based on test results. Final primary fits use all 120 development records.
+
+Four secondary fits per classifier jointly hold out the test specimens and one operating regime. Each removes that regime from all development data, retunes on the remaining 90 records with the same eight bearing-disjoint combinations (45 training/45 validation records), and tests only the nine original focal records from the omitted regime. No primary-fit parameters are carried over. Their combined predictions cover the same 36 records once, using four fitted models. The contrast with the primary fit changes regime support, training size and selected parameters; it is not an isolated causal effect of regime shift. A training-majority constant, with healthy first in ties, and the uniform-prior expected accuracy of one third provide simple references.
+
+The data rules, finite grids, folds, code and input hashes are frozen before fitting; final test predictions and full development-selection outputs are frozen before test evaluation. All 12 existing bearing language-model calls are compared separately on those same 36 IDs. We report accuracy, macro F1, confusion matrices, class recall and each test bearing's correct count, without treating repeated records or calls as independent devices or adding a population confidence interval. Fixed-classifier row reversal, singleton prediction and appended-background checks verify software behavior, not learned physical semantics. Appendix G retains the split details, all selected configurations, specimen/regime results and individual language-model calls; all candidate/fold predictions are available in the reconstruction package.
+
+
+\begin{table}[htbp]\centering\small
+\caption{Same-feature supervised reference on the nine fixed test bearings. Seen-regime fits use 120 records from six other bearings; regime-held-out fits use 90 records per omitted regime and separate retuning. All rows use the same 36 test recordings.}
+\label{tab:supp_bearing_baseline}
+\begin{tabular}{@{}llrrrr@{}}\toprule
+Development & Model & Correct & Accuracy (\%) & Macro F1 & Per bearing \\\midrule
+Seen regimes & SVM & 10/36 & 27.8 & 0.274 & 0--3/4 \\
+Seen regimes & RF & 4/36 & 11.1 & 0.074 & 0--4/4 \\
+Regime held out & SVM & 13/36 & 36.1 & 0.317 & 0--3/4 \\
+Regime held out & RF & 9/36 & 25.0 & 0.240 & 0--3/4 \\
+Either & Constant & 12/36 & 33.3 & 0.167 & 0--4/4 \\
+\bottomrule\end{tabular}
+\par\smallskip\footnotesize The four held-out-regime fits share specimens and training records. These are descriptive results on one rig; the constant tie rule predicts healthy. The frozen language-model calls have no corresponding supervised-development budget.
+\end{table}
+
+\begin{table}[htbp]\centering\small
+\caption{Development-only parameter selection. Each mean uses the same eight overlapping specimen-disjoint splits within that task. Validation outcomes guide parameters but never change the frozen grid or test set.}
+\label{tab:bearing_configs}
+\begin{tabular}{@{}lllrr@{}}\toprule
+Task / omitted regime & Model & Selected configuration & CV (\%) & Train $n$ \\\midrule
+Primary & SVM & $C=1$, $\gamma=scale$ & 85.4 & 120 \\
+Primary & RF & features=sqrt, leaf=3 & 76.7 & 120 \\
+N15\_M07\_F10 & SVM & $C=1$, $\gamma=scale$ & 90.0 & 90 \\
+N15\_M07\_F10 & RF & features=sqrt, leaf=3 & 77.8 & 90 \\
+N09\_M07\_F10 & SVM & $C=0.1$, $\gamma=scale$ & 70.0 & 90 \\
+N09\_M07\_F10 & RF & features=sqrt, leaf=1 & 79.2 & 90 \\
+N15\_M01\_F10 & SVM & $C=1$, $\gamma=scale$ & 78.1 & 90 \\
+N15\_M01\_F10 & RF & features=sqrt, leaf=1 & 73.6 & 90 \\
+N15\_M07\_F04 & SVM & $C=0.1$, $\gamma=scale$ & 79.2 & 90 \\
+N15\_M07\_F04 & RF & features=sqrt, leaf=3 & 71.9 & 90 \\
+\bottomrule\end{tabular}
+\end{table}
+
+\FloatBarrier
+
+\begin{table}[htbp]\centering\small
+\caption{Per-regime test results on the same nine unseen specimens. Each primary model is fitted once; each omitted-regime model is separately retuned and fitted on the other three regimes.}
+\label{tab:bearing_regimes}
+\begin{tabular}{@{}llrrr@{}}\toprule
+Test regime & Model & Primary correct & Held-out correct & Held-out F1 \\\midrule
+N15\_M07\_F10 & SVM & 3/9 & 4/9 & 0.448 \\
+N15\_M07\_F10 & RF & 1/9 & 1/9 & 0.074 \\
+N09\_M07\_F10 & SVM & 3/9 & 3/9 & 0.167 \\
+N09\_M07\_F10 & RF & 1/9 & 3/9 & 0.222 \\
+N15\_M01\_F10 & SVM & 3/9 & 3/9 & 0.167 \\
+N15\_M01\_F10 & RF & 1/9 & 2/9 & 0.217 \\
+N15\_M07\_F04 & SVM & 1/9 & 3/9 & 0.167 \\
+N15\_M07\_F04 & RF & 1/9 & 3/9 & 0.340 \\
+\bottomrule\end{tabular}
+\end{table}
+
+\begin{table}[htbp]\centering\small
+\caption{Complete test-specimen outcomes, four records per bearing. The combined held-out-regime column uses one prediction from each of four task-specific models for each specimen.}
+\label{tab:bearing_specimens}
+\begin{tabular}{@{}lrrrr@{}}\toprule
+Bearing & Primary SVM & Primary RF & Held-out SVM & Held-out RF \\\midrule
+K002 & 0/4 & 0/4 & 1/4 & 1/4 \\
+K003 & 3/4 & 0/4 & 2/4 & 2/4 \\
+K005 & 0/4 & 0/4 & 1/4 & 2/4 \\
+KA04 & 2/4 & 0/4 & 3/4 & 0/4 \\
+KA16 & 1/4 & 0/4 & 2/4 & 0/4 \\
+KA30 & 3/4 & 4/4 & 3/4 & 3/4 \\
+KI04 & 1/4 & 0/4 & 1/4 & 1/4 \\
+KI14 & 0/4 & 0/4 & 0/4 & 0/4 \\
+KI21 & 0/4 & 0/4 & 0/4 & 0/4 \\
+\bottomrule\end{tabular}
+\end{table}
+
+\begin{table}[htbp]\centering\small
+\caption{Confusion matrices with true class in rows, plus class recall. Every model/setting has 12 test records per class.}
+\label{tab:bearing_confusion}
+\begin{tabular}{@{}lllrrrr@{}}\toprule
+Task & Model & Truth & Pred. H & Pred. O & Pred. I & Recall (\%) \\\midrule
+Primary & SVM & Healthy & 3 & 9 & 0 & 25.0 \\
+Primary & SVM & Outer & 0 & 6 & 6 & 50.0 \\
+Primary & SVM & Inner & 0 & 11 & 1 & 8.3 \\
+Primary & RF & Healthy & 0 & 12 & 0 & 0.0 \\
+Primary & RF & Outer & 1 & 4 & 7 & 33.3 \\
+Primary & RF & Inner & 4 & 8 & 0 & 0.0 \\
+Held-out & SVM & Healthy & 4 & 8 & 0 & 33.3 \\
+Held-out & SVM & Outer & 3 & 8 & 1 & 66.7 \\
+Held-out & SVM & Inner & 3 & 8 & 1 & 8.3 \\
+Held-out & RF & Healthy & 5 & 7 & 0 & 41.7 \\
+Held-out & RF & Outer & 3 & 3 & 6 & 25.0 \\
+Held-out & RF & Inner & 5 & 6 & 1 & 8.3 \\
+\bottomrule\end{tabular}
+\end{table}
+
+\FloatBarrier
+
+\begin{table}[htbp]\centering\small
+\caption{All frozen bearing language-model calls on the unchanged 36 focal records. Repeats are repeated predictions of the same specimens, not independent test samples.}
+\label{tab:bearing_llm_calls}
+\begin{tabular}{@{}llrrrr@{}}\toprule
+Round & Condition & Repeat & Correct & Accuracy (\%) & Macro F1 \\\midrule
+1 & F & 1 & 4/36 & 11.1 & 0.101 \\
+1 & R & 1 & 13/36 & 36.1 & 0.386 \\
+1 & F & 2 & 4/36 & 11.1 & 0.101 \\
+1 & R & 2 & 14/36 & 38.9 & 0.421 \\
+1 & F & 3 & 4/36 & 11.1 & 0.101 \\
+1 & R & 3 & 4/36 & 11.1 & 0.101 \\
+2 & F & 1 & 7/36 & 19.4 & 0.199 \\
+2 & R & 1 & 12/36 & 33.3 & 0.350 \\
+2 & F & 2 & 4/36 & 11.1 & 0.101 \\
+2 & R & 2 & 16/36 & 44.4 & 0.473 \\
+2 & F & 3 & 7/36 & 19.4 & 0.199 \\
+2 & R & 3 & 8/36 & 22.2 & 0.218 \\
+\bottomrule\end{tabular}
+\end{table}
+
+Computation uses scikit-learn 1.9.1. The fixed protocol executes 400 development-fold fits and ten final fits. Candidate/fold predictions, all parameter means, selected configurations, source hashes and client timings are preserved. Training and prediction timings are local descriptive measurements, not a hardware-matched cost comparison with remote service calls. No record-level significance tests, label-permutation searches or feature-ranking claims are added.
+
+A preprocessing assertion exposed one floating-point Nyquist boundary in a newly selected recording: its terminal rFFT frequency was represented as 32000.000000000004 Hz and the legacy inclusive upper bound omitted a relative power of approximately $7.95\times10^{-9}$. A separately frozen extraction amendment includes all mathematically valid Nyquist bins. It changes one unrounded final-band value and no six-decimal development feature; all 48 original records were recomputed with all 28 strings unchanged. The failed extraction, fixed member list and both code versions remain archived. No recording was replaced and no test outcome guided this correction.
+
+The same-feature reference does not establish an adequate bearing classifier. Primary SVM and RF correctly classify only 10/36 and 4/36 records, below the constant's 12/36 in accuracy. SVM's macro F1 is higher than the constant's (0.274 versus 0.167), so it is not worse on every metric. A post hoc reading of the prespecified specimen table shows that the RF's four correct labels all belong to one outer-race specimen. Although selected development-fold means are 85.4\% and 76.7\%, those scores were used to select parameters among only six development specimens and are not independent estimates for the nine test specimens. Their failure to carry over is observable; it does not by itself identify a cause, quantify a population domain shift or prove that the classifiers have learned specimen identity. The joint specimen/regime holdouts yield 13/36 and 9/36, which likewise do not establish dependable classification. Their higher aggregate counts relative to the primary fits do not demonstrate that removing a regime improves generalization.
+
+Consequently, the poor language-model bearing scores cannot be attributed specifically to ineffective use of an otherwise validated feature representation. This comparison leaves the roles of summary compression, limited development specimens, train/test differences and classifier choice unresolved. It also does not prove that the raw measurements lack diagnostic information: the benchmark retains full signals, whereas the tested interface uses fixed summaries and omits geometry-specific envelope features. Low supervised scores do not vindicate the language model or make its rejection policies adequate. The engineering implication is to establish base-task performance on the intended source split before interpreting agreement or selective accuracy as diagnostic assurance. On the present bearing split, that prerequisite remains unmet for the tested conventional classifiers and the frozen language-model interface.
+
+\FloatBarrier
 \begingroup
 \small\raggedright
 \interlinepenalty=10000

@@ -1,0 +1,9 @@
+{
+  "group": "b02_p2_r",
+  "block": 4,
+  "slot": 0,
+  "started_at": "2026-09-28T15:16:30.342716+00:00",
+  "monotonic_offset": 720.0418370830012,
+  "target_offset": 720,
+  "protocol_sha256": "7fbc151c12cf5352a757c3fe26ad52c8b8461a076ce818b76af32b25dd77e7bc"
+}

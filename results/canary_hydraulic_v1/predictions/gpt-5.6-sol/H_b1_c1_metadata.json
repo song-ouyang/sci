@@ -1,0 +1,53 @@
+{
+  "protocol": "codex-grouped-revision-v3",
+  "model_requested": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "transport": "codex-cli-chatgpt-auth-https",
+  "cli_version": "codex-cli 0.155.0-alpha.9.2",
+  "runner_sha256": "02231b78a0ebb14066884418feaa8d82f3f6b2e3d8868815a4954e18bb0d7159",
+  "protocol_sha256": "383cc4e3f8e38f5a7845bbfe07bc9f27f3cea5418e10de81040a6f9a5d7914af",
+  "dataset": "hydraulic",
+  "condition": "H",
+  "repeat": 1,
+  "input_sha256": "3e19e56234c7e325763061306e9d0ff935f4614fd4d9fb2fb9ba849eab378745",
+  "fingerprint": "5bc9f85a2b4e135cdaf6eff6f9285376df3f0b93a220d8abd2bd309d29f86510",
+  "prompt_file": "/Users/guoba/work/sci-paper-llm-pdm/results/canary_hydraulic_v1/inference/prompts/H_b1_c1.txt",
+  "prompt_txt_sha256": "a89d458fe10b7d0751d48df0ddef71c2044d2d84f3005360338df48fe0e39ccc",
+  "base_instructions_sha256": "74cddbc5826ebf5b05cdd9a4382b5c3d0a983d408b3005173c4bc81810591564",
+  "batch": "H_b1_c1",
+  "n_samples": 27,
+  "started_at": "2026-09-29T00:13:26.464807+00:00",
+  "updated_at": "2026-09-29T00:13:54.533088+00:00",
+  "attempts": [
+    {
+      "attempt": 1,
+      "returncode": 0,
+      "timed_out": false,
+      "elapsed_seconds": 28.063,
+      "events_file": "H_b1_c1_attempt1_events.jsonl",
+      "response_file": "H_b1_c1_attempt1_response.txt",
+      "stderr_file": "H_b1_c1_attempt1_stderr.txt",
+      "usage": {
+        "input_tokens": 19878,
+        "cached_input_tokens": 8832,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 849,
+        "reasoning_output_tokens": 409
+      },
+      "errors": [],
+      "malformed_event_lines": []
+    }
+  ],
+  "tools_observed": 0,
+  "answer_keys_read": false,
+  "independent_session_per_group": true,
+  "independent_session_per_sample": false,
+  "temperature": null,
+  "temperature_note": "Not exposed/set by Codex CLI",
+  "system_prompt_note": "Codex base instructions retained; user config, project instructions, skills and plugins disabled",
+  "status": "complete",
+  "previous_execution_metadata_file": null,
+  "server_resolved_model": null,
+  "model_identity_note": "Model requested explicitly; server-resolved model identity is not provided by the CLI event stream",
+  "prediction_sha256": "2d536d9c5e6b074a3140a92af6302f2bdd610228e63a982674ff2a00c2a324c6"
+}

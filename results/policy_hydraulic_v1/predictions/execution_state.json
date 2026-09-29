@@ -1,0 +1,162 @@
+{
+  "started_at": "2026-09-28T14:12:47.809911+00:00",
+  "protocol_sha256": "d77cb5331469db586c9159819777361a64f39fbd2e35c1cf4fc18bf8803c0220",
+  "pairs": [
+    {
+      "index": 0,
+      "finished_at": "2026-09-28T14:14:09.803477+00:00",
+      "statuses": [
+        "complete",
+        "complete"
+      ]
+    },
+    {
+      "index": 1,
+      "finished_at": "2026-09-28T14:16:34.698108+00:00",
+      "statuses": [
+        "complete",
+        "complete"
+      ]
+    },
+    {
+      "index": 2,
+      "finished_at": "2026-09-28T14:19:45.402022+00:00",
+      "statuses": [
+        "complete",
+        "complete"
+      ]
+    },
+    {
+      "index": 3,
+      "finished_at": "2026-09-28T14:22:36.276887+00:00",
+      "statuses": [
+        "complete",
+        "complete"
+      ]
+    },
+    {
+      "index": 4,
+      "finished_at": "2026-09-28T14:25:41.835529+00:00",
+      "statuses": [
+        "complete",
+        "complete"
+      ]
+    },
+    {
+      "index": 5,
+      "finished_at": "2026-09-28T14:28:50.066298+00:00",
+      "statuses": [
+        "complete",
+        "complete"
+      ]
+    },
+    {
+      "index": 6,
+      "finished_at": "2026-09-28T14:32:16.419539+00:00",
+      "statuses": [
+        "complete",
+        "complete"
+      ]
+    },
+    {
+      "index": 7,
+      "finished_at": "2026-09-28T14:35:15.598663+00:00",
+      "statuses": [
+        "complete",
+        "complete"
+      ]
+    },
+    {
+      "index": 8,
+      "finished_at": "2026-09-28T14:38:27.344904+00:00",
+      "statuses": [
+        "complete",
+        "complete"
+      ]
+    },
+    {
+      "index": 9,
+      "finished_at": "2026-09-28T14:40:58.673300+00:00",
+      "statuses": [
+        "complete",
+        "complete"
+      ]
+    },
+    {
+      "index": 10,
+      "finished_at": "2026-09-28T14:43:41.842194+00:00",
+      "statuses": [
+        "complete",
+        "complete"
+      ]
+    },
+    {
+      "index": 11,
+      "finished_at": "2026-09-28T14:47:08.156221+00:00",
+      "statuses": [
+        "complete",
+        "complete"
+      ]
+    },
+    {
+      "index": 12,
+      "finished_at": "2026-09-28T14:50:42.989515+00:00",
+      "statuses": [
+        "complete",
+        "complete"
+      ]
+    },
+    {
+      "index": 13,
+      "finished_at": "2026-09-28T14:52:57.965495+00:00",
+      "statuses": [
+        "complete",
+        "complete"
+      ]
+    },
+    {
+      "index": 14,
+      "finished_at": "2026-09-28T14:56:04.167936+00:00",
+      "statuses": [
+        "complete",
+        "complete"
+      ]
+    },
+    {
+      "index": 15,
+      "finished_at": "2026-09-28T14:58:45.292339+00:00",
+      "statuses": [
+        "complete",
+        "complete"
+      ]
+    },
+    {
+      "index": 16,
+      "finished_at": "2026-09-28T15:01:26.578473+00:00",
+      "statuses": [
+        "complete",
+        "complete"
+      ]
+    },
+    {
+      "index": 17,
+      "finished_at": "2026-09-28T15:04:27.759376+00:00",
+      "statuses": [
+        "complete",
+        "complete"
+      ]
+    }
+  ],
+  "stop_reason": null,
+  "audit_errors": [],
+  "updated_at": "2026-09-28T15:04:27.759390+00:00",
+  "planned_sessions": 36,
+  "attempted_sessions": 36,
+  "complete_sessions": 36,
+  "not_attempted_sessions": 0,
+  "planned_prediction_slots": 648,
+  "valid_prediction_slots": 648,
+  "observed_total_tokens": 545964,
+  "unknown_usage_sessions": 0,
+  "finished_at": "2026-09-28T15:04:27.764690+00:00"
+}

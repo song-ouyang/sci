@@ -1,0 +1,47 @@
+{
+  "started_at_utc": "2026-09-28T16:01:44.843949+00:00",
+  "completed_at_utc": "2026-09-28T16:02:08.289818+00:00",
+  "elapsed_seconds": 23.446019666007487,
+  "environment": {
+    "python": "3.12.14 (main, Aug 12 2026, 13:57:54) [Clang 17.0.0 (clang-1700.6.4.2)]",
+    "platform": "macOS-15.7.4-arm64-arm-64bit",
+    "packages": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "joblib": "1.6.0",
+      "threadpoolctl": "3.7.0"
+    }
+  },
+  "seed": 20260928,
+  "protocol_sha256": "1ac4446dcad7f8b34a0477ccf058463fd43895f229802f22955e67518769bf05",
+  "source_sha256": {
+    "data/bearing_baseline_v1/development.json": "6951fa16439a4dd1d6446a9bff0733e76fa49612b4ffbe5da38cc73c4cc7547b",
+    "data/bearing_baseline_v1/test.json": "15a1e53b10eea94a80899a70a1152f565f616f2624512d23d96eb2ab6fb9a4e8",
+    "data/bearing_baseline_v1/plan.json": "85619113667ab32f3b8d2d12800642553fb0fd428cb3208be3ef14da3379de46",
+    "data/bearing_baseline_v1/plan.sha256": "57e21c06a13be8aad0849106eab1d6e6eaade83d35e19359aa975bd57c06dedf",
+    "data/bearing_baseline_v1/audit.json": "6240e21f7f537ae35d0553a0b05714df0f294817a57c9b0407fce496fd55fe6d",
+    "data/paderborn_processed_v1/dataset.json": "0f59b8c5704b93796e8cfa1deb52abef3b97d4a8aa91352ce106cd884a202293",
+    "results/policy_paderborn_v1/analysis/predictions.csv": "04e992afceb6499e98219b2a5bc87ec17df7e6df114fd462b2c4ddfcc73a6f77",
+    "src/analysis/bearing_baseline_v1.py": "2134b22fe377bc00d0fdfe7af0c0ee877418c4ba2e7a8184bc9dbc3b89f856fc",
+    "tests/test_bearing_baseline_v1.py": "70a26ac4cb28144f19094643bf6b7a015586b91c8d056227316d46116791c9d5",
+    "data/bearing_baseline_v1/extraction_amendment_v2.json": "d24d1f9cbf006fd854d8f584cb6cdb34013826337077544d39c049463b9766cf",
+    "data/bearing_baseline_v1/extraction_amendment_v2.sha256": "71d4baaa1fef6a0f5273f90caa130d2a6b4fcf9d9acba0c5bb44735feb41d220",
+    "data/bearing_baseline_v1/extraction_failure.json": "b782e413685205956c53b2193f23b2442399d4df403ebd4f42d67753a4400c76",
+    "src/analysis/prepare_bearing_baseline_v1.py": "44967bbe8b03fd9da7a41ce3f780f27c3c01e8cbd217b90be6e509ced2a93f20",
+    "tests/test_bearing_baseline_data_v1.py": "49cb8f151a6181b8da5b98a6e39410e12ac17e021cd864f9d2f5adb11f6582f4",
+    "src/analysis/prepare_paderborn_v1.py": "4f1824df456dad0f8e6b7442d4fd30b12e5c921145455e93b71073604d17119b",
+    "src/analysis/extract_bearing_baseline_v2.py": "4b380bc8df4771a0f96815345128bf05e16c5ed71b78fd2958205db4521cf5dd",
+    "tests/test_bearing_baseline_extraction_v2.py": "f803c05cab2257b25fbc70f3a6b181037aa6b4da7efe4c10a14d2f8a6b3f708f",
+    "data/bearing_baseline_v1/measurement_summary.npz": "56d77fba241dc106b2a9e3d1bb5f7a938677fdec6f3953cc772c24d5b8e701d2"
+  },
+  "local_sha256": {
+    "test_inputs.json": "15efd5e77a2f499e3e0aaaded419822e214448c975dda527164c73d5ef037e72",
+    "test_answers.json": "4ed595a707a2d45a3ecab06836b65ce478c4a93dcf443ae7e7137cc659031399"
+  },
+  "cv_fits": 400,
+  "final_fits": 10,
+  "truth_parsed_during_fit": false,
+  "predictor_features": "28 numeric values only",
+  "new_llm_calls": 0
+}
