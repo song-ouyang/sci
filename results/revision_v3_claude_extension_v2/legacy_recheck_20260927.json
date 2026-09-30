@@ -1,0 +1,1577 @@
+{
+  "audit_version": "claude-extension-provenance-audit-v2",
+  "audited_models": [
+    "claude-sonnet-4-6",
+    "claude-opus-5-5",
+    "claude-fable-5-1"
+  ],
+  "protocol_declared_sessions": 18,
+  "audited_at": "2026-09-27T15:14:36.725890+00:00",
+  "status": "blocked",
+  "answer_key_files_opened": false,
+  "snapshot_kind": "post_hoc_current_bytes_not_pre_score_freeze",
+  "source_snapshot_sha256": {
+    "extension:predictions/claude-fable-5-1/cmapss_clean_r1_metadata.json": "0c24e5f3133120fafb5eff768e15f666744b0fede5703220222837a804f2d10a",
+    "extension:predictions/claude-fable-5-1/cmapss_clean_r1_request.json": "98ce88a7c16bbff0792ba7bd6385a5100fcfd3d27a0ebc416f6d9f9c746e6c98",
+    "extension:predictions/claude-fable-5-1/cmapss_clean_r1_response.txt": "f1049e4fa745e45d0d5383dfeac4c837318dbf4d5057f2515e787ffc48562def",
+    "extension:predictions/claude-fable-5-1/cmapss_clean_r1_results.json": "858aa96eaa92cf6f7a18f590fd315c23f7fb40d53524ff16b400ce1c1ff291b1",
+    "extension:predictions/claude-fable-5-1/cmapss_clean_r2_metadata.json": "3c64ed3ebccc50f0310b0f73ff5925309125771ec3a2eb81644f8d3d988897d5",
+    "extension:predictions/claude-fable-5-1/cmapss_clean_r2_request.json": "0ec5a0ece855b447bb48551f6076eb17aded7dff7d5db580a1eebc259c0c2f7f",
+    "extension:predictions/claude-fable-5-1/cmapss_clean_r2_response.txt": "1e39d240708b2e9b14415c6925643fdeeb352034765d422ea53f812a45764223",
+    "extension:predictions/claude-fable-5-1/cmapss_clean_r2_results.json": "b6a8dc00840188235652190da74a34d74a46e60fa8ce267fcf41a4199772a151",
+    "extension:predictions/claude-fable-5-1/cmapss_clean_r3_metadata.json": "6ab5a653bb416c1e914d72a04009b7f5d82375be0e5485f99095b8c249ddd647",
+    "extension:predictions/claude-fable-5-1/cmapss_clean_r3_request.json": "768f5b356f24449fded8821035e1beadef8fc5c77010e44802c4c1e02a70b9c0",
+    "extension:predictions/claude-fable-5-1/cmapss_clean_r3_response.txt": "404411e525975bb3ce20f8ae45bdf86f9fe3692d6f98835a837863e7a1b47f30",
+    "extension:predictions/claude-fable-5-1/cmapss_clean_r3_results.json": "a62d5686e111775b4c5f841cb247b0b7a83210565ee486f2deacc8a99089c01e",
+    "extension:predictions/claude-fable-5-1/tep_clean_r1_metadata.json": "9933dc3e9b57bd5debfbde1f337c92e6be0c0e2136906f1c846b6d8812c2a120",
+    "extension:predictions/claude-fable-5-1/tep_clean_r1_request.json": "2b4e2611c87ac875b6da99aba56156df6539544e972f693f7e5de5a528b288fd",
+    "extension:predictions/claude-fable-5-1/tep_clean_r1_response.txt": "f9e1cedada77cb9470bab5b87133f5695f9eb6685bc53cf62d06aac01b2ef071",
+    "extension:predictions/claude-fable-5-1/tep_clean_r1_results.json": "e6282357cc1252c534a1170a34012e10b090bbc86977e00ee411a33f8ce3ba63",
+    "extension:predictions/claude-fable-5-1/tep_clean_r2_metadata.json": "7c7ab3cbf7f28f3b59e164557e3c27a624a4dc39e4cff22ea5ddc808ff149bc7",
+    "extension:predictions/claude-fable-5-1/tep_clean_r2_request.json": "763f9dbc024a089f1122a38d09458ca4a0079fe8234e9b64bc0b734763078fef",
+    "extension:predictions/claude-fable-5-1/tep_clean_r2_response.txt": "f9e1cedada77cb9470bab5b87133f5695f9eb6685bc53cf62d06aac01b2ef071",
+    "extension:predictions/claude-fable-5-1/tep_clean_r2_results.json": "e6282357cc1252c534a1170a34012e10b090bbc86977e00ee411a33f8ce3ba63",
+    "extension:predictions/claude-fable-5-1/tep_clean_r3_metadata.json": "121e671fe55373c336d28b484fdd976fbf2024f8a2a6a952b6930ae4bdfd4600",
+    "extension:predictions/claude-fable-5-1/tep_clean_r3_request.json": "aaab47a99f610f4ca7509607728b8711a2255ac9a05de68f4effda540f661a7b",
+    "extension:predictions/claude-fable-5-1/tep_clean_r3_response.txt": "f9e1cedada77cb9470bab5b87133f5695f9eb6685bc53cf62d06aac01b2ef071",
+    "extension:predictions/claude-fable-5-1/tep_clean_r3_results.json": "e6282357cc1252c534a1170a34012e10b090bbc86977e00ee411a33f8ce3ba63",
+    "extension:predictions/claude-fable-5-1/tep_misnamed_r1_metadata.json": "a002e7cbbb43a167707d51b481718f04e96b67d4a70e6ab30cb909a6a2cccf36",
+    "extension:predictions/claude-fable-5-1/tep_misnamed_r1_request.json": "a63eea527aef001e49f5e65d6345e2d7ca169d76096ce7c0293502687e266a51",
+    "extension:predictions/claude-fable-5-1/tep_misnamed_r1_response.txt": "484ad432a7f6fceec560bd51aeb1b486cde0bc6c8c1348a52feb39dd536c34c9",
+    "extension:predictions/claude-fable-5-1/tep_misnamed_r1_results.json": "cc5dd765ce47bf03e0951380d8660ddb3a399b16fd1cae808d0c823f93fcb9e5",
+    "extension:predictions/claude-fable-5-1/tep_misnamed_r2_metadata.json": "5f8392ea035cbdccd9056585443c5950bf37f5487492b40c426edcaefa65f186",
+    "extension:predictions/claude-fable-5-1/tep_misnamed_r2_request.json": "45f866e2fc168817efd4715b2596faf58221afcc6d2234bebfecff9325a73165",
+    "extension:predictions/claude-fable-5-1/tep_misnamed_r2_response.txt": "9db788a945db7e09069b19c7515936a8165e7b7f306acea46bb85e2e18693f7e",
+    "extension:predictions/claude-fable-5-1/tep_misnamed_r2_results.json": "b88690846989bec39920fd0233d2f9f3020fdab96c3d610dbdd29019eeac795f",
+    "extension:predictions/claude-fable-5-1/tep_misnamed_r3_metadata.json": "c363178f4eaf838750af1e0c2ad8d979b79b8ea7b457d52f37fcea6c42c9aab5",
+    "extension:predictions/claude-fable-5-1/tep_misnamed_r3_request.json": "d172f6c9ddfae7b0a735d9cc41bfcaa3b81d51d6dd1cb9591e235dd4137c072c",
+    "extension:predictions/claude-fable-5-1/tep_misnamed_r3_response.txt": "f9e1cedada77cb9470bab5b87133f5695f9eb6685bc53cf62d06aac01b2ef071",
+    "extension:predictions/claude-fable-5-1/tep_misnamed_r3_results.json": "e6282357cc1252c534a1170a34012e10b090bbc86977e00ee411a33f8ce3ba63",
+    "extension:predictions/claude-opus-5-5/cmapss_clean_r1_metadata.json": "9e8318c238c33b945698022c13f90ad397f74530afe49caa8e4b401a0f78fa08",
+    "extension:predictions/claude-opus-5-5/cmapss_clean_r1_request.json": "7ae62c0ed28e7c0993fa8694c72f9b34a90c80dbc42ab3d4f76906b15ef94bdb",
+    "extension:predictions/claude-opus-5-5/cmapss_clean_r1_response.txt": "9846865a4e348e48958e1860adc6851503d034bdd33231fb617944d7cff7ad6d",
+    "extension:predictions/claude-opus-5-5/cmapss_clean_r1_results.json": "929abad33be959b803fd3aae2bbaff0c44d84a2487612db0f984d4848c420480",
+    "extension:predictions/claude-opus-5-5/cmapss_clean_r2_metadata.json": "28e739aa2d00d2961d603d600bbf3e6d3caf35a3f2509093ba9099cc2c0b72ea",
+    "extension:predictions/claude-opus-5-5/cmapss_clean_r2_request.json": "b148aef1621d29d64c74f5748a95fc093dd4139eecaa2c8e6e3c127ecce2a91a",
+    "extension:predictions/claude-opus-5-5/cmapss_clean_r2_response.txt": "489edd7abfe444e27b4f36aaf87aba3616d6e5a058d627c979acb57ecc5d9c3e",
+    "extension:predictions/claude-opus-5-5/cmapss_clean_r2_results.json": "fa4a6ee305699e9613f11007c3c17f0b6583900f5a0d129091414e24c4da7c36",
+    "extension:predictions/claude-opus-5-5/cmapss_clean_r3_metadata.json": "4fdfdaa4cd2c47f353a70a342e6a853b42418de02b85920aada0ed8e211ab488",
+    "extension:predictions/claude-opus-5-5/cmapss_clean_r3_request.json": "6ae991ebcca82f533d117b77858565f07e27ccc2929d950e5c9f960e29e651db",
+    "extension:predictions/claude-opus-5-5/cmapss_clean_r3_response.txt": "dcf638c247256aa9c10210122b7237a86e677693b1a60278287aeaf70f27894b",
+    "extension:predictions/claude-opus-5-5/cmapss_clean_r3_results.json": "518bf68df7823db4a4330526325a0d282123d937014372bdd2ed229479983d70",
+    "extension:predictions/claude-opus-5-5/tep_clean_r1_metadata.json": "02291bc0dff906b222b099965ef2002096d2d422e19d129e327d29b876f51892",
+    "extension:predictions/claude-opus-5-5/tep_clean_r1_request.json": "833fee14f243ee8bea1f84d9e5ad2e7818a7a82dec91986ab33fdb2033ae9d4a",
+    "extension:predictions/claude-opus-5-5/tep_clean_r1_response.txt": "f9e1cedada77cb9470bab5b87133f5695f9eb6685bc53cf62d06aac01b2ef071",
+    "extension:predictions/claude-opus-5-5/tep_clean_r1_results.json": "e6282357cc1252c534a1170a34012e10b090bbc86977e00ee411a33f8ce3ba63",
+    "extension:predictions/claude-opus-5-5/tep_clean_r2_metadata.json": "75292f4414186fb673739aa358e9737c76ab18d30df92c61a14e0c511e1c624e",
+    "extension:predictions/claude-opus-5-5/tep_clean_r2_request.json": "53dc505879cc999a01952b17dc927b0f37d3b77024064d727f2242b1277e3eea",
+    "extension:predictions/claude-opus-5-5/tep_clean_r2_response.txt": "f9e1cedada77cb9470bab5b87133f5695f9eb6685bc53cf62d06aac01b2ef071",
+    "extension:predictions/claude-opus-5-5/tep_clean_r2_results.json": "e6282357cc1252c534a1170a34012e10b090bbc86977e00ee411a33f8ce3ba63",
+    "extension:predictions/claude-opus-5-5/tep_clean_r3_metadata.json": "b39c20a60df14ed6b49ee8f7dcadb17a309fdc494ba09b9e99ccc7911e44482a",
+    "extension:predictions/claude-opus-5-5/tep_clean_r3_request.json": "2dc4cece84c963f929b7d920ebde26565ccfccba5bb0d8c1e3dfbcdceff923ca",
+    "extension:predictions/claude-opus-5-5/tep_clean_r3_response.txt": "f9e1cedada77cb9470bab5b87133f5695f9eb6685bc53cf62d06aac01b2ef071",
+    "extension:predictions/claude-opus-5-5/tep_clean_r3_results.json": "e6282357cc1252c534a1170a34012e10b090bbc86977e00ee411a33f8ce3ba63",
+    "extension:predictions/claude-opus-5-5/tep_misnamed_r1_metadata.json": "d9f1f01b68d571f4f981b21c7c88d7e8631fb3383895d000b9503f95b6ed2cf7",
+    "extension:predictions/claude-opus-5-5/tep_misnamed_r1_request.json": "ea9ea3f897301fb344dab6e22885847ee2acd48fe6093a8e1f59c67ba81ce6a1",
+    "extension:predictions/claude-opus-5-5/tep_misnamed_r1_response.txt": "f9e1cedada77cb9470bab5b87133f5695f9eb6685bc53cf62d06aac01b2ef071",
+    "extension:predictions/claude-opus-5-5/tep_misnamed_r1_results.json": "e6282357cc1252c534a1170a34012e10b090bbc86977e00ee411a33f8ce3ba63",
+    "extension:predictions/claude-opus-5-5/tep_misnamed_r2_metadata.json": "09aea8aacbf246e0d60cff384ea09afca403b26e2de9117446a74b78d0969326",
+    "extension:predictions/claude-opus-5-5/tep_misnamed_r2_request.json": "b9314ac2b7fc9b72fa313017198ab8b274574f7303fa791ec5d3f92bb01d7a0b",
+    "extension:predictions/claude-opus-5-5/tep_misnamed_r2_response.txt": "f9e1cedada77cb9470bab5b87133f5695f9eb6685bc53cf62d06aac01b2ef071",
+    "extension:predictions/claude-opus-5-5/tep_misnamed_r2_results.json": "e6282357cc1252c534a1170a34012e10b090bbc86977e00ee411a33f8ce3ba63",
+    "extension:predictions/claude-opus-5-5/tep_misnamed_r3_metadata.json": "fc1e8cbac3b1309cded480b507eeb7bef209fb444b5e7bc909ce8f475a44c801",
+    "extension:predictions/claude-opus-5-5/tep_misnamed_r3_request.json": "4bb5a74da7818c0736fc0d31eafd052aefa4f425840650e31f0e153b41285b92",
+    "extension:predictions/claude-opus-5-5/tep_misnamed_r3_response.txt": "f9e1cedada77cb9470bab5b87133f5695f9eb6685bc53cf62d06aac01b2ef071",
+    "extension:predictions/claude-opus-5-5/tep_misnamed_r3_results.json": "e6282357cc1252c534a1170a34012e10b090bbc86977e00ee411a33f8ce3ba63",
+    "extension:predictions/claude-sonnet-4-6/cmapss_clean_r1_metadata.json": "52fcfa8d7fb669d5e04ad494322ce5c3891daa848085d19bd35e3bcc40f28f2c",
+    "extension:predictions/claude-sonnet-4-6/cmapss_clean_r1_request.json": "0a84007a8866b3b05d646cf5451b4d0b566ac560002610fb2f8936412fd67e8a",
+    "extension:predictions/claude-sonnet-4-6/cmapss_clean_r1_response.txt": "f716a691fd0a8d67538fe9fd0a5cc7d1f64ee2ec3a46db010e170bb31552b6af",
+    "extension:predictions/claude-sonnet-4-6/cmapss_clean_r1_results.json": "5adb7ceeb570ecfa30c96b325e964ade9067100ac60303a1f34ab79e09b2f84e",
+    "extension:predictions/claude-sonnet-4-6/cmapss_clean_r2_metadata.json": "62631fcf101b87ce12b953fab43693f8f4ab6768d61461c208898da5ab84e11b",
+    "extension:predictions/claude-sonnet-4-6/cmapss_clean_r2_request.json": "706fed6fd5abf87d15a2801203730a29ef08a2e808ce3f89ee00e5df86a69810",
+    "extension:predictions/claude-sonnet-4-6/cmapss_clean_r2_response.txt": "c017bbb32be8461876dcfe39a273d365e1544308c2ffede6d8ce67623bca3542",
+    "extension:predictions/claude-sonnet-4-6/cmapss_clean_r2_results.json": "ae03c20a6ac4d28827bf25a9e02b88ae708f83c9a136652f4ca7c407f6011fbe",
+    "extension:predictions/claude-sonnet-4-6/cmapss_clean_r3_metadata.json": "fc6c353bc604ffd4aa5ca59495982ce115871fc1448719b26656d768d6de8f2e",
+    "extension:predictions/claude-sonnet-4-6/cmapss_clean_r3_request.json": "eb9bbc60d503827801578c26b9f17bb5fc2f1ea93a342aa68ef81994f57f96c4",
+    "extension:predictions/claude-sonnet-4-6/cmapss_clean_r3_response.txt": "29e018f8a1704ee0b1cbc289fd3c88bc91e8f664f7b62251213b4125e210e1d0",
+    "extension:predictions/claude-sonnet-4-6/cmapss_clean_r3_results.json": "71ff74a5819afbb7231bd75f4bebe156018a0dfdcd98fda6e8fdad08446de5a6",
+    "extension:predictions/claude-sonnet-4-6/tep_clean_r1_metadata.json": "b25dd3f39c6f82ff0a3cb4e021e8acf7891829ac52737b40ce0d389ce6b3a515",
+    "extension:predictions/claude-sonnet-4-6/tep_clean_r1_request.json": "f134ec381b597a9f0894ebb469b494ad9841fa50b778524b9cdd8665fb2a03b6",
+    "extension:predictions/claude-sonnet-4-6/tep_clean_r1_response.txt": "9083a5debe15183dbb6a355dabc2b395d02c3bc9375068d505e4a1d1fe83e2ca",
+    "extension:predictions/claude-sonnet-4-6/tep_clean_r1_results.json": "8f5673314acbabb5036d28eced66cee89dfe019f7edbec381b9a6049beca57b4",
+    "extension:predictions/claude-sonnet-4-6/tep_clean_r2_metadata.json": "a2a67f1117f208a813c1eb9735827d0e89cc0f5ba76afce6b69eb383ed7ed29e",
+    "extension:predictions/claude-sonnet-4-6/tep_clean_r2_request.json": "1a9323ba26a446f681969d95d5ff511ffd720be9901a86ac8bebe7e4444e3427",
+    "extension:predictions/claude-sonnet-4-6/tep_clean_r2_response.txt": "44ae4e7c759c2517025786bc4558b52e8ba31a90dcc021805bb495cdb19f5c05",
+    "extension:predictions/claude-sonnet-4-6/tep_clean_r2_results.json": "2e6fd3a2d21541d2dfbea9df691c0a1b53e01cb5867b9eff11021635b577bca1",
+    "extension:predictions/claude-sonnet-4-6/tep_clean_r3_metadata.json": "f28b9218a2c0078e3efb19a4e0ebf020e3ace8d18da748f12a12dafd5822c715",
+    "extension:predictions/claude-sonnet-4-6/tep_clean_r3_response.txt": "106d03d49f1d9d337e3aa3a158c70501c31ca58c9559cd3adf3a5b1cdc586c74",
+    "extension:predictions/claude-sonnet-4-6/tep_clean_r3_results.json": "4e2bb0f6d3c61aa3e0ed89449bbb96b3b6df7db5c58aec1fbf4e16047a71fd96",
+    "extension:predictions/claude-sonnet-4-6/tep_misnamed_r1_metadata.json": "00ddbd9a565a62ff154aaa5d482a3d2a6dc56fb8713c17f63fa1965a91e6b6c3",
+    "extension:predictions/claude-sonnet-4-6/tep_misnamed_r1_request.json": "ca6be4fe1dfd7e9dce4657bd6c5819f25d24ca1cde590083f64d7ddee08f462c",
+    "extension:predictions/claude-sonnet-4-6/tep_misnamed_r1_response.txt": "338628993383b86276d660169c448f7dff2f99d5d2b720cd6cd4b1d35637844e",
+    "extension:predictions/claude-sonnet-4-6/tep_misnamed_r1_results.json": "21c677f38cfe3498ab42d06d1e7c9ec094a6fcc1b4c068acb38a77982a20cfb3",
+    "extension:predictions/claude-sonnet-4-6/tep_misnamed_r2_metadata.json": "ce0db88ec7099942fe40c8a3b3011a172f25e91a42106045bdece71a9fb53655",
+    "extension:predictions/claude-sonnet-4-6/tep_misnamed_r2_request.json": "c671caebffdc1a95800d438ec62a2d2dde1e2827dd8c666628f65f8c8352c366",
+    "extension:predictions/claude-sonnet-4-6/tep_misnamed_r2_response.txt": "411a965eab9c8a51a608c96bb637fd6b3d923feb4963a1c0e8d0e0a46e4f9572",
+    "extension:predictions/claude-sonnet-4-6/tep_misnamed_r2_results.json": "77ab4a8c9631c0a341ac556559dbe0ffa15e5211731f47b54996fe2bfc1dc9b9",
+    "extension:predictions/claude-sonnet-4-6/tep_misnamed_r3_metadata.json": "a4aac983ab21bd5fd2fb53b5e8dcfcc9aa0b66b1b8d65ffb233bdca08d8e5a63",
+    "extension:predictions/claude-sonnet-4-6/tep_misnamed_r3_request.json": "521ffefaa1800b67e67862a9a2b64cddb48e24567a31c866b26c6e96827f8f71",
+    "extension:predictions/claude-sonnet-4-6/tep_misnamed_r3_response.txt": "25a1edd4c1f41af7530e7e02e0708b238ddf7e49bd510dd501c1bd3237b59a9c",
+    "extension:predictions/claude-sonnet-4-6/tep_misnamed_r3_results.json": "321c5168ccc0405618b04c779fa1dc023a394b1d3d63949b66ae21f38fa912e9",
+    "extension:protocol.json": "620e5cd39943f0e9534cb3a93a641670c38139851cf01d820dedd1ffb06de650",
+    "extension:session_schedule.json": "d7e9301a8d1ed5e0571020ea0c807f077890d7b9152a07052a1df3ffb3812eb3",
+    "extension:source_manifest.json": "5fd1fd4fef7db66f6f543605c0b83faa1796d0df3573b8a3f42a7578c3011ddb",
+    "parent:inference/batches.json": "48b648d949fac2119222007b8bba7e95c1a2019281df5a17c95fa4f2f59bd8d8",
+    "parent:inference/prompts/cmapss_clean_r1.txt": "1f927abb09bbfe317ffe2f77621b421cf02d1c8bfedf0fab230477a0162c4814",
+    "parent:inference/prompts/cmapss_clean_r2.txt": "1f927abb09bbfe317ffe2f77621b421cf02d1c8bfedf0fab230477a0162c4814",
+    "parent:inference/prompts/cmapss_clean_r3.txt": "1f927abb09bbfe317ffe2f77621b421cf02d1c8bfedf0fab230477a0162c4814",
+    "parent:inference/prompts/tep_clean_r1.txt": "3b3bdaf51da410ede9ad453dc63e0bdd634b1612935e6d33c9bcff99500856ad",
+    "parent:inference/prompts/tep_clean_r2.txt": "3b3bdaf51da410ede9ad453dc63e0bdd634b1612935e6d33c9bcff99500856ad",
+    "parent:inference/prompts/tep_clean_r3.txt": "3b3bdaf51da410ede9ad453dc63e0bdd634b1612935e6d33c9bcff99500856ad",
+    "parent:inference/prompts/tep_misnamed_r1.txt": "a0dc583c59100af856f5b5a25d816d634b4dba96a8059a7c6ee3294d9265e19e",
+    "parent:inference/prompts/tep_misnamed_r2.txt": "a0dc583c59100af856f5b5a25d816d634b4dba96a8059a7c6ee3294d9265e19e",
+    "parent:inference/prompts/tep_misnamed_r3.txt": "a0dc583c59100af856f5b5a25d816d634b4dba96a8059a7c6ee3294d9265e19e",
+    "parent:protocol.json": "2b743ec9d70567aa9e630521503a4d4cb456949b69dc37db0dc3f2a282be0d7c"
+  },
+  "source_snapshot_manifest_sha256": "c8c984bde9fa5c90b0b47ed9eeb26e123c941156844dd3db63c3582dc62e8266",
+  "global_issues": [
+    {
+      "code": "ADDITIONAL_SUBMITTED_MODELS",
+      "detail": "Models submitted after the historical two-model plan: claude-fable-5-1. This does not amend or validate that plan."
+    },
+    {
+      "code": "HASH_MISSING_OR_INVALID",
+      "detail": "protocol.parent_protocol_sha256"
+    },
+    {
+      "code": "PRE_SCORE_FREEZE_MISSING",
+      "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+    },
+    {
+      "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+      "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+    },
+    {
+      "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+      "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+    },
+    {
+      "code": "MODEL_IDENTITY_UNVERIFIED",
+      "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+    },
+    {
+      "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+      "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+    },
+    {
+      "code": "SCHEDULE_MODEL_MISMATCH",
+      "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+    }
+  ],
+  "counts": {
+    "planned": 27,
+    "audited_records": 27,
+    "artifact_arrays_valid": 27,
+    "artifact_chains_consistent": 23,
+    "eligible_primary": 0,
+    "reported_contaminated": 0,
+    "reported_suspect": 0
+  },
+  "sessions": [
+    {
+      "model": "claude-sonnet-4-6",
+      "group": "cmapss_clean_r1",
+      "status": "provenance_unverified",
+      "eligible_for_primary_comparison": false,
+      "artifact_array_valid": true,
+      "artifact_chain_consistent": true,
+      "reported_contaminated": false,
+      "reported_suspect": false,
+      "recorded_status": "complete",
+      "n_predictions": 60,
+      "issues": [
+        {
+          "code": "ADDITIONAL_SUBMITTED_MODELS",
+          "detail": "Models submitted after the historical two-model plan: claude-fable-5-1. This does not amend or validate that plan."
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "protocol.parent_protocol_sha256"
+        },
+        {
+          "code": "PRE_SCORE_FREEZE_MISSING",
+          "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+        },
+        {
+          "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+        },
+        {
+          "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+          "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+        },
+        {
+          "code": "MODEL_IDENTITY_UNVERIFIED",
+          "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+        },
+        {
+          "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+        },
+        {
+          "code": "SCHEDULE_MODEL_MISMATCH",
+          "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+        }
+      ]
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "group": "cmapss_clean_r2",
+      "status": "provenance_unverified",
+      "eligible_for_primary_comparison": false,
+      "artifact_array_valid": true,
+      "artifact_chain_consistent": true,
+      "reported_contaminated": false,
+      "reported_suspect": false,
+      "recorded_status": "complete",
+      "n_predictions": 60,
+      "issues": [
+        {
+          "code": "ADDITIONAL_SUBMITTED_MODELS",
+          "detail": "Models submitted after the historical two-model plan: claude-fable-5-1. This does not amend or validate that plan."
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "protocol.parent_protocol_sha256"
+        },
+        {
+          "code": "PRE_SCORE_FREEZE_MISSING",
+          "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+        },
+        {
+          "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+        },
+        {
+          "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+          "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+        },
+        {
+          "code": "MODEL_IDENTITY_UNVERIFIED",
+          "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+        },
+        {
+          "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+        },
+        {
+          "code": "SCHEDULE_MODEL_MISMATCH",
+          "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+        }
+      ]
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "group": "cmapss_clean_r3",
+      "status": "provenance_unverified",
+      "eligible_for_primary_comparison": false,
+      "artifact_array_valid": true,
+      "artifact_chain_consistent": true,
+      "reported_contaminated": false,
+      "reported_suspect": false,
+      "recorded_status": "complete",
+      "n_predictions": 60,
+      "issues": [
+        {
+          "code": "ADDITIONAL_SUBMITTED_MODELS",
+          "detail": "Models submitted after the historical two-model plan: claude-fable-5-1. This does not amend or validate that plan."
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "protocol.parent_protocol_sha256"
+        },
+        {
+          "code": "PRE_SCORE_FREEZE_MISSING",
+          "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+        },
+        {
+          "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+        },
+        {
+          "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+          "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+        },
+        {
+          "code": "MODEL_IDENTITY_UNVERIFIED",
+          "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+        },
+        {
+          "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+        },
+        {
+          "code": "SCHEDULE_MODEL_MISMATCH",
+          "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+        }
+      ]
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "group": "tep_clean_r1",
+      "status": "provenance_unverified",
+      "eligible_for_primary_comparison": false,
+      "artifact_array_valid": true,
+      "artifact_chain_consistent": true,
+      "reported_contaminated": false,
+      "reported_suspect": false,
+      "recorded_status": "complete",
+      "n_predictions": 70,
+      "issues": [
+        {
+          "code": "ADDITIONAL_SUBMITTED_MODELS",
+          "detail": "Models submitted after the historical two-model plan: claude-fable-5-1. This does not amend or validate that plan."
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "protocol.parent_protocol_sha256"
+        },
+        {
+          "code": "PRE_SCORE_FREEZE_MISSING",
+          "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+        },
+        {
+          "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+        },
+        {
+          "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+          "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+        },
+        {
+          "code": "MODEL_IDENTITY_UNVERIFIED",
+          "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+        },
+        {
+          "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+        },
+        {
+          "code": "SCHEDULE_MODEL_MISMATCH",
+          "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+        }
+      ]
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "group": "tep_clean_r2",
+      "status": "artifact_invalid",
+      "eligible_for_primary_comparison": false,
+      "artifact_array_valid": true,
+      "artifact_chain_consistent": false,
+      "reported_contaminated": false,
+      "reported_suspect": false,
+      "recorded_status": "complete",
+      "n_predictions": 70,
+      "issues": [
+        {
+          "code": "HASH_MISMATCH",
+          "detail": "metadata.prediction_sha256"
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "metadata.request_sha256"
+        },
+        {
+          "code": "ADDITIONAL_SUBMITTED_MODELS",
+          "detail": "Models submitted after the historical two-model plan: claude-fable-5-1. This does not amend or validate that plan."
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "protocol.parent_protocol_sha256"
+        },
+        {
+          "code": "PRE_SCORE_FREEZE_MISSING",
+          "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+        },
+        {
+          "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+        },
+        {
+          "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+          "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+        },
+        {
+          "code": "MODEL_IDENTITY_UNVERIFIED",
+          "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+        },
+        {
+          "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+        },
+        {
+          "code": "SCHEDULE_MODEL_MISMATCH",
+          "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+        }
+      ]
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "group": "tep_clean_r3",
+      "status": "artifact_invalid",
+      "eligible_for_primary_comparison": false,
+      "artifact_array_valid": true,
+      "artifact_chain_consistent": false,
+      "reported_contaminated": false,
+      "reported_suspect": false,
+      "recorded_status": null,
+      "n_predictions": 70,
+      "issues": [
+        {
+          "code": "FILE_UNREADABLE",
+          "detail": "extension:predictions/claude-sonnet-4-6/tep_clean_r3_request.json: [Errno 2] No such file or directory: '/Users/guoba/work/sci-paper-llm-pdm/results/revision_v3_claude_extension/predictions/claude-sonnet-4-6/tep_clean_r3_request.json'"
+        },
+        {
+          "code": "RAW_RESPONSE_INVALID",
+          "detail": "Expecting value: line 1 column 1 (char 0)"
+        },
+        {
+          "code": "REQUEST_INVALID",
+          "detail": "Missing or non-object request."
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "metadata.prediction_sha256"
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "metadata.request_sha256"
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "metadata.response_text_sha256"
+        },
+        {
+          "code": "FIELD_MISMATCH",
+          "detail": "metadata.model_requested differs from expected value"
+        },
+        {
+          "code": "FIELD_MISMATCH",
+          "detail": "metadata.group_name differs from expected value"
+        },
+        {
+          "code": "FIELD_MISMATCH",
+          "detail": "metadata.status differs from expected value"
+        },
+        {
+          "code": "FIELD_MISMATCH",
+          "detail": "metadata.transport differs from expected value"
+        },
+        {
+          "code": "FIELD_MISMATCH",
+          "detail": "metadata.answer_keys_read differs from expected value"
+        },
+        {
+          "code": "FIELD_MISMATCH",
+          "detail": "metadata.dataset differs from expected value"
+        },
+        {
+          "code": "FIELD_MISMATCH",
+          "detail": "metadata.condition differs from expected value"
+        },
+        {
+          "code": "FIELD_MISMATCH",
+          "detail": "metadata.repeat differs from expected value"
+        },
+        {
+          "code": "FIELD_MISMATCH",
+          "detail": "metadata.n_predictions differs from expected value"
+        },
+        {
+          "code": "FIELD_MISMATCH",
+          "detail": "request.n_samples differs from expected value"
+        },
+        {
+          "code": "FIELD_MISMATCH",
+          "detail": "request.valid_labels differs from expected value"
+        },
+        {
+          "code": "FIELD_MISMATCH",
+          "detail": "request.model differs from expected value"
+        },
+        {
+          "code": "FIELD_MISMATCH",
+          "detail": "request.group_name differs from expected value"
+        },
+        {
+          "code": "FIELD_MISMATCH",
+          "detail": "request.transport differs from expected value"
+        },
+        {
+          "code": "FIELD_MISMATCH",
+          "detail": "request.instructions differs from expected value"
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "request.input_sha256"
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "request.prompt_file_sha256"
+        },
+        {
+          "code": "FIELD_MISMATCH",
+          "detail": "request.user_message differs from expected value"
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "request.full_prompt_sha256"
+        },
+        {
+          "code": "ADDITIONAL_SUBMITTED_MODELS",
+          "detail": "Models submitted after the historical two-model plan: claude-fable-5-1. This does not amend or validate that plan."
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "protocol.parent_protocol_sha256"
+        },
+        {
+          "code": "PRE_SCORE_FREEZE_MISSING",
+          "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+        },
+        {
+          "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+        },
+        {
+          "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+          "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+        },
+        {
+          "code": "MODEL_IDENTITY_UNVERIFIED",
+          "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+        },
+        {
+          "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+        },
+        {
+          "code": "SCHEDULE_MODEL_MISMATCH",
+          "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+        }
+      ]
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "group": "tep_misnamed_r1",
+      "status": "artifact_invalid",
+      "eligible_for_primary_comparison": false,
+      "artifact_array_valid": true,
+      "artifact_chain_consistent": false,
+      "reported_contaminated": false,
+      "reported_suspect": false,
+      "recorded_status": "complete",
+      "n_predictions": 70,
+      "issues": [
+        {
+          "code": "HASH_MISMATCH",
+          "detail": "metadata.prediction_sha256"
+        },
+        {
+          "code": "ADDITIONAL_SUBMITTED_MODELS",
+          "detail": "Models submitted after the historical two-model plan: claude-fable-5-1. This does not amend or validate that plan."
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "protocol.parent_protocol_sha256"
+        },
+        {
+          "code": "PRE_SCORE_FREEZE_MISSING",
+          "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+        },
+        {
+          "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+        },
+        {
+          "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+          "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+        },
+        {
+          "code": "MODEL_IDENTITY_UNVERIFIED",
+          "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+        },
+        {
+          "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+        },
+        {
+          "code": "SCHEDULE_MODEL_MISMATCH",
+          "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+        }
+      ]
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "group": "tep_misnamed_r2",
+      "status": "provenance_unverified",
+      "eligible_for_primary_comparison": false,
+      "artifact_array_valid": true,
+      "artifact_chain_consistent": true,
+      "reported_contaminated": false,
+      "reported_suspect": false,
+      "recorded_status": "complete",
+      "n_predictions": 70,
+      "issues": [
+        {
+          "code": "ADDITIONAL_SUBMITTED_MODELS",
+          "detail": "Models submitted after the historical two-model plan: claude-fable-5-1. This does not amend or validate that plan."
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "protocol.parent_protocol_sha256"
+        },
+        {
+          "code": "PRE_SCORE_FREEZE_MISSING",
+          "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+        },
+        {
+          "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+        },
+        {
+          "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+          "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+        },
+        {
+          "code": "MODEL_IDENTITY_UNVERIFIED",
+          "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+        },
+        {
+          "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+        },
+        {
+          "code": "SCHEDULE_MODEL_MISMATCH",
+          "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+        }
+      ]
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "group": "tep_misnamed_r3",
+      "status": "artifact_invalid",
+      "eligible_for_primary_comparison": false,
+      "artifact_array_valid": true,
+      "artifact_chain_consistent": false,
+      "reported_contaminated": false,
+      "reported_suspect": false,
+      "recorded_status": "complete",
+      "n_predictions": 70,
+      "issues": [
+        {
+          "code": "RAW_RESPONSE_INVALID",
+          "detail": "Expecting value: line 1 column 1 (char 0)"
+        },
+        {
+          "code": "ADDITIONAL_SUBMITTED_MODELS",
+          "detail": "Models submitted after the historical two-model plan: claude-fable-5-1. This does not amend or validate that plan."
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "protocol.parent_protocol_sha256"
+        },
+        {
+          "code": "PRE_SCORE_FREEZE_MISSING",
+          "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+        },
+        {
+          "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+        },
+        {
+          "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+          "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+        },
+        {
+          "code": "MODEL_IDENTITY_UNVERIFIED",
+          "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+        },
+        {
+          "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+        },
+        {
+          "code": "SCHEDULE_MODEL_MISMATCH",
+          "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+        }
+      ]
+    },
+    {
+      "model": "claude-opus-5-5",
+      "group": "cmapss_clean_r1",
+      "status": "provenance_unverified",
+      "eligible_for_primary_comparison": false,
+      "artifact_array_valid": true,
+      "artifact_chain_consistent": true,
+      "reported_contaminated": false,
+      "reported_suspect": false,
+      "recorded_status": "complete",
+      "n_predictions": 60,
+      "issues": [
+        {
+          "code": "ADDITIONAL_SUBMITTED_MODELS",
+          "detail": "Models submitted after the historical two-model plan: claude-fable-5-1. This does not amend or validate that plan."
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "protocol.parent_protocol_sha256"
+        },
+        {
+          "code": "PRE_SCORE_FREEZE_MISSING",
+          "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+        },
+        {
+          "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+        },
+        {
+          "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+          "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+        },
+        {
+          "code": "MODEL_IDENTITY_UNVERIFIED",
+          "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+        },
+        {
+          "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+        },
+        {
+          "code": "SCHEDULE_MODEL_MISMATCH",
+          "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+        }
+      ]
+    },
+    {
+      "model": "claude-opus-5-5",
+      "group": "cmapss_clean_r2",
+      "status": "provenance_unverified",
+      "eligible_for_primary_comparison": false,
+      "artifact_array_valid": true,
+      "artifact_chain_consistent": true,
+      "reported_contaminated": false,
+      "reported_suspect": false,
+      "recorded_status": "complete",
+      "n_predictions": 60,
+      "issues": [
+        {
+          "code": "ADDITIONAL_SUBMITTED_MODELS",
+          "detail": "Models submitted after the historical two-model plan: claude-fable-5-1. This does not amend or validate that plan."
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "protocol.parent_protocol_sha256"
+        },
+        {
+          "code": "PRE_SCORE_FREEZE_MISSING",
+          "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+        },
+        {
+          "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+        },
+        {
+          "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+          "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+        },
+        {
+          "code": "MODEL_IDENTITY_UNVERIFIED",
+          "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+        },
+        {
+          "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+        },
+        {
+          "code": "SCHEDULE_MODEL_MISMATCH",
+          "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+        }
+      ]
+    },
+    {
+      "model": "claude-opus-5-5",
+      "group": "cmapss_clean_r3",
+      "status": "provenance_unverified",
+      "eligible_for_primary_comparison": false,
+      "artifact_array_valid": true,
+      "artifact_chain_consistent": true,
+      "reported_contaminated": false,
+      "reported_suspect": false,
+      "recorded_status": "complete",
+      "n_predictions": 60,
+      "issues": [
+        {
+          "code": "ADDITIONAL_SUBMITTED_MODELS",
+          "detail": "Models submitted after the historical two-model plan: claude-fable-5-1. This does not amend or validate that plan."
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "protocol.parent_protocol_sha256"
+        },
+        {
+          "code": "PRE_SCORE_FREEZE_MISSING",
+          "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+        },
+        {
+          "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+        },
+        {
+          "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+          "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+        },
+        {
+          "code": "MODEL_IDENTITY_UNVERIFIED",
+          "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+        },
+        {
+          "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+        },
+        {
+          "code": "SCHEDULE_MODEL_MISMATCH",
+          "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+        }
+      ]
+    },
+    {
+      "model": "claude-opus-5-5",
+      "group": "tep_clean_r1",
+      "status": "provenance_unverified",
+      "eligible_for_primary_comparison": false,
+      "artifact_array_valid": true,
+      "artifact_chain_consistent": true,
+      "reported_contaminated": false,
+      "reported_suspect": false,
+      "recorded_status": "complete",
+      "n_predictions": 70,
+      "issues": [
+        {
+          "code": "ADDITIONAL_SUBMITTED_MODELS",
+          "detail": "Models submitted after the historical two-model plan: claude-fable-5-1. This does not amend or validate that plan."
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "protocol.parent_protocol_sha256"
+        },
+        {
+          "code": "PRE_SCORE_FREEZE_MISSING",
+          "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+        },
+        {
+          "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+        },
+        {
+          "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+          "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+        },
+        {
+          "code": "MODEL_IDENTITY_UNVERIFIED",
+          "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+        },
+        {
+          "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+        },
+        {
+          "code": "SCHEDULE_MODEL_MISMATCH",
+          "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+        }
+      ]
+    },
+    {
+      "model": "claude-opus-5-5",
+      "group": "tep_clean_r2",
+      "status": "provenance_unverified",
+      "eligible_for_primary_comparison": false,
+      "artifact_array_valid": true,
+      "artifact_chain_consistent": true,
+      "reported_contaminated": false,
+      "reported_suspect": false,
+      "recorded_status": "complete",
+      "n_predictions": 70,
+      "issues": [
+        {
+          "code": "ADDITIONAL_SUBMITTED_MODELS",
+          "detail": "Models submitted after the historical two-model plan: claude-fable-5-1. This does not amend or validate that plan."
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "protocol.parent_protocol_sha256"
+        },
+        {
+          "code": "PRE_SCORE_FREEZE_MISSING",
+          "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+        },
+        {
+          "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+        },
+        {
+          "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+          "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+        },
+        {
+          "code": "MODEL_IDENTITY_UNVERIFIED",
+          "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+        },
+        {
+          "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+        },
+        {
+          "code": "SCHEDULE_MODEL_MISMATCH",
+          "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+        }
+      ]
+    },
+    {
+      "model": "claude-opus-5-5",
+      "group": "tep_clean_r3",
+      "status": "provenance_unverified",
+      "eligible_for_primary_comparison": false,
+      "artifact_array_valid": true,
+      "artifact_chain_consistent": true,
+      "reported_contaminated": false,
+      "reported_suspect": false,
+      "recorded_status": "complete",
+      "n_predictions": 70,
+      "issues": [
+        {
+          "code": "ADDITIONAL_SUBMITTED_MODELS",
+          "detail": "Models submitted after the historical two-model plan: claude-fable-5-1. This does not amend or validate that plan."
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "protocol.parent_protocol_sha256"
+        },
+        {
+          "code": "PRE_SCORE_FREEZE_MISSING",
+          "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+        },
+        {
+          "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+        },
+        {
+          "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+          "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+        },
+        {
+          "code": "MODEL_IDENTITY_UNVERIFIED",
+          "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+        },
+        {
+          "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+        },
+        {
+          "code": "SCHEDULE_MODEL_MISMATCH",
+          "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+        }
+      ]
+    },
+    {
+      "model": "claude-opus-5-5",
+      "group": "tep_misnamed_r1",
+      "status": "provenance_unverified",
+      "eligible_for_primary_comparison": false,
+      "artifact_array_valid": true,
+      "artifact_chain_consistent": true,
+      "reported_contaminated": false,
+      "reported_suspect": false,
+      "recorded_status": "complete",
+      "n_predictions": 70,
+      "issues": [
+        {
+          "code": "ADDITIONAL_SUBMITTED_MODELS",
+          "detail": "Models submitted after the historical two-model plan: claude-fable-5-1. This does not amend or validate that plan."
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "protocol.parent_protocol_sha256"
+        },
+        {
+          "code": "PRE_SCORE_FREEZE_MISSING",
+          "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+        },
+        {
+          "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+        },
+        {
+          "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+          "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+        },
+        {
+          "code": "MODEL_IDENTITY_UNVERIFIED",
+          "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+        },
+        {
+          "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+        },
+        {
+          "code": "SCHEDULE_MODEL_MISMATCH",
+          "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+        }
+      ]
+    },
+    {
+      "model": "claude-opus-5-5",
+      "group": "tep_misnamed_r2",
+      "status": "provenance_unverified",
+      "eligible_for_primary_comparison": false,
+      "artifact_array_valid": true,
+      "artifact_chain_consistent": true,
+      "reported_contaminated": false,
+      "reported_suspect": false,
+      "recorded_status": "complete",
+      "n_predictions": 70,
+      "issues": [
+        {
+          "code": "ADDITIONAL_SUBMITTED_MODELS",
+          "detail": "Models submitted after the historical two-model plan: claude-fable-5-1. This does not amend or validate that plan."
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "protocol.parent_protocol_sha256"
+        },
+        {
+          "code": "PRE_SCORE_FREEZE_MISSING",
+          "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+        },
+        {
+          "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+        },
+        {
+          "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+          "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+        },
+        {
+          "code": "MODEL_IDENTITY_UNVERIFIED",
+          "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+        },
+        {
+          "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+        },
+        {
+          "code": "SCHEDULE_MODEL_MISMATCH",
+          "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+        }
+      ]
+    },
+    {
+      "model": "claude-opus-5-5",
+      "group": "tep_misnamed_r3",
+      "status": "provenance_unverified",
+      "eligible_for_primary_comparison": false,
+      "artifact_array_valid": true,
+      "artifact_chain_consistent": true,
+      "reported_contaminated": false,
+      "reported_suspect": false,
+      "recorded_status": "complete",
+      "n_predictions": 70,
+      "issues": [
+        {
+          "code": "ADDITIONAL_SUBMITTED_MODELS",
+          "detail": "Models submitted after the historical two-model plan: claude-fable-5-1. This does not amend or validate that plan."
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "protocol.parent_protocol_sha256"
+        },
+        {
+          "code": "PRE_SCORE_FREEZE_MISSING",
+          "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+        },
+        {
+          "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+        },
+        {
+          "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+          "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+        },
+        {
+          "code": "MODEL_IDENTITY_UNVERIFIED",
+          "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+        },
+        {
+          "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+        },
+        {
+          "code": "SCHEDULE_MODEL_MISMATCH",
+          "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+        }
+      ]
+    },
+    {
+      "model": "claude-fable-5-1",
+      "group": "cmapss_clean_r1",
+      "status": "provenance_unverified",
+      "eligible_for_primary_comparison": false,
+      "artifact_array_valid": true,
+      "artifact_chain_consistent": true,
+      "reported_contaminated": false,
+      "reported_suspect": false,
+      "recorded_status": "complete",
+      "n_predictions": 60,
+      "issues": [
+        {
+          "code": "INVOCATION_ALIAS_IDENTITY_UNVERIFIED",
+          "detail": "Claimed claude-fable-5-1 uses invocation alias opus; native service identity is not established."
+        },
+        {
+          "code": "ADDITIONAL_SUBMITTED_MODELS",
+          "detail": "Models submitted after the historical two-model plan: claude-fable-5-1. This does not amend or validate that plan."
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "protocol.parent_protocol_sha256"
+        },
+        {
+          "code": "PRE_SCORE_FREEZE_MISSING",
+          "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+        },
+        {
+          "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+        },
+        {
+          "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+          "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+        },
+        {
+          "code": "MODEL_IDENTITY_UNVERIFIED",
+          "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+        },
+        {
+          "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+        },
+        {
+          "code": "SCHEDULE_MODEL_MISMATCH",
+          "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+        }
+      ]
+    },
+    {
+      "model": "claude-fable-5-1",
+      "group": "cmapss_clean_r2",
+      "status": "provenance_unverified",
+      "eligible_for_primary_comparison": false,
+      "artifact_array_valid": true,
+      "artifact_chain_consistent": true,
+      "reported_contaminated": false,
+      "reported_suspect": false,
+      "recorded_status": "complete",
+      "n_predictions": 60,
+      "issues": [
+        {
+          "code": "INVOCATION_ALIAS_IDENTITY_UNVERIFIED",
+          "detail": "Claimed claude-fable-5-1 uses invocation alias opus; native service identity is not established."
+        },
+        {
+          "code": "ADDITIONAL_SUBMITTED_MODELS",
+          "detail": "Models submitted after the historical two-model plan: claude-fable-5-1. This does not amend or validate that plan."
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "protocol.parent_protocol_sha256"
+        },
+        {
+          "code": "PRE_SCORE_FREEZE_MISSING",
+          "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+        },
+        {
+          "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+        },
+        {
+          "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+          "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+        },
+        {
+          "code": "MODEL_IDENTITY_UNVERIFIED",
+          "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+        },
+        {
+          "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+        },
+        {
+          "code": "SCHEDULE_MODEL_MISMATCH",
+          "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+        }
+      ]
+    },
+    {
+      "model": "claude-fable-5-1",
+      "group": "cmapss_clean_r3",
+      "status": "provenance_unverified",
+      "eligible_for_primary_comparison": false,
+      "artifact_array_valid": true,
+      "artifact_chain_consistent": true,
+      "reported_contaminated": false,
+      "reported_suspect": false,
+      "recorded_status": "complete",
+      "n_predictions": 60,
+      "issues": [
+        {
+          "code": "INVOCATION_ALIAS_IDENTITY_UNVERIFIED",
+          "detail": "Claimed claude-fable-5-1 uses invocation alias opus; native service identity is not established."
+        },
+        {
+          "code": "ADDITIONAL_SUBMITTED_MODELS",
+          "detail": "Models submitted after the historical two-model plan: claude-fable-5-1. This does not amend or validate that plan."
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "protocol.parent_protocol_sha256"
+        },
+        {
+          "code": "PRE_SCORE_FREEZE_MISSING",
+          "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+        },
+        {
+          "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+        },
+        {
+          "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+          "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+        },
+        {
+          "code": "MODEL_IDENTITY_UNVERIFIED",
+          "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+        },
+        {
+          "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+        },
+        {
+          "code": "SCHEDULE_MODEL_MISMATCH",
+          "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+        }
+      ]
+    },
+    {
+      "model": "claude-fable-5-1",
+      "group": "tep_clean_r1",
+      "status": "provenance_unverified",
+      "eligible_for_primary_comparison": false,
+      "artifact_array_valid": true,
+      "artifact_chain_consistent": true,
+      "reported_contaminated": false,
+      "reported_suspect": false,
+      "recorded_status": "complete",
+      "n_predictions": 70,
+      "issues": [
+        {
+          "code": "INVOCATION_ALIAS_IDENTITY_UNVERIFIED",
+          "detail": "Claimed claude-fable-5-1 uses invocation alias opus; native service identity is not established."
+        },
+        {
+          "code": "ADDITIONAL_SUBMITTED_MODELS",
+          "detail": "Models submitted after the historical two-model plan: claude-fable-5-1. This does not amend or validate that plan."
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "protocol.parent_protocol_sha256"
+        },
+        {
+          "code": "PRE_SCORE_FREEZE_MISSING",
+          "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+        },
+        {
+          "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+        },
+        {
+          "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+          "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+        },
+        {
+          "code": "MODEL_IDENTITY_UNVERIFIED",
+          "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+        },
+        {
+          "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+        },
+        {
+          "code": "SCHEDULE_MODEL_MISMATCH",
+          "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+        }
+      ]
+    },
+    {
+      "model": "claude-fable-5-1",
+      "group": "tep_clean_r2",
+      "status": "provenance_unverified",
+      "eligible_for_primary_comparison": false,
+      "artifact_array_valid": true,
+      "artifact_chain_consistent": true,
+      "reported_contaminated": false,
+      "reported_suspect": false,
+      "recorded_status": "complete",
+      "n_predictions": 70,
+      "issues": [
+        {
+          "code": "INVOCATION_ALIAS_IDENTITY_UNVERIFIED",
+          "detail": "Claimed claude-fable-5-1 uses invocation alias opus; native service identity is not established."
+        },
+        {
+          "code": "ADDITIONAL_SUBMITTED_MODELS",
+          "detail": "Models submitted after the historical two-model plan: claude-fable-5-1. This does not amend or validate that plan."
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "protocol.parent_protocol_sha256"
+        },
+        {
+          "code": "PRE_SCORE_FREEZE_MISSING",
+          "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+        },
+        {
+          "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+        },
+        {
+          "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+          "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+        },
+        {
+          "code": "MODEL_IDENTITY_UNVERIFIED",
+          "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+        },
+        {
+          "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+        },
+        {
+          "code": "SCHEDULE_MODEL_MISMATCH",
+          "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+        }
+      ]
+    },
+    {
+      "model": "claude-fable-5-1",
+      "group": "tep_clean_r3",
+      "status": "provenance_unverified",
+      "eligible_for_primary_comparison": false,
+      "artifact_array_valid": true,
+      "artifact_chain_consistent": true,
+      "reported_contaminated": false,
+      "reported_suspect": false,
+      "recorded_status": "complete",
+      "n_predictions": 70,
+      "issues": [
+        {
+          "code": "INVOCATION_ALIAS_IDENTITY_UNVERIFIED",
+          "detail": "Claimed claude-fable-5-1 uses invocation alias opus; native service identity is not established."
+        },
+        {
+          "code": "ADDITIONAL_SUBMITTED_MODELS",
+          "detail": "Models submitted after the historical two-model plan: claude-fable-5-1. This does not amend or validate that plan."
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "protocol.parent_protocol_sha256"
+        },
+        {
+          "code": "PRE_SCORE_FREEZE_MISSING",
+          "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+        },
+        {
+          "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+        },
+        {
+          "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+          "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+        },
+        {
+          "code": "MODEL_IDENTITY_UNVERIFIED",
+          "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+        },
+        {
+          "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+        },
+        {
+          "code": "SCHEDULE_MODEL_MISMATCH",
+          "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+        }
+      ]
+    },
+    {
+      "model": "claude-fable-5-1",
+      "group": "tep_misnamed_r1",
+      "status": "provenance_unverified",
+      "eligible_for_primary_comparison": false,
+      "artifact_array_valid": true,
+      "artifact_chain_consistent": true,
+      "reported_contaminated": false,
+      "reported_suspect": false,
+      "recorded_status": "complete",
+      "n_predictions": 70,
+      "issues": [
+        {
+          "code": "INVOCATION_ALIAS_IDENTITY_UNVERIFIED",
+          "detail": "Claimed claude-fable-5-1 uses invocation alias opus; native service identity is not established."
+        },
+        {
+          "code": "ADDITIONAL_SUBMITTED_MODELS",
+          "detail": "Models submitted after the historical two-model plan: claude-fable-5-1. This does not amend or validate that plan."
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "protocol.parent_protocol_sha256"
+        },
+        {
+          "code": "PRE_SCORE_FREEZE_MISSING",
+          "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+        },
+        {
+          "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+        },
+        {
+          "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+          "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+        },
+        {
+          "code": "MODEL_IDENTITY_UNVERIFIED",
+          "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+        },
+        {
+          "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+        },
+        {
+          "code": "SCHEDULE_MODEL_MISMATCH",
+          "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+        }
+      ]
+    },
+    {
+      "model": "claude-fable-5-1",
+      "group": "tep_misnamed_r2",
+      "status": "provenance_unverified",
+      "eligible_for_primary_comparison": false,
+      "artifact_array_valid": true,
+      "artifact_chain_consistent": true,
+      "reported_contaminated": false,
+      "reported_suspect": false,
+      "recorded_status": "complete",
+      "n_predictions": 70,
+      "issues": [
+        {
+          "code": "INVOCATION_ALIAS_IDENTITY_UNVERIFIED",
+          "detail": "Claimed claude-fable-5-1 uses invocation alias opus; native service identity is not established."
+        },
+        {
+          "code": "ADDITIONAL_SUBMITTED_MODELS",
+          "detail": "Models submitted after the historical two-model plan: claude-fable-5-1. This does not amend or validate that plan."
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "protocol.parent_protocol_sha256"
+        },
+        {
+          "code": "PRE_SCORE_FREEZE_MISSING",
+          "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+        },
+        {
+          "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+        },
+        {
+          "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+          "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+        },
+        {
+          "code": "MODEL_IDENTITY_UNVERIFIED",
+          "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+        },
+        {
+          "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+        },
+        {
+          "code": "SCHEDULE_MODEL_MISMATCH",
+          "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+        }
+      ]
+    },
+    {
+      "model": "claude-fable-5-1",
+      "group": "tep_misnamed_r3",
+      "status": "provenance_unverified",
+      "eligible_for_primary_comparison": false,
+      "artifact_array_valid": true,
+      "artifact_chain_consistent": true,
+      "reported_contaminated": false,
+      "reported_suspect": false,
+      "recorded_status": "complete",
+      "n_predictions": 70,
+      "issues": [
+        {
+          "code": "INVOCATION_ALIAS_IDENTITY_UNVERIFIED",
+          "detail": "Claimed claude-fable-5-1 uses invocation alias opus; native service identity is not established."
+        },
+        {
+          "code": "ADDITIONAL_SUBMITTED_MODELS",
+          "detail": "Models submitted after the historical two-model plan: claude-fable-5-1. This does not amend or validate that plan."
+        },
+        {
+          "code": "HASH_MISSING_OR_INVALID",
+          "detail": "protocol.parent_protocol_sha256"
+        },
+        {
+          "code": "PRE_SCORE_FREEZE_MISSING",
+          "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+        },
+        {
+          "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+        },
+        {
+          "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+          "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+        },
+        {
+          "code": "MODEL_IDENTITY_UNVERIFIED",
+          "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+        },
+        {
+          "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+        },
+        {
+          "code": "SCHEDULE_MODEL_MISMATCH",
+          "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+        }
+      ]
+    }
+  ],
+  "interpretation": "All 27 audited model/group records are excluded from the primary controlled comparison. Artifact consistency is separate from verified model inference. No answer-key dataset files or legacy scores were read; saved response or metadata content may itself contain prior label disclosures. No historical freeze, model identity or event trace is reconstructed. Matching outputs alone are not evidence of copying."
+}

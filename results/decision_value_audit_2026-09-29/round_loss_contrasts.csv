@@ -1,0 +1,7 @@
+dataset,subset,N,delta_errors,delta_rejections,delta_correct,loss_difference_c0,loss_difference_c1,View_strictly_lower_all_c_0_to_1,kind,c_exact,c,in_unit_interval,left_lower_below,left_lower_above
+hydraulic,all,54,1,-7,6,0.018518518518518517,-0.1111111111111111,False,single_intersection,1/7,0.14285714285714285,True,False,True
+hydraulic,round_1,27,0,0,0,0.0,0.0,False,coincident,,,False,,
+hydraulic,round_2,27,1,-7,6,0.037037037037037035,-0.2222222222222222,False,single_intersection,1/7,0.14285714285714285,True,False,True
+paderborn,all,72,-37,36,1,-0.5138888888888888,-0.013888888888888888,True,single_intersection,37/36,1.0277777777777777,False,True,False
+paderborn,round_1,36,-20,21,-1,-0.5555555555555556,0.027777777777777776,False,single_intersection,20/21,0.9523809523809523,True,True,False
+paderborn,round_2,36,-17,15,2,-0.4722222222222222,-0.05555555555555555,True,single_intersection,17/15,1.1333333333333333,False,True,False

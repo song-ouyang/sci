@@ -1,99 +1,88 @@
-# sci: error structure and known-answer screening for LLM-based industrial fault diagnosis
+# Known-answer screening for industrial fault diagnosis with large language models
 
-Code, fixed inputs and frozen model outputs for the paper
+Reproducibility materials for **Known-answer screening for industrial fault diagnosis with large language models: prospective evaluation and failure analysis**, by Song Ouyang, Xin Lu and Yan Yu.
 
-> **Error structure and known-answer screening for LLM-based industrial fault diagnosis: a repeated-call study**
-> Song Ouyang (2026). Manuscript under review.
+This is the corrected 30 September 2026 revision prepared for Quality and Reliability Engineering International (subscription route). Publication of this repository does not claim journal submission, peer-review acceptance or publication. The versioned snapshot is tagged `qrei-2026-09-30`.
 
-The study evaluates general-purpose LLM services as diagnostic interfaces for industrial sensor data. Each measured value is serialized as a text field (`ID | name | unit | value`). The study injects descriptor-mapping faults, meaning-preserving reorderings and context changes, submits every input several times, and tests each effect against call-to-call variation.
+## Principal evidence and limits
 
-## What is in this repository
+A locally frozen 27-call hydraulic study compared a known-answer screen with first-call and voting policies. The screen released 123 correct and 3 incorrect labels and withheld 36 of 162 window decisions. A post hoc concentration-only check selected exactly the same calls. Thus the original study does not establish incremental window benefit from reference answers.
 
-| Path | Contents | Used in the paper |
-|---|---|---|
-| `manuscript/` | LaTeX sources (`main.tex`, `supplement.tex`, `references.bib`, `figures/`) | the full paper |
-| `src/experiments/` | input preparation and single-attempt inference runners (Codex CLI) | Sections 3–4 |
-| `src/analysis/` | scoring, statistics, baselines and figures (offline, no model calls) | Sections 4–5 |
-| `tests/` | unit tests for parsers, runners and audits | — |
-| `data/` | processed features only (TEP, C-MAPSS, hydraulic rig summaries) | Section 4.1 |
-| `results/independent_validation/` | source-disjoint TEP/FD002 study: protocol, prompts, 84 frozen responses, per-case CSV | Tables 4–6, Figs. 2–4, 6 |
-| `results/context_blocked_v1/` | ABBA/BAAB time-balanced replication (16 calls) | Table 6, Fig. 4b |
-| `results/hydraulic_validation_v1/` | measured hydraulic rig, blocks R1–R2 (and the interrupted R3) | Table 7, Fig. 5 |
-| `results/hydraulic_validation_v1_completion/` | versioned completion of blocks R3–R5 (37/37 valid) | Table 7, Fig. 5 |
-| `results/statistics_v2/` | McNemar, crossed bootstrap, randomization tests, kappa, collapse, voting, call timing, LLM-vs-baseline tests | Tables 4–7, Figs. 3–6, Suppl. App. F |
-| `results/baselines_v2/` | tuned and target-informed supervised baselines, per-case predictions | Table 4, Suppl. App. H |
-| `results/call_timing_v2/` | client-side request timing audit | Fig. 4a |
-| `results/policy_hydraulic_v1/`, `results/policy_paderborn_v1/` | paired-position and decision-check studies on new hydraulic blocks and the Paderborn bearing rig | Table 8, Suppl. App. I |
-| `results/bearing_baseline_v1/` | same-feature supervised bearing benchmark | Section 5.1, Suppl. App. J |
-| `results/canary_hydraulic_v1/` | prospective known-answer (canary) screening study, frozen before calls | Table 8, Fig. 6b |
-| `results/error_structure_v3/` | error structure, single-call audit, canary screening and decision policies across all studies | Fig. 6, Table 8, Suppl. App. F |
-| `results/revision_v3/`, `mechanism_extension/`, `domestic_extension_v2/` | preliminary 130-source panel and cross-provider checks | Supplementary Sections 2–4 |
-| `results/claude_*` | non-controlled historical records, kept only for Supplementary Appendix B | supplement only |
+Before a later 18-call follow-up we fixed both screening rules, new focal/reference source blocks, the call schedule and scoring code. Across six windows, the known-answer policy released 100 correct and 8 incorrect labels, versus 88 correct and 20 incorrect for Single and the concentration-only check. Coverage was 100%; offline replay required 1.5 rather than 1 call per window. All 18 calls were actually collected. These 108 window decisions reuse 18 focal cycles from nine source blocks. Gains occur in two of six windows, and all eight residual errors repeat two weak-leakage cycles from one block. One unchanged rig, and jointly changed panels, period and client version, limit generalization.
 
-Every study directory follows the same layout:
+Historical analysis corrections use actual dispatch chronology, the six allocations allowed by the ABBA/BAAB design, and matched execution blocks. Original frozen protocols and responses are unchanged. This is an empirical evaluation of a bounded acceptance check, not a universal diagnostic guarantee.
 
-```
-protocol.json / protocol.sha256   fixed before any inference
-inference/prompts/*.txt           exact payloads sent to the service
-schedule.json                     call order and execution blocks
-predictions/<model>/              raw responses, event logs, metadata, parsed labels
-predictions/frozen_manifest.json  SHA-256 of every output, written before scoring
-answers/records.json              ground truth, opened only after freezing
-analysis/                         scores and per-case CSV files
-```
+## Files
 
-## Reproducing the analyses
+| Path | Content |
+|---|---|
+| `manuscript/main.pdf`, `manuscript/supplement.pdf` | Current reading copies |
+| `results/industrial_interface_focused_overleaf/` | Canonical editorial LaTeX, bibliography, tables and figures; `manuscript/` is its reading mirror |
+| `results/canary_hydraulic_v1/` | Original 27-call prospective study |
+| `results/canary_controls_v2/` | Post hoc concentration control and threshold sensitivity |
+| `results/canary_stability_v2/` | Later 18-call frozen follow-up, source audits, requests and policy records |
+| `results/statistics_v2/`, `results/error_structure_v3/` | Corrected statistics, chronology, error structure and policy comparisons |
+| `results/cc_statistical_correction_v4/` | Correction provenance and comparison with reconstructed historical calculations |
+| `results/reference_audit_20260930/` | Reference checks, corrections and source-access limitations |
+| `results/independent_validation/`, `results/context_blocked_v1/` | Simulation-source study and blocked replication |
+| `results/hydraulic_validation_v1/`, `results/hydraulic_validation_v1_completion/` | Earlier measured hydraulic studies |
+| `results/policy_hydraulic_v1/`, `results/policy_paderborn_v1/` | Position/check studies on hydraulic and bearing records |
+| `results/baselines_v2/`, `results/bearing_baseline_v1/` | Same-feature supervised references |
+| `src/`, `tests/` | Versioned preparation, execution, scoring, audit and reconstruction code |
+| `data/` | Processed features and provenance; original raw datasets are not redistributed |
+| `paper/archive/pre_cc_correction_20260930/src/analysis/` | Preserved analysis code needed to reconstruct the explicitly labelled historical comparison |
+| `PUBLICATION_MANIFEST.json` | SHA-256 inventory of this revision, including retained historical files and immutable evidence |
 
-All analyses run offline from the frozen outputs; no model access is needed.
+Other retained results are historical/exploratory evidence; their protocols and appendices specify their role. Date-stamped verification reports describe the files identified by their hashes, not all later revisions. A computational reference audit is not independent human peer review.
+
+## Offline reproduction
+
+Use Python with the packages in `requirements.txt`. No model credentials, new inference or raw-data download is required to rebuild the reported corrected analyses from frozen outputs.
 
 ```bash
-python -m venv .venv && source .venv/bin/activate
+python -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
-python src/analysis/statistics_v2.py      # inferential statistics  -> results/statistics_v2/
-python src/analysis/voting_time_v2.py     # voting and call timing  -> results/statistics_v2/
-python src/analysis/baselines_v2.py       # supervised baselines    -> results/baselines_v2/ (about 8 min)
-python src/analysis/llm_vs_baselines_v2.py  # paired LLM-vs-baseline tests
-python src/analysis/stats_tables_v2.py    # supplementary tables (Appendix F)
-python src/analysis/error_structure_v3.py      # error structure and canary screening
-python src/analysis/single_call_audit_v3.py    # single-call vs call-level evidence
-python src/analysis/decision_policies_v3.py    # decision policies across studies
-python src/analysis/score_canary_hydraulic_v1.py  # prospective study (frozen scoring rules)
-python src/analysis/structure_tables_v3.py     # supplementary tables for the above
-python src/analysis/figures_v2.py         # figures                 -> manuscript/figures/v2/
-cd manuscript && tectonic main.tex         # compile the paper
+python src/analysis/reproduce_public_revision.py
 ```
 
-Re-running inference is possible with `src/experiments/run_hydraulic_v1.py run --root <study dir>` and the Codex CLI (`codex-cli 0.155.0-alpha.9.2`) authenticated to an account with access to the requested models. Each runner refuses to overwrite frozen outputs; use a new study directory.
+This verifies immutable evidence, rebuilds historical corrections and both control analyses, independently checks raw-response arithmetic, renders follow-up tables, and refreshes the `manuscript/` mirror. To also compile both reading PDFs with an existing Tectonic installation and available TeX cache:
 
-## Data sources and licences
+```bash
+python src/analysis/reproduce_public_revision.py --compile
+```
 
-| Dataset | Source | Licence / terms |
-|---|---|---|
-| Tennessee Eastman Process (expanded simulation) | Rieth et al. (2017), Harvard Dataverse, doi:10.7910/DVN/6C3JR1 | see the original dataset page |
-| C-MAPSS turbofan degradation | Saxena & Goebel (2008), NASA Prognostics Data Repository | NASA open data |
-| Condition monitoring of hydraulic systems | Helwig et al. (2015), UCI, doi:10.24432/C5CW21 | CC BY 4.0 |
-| Paderborn bearing data | Lessmeier et al. (2016), Paderborn University KAt data center | see the original dataset page |
+Alternatively compile `main.tex` and `supplement.tex` separately in `manuscript/` using a normal LaTeX/BibTeX installation. Document compilation is separate from numeric reconstruction.
 
-Raw datasets are **not** redistributed. `download_datasets.py` fetches them from the original sources.
+Relevant regression checks:
 
-Suggested licences for this repository: MIT for code; CC BY 4.0 for derived data, prompts and model outputs.
+```bash
+python -m unittest tests.test_cc_statistical_correction_v4 tests.test_canary_controls_v2 tests.test_canary_stability_v2 tests.test_run_hydraulic_v1
+```
 
-## Excluded on purpose
+Do not execute study `prepare`, `run` or `freeze` commands to reproduce existing results. Those commands belong to new experiments and must use a separately versioned directory. The frozen scoring code and response manifests must not be edited.
 
-- raw third-party datasets (download them with `download_datasets.py`);
-- API keys and `.env` files (never commit them);
-- `.venv/`, `__pycache__/`, packaged `.zip` review archives;
-- superseded early batches (`results/batches*`, `results/gpt_models*`), which predate the frozen protocols.
+The exported research files exclude submission correspondence, local credentials, `.env` files, virtual environments and downloaded third-party papers. Some frozen logs retain historical absolute local paths, because their exact bytes are part of the audit record.
 
-Note: some frozen metadata and log files record absolute local paths from the machine that ran the experiments. They are left unchanged because their SHA-256 hashes are part of the frozen manifests.
+## Dataset sources and terms
+
+- Expanded Tennessee Eastman Process simulation: Rieth et al., Harvard Dataverse, https://doi.org/10.7910/DVN/6C3JR1.
+- C-MAPSS turbofan degradation: NASA Prognostics Data Repository; see the manuscript dataset reference and original NASA terms.
+- Hydraulic condition monitoring: UCI, https://doi.org/10.24432/C5CW21 (CC BY 4.0).
+- Paderborn bearing data: Paderborn University KAt data center; see Lessmeier et al. in the manuscript and the original data-source terms.
+
+Underlying datasets retain their original terms. This revision does not assign a new license to third-party data or publications. No downloaded third-party full-text literature is redistributed with the reference audit.
 
 ## Citation
 
 ```bibtex
-@misc{ouyang2026repeatedcall,
-  author = {Ouyang, Song},
-  title  = {Error structure and known-answer screening for {LLM}-based industrial fault diagnosis: a repeated-call study},
-  year   = {2026},
-  note   = {Code and data: https://github.com/song-ouyang/sci}
+@misc{ouyang2026knownanswer,
+  author = {Ouyang, Song and Lu, Xin and Yu, Yan},
+  title = {Known-answer screening for industrial fault diagnosis with large language models: prospective evaluation and failure analysis},
+  year = {2026},
+  note = {Reproducibility revision qrei-2026-09-30; manuscript prepared for submission},
+  url = {https://github.com/song-ouyang/sci/tree/qrei-2026-09-30}
 }
 ```
+
+AI-assisted code, checks and language work are disclosed in the manuscript. The Scientific Agent Skills software/method reference is included there with the other verified bibliographic records; it is not evidence for the experimental findings.

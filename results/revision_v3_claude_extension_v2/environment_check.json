@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-09-27T11:12:18.472810+00:00",
+  "cli_path": "/Users/guoba/.npm-global/bin/claude",
+  "cli_version": "2.1.283 (Claude Code)",
+  "auth_status": {
+    "loggedIn": true,
+    "authMethod": "claude.ai",
+    "apiProvider": "firstParty"
+  },
+  "anthropic_api_key_in_process": false,
+  "project_anthropic_api_key_configured": false,
+  "actual_inference_status": "403 Request not allowed in synthetic preflight",
+  "formal_sessions_started": 0,
+  "tool_configuration_at_startup": [],
+  "native_server_model_identity_verified": false,
+  "full_length_input_preflight_passed": false,
+  "cli_reference": "https://code.claude.com/docs/en/cli-reference",
+  "preflight_assessment": "preflight/20260927T110854Z-5425a912/assessment.json"
+}

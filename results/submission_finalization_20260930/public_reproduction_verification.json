@@ -1,0 +1,23 @@
+{
+  "started_at_utc": "2026-09-30T07:06:33.157004+00:00",
+  "manifest_files_verified": 4423,
+  "scope": "Internal offline reconstruction from the exact public export; no independent human review.",
+  "returncode": 0,
+  "scientific_files_compared": 33,
+  "scientific_mismatches": [],
+  "canonical_tex_bib_compared": 13,
+  "canonical_tex_bib_mismatches": [],
+  "immutable_files_compared": 2111,
+  "immutable_mismatches": [],
+  "complete": true,
+  "completed_at_utc": "2026-09-30T07:06:54.179405+00:00",
+  "regression_tests": {
+    "command": "python -m unittest tests.test_cc_statistical_correction_v4 tests.test_canary_controls_v2 tests.test_canary_stability_v2 tests.test_run_hydraulic_v1",
+    "tests_run": 24,
+    "result": "OK",
+    "new_inference": false,
+    "runner_calls": "mocked in unit tests"
+  },
+  "tested_manifest_sha256": "ae453be65e527ab5ba567f702222185792c47a7637913626b15a03facbb90220",
+  "report_added_after_success": true
+}

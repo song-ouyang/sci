@@ -6,15 +6,16 @@ Offline analysis of frozen outputs from every study; no model calls.
    cases, the n x k correctness matrix is split into a call component (whole
    responses better or worse than others), a stable case component (cases that
    are right or wrong in every call) and a residual, unstable component. The
-   shares indicate which check can help: known-answer screening for call-level
-   failures, repeat voting for unstable errors, and neither for stable errors.
+   shares describe observed variation, without proving that a screening policy
+   will transfer to independent calls or machines.
 2. Error stability. Each focal case is classified as stable correct, stable
-   error (wrong in every call) or unstable. Unanimity screening can never remove
-   stable errors, so their share bounds any consistency check.
+   error (wrong in every call) or unstable. Always-wrong cases are further split
+   by whether their wrong labels agree. Only the same-label subgroup necessarily
+   passes unanimity. Plurality cannot correct either always-wrong subgroup.
 3. Canary screening. Records with known labels that share the request with the
    focal records (the background panels) act as canaries. A call is accepted
-   only if its canary accuracy reaches a threshold fixed in advance (0.8, the
-   operating accuracy target). Screen-and-retry takes the first accepted call of
+   only if its canary accuracy reaches the retrospective analysis threshold 0.8.
+   This does not establish preregistration. Screen-and-retry takes the first accepted call of
    each identical-input group in call order, else abstains.
 """
 from collections import Counter, defaultdict
@@ -22,13 +23,14 @@ import csv
 import hashlib
 import json
 from pathlib import Path
+from datetime import datetime
 
 import numpy as np
 from scipy.stats import spearmanr
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "results/error_structure_v3"
-TAU = 0.8  # canary accuracy threshold fixed before this analysis (operating target)
+TAU = 0.8  # retrospective analysis target; prospective freeze documented separately
 
 
 def read_csv(path):
@@ -38,6 +40,29 @@ def read_csv(path):
 
 def load_json(path):
     return json.loads(Path(path).read_text(encoding="utf-8"))
+
+
+def dispatch_metadata(base, model, name):
+    """Bind replay chronology to recorded dispatch, never repeat-label rank."""
+    metadata_path = base / f"predictions/{model}/{name}_metadata.json"
+    metadata = load_json(metadata_path)
+    if metadata["status"] != "complete":
+        raise ValueError(f"Unavailable call cannot enter a complete replay: {name}")
+    timestamp = datetime.fromisoformat(metadata["started_at"])
+    if timestamp.tzinfo is None:
+        raise ValueError(f"Dispatch timestamp lacks timezone: {name}")
+    return {"name": name, "order": timestamp.isoformat(), "started_at": timestamp.isoformat(),
+            "metadata_path": str(metadata_path.relative_to(ROOT)),
+            "response_path": str((base / f"predictions/{model}/{name}_results.json").relative_to(ROOT))}
+
+
+def chronological(calls):
+    """Order completed replay artifacts by dispatch time and stable call ID."""
+    if any("started_at" not in c or "name" not in c for c in calls):
+        raise ValueError("Chronology requires explicit dispatch timestamps and call IDs")
+    if any(datetime.fromisoformat(c["started_at"]).tzinfo is None for c in calls):
+        raise ValueError("Chronology requires timezone-aware dispatch timestamps")
+    return sorted(calls, key=lambda c: (datetime.fromisoformat(c["started_at"]), c["name"]))
 
 
 # --------------------------------------------------------------------------- loaders
@@ -54,7 +79,8 @@ def tep_calls():
     out = []
     for (model, cond, rep), rs in calls.items():
         has_background = cond in {"a_front", "a_back", "b_front", "b_back"}
-        out.append({"study": "TEP", "service": model, "group": cond, "order": rep, "block": None,
+        out.append({"study": "TEP", "service": model, "group": cond, "block": None,
+                    **dispatch_metadata(ROOT / "results/independent_validation", model, f"{cond}_r{rep}"),
                     "records": [(r["id"], r["true_label"], r["predicted"], (r["id"] in focal) or not has_background)
                                 for r in rs]})
     return out
@@ -69,8 +95,8 @@ def abba_calls():
     for b, block in enumerate(load_json(base / "schedule.json")["blocks"], 1):
         for pos, name in enumerate(block, 1):
             preds = load_json(base / f"predictions/gpt-5.6-sol/{name}_results.json")
-            out.append({"study": "TEP ABBA", "service": "gpt-5.6-sol", "group": name[-1], "order": 2 * b + pos,
-                        "block": b, "records": [(p["id"], truth[p["id"]], p["predicted"], p["id"] in focal) for p in preds]})
+            out.append({"study": "TEP ABBA", "service": "gpt-5.6-sol", "group": name[-1],
+                        **dispatch_metadata(base, "gpt-5.6-sol", name), "block": b, "records": [(p["id"], truth[p["id"]], p["predicted"], p["id"] in focal) for p in preds]})
     return out
 
 
@@ -88,14 +114,13 @@ def hydraulic_calls():
             prompt = (base / f"inference/prompts/{cond}_r{rep}.txt").read_bytes()
             out.append({"study": "Hydraulic (5 blocks)", "service": "gpt-5.6-sol",
                         "group": cond.replace("_repeat", ""), "payload": hashlib.sha256(prompt).hexdigest(),
-                        "order": 2 * rep + cond.endswith("_repeat"), "block": rep,
+                        **dispatch_metadata(base, "gpt-5.6-sol", f"{cond}_r{rep}"), "block": rep,
                         "records": [(p["id"], truth[p["id"]], p["predicted"], p["id"] in focal) for p in preds]})
     return out
 
 
 def policy_calls(study, label):
     rows = read_csv(ROOT / f"results/{study}/analysis/predictions.csv")
-    reqs = {r["group"]: r for r in read_csv(ROOT / f"results/{study}/analysis/requests.csv")}
     calls = defaultdict(list)
     for r in rows:
         calls[r["group"]].append(r)
@@ -103,7 +128,7 @@ def policy_calls(study, label):
     for group, rs in calls.items():
         first = rs[0]
         out.append({"study": label, "service": "gpt-5.6-sol", "group": f"{first['panel']}_{first['condition']}",
-                    "order": (int(first["round"]), reqs[group]["started_at"]), "block": int(first["round"]),
+                    **dispatch_metadata(ROOT / f"results/{study}", "gpt-5.6-sol", group), "block": int(first["round"]),
                     "records": [(r["id"], r["truth"], r["predicted"], r["focal"] == "True") for r in rs]})
     return out
 
@@ -168,9 +193,15 @@ def group_summary(calls):
                      "accuracy": float(correct.mean()), "error_rate": float(1 - correct.mean()),
                      **{f"share_{k}": v for k, v in decompose(correct).items()},
                      "stable_correct": stab["stable_correct"], "stable_error": stab["stable_error_same"] + stab["stable_error_varied"],
-                     "stable_error_same_label": stab["stable_error_same"], "unstable": stab["unstable"],
+                     "stable_error_same_label": stab["stable_error_same"],
+                     "stable_error_varying_labels": stab["stable_error_varied"], "unstable": stab["unstable"],
                      "majority_accuracy": float(np.mean([v is True for v in vote])),
                      "majority_ties": sum(v is None for v in vote),
+                     "plurality_correct": sum(v is True for v in vote),
+                     "plurality_wrong": sum(v is False for v in vote),
+                     "plurality_withheld_ties": sum(v is None for v in vote),
+                     "plurality_usable_correct_yield": float(np.mean([v is True for v in vote])),
+                     "plurality_rule": "plurality over all k observed calls; ties withheld",
                      "unanimity_coverage": float(np.mean(unanimous)),
                      "unanimity_accepted_error": float(1 - np.mean(acc_unan)) if acc_unan else None,
                      "total_errors": int(errors)})
@@ -190,10 +221,11 @@ def canary_screen(calls, tau=TAU):
                "order": str(c["order"]), "n_focal": len(focal), "n_canary": len(canary),
                "focal_accuracy": float(np.mean([t == p for t, p in focal])),
                "canary_accuracy": float(np.mean([t == p for t, p in canary])),
-               "focal_modal_share": modal}
-        row["accepted"] = row["canary_accuracy"] >= tau
+               "focal_modal_share": modal, "name": c["name"], "started_at": c["started_at"]}
+        row["accepted"] = row["canary_accuracy"] >= tau - 1e-12
         per_call.append(row)
-        groups[(c["study"], c["service"], c["group"])].append((c["order"], row))
+        block = c["block"] if c["study"] in {"Hydraulic (new blocks)", "Paderborn bearing"} else None
+        groups[(c["study"], c["service"], c["group"], block)].append((c["order"], row))
     summary = defaultdict(lambda: defaultdict(float))
     by_study = defaultdict(list)
     for r in per_call:
@@ -204,21 +236,21 @@ def canary_screen(calls, tau=TAU):
         ca = np.array([r["canary_accuracy"] for r in rs])
         acc = [r for r in rs if r["accepted"]]
         rho, p = spearmanr(ca, fa) if len(set(ca)) > 1 and len(set(fa)) > 1 else (np.nan, np.nan)
-        # screen-and-retry: first accepted call per identical-input group, up to three tries
+        # Same windows as decision_policies_v3: one identical-input group, or
+        # group x round for held-out panel studies. Do not invent three-call
+        # chunks across execution blocks for these descriptive summaries.
         retry_acc, retry_calls, retry_abstain = [], [], 0
-        for (s, sv, g), seq in groups.items():
+        for (s, sv, g, block), seq in groups.items():
             if (s, sv) != (study, service):
                 continue
-            seq = [r for _, r in sorted(seq, key=lambda x: str(x[0]))]
-            for start in range(0, len(seq), 3):  # consecutive windows of up to three calls
-                window = seq[start:start + 3]
-                chosen = next((k for k, r in enumerate(window) if r["accepted"]), None)
-                if chosen is None:
-                    retry_abstain += 1
-                    retry_calls.append(len(window))
-                else:
-                    retry_acc.append(window[chosen]["focal_accuracy"])
-                    retry_calls.append(chosen + 1)
+            seq = chronological([r for _, r in seq])
+            chosen = next((k for k, r in enumerate(seq) if r["accepted"]), None)
+            if chosen is None:
+                retry_abstain += 1
+                retry_calls.append(len(seq))
+            else:
+                retry_acc.append(seq[chosen]["focal_accuracy"])
+                retry_calls.append(chosen + 1)
         out.append({"study": study, "service": service, "calls": len(rs),
                     "focal_accuracy_all_calls": float(fa.mean()),
                     "spearman_canary_focal": None if np.isnan(rho) else float(rho),
@@ -249,7 +281,18 @@ def main():
     write_csv(OUT / "groups.csv", groups)
     write_csv(OUT / "canary_calls.csv", per_call)
     write_csv(OUT / "canary_summary.csv", canary)
-    (OUT / "summary.json").write_text(json.dumps({"tau": TAU, "groups": groups, "canary": canary}, indent=2) + "\n")
+    sensitivity = []
+    for tau in [.5, .6, .7, .8, .9, 1.0]:
+        for study in dict.fromkeys(c["study"] for c in per_call):
+            rs = [c for c in per_call if c["study"] == study and c["service"] == "gpt-5.6-sol"]
+            accepted = [c for c in rs if c["canary_accuracy"] >= tau - 1e-12]
+            sensitivity.append({"tau": tau, "study": study, "calls": len(rs), "accepted": len(accepted),
+                                "accepted_focal_accuracy": float(np.mean([c["focal_accuracy"] for c in accepted])) if accepted else None,
+                                "all_focal_accuracy": float(np.mean([c["focal_accuracy"] for c in rs]))})
+    write_csv(OUT / "canary_threshold_sensitivity.csv", sensitivity)
+    (OUT / "summary.json").write_text(json.dumps({"tau": TAU,
+        "scope": "Retrospective descriptive analysis; repeated records and call dependence remain. Always-wrong and same-wrong-label groups are distinct. majority_* fields are legacy aliases for plurality with ties withheld.",
+        "groups": groups, "canary": canary}, indent=2) + "\n")
     for g in groups:
         print(f"{g['study'][:20]:<20} {g['service'][4:12]:<8} {g['group'][:16]:<16} n={g['n_cases']:>2} k={g['calls']} "
               f"acc={100*g['accuracy']:5.1f} call={g['share_call']:.2f} case={g['share_case']:.2f} unst={g['share_unstable']:.2f} "

@@ -1,0 +1,163 @@
+{
+  "started_utc": "2026-09-30T05:30:15.817905+00:00",
+  "package": "/Users/guoba/work/sci-paper-llm-pdm/results/industrial_interface_focused_review.zip",
+  "package_sha256": "58a417fd863778f5583c932fa97924186edbec4c75c1cdc07b1e1457243eed9b",
+  "steps": [
+    {
+      "command": [
+        "src/analysis/rebuild_cc_statistics_v4.py"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "src/analysis/canary_controls_v2.py"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "src/analysis/canary_controls_v2.py",
+        "--root",
+        "results/canary_stability_v2",
+        "--out",
+        "results/canary_stability_v2/analysis"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "src/analysis/render_canary_stability_v2.py"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "paper/reviews/cc_q2_2026-09-30/statistical_recomputations.py"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "src/analysis/sync_cc_submission.py",
+        "--compile"
+      ],
+      "returncode": 0
+    }
+  ],
+  "package_manifest_files_verified": 4521,
+  "unique_frozen_files_verified": 1809,
+  "scientific_outputs_compared": 33,
+  "scientific_output_mismatches": [],
+  "canonical_tex_compared": 24,
+  "canonical_tex_mismatches": [],
+  "changed_frozen_files": [],
+  "critical_policy_rows_checked": 7,
+  "abba_exact_design": {
+    "assignments": 6,
+    "p": 0.6666666666666666
+  },
+  "complete": true,
+  "completed_utc": "2026-09-30T05:30:43.292718+00:00",
+  "compiled_pdf_byte_comparison": [
+    {
+      "path": "results/industrial_interface_focused_overleaf/main.pdf",
+      "byte_identical": false
+    },
+    {
+      "path": "results/industrial_interface_focused_overleaf/supplement.pdf",
+      "byte_identical": false
+    },
+    {
+      "path": "results/qrei_submission/manuscript.pdf",
+      "byte_identical": false
+    },
+    {
+      "path": "results/qrei_submission/supporting_information.pdf",
+      "byte_identical": false
+    },
+    {
+      "path": "results/qrei_submission/titlepage.pdf",
+      "byte_identical": false
+    },
+    {
+      "path": "results/qrei_submission/cover_letter.pdf",
+      "byte_identical": false
+    }
+  ],
+  "verification_scope": "Internal independently implemented offline arithmetic and extracted-package reproducibility verification; not independent human peer review.",
+  "compiled_pdf_page_text_comparison": [
+    {
+      "path": "results/industrial_interface_focused_overleaf/main.pdf",
+      "original_pages": 28,
+      "rebuilt_pages": 28,
+      "page_text_identical": true,
+      "metadata_differences": {
+        "/CreationDate": [
+          "D:20260930052753-00'00'",
+          "D:20260930053034-00'00'"
+        ]
+      }
+    },
+    {
+      "path": "results/industrial_interface_focused_overleaf/supplement.pdf",
+      "original_pages": 63,
+      "rebuilt_pages": 63,
+      "page_text_identical": true,
+      "metadata_differences": {
+        "/CreationDate": [
+          "D:20260930052754-00'00'",
+          "D:20260930053036-00'00'"
+        ]
+      }
+    },
+    {
+      "path": "results/qrei_submission/manuscript.pdf",
+      "original_pages": 46,
+      "rebuilt_pages": 46,
+      "page_text_identical": true,
+      "metadata_differences": {
+        "/CreationDate": [
+          "D:20260930052756-00'00'",
+          "D:20260930053038-00'00'"
+        ]
+      }
+    },
+    {
+      "path": "results/qrei_submission/supporting_information.pdf",
+      "original_pages": 63,
+      "rebuilt_pages": 63,
+      "page_text_identical": true,
+      "metadata_differences": {
+        "/CreationDate": [
+          "D:20260930052759-00'00'",
+          "D:20260930053040-00'00'"
+        ]
+      }
+    },
+    {
+      "path": "results/qrei_submission/titlepage.pdf",
+      "original_pages": 1,
+      "rebuilt_pages": 1,
+      "page_text_identical": true,
+      "metadata_differences": {
+        "/CreationDate": [
+          "D:20260930052801-00'00'",
+          "D:20260930053042-00'00'"
+        ]
+      }
+    },
+    {
+      "path": "results/qrei_submission/cover_letter.pdf",
+      "original_pages": 1,
+      "rebuilt_pages": 1,
+      "page_text_identical": true,
+      "metadata_differences": {
+        "/CreationDate": [
+          "D:20260930052801-00'00'",
+          "D:20260930053042-00'00'"
+        ]
+      }
+    }
+  ]
+}

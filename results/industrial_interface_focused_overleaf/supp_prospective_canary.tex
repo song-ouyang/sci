@@ -1,0 +1,95 @@
+\clearpage
+\section{Prospective known-answer screening study}\label{app:canary_prospective}
+
+\subsection{Scope, source exclusions and reused panel}
+This study was designed after the retrospective error-structure analyses, and its own protocol, inputs, schedule and scoring code were hashed before its first request. It is a prospective evaluation of a result-informed screening rule, not a preregistration of the entire research programme. The archived study directory is \nolinkurl{results/canary_hydraulic_v1}; the original preparation and scoring files are \nolinkurl{src/experiments/prepare_canary_hydraulic_v1.py} and \nolinkurl{src/analysis/score_canary_hydraulic_v1.py}. The original scorer and its outputs are retained without retrospective edits.
+
+The source audit excludes the union of 108 joint-condition blocks used by the earlier hydraulic mapping/context and fixed-policy studies. Each of the nine pump-state $\times$ cooler-state strata has four eligible unused blocks containing at least five stable cycles. An outcome-independent hash selects two valve/accumulator settings shared across the strata, (80,130) and (100,115). The middle stable cycle of one block at each selected setting supplies two focal cycles per stratum: 18 focal cycles from 18 previously unused blocks, with six cycles per leakage class. The nine canaries are one historically labelled cycle per stratum, selected by a fixed hash from the \emph{earlier hydraulic focal panel}. They are therefore reused observations, not nine additional unseen sources. The new focal blocks, exclusions, cycle identifiers and reference labels are retained in \nolinkurl{source_audit.json} and \nolinkurl{answers/records.json} within the study directory.
+
+Every request contains the same 18 focal cycles and nine canaries in one fixed seeded interleaving, using the established 28 six-decimal numerical features. Opaque record IDs replace source identifiers, and neither reference labels nor canary roles are supplied to the model. C uses the canonical descriptor--value mapping. H exchanges the PS1 and PS2 values while retaining their descriptors, representing a specified upstream value swap that descriptor validation alone cannot detect. R reverses intact descriptor--value pairs. Each transformation applies to both focal and canary records. The nine prompts within each arm are byte-identical. All measurements originate from one hydraulic rig; 486 focal predictions and 162 window-level decision opportunities repeatedly reuse the same 18 focal cycles and do not constitute additional independent equipment or source samples.
+
+\subsection{Execution, freeze and resource accounting}
+Three execution blocks each contain three calls per arm, randomly ordered with seed 20260929. The suffix \texttt{c1}, \texttt{c2} or \texttt{c3} identifies a copy and is \emph{not} its scheduled position. The requested service is \texttt{gpt-5.6-sol}, with medium reasoning effort and \texttt{codex-cli 0.155.0-alpha.9.2}. Each invocation uses a fresh empty-directory session with tools, plugins and project context disabled; the client base instructions remain. The service alias is recorded, but no server-resolved model revision is exposed.
+
+The protocol timestamp is 29 September 2026, 00:10:50 UTC; first dispatch occurred at 00:11:06, and the final metadata update at 00:31:09. The output manifest was written at 00:31:13. This local timestamp-and-hash trail supports the sequence of this study; it is not an external registration certificate or a claim that no outcomes were inspected in earlier stages. The protocol hashes its answer file, inputs, schedule, 27 prompt files and six source files, including the original scorer. The output manifest retains 190 artifact entries. The protocol SHA-256 begins \texttt{383cc4e3f8e38f5a7}; its full digest is retained in \nolinkurl{protocol.sha256} and the output manifest.
+
+The fixed limits were 27 scheduled requests, at most two concurrent workers, a 900-second request timeout, a 10,800-second wall-time allowance and an observed input-plus-output dispatch threshold of 1,000,000 tokens. In-flight calls could exceed that token threshold. Each scheduled job allowed one invocation, with no retry or replacement of a failed or unattempted job. All 27 were attempted and valid: 729/729 classification slots, comprising 486 focal and 243 canary predictions, with zero failures, zero unattempted requests and zero unknown-usage sessions. Reported usage totals 603,721 input-plus-output tokens; cached input tokens are included in the input count. Table~\ref{tab:canary_all_calls} retains every request.
+
+\subsection{Prespecified endpoints and subsequent analysis changes}
+The acceptance rule is at least eight correct canary labels out of nine. The frozen scorer expresses this as $\tau=8/9$. The later common-policy notation $\tau=0.8$ gives the same integer rule with nine canaries: eight or nine correct pass, and seven correct fail. A single canary error therefore does not trigger rejection. This equivalence does not authorize tuning the threshold after observing focal labels.
+
+The protocol defines four endpoints. E1 is the Spearman association of canary and focal accuracy over valid calls. Its original implementation uses 10,000 Monte Carlo permutations of focal accuracies across all 27 calls, with a one-sided add-one $p$-value and seed 20260929. Despite the word ``exact'' in its historical docstring, this is a Monte Carlo permutation calculation, not exhaustive enumeration. Unrestricted permutation assumes exchangeability across calls despite arm, block and shared-panel dependence. A later exploratory sensitivity analysis permutes only within each arm--block cell (10,000 draws, seed 20260930). Neither calculation supplies independent-rig replication or eliminates all dependence from repeatedly scoring one fixed panel.
+
+E2 compares focal accuracy in accepted, rejected and all valid requests, together with accepted-call coverage. These are request-level selection summaries: they count every accepted call, including multiple calls from a single window. E3 instead emulates one decision per arm--block window: take that arm's first call in frozen schedule order; for screening, retain the first passing call among its three scheduled copies, or withhold all 18 focal labels if none passes. All 27 calls were actually collected. The stopping rule is evaluated offline on those complete records, so its required-call count is not an observed saving in tokens, elapsed time or monetary cost.
+
+For E3, the frozen three-call voting comparator returns the highest-count label and resolves a three-way tie using the \emph{first scheduled call's label}. We call this the original tie-first vote. The later common-policy reanalysis instead withholds any highest-count tie; it is a separately labelled, post hoc tie-abstain comparator. With three calls a non-tied winner has a majority, whereas the common-policy tables elsewhere use variable $k$ and a unique \emph{plurality}, which need not exceed $k/2$. The original tie-first result remains the prespecified comparison here.
+
+E4 compares C and H focal accuracy and rejection rates. Conditional on the R positions, assigning three C and three H calls to their six positions within each of three independently shuffled blocks gives $\binom{6}{3}^{3}=8{,}000$ allocations. The original two-sided randomization calculation uses the absolute C-minus-H accuracy difference. Its interpretation requires the sharp null for these arm assignments and no interference between calls; it does not isolate an internal reasoning mechanism or remove arbitrary service-time changes. The four endpoints have different denominators and estimands and are not four independent confirmations of screening efficacy.
+
+\subsection{Endpoint results}
+E1 gives $\rho=0.9708$. The original unrestricted permutation result is $p=1/10{,}001$; the exploratory within-arm--block sensitivity also gives $p=1/10{,}001$. This is a strong observed association within the reused panel, with the limitations above. It does not establish a calibrated relationship for another device, service period or canary panel.
+
+For E2, 11/27 calls pass (40.7\%). Their focal accuracy is 190/198 (96.0\%), compared with 310/486 (63.8\%) across all calls and 120/288 (41.7\%) in the 16 rejected calls. These numbers differ from E3 because E2 retains every passing request rather than selecting one per window.
+
+For E3, screening releases labels in seven of the nine windows: 123 correct and three incorrect labels, with 36 withheld. Conditional accuracy is 123/126 (97.6\%), decision coverage is 126/162 (77.8\%), and correct yield is 123/162 (75.9\%). Taking only the first scheduled call gives 105 correct and 57 incorrect labels (64.8\% correct yield). The original tie-first vote gives 102 correct and 60 incorrect labels (63.0\%); the later tie-abstain variant gives 97 correct, 59 incorrect and six withheld (59.9\% correct yield; 62.2\% conditional accuracy). Screening requires 17/9 calls per window under offline emulation, versus one for the single call and three for either voting rule. Counts by window and the complete request order appear in Tables~\ref{tab:canary_windows} and~\ref{tab:canary_all_calls}. Nine windows are repeated evaluations of one focal panel, not nine independent field deployments.
+
+For E4, C has 86/162 correct focal labels (53.1\%) and H has 95/162 (58.6\%), a C-minus-H difference of $-5.56$ percentage points; the two-sided randomization $p$-value is 0.716. Seven of nine C calls and six of nine H calls are rejected. Thus this study does not establish an accuracy penalty or preferential rejection for the specified hidden swap. Canary--focal association and better selected-call accuracy should not be described as reliable detection of that mapping fault.
+
+\begin{table}[p]
+\centering\small
+\caption{All 27 prospective canary requests in frozen schedule order. Position is one-based within its execution block. Focal, canary and modal counts use denominators 18, 9 and 18, respectively; modal is the largest focal predicted-label count. Every request returned a valid complete response. Pass means at least 8/9 canary labels correct.}
+\label{tab:canary_all_calls}
+\begin{tabular}{@{}rrlrrrr@{}}\toprule
+Block & Position & Request & Focal correct & Canary correct & Modal & Pass \\\midrule
+1 & 1 & \texttt{C\_b1\_c3} & 7 & 4 & 17 & No \\
+1 & 2 & \texttt{R\_b1\_c2} & 7 & 4 & 17 & No \\
+1 & 3 & \texttt{C\_b1\_c1} & 17 & 8 & 7 & Yes \\
+1 & 4 & \texttt{R\_b1\_c3} & 18 & 9 & 6 & Yes \\
+1 & 5 & \texttt{C\_b1\_c2} & 6 & 3 & 18 & No \\
+1 & 6 & \texttt{H\_b1\_c1} & 7 & 4 & 17 & No \\
+1 & 7 & \texttt{H\_b1\_c3} & 7 & 4 & 17 & No \\
+1 & 8 & \texttt{H\_b1\_c2} & 7 & 4 & 17 & No \\
+1 & 9 & \texttt{R\_b1\_c1} & 7 & 4 & 17 & No \\
+\midrule
+2 & 1 & \texttt{H\_b2\_c3} & 17 & 9 & 7 & Yes \\
+2 & 2 & \texttt{R\_b2\_c1} & 18 & 9 & 6 & Yes \\
+2 & 3 & \texttt{R\_b2\_c3} & 17 & 8 & 7 & Yes \\
+2 & 4 & \texttt{H\_b2\_c1} & 7 & 4 & 17 & No \\
+2 & 5 & \texttt{C\_b2\_c3} & 7 & 4 & 17 & No \\
+2 & 6 & \texttt{C\_b2\_c1} & 7 & 4 & 17 & No \\
+2 & 7 & \texttt{H\_b2\_c2} & 18 & 9 & 6 & Yes \\
+2 & 8 & \texttt{C\_b2\_c2} & 7 & 4 & 17 & No \\
+2 & 9 & \texttt{R\_b2\_c2} & 15 & 8 & 7 & Yes \\
+\midrule
+3 & 1 & \texttt{H\_b3\_c2} & 7 & 4 & 17 & No \\
+3 & 2 & \texttt{C\_b3\_c3} & 18 & 9 & 6 & Yes \\
+3 & 3 & \texttt{H\_b3\_c1} & 7 & 4 & 17 & No \\
+3 & 4 & \texttt{R\_b3\_c1} & 17 & 9 & 7 & Yes \\
+3 & 5 & \texttt{C\_b3\_c1} & 6 & 3 & 18 & No \\
+3 & 6 & \texttt{C\_b3\_c2} & 11 & 4 & 9 & No \\
+3 & 7 & \texttt{H\_b3\_c3} & 18 & 9 & 6 & Yes \\
+3 & 8 & \texttt{R\_b3\_c2} & 13 & 5 & 11 & No \\
+3 & 9 & \texttt{R\_b3\_c3} & 17 & 8 & 7 & Yes \\
+\bottomrule\end{tabular}
+\end{table}
+\begin{table}[p]
+\centering\small
+\caption{All nine prospective arm--block windows. Copy order gives the frozen schedule order within that arm and block, not numeric suffix order. Each policy has 18 focal opportunities per row. ``Screen'' shows correct/incorrect/withheld labels; its calls column includes inspected calls preceding the first pass, or all three when none passes. Vote columns show correct/incorrect/withheld under the original tie-first and later tie-abstain rules. All counts are offline policy evaluations of the same completed requests.}
+\label{tab:canary_windows}
+\begin{tabular}{@{}lclrrrr@{}}\toprule
+Window & Copy order & Selected & Single correct & Screen & Calls & Votes: first; abstain \\\midrule
+C1 & c3,c1,c2 & c1 & 7 & 17/1/0 & 2 & 6/12/0; 6/12/0 \\
+C2 & c3,c1,c2 & \NA & 7 & 0/0/18 & 3 & 7/11/0; 7/11/0 \\
+C3 & c3,c1,c2 & c3 & 18 & 18/0/0 & 1 & 16/2/0; 11/2/5 \\
+H1 & c1,c3,c2 & \NA & 7 & 0/0/18 & 3 & 7/11/0; 7/11/0 \\
+H2 & c3,c1,c2 & c3 & 17 & 17/1/0 & 1 & 18/0/0; 18/0/0 \\
+H3 & c2,c1,c3 & c3 & 7 & 18/0/0 & 3 & 7/11/0; 7/11/0 \\
+R1 & c2,c3,c1 & c3 & 7 & 18/0/0 & 2 & 7/11/0; 7/11/0 \\
+R2 & c1,c3,c2 & c1 & 18 & 18/0/0 & 1 & 17/1/0; 17/1/0 \\
+R3 & c1,c2,c3 & c1 & 17 & 17/1/0 & 1 & 17/1/0; 17/0/1 \\
+\midrule
+Total & \NA & \NA & 105 & 123/3/36 & 17 & 102/60/0; 97/59/6 \\
+\bottomrule\end{tabular}
+\par\smallskip\footnotesize C: canonical; H: hidden PS1/PS2 value swap; R: intact-pair reversal. The two no-pass windows are C2 and H1. Per-window request counts do not represent per-record costs.
+\end{table}
+\FloatBarrier

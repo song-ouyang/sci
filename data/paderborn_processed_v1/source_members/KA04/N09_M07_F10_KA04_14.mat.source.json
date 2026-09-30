@@ -1,0 +1,25 @@
+{
+  "archive": {
+    "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA04.rar",
+    "size_bytes": 180920703,
+    "etag": "\"ac8a17f-533960d56c6de\"",
+    "last_modified": "Tue, 24 May 2016 12:54:05 GMT"
+  },
+  "member": {
+    "offset": 43639265,
+    "kind": 116,
+    "flags": 37056,
+    "head_size": 65,
+    "packed_size": 2106144,
+    "header_hex": "d99274c0904100202320005807850002a72d58d82d94ca441d331c00200000004b4130345c4e30395f4d30375f4631305f4b4130345f31342e6d617400b019c860",
+    "unpacked_size": 8718168,
+    "file_crc32": 3629657511,
+    "name": "KA04/N09_M07_F10_KA04_14.mat",
+    "method": 51,
+    "attributes": 32
+  },
+  "packed_payload_sha256": "1b0635e90d3380fd89b3a9b1b0cbd097a0efcdf88fa81f5bce52889440ab334c",
+  "derived_single_member_rar_sha256": "8b36d7cb5f7a92e52346ae4722bbbbe1a2f5622be5580973800bf5e865243e4f",
+  "mat_sha256": "b0d59a3fa20ae02c3b5a4694b5e1696d6e1514fc124d8914a1a707f3584c90ce",
+  "note": "Derived standalone RAR, not complete archive. Authentic main/file headers and selected packed bytes; original uncompressed CRC32 verified."
+}

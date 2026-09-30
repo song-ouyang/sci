@@ -1,0 +1,23 @@
+\paragraph{A label-free collapse control.}
+
+A post hoc control tests whether known canary labels add value beyond detecting near-monolabel outputs. Using the same frozen calls, payloads and three-call windows, it rejects a request when at least 90\% of its 27 labels agree (25 or more), without reading reference labels or record roles. The rule and 85\%, 95\% and 100\% sensitivities were fixed before computing this control, after the original outcomes had been inspected; this is not an independent prospective validation.
+
+\begin{table}[htbp]\centering\small
+
+\caption{Post hoc control on nine prospective-study windows. Calls/window count requests an offline policy would require; all 27 source calls were collected.}\label{tab:canary_control_main}
+
+\begin{tabular}{lrrrrr}\toprule
+
+Policy & Correct & Error & Withheld & Coverage (\%) & Calls/window \\ \midrule
+
+Single & 105 & 57 & 0 & 100.0 & 1.00 \\
+
+Known answer & 123 & 3 & 36 & 77.8 & 1.89 \\
+
+Collapse only (90\%) & 123 & 3 & 36 & 77.8 & 1.89 \\
+
+Three-call vote & 102 & 60 & 0 & 100.0 & 3.00 \\
+
+\bottomrule\end{tabular}\end{table}
+
+The 90\% collapse control and known-answer policy select the same calls in every window and therefore have identical retained labels and required-call resources. Incremental window-level benefit from knowing the canary labels is not established. At the call level, collapse screening additionally passes two noncollapsed calls containing 12 focal errors among 36 outputs; neither is selected by the first-passing window rule. The 85\% rule gives the same window outcomes, whereas 95\% and 100\% reproduce Single. Supplementary Appendix~L reports acceptance cross-tabs, tie sensitivity and resources. Because every request retains the canary records, this comparison isolates label use at the decision stage; it does not test removing those records from prompts.

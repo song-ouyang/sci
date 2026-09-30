@@ -1,0 +1,52 @@
+{
+  "hydraulic": {
+    "schema": "independent-policy-check-v1",
+    "status": "PASS",
+    "checked_at": "2026-09-30T04:21:12.513893+00:00",
+    "checker_sha256": "7aa13764a432f5ad9b63fa94b1da5ce241b0362120c043cfd03ddedb90840029",
+    "protocol_sha256": "d77cb5331469db586c9159819777361a64f39fbd2e35c1cf4fc18bf8803c0220",
+    "checked_file_count": 312,
+    "csv_row_counts": {
+      "requests": 36,
+      "randomized_pairs": 18,
+      "predictions": 648,
+      "policy_cases": 432,
+      "policy_costs": 48,
+      "flips": 90,
+      "incremental_gate_cases": 54
+    },
+    "mismatch_count": 0,
+    "mismatches": [],
+    "method": "Standard library only; independently reparse raw responses, enumerate all signed assignments, count policy actions, and compare every cell of seven CSVs. No scorer/runner/audit imports.",
+    "limits": [
+      "Evidence integrity and numerical agreement do not establish scientific validity or untestable randomization assumptions.",
+      "Only completed valid arrays supply labels; failed, invalid and unattempted calls retain planned denominators and missing-call abstention.",
+      "Randomization p is absent when the frozen schedule is ineligible; no replacement experiment or extrapolation is performed."
+    ]
+  },
+  "paderborn": {
+    "schema": "independent-policy-check-v1",
+    "status": "PASS",
+    "checked_at": "2026-09-30T04:21:12.566719+00:00",
+    "checker_sha256": "7aa13764a432f5ad9b63fa94b1da5ce241b0362120c043cfd03ddedb90840029",
+    "protocol_sha256": "7fbc151c12cf5352a757c3fe26ad52c8b8461a076ce818b76af32b25dd77e7bc",
+    "checked_file_count": 120,
+    "csv_row_counts": {
+      "requests": 12,
+      "randomized_pairs": 6,
+      "predictions": 576,
+      "policy_cases": 576,
+      "policy_costs": 16,
+      "flips": 30,
+      "incremental_gate_cases": 72
+    },
+    "mismatch_count": 0,
+    "mismatches": [],
+    "method": "Standard library only; independently reparse raw responses, enumerate all signed assignments, count policy actions, and compare every cell of seven CSVs. No scorer/runner/audit imports.",
+    "limits": [
+      "Evidence integrity and numerical agreement do not establish scientific validity or untestable randomization assumptions.",
+      "Only completed valid arrays supply labels; failed, invalid and unattempted calls retain planned denominators and missing-call abstention.",
+      "Randomization p is absent when the frozen schedule is ineligible; no replacement experiment or extrapolation is performed."
+    ]
+  }
+}

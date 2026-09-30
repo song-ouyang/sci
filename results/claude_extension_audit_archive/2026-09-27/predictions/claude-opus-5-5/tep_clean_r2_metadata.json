@@ -1,0 +1,33 @@
+{
+  "protocol": "claude-extension-grouped-revision-v3",
+  "model_requested": "claude-opus-5-5",
+  "model_alias": "opus",
+  "transport": "claude-code-agent-tool",
+  "dataset": "tep",
+  "condition": "clean",
+  "repeat": 2,
+  "group_name": "tep_clean_r2",
+  "n_samples": 70,
+  "started_at": "2026-09-27T03:52:41.327706+00:00",
+  "completed_at": "2026-09-27T03:52:41.355754+00:00",
+  "attempt": 1,
+  "status": "complete",
+  "validation_error": null,
+  "response_text_sha256": "8a8feb7e233ce2810b343af64e0faf5b4452c528c46f142bb4059544b30d5d0f",
+  "request_sha256": "53dc505879cc999a01952b17dc927b0f37d3b77024064d727f2242b1277e3eea",
+  "answer_keys_read": false,
+  "independent_session_per_group": true,
+  "independent_session_per_sample": false,
+  "metadata_unavailable": [
+    "token_usage",
+    "server_returned_model_id",
+    "stop_finish_reason",
+    "request_session_id",
+    "temperature"
+  ],
+  "metadata_unavailable_reason": "Claude CLI subprocess returns 'OAuth session expired'; Agent tool interface does not expose these fields.",
+  "delivery_note": "agent used multiple Bash commands to overcome 2KB Bash output truncation limit",
+  "prediction_sha256": "e6282357cc1252c534a1170a34012e10b090bbc86977e00ee411a33f8ce3ba63",
+  "n_predictions": 70,
+  "data_integrity_note": "All opus TEP predictions (clean and misnamed, all repeats) are byte-identical, consistent with deterministic classification behavior (same as gpt-6-astra pattern). Not necessarily invalid, but should be verified."
+}

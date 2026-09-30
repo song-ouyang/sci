@@ -1,0 +1,85 @@
+% Generated from results/baselines_v2/summary.md
+\begin{table}[htbp]\centering\scriptsize
+\caption{Supervised references: accuracy / macro-F1 (\%) on every panel. Like-for-like and earlier untuned references use only the original training data. The remaining variants receive target-domain information that the LLM does not receive; the regime-normalized variants also use features that differ from the LLM input. TEP v3 and FD001 are the preliminary-panel test sets.}
+\label{tab:sh_baselines}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}llccccc@{}}\toprule
+Setting & Method & TEP late & TEP early & TEP v3 & FD001 & FD002 \\\midrule
+Like-for-like & RF & 100.0 / 100.0 & 28.6 / 21.4 & 100.0 / 100.0 & 78.3 / 77.8 & 33.3 / 16.7 \\
+Like-for-like & SVM-RBF & 95.7 / 95.6 & 28.6 / 21.1 & 100.0 / 100.0 & 71.7 / 71.9 & 33.3 / 16.7 \\
+Like-for-like & HGB & 100.0 / 100.0 & 54.3 / 50.8 & 100.0 / 100.0 & 85.0 / 84.7 & 45.0 / 36.7 \\
+Like-for-like & MLP & 95.7 / 95.5 & 31.4 / 26.2 & 100.0 / 100.0 & 78.3 / 78.7 & 41.7 / 30.3 \\
+Like-for-like & kNN & 77.1 / 78.1 & 22.9 / 15.9 & 87.1 / 87.0 & 68.3 / 67.3 & 35.0 / 20.1 \\
+Like-for-like & LogReg & 91.4 / 91.4 & 44.3 / 35.8 & 98.6 / 98.6 & 76.7 / 76.0 & 33.3 / 16.7 \\
+Earlier untuned & RF-legacy & 100.0 / 100.0 & 28.6 / 21.4 & 100.0 / 100.0 & 81.7 / 81.4 & 33.3 / 16.7 \\
+Earlier untuned & SVM-legacy & 92.9 / 92.6 & 31.4 / 25.1 & 100.0 / 100.0 & 75.0 / 74.1 & 33.3 / 16.7 \\
+TEP phase-aware & RF & 100.0 / 100.0 & 87.1 / 83.9 & 100.0 / 100.0 & -- & -- \\
+TEP phase-aware & SVM-RBF & 97.1 / 97.1 & 85.7 / 81.0 & 100.0 / 100.0 & -- & -- \\
+TEP phase-aware & HGB & 98.6 / 98.6 & 87.1 / 83.9 & 100.0 / 100.0 & -- & -- \\
+TEP phase-aware & MLP & 97.1 / 97.1 & 85.7 / 81.0 & 100.0 / 100.0 & -- & -- \\
+TEP phase-aware & kNN & 78.6 / 79.5 & 74.3 / 71.0 & 85.7 / 85.7 & -- & -- \\
+TEP phase-aware & LogReg & 94.3 / 94.3 & 88.6 / 86.4 & 98.6 / 98.6 & -- & -- \\
+FD002 in-domain & RF & -- & -- & -- & -- & 81.7 / 81.4 \\
+FD002 in-domain & SVM-RBF & -- & -- & -- & -- & 78.3 / 78.4 \\
+FD002 in-domain & HGB & -- & -- & -- & -- & 85.0 / 85.3 \\
+FD002 in-domain & MLP & -- & -- & -- & -- & 78.3 / 78.2 \\
+FD002 in-domain & kNN & -- & -- & -- & -- & 43.3 / 43.6 \\
+FD002 in-domain & LogReg & -- & -- & -- & -- & 86.7 / 86.5 \\
+FD002 in-domain, regime norm. & RF & -- & -- & -- & -- & 86.7 / 86.4 \\
+FD002 in-domain, regime norm. & SVM-RBF & -- & -- & -- & -- & 85.0 / 84.8 \\
+FD002 in-domain, regime norm. & HGB & -- & -- & -- & -- & 86.7 / 86.0 \\
+FD002 in-domain, regime norm. & MLP & -- & -- & -- & -- & 86.7 / 86.6 \\
+FD002 in-domain, regime norm. & kNN & -- & -- & -- & -- & 81.7 / 81.4 \\
+FD002 in-domain, regime norm. & LogReg & -- & -- & -- & -- & 86.7 / 86.4 \\
+FD001 + regime norm. & RF & -- & -- & -- & 80.0 / 79.6 & 78.3 / 78.6 \\
+FD001 + regime norm. & SVM-RBF & -- & -- & -- & 75.0 / 74.1 & 80.0 / 80.6 \\
+FD001 + regime norm. & HGB & -- & -- & -- & 81.7 / 81.2 & 71.7 / 72.2 \\
+FD001 + regime norm. & MLP & -- & -- & -- & 78.3 / 78.7 & 80.0 / 80.2 \\
+FD001 + regime norm. & kNN & -- & -- & -- & 68.3 / 67.3 & 86.7 / 86.7 \\
+FD001 + regime norm. & LogReg & -- & -- & -- & 76.7 / 76.0 & 81.7 / 80.5 \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[htbp]\centering\scriptsize
+\caption{Hyperparameters selected by five-fold GroupKFold cross-validation on training data (macro-F1, mean $\pm$ SD over folds).}
+\label{tab:sh_hyper}
+\setlength{\tabcolsep}{3pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}lllcl@{}}\toprule
+Setting & Domain & Method & CV macro-F1 & Selected hyperparameters \\\midrule
+Like-for-like & TEP & RF & 99.9 $\pm$ 0.2 & max\_features: sqrt, min\_samples\_leaf: 1 \\
+Like-for-like & TEP & SVM-RBF & 99.2 $\pm$ 0.5 & C: 10.0, gamma: scale \\
+Like-for-like & TEP & HGB & 99.7 $\pm$ 0.4 & l2\_regularization: 0.0, learning\_rate: 0.1, max\_leaf\_nodes: 7 \\
+Like-for-like & TEP & MLP & 99.4 $\pm$ 0.2 & alpha: 0.01, hidden\_layer\_sizes: [100] \\
+Like-for-like & TEP & kNN & 85.5 $\pm$ 1.2 & n\_neighbors: 1, weights: uniform \\
+Like-for-like & TEP & LogReg & 97.4 $\pm$ 0.4 & C: 100.0 \\
+Like-for-like & C-MAPSS & RF & 91.5 $\pm$ 1.5 & class\_weight: None, max\_features: sqrt, min\_samples\_leaf: 1 \\
+Like-for-like & C-MAPSS & SVM-RBF & 91.1 $\pm$ 2.2 & C: 10.0, class\_weight: balanced, gamma: 0.001 \\
+Like-for-like & C-MAPSS & HGB & 90.9 $\pm$ 1.8 & class\_weight: None, l2\_regularization: 1.0, learning\_rate: 0.05, max\_leaf\_nodes: 31 \\
+Like-for-like & C-MAPSS & MLP & 88.9 $\pm$ 2.7 & alpha: 1.0, hidden\_layer\_sizes: [100] \\
+Like-for-like & C-MAPSS & kNN & 90.1 $\pm$ 2.3 & n\_neighbors: 15, weights: uniform \\
+Like-for-like & C-MAPSS & LogReg & 90.7 $\pm$ 1.4 & C: 0.01, class\_weight: None \\
+TEP phase-aware & TEP & RF & 96.6 $\pm$ 0.2 & max\_features: sqrt, min\_samples\_leaf: 3 \\
+TEP phase-aware & TEP & SVM-RBF & 96.0 $\pm$ 0.5 & C: 100.0, gamma: 0.01 \\
+TEP phase-aware & TEP & HGB & 96.4 $\pm$ 0.3 & l2\_regularization: 1.0, learning\_rate: 0.1, max\_leaf\_nodes: 31 \\
+TEP phase-aware & TEP & MLP & 96.1 $\pm$ 0.4 & alpha: 1.0, hidden\_layer\_sizes: [128, 64] \\
+TEP phase-aware & TEP & kNN & 82.6 $\pm$ 0.8 & n\_neighbors: 1, weights: uniform \\
+TEP phase-aware & TEP & LogReg & 94.5 $\pm$ 0.4 & C: 100.0 \\
+FD002 in-domain & C-MAPSS & RF & 73.3 $\pm$ 2.4 & max\_features: 0.3, min\_samples\_leaf: 10 \\
+FD002 in-domain & C-MAPSS & SVM-RBF & 75.2 $\pm$ 3.4 & C: 100.0, gamma: 0.001 \\
+FD002 in-domain & C-MAPSS & HGB & 73.2 $\pm$ 1.6 & l2\_regularization: 1.0, learning\_rate: 0.1, max\_leaf\_nodes: 7 \\
+FD002 in-domain & C-MAPSS & MLP & 76.2 $\pm$ 2.0 & alpha: 1.0, hidden\_layer\_sizes: [100] \\
+FD002 in-domain & C-MAPSS & kNN & 42.9 $\pm$ 1.7 & n\_neighbors: 3, weights: distance \\
+FD002 in-domain & C-MAPSS & LogReg & 81.2 $\pm$ 1.9 & C: 100.0 \\
+FD002 in-domain, regime norm. & C-MAPSS & RF & 83.6 $\pm$ 1.8 & max\_features: 0.3, min\_samples\_leaf: 3 \\
+FD002 in-domain, regime norm. & C-MAPSS & SVM-RBF & 84.8 $\pm$ 2.4 & C: 1.0, gamma: 0.01 \\
+FD002 in-domain, regime norm. & C-MAPSS & HGB & 83.5 $\pm$ 1.5 & l2\_regularization: 0.0, learning\_rate: 0.1, max\_leaf\_nodes: 31 \\
+FD002 in-domain, regime norm. & C-MAPSS & MLP & 83.1 $\pm$ 2.4 & alpha: 1.0, hidden\_layer\_sizes: [64] \\
+FD002 in-domain, regime norm. & C-MAPSS & kNN & 82.8 $\pm$ 1.6 & n\_neighbors: 25, weights: distance \\
+FD002 in-domain, regime norm. & C-MAPSS & LogReg & 84.1 $\pm$ 2.9 & C: 0.1 \\
+FD001 + regime norm. & C-MAPSS & RF & 91.5 $\pm$ 1.5 & class\_weight: None, max\_features: sqrt, min\_samples\_leaf: 1 \\
+FD001 + regime norm. & C-MAPSS & SVM-RBF & 91.0 $\pm$ 1.7 & C: 10.0, class\_weight: None, gamma: 0.001 \\
+FD001 + regime norm. & C-MAPSS & HGB & 90.7 $\pm$ 1.4 & class\_weight: None, l2\_regularization: 1.0, learning\_rate: 0.1, max\_leaf\_nodes: 31 \\
+FD001 + regime norm. & C-MAPSS & MLP & 88.9 $\pm$ 2.4 & alpha: 1.0, hidden\_layer\_sizes: [64] \\
+FD001 + regime norm. & C-MAPSS & kNN & 90.1 $\pm$ 2.3 & n\_neighbors: 15, weights: uniform \\
+FD001 + regime norm. & C-MAPSS & LogReg & 90.7 $\pm$ 1.4 & C: 0.01, class\_weight: None \\
+\bottomrule\end{tabular}}\end{table}

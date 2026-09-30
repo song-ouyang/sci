@@ -1,0 +1,33 @@
+{
+  "protocol": "claude-extension-grouped-revision-v3",
+  "model_requested": "claude-sonnet-4-6",
+  "model_alias": "sonnet",
+  "transport": "claude-code-agent-tool",
+  "dataset": "tep",
+  "condition": "misnamed",
+  "repeat": 1,
+  "group_name": "tep_misnamed_r1",
+  "n_samples": 70,
+  "started_at": "2026-09-27T03:43:15.128523+00:00",
+  "completed_at": "2026-09-27T03:57:00.000000+00:00",
+  "attempt": 1,
+  "status": "complete",
+  "validation_error": null,
+  "response_text_sha256": "338628993383b86276d660169c448f7dff2f99d5d2b720cd6cd4b1d35637844e",
+  "request_sha256": "ca6be4fe1dfd7e9dce4657bd6c5819f25d24ca1cde590083f64d7ddee08f462c",
+  "answer_keys_read": false,
+  "independent_session_per_group": true,
+  "independent_session_per_sample": false,
+  "metadata_unavailable": [
+    "token_usage",
+    "server_returned_model_id",
+    "stop_finish_reason",
+    "request_session_id",
+    "temperature"
+  ],
+  "metadata_unavailable_reason": "Claude CLI subprocess returns 'OAuth session expired'; Agent tool interface does not expose these fields.",
+  "prediction_sha256": "ee78d825254a709a6da073a4faceaabc19efe97ff7dd94e7b7d5ba33abb8acd1",
+  "n_predictions": 70,
+  "notes": "Results recovered from session context summary after context compaction.",
+  "request_file_note": "request file reconstructed post-hoc"
+}

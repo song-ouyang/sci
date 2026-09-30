@@ -1,0 +1,16 @@
+{
+  "checked_at_utc": "2026-09-27T15:15:07.450022+00:00",
+  "command": ".venv/bin/python -m unittest discover -s tests",
+  "tests_run": 109,
+  "exit_code": 0,
+  "result": "OK",
+  "new_synthetic_preflight_tests": 8,
+  "live_long_preflight_completed": false,
+  "formal_sessions_started": 0,
+  "pdf_and_archived_package_regenerated": false,
+  "sha256": {
+    "src/experiments/claude_v2_long_preflight.py": "7ea20b502e174fefe66efce8417e3acea6520e3ecf72b7120eed3601ab7c6156",
+    "tests/test_claude_v2_long_preflight.py": "1af607c7563c424802f37c0b7867a555febb3cef9af21fd390673f78b6e2784f",
+    "paper/CLAUDE_CHAT_EXECUTION_PROMPT_2026-09-27.md": "1d6d7acbdb88a4c5d80a765ea83de6f70f15254179f2b5b3689333686484d172"
+  }
+}

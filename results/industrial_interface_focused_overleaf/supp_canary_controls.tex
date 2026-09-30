@@ -1,0 +1,27 @@
+\clearpage
+\section{Post hoc control for label collapse}\label{app:canary_controls}
+The control in this appendix was specified on 30 September 2026 after inspecting the earlier prospective study, and then computed from its existing frozen responses. It added no model requests and is not a preregistered experiment. The result-informed plan, code provenance, per-call cross-tabulation, per-window decisions and threshold sensitivity are retained in \nolinkurl{results/canary_controls_v2}. Its purpose is to test whether the earlier screening result requires reference labels at the decision stage or is also obtained by rejecting strongly concentrated output labels on the same requests.
+
+The primary collapse-only gate rejects a valid call if at least 90\% of \emph{all 27 returned labels} are identical, i.e., at least 25 labels. It uses neither reference labels nor focal/canary roles, known class balance or confidence. This differs from the earlier descriptive definition based on at least 16/18 focal labels. Both gates operate on the complete, unchanged 27-record payload, so the comparison does not remove canaries from the prompt or measure their effect on generation. The first passing call in each of the same nine three-call windows supplies the focal decisions; if no call passes, all 18 decisions are withheld. The original tie-first vote and a later tie-abstain variant remain separate comparators.
+
+At the window level, the 90\% collapse gate selects exactly the same requests as known-answer screening: 123 correct and three incorrect focal labels, 36 withheld and 17 required calls (Table~\ref{tab:canary_controls_posthoc}). Thus these data do not establish an incremental window-level gain from consulting reference labels over this simple label-free check. The 85\% sensitivity threshold has the same result; 95\% and 100\% each reproduce the single-call outcome of 105 correct and 57 incorrect labels with nine required calls. These thresholds are all reported, without selecting the best one for a new claim of prospective effectiveness.
+
+The gates nevertheless differ at the request level (Table~\ref{tab:canary_gate_crosstab}). The collapse gate passes two additional calls that contain 24 correct and 12 incorrect focal labels, whereas the known-answer gate rejects both. Those calls occur after an earlier passing call in their windows and are never selected by the first-pass policy. Their exclusion therefore improves the accepted-call description but produces no incremental policy gain in these nine windows. This distinction prevents treating the E2 and E3 results as interchangeable evidence.
+
+\input{supp_canary_controls_table}
+
+\begin{table}[htbp]\centering\small
+\caption{Request-level gate cross-tabulation for the post hoc 90\% collapse control. The same 18 focal cycles occur in all 27 calls. Correct/error counts here refer to all focal outputs in the cell, not the labels selected by a window policy.}
+\label{tab:canary_gate_crosstab}
+\begin{tabular}{@{}llrrrr@{}}\toprule
+Known-answer gate & Collapse gate & Calls & Focal outputs & Correct & Error \\\midrule
+Reject & Reject & 14 & 252 & 96 & 156 \\
+Reject & Pass & 2 & 36 & 24 & 12 \\
+Pass & Reject & 0 & 0 & 0 & 0 \\
+Pass & Pass & 11 & 198 & 190 & 8 \\\bottomrule
+\end{tabular}\end{table}
+
+For resource accounting, the calls selected by the single-call policy total 196,213 observed input-plus-output tokens and 518.286 summed client seconds. Both screening policies require the same subsets, totalling 375,128 tokens and 1,073.950 summed client seconds; either vote uses all 603,721 tokens and 2,080.518 summed client seconds. These are offline sums attached to recorded required requests. They are not actual savings from adaptively stopping the completed study, monetary charges or end-to-end latency estimates; concurrent calls also mean summed client durations are not elapsed wall time. Reusing saved responses does not make a policy's required calls free.
+
+This control narrows the interpretation of the earlier gain to the particular complete requests and their label concentration. It neither proves that reference labels are unnecessary in general nor validates the collapse gate on another source panel or service period. No independent-record significance test or population confidence interval is assigned to these repeated observations.
+\FloatBarrier

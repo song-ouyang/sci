@@ -1,0 +1,755 @@
+{
+  "tool": "pypdf.PdfReader.extract_text",
+  "comparison": "exact per-page text; no normalization",
+  "documents": [
+    {
+      "name": "main",
+      "paths": [
+        "/Users/guoba/work/sci-paper-llm-pdm/paper/focused_submission/main.pdf",
+        "/Users/guoba/work/sci-paper-llm-pdm/tmp/points12_package_check/review/industrial_interface_review/paper/focused_submission/main.pdf",
+        "/Users/guoba/work/sci-paper-llm-pdm/tmp/points12_package_check/overleaf/main.pdf"
+      ],
+      "page_counts": [
+        16,
+        16,
+        16
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "equal": true,
+          "character_counts": [
+            3345,
+            3345,
+            3345
+          ],
+          "text_sha256": [
+            "d1b6216941f14056c2dc33fa3c37e1748eb8913b37709193250dab61adbb031d",
+            "d1b6216941f14056c2dc33fa3c37e1748eb8913b37709193250dab61adbb031d",
+            "d1b6216941f14056c2dc33fa3c37e1748eb8913b37709193250dab61adbb031d"
+          ]
+        },
+        {
+          "page": 2,
+          "equal": true,
+          "character_counts": [
+            4283,
+            4283,
+            4283
+          ],
+          "text_sha256": [
+            "8a7ea9b2b416d06b4c775c94194c08b86e58166b283d7f2aa53be588685ad7b6",
+            "8a7ea9b2b416d06b4c775c94194c08b86e58166b283d7f2aa53be588685ad7b6",
+            "8a7ea9b2b416d06b4c775c94194c08b86e58166b283d7f2aa53be588685ad7b6"
+          ]
+        },
+        {
+          "page": 3,
+          "equal": true,
+          "character_counts": [
+            3142,
+            3142,
+            3142
+          ],
+          "text_sha256": [
+            "caa6531ee4bd9104d9a3d978d250151b88e8f066b41fb5dc217c85d6125718f4",
+            "caa6531ee4bd9104d9a3d978d250151b88e8f066b41fb5dc217c85d6125718f4",
+            "caa6531ee4bd9104d9a3d978d250151b88e8f066b41fb5dc217c85d6125718f4"
+          ]
+        },
+        {
+          "page": 4,
+          "equal": true,
+          "character_counts": [
+            3343,
+            3343,
+            3343
+          ],
+          "text_sha256": [
+            "b30f1791edc3a0427af4560a22299e5699722fe1cd73dd4914d01ff8c87b11bd",
+            "b30f1791edc3a0427af4560a22299e5699722fe1cd73dd4914d01ff8c87b11bd",
+            "b30f1791edc3a0427af4560a22299e5699722fe1cd73dd4914d01ff8c87b11bd"
+          ]
+        },
+        {
+          "page": 5,
+          "equal": true,
+          "character_counts": [
+            4107,
+            4107,
+            4107
+          ],
+          "text_sha256": [
+            "8b8589e6b4557b2de8e59b8b0c98f1329469d99dcbdf4b94d89d29453fe8924c",
+            "8b8589e6b4557b2de8e59b8b0c98f1329469d99dcbdf4b94d89d29453fe8924c",
+            "8b8589e6b4557b2de8e59b8b0c98f1329469d99dcbdf4b94d89d29453fe8924c"
+          ]
+        },
+        {
+          "page": 6,
+          "equal": true,
+          "character_counts": [
+            3746,
+            3746,
+            3746
+          ],
+          "text_sha256": [
+            "03ffc2fae402d24681c168bd8571e11c4bc61b333f71ceab13318d16b1fe478c",
+            "03ffc2fae402d24681c168bd8571e11c4bc61b333f71ceab13318d16b1fe478c",
+            "03ffc2fae402d24681c168bd8571e11c4bc61b333f71ceab13318d16b1fe478c"
+          ]
+        },
+        {
+          "page": 7,
+          "equal": true,
+          "character_counts": [
+            4198,
+            4198,
+            4198
+          ],
+          "text_sha256": [
+            "804c5add735577738dd1408a7b6f0d0f931b5f16144c1efdd69e95e9403d3fa6",
+            "804c5add735577738dd1408a7b6f0d0f931b5f16144c1efdd69e95e9403d3fa6",
+            "804c5add735577738dd1408a7b6f0d0f931b5f16144c1efdd69e95e9403d3fa6"
+          ]
+        },
+        {
+          "page": 8,
+          "equal": true,
+          "character_counts": [
+            3055,
+            3055,
+            3055
+          ],
+          "text_sha256": [
+            "38dccf1520198f2d8d9c88925b5fcec706fc975e01b76420f3f6507320b621a4",
+            "38dccf1520198f2d8d9c88925b5fcec706fc975e01b76420f3f6507320b621a4",
+            "38dccf1520198f2d8d9c88925b5fcec706fc975e01b76420f3f6507320b621a4"
+          ]
+        },
+        {
+          "page": 9,
+          "equal": true,
+          "character_counts": [
+            3555,
+            3555,
+            3555
+          ],
+          "text_sha256": [
+            "9fd44419fe4fc0bf5c6986c6ec8657e2687f7625ae51aa7fcbce61c76da736f5",
+            "9fd44419fe4fc0bf5c6986c6ec8657e2687f7625ae51aa7fcbce61c76da736f5",
+            "9fd44419fe4fc0bf5c6986c6ec8657e2687f7625ae51aa7fcbce61c76da736f5"
+          ]
+        },
+        {
+          "page": 10,
+          "equal": true,
+          "character_counts": [
+            2089,
+            2089,
+            2089
+          ],
+          "text_sha256": [
+            "673aa963f8c2938da22095d0bb6c5871e5decba82fe65800ed5c6147711cbc64",
+            "673aa963f8c2938da22095d0bb6c5871e5decba82fe65800ed5c6147711cbc64",
+            "673aa963f8c2938da22095d0bb6c5871e5decba82fe65800ed5c6147711cbc64"
+          ]
+        },
+        {
+          "page": 11,
+          "equal": true,
+          "character_counts": [
+            3715,
+            3715,
+            3715
+          ],
+          "text_sha256": [
+            "c851e4319ab3f475b7d105a7ab984cdc36eac4cd1a660d340ebe112ddcc31cea",
+            "c851e4319ab3f475b7d105a7ab984cdc36eac4cd1a660d340ebe112ddcc31cea",
+            "c851e4319ab3f475b7d105a7ab984cdc36eac4cd1a660d340ebe112ddcc31cea"
+          ]
+        },
+        {
+          "page": 12,
+          "equal": true,
+          "character_counts": [
+            3121,
+            3121,
+            3121
+          ],
+          "text_sha256": [
+            "6ed05f29d9754a0bde72cd5b3b36db386e9d25f0f56be832da9c9f42257e3e6f",
+            "6ed05f29d9754a0bde72cd5b3b36db386e9d25f0f56be832da9c9f42257e3e6f",
+            "6ed05f29d9754a0bde72cd5b3b36db386e9d25f0f56be832da9c9f42257e3e6f"
+          ]
+        },
+        {
+          "page": 13,
+          "equal": true,
+          "character_counts": [
+            3974,
+            3974,
+            3974
+          ],
+          "text_sha256": [
+            "a8779d14ea674b0b4dcc8d615ce2c017104da7dee80a5cf1f1c7f44e58bab703",
+            "a8779d14ea674b0b4dcc8d615ce2c017104da7dee80a5cf1f1c7f44e58bab703",
+            "a8779d14ea674b0b4dcc8d615ce2c017104da7dee80a5cf1f1c7f44e58bab703"
+          ]
+        },
+        {
+          "page": 14,
+          "equal": true,
+          "character_counts": [
+            3690,
+            3690,
+            3690
+          ],
+          "text_sha256": [
+            "368ded810f265700bcf64563acf6d9378124db61561bc9dfece3eaea89ecba12",
+            "368ded810f265700bcf64563acf6d9378124db61561bc9dfece3eaea89ecba12",
+            "368ded810f265700bcf64563acf6d9378124db61561bc9dfece3eaea89ecba12"
+          ]
+        },
+        {
+          "page": 15,
+          "equal": true,
+          "character_counts": [
+            3683,
+            3683,
+            3683
+          ],
+          "text_sha256": [
+            "eedebdc05ca3719acf691c9ac2d4a6bb367b1a1e83ef51b757bb9a3456eec652",
+            "eedebdc05ca3719acf691c9ac2d4a6bb367b1a1e83ef51b757bb9a3456eec652",
+            "eedebdc05ca3719acf691c9ac2d4a6bb367b1a1e83ef51b757bb9a3456eec652"
+          ]
+        },
+        {
+          "page": 16,
+          "equal": true,
+          "character_counts": [
+            3964,
+            3964,
+            3964
+          ],
+          "text_sha256": [
+            "c91456dec4fd1d46346a50dd24bd611549295feb167dc0278b119674c364bdbe",
+            "c91456dec4fd1d46346a50dd24bd611549295feb167dc0278b119674c364bdbe",
+            "c91456dec4fd1d46346a50dd24bd611549295feb167dc0278b119674c364bdbe"
+          ]
+        }
+      ],
+      "equal": true,
+      "nonempty_pages": true
+    },
+    {
+      "name": "supplement",
+      "paths": [
+        "/Users/guoba/work/sci-paper-llm-pdm/paper/focused_submission/supplement.pdf",
+        "/Users/guoba/work/sci-paper-llm-pdm/tmp/points12_package_check/review/industrial_interface_review/paper/focused_submission/supplement.pdf",
+        "/Users/guoba/work/sci-paper-llm-pdm/tmp/points12_package_check/overleaf/supplement.pdf"
+      ],
+      "page_counts": [
+        35,
+        35,
+        35
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "equal": true,
+          "character_counts": [
+            3354,
+            3354,
+            3354
+          ],
+          "text_sha256": [
+            "c80ab8927257c6c9574ae117917e90693705a6735b4b322b2c985d1aa2615e2a",
+            "c80ab8927257c6c9574ae117917e90693705a6735b4b322b2c985d1aa2615e2a",
+            "c80ab8927257c6c9574ae117917e90693705a6735b4b322b2c985d1aa2615e2a"
+          ]
+        },
+        {
+          "page": 2,
+          "equal": true,
+          "character_counts": [
+            3995,
+            3995,
+            3995
+          ],
+          "text_sha256": [
+            "04d90abd208c5b8cfb7a6bc5023dd9c874863a8d2f2fecf213038bf1dc10ebca",
+            "04d90abd208c5b8cfb7a6bc5023dd9c874863a8d2f2fecf213038bf1dc10ebca",
+            "04d90abd208c5b8cfb7a6bc5023dd9c874863a8d2f2fecf213038bf1dc10ebca"
+          ]
+        },
+        {
+          "page": 3,
+          "equal": true,
+          "character_counts": [
+            3687,
+            3687,
+            3687
+          ],
+          "text_sha256": [
+            "8d8ad472493287cae8a398ae1bf8335694d82782a4c7c32acfb65119d7cde3d9",
+            "8d8ad472493287cae8a398ae1bf8335694d82782a4c7c32acfb65119d7cde3d9",
+            "8d8ad472493287cae8a398ae1bf8335694d82782a4c7c32acfb65119d7cde3d9"
+          ]
+        },
+        {
+          "page": 4,
+          "equal": true,
+          "character_counts": [
+            2575,
+            2575,
+            2575
+          ],
+          "text_sha256": [
+            "59a782358a32c2c20664e9aac0118f90df1fc68ef73e8c4b6ef04ec103f4d39e",
+            "59a782358a32c2c20664e9aac0118f90df1fc68ef73e8c4b6ef04ec103f4d39e",
+            "59a782358a32c2c20664e9aac0118f90df1fc68ef73e8c4b6ef04ec103f4d39e"
+          ]
+        },
+        {
+          "page": 5,
+          "equal": true,
+          "character_counts": [
+            3718,
+            3718,
+            3718
+          ],
+          "text_sha256": [
+            "9d6c29fbc164ea059d6e4211234563c840d4b0cf3589ae48c3e98ea5cc588fc9",
+            "9d6c29fbc164ea059d6e4211234563c840d4b0cf3589ae48c3e98ea5cc588fc9",
+            "9d6c29fbc164ea059d6e4211234563c840d4b0cf3589ae48c3e98ea5cc588fc9"
+          ]
+        },
+        {
+          "page": 6,
+          "equal": true,
+          "character_counts": [
+            3878,
+            3878,
+            3878
+          ],
+          "text_sha256": [
+            "ef2d196edee40b2106ebea7927f96de4f695dc9a5080999d46f96e57cdcc6349",
+            "ef2d196edee40b2106ebea7927f96de4f695dc9a5080999d46f96e57cdcc6349",
+            "ef2d196edee40b2106ebea7927f96de4f695dc9a5080999d46f96e57cdcc6349"
+          ]
+        },
+        {
+          "page": 7,
+          "equal": true,
+          "character_counts": [
+            4141,
+            4141,
+            4141
+          ],
+          "text_sha256": [
+            "3608d244caa62ce3b6014153c6b7184f7b8a7510b946908e15932f1c8b4e9050",
+            "3608d244caa62ce3b6014153c6b7184f7b8a7510b946908e15932f1c8b4e9050",
+            "3608d244caa62ce3b6014153c6b7184f7b8a7510b946908e15932f1c8b4e9050"
+          ]
+        },
+        {
+          "page": 8,
+          "equal": true,
+          "character_counts": [
+            4013,
+            4013,
+            4013
+          ],
+          "text_sha256": [
+            "6b845673372e8d9c06ed1c913c9e4b9de741123c50b4eddb2056c67a5f3e9508",
+            "6b845673372e8d9c06ed1c913c9e4b9de741123c50b4eddb2056c67a5f3e9508",
+            "6b845673372e8d9c06ed1c913c9e4b9de741123c50b4eddb2056c67a5f3e9508"
+          ]
+        },
+        {
+          "page": 9,
+          "equal": true,
+          "character_counts": [
+            4040,
+            4040,
+            4040
+          ],
+          "text_sha256": [
+            "6238a6fbe505f9daffb279323d9973d8c2660c6c5cd462407650ca2ae136c9ef",
+            "6238a6fbe505f9daffb279323d9973d8c2660c6c5cd462407650ca2ae136c9ef",
+            "6238a6fbe505f9daffb279323d9973d8c2660c6c5cd462407650ca2ae136c9ef"
+          ]
+        },
+        {
+          "page": 10,
+          "equal": true,
+          "character_counts": [
+            3417,
+            3417,
+            3417
+          ],
+          "text_sha256": [
+            "f654afbb93ec28da9879a31f3a2eb4994c5de3c0001e6c58694215d4979355b5",
+            "f654afbb93ec28da9879a31f3a2eb4994c5de3c0001e6c58694215d4979355b5",
+            "f654afbb93ec28da9879a31f3a2eb4994c5de3c0001e6c58694215d4979355b5"
+          ]
+        },
+        {
+          "page": 11,
+          "equal": true,
+          "character_counts": [
+            3591,
+            3591,
+            3591
+          ],
+          "text_sha256": [
+            "f5c7851a4d7b570b7abf34cc17b2d5a04a0da4689f6cab5e18d358a06accd3ed",
+            "f5c7851a4d7b570b7abf34cc17b2d5a04a0da4689f6cab5e18d358a06accd3ed",
+            "f5c7851a4d7b570b7abf34cc17b2d5a04a0da4689f6cab5e18d358a06accd3ed"
+          ]
+        },
+        {
+          "page": 12,
+          "equal": true,
+          "character_counts": [
+            2662,
+            2662,
+            2662
+          ],
+          "text_sha256": [
+            "58840ce416c9378d450838a2285f0adf25fe3e45a44bd7e713b2bcc6823d4db7",
+            "58840ce416c9378d450838a2285f0adf25fe3e45a44bd7e713b2bcc6823d4db7",
+            "58840ce416c9378d450838a2285f0adf25fe3e45a44bd7e713b2bcc6823d4db7"
+          ]
+        },
+        {
+          "page": 13,
+          "equal": true,
+          "character_counts": [
+            2622,
+            2622,
+            2622
+          ],
+          "text_sha256": [
+            "ebe1ad6e8ea5ae7017b7625aa866e2607f37eb5d59faaeeabc340941cc7fb961",
+            "ebe1ad6e8ea5ae7017b7625aa866e2607f37eb5d59faaeeabc340941cc7fb961",
+            "ebe1ad6e8ea5ae7017b7625aa866e2607f37eb5d59faaeeabc340941cc7fb961"
+          ]
+        },
+        {
+          "page": 14,
+          "equal": true,
+          "character_counts": [
+            1794,
+            1794,
+            1794
+          ],
+          "text_sha256": [
+            "e5500b8882c3a46767a49eeb0880c08bfbde000f837b5970d954c032c0272d28",
+            "e5500b8882c3a46767a49eeb0880c08bfbde000f837b5970d954c032c0272d28",
+            "e5500b8882c3a46767a49eeb0880c08bfbde000f837b5970d954c032c0272d28"
+          ]
+        },
+        {
+          "page": 15,
+          "equal": true,
+          "character_counts": [
+            2815,
+            2815,
+            2815
+          ],
+          "text_sha256": [
+            "6fe949741c69a9b40a00c3f8cf1cb714c22fa147af862ca649cec8e3b1f0c4d0",
+            "6fe949741c69a9b40a00c3f8cf1cb714c22fa147af862ca649cec8e3b1f0c4d0",
+            "6fe949741c69a9b40a00c3f8cf1cb714c22fa147af862ca649cec8e3b1f0c4d0"
+          ]
+        },
+        {
+          "page": 16,
+          "equal": true,
+          "character_counts": [
+            1843,
+            1843,
+            1843
+          ],
+          "text_sha256": [
+            "0b7a685387edd2b3b77ec4442d2014e725a816b884b81ab94b27fa3986e018af",
+            "0b7a685387edd2b3b77ec4442d2014e725a816b884b81ab94b27fa3986e018af",
+            "0b7a685387edd2b3b77ec4442d2014e725a816b884b81ab94b27fa3986e018af"
+          ]
+        },
+        {
+          "page": 17,
+          "equal": true,
+          "character_counts": [
+            2555,
+            2555,
+            2555
+          ],
+          "text_sha256": [
+            "5c29f835a302dfcf74eee012b87cb0fdff29a97af0d67f9cf612ede462a86bda",
+            "5c29f835a302dfcf74eee012b87cb0fdff29a97af0d67f9cf612ede462a86bda",
+            "5c29f835a302dfcf74eee012b87cb0fdff29a97af0d67f9cf612ede462a86bda"
+          ]
+        },
+        {
+          "page": 18,
+          "equal": true,
+          "character_counts": [
+            2896,
+            2896,
+            2896
+          ],
+          "text_sha256": [
+            "236877c8644e06a34edc20ebaac69aa17e1e71b885502e8efac8496b1a3b6b04",
+            "236877c8644e06a34edc20ebaac69aa17e1e71b885502e8efac8496b1a3b6b04",
+            "236877c8644e06a34edc20ebaac69aa17e1e71b885502e8efac8496b1a3b6b04"
+          ]
+        },
+        {
+          "page": 19,
+          "equal": true,
+          "character_counts": [
+            3004,
+            3004,
+            3004
+          ],
+          "text_sha256": [
+            "367f923ffac84afefb716627490b29ea8700816feba9a59892240598e31a58fe",
+            "367f923ffac84afefb716627490b29ea8700816feba9a59892240598e31a58fe",
+            "367f923ffac84afefb716627490b29ea8700816feba9a59892240598e31a58fe"
+          ]
+        },
+        {
+          "page": 20,
+          "equal": true,
+          "character_counts": [
+            2162,
+            2162,
+            2162
+          ],
+          "text_sha256": [
+            "8ec0a48e7cdad57b4b3d1150accafb379c1b9dcded2c9f1ed36b28a11970a051",
+            "8ec0a48e7cdad57b4b3d1150accafb379c1b9dcded2c9f1ed36b28a11970a051",
+            "8ec0a48e7cdad57b4b3d1150accafb379c1b9dcded2c9f1ed36b28a11970a051"
+          ]
+        },
+        {
+          "page": 21,
+          "equal": true,
+          "character_counts": [
+            4023,
+            4023,
+            4023
+          ],
+          "text_sha256": [
+            "11384d17f8fed4932f2adf76e66acf8b385c4e5f6ad5e7a05e0931e791b16225",
+            "11384d17f8fed4932f2adf76e66acf8b385c4e5f6ad5e7a05e0931e791b16225",
+            "11384d17f8fed4932f2adf76e66acf8b385c4e5f6ad5e7a05e0931e791b16225"
+          ]
+        },
+        {
+          "page": 22,
+          "equal": true,
+          "character_counts": [
+            3940,
+            3940,
+            3940
+          ],
+          "text_sha256": [
+            "998176db7660ab44766a203dfdcec9aca8bb8a861dcc43f93a5d0a0d4f973a9d",
+            "998176db7660ab44766a203dfdcec9aca8bb8a861dcc43f93a5d0a0d4f973a9d",
+            "998176db7660ab44766a203dfdcec9aca8bb8a861dcc43f93a5d0a0d4f973a9d"
+          ]
+        },
+        {
+          "page": 23,
+          "equal": true,
+          "character_counts": [
+            3668,
+            3668,
+            3668
+          ],
+          "text_sha256": [
+            "e47009af4ed19cc555a89d5c13cd1eb8426ded786462d3b95d9417472e026cf1",
+            "e47009af4ed19cc555a89d5c13cd1eb8426ded786462d3b95d9417472e026cf1",
+            "e47009af4ed19cc555a89d5c13cd1eb8426ded786462d3b95d9417472e026cf1"
+          ]
+        },
+        {
+          "page": 24,
+          "equal": true,
+          "character_counts": [
+            4033,
+            4033,
+            4033
+          ],
+          "text_sha256": [
+            "442474c8e70a031bc7715dfb6b3e39256e534eaa9ab170171fc70069bb7a7fb6",
+            "442474c8e70a031bc7715dfb6b3e39256e534eaa9ab170171fc70069bb7a7fb6",
+            "442474c8e70a031bc7715dfb6b3e39256e534eaa9ab170171fc70069bb7a7fb6"
+          ]
+        },
+        {
+          "page": 25,
+          "equal": true,
+          "character_counts": [
+            3054,
+            3054,
+            3054
+          ],
+          "text_sha256": [
+            "fa09cf59173a457876c2ab03df1f22677aee198b9b4ab464508828374d7ada25",
+            "fa09cf59173a457876c2ab03df1f22677aee198b9b4ab464508828374d7ada25",
+            "fa09cf59173a457876c2ab03df1f22677aee198b9b4ab464508828374d7ada25"
+          ]
+        },
+        {
+          "page": 26,
+          "equal": true,
+          "character_counts": [
+            3510,
+            3510,
+            3510
+          ],
+          "text_sha256": [
+            "60efbe84c0fe7b5e71c22f58ded1bcdf49e792d9bd4b0b2c556cae5fa907177f",
+            "60efbe84c0fe7b5e71c22f58ded1bcdf49e792d9bd4b0b2c556cae5fa907177f",
+            "60efbe84c0fe7b5e71c22f58ded1bcdf49e792d9bd4b0b2c556cae5fa907177f"
+          ]
+        },
+        {
+          "page": 27,
+          "equal": true,
+          "character_counts": [
+            3170,
+            3170,
+            3170
+          ],
+          "text_sha256": [
+            "91fbe416746c4d6399d687b2d5fa1407f7e495f4df17e3dde7018cda3eea3028",
+            "91fbe416746c4d6399d687b2d5fa1407f7e495f4df17e3dde7018cda3eea3028",
+            "91fbe416746c4d6399d687b2d5fa1407f7e495f4df17e3dde7018cda3eea3028"
+          ]
+        },
+        {
+          "page": 28,
+          "equal": true,
+          "character_counts": [
+            3042,
+            3042,
+            3042
+          ],
+          "text_sha256": [
+            "60737fb8491e431f7891ba354df8f2ffc8d6cfdcac0fac21f9c4a9bf571c3b6b",
+            "60737fb8491e431f7891ba354df8f2ffc8d6cfdcac0fac21f9c4a9bf571c3b6b",
+            "60737fb8491e431f7891ba354df8f2ffc8d6cfdcac0fac21f9c4a9bf571c3b6b"
+          ]
+        },
+        {
+          "page": 29,
+          "equal": true,
+          "character_counts": [
+            2954,
+            2954,
+            2954
+          ],
+          "text_sha256": [
+            "47153c3e6d5ce62c0362a14aa491c860ba81bbd2248bc40af0e63cd03f9faf20",
+            "47153c3e6d5ce62c0362a14aa491c860ba81bbd2248bc40af0e63cd03f9faf20",
+            "47153c3e6d5ce62c0362a14aa491c860ba81bbd2248bc40af0e63cd03f9faf20"
+          ]
+        },
+        {
+          "page": 30,
+          "equal": true,
+          "character_counts": [
+            2953,
+            2953,
+            2953
+          ],
+          "text_sha256": [
+            "f518c81264bb01f4016b55e26b87d810c1e58f8addca3036bf357ce723fae9ef",
+            "f518c81264bb01f4016b55e26b87d810c1e58f8addca3036bf357ce723fae9ef",
+            "f518c81264bb01f4016b55e26b87d810c1e58f8addca3036bf357ce723fae9ef"
+          ]
+        },
+        {
+          "page": 31,
+          "equal": true,
+          "character_counts": [
+            3481,
+            3481,
+            3481
+          ],
+          "text_sha256": [
+            "2507c2506458d5b8119760893838d791c5b51f69e0484084c8b23f8dba1e12d0",
+            "2507c2506458d5b8119760893838d791c5b51f69e0484084c8b23f8dba1e12d0",
+            "2507c2506458d5b8119760893838d791c5b51f69e0484084c8b23f8dba1e12d0"
+          ]
+        },
+        {
+          "page": 32,
+          "equal": true,
+          "character_counts": [
+            3448,
+            3448,
+            3448
+          ],
+          "text_sha256": [
+            "24ce79d26e6e456b10c4f7ffade58c54d33feee830d5e92c6981c0c6749f9699",
+            "24ce79d26e6e456b10c4f7ffade58c54d33feee830d5e92c6981c0c6749f9699",
+            "24ce79d26e6e456b10c4f7ffade58c54d33feee830d5e92c6981c0c6749f9699"
+          ]
+        },
+        {
+          "page": 33,
+          "equal": true,
+          "character_counts": [
+            2879,
+            2879,
+            2879
+          ],
+          "text_sha256": [
+            "b6cc915f160e39adbf063fadaa7eb1f803413698813b3acf30878acfcab88074",
+            "b6cc915f160e39adbf063fadaa7eb1f803413698813b3acf30878acfcab88074",
+            "b6cc915f160e39adbf063fadaa7eb1f803413698813b3acf30878acfcab88074"
+          ]
+        },
+        {
+          "page": 34,
+          "equal": true,
+          "character_counts": [
+            3336,
+            3336,
+            3336
+          ],
+          "text_sha256": [
+            "c924d9ab91f5e2819423c95cc7713aea28c72186ecb12a1f31310b0fca7e77ce",
+            "c924d9ab91f5e2819423c95cc7713aea28c72186ecb12a1f31310b0fca7e77ce",
+            "c924d9ab91f5e2819423c95cc7713aea28c72186ecb12a1f31310b0fca7e77ce"
+          ]
+        },
+        {
+          "page": 35,
+          "equal": true,
+          "character_counts": [
+            3361,
+            3361,
+            3361
+          ],
+          "text_sha256": [
+            "80fd2f0e63d49f34ecb610edbf4713ac98b6dbd9ff84c3fbe3ca9dfbe024c4f3",
+            "80fd2f0e63d49f34ecb610edbf4713ac98b6dbd9ff84c3fbe3ca9dfbe024c4f3",
+            "80fd2f0e63d49f34ecb610edbf4713ac98b6dbd9ff84c3fbe3ca9dfbe024c4f3"
+          ]
+        }
+      ],
+      "equal": true,
+      "nonempty_pages": true
+    }
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,976 @@
+{
+  "status": "post_hoc_descriptive_reanalysis",
+  "new_inference_requests": 0,
+  "new_source_units": 0,
+  "focal_units": 21,
+  "primary_study_repeat": 1,
+  "all_repeat_pairs_in_this_audit": [
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "inference_boundary": "Reuse of cases and three calls induces dependence. Repeated-call differences contextualize context contrasts; neither subtraction nor significance testing is performed.",
+  "source_checks": {
+    "frozen_request_result_metadata_hashes_verified": 108,
+    "identical_request_pair_checks": 36,
+    "focal_counts_match_scores": 36
+  },
+  "identical_input_flips": [
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "clean",
+      "left_repeat": 1,
+      "right_repeat": 2,
+      "paired_n": 21,
+      "flips": 2,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "clean",
+      "left_repeat": 1,
+      "right_repeat": 3,
+      "paired_n": 21,
+      "flips": 0,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "clean",
+      "left_repeat": 2,
+      "right_repeat": 3,
+      "paired_n": 21,
+      "flips": 2,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "focal_only",
+      "left_repeat": 1,
+      "right_repeat": 2,
+      "paired_n": 21,
+      "flips": 0,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "focal_only",
+      "left_repeat": 1,
+      "right_repeat": 3,
+      "paired_n": 21,
+      "flips": 6,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "focal_only",
+      "left_repeat": 2,
+      "right_repeat": 3,
+      "paired_n": 21,
+      "flips": 6,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "a_front",
+      "left_repeat": 1,
+      "right_repeat": 2,
+      "paired_n": 21,
+      "flips": 0,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "a_front",
+      "left_repeat": 1,
+      "right_repeat": 3,
+      "paired_n": 21,
+      "flips": 8,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "a_front",
+      "left_repeat": 2,
+      "right_repeat": 3,
+      "paired_n": 21,
+      "flips": 8,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "a_back",
+      "left_repeat": 1,
+      "right_repeat": 2,
+      "paired_n": 21,
+      "flips": 1,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "a_back",
+      "left_repeat": 1,
+      "right_repeat": 3,
+      "paired_n": 21,
+      "flips": 0,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "a_back",
+      "left_repeat": 2,
+      "right_repeat": 3,
+      "paired_n": 21,
+      "flips": 1,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "b_front",
+      "left_repeat": 1,
+      "right_repeat": 2,
+      "paired_n": 21,
+      "flips": 6,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "b_front",
+      "left_repeat": 1,
+      "right_repeat": 3,
+      "paired_n": 21,
+      "flips": 0,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "b_front",
+      "left_repeat": 2,
+      "right_repeat": 3,
+      "paired_n": 21,
+      "flips": 6,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "b_back",
+      "left_repeat": 1,
+      "right_repeat": 2,
+      "paired_n": 21,
+      "flips": 6,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "b_back",
+      "left_repeat": 1,
+      "right_repeat": 3,
+      "paired_n": 21,
+      "flips": 6,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "b_back",
+      "left_repeat": 2,
+      "right_repeat": 3,
+      "paired_n": 21,
+      "flips": 12,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "clean",
+      "left_repeat": 1,
+      "right_repeat": 2,
+      "paired_n": 21,
+      "flips": 0,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "clean",
+      "left_repeat": 1,
+      "right_repeat": 3,
+      "paired_n": 21,
+      "flips": 0,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "clean",
+      "left_repeat": 2,
+      "right_repeat": 3,
+      "paired_n": 21,
+      "flips": 0,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "focal_only",
+      "left_repeat": 1,
+      "right_repeat": 2,
+      "paired_n": 21,
+      "flips": 0,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "focal_only",
+      "left_repeat": 1,
+      "right_repeat": 3,
+      "paired_n": 21,
+      "flips": 0,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "focal_only",
+      "left_repeat": 2,
+      "right_repeat": 3,
+      "paired_n": 21,
+      "flips": 0,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "a_front",
+      "left_repeat": 1,
+      "right_repeat": 2,
+      "paired_n": 21,
+      "flips": 1,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "a_front",
+      "left_repeat": 1,
+      "right_repeat": 3,
+      "paired_n": 21,
+      "flips": 1,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "a_front",
+      "left_repeat": 2,
+      "right_repeat": 3,
+      "paired_n": 21,
+      "flips": 0,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "a_back",
+      "left_repeat": 1,
+      "right_repeat": 2,
+      "paired_n": 21,
+      "flips": 0,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "a_back",
+      "left_repeat": 1,
+      "right_repeat": 3,
+      "paired_n": 21,
+      "flips": 0,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "a_back",
+      "left_repeat": 2,
+      "right_repeat": 3,
+      "paired_n": 21,
+      "flips": 0,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "b_front",
+      "left_repeat": 1,
+      "right_repeat": 2,
+      "paired_n": 21,
+      "flips": 1,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "b_front",
+      "left_repeat": 1,
+      "right_repeat": 3,
+      "paired_n": 21,
+      "flips": 1,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "b_front",
+      "left_repeat": 2,
+      "right_repeat": 3,
+      "paired_n": 21,
+      "flips": 0,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "b_back",
+      "left_repeat": 1,
+      "right_repeat": 2,
+      "paired_n": 21,
+      "flips": 0,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "b_back",
+      "left_repeat": 1,
+      "right_repeat": 3,
+      "paired_n": 21,
+      "flips": 0,
+      "request_bytes_identical": true
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "b_back",
+      "left_repeat": 2,
+      "right_repeat": 3,
+      "paired_n": 21,
+      "flips": 0,
+      "request_bytes_identical": true
+    }
+  ],
+  "fixed_size_context_flips": [
+    {
+      "model": "gpt-5.6-sol",
+      "left_condition": "a_front",
+      "right_condition": "b_front",
+      "repeat": 1,
+      "full_request_n": 42,
+      "paired_n": 21,
+      "flips": 0
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "left_condition": "a_front",
+      "right_condition": "b_front",
+      "repeat": 2,
+      "full_request_n": 42,
+      "paired_n": 21,
+      "flips": 6
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "left_condition": "a_front",
+      "right_condition": "b_front",
+      "repeat": 3,
+      "full_request_n": 42,
+      "paired_n": 21,
+      "flips": 8
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "left_condition": "a_back",
+      "right_condition": "b_back",
+      "repeat": 1,
+      "full_request_n": 42,
+      "paired_n": 21,
+      "flips": 12
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "left_condition": "a_back",
+      "right_condition": "b_back",
+      "repeat": 2,
+      "full_request_n": 42,
+      "paired_n": 21,
+      "flips": 7
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "left_condition": "a_back",
+      "right_condition": "b_back",
+      "repeat": 3,
+      "full_request_n": 42,
+      "paired_n": 21,
+      "flips": 6
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "left_condition": "a_front",
+      "right_condition": "a_back",
+      "repeat": 1,
+      "full_request_n": 42,
+      "paired_n": 21,
+      "flips": 0
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "left_condition": "a_front",
+      "right_condition": "a_back",
+      "repeat": 2,
+      "full_request_n": 42,
+      "paired_n": 21,
+      "flips": 1
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "left_condition": "a_front",
+      "right_condition": "a_back",
+      "repeat": 3,
+      "full_request_n": 42,
+      "paired_n": 21,
+      "flips": 8
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "left_condition": "b_front",
+      "right_condition": "b_back",
+      "repeat": 1,
+      "full_request_n": 42,
+      "paired_n": 21,
+      "flips": 12
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "left_condition": "b_front",
+      "right_condition": "b_back",
+      "repeat": 2,
+      "full_request_n": 42,
+      "paired_n": 21,
+      "flips": 0
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "left_condition": "b_front",
+      "right_condition": "b_back",
+      "repeat": 3,
+      "full_request_n": 42,
+      "paired_n": 21,
+      "flips": 6
+    },
+    {
+      "model": "gpt-6-astra",
+      "left_condition": "a_front",
+      "right_condition": "b_front",
+      "repeat": 1,
+      "full_request_n": 42,
+      "paired_n": 21,
+      "flips": 0
+    },
+    {
+      "model": "gpt-6-astra",
+      "left_condition": "a_front",
+      "right_condition": "b_front",
+      "repeat": 2,
+      "full_request_n": 42,
+      "paired_n": 21,
+      "flips": 0
+    },
+    {
+      "model": "gpt-6-astra",
+      "left_condition": "a_front",
+      "right_condition": "b_front",
+      "repeat": 3,
+      "full_request_n": 42,
+      "paired_n": 21,
+      "flips": 0
+    },
+    {
+      "model": "gpt-6-astra",
+      "left_condition": "a_back",
+      "right_condition": "b_back",
+      "repeat": 1,
+      "full_request_n": 42,
+      "paired_n": 21,
+      "flips": 1
+    },
+    {
+      "model": "gpt-6-astra",
+      "left_condition": "a_back",
+      "right_condition": "b_back",
+      "repeat": 2,
+      "full_request_n": 42,
+      "paired_n": 21,
+      "flips": 1
+    },
+    {
+      "model": "gpt-6-astra",
+      "left_condition": "a_back",
+      "right_condition": "b_back",
+      "repeat": 3,
+      "full_request_n": 42,
+      "paired_n": 21,
+      "flips": 1
+    },
+    {
+      "model": "gpt-6-astra",
+      "left_condition": "a_front",
+      "right_condition": "a_back",
+      "repeat": 1,
+      "full_request_n": 42,
+      "paired_n": 21,
+      "flips": 1
+    },
+    {
+      "model": "gpt-6-astra",
+      "left_condition": "a_front",
+      "right_condition": "a_back",
+      "repeat": 2,
+      "full_request_n": 42,
+      "paired_n": 21,
+      "flips": 0
+    },
+    {
+      "model": "gpt-6-astra",
+      "left_condition": "a_front",
+      "right_condition": "a_back",
+      "repeat": 3,
+      "full_request_n": 42,
+      "paired_n": 21,
+      "flips": 0
+    },
+    {
+      "model": "gpt-6-astra",
+      "left_condition": "b_front",
+      "right_condition": "b_back",
+      "repeat": 1,
+      "full_request_n": 42,
+      "paired_n": 21,
+      "flips": 0
+    },
+    {
+      "model": "gpt-6-astra",
+      "left_condition": "b_front",
+      "right_condition": "b_back",
+      "repeat": 2,
+      "full_request_n": 42,
+      "paired_n": 21,
+      "flips": 1
+    },
+    {
+      "model": "gpt-6-astra",
+      "left_condition": "b_front",
+      "right_condition": "b_back",
+      "repeat": 3,
+      "full_request_n": 42,
+      "paired_n": 21,
+      "flips": 1
+    }
+  ],
+  "focal_counts": [
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "clean",
+      "repeat": 1,
+      "focal_n": 21,
+      "correct": 21,
+      "full_request_n": 70
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "clean",
+      "repeat": 2,
+      "focal_n": 21,
+      "correct": 19,
+      "full_request_n": 70
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "clean",
+      "repeat": 3,
+      "focal_n": 21,
+      "correct": 21,
+      "full_request_n": 70
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "focal_only",
+      "repeat": 1,
+      "focal_n": 21,
+      "correct": 21,
+      "full_request_n": 21
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "focal_only",
+      "repeat": 2,
+      "focal_n": 21,
+      "correct": 21,
+      "full_request_n": 21
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "focal_only",
+      "repeat": 3,
+      "focal_n": 21,
+      "correct": 15,
+      "full_request_n": 21
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "a_front",
+      "repeat": 1,
+      "focal_n": 21,
+      "correct": 21,
+      "full_request_n": 42
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "a_front",
+      "repeat": 2,
+      "focal_n": 21,
+      "correct": 21,
+      "full_request_n": 42
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "a_front",
+      "repeat": 3,
+      "focal_n": 21,
+      "correct": 13,
+      "full_request_n": 42
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "a_back",
+      "repeat": 1,
+      "focal_n": 21,
+      "correct": 21,
+      "full_request_n": 42
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "a_back",
+      "repeat": 2,
+      "focal_n": 21,
+      "correct": 20,
+      "full_request_n": 42
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "a_back",
+      "repeat": 3,
+      "focal_n": 21,
+      "correct": 21,
+      "full_request_n": 42
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "b_front",
+      "repeat": 1,
+      "focal_n": 21,
+      "correct": 21,
+      "full_request_n": 42
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "b_front",
+      "repeat": 2,
+      "focal_n": 21,
+      "correct": 15,
+      "full_request_n": 42
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "b_front",
+      "repeat": 3,
+      "focal_n": 21,
+      "correct": 21,
+      "full_request_n": 42
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "b_back",
+      "repeat": 1,
+      "focal_n": 21,
+      "correct": 9,
+      "full_request_n": 42
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "b_back",
+      "repeat": 2,
+      "focal_n": 21,
+      "correct": 15,
+      "full_request_n": 42
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "b_back",
+      "repeat": 3,
+      "focal_n": 21,
+      "correct": 15,
+      "full_request_n": 42
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "clean",
+      "repeat": 1,
+      "focal_n": 21,
+      "correct": 21,
+      "full_request_n": 70
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "clean",
+      "repeat": 2,
+      "focal_n": 21,
+      "correct": 21,
+      "full_request_n": 70
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "clean",
+      "repeat": 3,
+      "focal_n": 21,
+      "correct": 21,
+      "full_request_n": 70
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "focal_only",
+      "repeat": 1,
+      "focal_n": 21,
+      "correct": 20,
+      "full_request_n": 21
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "focal_only",
+      "repeat": 2,
+      "focal_n": 21,
+      "correct": 20,
+      "full_request_n": 21
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "focal_only",
+      "repeat": 3,
+      "focal_n": 21,
+      "correct": 20,
+      "full_request_n": 21
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "a_front",
+      "repeat": 1,
+      "focal_n": 21,
+      "correct": 21,
+      "full_request_n": 42
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "a_front",
+      "repeat": 2,
+      "focal_n": 21,
+      "correct": 20,
+      "full_request_n": 42
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "a_front",
+      "repeat": 3,
+      "focal_n": 21,
+      "correct": 20,
+      "full_request_n": 42
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "a_back",
+      "repeat": 1,
+      "focal_n": 21,
+      "correct": 20,
+      "full_request_n": 42
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "a_back",
+      "repeat": 2,
+      "focal_n": 21,
+      "correct": 20,
+      "full_request_n": 42
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "a_back",
+      "repeat": 3,
+      "focal_n": 21,
+      "correct": 20,
+      "full_request_n": 42
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "b_front",
+      "repeat": 1,
+      "focal_n": 21,
+      "correct": 21,
+      "full_request_n": 42
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "b_front",
+      "repeat": 2,
+      "focal_n": 21,
+      "correct": 20,
+      "full_request_n": 42
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "b_front",
+      "repeat": 3,
+      "focal_n": 21,
+      "correct": 20,
+      "full_request_n": 42
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "b_back",
+      "repeat": 1,
+      "focal_n": 21,
+      "correct": 21,
+      "full_request_n": 42
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "b_back",
+      "repeat": 2,
+      "focal_n": 21,
+      "correct": 21,
+      "full_request_n": 42
+    },
+    {
+      "model": "gpt-6-astra",
+      "condition": "b_back",
+      "repeat": 3,
+      "focal_n": 21,
+      "correct": 21,
+      "full_request_n": 42
+    }
+  ],
+  "input_hashes": {
+    "results/independent_validation/predictions/gpt-5.6-sol/clean_r1_request.json": "f782d55bbc835e5ba1eeea189baef7dfe6081357611e01bb35f4d0dd6f5323d8",
+    "results/independent_validation/predictions/gpt-5.6-sol/clean_r1_results.json": "505a2d7d2ff9641d5002b730600101419898d38ed340f9f024fb7400620cb32c",
+    "results/independent_validation/predictions/gpt-5.6-sol/clean_r1_metadata.json": "4a9be265d92297bf0fdc4ca9a1ac701129ea59a17671af4ceb7ec3487d9b9643",
+    "results/independent_validation/predictions/gpt-5.6-sol/clean_r2_request.json": "f782d55bbc835e5ba1eeea189baef7dfe6081357611e01bb35f4d0dd6f5323d8",
+    "results/independent_validation/predictions/gpt-5.6-sol/clean_r2_results.json": "1b534a046aa8218de46fc64307ef40b4629b274e8ba393e6b7b4684a64d3778c",
+    "results/independent_validation/predictions/gpt-5.6-sol/clean_r2_metadata.json": "7be7fc58cca9d7affde5b489a9c1584d58d6e0453177f026c737e5589390b6e5",
+    "results/independent_validation/predictions/gpt-5.6-sol/clean_r3_request.json": "f782d55bbc835e5ba1eeea189baef7dfe6081357611e01bb35f4d0dd6f5323d8",
+    "results/independent_validation/predictions/gpt-5.6-sol/clean_r3_results.json": "505a2d7d2ff9641d5002b730600101419898d38ed340f9f024fb7400620cb32c",
+    "results/independent_validation/predictions/gpt-5.6-sol/clean_r3_metadata.json": "237e186e60b63c8c8c8bc19e73ba0a1b3a4b7da99eebd84089c9ae6e9a265d22",
+    "results/independent_validation/predictions/gpt-5.6-sol/focal_only_r1_request.json": "2feb745e04ac49134624d9348ebccc5c5b276ed4a060d78d3a954424caaeba80",
+    "results/independent_validation/predictions/gpt-5.6-sol/focal_only_r1_results.json": "b5726b3e0dd11d104b48daf586cff97f03d42918bd062912972337d3fd3d4b76",
+    "results/independent_validation/predictions/gpt-5.6-sol/focal_only_r1_metadata.json": "08b82e30de09db26c6b042dedbebc670243480644fbffa386fdff687989efa58",
+    "results/independent_validation/predictions/gpt-5.6-sol/focal_only_r2_request.json": "2feb745e04ac49134624d9348ebccc5c5b276ed4a060d78d3a954424caaeba80",
+    "results/independent_validation/predictions/gpt-5.6-sol/focal_only_r2_results.json": "b5726b3e0dd11d104b48daf586cff97f03d42918bd062912972337d3fd3d4b76",
+    "results/independent_validation/predictions/gpt-5.6-sol/focal_only_r2_metadata.json": "ad952186561e52a153400be483813f16d9caad1e328ea43eaffa795c96685252",
+    "results/independent_validation/predictions/gpt-5.6-sol/focal_only_r3_request.json": "2feb745e04ac49134624d9348ebccc5c5b276ed4a060d78d3a954424caaeba80",
+    "results/independent_validation/predictions/gpt-5.6-sol/focal_only_r3_results.json": "cf864f2ec752636c48cdc9803b2fdca725366e1ff6a14982638b989d0bbe38cf",
+    "results/independent_validation/predictions/gpt-5.6-sol/focal_only_r3_metadata.json": "4165ebbca8ee3083c388b306011fd8be00bb19912e95409f6ce7b465374ceaaf",
+    "results/independent_validation/predictions/gpt-5.6-sol/a_front_r1_request.json": "4ce3880d58b07d06209f888c38a4baac45b8cfa555903a6e41ce8593850d575a",
+    "results/independent_validation/predictions/gpt-5.6-sol/a_front_r1_results.json": "693f7ed61d1caf93789e529da31e0c7e2d24cf641b0e1c1a74fea3b40a400f5c",
+    "results/independent_validation/predictions/gpt-5.6-sol/a_front_r1_metadata.json": "d5a4b6c3318977064a09d36fd0fa9e889772b95db83b409d8060bb42e9c4268a",
+    "results/independent_validation/predictions/gpt-5.6-sol/a_front_r2_request.json": "4ce3880d58b07d06209f888c38a4baac45b8cfa555903a6e41ce8593850d575a",
+    "results/independent_validation/predictions/gpt-5.6-sol/a_front_r2_results.json": "693f7ed61d1caf93789e529da31e0c7e2d24cf641b0e1c1a74fea3b40a400f5c",
+    "results/independent_validation/predictions/gpt-5.6-sol/a_front_r2_metadata.json": "7ccd5a76aded10f8f86eeb95474afd9fb95010568809ccf71c2a0793bd2cc75e",
+    "results/independent_validation/predictions/gpt-5.6-sol/a_front_r3_request.json": "4ce3880d58b07d06209f888c38a4baac45b8cfa555903a6e41ce8593850d575a",
+    "results/independent_validation/predictions/gpt-5.6-sol/a_front_r3_results.json": "2556bd3b68a29cc488e0c3a75eabf293687b24ff80ea027c68da80e035cf72a6",
+    "results/independent_validation/predictions/gpt-5.6-sol/a_front_r3_metadata.json": "86fb7304a428c1826cec31023c84657be9af60f1507b9d6044205a7ff40b90c8",
+    "results/independent_validation/predictions/gpt-5.6-sol/a_back_r1_request.json": "ae482aec88bd757f544992178db6e76121eb12a5f6b2683c9f1f80d3d6a89be4",
+    "results/independent_validation/predictions/gpt-5.6-sol/a_back_r1_results.json": "ee18bc2ef1f2b1789527ddf73cb2f399808d1aeecef9a077bebf36e4dae90def",
+    "results/independent_validation/predictions/gpt-5.6-sol/a_back_r1_metadata.json": "f8bf824935bffb880617926b8613db071c27a683a9dd21b2884e364168c49af6",
+    "results/independent_validation/predictions/gpt-5.6-sol/a_back_r2_request.json": "ae482aec88bd757f544992178db6e76121eb12a5f6b2683c9f1f80d3d6a89be4",
+    "results/independent_validation/predictions/gpt-5.6-sol/a_back_r2_results.json": "3db3b183e0394f7dad3cc2434ab32fe32851c7dcc504c29bbac24ace1657ee29",
+    "results/independent_validation/predictions/gpt-5.6-sol/a_back_r2_metadata.json": "a3d2da43de1a66493709d6ab15913de3b9ac9a7149f568db0b1e035058f32b3f",
+    "results/independent_validation/predictions/gpt-5.6-sol/a_back_r3_request.json": "ae482aec88bd757f544992178db6e76121eb12a5f6b2683c9f1f80d3d6a89be4",
+    "results/independent_validation/predictions/gpt-5.6-sol/a_back_r3_results.json": "ee18bc2ef1f2b1789527ddf73cb2f399808d1aeecef9a077bebf36e4dae90def",
+    "results/independent_validation/predictions/gpt-5.6-sol/a_back_r3_metadata.json": "7852e8f690c7fe30334f422130c5acaa77b5103511643bd80b01495a3f9782ed",
+    "results/independent_validation/predictions/gpt-5.6-sol/b_front_r1_request.json": "e11a3eabb928ef99ddf966d51bbc3ff4987311457be54f2079d78ff814529212",
+    "results/independent_validation/predictions/gpt-5.6-sol/b_front_r1_results.json": "c8c10fe40d04860bf0916d0a1a71145bf08f324bfe1650382e09faa43e3e1ba9",
+    "results/independent_validation/predictions/gpt-5.6-sol/b_front_r1_metadata.json": "8d75845d1e2c4532e854b602e2fff5d9ab154ad277c8b4832adfe152704e8208",
+    "results/independent_validation/predictions/gpt-5.6-sol/b_front_r2_request.json": "e11a3eabb928ef99ddf966d51bbc3ff4987311457be54f2079d78ff814529212",
+    "results/independent_validation/predictions/gpt-5.6-sol/b_front_r2_results.json": "16955a16fd25ba085f3ba653dc075716cebe81fd33cb2d7ad4de0a24945651cb",
+    "results/independent_validation/predictions/gpt-5.6-sol/b_front_r2_metadata.json": "8b68ad74dc0a032ff652485a7783dd4a9899a5633e3b07f78db63a528f22f2b3",
+    "results/independent_validation/predictions/gpt-5.6-sol/b_front_r3_request.json": "e11a3eabb928ef99ddf966d51bbc3ff4987311457be54f2079d78ff814529212",
+    "results/independent_validation/predictions/gpt-5.6-sol/b_front_r3_results.json": "c8c10fe40d04860bf0916d0a1a71145bf08f324bfe1650382e09faa43e3e1ba9",
+    "results/independent_validation/predictions/gpt-5.6-sol/b_front_r3_metadata.json": "db044e9a46251c932adebe9cc82077ed6e35b6395411b3969b61936e1acdc76e",
+    "results/independent_validation/predictions/gpt-5.6-sol/b_back_r1_request.json": "dedec2bfd2f8aeb5a2d8b22e1a508e0c4b4e8454a94f4678f6d8d6bdc03dece6",
+    "results/independent_validation/predictions/gpt-5.6-sol/b_back_r1_results.json": "b2018c9ccea36d3a2443967046968e0fd10de988efb776586562a5e520e885da",
+    "results/independent_validation/predictions/gpt-5.6-sol/b_back_r1_metadata.json": "53c58349c9b30e7fcb748d96679af19baf1fc5d63d6dcee5f18c4b5b475457ac",
+    "results/independent_validation/predictions/gpt-5.6-sol/b_back_r2_request.json": "dedec2bfd2f8aeb5a2d8b22e1a508e0c4b4e8454a94f4678f6d8d6bdc03dece6",
+    "results/independent_validation/predictions/gpt-5.6-sol/b_back_r2_results.json": "f10ffe0d21c6256745baf992914c6ec71f35028366d84371a3b5ce52abc6fad6",
+    "results/independent_validation/predictions/gpt-5.6-sol/b_back_r2_metadata.json": "09673d14460b1d065ccc0a36d8a61edd64bc53f627086d87b8b2bed8581e21d9",
+    "results/independent_validation/predictions/gpt-5.6-sol/b_back_r3_request.json": "dedec2bfd2f8aeb5a2d8b22e1a508e0c4b4e8454a94f4678f6d8d6bdc03dece6",
+    "results/independent_validation/predictions/gpt-5.6-sol/b_back_r3_results.json": "2c92a44e9736b7669026b2465ec8c10dd1f2015a539d146459766c596bb062fa",
+    "results/independent_validation/predictions/gpt-5.6-sol/b_back_r3_metadata.json": "14f74d12e8f0eb506ed09219e3e37b005e82b5eaa3d1cf8d4336f372bd948a59",
+    "results/independent_validation/predictions/gpt-6-astra/clean_r1_request.json": "68c729619ae7474d2cf7cdf1e22819bf680fa40a2d2f6a16a692024ee23d3257",
+    "results/independent_validation/predictions/gpt-6-astra/clean_r1_results.json": "505a2d7d2ff9641d5002b730600101419898d38ed340f9f024fb7400620cb32c",
+    "results/independent_validation/predictions/gpt-6-astra/clean_r1_metadata.json": "34858236166d1d61a6d24dd1cf0fac6c4c1d7d3e49c754b5c9c05a0051302ebc",
+    "results/independent_validation/predictions/gpt-6-astra/clean_r2_request.json": "68c729619ae7474d2cf7cdf1e22819bf680fa40a2d2f6a16a692024ee23d3257",
+    "results/independent_validation/predictions/gpt-6-astra/clean_r2_results.json": "505a2d7d2ff9641d5002b730600101419898d38ed340f9f024fb7400620cb32c",
+    "results/independent_validation/predictions/gpt-6-astra/clean_r2_metadata.json": "3ae337564a19f2b85b50a63bef4f99104881cf005448a7a8af3d978c355bf5a9",
+    "results/independent_validation/predictions/gpt-6-astra/clean_r3_request.json": "68c729619ae7474d2cf7cdf1e22819bf680fa40a2d2f6a16a692024ee23d3257",
+    "results/independent_validation/predictions/gpt-6-astra/clean_r3_results.json": "505a2d7d2ff9641d5002b730600101419898d38ed340f9f024fb7400620cb32c",
+    "results/independent_validation/predictions/gpt-6-astra/clean_r3_metadata.json": "fe5ab1e1a004bc8567d1b7236acb7becebdb6124bede3c1db383089c749f88dd",
+    "results/independent_validation/predictions/gpt-6-astra/focal_only_r1_request.json": "cf839c9dc0f549446ef0e63aa42bf780dcf6ecd803876ad3dad8eedd1101e751",
+    "results/independent_validation/predictions/gpt-6-astra/focal_only_r1_results.json": "421096c5f5e747b2063b22cd67451930e803ed4c380e17934370119cf53859df",
+    "results/independent_validation/predictions/gpt-6-astra/focal_only_r1_metadata.json": "22ef14dc6a93f26b59dd7d404ebd372fb0a5a0256fef6b57a6c4c556485ab928",
+    "results/independent_validation/predictions/gpt-6-astra/focal_only_r2_request.json": "cf839c9dc0f549446ef0e63aa42bf780dcf6ecd803876ad3dad8eedd1101e751",
+    "results/independent_validation/predictions/gpt-6-astra/focal_only_r2_results.json": "421096c5f5e747b2063b22cd67451930e803ed4c380e17934370119cf53859df",
+    "results/independent_validation/predictions/gpt-6-astra/focal_only_r2_metadata.json": "eb0d993d0463008ae4b8171110ca462a6488c73dc5721c8f17d4426a9cec960e",
+    "results/independent_validation/predictions/gpt-6-astra/focal_only_r3_request.json": "cf839c9dc0f549446ef0e63aa42bf780dcf6ecd803876ad3dad8eedd1101e751",
+    "results/independent_validation/predictions/gpt-6-astra/focal_only_r3_results.json": "421096c5f5e747b2063b22cd67451930e803ed4c380e17934370119cf53859df",
+    "results/independent_validation/predictions/gpt-6-astra/focal_only_r3_metadata.json": "e60c5e8fd1cc0f711f79ba1ff427978f9d1dc8df2d503db2afd71216c79d70d9",
+    "results/independent_validation/predictions/gpt-6-astra/a_front_r1_request.json": "ba6a57d04f5411f80cbd2953e2292e68058c87075d8744ca790db8f3d88a2463",
+    "results/independent_validation/predictions/gpt-6-astra/a_front_r1_results.json": "693f7ed61d1caf93789e529da31e0c7e2d24cf641b0e1c1a74fea3b40a400f5c",
+    "results/independent_validation/predictions/gpt-6-astra/a_front_r1_metadata.json": "60ef1523300451e6bab40f49c68cb5ac9aaa0f71f93b73e63044135ed8c6f147",
+    "results/independent_validation/predictions/gpt-6-astra/a_front_r2_request.json": "ba6a57d04f5411f80cbd2953e2292e68058c87075d8744ca790db8f3d88a2463",
+    "results/independent_validation/predictions/gpt-6-astra/a_front_r2_results.json": "08c601a9f09d00359e92f85e8f3bef2057b5a179f149fbd3b723e5792519121d",
+    "results/independent_validation/predictions/gpt-6-astra/a_front_r2_metadata.json": "70b4250d1c5b2d864510e65d758e26208c205bea64c9843c506879f7568c63f6",
+    "results/independent_validation/predictions/gpt-6-astra/a_front_r3_request.json": "ba6a57d04f5411f80cbd2953e2292e68058c87075d8744ca790db8f3d88a2463",
+    "results/independent_validation/predictions/gpt-6-astra/a_front_r3_results.json": "08c601a9f09d00359e92f85e8f3bef2057b5a179f149fbd3b723e5792519121d",
+    "results/independent_validation/predictions/gpt-6-astra/a_front_r3_metadata.json": "7a451157ed591ca998d1a94d635cdc2ff387005d9f663befee38d64c83b5fc5e",
+    "results/independent_validation/predictions/gpt-6-astra/a_back_r1_request.json": "49c69e8c4ff773e616ed69a0fcd796a21ebb0c0b439fd653f25c41436a4e1c55",
+    "results/independent_validation/predictions/gpt-6-astra/a_back_r1_results.json": "ecb163122932ec97cf77504224e9fd173153f019bbc1b856404813002420cece",
+    "results/independent_validation/predictions/gpt-6-astra/a_back_r1_metadata.json": "c1aa896710d9a71e2446d0c9382a3a8b4621531611f728d4f2d2960c35f3c49b",
+    "results/independent_validation/predictions/gpt-6-astra/a_back_r2_request.json": "49c69e8c4ff773e616ed69a0fcd796a21ebb0c0b439fd653f25c41436a4e1c55",
+    "results/independent_validation/predictions/gpt-6-astra/a_back_r2_results.json": "ecb163122932ec97cf77504224e9fd173153f019bbc1b856404813002420cece",
+    "results/independent_validation/predictions/gpt-6-astra/a_back_r2_metadata.json": "00f2d9948c72a156762c61c07e4f08053f104f0ecb9fe88b2870eb159e6c4a8f",
+    "results/independent_validation/predictions/gpt-6-astra/a_back_r3_request.json": "49c69e8c4ff773e616ed69a0fcd796a21ebb0c0b439fd653f25c41436a4e1c55",
+    "results/independent_validation/predictions/gpt-6-astra/a_back_r3_results.json": "ecb163122932ec97cf77504224e9fd173153f019bbc1b856404813002420cece",
+    "results/independent_validation/predictions/gpt-6-astra/a_back_r3_metadata.json": "cba2b921dd238ac4d42ce854f39163220d070452781cd46cc446375f5327c065",
+    "results/independent_validation/predictions/gpt-6-astra/b_front_r1_request.json": "e8d2319940019ee9439d2822e70291efe70afeb7d632f2ecc2d1ce1d427d0a8f",
+    "results/independent_validation/predictions/gpt-6-astra/b_front_r1_results.json": "c8c10fe40d04860bf0916d0a1a71145bf08f324bfe1650382e09faa43e3e1ba9",
+    "results/independent_validation/predictions/gpt-6-astra/b_front_r1_metadata.json": "24ac8d4caff28a7e074f4114d1ce33ee935468cd17acbd4628a3c0be66186f96",
+    "results/independent_validation/predictions/gpt-6-astra/b_front_r2_request.json": "e8d2319940019ee9439d2822e70291efe70afeb7d632f2ecc2d1ce1d427d0a8f",
+    "results/independent_validation/predictions/gpt-6-astra/b_front_r2_results.json": "f8a095eec7229d435d362a62a01b8544a06f37350c269e4c633f5cc24e0d2eaa",
+    "results/independent_validation/predictions/gpt-6-astra/b_front_r2_metadata.json": "3955189f3d975a0863f42d9fd0472c14c74af4ccc028c8ab4a4e69f5eeae20e4",
+    "results/independent_validation/predictions/gpt-6-astra/b_front_r3_request.json": "e8d2319940019ee9439d2822e70291efe70afeb7d632f2ecc2d1ce1d427d0a8f",
+    "results/independent_validation/predictions/gpt-6-astra/b_front_r3_results.json": "f8a095eec7229d435d362a62a01b8544a06f37350c269e4c633f5cc24e0d2eaa",
+    "results/independent_validation/predictions/gpt-6-astra/b_front_r3_metadata.json": "e2e6b25ad3ba3fc42094ffa54f33482112abc4a11b6d39ba497f948e6fda0eb8",
+    "results/independent_validation/predictions/gpt-6-astra/b_back_r1_request.json": "8659dd4233ed2c3d10d6954522a2884450ead845371f08ba70e96f6626fc2336",
+    "results/independent_validation/predictions/gpt-6-astra/b_back_r1_results.json": "e195b8607d7af8af8bb5ea89ee85c25e28b756202edd302a15fd7a13777afc26",
+    "results/independent_validation/predictions/gpt-6-astra/b_back_r1_metadata.json": "c26b749c3da65db9137ea947a92895cf5b366a316c7d7501405844360caff2cb",
+    "results/independent_validation/predictions/gpt-6-astra/b_back_r2_request.json": "8659dd4233ed2c3d10d6954522a2884450ead845371f08ba70e96f6626fc2336",
+    "results/independent_validation/predictions/gpt-6-astra/b_back_r2_results.json": "e195b8607d7af8af8bb5ea89ee85c25e28b756202edd302a15fd7a13777afc26",
+    "results/independent_validation/predictions/gpt-6-astra/b_back_r2_metadata.json": "a64cef90d088cf2c0d2292efe9aa451d3a3d2fba9d2f0adbe8546d6ebb50535c",
+    "results/independent_validation/predictions/gpt-6-astra/b_back_r3_request.json": "8659dd4233ed2c3d10d6954522a2884450ead845371f08ba70e96f6626fc2336",
+    "results/independent_validation/predictions/gpt-6-astra/b_back_r3_results.json": "e195b8607d7af8af8bb5ea89ee85c25e28b756202edd302a15fd7a13777afc26",
+    "results/independent_validation/predictions/gpt-6-astra/b_back_r3_metadata.json": "ccf7c7bd3b07f96041364ff8b1d66f91c2789c9a54acde896866193ebe907fbf",
+    "results/independent_validation/protocol.json": "4faf7317ad2b92a1599b892f9b68c1eca0427b5a764f8f8b030846efa20bd5c4",
+    "results/independent_validation/analysis/scores.json": "98409ddff332ede3fc923a6fe20d00f5ae82c19a1d84df96a6bf3f2a9677ec41",
+    "results/independent_validation/analysis/cases.csv": "d4522964207064ae1d03b70dd2b202de3f658b60b8b6753db9401e7e5cbb48cd",
+    "results/independent_validation/predictions/frozen_manifest.json": "7f9ca9cecacf838242f9f23af69053659426be88e4c8bd201f7468ff39c58ce6"
+  },
+  "analysis_code_sha256": "6d2a3b387bcdf3b9a6ff52d59bd06646125797d73e7fb7b79a9abd2b068f873c"
+}

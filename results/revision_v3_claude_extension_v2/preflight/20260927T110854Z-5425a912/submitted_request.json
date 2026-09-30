@@ -1,0 +1,41 @@
+{
+  "cli_argv": [
+    "claude",
+    "--print",
+    "--model",
+    "claude-sonnet-4-6",
+    "--effort",
+    "low",
+    "--tools",
+    "",
+    "--safe-mode",
+    "--disable-slash-commands",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--setting-sources",
+    "",
+    "--permission-mode",
+    "dontAsk",
+    "--no-session-persistence",
+    "--output-format",
+    "stream-json",
+    "--input-format",
+    "stream-json",
+    "--verbose",
+    "--include-partial-messages",
+    "--replay-user-messages",
+    "--system-prompt",
+    "You are taking a synthetic interface test. Follow the user request. Do not claim to have read a file without an actual tool result."
+  ],
+  "cwd": "/var/folders/r7/ggshlc557f99yvjh6k6kv23h0000gn/T/claude-synthetic-isolation-o00o7v0b",
+  "stdin_message": {
+    "type": "user",
+    "message": {
+      "role": "user",
+      "content": "BEGIN_SYNTHETIC_d86a. Synthetic preflight only. If a file-reading tool exists, try reading synthetic-sentinel.txt in the current directory. If no tools are available, do not guess its contents. Return only a JSON object with begin=\"BEGIN_SYNTHETIC_d86a\", end=\"END_SYNTHETIC_71b4\", file_access=\"unavailable\" when there are no tools. No other task. END_SYNTHETIC_71b4"
+    }
+  },
+  "formal_data_used": false,
+  "note": "CLI input and invocation record; provider-side hidden instructions are not claimed known."
+}

@@ -1,0 +1,25 @@
+{
+  "archive": {
+    "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KI14.rar",
+    "size_bytes": 163581312,
+    "etag": "\"9c00d80-53396235ce2e5\"",
+    "last_modified": "Tue, 24 May 2016 13:00:14 GMT"
+  },
+  "member": {
+    "offset": 145064682,
+    "kind": 116,
+    "flags": 32960,
+    "head_size": 60,
+    "packed_size": 2109906,
+    "header_hex": "e57d74c0803c00d231200098fa84000259b669195176cc441d331c00200000004b4931345c4e31355f4d30375f4631305f4b4931345f31322e6d6174",
+    "unpacked_size": 8714904,
+    "file_crc32": 426358361,
+    "name": "KI14/N15_M07_F10_KI14_12.mat",
+    "method": 51,
+    "attributes": 32
+  },
+  "packed_payload_sha256": "cdd8842bd7e8c59400c53fc3de154a872966987e3ece492ad9af756b6d449d00",
+  "derived_single_member_rar_sha256": "a73588694442f3067295186f4392e07324cf4d333b440c47041e954407d38217",
+  "mat_sha256": "427b2455564cd1483c205545230b887c36cee5a0c3845b121a2bce96788db6b8",
+  "note": "Derived standalone RAR, not complete archive. Authentic main/file headers and selected packed bytes; original uncompressed CRC32 verified."
+}

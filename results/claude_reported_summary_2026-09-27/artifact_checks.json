@@ -1,0 +1,317 @@
+{
+  "snapshot_meaning": "post-report artifact snapshot, NOT a pre-score freeze",
+  "answer_key_files_opened": false,
+  "classification_scores_recomputed": false,
+  "eligible_for_primary_comparison": false,
+  "artifact_arrays": 27,
+  "local_artifact_chains_consistent": 23,
+  "native_event_chain_verified": false,
+  "pre_score_freeze_verified": false,
+  "sessions": [
+    {
+      "model": "claude-sonnet-4-6",
+      "group": "cmapss_clean_r1",
+      "array_valid": true,
+      "n_predictions": 60,
+      "local_artifact_issues": [],
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "group": "cmapss_clean_r2",
+      "array_valid": true,
+      "n_predictions": 60,
+      "local_artifact_issues": [],
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "group": "cmapss_clean_r3",
+      "array_valid": true,
+      "n_predictions": 60,
+      "local_artifact_issues": [],
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "group": "tep_clean_r1",
+      "array_valid": true,
+      "n_predictions": 70,
+      "local_artifact_issues": [],
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "group": "tep_clean_r2",
+      "array_valid": true,
+      "n_predictions": 70,
+      "local_artifact_issues": [
+        "unverified_prediction_sha256",
+        "unverified_request_sha256"
+      ],
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "group": "tep_clean_r3",
+      "array_valid": true,
+      "n_predictions": 70,
+      "local_artifact_issues": [
+        "whole_response_parse_failed",
+        "unverified_prediction_sha256",
+        "unverified_response_text_sha256",
+        "missing_request_sha256"
+      ],
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "group": "tep_misnamed_r1",
+      "array_valid": true,
+      "n_predictions": 70,
+      "local_artifact_issues": [
+        "unverified_prediction_sha256"
+      ],
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "group": "tep_misnamed_r2",
+      "array_valid": true,
+      "n_predictions": 70,
+      "local_artifact_issues": [],
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "group": "tep_misnamed_r3",
+      "array_valid": true,
+      "n_predictions": 70,
+      "local_artifact_issues": [
+        "whole_response_parse_failed"
+      ],
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model": "claude-opus-5-5",
+      "group": "cmapss_clean_r1",
+      "array_valid": true,
+      "n_predictions": 60,
+      "local_artifact_issues": [],
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model": "claude-opus-5-5",
+      "group": "cmapss_clean_r2",
+      "array_valid": true,
+      "n_predictions": 60,
+      "local_artifact_issues": [],
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model": "claude-opus-5-5",
+      "group": "cmapss_clean_r3",
+      "array_valid": true,
+      "n_predictions": 60,
+      "local_artifact_issues": [],
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model": "claude-opus-5-5",
+      "group": "tep_clean_r1",
+      "array_valid": true,
+      "n_predictions": 70,
+      "local_artifact_issues": [],
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model": "claude-opus-5-5",
+      "group": "tep_clean_r2",
+      "array_valid": true,
+      "n_predictions": 70,
+      "local_artifact_issues": [],
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model": "claude-opus-5-5",
+      "group": "tep_clean_r3",
+      "array_valid": true,
+      "n_predictions": 70,
+      "local_artifact_issues": [],
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model": "claude-opus-5-5",
+      "group": "tep_misnamed_r1",
+      "array_valid": true,
+      "n_predictions": 70,
+      "local_artifact_issues": [],
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model": "claude-opus-5-5",
+      "group": "tep_misnamed_r2",
+      "array_valid": true,
+      "n_predictions": 70,
+      "local_artifact_issues": [],
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model": "claude-opus-5-5",
+      "group": "tep_misnamed_r3",
+      "array_valid": true,
+      "n_predictions": 70,
+      "local_artifact_issues": [],
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model": "claude-fable-5-1",
+      "group": "cmapss_clean_r1",
+      "array_valid": true,
+      "n_predictions": 60,
+      "local_artifact_issues": [],
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model": "claude-fable-5-1",
+      "group": "cmapss_clean_r2",
+      "array_valid": true,
+      "n_predictions": 60,
+      "local_artifact_issues": [],
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model": "claude-fable-5-1",
+      "group": "cmapss_clean_r3",
+      "array_valid": true,
+      "n_predictions": 60,
+      "local_artifact_issues": [],
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model": "claude-fable-5-1",
+      "group": "tep_clean_r1",
+      "array_valid": true,
+      "n_predictions": 70,
+      "local_artifact_issues": [],
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model": "claude-fable-5-1",
+      "group": "tep_clean_r2",
+      "array_valid": true,
+      "n_predictions": 70,
+      "local_artifact_issues": [],
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model": "claude-fable-5-1",
+      "group": "tep_clean_r3",
+      "array_valid": true,
+      "n_predictions": 70,
+      "local_artifact_issues": [],
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model": "claude-fable-5-1",
+      "group": "tep_misnamed_r1",
+      "array_valid": true,
+      "n_predictions": 70,
+      "local_artifact_issues": [],
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model": "claude-fable-5-1",
+      "group": "tep_misnamed_r2",
+      "array_valid": true,
+      "n_predictions": 70,
+      "local_artifact_issues": [],
+      "eligible_for_primary_comparison": false
+    },
+    {
+      "model": "claude-fable-5-1",
+      "group": "tep_misnamed_r3",
+      "array_valid": true,
+      "n_predictions": 70,
+      "local_artifact_issues": [],
+      "eligible_for_primary_comparison": false
+    }
+  ],
+  "paired_prediction_checks": [
+    {
+      "model": "claude-sonnet-4-6",
+      "repeat": 1,
+      "paired_n": 70,
+      "flips": 40
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "repeat": 2,
+      "paired_n": 70,
+      "flips": 37
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "repeat": 3,
+      "paired_n": 70,
+      "flips": 38
+    },
+    {
+      "model": "claude-opus-5-5",
+      "repeat": 1,
+      "paired_n": 70,
+      "flips": 0
+    },
+    {
+      "model": "claude-opus-5-5",
+      "repeat": 2,
+      "paired_n": 70,
+      "flips": 0
+    },
+    {
+      "model": "claude-opus-5-5",
+      "repeat": 3,
+      "paired_n": 70,
+      "flips": 0
+    },
+    {
+      "model": "claude-fable-5-1",
+      "repeat": 1,
+      "paired_n": 70,
+      "flips": 6
+    },
+    {
+      "model": "claude-fable-5-1",
+      "repeat": 2,
+      "paired_n": 70,
+      "flips": 3
+    },
+    {
+      "model": "claude-fable-5-1",
+      "repeat": 3,
+      "paired_n": 70,
+      "flips": 0
+    }
+  ],
+  "identity_checks": {
+    "claude-sonnet-4-6": {
+      "caller_written_aliases": [
+        "None",
+        "sonnet"
+      ],
+      "native_model_identity_verified": false
+    },
+    "claude-opus-5-5": {
+      "caller_written_aliases": [
+        "opus"
+      ],
+      "native_model_identity_verified": false
+    },
+    "claude-fable-5-1": {
+      "caller_written_aliases": [
+        "opus"
+      ],
+      "native_model_identity_verified": false
+    }
+  }
+}

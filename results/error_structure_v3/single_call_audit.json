@@ -1,9 +1,20 @@
 {
   "counts": {
-    "agree: effect": 3,
-    "agree: none": 8,
-    "single-call only": 6,
-    "call-level only": 2
+    "both criteria met": 3,
+    "neither criterion met": 8,
+    "single-call criterion only": 6,
+    "call criterion only": 2
   },
-  "n": 19
+  "holm_counts": {
+    "both criteria met": 2,
+    "neither criterion met": 12,
+    "single-call criterion only": 2,
+    "call criterion only": 3
+  },
+  "n": 19,
+  "raw_significant": 9,
+  "raw_significant_without_call_criterion": 6,
+  "holm_significant": 4,
+  "holm_significant_without_call_criterion": 2,
+  "interpretation": "Descriptive criterion disagreement, not a false-positive rate. Call criterion is exploratory p<=.10 plus CI excluding zero; low call counts and coarse design p-values restrict sensitivity."
 }

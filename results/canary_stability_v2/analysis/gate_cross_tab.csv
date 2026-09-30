@@ -1,0 +1,17 @@
+collapse_threshold,known_pass,collapse_pass,calls,focal_outputs,focal_correct,focal_errors
+9/10,False,False,0,0,0,0
+9/10,False,True,10,180,101,79
+9/10,True,False,0,0,0,0
+9/10,True,True,8,144,134,10
+17/20,False,False,0,0,0,0
+17/20,False,True,10,180,101,79
+17/20,True,False,0,0,0,0
+17/20,True,True,8,144,134,10
+19/20,False,False,0,0,0,0
+19/20,False,True,10,180,101,79
+19/20,True,False,0,0,0,0
+19/20,True,True,8,144,134,10
+1,False,False,0,0,0,0
+1,False,True,10,180,101,79
+1,True,False,0,0,0,0
+1,True,True,8,144,134,10

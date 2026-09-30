@@ -52,17 +52,27 @@ def contrast_table(rows, caption, label):
 def main():
     tep = read("tep_contrasts.csv")
     parts = [contrast_table([r for r in tep if r["family"].endswith("mapping")],
-                            "Mapping contrasts on 70 source-disjoint TEP runs, three calls per condition. McN: exact McNemar test on repeat 1; Holm: adjusted within service. Rand.: two-sided call-level randomization $p$; (min): smallest attainable value. $E$: excess disagreement with case-bootstrap CI. SD: stable-difference cases.",
+                            "Mapping contrasts on 70 source-disjoint TEP runs, three calls per condition. Accuracy intervals cross case and independent call resampling. McN: exact McNemar test on repeat 1; Holm: adjusted within service and contrast family. Rand.: whole-call exchangeability $p$; (min): smallest attainable value. $E$: excess disagreement with case-bootstrap CI conditional on observed calls. SD: stable-difference cases.",
                             "tab:sf_mapping"),
              contrast_table([r for r in tep if r["family"].endswith("context")],
                             "Context contrasts on the 21 focal TEP runs, three calls per condition. The last contrast changes request size and composition together.",
                             "tab:sf_context"),
              contrast_table(read("abba_contrast.csv"),
-                            "Time-balanced ABBA/BAAB replication (Sol, background B, four blocks). The randomization test exchanges calls only within blocks.",
+                            "Time-balanced ABBA/BAAB replication (Sol, background B, four blocks). The exact design test enumerates the six allocations of two ABBA and two BAAB sequences to four blocks. Accuracy CI: post-hoc case-by-matched-block sensitivity, retaining each selected block's calls jointly. $E$ CI resamples cases conditional on observed calls.",
                             "tab:sf_abba"),
              contrast_table(read("hydraulic_contrasts.csv"),
-                            "Hydraulic rig, 18 focal cycles, one call per condition per block. Where byte-identical duplicates exist they are pooled as the reference; exchanges are restricted to calls in the same block.",
+                            "Hydraulic rig, 18 focal cycles and five blocks. Byte-identical duplicates are pooled where available; call-label exchanges are restricted to each block. Accuracy CI: post-hoc case-by-matched-block sensitivity, preserving joint calls within sampled blocks. Few blocks limit population interpretation. $E$ CI is conditional on observed calls.",
                             "tab:sf_hydraulic")]
+    sensitivity = read("abba_contrast.csv") + read("hydraulic_contrasts.csv")
+    lines = [r"\begin{table}[htbp]\centering\small",
+             r"\caption{Accuracy-interval sensitivity to preserving matched execution blocks. Both methods also resample shared case rows. The matched-block analysis was added during offline correction, not prespecified. The ABBA arbitrary within-block exchangeability sensitivity has 1296 assignments and $p=0.417$; its primary frozen-design test has six assignments and $p=0.667$.}",
+             r"\label{tab:sf_block_sensitivity}", r"\begin{tabular}{@{}lrr@{}}\toprule",
+             r"Contrast & Independent-call CI (pp) & Matched-block CI (pp) \\\midrule"]
+    for r in sensitivity:
+        lines.append(r["contrast"] + " & " + f"[{num(r['crossed_ci_low'],100)}, {num(r['crossed_ci_high'],100)}]" + " & " +
+                     f"[{num(r['matched_block_ci_low'],100)}, {num(r['matched_block_ci_high'],100)}]" + r" \\")
+    lines += [r"\bottomrule\end{tabular}\end{table}", ""]
+    parts.append("\n".join(lines))
     rep = read("tep_repeatability.csv")
     lines = [r"\begin{table}[htbp]\centering\small",
              r"\caption{Repeatability of identical calls on the source-disjoint TEP panels: Fleiss' $\kappa$ over three calls and the share of cases with the same label in all three calls.}",

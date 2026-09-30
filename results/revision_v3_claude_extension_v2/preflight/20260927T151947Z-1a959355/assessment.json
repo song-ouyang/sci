@@ -1,0 +1,22 @@
+{
+  "synthetic_only": true,
+  "formal_sessions_started": 0,
+  "requested_model": "claude-sonnet-4-6",
+  "exit_code": 1,
+  "timeout": false,
+  "elapsed_seconds": 1.9,
+  "initial_tools": [],
+  "initial_mcp_servers": [],
+  "initial_model": "claude-sonnet-4-6",
+  "observed_message_models": [
+    "<synthetic>"
+  ],
+  "result_subtype": "success",
+  "result_is_error": true,
+  "errors": [
+    "Failed to authenticate. API Error: 403 Request not allowed"
+  ],
+  "initial_transport_success": false,
+  "full_length_preflight_passed": false,
+  "formal_run_eligible": false
+}

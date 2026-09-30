@@ -1,0 +1,25 @@
+{
+  "archive": {
+    "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA30.rar",
+    "size_bytes": 163625195,
+    "etag": "\"9c0b8eb-5339619075127\"",
+    "last_modified": "Tue, 24 May 2016 12:57:21 GMT"
+  },
+  "member": {
+    "offset": 153998693,
+    "kind": 116,
+    "flags": 37056,
+    "head_size": 65,
+    "packed_size": 2012386,
+    "header_hex": "c77674c0904100e2b41e0098fa8400029cbb16a0f15a7b461d331c00200000004b4133305c4e31355f4d30315f4631305f4b4133305f31362e6d617400f066e24f",
+    "unpacked_size": 8714904,
+    "file_crc32": 2685844380,
+    "name": "KA30/N15_M01_F10_KA30_16.mat",
+    "method": 51,
+    "attributes": 32
+  },
+  "packed_payload_sha256": "7e6d69fb6b8a535116d832bc5bfc6e81bc446aedfa93c60c1e27d10c3f3a312b",
+  "derived_single_member_rar_sha256": "16bc63369c276e1ec5da75288694a85d87c9c80c85df5eb4a59e33e71f47b6fc",
+  "mat_sha256": "d1398840d026ce83f9a1412bf4eed0b5cf71d6a6c6490fe94b2db37b93ee7ca1",
+  "note": "Derived standalone RAR, not complete archive. Authentic main/file headers and selected packed bytes; original uncompressed CRC32 verified."
+}

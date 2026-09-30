@@ -1,0 +1,17 @@
+\paragraph{Prospectively fixed later-period follow-up.}
+After specifying the collapse control, we froze the same screening thresholds and scorer for a fresh 18-request follow-up on 30 September. The unchanged hydraulic rig supplies 18 new focal cycles from nine previously unused source blocks (two spaced cycles per block), plus nine new canaries from nine other unused blocks. Canonical (C) and intact-pair reversal (R) each receive three byte-identical calls in each of three chronological blocks. The source panel, canary panel, service period and client version change jointly; this is not a separate causal test of any one change or a new-device replication.
+
+\begin{table}[htbp]\centering\small
+\caption{Later-period follow-up on six C/R windows. All four policies cover 108 window decisions on the same 18 focal cycles; calls are offline required requests, not actual adaptive savings.}
+\label{tab:canary_stability_main}
+\begin{tabular}{@{}lrrrr@{}}\toprule
+Policy & Correct & Error & Withheld & Calls/window \\\midrule
+Single & 88 & 20 & 0 & 1.00 \\
+Known answer & 100 & 8 & 0 & 1.50 \\
+Collapse only (90\%) & 88 & 20 & 0 & 1.00 \\
+Three-call vote & 84 & 24 & 0 & 3.00 \\
+\bottomrule\end{tabular}\end{table}
+
+Known-answer screening retains 100 correct and eight incorrect labels among 108 window decisions (92.6\% correct yield and 7.4\% accepted-case error), compared with 88 correct and 20 incorrect for Single and the 90\% collapse control. All three policies cover every window decision. This descriptive gain requires nine calls rather than six (1.50 versus 1.00 per window), corresponding to 206,117 rather than 135,535 observed input-plus-output tokens in the offline replay. The full study actually collected all 18 calls and used 408,408 tokens.
+
+Every new call passes the collapse rule: its modal class occupies only 9--15 of 27 labels. Known-answer screening rejects ten of those calls. Its window-level gain is concentrated in C/block~2 (+10 correct) and R/block~3 (+2); the other four windows are unchanged. Thus reference labels provide discrimination beyond this fixed collapse check in the new sample, but these six dependent windows do not establish a population benefit. All eight retained errors repeat two weak-leakage cycles from one source block, classified as no leakage in four selected calls. The guard therefore does not assure correctness for every source even when its reference check passes. Supplementary Appendix~M gives all 18 calls, six windows, retained errors, and comparisons restricted to the earlier study's matching C/R arms.

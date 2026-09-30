@@ -1,0 +1,9 @@
+{
+  "document": "results/industrial_interface_focused_overleaf/main.pdf",
+  "sha256": "ab0f8f13b4281ad5ad1d95b70cec2e23c910265742d42e0ef6969e22a7816997",
+  "pages": 28,
+  "scope": "All 28 pages reviewed in five contact sheets; full-page detail inspected for pages 12, 13, 19 and 20, including new controls, stability results, Figure 6 and policy tables.",
+  "findings": [],
+  "result": "pass",
+  "review_kind": "internal assistant visual QA; not external peer review"
+}

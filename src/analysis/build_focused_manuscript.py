@@ -13,6 +13,7 @@ from repeat_condition_manuscript_v2 import make_repeat_fragments
 from context_blocked_manuscript_v1 import make_context_fragments
 from policy_manuscript_v1 import make_policy_fragments
 from bearing_baseline_manuscript_v1 import make_baseline_fragments
+from evidence_value_manuscript import make_evidence_value_fragments
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / 'paper/focused_submission'
@@ -105,6 +106,9 @@ def main():
     replacements.update(policy_fragments)
     baseline_fragments, baseline_supplement = make_baseline_fragments()
     replacements.update(baseline_fragments)
+    evidence_fragments, evidence_supplement = make_evidence_value_fragments()
+    replacements.update(evidence_fragments)
+    replacements['CONTRIBUTION_ADDENDUM'] = (OUT/'contribution_addendum_2026-09-30.tex').read_text()
     replacements['PRIOR_WORK_COMPARISON'] = (OUT/'prior_work_comparison.tex').read_text()
     replacements = {key:value for key,value in replacements.items() if '@@'+key+'@@' in text}
     if set(re.findall(r'@@([A-Z_]+)@@', text)) != set(replacements):
@@ -121,7 +125,7 @@ def main():
                                     'pdftitle={Supplementary Report: Sensor Mapping and Context Effects in Industrial Monitoring}')
     supplement = supplement.replace(r'\bibliography{references}', r'\bibliography{../references}')
     addendum = measured_supplement + r'\subsection{Post hoc identical-input focal audit}' + '\n' + r'This analysis reuses frozen simulation outputs. It adds no observations or model calls. Identical-request variability can reach the primary context contrast, so a context effect separated from service variation is not estimated.' + '\n\n' + repeat_table + '\n' + r'\FloatBarrier' + '\n' + repeat_supplement
-    addendum += '\n' + blocked_supplement + '\n' + policy_supplement + '\n' + baseline_supplement
+    addendum += '\n' + blocked_supplement + '\n' + policy_supplement + '\n' + baseline_supplement + '\n' + evidence_supplement
     anchor = supplement.rfind(r'\begingroup')
     if anchor < 0: raise ValueError('Missing supplement bibliography anchor')
     supplement = supplement[:anchor] + addendum + supplement[anchor:]
@@ -132,6 +136,7 @@ def main():
     supplement = supplement.replace('Auditing Sensor Mapping, Context and Repeatability in LLM-Based Industrial Diagnosis', 'Sensor Mapping, Context and Decision Checks in LLM-Based Industrial Diagnosis')
     supplement = supplement.replace('follow-up in Appendix E.', 'follow-up in Appendix E and new randomized fixed-policy studies in Appendix F.')
     supplement = supplement.replace('studies in Appendix F.', 'studies in Appendix F. Appendix G adds a result-informed, same-feature supervised bearing benchmark with fixed physical-specimen holdouts.')
+    supplement = supplement.replace('fixed physical-specimen holdouts.', 'fixed physical-specimen holdouts. Appendix H adds result-informed class-transition and decision-loss audits of the same frozen records.')
     bib = ROOT / 'paper/references.bib'
     bibkeys = set(re.findall(r'@\w+\{([^,]+),', bib.read_text()))
     info = {'main': check_tex(text, bibkeys), 'supplement': check_tex(supplement, bibkeys)}
@@ -148,8 +153,11 @@ def main():
     for dataset in ['hydraulic','paderborn']:
         inputs += [ROOT/f'results/policy_{dataset}_v1'/f for f in ['protocol.json','analysis/scores.json','predictions/frozen_manifest.json']]
         inputs += sorted((ROOT/f'results/policy_{dataset}_v1/analysis').glob('*.csv'))
+    inputs += [ROOT/'src/analysis/evidence_value_manuscript.py', ROOT/'src/analysis/audit_evidence_boundaries.py', ROOT/'results/evidence_boundary_audit_2026-09-30.json', ROOT/'src/analysis/audit_decision_value.py', OUT/'contribution_addendum_2026-09-30.tex', OUT/'contribution_sources_2026-09-30.json']
+    inputs += sorted((ROOT/'results/decision_value_audit_2026-09-29').glob('*'))
+    inputs += [ROOT/'paper/figures/decision_loss_2026-09-30.pdf']
     manifest = {'status': 'author_review_draft', 'new_inference_requests': 0,
-                'scope': 'Existing simulation and measured evidence plus a result-informed same-feature supervised bearing reference with specimen and operating-regime holdouts; no inference in builder.',
+                'scope': 'Frozen simulation/measured evidence and specimen-disjoint baselines, supplemented by result-informed class-transition and decision-loss audits; no new inference or independent experimental validation.',
                 'inputs': {str(p.relative_to(ROOT)): digest(p) for p in inputs},
                 'outputs': {str(p.relative_to(ROOT)): digest(p) for p in [OUT/'main.tex', OUT/'supplement.tex']},
                 'checks': info, 'human_scientific_verification': 'pending',

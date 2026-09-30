@@ -1,0 +1,217 @@
+{
+  "date": "2026-09-30",
+  "changes": [
+    {
+      "file": "results/industrial_interface_focused_overleaf/main.tex",
+      "original": "Large language models (LLMs) add a different option: a general-purpose service that receives measurements as text and returns a diagnostic label, sometimes with an explanation, without task-specific training \\citep{qaid2026explainable,zheng2024empirical,li2024chatgptphm}.",
+      "replacement": "Large language models (LLMs) add text-based approaches to diagnosis, including task-specific fine-tuning \\citep{qaid2026explainable,zheng2024empirical} and broader foundation-model workflows for prognostics and health management \\citep{li2024chatgptphm}. Here, we examine a general-purpose service that receives measurements as text and returns diagnostic labels without task-specific training.",
+      "reason": "Separate the published fine-tuning evidence from the present study’s API-only operating choice.",
+      "citation_keys": [
+        "zheng2024empirical"
+      ]
+    },
+    {
+      "file": "results/industrial_interface_focused_overleaf/main.tex",
+      "original": "FaultExplainer \\citep{khan2025faultexplainer} & none & -- & -- & -- & \\checkmark\\ (TEP)",
+      "replacement": "FaultExplainer \\citep{khan2025faultexplainer} & root-cause list supplied or withheld & -- & -- & -- & \\checkmark\\ (TEP)",
+      "reason": "Acknowledge the input-information comparison actually performed in FaultExplainer.",
+      "citation_keys": [
+        "khan2025faultexplainer"
+      ]
+    },
+    {
+      "file": "results/industrial_interface_focused_overleaf/main.tex",
+      "original": "Seventy runs, ten per class, form the main panel, following the run-level separation recommended for open process-monitoring benchmarks \\citep{melo2022open}; each contributes one seeded late snapshot (sample index 200--500).",
+      "replacement": "Seventy runs, ten per class, form the main panel; we keep simulation runs disjoint across training and evaluation, and each main-panel run contributes one seeded late snapshot (sample index 200--500).",
+      "reason": "State the actual run-disjoint design without assigning an unverified specific recommendation to a general benchmark review.",
+      "citation_keys": [
+        "melo2022open"
+      ]
+    },
+    {
+      "file": "results/industrial_interface_focused_overleaf/main.tex",
+      "original": "This is the test an evaluation with one call per condition would use; it treats all labels in a call as independent.",
+      "replacement": "This is the test an evaluation with one call per condition would use; it treats different test-case pairs as independent while retaining the paired comparison within each case.",
+      "reason": "McNemar preserves within-case pairing; its relevant assumption here is independence across case pairs, which shared-call dependence may violate.",
+      "citation_keys": [
+        "dietterich1998approximate"
+      ]
+    },
+    {
+      "file": "results/industrial_interface_focused_overleaf/supplement.tex",
+      "original": "Each of the 52 numerical entries receives its documented descriptor and unit in the clean text representation; variable identities follow the TEP specification, with units checked against the original operating tables \\citep{chen2014cognitive,ricker1995optimal}.",
+      "replacement": "Each of the 52 numerical entries receives a descriptor and unit in the clean text representation. Variable identities follow the TEP specification \\citep{chen2014cognitive}; source descriptors and units are documented in Ricker's accompanying operating tables (Table~3 for the 41 measured variables and Table~4 for the first 11 manipulated variables) \\citep{ricker1995optimal}.",
+      "reason": "Distinguishes variable-identity source from unit source and avoids claiming a complete implementation audit merely from citation checks.",
+      "citation_keys": [
+        "ricker1995optimal"
+      ]
+    },
+    {
+      "file": "results/industrial_interface_focused_overleaf/main.tex",
+      "original": "Industrial records add a physical constraint absent from most tabular benchmarks: each value is meaningful only together with its channel, name and unit, so a wrong association is a data-integrity fault rather than a formatting variant.",
+      "replacement": "For industrial records, the channel, name and unit specify the physical interpretation of each value; a wrong association is therefore a data-integrity fault rather than a formatting variant.",
+      "reason": "Removes an unsupported prevalence/novelty comparison while retaining the substantive physical interpretation.",
+      "citation_keys": [
+        "hegselmann2023tabllm"
+      ]
+    },
+    {
+      "file": "results/industrial_interface_focused_overleaf/main.tex",
+      "original": "Behavioural testing frames such checks as invariance and directional tests \\citep{ribeiro2020beyond}; our mapping faults and reorderings follow that logic.",
+      "replacement": "Behavioural testing distinguishes invariance tests from perturbations with specified directional expectations \\citep{ribeiro2020beyond}. Our correct pair reorderings are invariance probes; mapping faults are error injections without a prescribed direction of diagnostic change.",
+      "reason": "The reference requires a specified expected direction for DIR; mapping corruption alone does not supply one.",
+      "citation_keys": [
+        "ribeiro2020beyond"
+      ]
+    },
+    {
+      "file": "results/industrial_interface_focused_overleaf/main.tex",
+      "original": "In long inputs, information in the middle is used less than information at the start or end \\citep{liu2024lost}",
+      "replacement": "In long-context question answering and key--value retrieval, performance often declines when relevant information is placed in the middle rather than at the start or end \\citep{liu2024lost}",
+      "reason": "Adds the studied task scope and avoids an unconditional universal claim.",
+      "citation_keys": [
+        "liu2024lost"
+      ]
+    },
+    {
+      "file": "results/industrial_interface_focused_overleaf/main.tex",
+      "original": "majority voting over sampled reasoning paths improves accuracy \\citep{wang2023selfconsistency}",
+      "replacement": "voting over answers from sampled reasoning paths improved accuracy on arithmetic and commonsense benchmarks \\citep{wang2023selfconsistency}",
+      "reason": "Scopes empirical gains to the cited tasks and uses answer-level aggregation precisely.",
+      "citation_keys": [
+        "wang2023selfconsistency"
+      ]
+    },
+    {
+      "file": "results/industrial_interface_focused_overleaf/main.tex",
+      "original": "LIFT showed that classification and regression tasks can be solved by writing features as sentences \\citep{dinh2022lift}",
+      "replacement": "LIFT fine-tuned language models for classification and regression using features and targets expressed as text \\citep{dinh2022lift}",
+      "reason": "Restores the essential supervised fine-tuning step; text serialization alone is not the tested method.",
+      "citation_keys": [
+        "dinh2022lift"
+      ]
+    },
+    {
+      "file": "results/industrial_interface_focused_overleaf/main.tex",
+      "original": "Because the best method differs between panels, we report the range over all six methods rather than a single reference chosen on test scores \\citep{tan2024useful}; per-method results and hyperparameters are in Supplementary Appendix~H.",
+      "replacement": "Because the best method differs between panels, we report the range over all six methods rather than a single reference chosen on test scores; per-method results and hyperparameters are in Supplementary Appendix~H.",
+      "reason": "Removes a citation attached to a specific local reporting choice that the source did not establish; retain the valid related-work citation.",
+      "citation_keys": [
+        "tan2024useful"
+      ]
+    },
+    {
+      "file": "results/industrial_interface_focused_overleaf/main.tex",
+      "original": "six regimes found by $k$-means on the operating settings, the usual practice for this subset \\citep{ramasso2014benchmarking}",
+      "replacement": "six regimes found by $k$-means on the operating settings, following earlier C-MAPSS preprocessing strategies reviewed by \\citet{ramasso2014benchmarking}",
+      "reason": "The source provides preprocessing precedents but not a prevalence claim for FD002.",
+      "citation_keys": [
+        "ramasso2014benchmarking"
+      ]
+    },
+    {
+      "file": "results/industrial_interface_focused_overleaf/main.tex",
+      "original": "and designs in which items are crossed with other sampled factors require crossed random effects or equivalent resampling \\citep{baayen2008mixed,bates2015lme4,owen2007pigeonhole}. In LLM evaluation the repeated call is such a factor, but it is rarely treated as one.",
+      "replacement": "and inference for designs with crossed sampled factors should account for both factors, for example through crossed random effects or an appropriately designed resampling scheme \\citep{baayen2008mixed,bates2015lme4,owen2007pigeonhole}. In the present LLM evaluation, repeated calls form one such factor.",
+      "reason": "Removes an unsupported field-wide prevalence claim and avoids implying automatic equivalence of all crossed models and resampling schemes.",
+      "citation_keys": [
+        "baayen2008mixed"
+      ]
+    },
+    {
+      "file": "results/industrial_interface_focused_overleaf/main.tex",
+      "original": "We report coverage, accepted-label error, usable correct yield and calls per \\emph{window}, not per individual diagnosis \\citep{geifman2017selective}.",
+      "replacement": "We report coverage and accepted-label error \\citep{geifman2017selective}, together with usable correct yield and calls per \\emph{window}, not per individual diagnosis.",
+      "reason": "Attaches the citation to risk–coverage concepts rather than the locally defined yield and call-budget units.",
+      "citation_keys": [
+        "geifman2017selective"
+      ]
+    },
+    {
+      "file": "results/industrial_interface_focused_overleaf/main.tex",
+      "original": "a pattern traced to positional attention bias \\citep{hsieh2024found}",
+      "replacement": "a pattern associated with positional attention bias and mitigated by attention calibration in the studied models \\citep{hsieh2024found}",
+      "reason": "Preserve the demonstrated association/intervention without implying a uniquely established causal explanation.",
+      "citation_keys": [
+        "hsieh2024found"
+      ]
+    },
+    {
+      "file": "results/industrial_interface_focused_overleaf/main.tex",
+      "original": "dispersion over repeated answers underlies black-box uncertainty and hallucination measures \\citep{kuhn2023semantic,xiong2024uncertainty,manakul2023selfcheckgpt}",
+      "replacement": "dispersion over repeated answers underlies uncertainty and hallucination measures \\citep{kuhn2023semantic,xiong2024uncertainty,manakul2023selfcheckgpt}",
+      "reason": "Kuhn2023 uses generation probabilities; do not classify all cited methods as requiring only black-box sampled text.",
+      "citation_keys": [
+        "kuhn2023semantic"
+      ]
+    },
+    {
+      "file": "results/industrial_interface_focused_overleaf/main.tex",
+      "original": "For time series more broadly, LLMs have been reprogrammed or prompted for forecasting \\citep{jin2024time,gruver2023large,liu2024large}, but ablations show that removing the language model often does not hurt accuracy \\citep{tan2024useful}, and strong models reason poorly over raw series \\citep{merrill2024struggle,jin2024position}.",
+      "replacement": "For time series more broadly, LLMs have been reprogrammed or prompted for forecasting \\citep{jin2024time,gruver2023large,liu2024large}, but ablations show that removing the language model often does not hurt accuracy \\citep{tan2024useful}. Direct evaluation has found weaknesses in zero-shot reasoning over time-series tasks \\citep{merrill2024struggle}, while a position study illustrates limitations in interpreting time-series patterns and explaining classifications \\citep{jin2024position}.",
+      "reason": "Separate the direct zero-shot benchmark from the illustrative position study; incorporate both audits.",
+      "citation_keys": [
+        "jin2024position",
+        "merrill2024struggle"
+      ]
+    },
+    {
+      "file": "results/industrial_interface_focused_overleaf/main.tex",
+      "original": "and testing laboratories analyse reference materials alongside unknown samples to ensure the validity of their results \\citep{iso17025}.",
+      "replacement": "and laboratory quality systems use reference materials, where appropriate, to monitor result validity under ISO/IEC 17025 \\citep{iso17025,nata2018gap}.",
+      "reason": "Bounded analogy; NATA official guidance page 23, clause 7.7.1 corroborates use where appropriate. Licensed ISO full text was not accessible.",
+      "citation_keys": [
+        "iso17025",
+        "nata2018gap"
+      ]
+    },
+    {
+      "file": "results/industrial_interface_focused_overleaf/references.bib",
+      "original": "@misc{kassis2026skills,\n  author = {Kassis, Timothy and Agarwal, Vinayak and He, Yuhuan and Patel, Darshil and Brueckner, Aubrey M.},\n  title = {Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents},\n  year = {2026},\n  eprint = {2609.00065},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2609.00065},\n  url = {https://arxiv.org/abs/2609.00065}\n}",
+      "replacement": "",
+      "reason": "Remove duplicate BibTeX key; retain the first full entry, including arXiv identifier and DOI.",
+      "citation_keys": [
+        "kassis2026skills"
+      ]
+    },
+    {
+      "file": "results/industrial_interface_focused_overleaf/references.bib",
+      "original": "@inproceedings{gruver2023large,\n  title={Large language models are zero-shot time series forecasters},\n  author={Gruver, Nate and Finzi, Marc and Qiu, Shikai and Wilson, Andrew Gordon},\n  booktitle={Advances in Neural Information Processing Systems},\n  volume={36},\n  year={2023}\n}",
+      "replacement": "@inproceedings{gruver2023large,\n  title={Large language models are zero-shot time series forecasters},\n  author={Gruver, Nate and Finzi, Marc and Qiu, Shikai and Wilson, Andrew Gordon},\n  booktitle={Advances in Neural Information Processing Systems},\n  volume={36},\n  pages={19622--19635},\n  year={2023},\n  doi={10.52202/075280-0861},\n  url={https://proceedings.neurips.cc/paper_files/paper/2023/hash/3eb7ca52e8207697361b2c0fb3926511-Abstract-Conference.html}\n}",
+      "reason": "Complete official proceedings metadata: pages, DOI, primary URL.",
+      "citation_keys": [
+        "gruver2023large"
+      ]
+    },
+    {
+      "file": "results/industrial_interface_focused_overleaf/references.bib",
+      "original": "",
+      "replacement": "@misc{nata2018gap,\n  author={{National Association of Testing Authorities, Australia}},\n  title={General Accreditation Guidance: {ISO/IEC 17025:2017} Gap Analysis},\n  year={2018},\n  month={April},\n  note={Clause 7.7.1, p. 23},\n  url={https://nata.com.au/files/2021/05/17025-2017-Gap-analysis.pdf}\n}\n",
+      "reason": "Add the accessible official accreditation guidance actually read to support the bounded laboratory-quality analogy.",
+      "citation_keys": [
+        "nata2018gap"
+      ]
+    },
+    {
+      "file": "results/industrial_interface_focused_overleaf/main.tex",
+      "original": "vibration features are converted to text and a model is fine-tuned for bearing diagnosis \\citep{tao2025llmbearing,qaid2024fdllm,qaid2026explainable}",
+      "replacement": "vibration features are converted to text and a model is fine-tuned for bearing diagnosis \\citep{tao2025llmbearing}; the FD-LLM research line also uses task-specific fine-tuning \\citep{qaid2024fdllm,qaid2026explainable}",
+      "reason": "Group the FD-LLM reports into one research line; official metadata does not establish a formal preprint/VoR relation.",
+      "citation_keys": [
+        "qaid2024fdllm",
+        "qaid2026explainable"
+      ]
+    },
+    {
+      "file": "results/industrial_interface_focused_overleaf/supplement.tex",
+      "original": "related journal work studies explainable diagnosis \\citep{qaid2026explainable}.",
+      "replacement": "related journal work studies explainable diagnosis \\citep{qaid2026explainable}. We treat these FD-LLM reports as one research line.",
+      "reason": "Group the FD-LLM reports into one research line; official metadata does not establish a formal preprint/VoR relation.",
+      "citation_keys": [
+        "qaid2024fdllm",
+        "qaid2026explainable"
+      ]
+    }
+  ],
+  "scientific_results_changed": false
+}

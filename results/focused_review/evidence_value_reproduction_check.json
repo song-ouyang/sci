@@ -1,0 +1,73 @@
+{
+  "scope": "New audits and focused manuscript; old training and inference are not repeated",
+  "new_model_calls": 0,
+  "checked_at": "2026-09-30T04:31:00.474489+00:00",
+  "archives": {
+    "review": {
+      "sha256": "5bcf793337311ab6ae38cc36934390f952a6ce4e6b327c80b7d5b18d7f646db3",
+      "members": 3568
+    },
+    "overleaf": {
+      "sha256": "3805a7dfe3f3e437f1868b50d1daa6262ff18026b8e1346bcab8739547511984",
+      "members": 13
+    }
+  },
+  "rebuild": {
+    "src/analysis/audit_evidence_boundaries.py": "PASS",
+    "src/analysis/audit_decision_value.py": "PASS",
+    "src/analysis/build_focused_manuscript.py": "PASS",
+    "results/evidence_boundary_audit_2026-09-30.json": {
+      "scientific_keys_equal": [
+        "schema",
+        "new_model_calls",
+        "network_requests",
+        "new_fits",
+        "answer_labels_read",
+        "analysis_type",
+        "method",
+        "tep",
+        "context_blocked",
+        "independent_calculation_verification",
+        "verification_scope",
+        "evidence_ladder",
+        "risks",
+        "manifest_file_counts",
+        "source_artifacts",
+        "analysis_code_sha256",
+        "input_sha256"
+      ]
+    },
+    "results/decision_value_audit_2026-09-29/audit.json": {
+      "scientific_keys_equal": [
+        "studies",
+        "loss_definition",
+        "paired_bearing_resampling",
+        "checks"
+      ]
+    }
+  },
+  "review_manifest_members_verified": 3567,
+  "tex_rebuilt_byte_identical": true,
+  "decision_csv_byte_identical": true,
+  "both_archives_compile": "PASS",
+  "live_project_preserved": true,
+  "status": "PASS",
+  "pdf_verification": {
+    "main": {
+      "page_counts": [
+        23,
+        23,
+        23
+      ],
+      "all_page_text_equal": true
+    },
+    "supplement": {
+      "page_counts": [
+        46,
+        46,
+        46
+      ],
+      "all_page_text_equal": true
+    }
+  }
+}

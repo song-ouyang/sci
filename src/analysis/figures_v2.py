@@ -43,12 +43,12 @@ def framework():
     ax.set_ylim(0, 52)
     ax.axis("off")
 
-    def box(x, y, w, h, title, lines, edge=INK2, size=6.8):
+    def box(x, y, w, h, title, lines, edge=INK2, size=6.0):
         ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.25,rounding_size=1.2",
                                     linewidth=0.9, edgecolor=edge, facecolor="white"))
         ax.text(x + 1.0, y + h - 1.4, title, fontsize=7.6, fontweight="bold", color=INK, va="top")
         for k, line in enumerate(lines):
-            ax.text(x + 1.0, y + h - 5.4 - 3.3 * k, line, fontsize=size, color=INK2, va="top")
+            ax.text(x + 1.0, y + h - 5.4 - 2.8 * k, line, fontsize=size, color=INK2, va="top")
 
     def arrow(x0, y0, x1, y1):
         ax.annotate("", xy=(x1, y1), xytext=(x0, y0),
@@ -56,28 +56,28 @@ def framework():
 
     top, h = 22, 29
     box(0.5, top, 22.5, h, "1  Serialized record",
-        ["one text field per channel:", "ID | name | unit | value", "", "TEP: 52 variables",
-         "C-MAPSS: 60 features", "Hydraulic rig: 28 features"])
+        ["channel serialization:", "ID | name | unit | value", "", "TEP: 52 variables",
+         "C-MAPSS: 60 features", "Hydraulics: 28 features"])
     box(25.8, top, 22.5, h, "2  Input changes",
         ["Mapping faults:", "  cyclic rotation", "  random derangement", "  same-unit swap",
-         "Meaning-preserving:", "  intact-pair reorder", "Context: background A/B,", "  focal first / last"],
+         "Intact-pair reorder", "Context: background A/B", "Known-answer controls:", "  prospective C / H / R"],
         edge=ORANGE)
     box(51.1, top, 22.5, h, "3  Repeated calls",
-        ["k identical calls per input", "fresh session per call", "", "Time-blocked schedules:",
-         "  ABBA/BAAB (4 blocks)", "  hydraulic rig (5 blocks)", "", "outputs frozen before scoring"],
+        ["k calls per input", "fresh session per call", "ABBA/BAAB: 4 blocks", "hydraulics: 5 blocks",
+         "Retrospective outputs:", "  staged freezes", "Prospective protocol:", "  frozen before 27 calls"],
         edge=BLUE)
     box(76.4, top, 23, h, "4  Inference",
-        ["single-call McNemar", "crossed case x call", "  bootstrap interval", "call-level exact",
-         "  randomization test", "stable-difference cases", "Fleiss' kappa (repeats)"], edge=AQUA)
-    box(18, 1, 64, 16, "5  Engineering decision",
-        ["Effect exceeds call-to-call variation   ->  interface defect: add trusted-channel check",
-         "Effect within call-to-call variation     ->  not attributable to the input: balance timing, vote",
-         "Invalid or incomplete output             ->  counts against availability, not conditional accuracy"],
-        size=6.8)
+        ["McNemar + family Holm", "case/call intervals", "matched-block sensitivity", "call-level tests",
+         "ABBA: 6 design allocations", "stable-difference cases", "Fleiss' kappa (repeats)"], edge=AQUA)
+    box(4, 1, 87, 17, "5  Evaluate policies and retain boundaries",
+        ["Compare accepted error, coverage, usable correct yield and calls per decision batch",
+         "Always-wrong cases cannot be corrected by voting; only same-label cases pass unanimity",
+         "Known-answer screening is a candidate call filter; hidden mapping checks remain limited",
+         "Observed gains are conditional on reused records, service versions and execution blocks"],
+        size=6.5)
     for x0, x1 in [(23.3, 25.5), (48.6, 50.8), (73.9, 76.1)]:
         arrow(x0, top + h / 2, x1, top + h / 2)
-    arrow(88, top - 0.4, 88, 9)
-    arrow(88, 9, 82.3, 9)
+    arrow(88, top - 0.4, 88, 18.4)
     fig.savefig(OUT / "framework.pdf", bbox_inches="tight")
     plt.close(fig)
 
@@ -143,7 +143,7 @@ def forest():
         ax.axvline(0, color=INK2, lw=0.6)
         ax.set_yticks(ys, [r["contrast"] for r in data])
         ax.set_title(title, loc="left", color=INK)
-        ax.set_xlabel("Accuracy difference (pp), 95% crossed bootstrap CI")
+        ax.set_xlabel("Accuracy difference (pp), 95% bootstrap CI")
         grid(ax, "x")
         ax.set_xlim(-45, 100)
     handles = [plt.Line2D([], [], color=ORANGE, marker="o", lw=2, label="CI excludes 0"),
@@ -257,7 +257,7 @@ def hydraulic():
     ax.set_ylabel("Focal accuracy (%)")
     ax.set_ylim(0, 110)
     grid(ax)
-    handles = [plt.Line2D([], [], ls="none", marker="o", color=BLUE, mec="white", ms=6, label="Discriminating response"),
+    handles = [plt.Line2D([], [], ls="none", marker="o", color=BLUE, mec="white", ms=6, label="Below concentration cutoff"),
                plt.Line2D([], [], ls="none", marker="o", mfc="white", mec=ORANGE, mew=1.4, ms=6,
                           label="Collapsed response (one label for $\\geq$16 of 18 cycles)")]
     ax.legend(handles=handles, frameon=False, ncol=2, loc="lower left", bbox_to_anchor=(0, 1.04))
@@ -290,15 +290,14 @@ def structure():
         m, color = style[g["study"]]
         ax.plot(x, y, m, color=color, ms=6, mec="white", mew=0.8, alpha=0.9, zorder=3)
     ax.axhline(0, color=INK2, lw=0.6)
-    ax.axvspan(0.35, 1.05, color=GRID, alpha=0.5, lw=0, zorder=0)
-    ax.text(0.7, 60, "stable errors:\nvoting cannot help", ha="center", fontsize=6.8, color=INK2)
-    ax.text(0.08, -58, "whole-call failures in\nmost calls: voting harms", ha="left", fontsize=6.8, color=INK2)
-    ax.text(0.08, 86, "unstable errors:\nvoting helps", ha="left", fontsize=6.8, color=INK2)
-    ax.set_xlabel("Share of errors that recur in every call")
-    ax.set_ylabel("Error removed by 3-call majority (%)")
+    ax.plot([0, 1], [100, 0], color=INK2, lw=0.8, ls="--", zorder=1)
+    ax.text(0.42, 78, "same-data upper bound\n100(1 - s)", ha="left", fontsize=6.8, color=INK2)
+    ax.text(0.07, -56, "plurality over observed k = 3-10 calls;\nties withheld", ha="left", fontsize=6.8, color=INK2)
+    ax.set_xlabel("Always-wrong share of error slots, s")
+    ax.set_ylabel("Normalized usable-correct gain (%)")
     ax.set_xlim(-0.05, 1.05)
     ax.set_ylim(-65, 110)
-    ax.set_title("(a) Error structure decides whether voting helps", loc="left", fontsize=7.8)
+    ax.set_title("(a) Error structure and observed plurality output", loc="left", fontsize=7.8)
     grid(ax)
     ax = axes[1]
     markers = {"TEP": "o", "TEP ABBA": "D", "Hydraulic (5 blocks)": "s", "Hydraulic (new blocks)": "^",
@@ -326,7 +325,7 @@ def structure():
     ax.set_ylabel("Focal accuracy of the call (%)")
     ax.set_xlim(-3, 103)
     ax.set_ylim(-3, 103)
-    ax.set_title("(b) Canaries track whole-call failures (GPT-5.6 Sol)", loc="left", fontsize=7.8)
+    ax.set_title("(b) Canary and focal accuracy (GPT-5.6 Sol)", loc="left", fontsize=7.8)
     grid(ax, "both")
     ax.legend(frameon=False, loc="upper left", fontsize=6.3, handletextpad=0.2)
     fig.tight_layout()

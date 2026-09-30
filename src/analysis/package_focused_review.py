@@ -10,7 +10,7 @@ ROOT=Path(__file__).resolve().parents[2]
 
 def main():
     paper=ROOT/'paper/focused_submission'
-    overleaf=ROOT/'results/industrial_interface_focused_overleaf.zip'
+    overleaf=ROOT/'results/industrial_interface_legacy_pipeline_overleaf.zip'
     figure_paths=set()
     with zipfile.ZipFile(overleaf,'w',zipfile.ZIP_DEFLATED) as z:
         for name in ['main.tex','supplement.tex']:
@@ -22,12 +22,12 @@ def main():
             if not rel.startswith('figures/') or '..' in Path(rel).parts:
                 raise ValueError('Unsafe figure path: '+rel)
             z.write(ROOT/'paper'/rel,rel)
-        z.writestr('README.txt','Author-review draft. Compile main.tex and supplement.tex separately with XeLaTeX/Tectonic and BibTeX. No inference is needed. The supplement preserves the four-stage simulation report and adds a measured follow-up. Author details and final scientific approval remain pending.\n')
+        z.writestr('README.txt','Author-review draft. Compile main.tex and supplement.tex separately with XeLaTeX/Tectonic and BibTeX. No inference is needed. The supplement preserves the archived simulation and measured studies, the specimen-disjoint bearing reference, and the descriptive evidence/decision-loss audit in Appendix H. Author details and final scientific approval remain pending.\n')
     overrides={}
     dirs=['paper/focused_submission','results/hydraulic_validation_v1','results/focused_review','data/uci_hydraulic_processed',
           'results/repeat_condition_v2','results/call_timing_v2','results/context_blocked_v1',
           'results/policy_hydraulic_v1','results/policy_paderborn_v1','data/policy_hydraulic_v1',
-          'results/bearing_baseline_v1']
+          'results/bearing_baseline_v1','results/decision_value_audit_2026-09-29']
     for directory in dirs:
         for p in (ROOT/directory).rglob('*'):
             if p.is_file() and '__pycache__' not in p.parts and p.suffix not in {'.log','.blg','.pyc'}:
@@ -74,6 +74,15 @@ def main():
               'results/bearing_baseline_test_check.json', 'results/bearing_baseline_test_check.log',
               'paper/history/pre_bearing_baseline_v1_20260928/manifest.json',
               'paper/history/pre_bearing_baseline_v1_20260928/paper/focused_submission/quality.json']
+    files += ['src/analysis/audit_decision_value.py','tests/test_decision_value_audit.py',
+              'src/analysis/audit_evidence_boundaries.py','src/analysis/evidence_value_manuscript.py',
+              'results/evidence_boundary_audit_2026-09-30.json',
+              'paper/EVIDENCE_VALUE_REVISION_2026-09-30.md',
+              'paper/JOURNAL_REASSESSMENT_2026-09-29.md',
+              'paper/JOURNAL_SAGE_RECHECK_2026-09-29.md',
+              'paper/JOURNAL_MANUFACTURING_PROCESS_RECHECK_2026-09-29.md',
+              'paper/history/pre_evidence_value_20260929/manifest.json']
+    files += ['paper/' + rel for rel in sorted(figure_paths)]
     for rel in files:
         overrides[rel]=(ROOT/rel).read_bytes()
     overrides['FOCUSED_REVIEW_README.md']=b'''# Current focused review package
@@ -85,8 +94,10 @@ fixed-policy follow-ups on hydraulic and bearing data, plus
 post hoc all-pair and client-timing audits. A result-informed same-feature bearing
 benchmark retains six development and nine test specimens, with four additional
 joint specimen/regime holdouts. No public release or submission is claimed.
+The 30 September revision adds offline class-transition and decision-loss
+audits in Appendix H; these are post hoc analyses, not new validation data.
 
-Offline rebuild (Python with numpy, scipy, pandas, sklearn; Tectonic for PDF):
+Offline rebuild (Python with numpy, scipy, pandas, sklearn, matplotlib; Tectonic for PDF):
     python results/focused_review/rebuild_context_repeat_audit.py
     python src/experiments/run_hydraulic_v1.py audit
     python src/analysis/score_hydraulic_v1.py
@@ -101,6 +112,8 @@ Offline rebuild (Python with numpy, scipy, pandas, sklearn; Tectonic for PDF):
     python src/analysis/audit_policy_error_classes_v1.py
     python src/analysis/bearing_baseline_v1.py audit
     python src/analysis/bearing_baseline_v1.py score
+    python src/analysis/audit_evidence_boundaries.py
+    python src/analysis/audit_decision_value.py
     python src/analysis/build_focused_manuscript.py
     cd paper/focused_submission
     tectonic --only-cached main.tex
@@ -126,7 +139,7 @@ The packaging script itself needs the separately retained older ZIP; repackaging
 is not one of the self-contained scientific reconstruction commands above.
 Human scientific verification, authorship/declarations and final approval are pending.
 '''
-    full=ROOT/'results/industrial_interface_focused_review.zip'
+    full=ROOT/'results/industrial_interface_legacy_pipeline_review.zip'
     manifest={}
     with zipfile.ZipFile(ROOT/'results/cross_provider_revision_review.zip') as old, zipfile.ZipFile(full,'w',zipfile.ZIP_DEFLATED) as out:
         for info in old.infolist():

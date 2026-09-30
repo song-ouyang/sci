@@ -1,0 +1,13 @@
+{
+  "python": "3.12.14",
+  "platform": "macOS-15.7.4-arm64-arm-64bit",
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "requests": "2.34.2"
+  },
+  "purpose": "Preparation, scoring, plotting and independent reconstruction environment; no inference or result access."
+}

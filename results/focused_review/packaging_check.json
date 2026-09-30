@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-09-28T08:16:49.954619+00:00",
+  "overleaf_compile": {
+    "main": 13,
+    "supplement": 31
+  },
+  "PDF_page_text_matches": true,
+  "frozen_audit_counts": {
+    "planned": 63,
+    "attempted": 31,
+    "valid": 29,
+    "not_attempted": 32
+  },
+  "measured_scores_and_csv_rebuilt_identically": true,
+  "manuscript_tex_rebuilt_identically": true,
+  "old_primary_artifacts_unchanged": true,
+  "raw_data_regeneration_included": false,
+  "new_inference_requests_during_reproduction": 0
+}

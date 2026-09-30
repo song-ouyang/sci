@@ -1,0 +1,12 @@
+\begin{table}[htbp]\centering\small
+\caption{Prospectively fixed three-call-window policy comparison. The collapse-only gate rejects when at least 90\% of all returned labels are identical; it does not access known labels. Vote uses the fixed first-call tie rule, with tie abstention shown separately. Calls/window are offline required-call counts; all source requests were collected regardless of gate decisions.}
+\label{tab:canary_controls_stability}
+\begin{tabular}{lrrrrrr}\toprule
+Policy & Correct & Error & Rejected & Coverage (\%) & Yield (\%) & Calls/window \\\midrule
+Single & 88 & 20 & 0 & 100.0 & 81.5 & 1.00 \\
+Known answer & 100 & 8 & 0 & 100.0 & 92.6 & 1.50 \\
+Collapse 90 & 88 & 20 & 0 & 100.0 & 81.5 & 1.00 \\
+Vote first tie & 84 & 24 & 0 & 100.0 & 77.8 & 3.00 \\
+Vote abstain tie & 84 & 22 & 2 & 98.1 & 77.8 & 3.00 \\
+\bottomrule\end{tabular}\end{table}
+These policies use the same returned payloads and maximum three-call windows. Consequently the control isolates the use of reference labels at the decision stage, not the effect of removing canary records from the prompt. Counts reuse the same focal cycles across arms and blocks. They do not establish independent device replication or a deployment guarantee.

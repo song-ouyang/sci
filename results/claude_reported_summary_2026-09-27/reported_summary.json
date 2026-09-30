@@ -1,0 +1,81 @@
+{
+  "source": "User-provided summary in current conversation; not recomputed classification scores",
+  "received_at": "2026-09-27T10:33:57.400571+00:00",
+  "claimed_repeats_per_cell": 3,
+  "standard_deviation_convention": "unspecified by source",
+  "eligible_for_primary_comparison": false,
+  "rows": [
+    {
+      "model": "claude-sonnet-4-6",
+      "group": "cmapss_clean",
+      "accuracy_mean_pct": 60.0,
+      "accuracy_sd_pp": 2.7,
+      "macro_f1_mean_pct": 59.2,
+      "macro_f1_sd_pp": 2.9
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "group": "tep_clean",
+      "accuracy_mean_pct": 61.4,
+      "accuracy_sd_pp": 16.3,
+      "macro_f1_mean_pct": 55.3,
+      "macro_f1_sd_pp": 17.1
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "group": "tep_misnamed",
+      "accuracy_mean_pct": 28.1,
+      "accuracy_sd_pp": 11.1,
+      "macro_f1_mean_pct": 22.4,
+      "macro_f1_sd_pp": 14.3
+    },
+    {
+      "model": "claude-opus-5-5",
+      "group": "cmapss_clean",
+      "accuracy_mean_pct": 64.4,
+      "accuracy_sd_pp": 2.1,
+      "macro_f1_mean_pct": 65.2,
+      "macro_f1_sd_pp": 2.1
+    },
+    {
+      "model": "claude-opus-5-5",
+      "group": "tep_clean",
+      "accuracy_mean_pct": 100,
+      "accuracy_sd_pp": 0,
+      "macro_f1_mean_pct": 100,
+      "macro_f1_sd_pp": null
+    },
+    {
+      "model": "claude-opus-5-5",
+      "group": "tep_misnamed",
+      "accuracy_mean_pct": 100,
+      "accuracy_sd_pp": 0,
+      "macro_f1_mean_pct": 100,
+      "macro_f1_sd_pp": null
+    },
+    {
+      "model": "claude-fable-5-1",
+      "group": "cmapss_clean",
+      "accuracy_mean_pct": 62.8,
+      "accuracy_sd_pp": 2.8,
+      "macro_f1_mean_pct": 63.2,
+      "macro_f1_sd_pp": 2.0
+    },
+    {
+      "model": "claude-fable-5-1",
+      "group": "tep_clean",
+      "accuracy_mean_pct": 100,
+      "accuracy_sd_pp": 0,
+      "macro_f1_mean_pct": 100,
+      "macro_f1_sd_pp": null
+    },
+    {
+      "model": "claude-fable-5-1",
+      "group": "tep_misnamed",
+      "accuracy_mean_pct": 100,
+      "accuracy_sd_pp": 0,
+      "macro_f1_mean_pct": 100,
+      "macro_f1_sd_pp": null
+    }
+  ]
+}

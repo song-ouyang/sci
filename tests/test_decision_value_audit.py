@@ -1,6 +1,6 @@
 """Synthetic checks for the new offline audit; no source-result modifications."""
 import unittest
-from src.analysis.audit_decision_value import intersection, policy_actions, summarize, stratified_cluster_totals, POLICIES
+from src.analysis.audit_decision_value import empirical_loss, intersection, policy_actions, summarize, stratified_cluster_totals, POLICIES
 
 
 class DecisionValueTests(unittest.TestCase):
@@ -17,6 +17,9 @@ class DecisionValueTests(unittest.TestCase):
         self.assertEqual((s["N"], s["accepted_error"], s["rejected"]), (4, 1, 2))
         self.assertEqual((s["coverage"], s["correct_yield"], s["selective_error"]), (.5, .25, .5))
         self.assertEqual(s["loss_intercept"] + s["loss_slope"], .75)
+        self.assertEqual(empirical_loss(s, .5, total_request_loss=1), .75)
+        with self.assertRaises(ValueError):
+            empirical_loss(s, .5, total_request_loss=-1)
 
     def test_empty_acceptance_risk_is_undefined(self):
         s = summarize([{"action": "rejected", "base_correct": False}])

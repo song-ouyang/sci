@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-30",
+  "user_authorized_push": true,
+  "destination": "https://github.com/song-ouyang/sci",
+  "intended_tag": "qrei-2026-09-30",
+  "existing_clone": "/Users/guoba/work/song-ouyang-sci",
+  "baseline_remote_main": "08199a778c2d09a55c997d042e9447b2baa85cc9",
+  "write_access_dry_run": "passed",
+  "journal_policy_source": "https://onlinelibrary.wiley.com/page/journal/10991638/homepage/forauthors.html",
+  "journal_policy_review": "QREI accepts preprints and expects data sharing; a public reproducibility repository does not claim journal acceptance or submission.",
+  "authorization_basis": "Current user explicitly requested updating and pushing the latest reproduction materials and confirmed all authors approved the new manuscript.",
+  "content_scope": "Current manuscript, authored source and analysis code, processed dataset features, previously shared historical evidence and newly frozen follow-up outputs; no raw third-party dataset archives, downloaded third-party full-text papers, submission correspondence or credential files.",
+  "source_licensing": "Dataset source terms retained; this release does not invent or grant a new license to third-party data.",
+  "confidentiality": "Industrial simulation and test-rig data; no new patient or human-participant source data. Author biographies are restored from the user-confirmed prior version.",
+  "immutable_evidence": "Do not sanitize or rewrite frozen files; validate their hashes before publishing.",
+  "publication_status_at_review": "preflight, prior to the actual push",
+  "publication_evidence": "The remote commit and qrei-2026-09-30 tag are the publication evidence; this is a preflight record.",
+  "scope_note": "Previously tracked historical files are retained and individually hashed in PUBLICATION_MANIFEST.json.",
+  "offline_reconstruction": "Passed: 33 scientific CSV/JSON outputs, 13 canonical TeX/Bib files and 2111 immutable evidence files; 24 offline tests also passed."
+}

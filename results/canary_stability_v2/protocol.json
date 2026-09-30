@@ -1,0 +1,90 @@
+{
+  "schema": "canary-stability-v2",
+  "created_at": "2026-09-30T05:06:42.722653+00:00",
+  "design": "One prospectively fixed later-period follow-up after v1 and its post hoc collapse control. C/R x3 chronological blocks x3 byte-identical calls; 18 new focal cycles from nine unused blocks plus nine new canaries from nine other unused blocks on the same rig.",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "cli_version": "codex-cli 0.159.0",
+  "previous_cli_version": "codex-cli 0.155.0-alpha.9.2",
+  "timeout_seconds": 900,
+  "workers_max": 2,
+  "max_elapsed_seconds": 3600,
+  "max_total_tokens": 600000,
+  "calls_scheduled": 18,
+  "slots_scheduled": 486,
+  "budget_note": "Existing subscription CLI only, no paid API or purchase. 600000 observed input+output tokens is a dispatch threshold; at most two in-flight calls can exceed it. No new dispatch with less than one full 900-second timeout remaining. 18 jobs maximum, one invocation per job.",
+  "resource_estimate": {
+    "basis": "603721 tokens / 27 frozen v1 calls x18",
+    "estimated_tokens": 402481,
+    "unknown": "Remaining subscription capacity is not assumed; quota failure retained without retry."
+  },
+  "seed": 20260930,
+  "time_blocks": 3,
+  "retries_per_job": 0,
+  "canary_threshold": "at least 8 correct of 9; first passing call within fixed arm/block schedule, otherwise withhold all 18 focal decisions",
+  "collapse_threshold": "Reject if modal share of all 27 returned labels >=9/10 (25 labels). No truth or role access.",
+  "collapse_sensitivity_thresholds": [
+    "17/20",
+    "19/20",
+    "1"
+  ],
+  "vote_rule": "Three calls per arm/block; modal focal label; all-label ties take first call. Separately report tie-abstention sensitivity. Require three valid calls.",
+  "endpoints": [
+    "All planned six arm/block windows: Single, Known_answer, Collapse_90, Vote_first_tie and Vote_abstain_tie; AC/AE/withheld, accepted-case error, coverage, correct yield, prescribed calls, observed tokens and summed client seconds.",
+    "All valid-call known-answer x collapse pass cross-tabs and focal errors in each cell; all four fixed collapse thresholds.",
+    "Report full results by arm and chronological block; do not select positive blocks or tune thresholds. Compare descriptively with v1, restricting old study to C/R for like-arm summaries."
+  ],
+  "unit_of_analysis": "Calls share 18 focal cycles in nine source blocks, nine canaries in nine different blocks, three time blocks, one physical rig. No independent 108-decision or 324-output sample-size claim.",
+  "limitations": [
+    "Source panel, canary panel, later service period and CLI version change jointly; cannot separate causal effects.",
+    "No new device or field validation; no calibrated population confidence interval.",
+    "Fixed full payload: collapse control tests incremental label knowledge at decision stage, not removal of canary records.",
+    "All calls collected regardless of gates. Policy savings are offline required-call counts, not experimentally realized adaptive savings."
+  ],
+  "failure_policy": "No retries, repair or replacement; failures and unattempted jobs retain planned denominators. Stop dispatch on failure, missing usage, quota, wall-clock or token threshold. Invalid call cannot pass a gate. Single invalid first call and incomplete vote withhold affected outputs.",
+  "inference_access": "Fresh empty-directory CLI session; inherited audited runner disables project context, tools, plugins, skills and web access. Answer key opened only after response audit and immutable output freeze.",
+  "data_sha256": {
+    "data/uci_hydraulic_processed/blocks.json": "09397bddb3359d622137ae775bd9ca7057b57ee750a8b7e59c24271af4657d10",
+    "data/uci_hydraulic_processed/profile.json": "77b338addb6b32f6dc52b5d4afbedf2336ceea0c899d8f0de528a01f1cbf5ecf",
+    "data/uci_hydraulic_processed/measurement_summary.npz": "58485453dd5004f6b693eac15a6b4887f2884e999852fbc1f970889068a173a6"
+  },
+  "past_selection_sha256": {
+    "results/hydraulic_validation_v1/answers/records.json": "381c59bc1a085a03b7c53da2ff4ddeb9a9ae034bb6bfffb37386c5ea732f9897",
+    "results/policy_hydraulic_v1/source_audit.json": "88c56f2e0bbcd8fdab0bcbecec183ecbe3b7edeefa03ffafc772d12279554d50",
+    "results/canary_hydraulic_v1/answers/records.json": "7bc13515c6f786a4516fc3aa9d1220254d990f5c9f35464719b9294f0aa935c2"
+  },
+  "source_audit_sha256": "e8bd812c9a5d36829806de365bb0cf6876b95978926a9b5b6f592d71a4785ff0",
+  "answers_sha256": "f6a2862c36a9833cedaec7dae672d51b2f728d32d8ffd5b4f02edf2540811b3a",
+  "input_sha256": "0cfcc9b568cd5c372c644106128e6c4e2ddc540de9a3b0aec6e96596f134e075",
+  "schedule_sha256": "d78195c5b609f3e78e4531730afd5459de7638e8ca45587f1aeb674a4103f200",
+  "prompts_sha256": {
+    "C_b1_c1": "a099b0253b538058e1ff1cc2a97fad41fda2fc97f33540b10566b7bb8461603e",
+    "C_b1_c2": "a099b0253b538058e1ff1cc2a97fad41fda2fc97f33540b10566b7bb8461603e",
+    "C_b1_c3": "a099b0253b538058e1ff1cc2a97fad41fda2fc97f33540b10566b7bb8461603e",
+    "R_b1_c1": "900b3bb6ffdfdf7f98b639d8ead527ce01fe4684291f834b23492f59a8913925",
+    "R_b1_c2": "900b3bb6ffdfdf7f98b639d8ead527ce01fe4684291f834b23492f59a8913925",
+    "R_b1_c3": "900b3bb6ffdfdf7f98b639d8ead527ce01fe4684291f834b23492f59a8913925",
+    "C_b2_c1": "a099b0253b538058e1ff1cc2a97fad41fda2fc97f33540b10566b7bb8461603e",
+    "C_b2_c2": "a099b0253b538058e1ff1cc2a97fad41fda2fc97f33540b10566b7bb8461603e",
+    "C_b2_c3": "a099b0253b538058e1ff1cc2a97fad41fda2fc97f33540b10566b7bb8461603e",
+    "R_b2_c1": "900b3bb6ffdfdf7f98b639d8ead527ce01fe4684291f834b23492f59a8913925",
+    "R_b2_c2": "900b3bb6ffdfdf7f98b639d8ead527ce01fe4684291f834b23492f59a8913925",
+    "R_b2_c3": "900b3bb6ffdfdf7f98b639d8ead527ce01fe4684291f834b23492f59a8913925",
+    "C_b3_c1": "a099b0253b538058e1ff1cc2a97fad41fda2fc97f33540b10566b7bb8461603e",
+    "C_b3_c2": "a099b0253b538058e1ff1cc2a97fad41fda2fc97f33540b10566b7bb8461603e",
+    "C_b3_c3": "a099b0253b538058e1ff1cc2a97fad41fda2fc97f33540b10566b7bb8461603e",
+    "R_b3_c1": "900b3bb6ffdfdf7f98b639d8ead527ce01fe4684291f834b23492f59a8913925",
+    "R_b3_c2": "900b3bb6ffdfdf7f98b639d8ead527ce01fe4684291f834b23492f59a8913925",
+    "R_b3_c3": "900b3bb6ffdfdf7f98b639d8ead527ce01fe4684291f834b23492f59a8913925"
+  },
+  "code_sha256": {
+    "src/experiments/prepare_canary_stability_v2.py": "c8b8519d66b7a74cf5c28af5c79ce706d78af0b709b00e4199d8199a75854e74",
+    "src/experiments/run_hydraulic_v1.py": "256539745e12dd41adc924e6f52187e87465c4822dc5667add3726b57b67b2d8",
+    "src/experiments/run_revision_v3.py": "02231b78a0ebb14066884418feaa8d82f3f6b2e3d8868815a4954e18bb0d7159",
+    "src/experiments/interface_contract.py": "ba5aedfdd485601c94a64db1e071d403f22db359e1514c2e6124c7478aa2278a",
+    "src/experiments/prepare_hydraulic_v1.py": "491d2594037b7d81b18518d3914b1530c8ea1c7349c4adcea5ef1b02174bda9c",
+    "src/analysis/canary_controls_v2.py": "c856c926ac545d11cbf0142184681eac936614cc4297418db0ea4de0850650de",
+    "tests/test_canary_controls_v2.py": "d7f29813deea118ff8c989621faf076be414d21bc05464fa8c1fa57ffc4a1e40",
+    "tests/test_canary_stability_v2.py": "ef0ee244ae35dcaedc7f874fee847271abfb0a24babaab5e2856eeefa6e9b412"
+  }
+}

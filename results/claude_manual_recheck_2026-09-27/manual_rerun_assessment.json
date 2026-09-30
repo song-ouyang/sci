@@ -1,0 +1,43 @@
+{
+  "user_reported_method": "Read all 295 prompt lines in chunks in the main conversation; manually classify all 70 cases; no sub-agent.",
+  "reported_response_sha256": "25a1edd4c1f41af7530e7e02e0708b238ddf7e49bd510dd501c1bd3237b59a9c",
+  "current_integrity_flag_present": false,
+  "array_valid": true,
+  "artifact_chain_consistent": false,
+  "eligible_for_primary_comparison": false,
+  "issues": [
+    {
+      "code": "RAW_RESPONSE_INVALID",
+      "detail": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "code": "HASH_MISSING_OR_INVALID",
+      "detail": "protocol.parent_protocol_sha256"
+    },
+    {
+      "code": "PRE_SCORE_FREEZE_MISSING",
+      "detail": "No prediction frozen_manifest exists; the source manifest covers inputs only."
+    },
+    {
+      "code": "AGENT_TOOL_ISOLATION_UNVERIFIED",
+      "detail": "The archived Agent-tool transport allowed tools; instruction-level prohibition does not establish tool or filesystem isolation."
+    },
+    {
+      "code": "NATIVE_EVENT_PROVENANCE_MISSING",
+      "detail": "The extension has no captured provider-native request/response and tool-event chain authenticating its delivered context and completion."
+    },
+    {
+      "code": "MODEL_IDENTITY_UNVERIFIED",
+      "detail": "Caller-written model names and a MODEL_ID self-report are not provider-returned model identity evidence."
+    },
+    {
+      "code": "ANSWER_KEY_ISOLATION_UNVERIFIED",
+      "detail": "Current output hashes and answer_keys_read=false cannot demonstrate pre-score answer-key isolation."
+    },
+    {
+      "code": "SCHEDULE_MODEL_MISMATCH",
+      "detail": "The session schedule does not enumerate the same 18 model/group identities as the extension protocol and output paths."
+    }
+  ],
+  "interpretation": "Neither a new hash, removal of an integrity flag nor exactly ten predictions per class proves or disproves contamination. Existing-context chunked processing is not the frozen fresh full-request protocol. No accuracy computed; no predictions or metadata modified."
+}

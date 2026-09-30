@@ -1,0 +1,512 @@
+{
+  "audit_recorded_at": "2026-09-27T05:03:03.808876+00:00",
+  "status": "not_eligible_for_primary_comparison",
+  "answer_key_files_opened": false,
+  "note": "N/A reflects missing or conflicting experiment provenance, not zero accuracy. No classification metrics were computed by this entry.",
+  "audit_report": "../audit/report.json",
+  "historical_archive": "results/claude_extension_audit_archive/2026-09-27/",
+  "scores": {
+    "claude-sonnet-4-6": {
+      "cmapss_clean_r1": {
+        "model": "claude-sonnet-4-6",
+        "group": "cmapss_clean_r1",
+        "status": "not_eligible_for_primary_comparison",
+        "audit_status": "provenance_unverified",
+        "eligible_for_primary_comparison": false,
+        "accuracy": null,
+        "macro_f1": null,
+        "accuracy_95ci": [
+          null,
+          null
+        ],
+        "macro_f1_95ci": [
+          null,
+          null
+        ],
+        "issue_codes": [
+          "HASH_MISSING_OR_INVALID",
+          "PRE_SCORE_FREEZE_MISSING",
+          "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "NATIVE_EVENT_PROVENANCE_MISSING",
+          "MODEL_IDENTITY_UNVERIFIED",
+          "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "SCHEDULE_MODEL_MISMATCH"
+        ]
+      },
+      "cmapss_clean_r2": {
+        "model": "claude-sonnet-4-6",
+        "group": "cmapss_clean_r2",
+        "status": "not_eligible_for_primary_comparison",
+        "audit_status": "provenance_unverified",
+        "eligible_for_primary_comparison": false,
+        "accuracy": null,
+        "macro_f1": null,
+        "accuracy_95ci": [
+          null,
+          null
+        ],
+        "macro_f1_95ci": [
+          null,
+          null
+        ],
+        "issue_codes": [
+          "HASH_MISSING_OR_INVALID",
+          "PRE_SCORE_FREEZE_MISSING",
+          "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "NATIVE_EVENT_PROVENANCE_MISSING",
+          "MODEL_IDENTITY_UNVERIFIED",
+          "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "SCHEDULE_MODEL_MISMATCH"
+        ]
+      },
+      "cmapss_clean_r3": {
+        "model": "claude-sonnet-4-6",
+        "group": "cmapss_clean_r3",
+        "status": "not_eligible_for_primary_comparison",
+        "audit_status": "provenance_unverified",
+        "eligible_for_primary_comparison": false,
+        "accuracy": null,
+        "macro_f1": null,
+        "accuracy_95ci": [
+          null,
+          null
+        ],
+        "macro_f1_95ci": [
+          null,
+          null
+        ],
+        "issue_codes": [
+          "HASH_MISSING_OR_INVALID",
+          "PRE_SCORE_FREEZE_MISSING",
+          "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "NATIVE_EVENT_PROVENANCE_MISSING",
+          "MODEL_IDENTITY_UNVERIFIED",
+          "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "SCHEDULE_MODEL_MISMATCH"
+        ]
+      },
+      "tep_clean_r1": {
+        "model": "claude-sonnet-4-6",
+        "group": "tep_clean_r1",
+        "status": "not_eligible_for_primary_comparison",
+        "audit_status": "provenance_unverified",
+        "eligible_for_primary_comparison": false,
+        "accuracy": null,
+        "macro_f1": null,
+        "accuracy_95ci": [
+          null,
+          null
+        ],
+        "macro_f1_95ci": [
+          null,
+          null
+        ],
+        "issue_codes": [
+          "HASH_MISSING_OR_INVALID",
+          "PRE_SCORE_FREEZE_MISSING",
+          "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "NATIVE_EVENT_PROVENANCE_MISSING",
+          "MODEL_IDENTITY_UNVERIFIED",
+          "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "SCHEDULE_MODEL_MISMATCH"
+        ]
+      },
+      "tep_clean_r2": {
+        "model": "claude-sonnet-4-6",
+        "group": "tep_clean_r2",
+        "status": "not_eligible_for_primary_comparison",
+        "audit_status": "artifact_invalid",
+        "eligible_for_primary_comparison": false,
+        "accuracy": null,
+        "macro_f1": null,
+        "accuracy_95ci": [
+          null,
+          null
+        ],
+        "macro_f1_95ci": [
+          null,
+          null
+        ],
+        "issue_codes": [
+          "HASH_MISMATCH",
+          "HASH_MISSING_OR_INVALID",
+          "HASH_MISSING_OR_INVALID",
+          "PRE_SCORE_FREEZE_MISSING",
+          "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "NATIVE_EVENT_PROVENANCE_MISSING",
+          "MODEL_IDENTITY_UNVERIFIED",
+          "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "SCHEDULE_MODEL_MISMATCH"
+        ]
+      },
+      "tep_clean_r3": {
+        "model": "claude-sonnet-4-6",
+        "group": "tep_clean_r3",
+        "status": "not_eligible_for_primary_comparison",
+        "audit_status": "artifact_invalid",
+        "eligible_for_primary_comparison": false,
+        "accuracy": null,
+        "macro_f1": null,
+        "accuracy_95ci": [
+          null,
+          null
+        ],
+        "macro_f1_95ci": [
+          null,
+          null
+        ],
+        "issue_codes": [
+          "FILE_UNREADABLE",
+          "RAW_RESPONSE_INVALID",
+          "REQUEST_INVALID",
+          "HASH_MISSING_OR_INVALID",
+          "HASH_MISSING_OR_INVALID",
+          "HASH_MISSING_OR_INVALID",
+          "FIELD_MISMATCH",
+          "FIELD_MISMATCH",
+          "FIELD_MISMATCH",
+          "FIELD_MISMATCH",
+          "FIELD_MISMATCH",
+          "FIELD_MISMATCH",
+          "FIELD_MISMATCH",
+          "FIELD_MISMATCH",
+          "FIELD_MISMATCH",
+          "FIELD_MISMATCH",
+          "FIELD_MISMATCH",
+          "FIELD_MISMATCH",
+          "FIELD_MISMATCH",
+          "FIELD_MISMATCH",
+          "FIELD_MISMATCH",
+          "HASH_MISSING_OR_INVALID",
+          "HASH_MISSING_OR_INVALID",
+          "FIELD_MISMATCH",
+          "HASH_MISSING_OR_INVALID",
+          "HASH_MISSING_OR_INVALID",
+          "PRE_SCORE_FREEZE_MISSING",
+          "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "NATIVE_EVENT_PROVENANCE_MISSING",
+          "MODEL_IDENTITY_UNVERIFIED",
+          "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "SCHEDULE_MODEL_MISMATCH"
+        ]
+      },
+      "tep_misnamed_r1": {
+        "model": "claude-sonnet-4-6",
+        "group": "tep_misnamed_r1",
+        "status": "not_eligible_for_primary_comparison",
+        "audit_status": "artifact_invalid",
+        "eligible_for_primary_comparison": false,
+        "accuracy": null,
+        "macro_f1": null,
+        "accuracy_95ci": [
+          null,
+          null
+        ],
+        "macro_f1_95ci": [
+          null,
+          null
+        ],
+        "issue_codes": [
+          "HASH_MISMATCH",
+          "HASH_MISSING_OR_INVALID",
+          "PRE_SCORE_FREEZE_MISSING",
+          "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "NATIVE_EVENT_PROVENANCE_MISSING",
+          "MODEL_IDENTITY_UNVERIFIED",
+          "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "SCHEDULE_MODEL_MISMATCH"
+        ]
+      },
+      "tep_misnamed_r2": {
+        "model": "claude-sonnet-4-6",
+        "group": "tep_misnamed_r2",
+        "status": "not_eligible_for_primary_comparison",
+        "audit_status": "provenance_unverified",
+        "eligible_for_primary_comparison": false,
+        "accuracy": null,
+        "macro_f1": null,
+        "accuracy_95ci": [
+          null,
+          null
+        ],
+        "macro_f1_95ci": [
+          null,
+          null
+        ],
+        "issue_codes": [
+          "HASH_MISSING_OR_INVALID",
+          "PRE_SCORE_FREEZE_MISSING",
+          "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "NATIVE_EVENT_PROVENANCE_MISSING",
+          "MODEL_IDENTITY_UNVERIFIED",
+          "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "SCHEDULE_MODEL_MISMATCH"
+        ]
+      },
+      "tep_misnamed_r3": {
+        "model": "claude-sonnet-4-6",
+        "group": "tep_misnamed_r3",
+        "status": "not_eligible_for_primary_comparison",
+        "audit_status": "reported_contaminated",
+        "eligible_for_primary_comparison": false,
+        "accuracy": null,
+        "macro_f1": null,
+        "accuracy_95ci": [
+          null,
+          null
+        ],
+        "macro_f1_95ci": [
+          null,
+          null
+        ],
+        "issue_codes": [
+          "REPORTED_CONTAMINATED",
+          "REPORTED_SUSPECT",
+          "HASH_MISSING_OR_INVALID",
+          "PRE_SCORE_FREEZE_MISSING",
+          "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "NATIVE_EVENT_PROVENANCE_MISSING",
+          "MODEL_IDENTITY_UNVERIFIED",
+          "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "SCHEDULE_MODEL_MISMATCH"
+        ]
+      }
+    },
+    "claude-opus-5-5": {
+      "cmapss_clean_r1": {
+        "model": "claude-opus-5-5",
+        "group": "cmapss_clean_r1",
+        "status": "not_eligible_for_primary_comparison",
+        "audit_status": "provenance_unverified",
+        "eligible_for_primary_comparison": false,
+        "accuracy": null,
+        "macro_f1": null,
+        "accuracy_95ci": [
+          null,
+          null
+        ],
+        "macro_f1_95ci": [
+          null,
+          null
+        ],
+        "issue_codes": [
+          "HASH_MISSING_OR_INVALID",
+          "PRE_SCORE_FREEZE_MISSING",
+          "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "NATIVE_EVENT_PROVENANCE_MISSING",
+          "MODEL_IDENTITY_UNVERIFIED",
+          "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "SCHEDULE_MODEL_MISMATCH"
+        ]
+      },
+      "cmapss_clean_r2": {
+        "model": "claude-opus-5-5",
+        "group": "cmapss_clean_r2",
+        "status": "not_eligible_for_primary_comparison",
+        "audit_status": "provenance_unverified",
+        "eligible_for_primary_comparison": false,
+        "accuracy": null,
+        "macro_f1": null,
+        "accuracy_95ci": [
+          null,
+          null
+        ],
+        "macro_f1_95ci": [
+          null,
+          null
+        ],
+        "issue_codes": [
+          "HASH_MISSING_OR_INVALID",
+          "PRE_SCORE_FREEZE_MISSING",
+          "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "NATIVE_EVENT_PROVENANCE_MISSING",
+          "MODEL_IDENTITY_UNVERIFIED",
+          "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "SCHEDULE_MODEL_MISMATCH"
+        ]
+      },
+      "cmapss_clean_r3": {
+        "model": "claude-opus-5-5",
+        "group": "cmapss_clean_r3",
+        "status": "not_eligible_for_primary_comparison",
+        "audit_status": "provenance_unverified",
+        "eligible_for_primary_comparison": false,
+        "accuracy": null,
+        "macro_f1": null,
+        "accuracy_95ci": [
+          null,
+          null
+        ],
+        "macro_f1_95ci": [
+          null,
+          null
+        ],
+        "issue_codes": [
+          "HASH_MISSING_OR_INVALID",
+          "PRE_SCORE_FREEZE_MISSING",
+          "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "NATIVE_EVENT_PROVENANCE_MISSING",
+          "MODEL_IDENTITY_UNVERIFIED",
+          "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "SCHEDULE_MODEL_MISMATCH"
+        ]
+      },
+      "tep_clean_r1": {
+        "model": "claude-opus-5-5",
+        "group": "tep_clean_r1",
+        "status": "not_eligible_for_primary_comparison",
+        "audit_status": "provenance_unverified",
+        "eligible_for_primary_comparison": false,
+        "accuracy": null,
+        "macro_f1": null,
+        "accuracy_95ci": [
+          null,
+          null
+        ],
+        "macro_f1_95ci": [
+          null,
+          null
+        ],
+        "issue_codes": [
+          "HASH_MISSING_OR_INVALID",
+          "PRE_SCORE_FREEZE_MISSING",
+          "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "NATIVE_EVENT_PROVENANCE_MISSING",
+          "MODEL_IDENTITY_UNVERIFIED",
+          "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "SCHEDULE_MODEL_MISMATCH"
+        ]
+      },
+      "tep_clean_r2": {
+        "model": "claude-opus-5-5",
+        "group": "tep_clean_r2",
+        "status": "not_eligible_for_primary_comparison",
+        "audit_status": "provenance_unverified",
+        "eligible_for_primary_comparison": false,
+        "accuracy": null,
+        "macro_f1": null,
+        "accuracy_95ci": [
+          null,
+          null
+        ],
+        "macro_f1_95ci": [
+          null,
+          null
+        ],
+        "issue_codes": [
+          "HASH_MISSING_OR_INVALID",
+          "PRE_SCORE_FREEZE_MISSING",
+          "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "NATIVE_EVENT_PROVENANCE_MISSING",
+          "MODEL_IDENTITY_UNVERIFIED",
+          "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "SCHEDULE_MODEL_MISMATCH"
+        ]
+      },
+      "tep_clean_r3": {
+        "model": "claude-opus-5-5",
+        "group": "tep_clean_r3",
+        "status": "not_eligible_for_primary_comparison",
+        "audit_status": "provenance_unverified",
+        "eligible_for_primary_comparison": false,
+        "accuracy": null,
+        "macro_f1": null,
+        "accuracy_95ci": [
+          null,
+          null
+        ],
+        "macro_f1_95ci": [
+          null,
+          null
+        ],
+        "issue_codes": [
+          "HASH_MISSING_OR_INVALID",
+          "PRE_SCORE_FREEZE_MISSING",
+          "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "NATIVE_EVENT_PROVENANCE_MISSING",
+          "MODEL_IDENTITY_UNVERIFIED",
+          "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "SCHEDULE_MODEL_MISMATCH"
+        ]
+      },
+      "tep_misnamed_r1": {
+        "model": "claude-opus-5-5",
+        "group": "tep_misnamed_r1",
+        "status": "not_eligible_for_primary_comparison",
+        "audit_status": "provenance_unverified",
+        "eligible_for_primary_comparison": false,
+        "accuracy": null,
+        "macro_f1": null,
+        "accuracy_95ci": [
+          null,
+          null
+        ],
+        "macro_f1_95ci": [
+          null,
+          null
+        ],
+        "issue_codes": [
+          "HASH_MISSING_OR_INVALID",
+          "PRE_SCORE_FREEZE_MISSING",
+          "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "NATIVE_EVENT_PROVENANCE_MISSING",
+          "MODEL_IDENTITY_UNVERIFIED",
+          "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "SCHEDULE_MODEL_MISMATCH"
+        ]
+      },
+      "tep_misnamed_r2": {
+        "model": "claude-opus-5-5",
+        "group": "tep_misnamed_r2",
+        "status": "not_eligible_for_primary_comparison",
+        "audit_status": "provenance_unverified",
+        "eligible_for_primary_comparison": false,
+        "accuracy": null,
+        "macro_f1": null,
+        "accuracy_95ci": [
+          null,
+          null
+        ],
+        "macro_f1_95ci": [
+          null,
+          null
+        ],
+        "issue_codes": [
+          "HASH_MISSING_OR_INVALID",
+          "PRE_SCORE_FREEZE_MISSING",
+          "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "NATIVE_EVENT_PROVENANCE_MISSING",
+          "MODEL_IDENTITY_UNVERIFIED",
+          "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "SCHEDULE_MODEL_MISMATCH"
+        ]
+      },
+      "tep_misnamed_r3": {
+        "model": "claude-opus-5-5",
+        "group": "tep_misnamed_r3",
+        "status": "not_eligible_for_primary_comparison",
+        "audit_status": "provenance_unverified",
+        "eligible_for_primary_comparison": false,
+        "accuracy": null,
+        "macro_f1": null,
+        "accuracy_95ci": [
+          null,
+          null
+        ],
+        "macro_f1_95ci": [
+          null,
+          null
+        ],
+        "issue_codes": [
+          "HASH_MISSING_OR_INVALID",
+          "PRE_SCORE_FREEZE_MISSING",
+          "AGENT_TOOL_ISOLATION_UNVERIFIED",
+          "NATIVE_EVENT_PROVENANCE_MISSING",
+          "MODEL_IDENTITY_UNVERIFIED",
+          "ANSWER_KEY_ISOLATION_UNVERIFIED",
+          "SCHEDULE_MODEL_MISMATCH"
+        ]
+      }
+    }
+  }
+}

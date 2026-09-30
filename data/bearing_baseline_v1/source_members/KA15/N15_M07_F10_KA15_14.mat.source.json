@@ -1,0 +1,25 @@
+{
+  "archive": {
+    "url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/KA15.rar",
+    "size_bytes": 164268273,
+    "etag": "\"9ca88f1-53396145c5dda\"",
+    "last_modified": "Tue, 24 May 2016 12:56:03 GMT"
+  },
+  "member": {
+    "offset": 33298430,
+    "kind": 116,
+    "flags": 37056,
+    "head_size": 65,
+    "packed_size": 2143983,
+    "header_hex": "6cda74c0904100efb6200098fa840002b4841231017afd441d331c00200000004b4131355c4e31355f4d30375f4631305f4b4131355f31342e6d617400f03f373f",
+    "unpacked_size": 8714904,
+    "file_crc32": 823297204,
+    "name": "KA15/N15_M07_F10_KA15_14.mat",
+    "method": 51,
+    "attributes": 32
+  },
+  "packed_payload_sha256": "52dfd6f982b46ba2bca20e2f3df31d70120c446326a707cbf4b524e957c3921a",
+  "derived_single_member_rar_sha256": "61e90564f5a00eaaa9f91bb308bc95c63409554adec66ddbb8615f6b6684727d",
+  "mat_sha256": "efbd7d1490bc63ec7102e74995d2b4cad60e3b6a57d3bbea367ad5fbedf7a291",
+  "note": "Derived standalone RAR, not complete archive. Authentic main/file headers and selected packed bytes; original uncompressed CRC32 verified."
+}

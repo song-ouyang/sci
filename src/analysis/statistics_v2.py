@@ -21,6 +21,7 @@ from collections import Counter, defaultdict
 import csv
 import itertools
 import json
+import hashlib
 from pathlib import Path
 import sys
 
@@ -73,6 +74,40 @@ def case_bootstrap_ci(values, rng, n_boot=N_BOOT):
     return float(np.percentile(means, 2.5)), float(np.percentile(means, 97.5))
 
 
+def matched_block_ci(left, right, blocks, rng, n_boot=N_BOOT):
+    """Exploratory case x matched-block percentile interval.
+
+    Resample the shared case rows, then the execution blocks jointly on both
+    sides. Retain all observed calls inside each selected block. This is a
+    post-hoc sensitivity analysis conditional on these cases and few blocks,
+    not a prespecified population-coverage guarantee.
+    """
+    if sum(a for a, _ in blocks) != left.shape[1] or sum(b for _, b in blocks) != right.shape[1]:
+        raise ValueError("Block sizes do not match call matrices")
+    if len(blocks) < 2:
+        raise ValueError("Matched-block sensitivity needs at least two blocks")
+    ls, rs, li, ri = [], [], 0, 0
+    for a, b in blocks:
+        ls.append(np.arange(li, li + a)); rs.append(np.arange(ri, ri + b))
+        li += a; ri += b
+    stats = np.empty(n_boot)
+    for index in range(n_boot):
+        rows = rng.integers(0, left.shape[0], left.shape[0])
+        chosen = rng.integers(0, len(blocks), len(blocks))
+        cl = np.concatenate([ls[b] for b in chosen])
+        cr = np.concatenate([rs[b] for b in chosen])
+        stats[index] = left[np.ix_(rows, cl)].mean() - right[np.ix_(rows, cr)].mean()
+    return tuple(float(v) for v in np.percentile(stats, [2.5, 97.5]))
+
+
+def abba_design_masks(n_blocks=4, n_abba=2):
+    """Frozen design: shuffle n_abba ABBA and remaining BAAB sequences."""
+    for selected in itertools.combinations(range(n_blocks), n_abba):
+        yield np.array([flag for b in range(n_blocks)
+                        for flag in ((True, False, False, True) if b in selected
+                                     else (False, True, True, False))])
+
+
 def disagreement(labels_left, labels_right):
     """Per-case within (W) and between (B) disagreement; inputs are case x call label arrays."""
     def within(labels):
@@ -99,7 +134,7 @@ def relabellings(calls_per_block):
         yield np.array([flag for block in combo for flag in block])
 
 
-def call_randomization(correct, labels, is_left, blocks):
+def call_randomization(correct, labels, is_left, blocks=None, masks=None):
     """Exact call-level randomization p-values for accuracy difference and excess disagreement.
 
     ``correct``/``labels`` are case x call arrays over all calls of both
@@ -111,7 +146,7 @@ def call_randomization(correct, labels, is_left, blocks):
         w, b = disagreement(labels[:, mask], labels[:, ~mask])
         return acc, float(np.mean(b - w))
     observed = stats(is_left)
-    null = np.array([stats(mask) for mask in relabellings(blocks)])
+    null = np.array([stats(mask) for mask in (relabellings(blocks) if masks is None else masks)])
     eps = 1e-12
     p_acc = float(np.mean(np.abs(null[:, 0]) >= abs(observed[0]) - eps))
     p_exc = float(np.mean(null[:, 1] >= observed[1] - eps))  # one-sided: excess disagreement
@@ -147,6 +182,16 @@ def contrast(name, family, left, right, truth, ids, blocks, primary, rng):
     cor_l, cor_r = (lab_l == y[:, None]).astype(int), (lab_r == y[:, None]).astype(int)
     b, c, p_mc = mcnemar(cor_l[:, primary], cor_r[:, primary])
     lo, hi = pigeonhole_ci(cor_l, cor_r, rng)
+    crossed_lo, crossed_hi = lo, hi
+    method = "crossed cases x independent call columns"
+    paired_lo = paired_hi = None
+    if len(blocks) > 1:
+        # Independent seed: adding this sensitivity does not perturb the legacy
+        # crossed or case-only intervals for any later contrast.
+        seed = int.from_bytes(hashlib.sha256(f"{SEED}:{family}:{name}".encode()).digest()[:8], "big")
+        paired_lo, paired_hi = matched_block_ci(cor_l, cor_r, blocks, np.random.default_rng(seed))
+        lo, hi = paired_lo, paired_hi
+        method = "post-hoc case x matched-block sensitivity"
     w, bb = disagreement(lab_l, lab_r)
     e_lo, e_hi = case_bootstrap_ci(bb - w, rng)
     # Column order for the randomization test follows ``blocks``.
@@ -164,10 +209,15 @@ def contrast(name, family, left, right, truth, ids, blocks, primary, rng):
             "calls_right": lab_r.shape[1],
             "acc_left": float(cor_l.mean()), "acc_right": float(cor_r.mean()),
             "acc_diff": float(cor_l.mean() - cor_r.mean()), "acc_diff_ci_low": lo, "acc_diff_ci_high": hi,
+            "acc_diff_ci_method": method,
+            "crossed_ci_low": crossed_lo, "crossed_ci_high": crossed_hi,
+            "matched_block_ci_low": paired_lo, "matched_block_ci_high": paired_hi,
+            "execution_blocks": len(blocks),
             "primary_mcnemar_b": b, "primary_mcnemar_c": c, "primary_mcnemar_p": p_mc,
             "within_disagreement": float(w.mean()), "between_disagreement": float(bb.mean()),
             "excess_disagreement": float((bb - w).mean()), "excess_ci_low": e_lo, "excess_ci_high": e_hi,
             "call_perm_p_acc": p_acc, "call_perm_p_excess": p_exc, "call_relabellings": n_relabel,
+            "call_test_method": "within-block exchangeability sensitivity" if len(blocks) > 1 else "whole-call exchangeability test",
             "min_attainable_p_acc": p_min,
             "stable_different_cases": stable_diff,
             "kappa_left": fleiss_kappa(lab_l) if lab_l.shape[1] > 1 else None,
@@ -250,6 +300,21 @@ def abba(rng):
         blocks.append((len(f), len(r)))
     row = contrast("Focal first vs focal last (ABBA/BAAB)", "sol/abba", front, back, truth, focal,
                    blocks, 0, rng)
+    if len(blocks) != 4:
+        raise ValueError("Frozen ABBA design requires all four complete blocks")
+    # The experiment randomized two ABBA and two BAAB sequences, not arbitrary
+    # two-of-four call labels independently within each block.
+    names = [name for block in schedule for name in block]
+    lab = np.array([[load_predictions(folder, name)[i] for name in names] for i in focal])
+    cor = (lab == np.array([truth[i] for i in focal])[:, None]).astype(int)
+    observed = np.array([name.endswith("_a") for name in names])
+    p_acc, p_exc, n_design, p_min = call_randomization(cor, lab, observed, masks=abba_design_masks())
+    row.update({"exchangeability_p_acc_sensitivity": row["call_perm_p_acc"],
+                "exchangeability_p_excess_sensitivity": row["call_perm_p_excess"],
+                "exchangeability_relabellings_sensitivity": row["call_relabellings"],
+                "call_perm_p_acc": p_acc, "call_perm_p_excess": p_exc,
+                "call_relabellings": n_design, "min_attainable_p_acc": p_min,
+                "call_test_method": "exact frozen design: two ABBA and two BAAB across four blocks"})
     # Per-block disagreement for the table in the manuscript.
     per_block = []
     for k in range(len(blocks)):
@@ -356,6 +421,8 @@ def main():
     write_csv(OUT / "abba_contrast.csv", abba_rows)
     write_csv(OUT / "hydraulic_contrasts.csv", hyd_rows)
     summary = {"seed": SEED, "bootstrap_replicates": N_BOOT,
+               "revision": "offline statistical correction 2026-09-30",
+               "interval_scope": "TEP crossed case/call intervals; blocked contrasts use post-hoc case/matched-block sensitivity with legacy crossed intervals retained. E intervals resample cases conditional on observed calls. Few blocks limit population interpretation.",
                "tep": tep_rows, "tep_repeatability": kappas, "abba": abba_rows, "abba_blocks": abba_blocks,
                "hydraulic": hyd_rows, "hydraulic_info": hyd_info}
     (OUT / "summary.json").write_text(json.dumps(summary, indent=2) + "\n")

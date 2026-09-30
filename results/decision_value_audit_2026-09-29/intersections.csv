@@ -1,0 +1,13 @@
+dataset,left,right,kind,c_exact,c,in_unit_interval,left_lower_below,left_lower_above
+hydraulic,Accept_all_F1,Same,single_intersection,6/17,0.35294117647058826,True,False,True
+hydraulic,Accept_all_F1,View,single_intersection,1/2,0.5,True,False,True
+hydraulic,Accept_all_F1,Reject_all,single_intersection,5/27,0.18518518518518517,True,False,True
+hydraulic,Same,View,single_intersection,1/7,0.14285714285714285,True,True,False
+hydraulic,Same,Reject_all,single_intersection,4/37,0.10810810810810811,True,False,True
+hydraulic,View,Reject_all,single_intersection,5/44,0.11363636363636363,True,False,True
+paderborn,Accept_all_F1,Same,single_intersection,1/2,0.5,True,False,True
+paderborn,Accept_all_F1,View,single_intersection,20/21,0.9523809523809523,True,False,True
+paderborn,Accept_all_F1,Reject_all,single_intersection,61/72,0.8472222222222222,True,False,True
+paderborn,Same,View,single_intersection,37/36,1.0277777777777777,False,False,True
+paderborn,Same,Reject_all,single_intersection,29/33,0.8787878787878788,True,False,True
+paderborn,View,Reject_all,single_intersection,7/10,0.7,True,False,True

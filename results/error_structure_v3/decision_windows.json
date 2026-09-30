@@ -1,0 +1,2389 @@
+{
+  "schema": "chronological-decision-replay-v4",
+  "tau": 0.8,
+  "scope": "Offline replay of fixed complete requests, not an adaptively executed deployment trial. Source records and requests are reused across policies; calls are per window/batch.",
+  "windows": [
+    {
+      "study": "TEP",
+      "window": [
+        "b_back"
+      ],
+      "calls": [
+        {
+          "name": "b_back_r1",
+          "started_at": "2026-09-27T14:10:30.851261+00:00",
+          "metadata_path": "results/independent_validation/predictions/gpt-5.6-sol/b_back_r1_metadata.json",
+          "response_path": "results/independent_validation/predictions/gpt-5.6-sol/b_back_r1_results.json"
+        },
+        {
+          "name": "b_back_r2",
+          "started_at": "2026-09-27T14:16:02.278504+00:00",
+          "metadata_path": "results/independent_validation/predictions/gpt-5.6-sol/b_back_r2_metadata.json",
+          "response_path": "results/independent_validation/predictions/gpt-5.6-sol/b_back_r2_results.json"
+        },
+        {
+          "name": "b_back_r3",
+          "started_at": "2026-09-27T14:21:49.402239+00:00",
+          "metadata_path": "results/independent_validation/predictions/gpt-5.6-sol/b_back_r3_metadata.json",
+          "response_path": "results/independent_validation/predictions/gpt-5.6-sol/b_back_r3_results.json"
+        }
+      ],
+      "canary_pass": [
+        false,
+        false,
+        false
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 9,
+          "error": 12,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 9,
+          "error": 12,
+          "abstain": 0,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 9,
+          "error": 12,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 0,
+          "error": 0,
+          "abstain": 21,
+          "calls": 3
+        },
+        "gated": {
+          "correct": 0,
+          "error": 0,
+          "abstain": 21,
+          "calls": 3
+        }
+      }
+    },
+    {
+      "study": "TEP",
+      "window": [
+        "a_back"
+      ],
+      "calls": [
+        {
+          "name": "a_back_r3",
+          "started_at": "2026-09-27T14:13:27.845925+00:00",
+          "metadata_path": "results/independent_validation/predictions/gpt-5.6-sol/a_back_r3_metadata.json",
+          "response_path": "results/independent_validation/predictions/gpt-5.6-sol/a_back_r3_results.json"
+        },
+        {
+          "name": "a_back_r1",
+          "started_at": "2026-09-27T14:16:42.753262+00:00",
+          "metadata_path": "results/independent_validation/predictions/gpt-5.6-sol/a_back_r1_metadata.json",
+          "response_path": "results/independent_validation/predictions/gpt-5.6-sol/a_back_r1_results.json"
+        },
+        {
+          "name": "a_back_r2",
+          "started_at": "2026-09-27T14:34:32.023959+00:00",
+          "metadata_path": "results/independent_validation/predictions/gpt-5.6-sol/a_back_r2_metadata.json",
+          "response_path": "results/independent_validation/predictions/gpt-5.6-sol/a_back_r2_results.json"
+        }
+      ],
+      "canary_pass": [
+        true,
+        true,
+        true
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 21,
+          "error": 0,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 21,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 21,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 21,
+          "error": 0,
+          "abstain": 0,
+          "calls": 1
+        },
+        "gated": {
+          "correct": 21,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        }
+      }
+    },
+    {
+      "study": "TEP",
+      "window": [
+        "a_front"
+      ],
+      "calls": [
+        {
+          "name": "a_front_r3",
+          "started_at": "2026-09-27T14:14:48.417205+00:00",
+          "metadata_path": "results/independent_validation/predictions/gpt-5.6-sol/a_front_r3_metadata.json",
+          "response_path": "results/independent_validation/predictions/gpt-5.6-sol/a_front_r3_results.json"
+        },
+        {
+          "name": "a_front_r1",
+          "started_at": "2026-09-27T14:18:45.527182+00:00",
+          "metadata_path": "results/independent_validation/predictions/gpt-5.6-sol/a_front_r1_metadata.json",
+          "response_path": "results/independent_validation/predictions/gpt-5.6-sol/a_front_r1_results.json"
+        },
+        {
+          "name": "a_front_r2",
+          "started_at": "2026-09-27T14:33:54.729307+00:00",
+          "metadata_path": "results/independent_validation/predictions/gpt-5.6-sol/a_front_r2_metadata.json",
+          "response_path": "results/independent_validation/predictions/gpt-5.6-sol/a_front_r2_results.json"
+        }
+      ],
+      "canary_pass": [
+        false,
+        true,
+        true
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 13,
+          "error": 8,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 21,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 21,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 21,
+          "error": 0,
+          "abstain": 0,
+          "calls": 2
+        },
+        "gated": {
+          "correct": 21,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        }
+      }
+    },
+    {
+      "study": "TEP",
+      "window": [
+        "b_front"
+      ],
+      "calls": [
+        {
+          "name": "b_front_r1",
+          "started_at": "2026-09-27T14:26:33.579748+00:00",
+          "metadata_path": "results/independent_validation/predictions/gpt-5.6-sol/b_front_r1_metadata.json",
+          "response_path": "results/independent_validation/predictions/gpt-5.6-sol/b_front_r1_results.json"
+        },
+        {
+          "name": "b_front_r3",
+          "started_at": "2026-09-27T14:31:53.815856+00:00",
+          "metadata_path": "results/independent_validation/predictions/gpt-5.6-sol/b_front_r3_metadata.json",
+          "response_path": "results/independent_validation/predictions/gpt-5.6-sol/b_front_r3_results.json"
+        },
+        {
+          "name": "b_front_r2",
+          "started_at": "2026-09-27T14:35:16.522218+00:00",
+          "metadata_path": "results/independent_validation/predictions/gpt-5.6-sol/b_front_r2_metadata.json",
+          "response_path": "results/independent_validation/predictions/gpt-5.6-sol/b_front_r2_results.json"
+        }
+      ],
+      "canary_pass": [
+        true,
+        true,
+        false
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 21,
+          "error": 0,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 21,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 21,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 21,
+          "error": 0,
+          "abstain": 0,
+          "calls": 1
+        },
+        "gated": {
+          "correct": 21,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        }
+      }
+    },
+    {
+      "study": "TEP ABBA",
+      "window": [
+        "a"
+      ],
+      "calls": [
+        {
+          "name": "block01_pos1_a",
+          "started_at": "2026-09-28T08:40:40.050073+00:00",
+          "metadata_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block01_pos1_a_metadata.json",
+          "response_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block01_pos1_a_results.json"
+        },
+        {
+          "name": "block01_pos4_a",
+          "started_at": "2026-09-28T08:44:21.364168+00:00",
+          "metadata_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block01_pos4_a_metadata.json",
+          "response_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block01_pos4_a_results.json"
+        },
+        {
+          "name": "block02_pos1_a",
+          "started_at": "2026-09-28T08:45:30.591101+00:00",
+          "metadata_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block02_pos1_a_metadata.json",
+          "response_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block02_pos1_a_results.json"
+        },
+        {
+          "name": "block02_pos4_a",
+          "started_at": "2026-09-28T08:49:16.609762+00:00",
+          "metadata_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block02_pos4_a_metadata.json",
+          "response_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block02_pos4_a_results.json"
+        },
+        {
+          "name": "block03_pos2_a",
+          "started_at": "2026-09-28T08:51:11.973613+00:00",
+          "metadata_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block03_pos2_a_metadata.json",
+          "response_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block03_pos2_a_results.json"
+        },
+        {
+          "name": "block03_pos3_a",
+          "started_at": "2026-09-28T08:52:33.150809+00:00",
+          "metadata_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block03_pos3_a_metadata.json",
+          "response_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block03_pos3_a_results.json"
+        },
+        {
+          "name": "block04_pos2_a",
+          "started_at": "2026-09-28T08:56:15.903858+00:00",
+          "metadata_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block04_pos2_a_metadata.json",
+          "response_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block04_pos2_a_results.json"
+        },
+        {
+          "name": "block04_pos3_a",
+          "started_at": "2026-09-28T08:57:00.664136+00:00",
+          "metadata_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block04_pos3_a_metadata.json",
+          "response_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block04_pos3_a_results.json"
+        }
+      ],
+      "canary_pass": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 21,
+          "error": 0,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 21,
+          "error": 0,
+          "abstain": 0,
+          "calls": 8
+        },
+        "vote_tie_first": {
+          "correct": 21,
+          "error": 0,
+          "abstain": 0,
+          "calls": 8
+        },
+        "canary": {
+          "correct": 21,
+          "error": 0,
+          "abstain": 0,
+          "calls": 1
+        },
+        "gated": {
+          "correct": 21,
+          "error": 0,
+          "abstain": 0,
+          "calls": 8
+        }
+      }
+    },
+    {
+      "study": "TEP ABBA",
+      "window": [
+        "b"
+      ],
+      "calls": [
+        {
+          "name": "block01_pos2_b",
+          "started_at": "2026-09-28T08:42:01.066944+00:00",
+          "metadata_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block01_pos2_b_metadata.json",
+          "response_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block01_pos2_b_results.json"
+        },
+        {
+          "name": "block01_pos3_b",
+          "started_at": "2026-09-28T08:43:27.516851+00:00",
+          "metadata_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block01_pos3_b_metadata.json",
+          "response_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block01_pos3_b_results.json"
+        },
+        {
+          "name": "block02_pos2_b",
+          "started_at": "2026-09-28T08:47:05.953682+00:00",
+          "metadata_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block02_pos2_b_metadata.json",
+          "response_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block02_pos2_b_results.json"
+        },
+        {
+          "name": "block02_pos3_b",
+          "started_at": "2026-09-28T08:48:06.951161+00:00",
+          "metadata_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block02_pos3_b_metadata.json",
+          "response_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block02_pos3_b_results.json"
+        },
+        {
+          "name": "block03_pos1_b",
+          "started_at": "2026-09-28T08:50:14.146731+00:00",
+          "metadata_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block03_pos1_b_metadata.json",
+          "response_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block03_pos1_b_results.json"
+        },
+        {
+          "name": "block03_pos4_b",
+          "started_at": "2026-09-28T08:53:38.037254+00:00",
+          "metadata_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block03_pos4_b_metadata.json",
+          "response_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block03_pos4_b_results.json"
+        },
+        {
+          "name": "block04_pos1_b",
+          "started_at": "2026-09-28T08:54:48.531668+00:00",
+          "metadata_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block04_pos1_b_metadata.json",
+          "response_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block04_pos1_b_results.json"
+        },
+        {
+          "name": "block04_pos4_b",
+          "started_at": "2026-09-28T08:57:57.585009+00:00",
+          "metadata_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block04_pos4_b_metadata.json",
+          "response_path": "results/context_blocked_v1/predictions/gpt-5.6-sol/block04_pos4_b_results.json"
+        }
+      ],
+      "canary_pass": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 19,
+          "error": 2,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 21,
+          "error": 0,
+          "abstain": 0,
+          "calls": 8
+        },
+        "vote_tie_first": {
+          "correct": 21,
+          "error": 0,
+          "abstain": 0,
+          "calls": 8
+        },
+        "canary": {
+          "correct": 19,
+          "error": 2,
+          "abstain": 0,
+          "calls": 1
+        },
+        "gated": {
+          "correct": 21,
+          "error": 0,
+          "abstain": 0,
+          "calls": 8
+        }
+      }
+    },
+    {
+      "study": "Hydraulic (5 blocks)",
+      "window": [
+        "a_front"
+      ],
+      "calls": [
+        {
+          "name": "a_front_repeat_r1",
+          "started_at": "2026-09-28T05:29:08.556663+00:00",
+          "metadata_path": "results/hydraulic_validation_v1/predictions/gpt-5.6-sol/a_front_repeat_r1_metadata.json",
+          "response_path": "results/hydraulic_validation_v1/predictions/gpt-5.6-sol/a_front_repeat_r1_results.json"
+        },
+        {
+          "name": "a_front_r1",
+          "started_at": "2026-09-28T05:33:07.003283+00:00",
+          "metadata_path": "results/hydraulic_validation_v1/predictions/gpt-5.6-sol/a_front_r1_metadata.json",
+          "response_path": "results/hydraulic_validation_v1/predictions/gpt-5.6-sol/a_front_r1_results.json"
+        },
+        {
+          "name": "a_front_repeat_r2",
+          "started_at": "2026-09-28T05:36:14.580590+00:00",
+          "metadata_path": "results/hydraulic_validation_v1/predictions/gpt-5.6-sol/a_front_repeat_r2_metadata.json",
+          "response_path": "results/hydraulic_validation_v1/predictions/gpt-5.6-sol/a_front_repeat_r2_results.json"
+        },
+        {
+          "name": "a_front_r2",
+          "started_at": "2026-09-28T05:37:40.639767+00:00",
+          "metadata_path": "results/hydraulic_validation_v1/predictions/gpt-5.6-sol/a_front_r2_metadata.json",
+          "response_path": "results/hydraulic_validation_v1/predictions/gpt-5.6-sol/a_front_r2_results.json"
+        },
+        {
+          "name": "a_front_repeat_r3",
+          "started_at": "2026-09-28T09:42:17.395508+00:00",
+          "metadata_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/a_front_repeat_r3_metadata.json",
+          "response_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/a_front_repeat_r3_results.json"
+        },
+        {
+          "name": "a_front_r3",
+          "started_at": "2026-09-28T09:44:34.265363+00:00",
+          "metadata_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/a_front_r3_metadata.json",
+          "response_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/a_front_r3_results.json"
+        },
+        {
+          "name": "a_front_repeat_r4",
+          "started_at": "2026-09-28T09:48:06.495729+00:00",
+          "metadata_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/a_front_repeat_r4_metadata.json",
+          "response_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/a_front_repeat_r4_results.json"
+        },
+        {
+          "name": "a_front_r4",
+          "started_at": "2026-09-28T09:50:18.906992+00:00",
+          "metadata_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/a_front_r4_metadata.json",
+          "response_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/a_front_r4_results.json"
+        },
+        {
+          "name": "a_front_r5",
+          "started_at": "2026-09-28T09:54:04.843312+00:00",
+          "metadata_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/a_front_r5_metadata.json",
+          "response_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/a_front_r5_results.json"
+        },
+        {
+          "name": "a_front_repeat_r5",
+          "started_at": "2026-09-28T09:55:16.460221+00:00",
+          "metadata_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/a_front_repeat_r5_metadata.json",
+          "response_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/a_front_repeat_r5_results.json"
+        }
+      ],
+      "canary_pass": [
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 8,
+          "error": 10,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 8,
+          "error": 10,
+          "abstain": 0,
+          "calls": 10
+        },
+        "vote_tie_first": {
+          "correct": 8,
+          "error": 10,
+          "abstain": 0,
+          "calls": 10
+        },
+        "canary": {
+          "correct": 16,
+          "error": 2,
+          "abstain": 0,
+          "calls": 3
+        },
+        "gated": {
+          "correct": 16,
+          "error": 2,
+          "abstain": 0,
+          "calls": 10
+        }
+      }
+    },
+    {
+      "study": "Hydraulic (5 blocks)",
+      "window": [
+        "a_back"
+      ],
+      "calls": [
+        {
+          "name": "a_back_r1",
+          "started_at": "2026-09-28T05:33:48.719605+00:00",
+          "metadata_path": "results/hydraulic_validation_v1/predictions/gpt-5.6-sol/a_back_r1_metadata.json",
+          "response_path": "results/hydraulic_validation_v1/predictions/gpt-5.6-sol/a_back_r1_results.json"
+        },
+        {
+          "name": "a_back_r2",
+          "started_at": "2026-09-28T05:40:07.468437+00:00",
+          "metadata_path": "results/hydraulic_validation_v1/predictions/gpt-5.6-sol/a_back_r2_metadata.json",
+          "response_path": "results/hydraulic_validation_v1/predictions/gpt-5.6-sol/a_back_r2_results.json"
+        },
+        {
+          "name": "a_back_r3",
+          "started_at": "2026-09-28T09:41:47.995067+00:00",
+          "metadata_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/a_back_r3_metadata.json",
+          "response_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/a_back_r3_results.json"
+        },
+        {
+          "name": "a_back_r4",
+          "started_at": "2026-09-28T09:50:11.269657+00:00",
+          "metadata_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/a_back_r4_metadata.json",
+          "response_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/a_back_r4_results.json"
+        },
+        {
+          "name": "a_back_r5",
+          "started_at": "2026-09-28T09:52:48.774575+00:00",
+          "metadata_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/a_back_r5_metadata.json",
+          "response_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/a_back_r5_results.json"
+        }
+      ],
+      "canary_pass": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 16,
+          "error": 2,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 8,
+          "error": 10,
+          "abstain": 0,
+          "calls": 5
+        },
+        "vote_tie_first": {
+          "correct": 8,
+          "error": 10,
+          "abstain": 0,
+          "calls": 5
+        },
+        "canary": {
+          "correct": 16,
+          "error": 2,
+          "abstain": 0,
+          "calls": 1
+        },
+        "gated": {
+          "correct": 16,
+          "error": 2,
+          "abstain": 0,
+          "calls": 5
+        }
+      }
+    },
+    {
+      "study": "Hydraulic (5 blocks)",
+      "window": [
+        "b_front"
+      ],
+      "calls": [
+        {
+          "name": "b_front_r1",
+          "started_at": "2026-09-28T05:32:04.133374+00:00",
+          "metadata_path": "results/hydraulic_validation_v1/predictions/gpt-5.6-sol/b_front_r1_metadata.json",
+          "response_path": "results/hydraulic_validation_v1/predictions/gpt-5.6-sol/b_front_r1_results.json"
+        },
+        {
+          "name": "b_front_r2",
+          "started_at": "2026-09-28T05:40:27.541419+00:00",
+          "metadata_path": "results/hydraulic_validation_v1/predictions/gpt-5.6-sol/b_front_r2_metadata.json",
+          "response_path": "results/hydraulic_validation_v1/predictions/gpt-5.6-sol/b_front_r2_results.json"
+        },
+        {
+          "name": "b_front_r3",
+          "started_at": "2026-09-28T09:40:53.231821+00:00",
+          "metadata_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/b_front_r3_metadata.json",
+          "response_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/b_front_r3_results.json"
+        },
+        {
+          "name": "b_front_r4",
+          "started_at": "2026-09-28T09:49:01.530461+00:00",
+          "metadata_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/b_front_r4_metadata.json",
+          "response_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/b_front_r4_results.json"
+        },
+        {
+          "name": "b_front_r5",
+          "started_at": "2026-09-28T09:52:13.501519+00:00",
+          "metadata_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/b_front_r5_metadata.json",
+          "response_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/b_front_r5_results.json"
+        }
+      ],
+      "canary_pass": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 17,
+          "error": 1,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 10,
+          "error": 5,
+          "abstain": 3,
+          "calls": 5
+        },
+        "vote_tie_first": {
+          "correct": 13,
+          "error": 5,
+          "abstain": 0,
+          "calls": 5
+        },
+        "canary": {
+          "correct": 17,
+          "error": 1,
+          "abstain": 0,
+          "calls": 1
+        },
+        "gated": {
+          "correct": 17,
+          "error": 1,
+          "abstain": 0,
+          "calls": 5
+        }
+      }
+    },
+    {
+      "study": "Hydraulic (5 blocks)",
+      "window": [
+        "b_back"
+      ],
+      "calls": [
+        {
+          "name": "b_back_r1",
+          "started_at": "2026-09-28T05:33:40.706853+00:00",
+          "metadata_path": "results/hydraulic_validation_v1/predictions/gpt-5.6-sol/b_back_r1_metadata.json",
+          "response_path": "results/hydraulic_validation_v1/predictions/gpt-5.6-sol/b_back_r1_results.json"
+        },
+        {
+          "name": "b_back_r2",
+          "started_at": "2026-09-28T05:34:53.597383+00:00",
+          "metadata_path": "results/hydraulic_validation_v1/predictions/gpt-5.6-sol/b_back_r2_metadata.json",
+          "response_path": "results/hydraulic_validation_v1/predictions/gpt-5.6-sol/b_back_r2_results.json"
+        },
+        {
+          "name": "b_back_r3",
+          "started_at": "2026-09-28T09:39:39.334866+00:00",
+          "metadata_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/b_back_r3_metadata.json",
+          "response_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/b_back_r3_results.json"
+        },
+        {
+          "name": "b_back_r4",
+          "started_at": "2026-09-28T09:48:44.780663+00:00",
+          "metadata_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/b_back_r4_metadata.json",
+          "response_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/b_back_r4_results.json"
+        },
+        {
+          "name": "b_back_r5",
+          "started_at": "2026-09-28T09:51:21.111381+00:00",
+          "metadata_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/b_back_r5_metadata.json",
+          "response_path": "results/hydraulic_validation_v1_completion/predictions/gpt-5.6-sol/b_back_r5_results.json"
+        }
+      ],
+      "canary_pass": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 8,
+          "error": 10,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 7,
+          "error": 10,
+          "abstain": 1,
+          "calls": 5
+        },
+        "vote_tie_first": {
+          "correct": 8,
+          "error": 10,
+          "abstain": 0,
+          "calls": 5
+        },
+        "canary": {
+          "correct": 17,
+          "error": 1,
+          "abstain": 0,
+          "calls": 2
+        },
+        "gated": {
+          "correct": 17,
+          "error": 1,
+          "abstain": 0,
+          "calls": 5
+        }
+      }
+    },
+    {
+      "study": "Hydraulic (new blocks)",
+      "window": [
+        "hydraulic_p03_F",
+        1
+      ],
+      "calls": [
+        {
+          "name": "b01_p1_f",
+          "started_at": "2026-09-28T14:12:47.812179+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b01_p1_f_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b01_p1_f_results.json"
+        },
+        {
+          "name": "b01_p2_f",
+          "started_at": "2026-09-28T14:15:47.813858+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b01_p2_f_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b01_p2_f_results.json"
+        },
+        {
+          "name": "b01_p3_f",
+          "started_at": "2026-09-28T14:18:47.812903+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b01_p3_f_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b01_p3_f_results.json"
+        }
+      ],
+      "canary_pass": [
+        false,
+        false,
+        true
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 7,
+          "error": 2,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 7,
+          "error": 2,
+          "abstain": 0,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 7,
+          "error": 2,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 7,
+          "error": 2,
+          "abstain": 0,
+          "calls": 3
+        },
+        "gated": {
+          "correct": 7,
+          "error": 2,
+          "abstain": 0,
+          "calls": 3
+        }
+      }
+    },
+    {
+      "study": "Hydraulic (new blocks)",
+      "window": [
+        "hydraulic_p03_R",
+        1
+      ],
+      "calls": [
+        {
+          "name": "b01_p1_r",
+          "started_at": "2026-09-28T14:12:47.812094+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b01_p1_r_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b01_p1_r_results.json"
+        },
+        {
+          "name": "b01_p2_r",
+          "started_at": "2026-09-28T14:15:47.813648+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b01_p2_r_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b01_p2_r_results.json"
+        },
+        {
+          "name": "b01_p3_r",
+          "started_at": "2026-09-28T14:18:47.812370+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b01_p3_r_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b01_p3_r_results.json"
+        }
+      ],
+      "canary_pass": [
+        true,
+        false,
+        false
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 7,
+          "error": 2,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 7,
+          "error": 2,
+          "abstain": 0,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 7,
+          "error": 2,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 7,
+          "error": 2,
+          "abstain": 0,
+          "calls": 1
+        },
+        "gated": {
+          "correct": 7,
+          "error": 2,
+          "abstain": 0,
+          "calls": 3
+        }
+      }
+    },
+    {
+      "study": "Hydraulic (new blocks)",
+      "window": [
+        "hydraulic_p01_R",
+        1
+      ],
+      "calls": [
+        {
+          "name": "b02_p1_r",
+          "started_at": "2026-09-28T14:21:47.823173+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b02_p1_r_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b02_p1_r_results.json"
+        },
+        {
+          "name": "b02_p2_r",
+          "started_at": "2026-09-28T14:24:47.848631+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b02_p2_r_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b02_p2_r_results.json"
+        },
+        {
+          "name": "b02_p3_r",
+          "started_at": "2026-09-28T14:27:47.855662+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b02_p3_r_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b02_p3_r_results.json"
+        }
+      ],
+      "canary_pass": [
+        true,
+        true,
+        true
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 9,
+          "error": 0,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 9,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 9,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 9,
+          "error": 0,
+          "abstain": 0,
+          "calls": 1
+        },
+        "gated": {
+          "correct": 9,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        }
+      }
+    },
+    {
+      "study": "Hydraulic (new blocks)",
+      "window": [
+        "hydraulic_p01_F",
+        1
+      ],
+      "calls": [
+        {
+          "name": "b02_p1_f",
+          "started_at": "2026-09-28T14:21:47.822080+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b02_p1_f_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b02_p1_f_results.json"
+        },
+        {
+          "name": "b02_p2_f",
+          "started_at": "2026-09-28T14:24:47.865463+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b02_p2_f_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b02_p2_f_results.json"
+        },
+        {
+          "name": "b02_p3_f",
+          "started_at": "2026-09-28T14:27:47.846414+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b02_p3_f_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b02_p3_f_results.json"
+        }
+      ],
+      "canary_pass": [
+        true,
+        true,
+        false
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 9,
+          "error": 0,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 9,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 9,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 9,
+          "error": 0,
+          "abstain": 0,
+          "calls": 1
+        },
+        "gated": {
+          "correct": 9,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        }
+      }
+    },
+    {
+      "study": "Hydraulic (new blocks)",
+      "window": [
+        "hydraulic_p02_R",
+        1
+      ],
+      "calls": [
+        {
+          "name": "b03_p1_r",
+          "started_at": "2026-09-28T14:30:47.844789+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b03_p1_r_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b03_p1_r_results.json"
+        },
+        {
+          "name": "b03_p2_r",
+          "started_at": "2026-09-28T14:33:48.072022+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b03_p2_r_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b03_p2_r_results.json"
+        },
+        {
+          "name": "b03_p3_r",
+          "started_at": "2026-09-28T14:36:47.834520+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b03_p3_r_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b03_p3_r_results.json"
+        }
+      ],
+      "canary_pass": [
+        true,
+        false,
+        false
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 9,
+          "error": 0,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 9,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 9,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 9,
+          "error": 0,
+          "abstain": 0,
+          "calls": 1
+        },
+        "gated": {
+          "correct": 9,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        }
+      }
+    },
+    {
+      "study": "Hydraulic (new blocks)",
+      "window": [
+        "hydraulic_p02_F",
+        1
+      ],
+      "calls": [
+        {
+          "name": "b03_p1_f",
+          "started_at": "2026-09-28T14:30:47.845709+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b03_p1_f_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b03_p1_f_results.json"
+        },
+        {
+          "name": "b03_p2_f",
+          "started_at": "2026-09-28T14:33:48.102777+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b03_p2_f_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b03_p2_f_results.json"
+        },
+        {
+          "name": "b03_p3_f",
+          "started_at": "2026-09-28T14:36:47.833793+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b03_p3_f_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b03_p3_f_results.json"
+        }
+      ],
+      "canary_pass": [
+        false,
+        false,
+        false
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 4,
+          "error": 5,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 9,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 9,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 0,
+          "error": 0,
+          "abstain": 9,
+          "calls": 3
+        },
+        "gated": {
+          "correct": 0,
+          "error": 0,
+          "abstain": 9,
+          "calls": 3
+        }
+      }
+    },
+    {
+      "study": "Hydraulic (new blocks)",
+      "window": [
+        "hydraulic_p01_F",
+        2
+      ],
+      "calls": [
+        {
+          "name": "b04_p1_f",
+          "started_at": "2026-09-28T14:39:47.831420+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b04_p1_f_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b04_p1_f_results.json"
+        },
+        {
+          "name": "b04_p2_f",
+          "started_at": "2026-09-28T14:42:47.902634+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b04_p2_f_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b04_p2_f_results.json"
+        },
+        {
+          "name": "b04_p3_f",
+          "started_at": "2026-09-28T14:45:47.821929+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b04_p3_f_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b04_p3_f_results.json"
+        }
+      ],
+      "canary_pass": [
+        true,
+        false,
+        false
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 9,
+          "error": 0,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 9,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 9,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 9,
+          "error": 0,
+          "abstain": 0,
+          "calls": 1
+        },
+        "gated": {
+          "correct": 9,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        }
+      }
+    },
+    {
+      "study": "Hydraulic (new blocks)",
+      "window": [
+        "hydraulic_p01_R",
+        2
+      ],
+      "calls": [
+        {
+          "name": "b04_p1_r",
+          "started_at": "2026-09-28T14:39:47.830357+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b04_p1_r_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b04_p1_r_results.json"
+        },
+        {
+          "name": "b04_p2_r",
+          "started_at": "2026-09-28T14:42:47.902104+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b04_p2_r_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b04_p2_r_results.json"
+        },
+        {
+          "name": "b04_p3_r",
+          "started_at": "2026-09-28T14:45:47.821157+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b04_p3_r_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b04_p3_r_results.json"
+        }
+      ],
+      "canary_pass": [
+        true,
+        true,
+        true
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 9,
+          "error": 0,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 9,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 9,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 9,
+          "error": 0,
+          "abstain": 0,
+          "calls": 1
+        },
+        "gated": {
+          "correct": 9,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        }
+      }
+    },
+    {
+      "study": "Hydraulic (new blocks)",
+      "window": [
+        "hydraulic_p02_R",
+        2
+      ],
+      "calls": [
+        {
+          "name": "b05_p1_r",
+          "started_at": "2026-09-28T14:48:47.824667+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b05_p1_r_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b05_p1_r_results.json"
+        },
+        {
+          "name": "b05_p2_r",
+          "started_at": "2026-09-28T14:51:47.817905+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b05_p2_r_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b05_p2_r_results.json"
+        },
+        {
+          "name": "b05_p3_r",
+          "started_at": "2026-09-28T14:54:48.004359+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b05_p3_r_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b05_p3_r_results.json"
+        }
+      ],
+      "canary_pass": [
+        false,
+        false,
+        false
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 9,
+          "error": 0,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 5,
+          "error": 3,
+          "abstain": 1,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 6,
+          "error": 3,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 0,
+          "error": 0,
+          "abstain": 9,
+          "calls": 3
+        },
+        "gated": {
+          "correct": 0,
+          "error": 0,
+          "abstain": 9,
+          "calls": 3
+        }
+      }
+    },
+    {
+      "study": "Hydraulic (new blocks)",
+      "window": [
+        "hydraulic_p02_F",
+        2
+      ],
+      "calls": [
+        {
+          "name": "b05_p1_f",
+          "started_at": "2026-09-28T14:48:47.825576+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b05_p1_f_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b05_p1_f_results.json"
+        },
+        {
+          "name": "b05_p2_f",
+          "started_at": "2026-09-28T14:51:47.818594+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b05_p2_f_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b05_p2_f_results.json"
+        },
+        {
+          "name": "b05_p3_f",
+          "started_at": "2026-09-28T14:54:48.005917+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b05_p3_f_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b05_p3_f_results.json"
+        }
+      ],
+      "canary_pass": [
+        false,
+        false,
+        false
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 8,
+          "error": 1,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 8,
+          "error": 0,
+          "abstain": 1,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 8,
+          "error": 1,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 0,
+          "error": 0,
+          "abstain": 9,
+          "calls": 3
+        },
+        "gated": {
+          "correct": 0,
+          "error": 0,
+          "abstain": 9,
+          "calls": 3
+        }
+      }
+    },
+    {
+      "study": "Hydraulic (new blocks)",
+      "window": [
+        "hydraulic_p03_F",
+        2
+      ],
+      "calls": [
+        {
+          "name": "b06_p1_f",
+          "started_at": "2026-09-28T14:57:47.997092+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b06_p1_f_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b06_p1_f_results.json"
+        },
+        {
+          "name": "b06_p2_f",
+          "started_at": "2026-09-28T15:00:48.007444+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b06_p2_f_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b06_p2_f_results.json"
+        },
+        {
+          "name": "b06_p3_f",
+          "started_at": "2026-09-28T15:03:48.008891+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b06_p3_f_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b06_p3_f_results.json"
+        }
+      ],
+      "canary_pass": [
+        false,
+        false,
+        false
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 7,
+          "error": 2,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 7,
+          "error": 2,
+          "abstain": 0,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 7,
+          "error": 2,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 0,
+          "error": 0,
+          "abstain": 9,
+          "calls": 3
+        },
+        "gated": {
+          "correct": 0,
+          "error": 0,
+          "abstain": 9,
+          "calls": 3
+        }
+      }
+    },
+    {
+      "study": "Hydraulic (new blocks)",
+      "window": [
+        "hydraulic_p03_R",
+        2
+      ],
+      "calls": [
+        {
+          "name": "b06_p1_r",
+          "started_at": "2026-09-28T14:57:47.998002+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b06_p1_r_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b06_p1_r_results.json"
+        },
+        {
+          "name": "b06_p2_r",
+          "started_at": "2026-09-28T15:00:48.005913+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b06_p2_r_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b06_p2_r_results.json"
+        },
+        {
+          "name": "b06_p3_r",
+          "started_at": "2026-09-28T15:03:48.008401+00:00",
+          "metadata_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b06_p3_r_metadata.json",
+          "response_path": "results/policy_hydraulic_v1/predictions/gpt-5.6-sol/b06_p3_r_results.json"
+        }
+      ],
+      "canary_pass": [
+        false,
+        false,
+        false
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 7,
+          "error": 2,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 7,
+          "error": 2,
+          "abstain": 0,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 7,
+          "error": 2,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 0,
+          "error": 0,
+          "abstain": 9,
+          "calls": 3
+        },
+        "gated": {
+          "correct": 0,
+          "error": 0,
+          "abstain": 9,
+          "calls": 3
+        }
+      }
+    },
+    {
+      "study": "Paderborn bearing",
+      "window": [
+        "p01_F",
+        1
+      ],
+      "calls": [
+        {
+          "name": "b01_p1_f",
+          "started_at": "2026-09-28T15:04:30.295672+00:00",
+          "metadata_path": "results/policy_paderborn_v1/predictions/gpt-5.6-sol/b01_p1_f_metadata.json",
+          "response_path": "results/policy_paderborn_v1/predictions/gpt-5.6-sol/b01_p1_f_results.json"
+        },
+        {
+          "name": "b01_p2_f",
+          "started_at": "2026-09-28T15:07:30.309832+00:00",
+          "metadata_path": "results/policy_paderborn_v1/predictions/gpt-5.6-sol/b01_p2_f_metadata.json",
+          "response_path": "results/policy_paderborn_v1/predictions/gpt-5.6-sol/b01_p2_f_results.json"
+        },
+        {
+          "name": "b01_p3_f",
+          "started_at": "2026-09-28T15:10:30.318637+00:00",
+          "metadata_path": "results/policy_paderborn_v1/predictions/gpt-5.6-sol/b01_p3_f_metadata.json",
+          "response_path": "results/policy_paderborn_v1/predictions/gpt-5.6-sol/b01_p3_f_results.json"
+        }
+      ],
+      "canary_pass": [
+        false,
+        false,
+        false
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 4,
+          "error": 32,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 4,
+          "error": 32,
+          "abstain": 0,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 4,
+          "error": 32,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 0,
+          "error": 0,
+          "abstain": 36,
+          "calls": 3
+        },
+        "gated": {
+          "correct": 0,
+          "error": 0,
+          "abstain": 36,
+          "calls": 3
+        }
+      }
+    },
+    {
+      "study": "Paderborn bearing",
+      "window": [
+        "p01_R",
+        1
+      ],
+      "calls": [
+        {
+          "name": "b01_p1_r",
+          "started_at": "2026-09-28T15:04:30.295881+00:00",
+          "metadata_path": "results/policy_paderborn_v1/predictions/gpt-5.6-sol/b01_p1_r_metadata.json",
+          "response_path": "results/policy_paderborn_v1/predictions/gpt-5.6-sol/b01_p1_r_results.json"
+        },
+        {
+          "name": "b01_p2_r",
+          "started_at": "2026-09-28T15:07:30.310147+00:00",
+          "metadata_path": "results/policy_paderborn_v1/predictions/gpt-5.6-sol/b01_p2_r_metadata.json",
+          "response_path": "results/policy_paderborn_v1/predictions/gpt-5.6-sol/b01_p2_r_results.json"
+        },
+        {
+          "name": "b01_p3_r",
+          "started_at": "2026-09-28T15:10:30.317883+00:00",
+          "metadata_path": "results/policy_paderborn_v1/predictions/gpt-5.6-sol/b01_p3_r_metadata.json",
+          "response_path": "results/policy_paderborn_v1/predictions/gpt-5.6-sol/b01_p3_r_results.json"
+        }
+      ],
+      "canary_pass": [
+        false,
+        false,
+        false
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 13,
+          "error": 23,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 12,
+          "error": 21,
+          "abstain": 3,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 13,
+          "error": 23,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 0,
+          "error": 0,
+          "abstain": 36,
+          "calls": 3
+        },
+        "gated": {
+          "correct": 0,
+          "error": 0,
+          "abstain": 36,
+          "calls": 3
+        }
+      }
+    },
+    {
+      "study": "Paderborn bearing",
+      "window": [
+        "p01_F",
+        2
+      ],
+      "calls": [
+        {
+          "name": "b02_p1_f",
+          "started_at": "2026-09-28T15:13:30.323770+00:00",
+          "metadata_path": "results/policy_paderborn_v1/predictions/gpt-5.6-sol/b02_p1_f_metadata.json",
+          "response_path": "results/policy_paderborn_v1/predictions/gpt-5.6-sol/b02_p1_f_results.json"
+        },
+        {
+          "name": "b02_p2_f",
+          "started_at": "2026-09-28T15:16:30.388508+00:00",
+          "metadata_path": "results/policy_paderborn_v1/predictions/gpt-5.6-sol/b02_p2_f_metadata.json",
+          "response_path": "results/policy_paderborn_v1/predictions/gpt-5.6-sol/b02_p2_f_results.json"
+        },
+        {
+          "name": "b02_p3_f",
+          "started_at": "2026-09-28T15:19:30.322664+00:00",
+          "metadata_path": "results/policy_paderborn_v1/predictions/gpt-5.6-sol/b02_p3_f_metadata.json",
+          "response_path": "results/policy_paderborn_v1/predictions/gpt-5.6-sol/b02_p3_f_results.json"
+        }
+      ],
+      "canary_pass": [
+        false,
+        false,
+        false
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 7,
+          "error": 29,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 7,
+          "error": 29,
+          "abstain": 0,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 7,
+          "error": 29,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 0,
+          "error": 0,
+          "abstain": 36,
+          "calls": 3
+        },
+        "gated": {
+          "correct": 0,
+          "error": 0,
+          "abstain": 36,
+          "calls": 3
+        }
+      }
+    },
+    {
+      "study": "Paderborn bearing",
+      "window": [
+        "p01_R",
+        2
+      ],
+      "calls": [
+        {
+          "name": "b02_p1_r",
+          "started_at": "2026-09-28T15:13:30.324326+00:00",
+          "metadata_path": "results/policy_paderborn_v1/predictions/gpt-5.6-sol/b02_p1_r_metadata.json",
+          "response_path": "results/policy_paderborn_v1/predictions/gpt-5.6-sol/b02_p1_r_results.json"
+        },
+        {
+          "name": "b02_p2_r",
+          "started_at": "2026-09-28T15:16:30.394871+00:00",
+          "metadata_path": "results/policy_paderborn_v1/predictions/gpt-5.6-sol/b02_p2_r_metadata.json",
+          "response_path": "results/policy_paderborn_v1/predictions/gpt-5.6-sol/b02_p2_r_results.json"
+        },
+        {
+          "name": "b02_p3_r",
+          "started_at": "2026-09-28T15:19:30.321651+00:00",
+          "metadata_path": "results/policy_paderborn_v1/predictions/gpt-5.6-sol/b02_p3_r_metadata.json",
+          "response_path": "results/policy_paderborn_v1/predictions/gpt-5.6-sol/b02_p3_r_results.json"
+        }
+      ],
+      "canary_pass": [
+        false,
+        false,
+        false
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 12,
+          "error": 24,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 16,
+          "error": 20,
+          "abstain": 0,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 16,
+          "error": 20,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 0,
+          "error": 0,
+          "abstain": 36,
+          "calls": 3
+        },
+        "gated": {
+          "correct": 0,
+          "error": 0,
+          "abstain": 36,
+          "calls": 3
+        }
+      }
+    },
+    {
+      "study": "Hydraulic (prospective)",
+      "window": [
+        "C_b1"
+      ],
+      "calls": [
+        {
+          "name": "C_b1_c3",
+          "started_at": "2026-09-29T00:11:06.057324+00:00",
+          "metadata_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/C_b1_c3_metadata.json",
+          "response_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/C_b1_c3_results.json"
+        },
+        {
+          "name": "C_b1_c1",
+          "started_at": "2026-09-29T00:11:40.460681+00:00",
+          "metadata_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/C_b1_c1_metadata.json",
+          "response_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/C_b1_c1_results.json"
+        },
+        {
+          "name": "C_b1_c2",
+          "started_at": "2026-09-29T00:13:17.642834+00:00",
+          "metadata_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/C_b1_c2_metadata.json",
+          "response_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/C_b1_c2_results.json"
+        }
+      ],
+      "canary_pass": [
+        false,
+        true,
+        false
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 7,
+          "error": 11,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 6,
+          "error": 12,
+          "abstain": 0,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 6,
+          "error": 12,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 17,
+          "error": 1,
+          "abstain": 0,
+          "calls": 2
+        },
+        "gated": {
+          "correct": 17,
+          "error": 1,
+          "abstain": 0,
+          "calls": 3
+        }
+      }
+    },
+    {
+      "study": "Hydraulic (prospective)",
+      "window": [
+        "R_b1"
+      ],
+      "calls": [
+        {
+          "name": "R_b1_c2",
+          "started_at": "2026-09-29T00:11:06.057264+00:00",
+          "metadata_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/R_b1_c2_metadata.json",
+          "response_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/R_b1_c2_results.json"
+        },
+        {
+          "name": "R_b1_c3",
+          "started_at": "2026-09-29T00:11:42.493255+00:00",
+          "metadata_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/R_b1_c3_metadata.json",
+          "response_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/R_b1_c3_results.json"
+        },
+        {
+          "name": "R_b1_c1",
+          "started_at": "2026-09-29T00:14:58.611882+00:00",
+          "metadata_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/R_b1_c1_metadata.json",
+          "response_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/R_b1_c1_results.json"
+        }
+      ],
+      "canary_pass": [
+        false,
+        true,
+        false
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 7,
+          "error": 11,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 7,
+          "error": 11,
+          "abstain": 0,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 7,
+          "error": 11,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 18,
+          "error": 0,
+          "abstain": 0,
+          "calls": 2
+        },
+        "gated": {
+          "correct": 18,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        }
+      }
+    },
+    {
+      "study": "Hydraulic (prospective)",
+      "window": [
+        "H_b1"
+      ],
+      "calls": [
+        {
+          "name": "H_b1_c1",
+          "started_at": "2026-09-29T00:13:26.464807+00:00",
+          "metadata_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/H_b1_c1_metadata.json",
+          "response_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/H_b1_c1_results.json"
+        },
+        {
+          "name": "H_b1_c3",
+          "started_at": "2026-09-29T00:13:54.539576+00:00",
+          "metadata_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/H_b1_c3_metadata.json",
+          "response_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/H_b1_c3_results.json"
+        },
+        {
+          "name": "H_b1_c2",
+          "started_at": "2026-09-29T00:14:51.816343+00:00",
+          "metadata_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/H_b1_c2_metadata.json",
+          "response_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/H_b1_c2_results.json"
+        }
+      ],
+      "canary_pass": [
+        false,
+        false,
+        false
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 7,
+          "error": 11,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 7,
+          "error": 11,
+          "abstain": 0,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 7,
+          "error": 11,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 0,
+          "error": 0,
+          "abstain": 18,
+          "calls": 3
+        },
+        "gated": {
+          "correct": 0,
+          "error": 0,
+          "abstain": 18,
+          "calls": 3
+        }
+      }
+    },
+    {
+      "study": "Hydraulic (prospective)",
+      "window": [
+        "H_b2"
+      ],
+      "calls": [
+        {
+          "name": "H_b2_c3",
+          "started_at": "2026-09-29T00:15:32.318181+00:00",
+          "metadata_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/H_b2_c3_metadata.json",
+          "response_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/H_b2_c3_results.json"
+        },
+        {
+          "name": "H_b2_c1",
+          "started_at": "2026-09-29T00:16:49.955266+00:00",
+          "metadata_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/H_b2_c1_metadata.json",
+          "response_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/H_b2_c1_results.json"
+        },
+        {
+          "name": "H_b2_c2",
+          "started_at": "2026-09-29T00:18:16.785506+00:00",
+          "metadata_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/H_b2_c2_metadata.json",
+          "response_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/H_b2_c2_results.json"
+        }
+      ],
+      "canary_pass": [
+        true,
+        false,
+        true
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 17,
+          "error": 1,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 18,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 18,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 17,
+          "error": 1,
+          "abstain": 0,
+          "calls": 1
+        },
+        "gated": {
+          "correct": 17,
+          "error": 1,
+          "abstain": 0,
+          "calls": 3
+        }
+      }
+    },
+    {
+      "study": "Hydraulic (prospective)",
+      "window": [
+        "R_b2"
+      ],
+      "calls": [
+        {
+          "name": "R_b2_c1",
+          "started_at": "2026-09-29T00:15:32.318240+00:00",
+          "metadata_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/R_b2_c1_metadata.json",
+          "response_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/R_b2_c1_results.json"
+        },
+        {
+          "name": "R_b2_c3",
+          "started_at": "2026-09-29T00:16:43.662284+00:00",
+          "metadata_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/R_b2_c3_metadata.json",
+          "response_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/R_b2_c3_results.json"
+        },
+        {
+          "name": "R_b2_c2",
+          "started_at": "2026-09-29T00:19:25.258486+00:00",
+          "metadata_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/R_b2_c2_metadata.json",
+          "response_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/R_b2_c2_results.json"
+        }
+      ],
+      "canary_pass": [
+        true,
+        true,
+        true
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 18,
+          "error": 0,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 17,
+          "error": 1,
+          "abstain": 0,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 17,
+          "error": 1,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 18,
+          "error": 0,
+          "abstain": 0,
+          "calls": 1
+        },
+        "gated": {
+          "correct": 17,
+          "error": 1,
+          "abstain": 0,
+          "calls": 3
+        }
+      }
+    },
+    {
+      "study": "Hydraulic (prospective)",
+      "window": [
+        "C_b2"
+      ],
+      "calls": [
+        {
+          "name": "C_b2_c3",
+          "started_at": "2026-09-29T00:17:18.815385+00:00",
+          "metadata_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/C_b2_c3_metadata.json",
+          "response_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/C_b2_c3_results.json"
+        },
+        {
+          "name": "C_b2_c1",
+          "started_at": "2026-09-29T00:17:58.423530+00:00",
+          "metadata_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/C_b2_c1_metadata.json",
+          "response_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/C_b2_c1_results.json"
+        },
+        {
+          "name": "C_b2_c2",
+          "started_at": "2026-09-29T00:18:41.378379+00:00",
+          "metadata_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/C_b2_c2_metadata.json",
+          "response_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/C_b2_c2_results.json"
+        }
+      ],
+      "canary_pass": [
+        false,
+        false,
+        false
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 7,
+          "error": 11,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 7,
+          "error": 11,
+          "abstain": 0,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 7,
+          "error": 11,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 0,
+          "error": 0,
+          "abstain": 18,
+          "calls": 3
+        },
+        "gated": {
+          "correct": 0,
+          "error": 0,
+          "abstain": 18,
+          "calls": 3
+        }
+      }
+    },
+    {
+      "study": "Hydraulic (prospective)",
+      "window": [
+        "H_b3"
+      ],
+      "calls": [
+        {
+          "name": "H_b3_c2",
+          "started_at": "2026-09-29T00:24:35.519976+00:00",
+          "metadata_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/H_b3_c2_metadata.json",
+          "response_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/H_b3_c2_results.json"
+        },
+        {
+          "name": "H_b3_c1",
+          "started_at": "2026-09-29T00:25:40.653433+00:00",
+          "metadata_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/H_b3_c1_metadata.json",
+          "response_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/H_b3_c1_results.json"
+        },
+        {
+          "name": "H_b3_c3",
+          "started_at": "2026-09-29T00:28:07.040158+00:00",
+          "metadata_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/H_b3_c3_metadata.json",
+          "response_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/H_b3_c3_results.json"
+        }
+      ],
+      "canary_pass": [
+        false,
+        false,
+        true
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 7,
+          "error": 11,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 7,
+          "error": 11,
+          "abstain": 0,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 7,
+          "error": 11,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 18,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        },
+        "gated": {
+          "correct": 18,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        }
+      }
+    },
+    {
+      "study": "Hydraulic (prospective)",
+      "window": [
+        "C_b3"
+      ],
+      "calls": [
+        {
+          "name": "C_b3_c3",
+          "started_at": "2026-09-29T00:24:35.519472+00:00",
+          "metadata_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/C_b3_c3_metadata.json",
+          "response_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/C_b3_c3_results.json"
+        },
+        {
+          "name": "C_b3_c1",
+          "started_at": "2026-09-29T00:26:37.764103+00:00",
+          "metadata_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/C_b3_c1_metadata.json",
+          "response_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/C_b3_c1_results.json"
+        },
+        {
+          "name": "C_b3_c2",
+          "started_at": "2026-09-29T00:27:21.279830+00:00",
+          "metadata_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/C_b3_c2_metadata.json",
+          "response_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/C_b3_c2_results.json"
+        }
+      ],
+      "canary_pass": [
+        true,
+        false,
+        false
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 18,
+          "error": 0,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 11,
+          "error": 2,
+          "abstain": 5,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 16,
+          "error": 2,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 18,
+          "error": 0,
+          "abstain": 0,
+          "calls": 1
+        },
+        "gated": {
+          "correct": 18,
+          "error": 0,
+          "abstain": 0,
+          "calls": 3
+        }
+      }
+    },
+    {
+      "study": "Hydraulic (prospective)",
+      "window": [
+        "R_b3"
+      ],
+      "calls": [
+        {
+          "name": "R_b3_c1",
+          "started_at": "2026-09-29T00:26:04.687033+00:00",
+          "metadata_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/R_b3_c1_metadata.json",
+          "response_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/R_b3_c1_results.json"
+        },
+        {
+          "name": "R_b3_c2",
+          "started_at": "2026-09-29T00:28:43.610715+00:00",
+          "metadata_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/R_b3_c2_metadata.json",
+          "response_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/R_b3_c2_results.json"
+        },
+        {
+          "name": "R_b3_c3",
+          "started_at": "2026-09-29T00:29:39.133940+00:00",
+          "metadata_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/R_b3_c3_metadata.json",
+          "response_path": "results/canary_hydraulic_v1/predictions/gpt-5.6-sol/R_b3_c3_results.json"
+        }
+      ],
+      "canary_pass": [
+        true,
+        false,
+        true
+      ],
+      "outcomes": {
+        "single": {
+          "correct": 17,
+          "error": 1,
+          "abstain": 0,
+          "calls": 1
+        },
+        "vote": {
+          "correct": 17,
+          "error": 0,
+          "abstain": 1,
+          "calls": 3
+        },
+        "vote_tie_first": {
+          "correct": 17,
+          "error": 1,
+          "abstain": 0,
+          "calls": 3
+        },
+        "canary": {
+          "correct": 17,
+          "error": 1,
+          "abstain": 0,
+          "calls": 1
+        },
+        "gated": {
+          "correct": 17,
+          "error": 1,
+          "abstain": 0,
+          "calls": 3
+        }
+      }
+    }
+  ]
+}

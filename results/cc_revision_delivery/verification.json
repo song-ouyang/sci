@@ -1,0 +1,100 @@
+{
+  "recorded_at_utc": "2026-09-30T05:37:09.791169+00:00",
+  "revision_date": "2026-09-30",
+  "four_requested_changes_complete": true,
+  "relevant_tests_passed": 24,
+  "test_modules": [
+    "tests.test_cc_statistical_correction_v4",
+    "tests.test_canary_controls_v2",
+    "tests.test_canary_stability_v2",
+    "tests.test_run_hydraulic_v1"
+  ],
+  "tests_note": "Previously executed in this revision; test result retained here, not a second execution.",
+  "compiled_pdfs": [
+    {
+      "path": "results/industrial_interface_focused_overleaf/main.pdf",
+      "pages": 28,
+      "sha256": "ab0f8f13b4281ad5ad1d95b70cec2e23c910265742d42e0ef6969e22a7816997"
+    },
+    {
+      "path": "results/industrial_interface_focused_overleaf/supplement.pdf",
+      "pages": 63,
+      "sha256": "b7c7fa752c83b2a4eb168f1baf7ca2c73927dff8a85064f29e2f8c2765942573"
+    },
+    {
+      "path": "results/qrei_submission/upload/manuscript.pdf",
+      "pages": 46,
+      "sha256": "d4808ce0db0062e7e5273962bbae24cf8c03ecefd8ecd4b4948d78f7ec739b5f"
+    },
+    {
+      "path": "results/qrei_submission/upload/supporting_information.pdf",
+      "pages": 63,
+      "sha256": "ed2f80d9d18af0e048e2f89e8cb121d3fc2934f3bd8e2009d47b5406bc9ee319"
+    },
+    {
+      "path": "results/qrei_submission/upload/titlepage.pdf",
+      "pages": 1,
+      "sha256": "38ab5505598e247ef325d2891bbbe36c39e8875ebedfa681fc305be3ad815745"
+    },
+    {
+      "path": "results/qrei_submission/upload/cover_letter.pdf",
+      "pages": 1,
+      "sha256": "603de8fbd8bafcdfac7fa7c7e47fa42ba09a6806a19fc81868d8236d66b40e00"
+    }
+  ],
+  "visual_and_reproduction_records": {
+    "main_visual_review.json": "5bf867a6490a888cd6de9c5e11f14aff46e40c944d06fb97f71f1adb35e1c6d8",
+    "supp_visual_review.json": "2cecefa73220eca044dd03fa48a66135bfa67d6169a683717ea23cb01b50bb8c",
+    "qrei_visual_review.json": "1a2cb53159d3324dad3cec47d5bda663287e88930e37acad81ecb136205bce3c",
+    "extracted_reproduction_verification.json": "65a1e7479b36754dd94011270167803cf9c9371d923e2b7e4913e0cd56c54e37"
+  },
+  "stability_protocol_sha256": "96401f1fe50b62e43f46f0e99834bec298e7b60664bcf1c56dc2922d1a7411fe",
+  "new_valid_calls": 18,
+  "new_output_slots": 486,
+  "new_policy_decision_slots": 108,
+  "new_unique_focal_cycles": 18,
+  "new_focal_source_blocks": 9,
+  "new_comparison": {
+    "Single": [
+      88,
+      20,
+      0,
+      6
+    ],
+    "Known_answer": [
+      100,
+      8,
+      0,
+      9
+    ],
+    "Collapse_90": [
+      88,
+      20,
+      0,
+      6
+    ],
+    "Vote_first_tie": [
+      84,
+      24,
+      0,
+      18
+    ]
+  },
+  "comparison_columns": [
+    "correct",
+    "error",
+    "withheld",
+    "required_calls"
+  ],
+  "cost_interpretation": "Offline replay on all 18 collected calls; not actual adaptive stopping.",
+  "limitations": [
+    "One unchanged rig",
+    "Gains in 2 of 6 dependent windows",
+    "All 8 retained errors repeat 2 cycles from one source block",
+    "Source panel, reference panel, period and client version change jointly"
+  ],
+  "author_approval_of_revision": "pending",
+  "submitted": false,
+  "public_upload_of_revision": false,
+  "review_kind": "Internal computational and visual verification, not independent external peer review."
+}

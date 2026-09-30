@@ -1,0 +1,78 @@
+{
+  "verification_scope": "Internal independently implemented offline package/provenance verification; not independent human peer review.",
+  "created_utc": "2026-09-30T05:38:22.819012+00:00",
+  "complete": true,
+  "baseline_full_rebuild_report": "results/cc_revision_delivery/extracted_reproduction_verification.json",
+  "baseline_package_sha256": "58a417fd863778f5583c932fa97924186edbec4c75c1cdc07b1e1457243eed9b",
+  "packages": [
+    {
+      "path": "results/industrial_interface_focused_review.zip",
+      "sha256": "6c8fd8b0736a9a9aa7ac16ec840db823322ecee39fa4bbad27d48f18760ac8ac",
+      "members": 4531,
+      "duplicate_members": 0,
+      "unsafe_paths": 0,
+      "symlinks": 0,
+      "all_members_readable_crc_checked": true
+    },
+    {
+      "path": "results/industrial_interface_focused_overleaf.zip",
+      "sha256": "226d4653763bc51cb71dd3c3e56c6564aa892bf98f410d6537fd02d65520836b",
+      "members": 30,
+      "duplicate_members": 0,
+      "unsafe_paths": 0,
+      "symlinks": 0,
+      "all_members_readable_crc_checked": true
+    },
+    {
+      "path": "results/qrei_submission_current.zip",
+      "sha256": "d7da4fe8c9212a24b656f056c20855636d775da79c9fdca3cd60fb1d07a32388",
+      "members": 47,
+      "duplicate_members": 0,
+      "unsafe_paths": 0,
+      "symlinks": 0,
+      "all_members_readable_crc_checked": true
+    }
+  ],
+  "final_review_manifest_entries_verified": 4530,
+  "manifest_exactly_covers_package": true,
+  "changed_paths": [
+    "CC_REVISION_README.txt",
+    "paper/CURRENT_STATUS.md",
+    "src/analysis/package_cc_submission.py"
+  ],
+  "added_paths": [
+    "paper/CC_REVISION_2026-09-30.md",
+    "results/cc_revision_delivery/extracted_reproduction_verification.json",
+    "results/cc_revision_delivery/main_visual_review.json",
+    "results/cc_revision_delivery/qrei_visual_review.json",
+    "results/cc_revision_delivery/supp_visual_review.json",
+    "results/cc_revision_delivery/verification.json",
+    "results/cc_revision_delivery/verify_delivery.py",
+    "results/qrei_submission/delivery_inventory.json",
+    "src/analysis/audit_canary_raw_v2.py"
+  ],
+  "removed_paths": [],
+  "only_allowed_documentation_packager_and_audit_additions": true,
+  "scientific_csv_json_identical_to_rebuilt_baseline": 33,
+  "canonical_tex_identical_to_rebuilt_baseline": 24,
+  "delivery_pdf_bytes_identical_to_baseline": [
+    "results/industrial_interface_focused_overleaf/main.pdf",
+    "results/industrial_interface_focused_overleaf/supplement.pdf",
+    "results/qrei_submission/upload/manuscript.pdf",
+    "results/qrei_submission/upload/supporting_information.pdf",
+    "results/qrei_submission/upload/titlepage.pdf",
+    "results/qrei_submission/upload/cover_letter.pdf"
+  ],
+  "new_raw_audit": {
+    "returncode": 0,
+    "extracted_package_execution": true,
+    "command": "python src/analysis/audit_canary_raw_v2.py",
+    "output": {
+      "path": "results/canary_stability_v2/analysis/independent_recomputation.json",
+      "existing_bytes_identical": true,
+      "sha256": "f93624feb653f59b85282033abd5b60a5b8fc095a7ad66b49d7c248ae2a1e757"
+    },
+    "output_bytes_identical": true
+  },
+  "scope_note": "No statistical or compilation rerun was needed: the final scientific source/results and TeX/PDF hashes match the previously fully reconstructed package. This final ZIP hash record is deliberately outside the ZIP to avoid self-reference."
+}

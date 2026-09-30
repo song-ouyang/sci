@@ -1,0 +1,2118 @@
+{
+  "scored_at": "2026-09-27T04:22:50.766266+00:00",
+  "bootstrap_seed": 20260926,
+  "bootstrap_n": 10000,
+  "data_sha256": "0097dbb21981968f9ad5b8c59670a07ce701edfecbe61b5108542f7f0638fd1d",
+  "scores": {
+    "claude-sonnet-4-6": {
+      "cmapss_clean_r1": {
+        "status": "complete",
+        "n": 60,
+        "correct": 34,
+        "accuracy": 0.5666666666666667,
+        "macro_f1": 0.5535643170051773,
+        "per_class": {
+          "Healthy": {
+            "support": 20,
+            "tp": 5,
+            "fp": 2,
+            "fn": 15,
+            "precision": 0.7142857142857143,
+            "recall": 0.25,
+            "f1": 0.37037037037037035
+          },
+          "Degrading": {
+            "support": 20,
+            "tp": 18,
+            "fp": 24,
+            "fn": 2,
+            "precision": 0.42857142857142855,
+            "recall": 0.9,
+            "f1": 0.5806451612903225
+          },
+          "Critical": {
+            "support": 20,
+            "tp": 11,
+            "fp": 0,
+            "fn": 9,
+            "precision": 1.0,
+            "recall": 0.55,
+            "f1": 0.7096774193548387
+          }
+        },
+        "confusion": {
+          "Healthy": {
+            "Healthy": 5,
+            "Degrading": 15,
+            "Critical": 0
+          },
+          "Degrading": {
+            "Healthy": 2,
+            "Degrading": 18,
+            "Critical": 0
+          },
+          "Critical": {
+            "Healthy": 0,
+            "Degrading": 9,
+            "Critical": 11
+          }
+        },
+        "accuracy_95ci": [
+          0.43333333333333335,
+          0.6833333333333333
+        ],
+        "macro_f1_95ci": [
+          0.42122074463438436,
+          0.6717474323062558
+        ]
+      },
+      "cmapss_clean_r2": {
+        "status": "complete",
+        "n": 60,
+        "correct": 36,
+        "accuracy": 0.6,
+        "macro_f1": 0.6009337068160597,
+        "per_class": {
+          "Healthy": {
+            "support": 20,
+            "tp": 7,
+            "fp": 3,
+            "fn": 13,
+            "precision": 0.7,
+            "recall": 0.35,
+            "f1": 0.4666666666666667
+          },
+          "Degrading": {
+            "support": 20,
+            "tp": 16,
+            "fp": 20,
+            "fn": 4,
+            "precision": 0.4444444444444444,
+            "recall": 0.8,
+            "f1": 0.5714285714285714
+          },
+          "Critical": {
+            "support": 20,
+            "tp": 13,
+            "fp": 1,
+            "fn": 7,
+            "precision": 0.9285714285714286,
+            "recall": 0.65,
+            "f1": 0.7647058823529412
+          }
+        },
+        "confusion": {
+          "Healthy": {
+            "Healthy": 7,
+            "Degrading": 13,
+            "Critical": 0
+          },
+          "Degrading": {
+            "Healthy": 3,
+            "Degrading": 16,
+            "Critical": 1
+          },
+          "Critical": {
+            "Healthy": 0,
+            "Degrading": 7,
+            "Critical": 13
+          }
+        },
+        "accuracy_95ci": [
+          0.4666666666666667,
+          0.7166666666666667
+        ],
+        "macro_f1_95ci": [
+          0.4702596437632281,
+          0.7135377280481587
+        ]
+      },
+      "cmapss_clean_r3": {
+        "status": "complete",
+        "n": 60,
+        "correct": 38,
+        "accuracy": 0.6333333333333333,
+        "macro_f1": 0.621885521885522,
+        "per_class": {
+          "Healthy": {
+            "support": 20,
+            "tp": 6,
+            "fp": 1,
+            "fn": 14,
+            "precision": 0.8571428571428571,
+            "recall": 0.3,
+            "f1": 0.4444444444444444
+          },
+          "Degrading": {
+            "support": 20,
+            "tp": 19,
+            "fp": 21,
+            "fn": 1,
+            "precision": 0.475,
+            "recall": 0.95,
+            "f1": 0.6333333333333334
+          },
+          "Critical": {
+            "support": 20,
+            "tp": 13,
+            "fp": 0,
+            "fn": 7,
+            "precision": 1.0,
+            "recall": 0.65,
+            "f1": 0.787878787878788
+          }
+        },
+        "confusion": {
+          "Healthy": {
+            "Healthy": 6,
+            "Degrading": 14,
+            "Critical": 0
+          },
+          "Degrading": {
+            "Healthy": 1,
+            "Degrading": 19,
+            "Critical": 0
+          },
+          "Critical": {
+            "Healthy": 0,
+            "Degrading": 7,
+            "Critical": 13
+          }
+        },
+        "accuracy_95ci": [
+          0.5,
+          0.75
+        ],
+        "macro_f1_95ci": [
+          0.48900002293874295,
+          0.7360051477414337
+        ]
+      },
+      "tep_clean_r1": {
+        "status": "complete",
+        "n": 70,
+        "correct": 29,
+        "accuracy": 0.4142857142857143,
+        "macro_f1": 0.349624060150376,
+        "per_class": {
+          "Normal": {
+            "support": 10,
+            "tp": 10,
+            "fp": 20,
+            "fn": 0,
+            "precision": 0.3333333333333333,
+            "recall": 1.0,
+            "f1": 0.5
+          },
+          "Fault_1": {
+            "support": 10,
+            "tp": 0,
+            "fp": 10,
+            "fn": 10,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Fault_2": {
+            "support": 10,
+            "tp": 0,
+            "fp": 1,
+            "fn": 10,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Fault_4": {
+            "support": 10,
+            "tp": 0,
+            "fp": 0,
+            "fn": 10,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Fault_6": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_7": {
+            "support": 10,
+            "tp": 0,
+            "fp": 10,
+            "fn": 10,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Fault_13": {
+            "support": 10,
+            "tp": 9,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.9,
+            "f1": 0.9473684210526316
+          }
+        },
+        "confusion": {
+          "Normal": {
+            "Normal": 10,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_1": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 10,
+            "Fault_13": 0
+          },
+          "Fault_2": {
+            "Normal": 0,
+            "Fault_1": 10,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_4": {
+            "Normal": 10,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_6": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 10,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_7": {
+            "Normal": 10,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_13": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 1,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 9
+          }
+        },
+        "accuracy_95ci": [
+          0.3,
+          0.5285714285714286
+        ],
+        "macro_f1_95ci": [
+          0.31244158171577524,
+          0.3771428571428571
+        ]
+      },
+      "tep_clean_r2": {
+        "status": "complete",
+        "n": 70,
+        "correct": 43,
+        "accuracy": 0.6142857142857143,
+        "macro_f1": 0.5421245421245421,
+        "per_class": {
+          "Normal": {
+            "support": 10,
+            "tp": 10,
+            "fp": 10,
+            "fn": 0,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          },
+          "Fault_1": {
+            "support": 10,
+            "tp": 10,
+            "fp": 10,
+            "fn": 0,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          },
+          "Fault_2": {
+            "support": 10,
+            "tp": 0,
+            "fp": 4,
+            "fn": 10,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Fault_4": {
+            "support": 10,
+            "tp": 0,
+            "fp": 3,
+            "fn": 10,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Fault_6": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_7": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_13": {
+            "support": 10,
+            "tp": 3,
+            "fp": 0,
+            "fn": 7,
+            "precision": 1.0,
+            "recall": 0.3,
+            "f1": 0.4615384615384615
+          }
+        },
+        "confusion": {
+          "Normal": {
+            "Normal": 10,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_1": {
+            "Normal": 0,
+            "Fault_1": 10,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_2": {
+            "Normal": 0,
+            "Fault_1": 10,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_4": {
+            "Normal": 10,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_6": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 10,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_7": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 10,
+            "Fault_13": 0
+          },
+          "Fault_13": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 4,
+            "Fault_4": 3,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 3
+          }
+        },
+        "accuracy_95ci": [
+          0.5,
+          0.7285714285714285
+        ],
+        "macro_f1_95ci": [
+          0.46716520793476213,
+          0.5982556659333204
+        ]
+      },
+      "tep_clean_r3": {
+        "status": "complete",
+        "n": 70,
+        "correct": 57,
+        "accuracy": 0.8142857142857143,
+        "macro_f1": 0.7682545158825994,
+        "per_class": {
+          "Normal": {
+            "support": 10,
+            "tp": 10,
+            "fp": 11,
+            "fn": 0,
+            "precision": 0.47619047619047616,
+            "recall": 1.0,
+            "f1": 0.6451612903225806
+          },
+          "Fault_1": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_2": {
+            "support": 10,
+            "tp": 10,
+            "fp": 2,
+            "fn": 0,
+            "precision": 0.8333333333333334,
+            "recall": 1.0,
+            "f1": 0.9090909090909091
+          },
+          "Fault_4": {
+            "support": 10,
+            "tp": 0,
+            "fp": 0,
+            "fn": 10,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Fault_6": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_7": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_13": {
+            "support": 10,
+            "tp": 7,
+            "fp": 0,
+            "fn": 3,
+            "precision": 1.0,
+            "recall": 0.7,
+            "f1": 0.8235294117647058
+          }
+        },
+        "confusion": {
+          "Normal": {
+            "Normal": 10,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_1": {
+            "Normal": 0,
+            "Fault_1": 10,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_2": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 10,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_4": {
+            "Normal": 10,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_6": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 10,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_7": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 10,
+            "Fault_13": 0
+          },
+          "Fault_13": {
+            "Normal": 1,
+            "Fault_1": 0,
+            "Fault_2": 2,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 7
+          }
+        },
+        "accuracy_95ci": [
+          0.7142857142857143,
+          0.9
+        ],
+        "macro_f1_95ci": [
+          0.7034227561992538,
+          0.8156077915036982
+        ]
+      },
+      "tep_misnamed_r1": {
+        "status": "complete",
+        "n": 70,
+        "correct": 20,
+        "accuracy": 0.2857142857142857,
+        "macro_f1": 0.18996277756385574,
+        "per_class": {
+          "Normal": {
+            "support": 10,
+            "tp": 10,
+            "fp": 33,
+            "fn": 0,
+            "precision": 0.23255813953488372,
+            "recall": 1.0,
+            "f1": 0.37735849056603776
+          },
+          "Fault_1": {
+            "support": 10,
+            "tp": 10,
+            "fp": 1,
+            "fn": 0,
+            "precision": 0.9090909090909091,
+            "recall": 1.0,
+            "f1": 0.9523809523809523
+          },
+          "Fault_2": {
+            "support": 10,
+            "tp": 0,
+            "fp": 0,
+            "fn": 10,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Fault_4": {
+            "support": 10,
+            "tp": 0,
+            "fp": 6,
+            "fn": 10,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Fault_6": {
+            "support": 10,
+            "tp": 0,
+            "fp": 0,
+            "fn": 10,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Fault_7": {
+            "support": 10,
+            "tp": 0,
+            "fp": 10,
+            "fn": 10,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Fault_13": {
+            "support": 10,
+            "tp": 0,
+            "fp": 0,
+            "fn": 10,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion": {
+          "Normal": {
+            "Normal": 10,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_1": {
+            "Normal": 0,
+            "Fault_1": 10,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_2": {
+            "Normal": 10,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_4": {
+            "Normal": 10,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_6": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 10,
+            "Fault_13": 0
+          },
+          "Fault_7": {
+            "Normal": 10,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_13": {
+            "Normal": 3,
+            "Fault_1": 1,
+            "Fault_2": 0,
+            "Fault_4": 6,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          }
+        },
+        "accuracy_95ci": [
+          0.18571428571428572,
+          0.4
+        ],
+        "macro_f1_95ci": [
+          0.15839442355889724,
+          0.21535350458591393
+        ]
+      },
+      "tep_misnamed_r2": {
+        "status": "complete",
+        "n": 70,
+        "correct": 10,
+        "accuracy": 0.14285714285714285,
+        "macro_f1": 0.06802721088435373,
+        "per_class": {
+          "Normal": {
+            "support": 10,
+            "tp": 10,
+            "fp": 22,
+            "fn": 0,
+            "precision": 0.3125,
+            "recall": 1.0,
+            "f1": 0.47619047619047616
+          },
+          "Fault_1": {
+            "support": 10,
+            "tp": 0,
+            "fp": 11,
+            "fn": 10,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Fault_2": {
+            "support": 10,
+            "tp": 0,
+            "fp": 1,
+            "fn": 10,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Fault_4": {
+            "support": 10,
+            "tp": 0,
+            "fp": 6,
+            "fn": 10,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Fault_6": {
+            "support": 10,
+            "tp": 0,
+            "fp": 0,
+            "fn": 10,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Fault_7": {
+            "support": 10,
+            "tp": 0,
+            "fp": 20,
+            "fn": 10,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Fault_13": {
+            "support": 10,
+            "tp": 0,
+            "fp": 0,
+            "fn": 10,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion": {
+          "Normal": {
+            "Normal": 10,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_1": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 10,
+            "Fault_13": 0
+          },
+          "Fault_2": {
+            "Normal": 0,
+            "Fault_1": 10,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_4": {
+            "Normal": 10,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_6": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 10,
+            "Fault_13": 0
+          },
+          "Fault_7": {
+            "Normal": 10,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_13": {
+            "Normal": 2,
+            "Fault_1": 1,
+            "Fault_2": 1,
+            "Fault_4": 6,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          }
+        },
+        "accuracy_95ci": [
+          0.07142857142857142,
+          0.22857142857142856
+        ],
+        "macro_f1_95ci": [
+          0.03861003861003861,
+          0.09285714285714286
+        ]
+      },
+      "tep_misnamed_r3": {
+        "status": "complete",
+        "n": 70,
+        "correct": 70,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class": {
+          "Normal": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_1": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_2": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_4": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_6": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_7": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_13": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          }
+        },
+        "confusion": {
+          "Normal": {
+            "Normal": 10,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_1": {
+            "Normal": 0,
+            "Fault_1": 10,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_2": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 10,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_4": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 10,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_6": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 10,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_7": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 10,
+            "Fault_13": 0
+          },
+          "Fault_13": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 10
+          }
+        },
+        "accuracy_95ci": [
+          1.0,
+          1.0
+        ],
+        "macro_f1_95ci": [
+          0.9999999999999998,
+          0.9999999999999998
+        ]
+      }
+    },
+    "claude-opus-5-5": {
+      "cmapss_clean_r1": {
+        "status": "complete",
+        "n": 60,
+        "correct": 39,
+        "accuracy": 0.65,
+        "macro_f1": 0.6555555555555556,
+        "per_class": {
+          "Healthy": {
+            "support": 20,
+            "tp": 15,
+            "fp": 10,
+            "fn": 5,
+            "precision": 0.6,
+            "recall": 0.75,
+            "f1": 0.6666666666666665
+          },
+          "Degrading": {
+            "support": 20,
+            "tp": 10,
+            "fp": 10,
+            "fn": 10,
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5
+          },
+          "Critical": {
+            "support": 20,
+            "tp": 14,
+            "fp": 1,
+            "fn": 6,
+            "precision": 0.9333333333333333,
+            "recall": 0.7,
+            "f1": 0.8
+          }
+        },
+        "confusion": {
+          "Healthy": {
+            "Healthy": 15,
+            "Degrading": 5,
+            "Critical": 0
+          },
+          "Degrading": {
+            "Healthy": 9,
+            "Degrading": 10,
+            "Critical": 1
+          },
+          "Critical": {
+            "Healthy": 1,
+            "Degrading": 5,
+            "Critical": 14
+          }
+        },
+        "accuracy_95ci": [
+          0.5333333333333333,
+          0.7666666666666667
+        ],
+        "macro_f1_95ci": [
+          0.5299239269254261,
+          0.7635974613422604
+        ]
+      },
+      "cmapss_clean_r2": {
+        "status": "complete",
+        "n": 60,
+        "correct": 40,
+        "accuracy": 0.6666666666666666,
+        "macro_f1": 0.6748153806977336,
+        "per_class": {
+          "Healthy": {
+            "support": 20,
+            "tp": 15,
+            "fp": 7,
+            "fn": 5,
+            "precision": 0.6818181818181818,
+            "recall": 0.75,
+            "f1": 0.7142857142857143
+          },
+          "Degrading": {
+            "support": 20,
+            "tp": 12,
+            "fp": 12,
+            "fn": 8,
+            "precision": 0.5,
+            "recall": 0.6,
+            "f1": 0.5454545454545454
+          },
+          "Critical": {
+            "support": 20,
+            "tp": 13,
+            "fp": 1,
+            "fn": 7,
+            "precision": 0.9285714285714286,
+            "recall": 0.65,
+            "f1": 0.7647058823529412
+          }
+        },
+        "confusion": {
+          "Healthy": {
+            "Healthy": 15,
+            "Degrading": 5,
+            "Critical": 0
+          },
+          "Degrading": {
+            "Healthy": 7,
+            "Degrading": 12,
+            "Critical": 1
+          },
+          "Critical": {
+            "Healthy": 0,
+            "Degrading": 7,
+            "Critical": 13
+          }
+        },
+        "accuracy_95ci": [
+          0.55,
+          0.7833333333333333
+        ],
+        "macro_f1_95ci": [
+          0.5480665656904591,
+          0.784492523529589
+        ]
+      },
+      "cmapss_clean_r3": {
+        "status": "complete",
+        "n": 60,
+        "correct": 37,
+        "accuracy": 0.6166666666666667,
+        "macro_f1": 0.6247357293868921,
+        "per_class": {
+          "Healthy": {
+            "support": 20,
+            "tp": 15,
+            "fp": 9,
+            "fn": 5,
+            "precision": 0.625,
+            "recall": 0.75,
+            "f1": 0.6818181818181818
+          },
+          "Degrading": {
+            "support": 20,
+            "tp": 10,
+            "fp": 13,
+            "fn": 10,
+            "precision": 0.43478260869565216,
+            "recall": 0.5,
+            "f1": 0.46511627906976744
+          },
+          "Critical": {
+            "support": 20,
+            "tp": 12,
+            "fp": 1,
+            "fn": 8,
+            "precision": 0.9230769230769231,
+            "recall": 0.6,
+            "f1": 0.7272727272727274
+          }
+        },
+        "confusion": {
+          "Healthy": {
+            "Healthy": 15,
+            "Degrading": 5,
+            "Critical": 0
+          },
+          "Degrading": {
+            "Healthy": 9,
+            "Degrading": 10,
+            "Critical": 1
+          },
+          "Critical": {
+            "Healthy": 0,
+            "Degrading": 8,
+            "Critical": 12
+          }
+        },
+        "accuracy_95ci": [
+          0.48333333333333334,
+          0.7333333333333333
+        ],
+        "macro_f1_95ci": [
+          0.4961975220082057,
+          0.7353793691389598
+        ]
+      },
+      "tep_clean_r1": {
+        "status": "complete",
+        "n": 70,
+        "correct": 70,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class": {
+          "Normal": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_1": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_2": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_4": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_6": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_7": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_13": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          }
+        },
+        "confusion": {
+          "Normal": {
+            "Normal": 10,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_1": {
+            "Normal": 0,
+            "Fault_1": 10,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_2": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 10,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_4": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 10,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_6": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 10,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_7": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 10,
+            "Fault_13": 0
+          },
+          "Fault_13": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 10
+          }
+        },
+        "accuracy_95ci": [
+          1.0,
+          1.0
+        ],
+        "macro_f1_95ci": [
+          0.9999999999999998,
+          0.9999999999999998
+        ]
+      },
+      "tep_clean_r2": {
+        "status": "complete",
+        "n": 70,
+        "correct": 70,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class": {
+          "Normal": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_1": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_2": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_4": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_6": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_7": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_13": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          }
+        },
+        "confusion": {
+          "Normal": {
+            "Normal": 10,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_1": {
+            "Normal": 0,
+            "Fault_1": 10,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_2": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 10,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_4": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 10,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_6": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 10,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_7": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 10,
+            "Fault_13": 0
+          },
+          "Fault_13": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 10
+          }
+        },
+        "accuracy_95ci": [
+          1.0,
+          1.0
+        ],
+        "macro_f1_95ci": [
+          0.9999999999999998,
+          0.9999999999999998
+        ]
+      },
+      "tep_clean_r3": {
+        "status": "complete",
+        "n": 70,
+        "correct": 70,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class": {
+          "Normal": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_1": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_2": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_4": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_6": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_7": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_13": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          }
+        },
+        "confusion": {
+          "Normal": {
+            "Normal": 10,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_1": {
+            "Normal": 0,
+            "Fault_1": 10,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_2": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 10,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_4": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 10,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_6": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 10,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_7": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 10,
+            "Fault_13": 0
+          },
+          "Fault_13": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 10
+          }
+        },
+        "accuracy_95ci": [
+          1.0,
+          1.0
+        ],
+        "macro_f1_95ci": [
+          0.9999999999999998,
+          0.9999999999999998
+        ]
+      },
+      "tep_misnamed_r1": {
+        "status": "complete",
+        "n": 70,
+        "correct": 70,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class": {
+          "Normal": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_1": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_2": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_4": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_6": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_7": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_13": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          }
+        },
+        "confusion": {
+          "Normal": {
+            "Normal": 10,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_1": {
+            "Normal": 0,
+            "Fault_1": 10,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_2": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 10,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_4": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 10,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_6": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 10,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_7": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 10,
+            "Fault_13": 0
+          },
+          "Fault_13": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 10
+          }
+        },
+        "accuracy_95ci": [
+          1.0,
+          1.0
+        ],
+        "macro_f1_95ci": [
+          0.9999999999999998,
+          0.9999999999999998
+        ]
+      },
+      "tep_misnamed_r2": {
+        "status": "complete",
+        "n": 70,
+        "correct": 70,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class": {
+          "Normal": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_1": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_2": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_4": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_6": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_7": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_13": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          }
+        },
+        "confusion": {
+          "Normal": {
+            "Normal": 10,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_1": {
+            "Normal": 0,
+            "Fault_1": 10,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_2": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 10,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_4": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 10,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_6": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 10,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_7": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 10,
+            "Fault_13": 0
+          },
+          "Fault_13": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 10
+          }
+        },
+        "accuracy_95ci": [
+          1.0,
+          1.0
+        ],
+        "macro_f1_95ci": [
+          0.9999999999999998,
+          0.9999999999999998
+        ]
+      },
+      "tep_misnamed_r3": {
+        "status": "complete",
+        "n": 70,
+        "correct": 70,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class": {
+          "Normal": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_1": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_2": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_4": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_6": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_7": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Fault_13": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          }
+        },
+        "confusion": {
+          "Normal": {
+            "Normal": 10,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_1": {
+            "Normal": 0,
+            "Fault_1": 10,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_2": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 10,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_4": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 10,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_6": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 10,
+            "Fault_7": 0,
+            "Fault_13": 0
+          },
+          "Fault_7": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 10,
+            "Fault_13": 0
+          },
+          "Fault_13": {
+            "Normal": 0,
+            "Fault_1": 0,
+            "Fault_2": 0,
+            "Fault_4": 0,
+            "Fault_6": 0,
+            "Fault_7": 0,
+            "Fault_13": 10
+          }
+        },
+        "accuracy_95ci": [
+          1.0,
+          1.0
+        ],
+        "macro_f1_95ci": [
+          0.9999999999999998,
+          0.9999999999999998
+        ]
+      }
+    }
+  }
+}
